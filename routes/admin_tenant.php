@@ -1810,7 +1810,7 @@ Route::group(['middleware' => ['XSS','subscriptionAccessUrl']], function () {
         Route::post('update-school-logo', 'Admin\SystemSettings\SmSystemSettingController@updateSchoolLogo')->name('update-school-logo')->middleware('userRolePermission:update-school-logo');
 
         //Custom Field Start
-        Route::get('student-registration-custom-field','SmCustomFieldController@index')->name('student-reg-custom-field')->middleware('userRolePermission:student-reg-custom-field');
+        Route::get('student-reg-custom-field','SmCustomFieldController@index')->name('student-reg-custom-field')->middleware('userRolePermission:student-reg-custom-field');
         Route::post('store-student-registration-custom-field','SmCustomFieldController@store')->name('store-student-registration-custom-field')->middleware('userRolePermission:store-student-registration-custom-field');
         Route::get('edit-custom-field/{id}','SmCustomFieldController@edit')->name('edit-custom-field')->middleware('userRolePermission:edit-custom-field');
         Route::post('update-student-registration-custom-field','SmCustomFieldController@update')->name('update-student-registration-custom-field');
