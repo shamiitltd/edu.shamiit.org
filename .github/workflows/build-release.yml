@@ -1,4 +1,4 @@
-name: Build and Release Pipeline EDUSHAMIIT
+name: Build, Test, and Release Pipeline EDUSHAMIIT
 
 on:
   push:
@@ -32,3 +32,57 @@ jobs:
         DB_CONNECTION: sqlite
         DB_DATABASE: database/database.sqlite
       run: vendor/bin/phpunit
+
+  build-and-release:
+    runs-on: ubuntu-latest
+    needs: laravel-tests # Wait for the laravel-tests job to complete
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    # You can add more build steps here as needed, such as:
+    # - name: Build your Laravel assets (e.g., npm install, npm run production)
+
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: laravel-build
+        path: ${{ github.workspace }} # Specify the path to your built Laravel application
+
+  cpanel-release:
+    runs-on: ubuntu-latest
+    needs: build-and-release # Wait for the build-and-release job to complete
+    steps:
+    - name: Download build artifacts
+      uses: actions/download-artifact@v3
+      with:
+        name: laravel-build
+        path: ${{ github.workspace }} # Specify the path to store the downloaded build artifacts
+
+    - name: Install cPanel CLI
+      run: |
+        curl -o /tmp/cpanel.tgz -SL https://github.com/CpanelInc/publicapi-php/archive/refs/tags/v2.5.0.tar.gz
+        tar -xzf /tmp/cpanel.tgz -C /tmp/
+        mv /tmp/publicapi-php-2.5.0 /tmp/cpanel
+        chmod +x /tmp/cpanel/cpanel
+
+    - name: Deploy to cPanel
+      run: |
+        /tmp/cpanel/cpanel uapi --user=CPANEL_USERNAME Deployment create_app \
+        app_type=laravel \
+        version=7.0 \
+        app_locale=en \
+        app_charset=UTF-8 \
+        app_docroot=/public_html/your_app_subdirectory \
+        app_uri=yourapp.com \
+        app_ssd=1
+
+    # You might need additional steps to configure your cPanel deployment settings, such as database configurations.
+
+    - name: Clean up
+      run: |
+        rm -rf /tmp/cpanel
+        # Clean up any sensitive files or information
+
+# Define the CPANEL_USERNAME and any other secrets as environment variables in the GitHub repository settings.
+# Make sure to replace placeholders like your_app_subdirectory and yourapp.com with actual values.
