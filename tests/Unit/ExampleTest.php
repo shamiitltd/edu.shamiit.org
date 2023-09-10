@@ -13,15 +13,15 @@ class ExampleTest extends TestCase
      */
     public function testBasicTest()
     {
-        $this->assertTrue(true);
-        //$this->browse(function (Browser $browser) {
-        //    $browser->visit('logout')
-        //            ->visit('login')
-        //            ->type('email','admin@spondonit.com')
-        //            ->type('password','123456')
-        //            ->click('#btnsubmit')
-        //            ->waitForText('Welcome to')
-        //            ->assertSee('admin-dashboard');
-        //});
+        //  $this->assertTrue(true);
+    $this->browse(function (Browser $browser) {
+            $browser->visit('logout')
+                    ->visit('login')
+                    ->type('email','admin@spondonit.com')
+                    ->type('password','123456')
+                    ->click('#btnsubmit')
+                    ->waitForText('Welcome to')
+                    ->assertSee('admin-dashboard');
+        });
     }
 }

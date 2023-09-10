@@ -14,12 +14,11 @@ class ExampleTest extends TestCase
      */
     public function testBasicTest()
     {
-        $this->assertTrue(true);
-        //$this->visit('/login')
-        //    ->type('admin', 'login')
-        //    ->type('password', 'password')
-        //    ->press('Login')
-        //    ->seePageIs('/home');
+        $this->visit('/login')
+            ->type('admin', 'login')
+            ->type('password', 'password')
+            ->press('Login')
+            ->seePageIs('/home');
 
     }
 }

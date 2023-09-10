@@ -43,7 +43,7 @@ class SmCustomFieldController extends Controller
             $this->storeData($request,$name);
             
             Toastr::success('Operation successful', 'Success');
-            return redirect('student-reg-custom-field');
+            return redirect('student-registration-custom-field');
         }catch(Throwable $e){
             Toastr::error('Operation Failed', 'Failed');
             return redirect()->back();
@@ -92,7 +92,7 @@ class SmCustomFieldController extends Controller
             $this->updateData($request,$name);
 
             Toastr::success('Operation successful', 'Success');
-            return redirect('student-reg-custom-field');
+            return redirect('student-registration-custom-field');
 
         }catch(Throwable $e){
             Toastr::error('Operation Failed', 'Failed');
@@ -105,7 +105,7 @@ class SmCustomFieldController extends Controller
         try{
             $this->deleteData($request->id);
             Toastr::success('Operation successful', 'Success');
-            return redirect('student-reg-custom-field');
+            return redirect('student-registration-custom-field');
             
         }catch(Throwable $e){
             Toastr::error('Operation Failed', 'Failed');

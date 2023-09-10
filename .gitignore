@@ -1,6 +1,5 @@
 /node_modules
 /public/hot
-/vendor
 .env
 .env.backup
 .phpunit.result.cache
@@ -15,6 +14,7 @@ modules_statuses.json
 docker-compose.override.yml
 /.idea
 /.vscode
+/.vs
 /nbproject/private/
 /update
 copy.php
