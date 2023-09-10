@@ -6,83 +6,62 @@ on:
   pull_request:
     branches: [ "master" ]
   workflow_dispatch: # to manually run this workflow
-
 jobs:
-  laravel-tests:
+  web-deploy:
+    name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
-    - uses: shivammathur/setup-php@v2
-      with:
-        php-version: '8.0'
-    - uses: actions/checkout@v3
-    - name: Copy .env
-      run: php -r "file_exists('.env') || copy('.env.example', '.env');"
-    - name: Install Dependencies
-      run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
-    - name: Generate key
-      run: php artisan key:generate
-    - name: Directory Permissions
-      run: chmod -R 777 storage bootstrap/cache
-    - name: Create Database
-      run: |
-        mkdir -p database
-        touch database/database.sqlite
-    - name: Execute tests (Unit and Feature tests) via PHPUnit
-      env:
-        DB_CONNECTION: sqlite
-        DB_DATABASE: database/database.sqlite
-      run: vendor/bin/phpunit
+      - name: Setup PHP 8.0
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.0'
+      - name: Get the latest code
+        uses: actions/checkout@v3
+      - uses: actions/setup-node@master
 
-  build-and-release:
-    runs-on: ubuntu-latest
-    needs: laravel-tests # Wait for the laravel-tests job to complete
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+      - name: Copy .env
+        run: php -r "file_exists('.env') || copy('.env.example', '.env');"
 
-    # You can add more build steps here as needed, such as:
-    # - name: Build your Laravel assets (e.g., npm install, npm run production)
+      - name: Install Dependencies
+        run: composer update --ignore-platform-reqs
 
-    - name: Upload build artifacts
-      uses: actions/upload-artifact@v3
-      with:
-        name: laravel-build
-        path: ${{ github.workspace }} # Specify the path to your built Laravel application
+      - name: Prepare .env file
+        run: |
+          sed -i 's/DB_DATABASE=.*/DB_DATABASE=$DATABASE/' .env
+          sed -i 's/DB_USERNAME=.*/DB_USERNAME=$USERNAME/' .env
+          sed -i 's/DB_PASSWORD=.*/DB_PASSWORD=$PASSWORD/' .env
+          echo "$INIT_REPO" | base64 -d > vendor/spondonit/service/src/Repositories/InitRepository.php
+          echo "$INSTALL_REPO" | base64 -d > vendor/spondonit/service/src/Repositories/InstallRepository.php
+          echo "$LICENSE_REPO" | base64 -d > vendor/spondonit/service/src/Repositories/LicenseRepository.php
+        env:
+          DATABASE: ${{ secrets.DB_DATABASE }}
+          USERNAME: ${{ secrets.DB_USERNAME }}
+          PASSWORD: ${{ secrets.DB_PASSWORD }}
+          INIT_REPO: ${{ secrets.INIT_REPO }}
+          INSTALL_REPO: ${{ secrets.INSTALL_REPO }}
+          LICENSE_REPO: ${{ secrets.LICENSE_REPO }}
 
-  cpanel-release:
-    runs-on: ubuntu-latest
-    needs: build-and-release # Wait for the build-and-release job to complete
-    steps:
-    - name: Download build artifacts
-      uses: actions/download-artifact@v3
-      with:
-        name: laravel-build
-        path: ${{ github.workspace }} # Specify the path to store the downloaded build artifacts
-
-    - name: Install cPanel CLI
-      run: |
-        curl -o /tmp/cpanel.tgz -SL https://github.com/CpanelInc/publicapi-php/archive/refs/tags/v2.5.0.tar.gz
-        tar -xzf /tmp/cpanel.tgz -C /tmp/
-        mv /tmp/publicapi-php-2.5.0 /tmp/cpanel
-        chmod +x /tmp/cpanel/cpanel
-
-    - name: Deploy to cPanel
-      run: |
-        /tmp/cpanel/cpanel uapi --user=CPANEL_USERNAME Deployment create_app \
-        app_type=laravel \
-        version=7.0 \
-        app_locale=en \
-        app_charset=UTF-8 \
-        app_docroot=/public_html/your_app_subdirectory \
-        app_uri=yourapp.com \
-        app_ssd=1
-
-    # You might need additional steps to configure your cPanel deployment settings, such as database configurations.
-
-    - name: Clean up
-      run: |
-        rm -rf /tmp/cpanel
-        # Clean up any sensitive files or information
-
-# Define the CPANEL_USERNAME and any other secrets as environment variables in the GitHub repository settings.
-# Make sure to replace placeholders like your_app_subdirectory and yourapp.com with actual values.
+      - name: Generate key
+        run: php artisan key:generate
+      - name: Generate storage link
+        run: php artisan storage:link
+      - name: Directory Permissions
+        run: chmod -R 777 storage bootstrap/cache
+      - name: Create Database
+        run: |
+          mkdir -p database
+          touch database/database.sqlite
+      - name: Execute tests (Unit and Feature tests) via PHPUnit
+        env:
+          DB_CONNECTION: sqlite
+          DB_DATABASE: database/database.sqlite
+        run: vendor/bin/phpunit
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          exclude: |
+            **/.git*
+            **/.git*/**
