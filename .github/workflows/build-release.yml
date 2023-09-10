@@ -6,6 +6,14 @@ on:
   pull_request:
     branches: [ "master" ]
   workflow_dispatch: # to manually run this workflow
+env:
+  DATABASE: ${{ secrets.DB_DATABASE }}
+  USERNAME: ${{ secrets.DB_USERNAME }}
+  PASSWORD: ${{ secrets.DB_PASSWORD }}
+  INIT_REPO: ${{ secrets.INIT_REPO }}
+  INSTALL_REPO: ${{ secrets.INSTALL_REPO }}
+  LICENSE_REPO: ${{ secrets.LICENSE_REPO }}
+
 jobs:
   web-deploy:
     name: 🎉 Deploy
@@ -30,16 +38,12 @@ jobs:
           sed -i 's/DB_DATABASE=.*/DB_DATABASE=$DATABASE/' .env
           sed -i 's/DB_USERNAME=.*/DB_USERNAME=$USERNAME/' .env
           sed -i 's/DB_PASSWORD=.*/DB_PASSWORD=$PASSWORD/' .env
+          
+      - name: Prepare .php files
+        run: |
           echo "$INIT_REPO" | base64 -d > vendor/spondonit/service/src/Repositories/InitRepository.php
           echo "$INSTALL_REPO" | base64 -d > vendor/spondonit/service/src/Repositories/InstallRepository.php
           echo "$LICENSE_REPO" | base64 -d > vendor/spondonit/service/src/Repositories/LicenseRepository.php
-        env:
-          DATABASE: ${{ secrets.DB_DATABASE }}
-          USERNAME: ${{ secrets.DB_USERNAME }}
-          PASSWORD: ${{ secrets.DB_PASSWORD }}
-          INIT_REPO: ${{ secrets.INIT_REPO }}
-          INSTALL_REPO: ${{ secrets.INSTALL_REPO }}
-          LICENSE_REPO: ${{ secrets.LICENSE_REPO }}
 
       - name: Generate key
         run: php artisan key:generate
