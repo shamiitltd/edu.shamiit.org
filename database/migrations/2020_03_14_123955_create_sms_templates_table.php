@@ -161,7 +161,7 @@ class CreateSmsTemplatesTable extends Migration
                                                             </span>
                                                             <span style="background-color:transparent;text-align:left;">
                                                                 <font color="#ffffff">
-                                                                    Copyright &copy; 2020 All rights reserved | This application is made by Codethemes
+                                                                    Copyright &copy; 2023 All rights reserved | Powered by SHAMIIT
                                                                 </font>
                                                             </span>
                                                             <br>
@@ -264,7 +264,7 @@ class CreateSmsTemplatesTable extends Migration
                                                                 </span>
                                                                 <span style="background-color:transparent;text-align:left;">
                                                                     <font color="#ffffff">
-                                                                        Copyright &copy; 2020 All rights reserved | This application is made by Codethemes
+                                                                        Copyright &copy; 2023 All rights reserved | Powered by SHAMIIT
                                                                     </font>
                                                                 </span>
                                                                 <br>
@@ -350,7 +350,7 @@ class CreateSmsTemplatesTable extends Migration
                                                             </span>
                                                             <span style="background-color:transparent;text-align:left;">
                                                                 <font color="#ffffff">
-                                                                    Copyright &copy; 2020 All rights reserved | This application is made by Codethemes
+                                                                    Copyright &copy; 2023 All rights reserved | Powered by SHAMIIT
                                                                 </font>
                                                             </span>
                                                             <br>
@@ -438,7 +438,7 @@ class CreateSmsTemplatesTable extends Migration
                                                             </span>
                                                             <span style="background-color:transparent;text-align:left;">
                                                                 <font color="#ffffff">
-                                                                    Copyright &copy; 2020 All rights reserved | This application is made by Codethemes
+                                                                    Copyright &copy; 2023 All rights reserved | Powered by SHAMIIT
                                                                 </font>
                                                             </span>
                                                             <br>
@@ -528,7 +528,7 @@ class CreateSmsTemplatesTable extends Migration
                                                             </span>
                                                             <span style="background-color:transparent;text-align:left;">
                                                                 <font color="#ffffff">
-                                                                    Copyright &copy; 2020 All rights reserved | This application is made by Codethemes
+                                                                    Copyright &copy; 2023 All rights reserved | Powered by SHAMIIT
                                                                 </font>
                                                             </span>
                                                             <br>
@@ -614,7 +614,7 @@ class CreateSmsTemplatesTable extends Migration
                                                             </span>
                                                             <span style="background-color:transparent;text-align:left;">
                                                                 <font color="#ffffff">
-                                                                    Copyright &copy; 2020 All rights reserved | This application is made by Codethemes
+                                                                    Copyright &copy; 2023 All rights reserved | Powered by SHAMIIT
                                                                 </font>
                                                             </span>
                                                             <br>
@@ -701,7 +701,7 @@ class CreateSmsTemplatesTable extends Migration
                                                             </span>
                                                             <span style="background-color:transparent;text-align:left;">
                                                                 <font color="#ffffff">
-                                                                    Copyright &copy; 2020 All rights reserved | This application is made by Codethemes
+                                                                    Copyright &copy; 2023 All rights reserved | Powered by SHAMIIT
                                                                 </font>
                                                             </span>
                                                             <br>
@@ -787,7 +787,7 @@ class CreateSmsTemplatesTable extends Migration
                                                             </span>
                                                             <span style="background-color:transparent;text-align:left;">
                                                                 <font color="#ffffff">
-                                                                    Copyright &copy; 2020 All rights reserved | This application is made by Codethemes
+                                                                    Copyright &copy; 2023 All rights reserved | Powered by SHAMIIT
                                                                 </font>
                                                             </span>
                                                             <br>
@@ -873,7 +873,7 @@ class CreateSmsTemplatesTable extends Migration
                                                             </span>
                                                             <span style="background-color:transparent;text-align:left;">
                                                                 <font color="#ffffff">
-                                                                    Copyright &copy; 2020 All rights reserved | This application is made by Codethemes
+                                                                    Copyright &copy; 2023 All rights reserved | Powered by SHAMIIT
                                                                 </font>
                                                             </span>
                                                             <br>
@@ -959,7 +959,7 @@ class CreateSmsTemplatesTable extends Migration
                                                             </span>
                                                             <span style="background-color:transparent;text-align:left;">
                                                                 <font color="#ffffff">
-                                                                    Copyright &copy; 2020 All rights reserved | This application is made by Codethemes
+                                                                    Copyright &copy; 2023 All rights reserved | Powered by SHAMIIT
                                                                 </font>
                                                             </span>
                                                             <br>
@@ -1045,7 +1045,7 @@ class CreateSmsTemplatesTable extends Migration
                                                             </span>
                                                             <span style="background-color:transparent;text-align:left;">
                                                                 <font color="#ffffff">
-                                                                    Copyright &copy; 2020 All rights reserved | This application is made by Codethemes
+                                                                    Copyright &copy; 2023 All rights reserved | Powered by SHAMIIT
                                                                 </font>
                                                             </span>
                                                             <br>
@@ -1131,7 +1131,7 @@ class CreateSmsTemplatesTable extends Migration
                                                             </span>
                                                             <span style="background-color:transparent;text-align:left;">
                                                                 <font color="#ffffff">
-                                                                    Copyright &copy; 2020 All rights reserved | This application is made by Codethemes
+                                                                    Copyright &copy; 2023 All rights reserved | Powered by SHAMIIT
                                                                 </font>
                                                             </span>
                                                             <br>
@@ -1217,7 +1217,7 @@ class CreateSmsTemplatesTable extends Migration
                                                             </span>
                                                             <span style="background-color:transparent;text-align:left;">
                                                                 <font color="#ffffff">
-                                                                    Copyright &copy; 2020 All rights reserved | This application is made by Codethemes
+                                                                    Copyright &copy; 2023 All rights reserved | Powered by SHAMIIT
                                                                 </font>
                                                             </span>
                                                             <br>
@@ -1303,7 +1303,7 @@ class CreateSmsTemplatesTable extends Migration
                                                             </span>
                                                             <span style="background-color:transparent;text-align:left;">
                                                                 <font color="#ffffff">
-                                                                    Copyright &copy; 2020 All rights reserved | This application is made by Codethemes
+                                                                    Copyright &copy; 2023 All rights reserved | Powered by SHAMIIT
                                                                 </font>
                                                             </span>
                                                             <br>
@@ -1389,7 +1389,7 @@ class CreateSmsTemplatesTable extends Migration
                                                             </span>
                                                             <span style="background-color:transparent;text-align:left;">
                                                                 <font color="#ffffff">
-                                                                    Copyright &copy; 2020 All rights reserved | This application is made by Codethemes
+                                                                    Copyright &copy; 2023 All rights reserved | Powered by SHAMIIT
                                                                 </font>
                                                             </span>
                                                             <br>
@@ -1475,7 +1475,7 @@ class CreateSmsTemplatesTable extends Migration
                                                             </span>
                                                             <span style="background-color:transparent;text-align:left;">
                                                                 <font color="#ffffff">
-                                                                    Copyright &copy; 2020 All rights reserved | This application is made by Codethemes
+                                                                    Copyright &copy; 2023 All rights reserved | Powered by SHAMIIT
                                                                 </font>
                                                             </span>
                                                             <br>
@@ -1561,7 +1561,7 @@ class CreateSmsTemplatesTable extends Migration
                                                             </span>
                                                             <span style="background-color:transparent;text-align:left;">
                                                                 <font color="#ffffff">
-                                                                    Copyright &copy; 2020 All rights reserved | This application is made by Codethemes
+                                                                    Copyright &copy; 2023 All rights reserved | Powered by SHAMIIT
                                                                 </font>
                                                             </span>
                                                             <br>
@@ -1655,7 +1655,7 @@ class CreateSmsTemplatesTable extends Migration
                                                             </span>
                                                             <span style="background-color:transparent;text-align:left;">
                                                                 <font color="#ffffff">
-                                                                    Copyright &copy; 2020 All rights reserved | This application is made by Codethemes
+                                                                    Copyright &copy; 2023 All rights reserved | Powered by SHAMIIT
                                                                 </font>
                                                             </span>
                                                             <br>
@@ -1741,7 +1741,7 @@ class CreateSmsTemplatesTable extends Migration
                                                             </span>
                                                             <span style="background-color:transparent;text-align:left;">
                                                                 <font color="#ffffff">
-                                                                    Copyright &copy; 2020 All rights reserved | This application is made by Codethemes
+                                                                    Copyright &copy; 2023 All rights reserved | Powered by SHAMIIT
                                                                 </font>
                                                             </span>
                                                             <br>
@@ -1827,7 +1827,7 @@ class CreateSmsTemplatesTable extends Migration
                                                             </span>
                                                             <span style="background-color:transparent;text-align:left;">
                                                                 <font color="#ffffff">
-                                                                    Copyright &copy; 2020 All rights reserved | This application is made by Codethemes
+                                                                    Copyright &copy; 2023 All rights reserved | Powered by SHAMIIT
                                                                 </font>
                                                             </span>
                                                             <br>
@@ -1913,7 +1913,7 @@ class CreateSmsTemplatesTable extends Migration
                                                             </span>
                                                             <span style="background-color:transparent;text-align:left;">
                                                                 <font color="#ffffff">
-                                                                    Copyright &copy; 2020 All rights reserved | This application is made by Codethemes
+                                                                    Copyright &copy; 2023 All rights reserved | Powered by SHAMIIT
                                                                 </font>
                                                             </span>
                                                             <br>
@@ -1999,7 +1999,7 @@ class CreateSmsTemplatesTable extends Migration
                                                             </span>
                                                             <span style="background-color:transparent;text-align:left;">
                                                                 <font color="#ffffff">
-                                                                    Copyright &copy; 2020 All rights reserved | This application is made by Codethemes
+                                                                    Copyright &copy; 2023 All rights reserved | Powered by SHAMIIT
                                                                 </font>
                                                             </span>
                                                             <br>
@@ -2085,7 +2085,7 @@ class CreateSmsTemplatesTable extends Migration
                                                             </span>
                                                             <span style="background-color:transparent;text-align:left;">
                                                                 <font color="#ffffff">
-                                                                    Copyright &copy; 2020 All rights reserved | This application is made by Codethemes
+                                                                    Copyright &copy; 2023 All rights reserved | Powered by SHAMIIT
                                                                 </font>
                                                             </span>
                                                             <br>
@@ -2171,7 +2171,7 @@ class CreateSmsTemplatesTable extends Migration
                                                             </span>
                                                             <span style="background-color:transparent;text-align:left;">
                                                                 <font color="#ffffff">
-                                                                    Copyright &copy; 2020 All rights reserved | This application is made by Codethemes
+                                                                    Copyright &copy; 2023 All rights reserved | Powered by SHAMIIT
                                                                 </font>
                                                             </span>
                                                             <br>
@@ -2257,7 +2257,7 @@ class CreateSmsTemplatesTable extends Migration
                                                             </span>
                                                             <span style="background-color:transparent;text-align:left;">
                                                                 <font color="#ffffff">
-                                                                    Copyright &copy; 2020 All rights reserved | This application is made by Codethemes
+                                                                    Copyright &copy; 2023 All rights reserved | Powered by SHAMIIT
                                                                 </font>
                                                             </span>
                                                             <br>
@@ -2343,7 +2343,7 @@ class CreateSmsTemplatesTable extends Migration
                                                             </span>
                                                             <span style="background-color:transparent;text-align:left;">
                                                                 <font color="#ffffff">
-                                                                    Copyright &copy; 2020 All rights reserved | This application is made by Codethemes
+                                                                    Copyright &copy; 2023 All rights reserved | Powered by SHAMIIT
                                                                 </font>
                                                             </span>
                                                             <br>
@@ -2429,7 +2429,7 @@ class CreateSmsTemplatesTable extends Migration
                                                             </span>
                                                             <span style="background-color:transparent;text-align:left;">
                                                                 <font color="#ffffff">
-                                                                    Copyright &copy; 2020 All rights reserved | This application is made by Codethemes
+                                                                    Copyright &copy; 2023 All rights reserved | Powered by SHAMIIT
                                                                 </font>
                                                             </span>
                                                             <br>
@@ -2515,7 +2515,7 @@ class CreateSmsTemplatesTable extends Migration
                                                             </span>
                                                             <span style="background-color:transparent;text-align:left;">
                                                                 <font color="#ffffff">
-                                                                    Copyright &copy; 2020 All rights reserved | This application is made by Codethemes
+                                                                    Copyright &copy; 2023 All rights reserved | Powered by SHAMIIT
                                                                 </font>
                                                             </span>
                                                             <br>
@@ -2601,7 +2601,7 @@ class CreateSmsTemplatesTable extends Migration
                                                             </span>
                                                             <span style="background-color:transparent;text-align:left;">
                                                                 <font color="#ffffff">
-                                                                    Copyright &copy; 2020 All rights reserved | This application is made by Codethemes
+                                                                    Copyright &copy; 2023 All rights reserved | Powered by SHAMIIT
                                                                 </font>
                                                             </span>
                                                             <br>
@@ -2687,7 +2687,7 @@ class CreateSmsTemplatesTable extends Migration
                                                             </span>
                                                             <span style="background-color:transparent;text-align:left;">
                                                                 <font color="#ffffff">
-                                                                    Copyright &copy; 2020 All rights reserved | This application is made by Codethemes
+                                                                    Copyright &copy; 2023 All rights reserved | Powered by SHAMIIT
                                                                 </font>
                                                             </span>
                                                             <br>
@@ -2774,7 +2774,7 @@ class CreateSmsTemplatesTable extends Migration
                                                             </span>
                                                             <span style="background-color:transparent;text-align:left;">
                                                                 <font color="#ffffff">
-                                                                    Copyright &copy; 2020 All rights reserved | This application is made by Codethemes
+                                                                    Copyright &copy; 2023 All rights reserved | Powered by SHAMIIT
                                                                 </font>
                                                             </span>
                                                             <br>
@@ -2976,7 +2976,7 @@ class CreateSmsTemplatesTable extends Migration
                                                                                             </span>
                                                                                             <span style="background-color:transparent;text-align:left;">
                                                                                                 <font color="#ffffff">
-                                                                                                    Copyright &copy; 2020 All rights reserved | This application is made by Codethemes
+                                                                                                    Copyright &copy; 2023 All rights reserved | Powered by SHAMIIT
                                                                                                 </font>
                                                                                             </span>
                                                                                             <br>

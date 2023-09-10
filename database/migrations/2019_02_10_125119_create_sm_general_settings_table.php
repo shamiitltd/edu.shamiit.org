@@ -126,7 +126,7 @@ class CreateSmGeneralSettingsTable extends Migration
 
         DB::table('sm_general_settings')->insert([
             [
-                'copyright_text' => 'Copyright &copy; 2020 All rights reserved | This application is made by Codethemes',
+                'copyright_text' => 'Copyright &copy; 2023 All rights reserved | Powered by SHAMIIT',
                 'logo' => 'public/uploads/settings/logo.png',
                 'favicon' => 'public/uploads/settings/favicon.png',
                 'phone' => '+8801841412141',
