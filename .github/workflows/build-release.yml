@@ -36,9 +36,9 @@ jobs:
 
       - name: Prepare .env file
         run: |
-          sed -i 's/DB_DATABASE=.*/DB_DATABASE=${DATABASE}/' .env
-          sed -i 's/DB_USERNAME=.*/DB_USERNAME=${USERNAME}/' .env
-          sed -i 's/DB_PASSWORD=.*/DB_PASSWORD=${PASSWORD}/' .env
+          sed -i "s/DB_DATABASE=.*/DB_DATABASE=${DATABASE}/" .env
+          sed -i "s/DB_USERNAME=.*/DB_USERNAME=${USERNAME}/" .env
+          sed -i "s/DB_PASSWORD=.*/DB_PASSWORD=${PASSWORD}/" .env
 
       - name: Prepare .php files
         run: |
