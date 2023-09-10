@@ -10,6 +10,7 @@ env:
   DATABASE: ${{ secrets.DB_DATABASE }}
   USERNAME: ${{ secrets.DB_USERNAME }}
   PASSWORD: ${{ secrets.DB_PASSWORD }}
+  REPO_PATH: ${{ secrets.REPO_PATH }}
   INIT_REPO: ${{ secrets.INIT_REPO }}
   INSTALL_REPO: ${{ secrets.INSTALL_REPO }}
   LICENSE_REPO: ${{ secrets.LICENSE_REPO }}
@@ -35,15 +36,15 @@ jobs:
 
       - name: Prepare .env file
         run: |
-          sed -i 's/DB_DATABASE=.*/DB_DATABASE=$DATABASE/' .env
-          sed -i 's/DB_USERNAME=.*/DB_USERNAME=$USERNAME/' .env
-          sed -i 's/DB_PASSWORD=.*/DB_PASSWORD=$PASSWORD/' .env
+          sed -i 's/DB_DATABASE=.*/DB_DATABASE=${DATABASE}/' .env
+          sed -i 's/DB_USERNAME=.*/DB_USERNAME=${USERNAME}/' .env
+          sed -i 's/DB_PASSWORD=.*/DB_PASSWORD=${PASSWORD}/' .env
 
       - name: Prepare .php files
         run: |
-          echo "$INIT_REPO" > vendor/spondonit/service/src/Repositories/InitRepository.php
-          echo "$INSTALL_REPO" > vendor/spondonit/service/src/Repositories/InstallRepository.php
-          echo "$LICENSE_REPO" > vendor/spondonit/service/src/Repositories/LicenseRepository.php
+          echo "$INIT_REPO" > "$REPO_PATH/InitRepository.php"
+          echo "$INSTALL_REPO" > "$REPO_PATH/InstallRepository.php"
+          echo "$LICENSE_REPO" > "$REPO_PATH/LicenseRepository.php"
 
       - name: Generate key
         run: php artisan key:generate
