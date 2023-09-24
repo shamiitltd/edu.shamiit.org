@@ -20,7 +20,7 @@
         @if (isset($v_custom_field))
         <div class="row">
             <div class="offset-lg-10 col-lg-2 text-right col-md-12 mb-20">
-                <a href="{{ route('student-reg-custom-field') }}" class="primary-btn small fix-gr-bg">
+                <a href="{{ route('student-registration-custom-field') }}" class="primary-btn small fix-gr-bg">
                     <span class="ti-plus pr-2"></span>
                     @lang('common.add')
                 </a>
