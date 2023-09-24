@@ -64,7 +64,6 @@ jobs:
         run: |
           php artisan config:clear
           php artisan config:cache
-          php artisan migrate --seed
           vendor/bin/phpunit
 
       - name: Sync files via FTP on ${{ matrix.environment }}
