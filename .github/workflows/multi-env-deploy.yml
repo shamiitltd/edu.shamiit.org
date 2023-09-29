@@ -28,6 +28,20 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.0'
+      - uses: actions/setup-node@master
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18 # You can specify the Node.js version you need
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build with Vite
+        run: npm run build # Use the appropriate build script from your package.json
+        
+      - name: Build with Vite
+        run: npm run prod # Use the appropriate build script from your package.json
       
       - name: Copy .env
         run: php -r "file_exists('.env') || copy('.env.example', '.env');"
