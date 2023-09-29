@@ -36,11 +36,8 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-
-      - name: Build with Vite
-        run: npm run build # Use the appropriate build script from your package.json
         
-      - name: Build with Vite
+      - name: Build with Prod
         run: npm run prod # Use the appropriate build script from your package.json
       
       - name: Copy .env
