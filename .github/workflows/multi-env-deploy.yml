@@ -12,7 +12,7 @@ jobs:
     name: Deploy to ${{ matrix.environment }}
     runs-on: ubuntu-latest
     environment: ${{ matrix.environment }}
-
+    timeout-minutes: 600 # Set the maximum job execution time to 10 hours
     strategy:
       matrix:
         environment:
