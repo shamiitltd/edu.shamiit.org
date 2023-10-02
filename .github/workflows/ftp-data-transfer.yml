@@ -32,8 +32,8 @@ jobs:
           DEST_FTP_PATH="/"
 
           # Use lftp to copy files
-          lftp -e "mirror --verbose --delete --exclude ^\.git/ $SOURCE_FTP_PATH $DEST_FTP_PATH" -u "$SOURCE_FTP_USER","$SOURCE_FTP_PASS" "$SOURCE_FTP_HOST"
-          lftp -e "mirror --verbose --delete --exclude ^\.git/ $SOURCE_FTP_PATH $DEST_FTP_PATH" -u "$DEST_FTP_USER","$DEST_FTP_PASS" "$DEST_FTP_HOST"
+          lftp -e "set ssl:verify-certificate no; mirror --verbose --delete --exclude ^\.git/ $SOURCE_FTP_PATH $DEST_FTP_PATH" -u "$SOURCE_FTP_USER","$SOURCE_FTP_PASS" "$SOURCE_FTP_HOST"
+          lftp -e "set ssl:verify-certificate no; mirror --verbose --delete --exclude ^\.git/ $SOURCE_FTP_PATH $DEST_FTP_PATH" -u "$DEST_FTP_USER","$DEST_FTP_PASS" "$DEST_FTP_HOST"
           
         env:
           SOURCE_FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
