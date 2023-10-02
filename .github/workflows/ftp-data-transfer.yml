@@ -1,0 +1,42 @@
+name: Copy FTP Files
+
+on:
+  push:
+    branches: [ "deploy" ]
+  pull_request:
+    branches: [ "deploy" ]
+  workflow_dispatch: # Manually run this workflow
+
+jobs:
+  copy_files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        
+      - name: Install lftp
+        run: sudo apt-get update && sudo apt-get install lftp -y
+
+      - name: Copy Files
+        run: |
+          # Source FTP Server Details
+          SOURCE_FTP_HOST="${{ secrets.FTP_SERVER}}"
+          SOURCE_FTP_USER="${{ secrets.FTP_USERNAME }}"
+          SOURCE_FTP_PASS="${{ secrets.FTP_PASSWORD }}"
+          SOURCE_FTP_PATH="/"
+
+          # Destination FTP Server Details
+          DEST_FTP_HOST="${{ secrets.DEST_FTP_SERVER}}"
+          DEST_FTP_USER="${{ secrets.DEST_FTP_USERNAME }}"
+          DEST_FTP_PASS="${{ secrets.DEST_FTP_PASSWORD }}"
+          DEST_FTP_PATH="/"
+
+          # Use lftp to copy files
+          lftp -e "mirror --verbose --delete --exclude ^\.git/ $SOURCE_FTP_PATH $DEST_FTP_PATH" -u "$SOURCE_FTP_USER","$SOURCE_FTP_PASS" "$SOURCE_FTP_HOST"
+          lftp -e "mirror --verbose --delete --exclude ^\.git/ $SOURCE_FTP_PATH $DEST_FTP_PATH" -u "$DEST_FTP_USER","$DEST_FTP_PASS" "$DEST_FTP_HOST"
+          
+        env:
+          SOURCE_FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          SOURCE_FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          DEST_FTP_USERNAME: ${{ secrets.DEST_FTP_USERNAME }}
+          DEST_FTP_PASSWORD: ${{ secrets.DEST_FTP_PASSWORD }}
