@@ -8,7 +8,7 @@ on:
   workflow_dispatch: # Manually run this workflow
 
 jobs:
-  copy_files:
+  files-transfer:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
@@ -32,9 +32,9 @@ jobs:
           DEST_FTP_PATH="/"
 
           # Use lftp to copy files
-          lftp -e "set ftp:ssl-allow no; set ftp:passive-mode true; mirror --verbose --delete --exclude ^\.git/ $SOURCE_FTP_PATH $DEST_FTP_PATH" -u "$SOURCE_FTP_USER","$SOURCE_FTP_PASS" "$SOURCE_FTP_HOST"
-          lftp -e "set ftp:ssl-allow no; set ftp:passive-mode true; mirror --verbose --delete --exclude ^\.git/ $SOURCE_FTP_PATH $DEST_FTP_PATH" -u "$DEST_FTP_USER","$DEST_FTP_PASS" "$DEST_FTP_HOST"
-          
+          sudo lftp -e "set ftp:ssl-allow no; set ftp:passive-mode true; mirror --verbose --delete --exclude ^\.git/ $SOURCE_FTP_PATH $DEST_FTP_PATH" -u "$SOURCE_FTP_USER","$SOURCE_FTP_PASS" "$SOURCE_FTP_HOST"
+          sudo lftp -e "set ftp:ssl-allow no; set ftp:passive-mode true; mirror --verbose --delete --exclude ^\.git/ $SOURCE_FTP_PATH $DEST_FTP_PATH" -u "$DEST_FTP_USER","$DEST_FTP_PASS" "$DEST_FTP_HOST"
+                    
         env:
           SOURCE_FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
           SOURCE_FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
