@@ -32,9 +32,9 @@ jobs:
           DEST_FTP_PATH="/"
 
           # Use lftp to copy files
-          sudo lftp -e "set ftp:ssl-allow no; set ftp:passive-mode true; mirror --verbose --delete --exclude ^\.git/ $SOURCE_FTP_PATH $DEST_FTP_PATH" -u "$SOURCE_FTP_USER","$SOURCE_FTP_PASS" "$SOURCE_FTP_HOST"
-          sudo lftp -e "set ftp:ssl-allow no; set ftp:passive-mode true; mirror --verbose --delete --exclude ^\.git/ $SOURCE_FTP_PATH $DEST_FTP_PATH" -u "$DEST_FTP_USER","$DEST_FTP_PASS" "$DEST_FTP_HOST"
-                    
+          # Transfer files from server1 to server2 with SSL disabled and passive mode
+          sudo lftp -e "set ftp:ssl-allow no; set ftp:passive-mode true; open $SOURCE_FTP_HOST; mirror -R / /; bye" -u "$SOURCE_FTP_USERNAME","$SOURCE_FTP_PASSWORD" $DEST_FTP_HOST -u "$DEST_FTP_USERNAME","$DEST_FTP_PASSWORD"
+          
         env:
           SOURCE_FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
           SOURCE_FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
