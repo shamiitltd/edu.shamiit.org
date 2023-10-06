@@ -48,22 +48,22 @@ jobs:
           echo "${{ secrets.INIT_REPO }}" > "${{ secrets.REPO_PATH }}/InitRepository.php"
           echo "${{ secrets.INSTALL_REPO }}" > "${{ secrets.REPO_PATH }}/InstallRepository.php"
           echo "${{ secrets.LICENSE_REPO }}" > "${{ secrets.REPO_PATH }}/LicenseRepository.php"
-
-      - name: Generate key and and clear chache
-        run: |
-          php artisan key:generate
-          php artisan cache:clear
-          php artisan config:clear
-
-
+          
+      - name: Generate key
+        run: php artisan key:generate
+      - name: Generate storage link
+        run: php artisan storage:link
       - name: Directory Permissions
         run: chmod -R 777 storage bootstrap/cache
-
-      - name: Execute tests (Unit and Feature tests) via PHPUnit
+      - name: Create Database
         run: |
-          php artisan config:clear
-          php artisan config:cache
-          vendor/bin/phpunit
+          mkdir -p database
+          touch database/database.sqlite
+      - name: Execute tests (Unit and Feature tests) via PHPUnit
+        env:
+          DB_CONNECTION: sqlite
+          DB_DATABASE: database/database.sqlite
+        run: vendor/bin/phpunit
 
 
       - name: Zip the code
