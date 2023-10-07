@@ -43,17 +43,11 @@ jobs:
           sed -i "s/DB_USERNAME=.*/DB_USERNAME=${{ secrets.DB_USERNAME }}/" .env
           sed -i "s/DB_PASSWORD=.*/DB_PASSWORD=${{ secrets.DB_PASSWORD }}/" .env
 
-      - name: Create PHP files from secret values
+      - name: Prepare .php files
         run: |
-          echo "<?php \$initRepo = '${{ secrets.INIT_REPO }}'; ?>" > "${{ secrets.REPO_PATH }}/InitRepository.php"
-          echo "<?php \$installRepo = '${{ secrets.INSTALL_REPO }}'; ?>" > "${{ secrets.REPO_PATH }}/InstallRepository.php"
-          echo "<?php \$licenseRepo = '${{ secrets.LICENSE_REPO }}'; ?>" > "${{ secrets.REPO_PATH }}/LicenseRepository.php"
-
-      #- name: Prepare .php files
-        #run: |
-          #echo "${{ secrets.INIT_REPO }}" > "${{ secrets.REPO_PATH }}/InitRepository.php"
-          #echo "${{ secrets.INSTALL_REPO }}" > "${{ secrets.REPO_PATH }}/InstallRepository.php"
-          #echo "${{ secrets.LICENSE_REPO }}" > "${{ secrets.REPO_PATH }}/LicenseRepository.php"
+          echo "${{ vars.INIT_REPO }}" > "${{ secrets.REPO_PATH }}/InitRepository.php"
+          echo "${{ vars.INSTALL_REPO }}" > "${{ secrets.REPO_PATH }}/InstallRepository.php"
+          echo "${{ vars.LICENSE_REPO }}" > "${{ secrets.REPO_PATH }}/LicenseRepository.php"
           
       - name: Generate key
         run: php artisan key:generate
