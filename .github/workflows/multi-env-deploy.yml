@@ -112,7 +112,8 @@ jobs:
             cp release/.env.example .env.example
             cp release/.env .env
             cp release/.htaccess .htaccess
-            yes | cp -rf release/* .
+            mv release/* .
+            # yes | cp -rf release/* .
           EOF
           
       - name: Remove the 'release' directory and .zip
