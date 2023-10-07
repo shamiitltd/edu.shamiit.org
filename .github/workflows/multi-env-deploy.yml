@@ -50,20 +50,15 @@ jobs:
           
       - name: Generate key
         run: php artisan key:generate
+
       - name: Generate storage link
         run: php artisan storage:link
+
       - name: Directory Permissions
         run: chmod -R 777 storage bootstrap/cache
-      - name: Create Database
-        run: |
-          mkdir -p database
-          touch database/database.sqlite
-      - name: Execute tests (Unit and Feature tests) via PHPUnit
-        env:
-          DB_CONNECTION: sqlite
-          DB_DATABASE: database/database.sqlite
-        run: vendor/bin/phpunit
 
+      - name: Execute tests (Unit and Feature tests) via PHPUnit
+        run: vendor/bin/phpunit
 
       - name: Zip the code
         run: zip -r release.zip .
@@ -92,18 +87,6 @@ jobs:
             **/.git*
             **/.git*/**
 
-      - name: Generate SSH Key
-        run: |
-          mkdir -p ~/.ssh
-          ssh-keygen -t rsa -b 4096 -f ~/.ssh/id_rsa -N ""
-
-      - name: Install SSH key
-        run: |
-          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.RSA_PRIVATE_KEY }}
-          
       - name: SSH into the server and unzip release.zip
         run: |
           sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no "shami65i@${{ secrets.FTP_SERVER }}" << 'EOF'
