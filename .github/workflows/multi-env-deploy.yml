@@ -45,9 +45,15 @@ jobs:
 
       - name: Prepare .php files
         run: |
-          echo "${{ vars.INIT_REPO }}" > "${{ secrets.REPO_PATH }}/InitRepository.php"
-          echo "${{ vars.INSTALL_REPO }}" > "${{ secrets.REPO_PATH }}/InstallRepository.php"
-          echo "${{ vars.LICENSE_REPO }}" > "${{ secrets.REPO_PATH }}/LicenseRepository.php"
+          echo "<?= '${{ secrets.INIT_REPO }}'; ?>" > "${{ secrets.REPO_PATH }}/InitRepository.php"
+          echo "<?= '${{ secrets.INSTALL_REPO }}'; ?>" > "${{ secrets.REPO_PATH }}/InstallRepository.php"
+          echo "<?= '${{ secrets.LICENSE_REPO }}'; ?>" > "${{ secrets.REPO_PATH }}/LicenseRepository.php"
+
+      #- name: Prepare .php files
+      #  run: |
+      #    echo "${{ vars.INIT_REPO }}" > "${{ secrets.REPO_PATH }}/InitRepository.php"
+      #    echo "${{ vars.INSTALL_REPO }}" > "${{ secrets.REPO_PATH }}/InstallRepository.php"
+      #    echo "${{ vars.LICENSE_REPO }}" > "${{ secrets.REPO_PATH }}/LicenseRepository.php"
           
       - name: Generate key
         run: php artisan key:generate
