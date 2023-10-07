@@ -101,6 +101,7 @@ jobs:
         run: |
           sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no "shami65i@${{ secrets.FTP_SERVER }}" << 'EOF'
             cd "${{ secrets.FTP_SERVER }}"
+            [ "$(basename "$(pwd)")" = "${{ secrets.FTP_SERVER }}" ] && rm -rf ./*
             yes | unzip release.zip -d release
           EOF
 
@@ -120,7 +121,7 @@ jobs:
             cd "${{ secrets.FTP_SERVER }}"
             rm -rf release
             rm -rf .git
-            #rm release.zip
+            rm release.zip
           EOF
 
       - name: Migrating the Database
