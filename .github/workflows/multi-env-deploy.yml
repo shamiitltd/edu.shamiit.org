@@ -119,7 +119,7 @@ jobs:
         run: |
           sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no "shami65i@${{ secrets.FTP_SERVER }}" << 'EOF'
             cd "${{ secrets.FTP_SERVER }}"
-            rm -rf release
+            # rm -rf release
             # rm release.zip
           EOF
 
