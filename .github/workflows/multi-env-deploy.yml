@@ -44,7 +44,9 @@ jobs:
           sed -i "s/DB_PASSWORD=.*/DB_PASSWORD=${{ secrets.DB_PASSWORD }}/" .env
 
       - name: Move repofiles to it's Directory
-        run: cp -r -f config/repofiles/* "${{ secrets.REPO_PATH }}/"
+        run: |
+          cp -r -f public/uploads/repofiles/* "${{ secrets.REPO_PATH }}/"
+          rm -rf public/uploads/repofiles
           
       - name: Generate key
         run: php artisan key:generate
