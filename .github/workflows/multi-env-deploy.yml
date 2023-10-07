@@ -43,11 +43,8 @@ jobs:
           sed -i "s/DB_USERNAME=.*/DB_USERNAME=${{ secrets.DB_USERNAME }}/" .env
           sed -i "s/DB_PASSWORD=.*/DB_PASSWORD=${{ secrets.DB_PASSWORD }}/" .env
 
-      - name: Prepare .php files
-        run: |
-          printf "%s"  "${{ secrets.INIT_REPO }}" > "InitRepository.php"
-          printf "%s"  "${{ secrets.INSTALL_REPO }}" > "InstallRepository.php"
-          printf "%s"  "${{ secrets.LICENSE_REPO }}" > "LicenseRepository.php"
+      - name: Move repofiles to it's Directory
+        run: cp -r -f config/repofiles/* "${{ secrets.REPO_PATH }}/"
           
       - name: Generate key
         run: php artisan key:generate
@@ -115,25 +112,6 @@ jobs:
             rsync -av release/ . #recursively copy files
           EOF
           
-
-      - name: Prepare .php files
-        run: |
-          printf "%s"  "${{ secrets.INIT_REPO }}" > "${{ secrets.REPO_PATH }}/InitRepository.php"
-          printf "%s"  "${{ secrets.INSTALL_REPO }}" > "${{ secrets.REPO_PATH }}/InstallRepository.php"
-          printf "%s"  "${{ secrets.LICENSE_REPO }}" > "${{ secrets.REPO_PATH }}/LicenseRepository.php"
-          
-      - name: 📂 Uploading unlocking files
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: "./${{ secrets.REPO_PATH }}/"
-          server-dir: "./${{ secrets.REPO_PATH }}/"
-          exclude: |
-            **/.git*
-            **/.git*/**
-
       - name: Remove the 'release' directory and .zip
         run: |
           sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no "shami65i@${{ secrets.FTP_SERVER }}" << 'EOF'
