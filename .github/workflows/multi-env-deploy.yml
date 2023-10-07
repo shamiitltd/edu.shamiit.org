@@ -120,7 +120,7 @@ jobs:
             cd "${{ secrets.FTP_SERVER }}"
             rm -rf release
             rm -rf .git
-            rm release.zip
+            #rm release.zip
           EOF
 
       - name: Migrating the Database
