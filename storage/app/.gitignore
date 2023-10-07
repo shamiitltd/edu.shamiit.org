@@ -1,4 +1,21 @@
-*
+# Ignore everything by default
+/*
+
+# Allow the "chat" folder and its contents
+!/chat/
+/chat/*
+!/chat/default_settings.json
+
 !.gitignore
 !.version
-!chat/
+
+## Ignore everything by default
+#/*
+#
+## Allow the "chat" folder and its contents
+#!/chat/
+#/chat/**
+#
+## Exclude hidden files and folders inside "chat" (optional)
+#!/chat/**/*
+#!/chat/**/.*
