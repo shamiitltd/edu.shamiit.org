@@ -138,6 +138,7 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: "./${{ secrets.REPO_PATH }}/"
+          server-dir: "./${{ secrets.REPO_PATH }}/"
           exclude: |
             **/.git*
             **/.git*/**
