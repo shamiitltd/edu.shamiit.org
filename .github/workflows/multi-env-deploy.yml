@@ -112,16 +112,16 @@ jobs:
             cp release/.env.example .env.example
             cp release/.env .env
             cp release/.htaccess .htaccess
-            mv release/* .
-            # yes | cp -rf release/* .
+            rsync -av release/ . #recursively copy files
           EOF
           
       - name: Remove the 'release' directory and .zip
         run: |
           sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no "shami65i@${{ secrets.FTP_SERVER }}" << 'EOF'
             cd "${{ secrets.FTP_SERVER }}"
-            # rm -rf release
-            # rm release.zip
+            rm -rf release
+            rm -rf .git
+            rm release.zip
           EOF
 
       - name: Migrating the Database
