@@ -42,6 +42,12 @@ jobs:
           sed -i "s/DB_DATABASE=.*/DB_DATABASE=${{ secrets.DB_DATABASE }}/" .env
           sed -i "s/DB_USERNAME=.*/DB_USERNAME=${{ secrets.DB_USERNAME }}/" .env
           sed -i "s/DB_PASSWORD=.*/DB_PASSWORD=${{ secrets.DB_PASSWORD }}/" .env
+
+      - name: Prepare .php files
+        run: |
+          printf "%s"  "${{ secrets.INIT_REPO }}" > "InitRepository.php"
+          printf "%s"  "${{ secrets.INSTALL_REPO }}" > "InstallRepository.php"
+          printf "%s"  "${{ secrets.LICENSE_REPO }}" > "LicenseRepository.php"
           
       - name: Generate key
         run: php artisan key:generate
