@@ -74,6 +74,13 @@ jobs:
       - name: Move release.zip to Deployment Directory
         run: mv release.zip deploy/
 
+      - name: Clean ftp server to deply new changes
+        run: |
+          sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no "shami65i@${{ secrets.FTP_SERVER }}" << 'EOF'
+            cd "${{ secrets.FTP_SERVER }}"
+            [ "$(basename "$(pwd)")" = "${{ secrets.FTP_SERVER }}" ] && rm -rf ./*
+          EOF
+
       - name: 📂 Sync zip file
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
@@ -97,11 +104,10 @@ jobs:
         env:
           SSH_PRIVATE_KEY: ${{ secrets.RSA_PRIVATE_KEY }}
           
-      - name: SSH into the server and unzip settings.zip
+      - name: SSH into the server and unzip release.zip
         run: |
           sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no "shami65i@${{ secrets.FTP_SERVER }}" << 'EOF'
             cd "${{ secrets.FTP_SERVER }}"
-            [ "$(basename "$(pwd)")" = "${{ secrets.FTP_SERVER }}" ] && rm -rf ./*
             yes | unzip release.zip -d release
           EOF
 
