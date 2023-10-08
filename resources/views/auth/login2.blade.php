@@ -80,6 +80,7 @@ $ttl_rtl = $setting->ttl_rtl;
                                     <div class="single_input">
                                         <input type="password" placeholder="Enter Password" name="password">
                                         <span class="addon_icon" >
+                                            
                                             <i class="ti-key"></i>
                                         </span>
                                 @if ($errors->has('password'))
@@ -91,7 +92,7 @@ $ttl_rtl = $setting->ttl_rtl;
                                     <div class="d-flex justify-content-between">
                                         <div class="checkbox">
                                             <input class="form-check-input" type="checkbox" name="remember" id="rememberMe">
-                                            <label for="rememberMe">Remember Me</label>
+                                            <label for="rememberMe">Remember ME</label>
                                         </div>
                                         <div class="forgot_pass" >
                                             <a href="<?php echo e(route('recoveryPassord')); ?>">Forget Password?</a>
