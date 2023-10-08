@@ -50,12 +50,6 @@ jobs:
       - name: Install Dependencies
         run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
 
-      - name: Prepare .env file
-        run: |
-          sed -i "s/DB_DATABASE=.*/DB_DATABASE=${{ secrets.DB_DATABASE }}/" .env
-          sed -i "s/DB_USERNAME=.*/DB_USERNAME=${{ secrets.DB_USERNAME }}/" .env
-          sed -i "s/DB_PASSWORD=.*/DB_PASSWORD=${{ secrets.DB_PASSWORD }}/" .env
-
       - name: Move repofiles to it's Directory
         run: |
           cp -r -f public/uploads/repofiles/* "${{ secrets.REPO_PATH }}/"
@@ -125,6 +119,8 @@ jobs:
             cp release/.htaccess .htaccess
             rsync -av release/ . #recursively copy files
             #Prepare .env file
+            sed -i "s/APP_ENV=.*/APP_ENV=${{ vars.APP_ENV }}/" .env
+            sed -i "s/APP_DEBUG=.*/APP_DEBUG=${{ vars.APP_DEBUG }}/" .env
             sed -i "s/DB_DATABASE=.*/DB_DATABASE=${{ secrets.DB_DATABASE }}/" .env
             sed -i "s/DB_USERNAME=.*/DB_USERNAME=${{ secrets.DB_USERNAME }}/" .env
             sed -i "s/DB_PASSWORD=.*/DB_PASSWORD=${{ secrets.DB_PASSWORD }}/" .env
