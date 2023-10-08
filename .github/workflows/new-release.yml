@@ -87,7 +87,7 @@ jobs:
 
 
   PRODUCTION:
-    name: Deploy in TEST
+    name: Deploy in NEWSERVER
     runs-on: ubuntu-latest
     environment: NEWSERVER
     needs: BUILD
