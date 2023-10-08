@@ -1,4 +1,4 @@
-﻿name: Clean, Build, Deploy, Migrate Multi-env
+﻿name: Multi-ENV Clean, Build, Deploy, Migrate
 
 on:
   push:
