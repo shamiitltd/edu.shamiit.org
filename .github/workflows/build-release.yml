@@ -1,4 +1,4 @@
-name: Server Clean, Build, Deploy, Migrate
+name: New Server Clean, Build, Deploy, Migrate
 
 on:
   workflow_dispatch: # to manually run this workflow
