@@ -273,7 +273,7 @@
                                                 <p class="text-white mb-0">@lang('common.email'):
                                                     {{isset(generalSetting()->email)?generalSetting()->email:'admin@demo.com'}},
                                                     @lang('common.phone'):
-                                                    {{isset(generalSetting()->phone)?generalSetting()->phone:'+8801841412141'}}
+                                                    {{isset(generalSetting()->phone)?generalSetting()->phone:'+919548450539'}}
                                                 </p>
                                             </div>
                                             <div class="offset-2"></div>

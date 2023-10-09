@@ -122,10 +122,10 @@ class CreateSmCustomLinksTable extends Migration
         $s->link_label16 = 'link_label16';
         $s->link_href16  = 'https://edu.shamiit.org';
 
-        // $s->facebook_url = 'https://www.facebook.com/SchoolManagementSoftwarePro/';
-        // $s->twitter_url  = 'https://twitter.com/infix_official';
-        // $s->dribble_url  = 'https://dribbble.com/codethemes';
-        // $s->linkedin_url  = 'https://www.linkedin.com/in/infix-edu-875458190/';
+        // $s->facebook_url = 'https://www.facebook.com/shamiitLtd';
+        // $s->twitter_url  = 'https://twitter.com/Shamiit_ltd';
+        // $s->dribble_url  = '';
+        // $s->linkedin_url  = 'https://in.linkedin.com/company/shamiit';
         // $s->behance_url  = '';
         $s->save();
 

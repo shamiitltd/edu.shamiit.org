@@ -875,7 +875,7 @@
                                             <div class="company_info">
                                                 <h3>{{isset(generalSetting()->school_name)?generalSetting()->school_name:'SHAMIIT School Management ERP'}}</h3>
                                                 <h5>{{isset(generalSetting()->address)?generalSetting()->address:'SHAMIIT School Address'}}</h5>
-                                                <h5>@lang('common.email'): {{isset(generalSetting()->email)?generalSetting()->email:'admin@demo.com'}}, @lang('common.phone'): {{isset(generalSetting()->phone)?generalSetting()->phone:'+8801841412141'}}</h5>
+                                                <h5>@lang('common.email'): {{isset(generalSetting()->email)?generalSetting()->email:'admin@demo.com'}}, @lang('common.phone'): {{isset(generalSetting()->phone)?generalSetting()->phone:'+919548450539'}}</h5>
                                             </div>
                                         </div>
                                     </td>
@@ -1476,7 +1476,7 @@
                                         <div class="company_info">
                                             <h3>{{isset(generalSetting()->school_name)?generalSetting()->school_name:'SHAMIIT School Management ERP'}}</h3>
                                             <h5>{{isset(generalSetting()->address)?generalSetting()->address:'SHAMIIT School Address'}}</h5>
-                                            <h5>@lang('exam.email'): {{isset(generalSetting()->email)?generalSetting()->email:'admin@demo.com'}}, @lang('exam.phone'): {{isset(generalSetting()->phone)?generalSetting()->phone:'+8801841412141 '}}</h5>
+                                            <h5>@lang('exam.email'): {{isset(generalSetting()->email)?generalSetting()->email:'admin@demo.com'}}, @lang('exam.phone'): {{isset(generalSetting()->phone)?generalSetting()->phone:'+919548450539 '}}</h5>
                         </div>
                         <div class="invoice_wrapper fullwidth_90">
                             <div class="invoice_print mb_30">
@@ -1499,7 +1499,7 @@
                                                         <div class="company_info">
                                                             <h3>{{isset(generalSetting()->school_name)?generalSetting()->school_name:'SHAMIIT School Management ERP'}}</h3>
                                                             <h5>{{isset(generalSetting()->address)?generalSetting()->address:'SHAMIIT School Address'}}</h5>
-                                                            <h5>@lang('common.email'): {{isset(generalSetting()->email)?generalSetting()->email:'admin@demo.com'}}, @lang('common.phone'): {{isset(generalSetting()->phone)?generalSetting()->phone:'+8801841412141 '}}</h5>
+                                                            <h5>@lang('common.email'): {{isset(generalSetting()->email)?generalSetting()->email:'admin@demo.com'}}, @lang('common.phone'): {{isset(generalSetting()->phone)?generalSetting()->phone:'+919548450539 '}}</h5>
                                                         </div>
                                                     </div>
                                                 </td>

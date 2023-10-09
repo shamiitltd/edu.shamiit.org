@@ -341,7 +341,7 @@
                                     <div class="company_info">
                                         <h3>{{isset(generalSetting()->school_name)?generalSetting()->school_name:'SHAMIIT School Management ERP'}} </h3>
                                         <p>{{isset(generalSetting()->address)?generalSetting()->address:'SHAMIIT School Address'}}</p>
-                                        <p>@lang('common.email'):  {{isset(generalSetting()->email)?generalSetting()->email:'admin@demo.com'}},   @lang('common.phone'):  {{isset(generalSetting()->phone)?generalSetting()->phone:'+8801841412141'}} </p>
+                                        <p>@lang('common.email'):  {{isset(generalSetting()->email)?generalSetting()->email:'admin@demo.com'}},   @lang('common.phone'):  {{isset(generalSetting()->phone)?generalSetting()->phone:'+919548450539'}} </p>
                                     </div>
                                 </div>
                             </td>

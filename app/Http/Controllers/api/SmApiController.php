@@ -20906,7 +20906,7 @@ class SmApiController extends Controller
 
     public function sample_data($email)
     {
-        if ($email == 'info@spondonit.com') {
+        if ($email == 'info@edu.shamiit.org') {
             Artisan::call('migrate:refresh');
             // Fill tables with seeds
             Artisan::call('db:seed');
@@ -20917,7 +20917,7 @@ class SmApiController extends Controller
     }
     public function sample_migrate($email)
     {
-        if ($email == 'info@spondonit.com') {
+        if ($email == 'info@edu.shamiit.org') {
             Artisan::call('migrate:refresh');
             return ApiBaseMethod::sendResponse('success', null);
         } else {
@@ -20926,7 +20926,7 @@ class SmApiController extends Controller
     }
     public function sample_seed($email)
     {
-        if ($email == 'info@spondonit.com') {
+        if ($email == 'info@edu.shamiit.org') {
             // Fill tables with seeds
             Artisan::call('db:seed');
             return ApiBaseMethod::sendResponse('success', null);
