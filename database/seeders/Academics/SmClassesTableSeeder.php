@@ -62,7 +62,7 @@ class SmClassesTableSeeder extends Seeder
 
                     SmParent::factory()->times(1)->create([
                         'school_id' => $class->school_id,
-                        'guardians_email' => 'guardian_' . $student->id . '@infixedu.com',
+                        'guardians_email' => 'guardian_' . $student->id . '@edu.shamiit.org',
                     ])->each(function ($parent) use ($student) {
                         $student->parent_id = $parent->id;
                         $student->save();
@@ -102,7 +102,7 @@ class SmClassesTableSeeder extends Seeder
                 ];
 
                 SmStaff::factory()->times(1)->create([
-                    'email' => 'staff_'.$class_section->id.'@infixedu.com',
+                    'email' => 'staff_'.$class_section->id.'@edu.shamiit.org',
                     'school_id' => $class_section->school_id,
                 ])->each(function($staff){
 
