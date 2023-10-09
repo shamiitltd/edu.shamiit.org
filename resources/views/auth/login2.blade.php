@@ -92,7 +92,7 @@ $ttl_rtl = $setting->ttl_rtl;
                                     <div class="d-flex justify-content-between">
                                         <div class="checkbox">
                                             <input class="form-check-input" type="checkbox" name="remember" id="rememberMe">
-                                            <label for="rememberMe">Remember ME</label>
+                                            <label for="rememberMe">Remember Me</label>
                                         </div>
                                         <div class="forgot_pass" >
                                             <a href="<?php echo e(route('recoveryPassord')); ?>">Forget Password?</a>
