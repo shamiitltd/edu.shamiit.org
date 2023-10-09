@@ -181,11 +181,11 @@
 							<h4>Health Care</h4>
 						</div>
 						<ul>
-							<li><a href="#"></a>Infix Health Care</a></li><a href="#">
-                            <li><a href="#"></a>Infix Children’s Health</a></li>
+							<li><a href="#"></a>SHAMIIT Health Care</a></li><a href="#">
+                            <li><a href="#"></a>SHAMIIT Children’s Health</a></li>
 							<li><a href="#"></a>Interdisciplinary Research</a></li>
-							<li><a href="#"></a>Infix Online</a></li>
-							<li><a href="#"></a>Infix Research Centers</a></li>
+							<li><a href="#"></a>SHAMIIT Online</a></li>
+							<li><a href="#"></a>SHAMIIT Research Centers</a></li>
 						</ul>
 					</aside>
 				</div>
@@ -195,11 +195,11 @@
 							<h4>About Infix</h4>
 						</div>
 						<ul>
-							<li><a href="#"></a>Infix Health Care</a></li><a href="#">
-                            <li><a href="#"></a>Infix Children’s Health</a></li>
+							<li><a href="#"></a>SHAMIIT Health Care</a></li><a href="#">
+                            <li><a href="#"></a>SHAMIIT Children’s Health</a></li>
 							<li><a href="#"></a>Interdisciplinary Research</a></li>
-							<li><a href="#"></a>Infix Online</a></li>
-							<li><a href="#"></a>Infix Research Centers</a></li>
+							<li><a href="#"></a>SHAMIIT Online</a></li>
+							<li><a href="#"></a>SHAMIIT Research Centers</a></li>
 						</ul>
 					</aside>
 				</div>

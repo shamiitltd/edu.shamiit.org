@@ -348,9 +348,9 @@ return [
 
 "expaire_date" => "Fecha de caducidad",
 
-"infix_edu" => "Infix Edu",
+"infix_edu" => "SHAMIIT Edu",
 
-"infix_clasified" => "Infix clasificado",
+"infix_clasified" => "SHAMIIT clasificado",
 
 "date_|_day" => "Fecha | Día",
 

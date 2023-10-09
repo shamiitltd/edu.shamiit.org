@@ -69,8 +69,8 @@
                 <img class="logo-img" style="max-width: 120px" src="{{ url('/')}}/{{generalSetting()->logo }}" alt=""> 
             </td>
             <td> 
-                <h3 style="font-size:22px !important" class="text-white"> {{isset(generalSetting()->school_name)?generalSetting()->school_name:'Infix School Management ERP'}} </h3> 
-                <p style="font-size:18px !important" class="text-white mb-0"> {{isset(generalSetting()->address)?generalSetting()->address:'Infix School Address'}} </p>  
+                <h3 style="font-size:22px !important" class="text-white"> {{isset(generalSetting()->school_name)?generalSetting()->school_name:'SHAMIIT School Management ERP'}} </h3> 
+                <p style="font-size:18px !important" class="text-white mb-0"> {{isset(generalSetting()->address)?generalSetting()->address:'SHAMIIT School Address'}} </p>  
             </td>
             <td style="text-aligh:center"> 
                 <p style="font-size:14px !important; border-bottom:1px solid gray" align="left" class="text-white">@lang('common.role'): {{ $role->name}} </p> 
