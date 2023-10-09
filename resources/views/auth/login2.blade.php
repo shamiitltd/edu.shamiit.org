@@ -80,6 +80,7 @@ $ttl_rtl = $setting->ttl_rtl;
                                     <div class="single_input">
                                         <input type="password" placeholder="Enter Password" name="password">
                                         <span class="addon_icon" >
+                                            
                                             <i class="ti-key"></i>
                                         </span>
                                 @if ($errors->has('password'))

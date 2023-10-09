@@ -32,7 +32,7 @@ class CreateSmTestimonialsTable extends Migration
                 'designation' => 'CEO',
                 'institution_name' => 'Google',
                 'image' => 'public/uploads/testimonial/testimonial_1.jpg',
-                'description' => 'its vast! Infix has more additional feature that will expect in a complete solution.',
+                'description' => 'its vast! SHAMIIT has more additional feature that will expect in a complete solution.',
                 'created_at' => date('Y-m-d h:i:s')
             ],
             [
@@ -40,7 +40,7 @@ class CreateSmTestimonialsTable extends Migration
                 'designation' => 'Chairman',
                 'institution_name' => 'Linkdin',
                 'image' => 'public/uploads/testimonial/testimonial_2.jpg',
-                'description' => 'its vast! Infix has more additional feature that will expect in a complete solution.',
+                'description' => 'its vast! SHAMIIT has more additional feature that will expect in a complete solution.',
                 'created_at' => date('Y-m-d h:i:s')
             ],
         ]);

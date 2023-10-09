@@ -346,7 +346,7 @@
                                                         <div class="card_text_left hId">
                                                             @if($id_card->student_name==1)
                                                                 <div id="gHName">
-                                                                    <h4 style="line-height:1.02; margin-top: 0; margin-bottom: 0px; font-size:11px; font-weight:600 ; text-transform: uppercase; color: #2656a6;">InfixEdu</h4>
+                                                                    <h4 style="line-height:1.02; margin-top: 0; margin-bottom: 0px; font-size:11px; font-weight:600 ; text-transform: uppercase; color: #2656a6;">EDUSHAMIIT</h4>
                                                                 </div>
                                                             @endif
                                                         </div>
@@ -354,7 +354,7 @@
                                     
                                                     <div class="card_text_head hStudentName" style="line-height:1.02; display: flex; align-items: center; justify-content: space-between; width: 100%; margin-bottom:10px"> 
                                                         <div class="card_text_left">
-                                                            {{-- <h3 style="line-height:1.02; margin-top: 0; margin-bottom: 0px; font-size:11px; font-weight:600 ; text-transform: uppercase; color: #2656a6;">InfixEdu</h3> --}}
+                                                            {{-- <h3 style="line-height:1.02; margin-top: 0; margin-bottom: 0px; font-size:11px; font-weight:600 ; text-transform: uppercase; color: #2656a6;">EDUSHAMIIT</h3> --}}
                                                             @if($id_card->phone_number == 1)
                                                                 <div id="hPhoneNumber">
                                                                     <h4 style="line-height:1.02; margin-top: 0; margin-bottom: 3px; font-size:10px; font-weight:500">phone : 0123456789</h4>
@@ -389,7 +389,7 @@
                                                     <div class="card_text_head " style="line-height:1.02; display: flex; align-items: center; justify-content: space-between; width: 100%; margin-top:5px"> 
                                                         @if($id_card->student_address==1)
                                                             <div class="card_text_left" id="gHAddress">
-                                                                <h3 style="line-height:1.02; margin-top: 0; margin-bottom: 5px; font-size:10px; font-weight:500; text-transform:uppercase">89/2 Panthapath, Dhaka 1215, Bangladesh</h3>
+                                                                <h3 style="line-height:1.02; margin-top: 0; margin-bottom: 5px; font-size:10px; font-weight:500; text-transform:uppercase">Dayanatpur, Jewar, UP - 203135</h3>
                                                                 <h4 style="line-height:1.02; margin-top: 0; margin-bottom: 0; font-size:9px; text-transform: uppercase; font-weight:500">@lang('common.address')</h4>
                                                             </div>
                                                         @endif
@@ -471,7 +471,7 @@
                                                     <div class="card_text_head " style="line-height:1.02; display: flex; align-items: center; justify-content: space-between; width: 100%; margin-top:5px"> 
                                                         @if($id_card->student_address==1)
                                                             <div class="card_text_left gVAddress">
-                                                                <h3 style="line-height:1.02; margin-top: 0; margin-bottom: 5px; font-size:10px; font-weight:500; text-transform:uppercase;">89/2 Panthapath, Dhaka 1215, Bangladesh </h3>
+                                                                <h3 style="line-height:1.02; margin-top: 0; margin-bottom: 5px; font-size:10px; font-weight:500; text-transform:uppercase;">Dayanatpur, Jewar, UP - 203135 </h3>
                                                                 <h4 style="line-height:1.02; margin-top: 0; margin-bottom: 0; font-size:9px; text-transform: uppercase; font-weight:500">Address</h4>
                                                             </div>
                                                         @endif

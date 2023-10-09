@@ -46,7 +46,7 @@ class CreateInfixModuleManagersTable extends Migration
 
             $s = new InfixModuleManager();
             $s->name = $name;
-            $s->email = 'support@spondonit.com';
+            $s->email = 'support@edu.shamiit.org';
             $s->notes = $notes;
             $s->version = $version;
             $s->update_url = $url;
@@ -70,7 +70,7 @@ class CreateInfixModuleManagersTable extends Migration
             $s = new InfixModuleManager();
             $s->name = $name;
             $s->is_default = 1;
-            $s->email = 'support@spondonit.com';
+            $s->email = 'support@edu.shamiit.org';
             $s->notes = $notes;
             $s->version = $version;
             $s->update_url = $url;
@@ -94,7 +94,7 @@ class CreateInfixModuleManagersTable extends Migration
             $s = new InfixModuleManager();
             $s->name = $name;
             $s->is_default = 1;
-            $s->email = 'support@spondonit.com';
+            $s->email = 'support@edu.shamiit.org';
             $s->notes = $notes;
             $s->version = $version;
             $s->update_url = $url;
@@ -116,7 +116,7 @@ class CreateInfixModuleManagersTable extends Migration
 
             $s = new InfixModuleManager();
             $s->name = $name;
-            $s->email = 'support@spondonit.com';
+            $s->email = 'support@edu.shamiit.org';
             $s->notes = $notes;
             $s->is_default = 1;
             $s->version = $version;
@@ -139,7 +139,7 @@ class CreateInfixModuleManagersTable extends Migration
 
             $s = new InfixModuleManager();
             $s->name = $name;
-            $s->email = 'support@spondonit.com';
+            $s->email = 'support@edu.shamiit.org';
             $s->notes = $notes;
             $s->version = $version;
             $s->update_url = $url;
@@ -162,7 +162,7 @@ class CreateInfixModuleManagersTable extends Migration
 
             $s = new InfixModuleManager();
             $s->name = $name;
-            $s->email = 'support@spondonit.com';
+            $s->email = 'support@edu.shamiit.org';
             $s->notes = $notes;
             $s->version = $version;
             $s->update_url = $url;
@@ -184,7 +184,7 @@ class CreateInfixModuleManagersTable extends Migration
 
             $s = new InfixModuleManager();
             $s->name = $name;
-            $s->email = 'support@spondonit.com';
+            $s->email = 'support@edu.shamiit.org';
             $s->notes = $notes;
             $s->version = $version;
             $s->update_url = $url;
@@ -199,10 +199,10 @@ class CreateInfixModuleManagersTable extends Migration
             $name = 'Zoom';
             $s = new InfixModuleManager();
             $s->name = $name;
-            $s->email = 'support@spondonit.com';
+            $s->email = 'support@edu.shamiit.org';
             $s->notes = "This is Zoom module for live virtual class and meeting in this system at a time. Thanks for using.";
             $s->version = "1.0";
-            $s->update_url = "https://spondonit.com/contact";
+            $s->update_url = "https://shamiit.com/contact";
             $s->is_default = 0;
             $s->addon_url = "https://codecanyon.net/item/infixedu-zoom-live-class/27623128?s_rank=12";
             $s->installed_domain = url('/');
@@ -213,12 +213,12 @@ class CreateInfixModuleManagersTable extends Migration
             $name = 'OnlineExam';
             $s = new InfixModuleManager();
             $s->name = $name;
-            $s->email = 'support@spondonit.com';
+            $s->email = 'support@edu.shamiit.org';
             $s->notes = "This is OnlineExam module for take online exam Thanks for using.";
             $s->version = "1.0";
-            $s->update_url = "https://spondonit.com/contact";
+            $s->update_url = "https://shamiit.com/contact";
             $s->is_default = 0;
-            $s->addon_url = "mailto:support@spondonit.com";
+            $s->addon_url = "mailto:support@edu.shamiit.org";
             $s->installed_domain = url('/');
             $s->activated_date = date('Y-m-d');
             $s->save();
@@ -227,10 +227,10 @@ class CreateInfixModuleManagersTable extends Migration
             $name = 'ParentRegistration';
             $s = new InfixModuleManager();
             $s->name = $name;
-            $s->email = 'support@spondonit.com';
+            $s->email = 'support@edu.shamiit.org';
             $s->notes = "This is Parent Registration module for Registration. Thanks for using.";
             $s->version = "1.0";
-            $s->update_url = "https://spondonit.com/contact";
+            $s->update_url = "https://shamiit.com/contact";
             $s->is_default = 0;
             $s->addon_url = 'https://aorasoft.com';
             $s->installed_domain = url('/');
@@ -243,10 +243,10 @@ class CreateInfixModuleManagersTable extends Migration
 
             $s = new InfixModuleManager();
             $s->name = 'RazorPay';
-            $s->email = 'support@spondonit.com';
+            $s->email = 'support@edu.shamiit.org';
             $s->notes = "This is Razor Pay module for Online payemnt. Thanks for using.";
             $s->version = "1.0";
-            $s->update_url = "https://spondonit.com/contact";
+            $s->update_url = "https://shamiit.com/contact";
             $s->is_default = 0;
             $s->addon_url = "https://codecanyon.net/item/razorpay-payment-gateway-for-infixedu/27721206?s_rank=11";
             $s->installed_domain = url('/');
@@ -257,12 +257,12 @@ class CreateInfixModuleManagersTable extends Migration
             $name = 'BBB';
             $s = new InfixModuleManager();
             $s->name = 'BBB';
-            $s->email = 'support@spondonit.com';
+            $s->email = 'support@edu.shamiit.org';
             $s->notes = "This is BigBlueButton module for live virtual class and meeting in this system at a time. Thanks for using.";
             $s->version = "1.0";
-            $s->update_url = "https://spondonit.com/contact";
+            $s->update_url = "https://shamiit.com/contact";
             $s->is_default = 0;
-            $s->addon_url = "mailto:support@spondonit.com";
+            $s->addon_url = "mailto:support@edu.shamiit.org";
             $s->installed_domain = url('/');
             $s->activated_date = date('Y-m-d');
             $s->save();
@@ -272,12 +272,12 @@ class CreateInfixModuleManagersTable extends Migration
             $name = 'Jitsi';
             $s = new InfixModuleManager();
             $s->name = 'Jitsi';
-            $s->email = 'support@spondonit.com';
+            $s->email = 'support@edu.shamiit.org';
             $s->notes = "This is Jitsi module for live virtual class and meeting in this system at a time. Thanks for using.";
             $s->version = "1.0";
-            $s->update_url = "https://spondonit.com/contact";
+            $s->update_url = "https://shamiit.com/contact";
             $s->is_default = 0;
-            $s->addon_url = "mailto:support@spondonit.com";
+            $s->addon_url = "mailto:support@edu.shamiit.org";
             $s->installed_domain = url('/');
             $s->activated_date = date('Y-m-d');
             $s->save();
@@ -287,12 +287,12 @@ class CreateInfixModuleManagersTable extends Migration
             $name = 'Saas';
             $s = new InfixModuleManager();
             $s->name = 'Saas';
-            $s->email = 'support@spondonit.com';
+            $s->email = 'support@edu.shamiit.org';
             $s->notes = "This is Saas module for manage multiple school or institutes.Every school managed by individual admin. Thanks for using.";
             $s->version = "1.1";
-            $s->update_url = "https://spondonit.com/contact";
+            $s->update_url = "https://shamiit.com/contact";
             $s->is_default = 0;           
-            $s->addon_url = "mailto:support@spondonit.com";
+            $s->addon_url = "mailto:support@edu.shamiit.org";
             $s->installed_domain = url('/');
             $s->activated_date = date('Y-m-d');
             $s->save();
@@ -302,10 +302,10 @@ class CreateInfixModuleManagersTable extends Migration
             $bulk_print = 'BulkPrint';
             $bulk_print = new InfixModuleManager();
             $bulk_print->name = 'BulkPrint';
-            $bulk_print->email = 'support@spondonit.com';
+            $bulk_print->email = 'support@edu.shamiit.org';
             $bulk_print->notes = "This is Bulkprint module for print invoice ,certificate and id card. Thanks for using.";
             $bulk_print->version = "1.0";
-            $bulk_print->update_url = "https://spondonit.com/contact";
+            $bulk_print->update_url = "https://shamiit.com/contact";
             $bulk_print->is_default = 1;
             $bulk_print->addon_url = "https://codecanyon.net/item/infixedu-zoom-live-class/27623128?s_rank=12";
             $bulk_print->installed_domain = url('/');
@@ -316,12 +316,12 @@ class CreateInfixModuleManagersTable extends Migration
             $HimalayaSms = 'HimalayaSms';
             $HimalayaSms = new InfixModuleManager();
             $HimalayaSms->name = "HimalayaSms";
-            $HimalayaSms->email = 'support@spondonit.com';
+            $HimalayaSms->email = 'support@edu.shamiit.org';
             $HimalayaSms->notes = "This is sms gateway module for sending sms via api. Thanks for using.";
             $HimalayaSms->version = "1.0";
-            $HimalayaSms->update_url = "https://spondonit.com/contact";
+            $HimalayaSms->update_url = "https://shamiit.com/contact";
             $HimalayaSms->is_default = 1;
-            $HimalayaSms->addon_url = "mailto:support@spondonit.com";
+            $HimalayaSms->addon_url = "mailto:support@edu.shamiit.org";
             $HimalayaSms->installed_domain = url('/');
             $HimalayaSms->activated_date = date('Y-m-d');
             $HimalayaSms->save();
@@ -330,12 +330,12 @@ class CreateInfixModuleManagersTable extends Migration
             $XenditPayment = 'XenditPayment';
             $XenditPayment = new InfixModuleManager();
             $XenditPayment->name = 'XenditPayment';
-            $XenditPayment->email = 'support@spondonit.com';
+            $XenditPayment->email = 'support@edu.shamiit.org';
             $XenditPayment->notes = "This is online payment gateway module for specially indonesian currency. Thanks for using.";
             $XenditPayment->version = "1.0";
-            $XenditPayment->update_url = "https://spondonit.com/contact";
+            $XenditPayment->update_url = "https://shamiit.com/contact";
             $XenditPayment->is_default = 1;
-            $XenditPayment->addon_url = "mailto:support@spondonit.com";
+            $XenditPayment->addon_url = "mailto:support@edu.shamiit.org";
             $XenditPayment->installed_domain = url('/');
             $XenditPayment->activated_date = date('Y-m-d');
             $XenditPayment->save();
@@ -344,12 +344,12 @@ class CreateInfixModuleManagersTable extends Migration
              $XenditPayment = 'AppSlider';
              $XenditPayment = new InfixModuleManager();
              $XenditPayment->name = 'AppSlider';
-             $XenditPayment->email = 'support@spondonit.com';
+             $XenditPayment->email = 'support@edu.shamiit.org';
              $XenditPayment->notes = "This is for school affiliate banner for mobile app. Thanks for using.";
              $XenditPayment->version = "1.0";
-             $XenditPayment->update_url = "https://spondonit.com/contact";
+             $XenditPayment->update_url = "https://shamiit.com/contact";
              $XenditPayment->is_default = 0;
-             $XenditPayment->addon_url = "mailto:support@spondonit.com";
+             $XenditPayment->addon_url = "mailto:support@edu.shamiit.org";
              $XenditPayment->installed_domain = url('/');
              $XenditPayment->activated_date = date('Y-m-d');
              $XenditPayment->save();
@@ -357,10 +357,10 @@ class CreateInfixModuleManagersTable extends Migration
              //KhaltiPayment
             $s = new InfixModuleManager();
             $s->name = "KhaltiPayment";
-            $s->email = 'support@spondonit.com';
+            $s->email = 'support@edu.shamiit.org';
             $s->notes = "Khalti Is A Online Payment Gatway Module For Collect Fees Online";
             $s->version = 1.0;
-            $s->update_url = "support@spondonit.com";
+            $s->update_url = "support@edu.shamiit.org";
             $s->is_default = 0;
             $s->purchase_code = null;
             $s->installed_domain = null;
@@ -370,12 +370,12 @@ class CreateInfixModuleManagersTable extends Migration
             //Raudhahpay
             $s = new InfixModuleManager();
             $s->name = 'Raudhahpay';
-            $s->email = 'support@spondonit.com';
+            $s->email = 'support@edu.shamiit.org';
             $s->notes = "This is Saas module for Online Payment. Thanks for using.";
             $s->version = "1.0";
-            $s->update_url = "https://spondonit.com/contact";
+            $s->update_url = "https://shamiit.com/contact";
             $s->is_default = 0;
-            $s->addon_url = "mailto:support@spondonit.com";
+            $s->addon_url = "mailto:support@edu.shamiit.org";
             $s->installed_domain = url('/');
             $s->activated_date = date('Y-m-d');
             $s->save();
@@ -392,7 +392,7 @@ class CreateInfixModuleManagersTable extends Migration
 
             $s = new InfixModuleManager();
             $s->name = $name;
-            $s->email = 'support@spondonit.com';
+            $s->email = 'support@edu.shamiit.org';
             $s->notes = $notes;
             $s->version = $version;
             $s->update_url = $url;
@@ -414,7 +414,7 @@ class CreateInfixModuleManagersTable extends Migration
 
             $s = new InfixModuleManager();
             $s->name = $name;
-            $s->email = 'support@spondonit.com';
+            $s->email = 'support@edu.shamiit.org';
             $s->notes = $notes;
             $s->version = $version;
             $s->update_url = $url;
@@ -427,7 +427,7 @@ class CreateInfixModuleManagersTable extends Migration
 
             $s = new InfixModuleManager();
             $s->name = 'ExamPlan';
-            $s->email = 'support@spondonit.com';
+            $s->email = 'support@edu.shamiit.org';
             $s->notes = "Exam Plan and Seat Plan Module";
             $s->version = 1.0;
             $s->update_url = url('/');;
@@ -440,10 +440,10 @@ class CreateInfixModuleManagersTable extends Migration
             //InfixBiometrics 
             $s = new InfixModuleManager();
             $s->name = "InfixBiometrics";
-            $s->email = 'support@spondonit.com';
+            $s->email = 'support@edu.shamiit.org';
             $s->notes = "This is InfixBiometrics module for live virtual class and meeting in this system at a time. Thanks for using.";
             $s->version = "1.0";
-            $s->update_url = "https://spondonit.com/contact";
+            $s->update_url = "https://shamiit.com/contact";
             $s->is_default = 0;
             $s->addon_url = "https://codecanyon.net/item/infixedu-zoom-live-class/27623128?s_rank=12";
             $s->installed_domain = url('/');
@@ -453,10 +453,10 @@ class CreateInfixModuleManagersTable extends Migration
              //Gmeet 
              $s = new InfixModuleManager();
              $s->name = "Gmeet";
-             $s->email = 'support@spondonit.com';
+             $s->email = 'support@edu.shamiit.org';
              $s->notes = "This is Gmeet module for live virtual class and meeting in this system at a time. Thanks for using.";
              $s->version = "1.0";
-             $s->update_url = "https://spondonit.com/contact";
+             $s->update_url = "https://shamiit.com/contact";
              $s->is_default = 0;
              $s->addon_url = "https://codecanyon.net/item/google-meet-module-for-infixedu-gmeet-live-class/42463761";
              $s->installed_domain = url('/');
@@ -468,12 +468,12 @@ class CreateInfixModuleManagersTable extends Migration
             $name = 'Lms';
             $s = new InfixModuleManager();
             $s->name = 'Lms';
-            $s->email = 'support@spondonit.com';
+            $s->email = 'support@edu.shamiit.org';
             $s->notes = "This is Lms module for learning management. Teacher & Admin Can create course and student & parent can enroll using online & offline payment gateway . Thanks for using.";
             $s->version = "1.0";
-            $s->update_url = "https://spondonit.com/contact";
+            $s->update_url = "https://shamiit.com/contact";
             $s->is_default = 0;
-            $s->addon_url = "mailto:support@spondonit.com";
+            $s->addon_url = "mailto:support@edu.shamiit.org";
             $s->installed_domain = url('/');
             $s->activated_date = date('Y-m-d');
             $s->save();

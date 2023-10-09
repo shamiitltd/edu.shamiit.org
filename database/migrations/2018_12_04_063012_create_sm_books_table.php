@@ -67,7 +67,7 @@ class CreateSmBooksTable extends Migration
         //     $store->book_number = 'B-'.$i;
         //     $store->isbn_no = 'ISBN-0'.$i; 
         //     $store->publisher_name = 'Infix';
-        //     $store->author_name = 'Author Infix'; 
+        //     $store->author_name = 'Author SHAMIIT'; 
         //     $store->subject = 1+ $i%5;
         //     $store->rack_number = $i;
         //     $store->quantity =200+ $i;

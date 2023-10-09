@@ -41,11 +41,11 @@ class CreateSmEmailSettingsTable extends Migration
             [
                 'email_engine_type' => 'smtp',
                 'from_name'=>'System Admin',
-                'from_email'=>'admin@infixedu.com',
+                'from_email'=>'admin@edu.shamiit.org',
                 'mail_driver'=>'smtp',
                 'mail_host'=>'smtp.gmail.com',
                 'mail_port'=>'587',
-                'mail_username'=>'demo@spondonit.com',
+                'mail_username'=>'demo@edu.shamiit.org',
                 'mail_password'=>'123456',
                 'mail_encryption'=>'tls',
                 'active_status'=>'0',
@@ -57,7 +57,7 @@ class CreateSmEmailSettingsTable extends Migration
             [
                 'email_engine_type' => 'php',
                 'from_name'=>'System Admin',
-                'from_email'=>'admin@infixedu.com',
+                'from_email'=>'admin@edu.shamiit.org',
                 'mail_driver'=>'php',
                 'mail_host'=>'',
                 'mail_port'=>'',

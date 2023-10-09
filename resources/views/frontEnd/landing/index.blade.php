@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
- <title> Infix school management software & School management system </title>
-<meta name="description" content="Infix is 100+ unique feature enable school management software system. It can manage all type of school, academy and any educational institution. ">
+ <title> SHAMIIT College management software & School management system </title>
+<meta name="description" content="SHAMIIT is 100+ unique feature enable school management software system. It can manage all type of school, academy and any educational institution. ">
 <meta name="keywords" content="School Management Software, School Management System, School ERP software, school ERP system, Academy management software">
 <meta name="ahrefs-site-verification" content="578d1aa1e01051e3ac46df77d602eb6846f676a092e33c9befa5ce2395403bd2">
 <meta name="google-site-verification" content="oXBw6wz6Ie5UTDB4h1JRUXHDZE2n-uGO2lm1HVYcA-c" />
@@ -30,8 +30,8 @@
 [ {
   "@context" : "http://schema.org",
   "@type" : "SoftwareApplication",
-  "name" : "INFIX - Best School Management software system",
-  "url" : "http://infixedu.com/",
+  "name" : "SHAMIIT - Best School Management software system",
+  "url" : "https://edu.shamiit.org/",
   "author" : {
     "@type" : "Company",
     "name" : "Spondon IT"
@@ -42,10 +42,10 @@
     "name" : "Infix"
   },
   "applicationCategory" : "ERP Software",
-  "downloadUrl" : "http://infixedu.com",
+  "downloadUrl" : "https://edu.shamiit.org",
   "operatingSystem" : "2019",
   "requirements" : "in a complete",
-  "screenshot" : "http://infixedu.com/public/landing/img/dashboard_preview.png",
+  "screenshot" : "https://edu.shamiit.org/public/landing/img/dashboard_preview.png",
   "softwareVersion" : "2.0",
   
   "review" : {
@@ -64,24 +64,24 @@
  
         <!-- Twitter Card data -->
         <meta name="twitter:card" content="summary"/>
-        <meta name="twitter:site" content="@InfixEdu"/>
-        <meta name="twitter:creator" content="@InfixEdu"/>
-        <meta name="twitter:url" content="//infix.com/"/>
+        <meta name="twitter:site" content="@EDUSHAMIIT"/>
+        <meta name="twitter:creator" content="@EDUSHAMIIT"/>
+        <meta name="twitter:url" content="//shamiit.com/"/>
         <meta name="twitter:title" The Ultimate Education Management System For School,  Institute & Academy"/>
-        <meta name="twitter:description" content="Infix is a well known School management system and its ERP based Software. So try the free demo today!. Cause Infix offers 100+  featured, well-documented and latest academic management software system.. By this multipurpose software system, you can easily manage your school,  university or any kind of organization educational institute. So we can provide you speedy, Secure and clean coded Flexible academy and school management system at affordable prices!"/>
-        <meta property="og:image" content="http://infixedu.com/public/landing/img/dashboard_preview.png"/>
+        <meta name="twitter:description" content="SHAMIIT is a well known School management system and its ERP based Software. So try the free demo today!. Cause SHAMIIT offers 100+  featured, well-documented and latest academic management software system.. By this multipurpose software system, you can easily manage your school,  university or any kind of organization educational institute. So we can provide you speedy, Secure and clean coded Flexible academy and school management system at affordable prices!"/>
+        <meta property="og:image" content="https://edu.shamiit.org/public/landing/img/dashboard_preview.png"/>
 
 
         <!-- Open Graph data -->
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="//infixedu.com/"/>
-        <meta property="og:image" content="//infixedu.com/public/landing/img/dashboard_preview.png"/>
-        <meta property="og:title" content="School Management ERP Software & School Management System - Infix"/>
+        <meta property="og:url" content="//edu.shamiit.org/"/>
+        <meta property="og:image" content="//edu.shamiit.org/public/landing/img/dashboard_preview.png"/>
+        <meta property="og:title" content="School Management ERP Software & School Management System - SHAMIIT"/>
 
-        <meta property="og:description" content="Infix is a well known School management system and its ERP based Software. So try the free demo today!. Cause Infix offers 100+  featured, well-documented and latest academic management software system.. By this multipurpose software system, you can easily manage your school,  university or any kind of organization educational institute. So we can provide you speedy, Secure and clean coded Flexible academy and school management system at affordable prices!"/>
+        <meta property="og:description" content="SHAMIIT is a well known School management system and its ERP based Software. So try the free demo today!. Cause SHAMIIT offers 100+  featured, well-documented and latest academic management software system.. By this multipurpose software system, you can easily manage your school,  university or any kind of organization educational institute. So we can provide you speedy, Secure and clean coded Flexible academy and school management system at affordable prices!"/>
         <meta property="og:site_name" content="Infix" />
 
-    <link rel="canonical" href="http://infixedu.com" hreflang="en-us" />
+    <link rel="canonical" href="https://edu.shamiit.org" hreflang="en-us" />
 
     <link rel="icon" href="{{asset('public/landing/img/favicon.png')}}">
     <!-- Bootstrap CSS -->
@@ -108,10 +108,10 @@
                         <div class="banner_text_iner">
                             <h1>The Ultimate Education Management System for School,  Institute & Academy </h1>
                             <p>Managing various administrative tasks in one place is now quite easy and time
-                                savior with this INFIX and Give your valued time to your institute that will
+                                savior with this SHAMIIT and Give your valued time to your institute that will
                                 increase next generation productivity for our society.</p>
                             @if(!moduleStatusCheck('Saas'))
-                            <a  class="btn_1" target="_blank" href="mailto:support@spondonit.com?subject=Request for saas school demo!&body=This is only a test!"> <i class="ti-email"></i> For Saas Demo</a>
+                            <a  class="btn_1" target="_blank" href="mailto:support@edu.shamiit.org?subject=Request for saas school demo!&body=This is only a test!"> <i class="ti-email"></i> For Saas Demo</a>
                             @endif
                             <a href="{{url('/login')}}" class="btn_2" target="_blank"> <i class="ti-package"></i> Try Live Demo</a>
                         </div>
@@ -156,7 +156,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <!-- <a class="btn_1 d-none d-lg-block" target="_blank" href="http://salespanel.infixedu.com/">Purchase</a> -->
+                        <!-- <a class="btn_1 d-none d-lg-block" target="_blank" href="http://salespanel.edu.shamiit.org/">Purchase</a> -->
                         <a class="btn_1 d-none d-lg-block" target="_blank" href="https://aorasoft.com">Purchase</a>
                     </nav>
                 </div>
@@ -185,7 +185,7 @@
                         <div class="single_feature_part">
                             <span class="single_feature_icon"><i class="ti-layout-grid3"></i></span>
                             <h4>Tons of Features</h4>
-                            <p>INFIX has all in one place. You’ll find everything what you are looking into education
+                            <p>SHAMIIT has all in one place. You’ll find everything what you are looking into education
                                 management system software. </p>
                         </div>
                     </div>
@@ -205,7 +205,7 @@
                         <div class="single_feature_part">
                             <span class="single_feature_icon"><i class="ti-layers"></i></span>
                             <h4>Proper Documentation</h4>
-                            <p>You know! Smart Idea always comes to well planners. And Our INFIX is Smart for its Well
+                            <p>You know! Smart Idea always comes to well planners. And Our SHAMIIT is Smart for its Well
                                 Documentation.
                             </p>
                         </div>
@@ -247,7 +247,7 @@
                 
                 <div class="col-md-5 col-lg-5">
                     <div class="video_section_text">
-                        <h2>Take A look Our INFIX Overview in Video</h2>
+                        <h2>Take A look Our SHAMIIT Overview in Video</h2>
  
                         <img src="{{asset('public/landing/img/Line.png')}}" alt=""> 
                         <p>What’s query you have in mind? How it works? Have look a Look in our videos you’ll crystal
@@ -494,8 +494,8 @@
                 <div class="col-xl-6 col-md-8">
                     <div class="section_tittle text-center">
                         <h5>AMazing Features</h5>
-                        <h2>More Features Has INFIX</h2>
-                        <p>it's vast! Infix has more additional feature that will expect in a complete solution.</p>
+                        <h2>More Features Has SHAMIIT</h2>
+                        <p>it's vast! SHAMIIT has more additional feature that will expect in a complete solution.</p>
                     </div>
                 </div>
             </div>
@@ -659,7 +659,7 @@
                 <div class="col-xl-7 col-md-8">
                     <div class="section_tittle text-center">
                         <h5>Application Support</h5>
-                        <h2>INFIX Support Centre</h2>
+                        <h2>SHAMIIT Support Centre</h2>
                         <p>Need faster help? Ask your queries here. You’ll get instant help from us.</p>
                     </div>
                 </div>
@@ -667,7 +667,7 @@
             <div class="row justify-content-center">
 
                 <div class="col-md-6">
-                    <a href="https://ticket.spondonit.com/help-center" target="_blank">
+                    <a href="https://ticket.shamiit.com/help-center" target="_blank">
                         <div class="single_feature">
                             <div class="single_feature_part">
                                 <span class="single_feature_icon"><i class="ti-headphone-alt"></i>
@@ -701,10 +701,10 @@
  
                         <img src="{{asset('public/landing/img/logo.png')}}" alt=""> 
                         <h2>So Finally You Are Here! Now, All You Know About Our Features.</h2>
-                        <p>We Believe! It won’t a wrong decision in Purchasing our INFIX for your Institute.</p>
-                        <!-- <a href="http://salespanel.infixedu.com/" class="footer_btn"> <i class="ti-shopping-cart-full"></i> -->
+                        <p>We Believe! It won’t a wrong decision in Purchasing our SHAMIIT for your Institute.</p>
+                        <!-- <a href="http://salespanel.edu.shamiit.org/" class="footer_btn"> <i class="ti-shopping-cart-full"></i> -->
                         <a href="https://aorasoft.com" target="_blank" class="footer_btn"> <i class="ti-shopping-cart-full"></i>
-                            <h3>Purchase infix</h3>
+                            <h3>Purchase EDUSHAMIIT</h3>
                             <p>The Ultimate Education ERP</p>
                         </a>
                     </div>
@@ -713,7 +713,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="copyright_text"> 
-                        <p> <img src="{{asset('public/landing/img/copyright.svg')}}" alt="#"> 2019-2020 InfixEdu - Ultimate Education ERP. All Rights
+                        <p> <img src="{{asset('public/landing/img/copyright.svg')}}" alt="#"> 2019-2020 EDUSHAMIIT - Ultimate Education ERP. All Rights
                             Reserved to <a href="#">Codetheme </a> .</p>
                     </div>
                 </div>
@@ -745,7 +745,7 @@
              font-size: 30px;
          }
     </style>
-    <a class="whatsApp_icon" style="background-color: #359334" href="https://wa.me/+8801841136251" target="_blank">
+    <a class="whatsApp_icon" style="background-color: #359334" href="https://wa.me/+919548450539" target="_blank">
         <i class="fa fa-whatsapp"></i>
     </a>
 
