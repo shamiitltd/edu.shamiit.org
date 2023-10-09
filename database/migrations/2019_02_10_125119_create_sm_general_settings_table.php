@@ -132,7 +132,7 @@ class CreateSmGeneralSettingsTable extends Migration
                 'phone' => '+919548450539',
                 'school_code' => '12345678',
                 'email' => 'info@edu.shamiit.org',
-                'address' => '89/2 Panthapath, Dhaka 1215, Bangladesh',
+                'address' => 'Dayanatpur, Jewar, UP - 203135',
                 'currency' => 'USD',
                 'currency_symbol' => '$',
                 'school_name' => 'SHAMIIT Edu',
