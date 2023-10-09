@@ -64,9 +64,9 @@
  
         <!-- Twitter Card data -->
         <meta name="twitter:card" content="summary"/>
-        <meta name="twitter:site" content="@InfixEdu"/>
-        <meta name="twitter:creator" content="@InfixEdu"/>
-        <meta name="twitter:url" content="//infix.com/"/>
+        <meta name="twitter:site" content="@EDUSHAMIIT"/>
+        <meta name="twitter:creator" content="@EDUSHAMIIT"/>
+        <meta name="twitter:url" content="//shamiit.com/"/>
         <meta name="twitter:title" The Ultimate Education Management System For School,  Institute & Academy"/>
         <meta name="twitter:description" content="SHAMIIT is a well known School management system and its ERP based Software. So try the free demo today!. Cause SHAMIIT offers 100+  featured, well-documented and latest academic management software system.. By this multipurpose software system, you can easily manage your school,  university or any kind of organization educational institute. So we can provide you speedy, Secure and clean coded Flexible academy and school management system at affordable prices!"/>
         <meta property="og:image" content="https://edu.shamiit.org/public/landing/img/dashboard_preview.png"/>
@@ -713,7 +713,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="copyright_text"> 
-                        <p> <img src="{{asset('public/landing/img/copyright.svg')}}" alt="#"> 2019-2020 InfixEdu - Ultimate Education ERP. All Rights
+                        <p> <img src="{{asset('public/landing/img/copyright.svg')}}" alt="#"> 2019-2020 EDUSHAMIIT - Ultimate Education ERP. All Rights
                             Reserved to <a href="#">Codetheme </a> .</p>
                     </div>
                 </div>

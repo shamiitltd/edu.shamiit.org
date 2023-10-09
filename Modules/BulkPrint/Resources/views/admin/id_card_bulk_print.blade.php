@@ -529,7 +529,7 @@
                                 <div id="gHName">
                                     <h4
                                         style="line-height:1.02; margin-top: 0; margin-bottom: 0px; font-size:11px; font-weight:600 ; text-transform: uppercase; color: #2656a6;">
-                                        InfixEdu</h4>
+                                        EDUSHAMIIT</h4>
                                 </div>
                                 @endif
                             </div>
