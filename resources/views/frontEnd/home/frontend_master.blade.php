@@ -453,7 +453,7 @@
 				<div class="col-lg-3 col-sm-6">
 					<aside class="f_widget ab_widget">
 						<div class="f_title">
-							<h4>About Infix</h4>
+							<h4>About SHAMIIT</h4>
 						</div>
 						<ul>
 							<li><a href="#"></a>SHAMIIT Health Care</a></li><a href="#">

@@ -76,7 +76,7 @@
         <meta property="og:type" content="website" />
         <meta property="og:url" content="//edu.shamiit.org/"/>
         <meta property="og:image" content="//edu.shamiit.org/public/landing/img/dashboard_preview.png"/>
-        <meta property="og:title" content="School Management ERP Software & School Management System - Infix"/>
+        <meta property="og:title" content="School Management ERP Software & School Management System - SHAMIIT"/>
 
         <meta property="og:description" content="SHAMIIT is a well known School management system and its ERP based Software. So try the free demo today!. Cause SHAMIIT offers 100+  featured, well-documented and latest academic management software system.. By this multipurpose software system, you can easily manage your school,  university or any kind of organization educational institute. So we can provide you speedy, Secure and clean coded Flexible academy and school management system at affordable prices!"/>
         <meta property="og:site_name" content="Infix" />

@@ -84,7 +84,7 @@
         <div class="banner-area">
             <div class="banner-inner">
                 <div class="banner-content">
-                    <h2>About Infix</h2>
+                    <h2>About SHAMIIT</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <a class="primary-btn fix-gr-bg semi-large" href="#">Learn More About Us</a>
                 </div>
@@ -390,7 +390,7 @@
 				<div class="col-lg-3 col-sm-6">
 					<aside class="f_widget ab_widget">
 						<div class="f_title">
-							<h4>About Infix</h4>
+							<h4>About SHAMIIT</h4>
 						</div>
 						<ul>
 							<li><a href="#"></a>SHAMIIT Health Care</a></li><a href="#">

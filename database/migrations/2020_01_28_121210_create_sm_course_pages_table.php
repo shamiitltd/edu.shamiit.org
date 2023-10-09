@@ -38,7 +38,7 @@ class CreateSmCoursePagesTable extends Migration
         });
         DB::table('sm_course_pages')->insert([
             [
-                'title' => 'Course Infix',
+                'title' => 'Course SHAMIIT',
                 'description' => 'Lisus consequat sapien metus dis urna, facilisi. Nonummy rutrum eu lacinia platea a, ipsum parturient, orci tristique. Nisi diam natoque.',
                 'image' => 'public/uploads/about_page/about.jpg',
                 'button_text' => 'Learn More News ',
@@ -50,7 +50,7 @@ class CreateSmCoursePagesTable extends Migration
         ]);
         DB::table('sm_course_pages')->insert([
             [
-                'title' => 'Course Infix',
+                'title' => 'Course SHAMIIT',
                 'description' => 'Lisus consequat sapien metus dis urna, facilisi. Nonummy rutrum eu lacinia platea a, ipsum parturient, orci tristique. Nisi diam natoque.',
                 'image' => 'public/uploads/about_page/about.jpg',
                 'button_text' => 'Learn More News ',

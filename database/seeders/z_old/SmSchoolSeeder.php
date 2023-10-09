@@ -964,7 +964,7 @@ class SmSchoolSeeder extends Seeder
                 $s->title3 = 'About Our System';
                 $s->title4 = 'Resources';
         
-                $s->link_label1 = 'About Infix';
+                $s->link_label1 = 'About SHAMIIT';
                 $s->link_href1  = 'https://edu.shamiit.org';
         
                 $s->link_label2 = 'SHAMIIT Home';
