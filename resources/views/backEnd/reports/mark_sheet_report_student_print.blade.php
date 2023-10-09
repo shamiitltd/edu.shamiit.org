@@ -569,7 +569,7 @@
                                     @lang('common.email')
                                     : {{isset(generalSetting()->email)?generalSetting()->email:'admin@edu.shamiit.org'}}
                                     @lang('common.phone')
-                                    : {{isset(generalSetting()->phone)?generalSetting()->phone:'+8801841412141'}}
+                                    : {{isset(generalSetting()->phone)?generalSetting()->phone:'+919548450539'}}
                                 </h5>
                             </div>
 

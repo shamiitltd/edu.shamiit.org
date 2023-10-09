@@ -111,7 +111,7 @@
                                 savior with this SHAMIIT and Give your valued time to your institute that will
                                 increase next generation productivity for our society.</p>
                             @if(!moduleStatusCheck('Saas'))
-                            <a  class="btn_1" target="_blank" href="mailto:support@spondonit.com?subject=Request for saas school demo!&body=This is only a test!"> <i class="ti-email"></i> For Saas Demo</a>
+                            <a  class="btn_1" target="_blank" href="mailto:support@edu.shamiit.org?subject=Request for saas school demo!&body=This is only a test!"> <i class="ti-email"></i> For Saas Demo</a>
                             @endif
                             <a href="{{url('/login')}}" class="btn_2" target="_blank"> <i class="ti-package"></i> Try Live Demo</a>
                         </div>
@@ -667,7 +667,7 @@
             <div class="row justify-content-center">
 
                 <div class="col-md-6">
-                    <a href="https://ticket.spondonit.com/help-center" target="_blank">
+                    <a href="https://ticket.shamiit.com/help-center" target="_blank">
                         <div class="single_feature">
                             <div class="single_feature_part">
                                 <span class="single_feature_icon"><i class="ti-headphone-alt"></i>
@@ -704,7 +704,7 @@
                         <p>We Believe! It won’t a wrong decision in Purchasing our SHAMIIT for your Institute.</p>
                         <!-- <a href="http://salespanel.edu.shamiit.org/" class="footer_btn"> <i class="ti-shopping-cart-full"></i> -->
                         <a href="https://aorasoft.com" target="_blank" class="footer_btn"> <i class="ti-shopping-cart-full"></i>
-                            <h3>Purchase infix</h3>
+                            <h3>Purchase EDUSHAMIIT</h3>
                             <p>The Ultimate Education ERP</p>
                         </a>
                     </div>
@@ -745,7 +745,7 @@
              font-size: 30px;
          }
     </style>
-    <a class="whatsApp_icon" style="background-color: #359334" href="https://wa.me/+9548450539" target="_blank">
+    <a class="whatsApp_icon" style="background-color: #359334" href="https://wa.me/+919548450539" target="_blank">
         <i class="fa fa-whatsapp"></i>
     </a>
 

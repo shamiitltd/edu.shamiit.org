@@ -416,7 +416,7 @@
                                         <h5>{{isset(generalSetting()->address)? generalSetting()->address:'SHAMIIT School Address'}}</h5>
                                         <h5>
                                             @lang('common.email'): {{isset(generalSetting()->email)?generalSetting()->email:'admin@edu.shamiit.org'}} 
-                                            @lang('common.phone'): {{isset(generalSetting()->phone)?generalSetting()->phone:'+8801841412141'}}
+                                            @lang('common.phone'): {{isset(generalSetting()->phone)?generalSetting()->phone:'+919548450539'}}
                                         </h5>
                                     </div>
                                     <div class="profile_thumb">

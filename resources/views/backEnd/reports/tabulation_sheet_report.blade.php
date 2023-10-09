@@ -358,7 +358,7 @@
                                             <div class=" col-lg-8 text-left text-lg-right mt-30-md">
                                                 <h3 class="text-white"> {{isset(generalSetting()->school_name)?generalSetting()->school_name:'SHAMIIT School Management ERP'}} </h3>
                                                 <p class="text-white mb-0"> {{isset(generalSetting()->address)?generalSetting()->address:'SHAMIIT School Adress'}} </p>
-                                                <p class="text-white mb-0"> @lang('common.email'): {{isset(generalSetting()->email)?generalSetting()->email:'admin@demo.com'}} , @lang('common.phone'): {{isset(generalSetting()->phone)?generalSetting()->phone:'+8801841412141'}}</p>
+                                                <p class="text-white mb-0"> @lang('common.email'): {{isset(generalSetting()->email)?generalSetting()->email:'admin@demo.com'}} , @lang('common.phone'): {{isset(generalSetting()->phone)?generalSetting()->phone:'+919548450539'}}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -789,7 +789,7 @@
                                                 <p class="text-white mb-0"> {{isset(generalSetting()->address)?generalSetting()->address:'SHAMIIT School Adress'}} </p>
                                                 <p class="text-white mb-0">
                                                     @lang('common.email'): {{isset(generalSetting()->email)?generalSetting()->email:'admin@demo.com'}} ,
-                                                    @lang('common.phone'): {{isset(generalSetting()->phone)?generalSetting()->phone:'+8801841412141'}}
+                                                    @lang('common.phone'): {{isset(generalSetting()->phone)?generalSetting()->phone:'+919548450539'}}
                                                 </p>
                                             </div>
                                         </div>

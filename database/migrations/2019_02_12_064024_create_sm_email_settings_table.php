@@ -45,7 +45,7 @@ class CreateSmEmailSettingsTable extends Migration
                 'mail_driver'=>'smtp',
                 'mail_host'=>'smtp.gmail.com',
                 'mail_port'=>'587',
-                'mail_username'=>'demo@spondonit.com',
+                'mail_username'=>'demo@edu.shamiit.org',
                 'mail_password'=>'123456',
                 'mail_encryption'=>'tls',
                 'active_status'=>'0',

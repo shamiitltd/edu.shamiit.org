@@ -72,7 +72,7 @@
             </div>
             <div class="card-body">
                 <div class="justify-content-center">
-                    <p class=" text-red purchase-alert">If you are using our system without purchase, Please contact with us at <a target="_blank" href="mailto:support@spondonit.com">support@spondonit.com</a>.</p>
+                    <p class=" text-red purchase-alert">If you are using our system without purchase, Please contact with us at <a target="_blank" href="mailto:support@edu.shamiit.org">support@edu.shamiit.org</a>.</p>
                     <p class="purchase-alert"> If you already purchase, please verification again. Thanks !</p>
 
                        @if(Session::has('message-danger'))

@@ -659,7 +659,7 @@
                                                             <p class="text-white mb-0" style="font-size: 16px;">  {{isset(generalSetting()->address)?generalSetting()->address:'SHAMIIT School Address'}} </p>
                                                             <p class="text-white mb-0" style="font-size: 16px;">
                                                                 @lang('common.email'): <span class="text-lowercase">{{isset(generalSetting()->email)?generalSetting()->email:'admin@demo.com'}}</span>,
-                                                                @lang('common.phone'): {{isset(generalSetting()->phone)?generalSetting()->phone:'+8801841412141'}} </p>
+                                                                @lang('common.phone'): {{isset(generalSetting()->phone)?generalSetting()->phone:'+919548450539'}} </p>
                                                         </div>
 
                                                     </div>
