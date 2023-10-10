@@ -38,13 +38,13 @@ class CreateSmHolidaysTable extends Migration
         // DB::table('sm_holidays')->insert([
         //     [
         //         'holiday_title'=>'Summer Vacation',
-        //         'from_date'=>'2019-05-02',
-        //         'to_date'=>'2019-05-08',
+        //         'from_date'=>'2023-05-02',
+        //         'to_date'=>'2023-05-08',
         //     ],
         //     [
         //         'holiday_title'=>'Public Holiday',
-        //         'from_date'=>'2019-05-010',
-        //         'to_date'=>'2019-05-11',
+        //         'from_date'=>'2023-05-010',
+        //         'to_date'=>'2023-05-11',
         //     ],
         // ]);
     }

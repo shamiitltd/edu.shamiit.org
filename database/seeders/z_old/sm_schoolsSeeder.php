@@ -103,7 +103,7 @@ class sm_schoolsSeeder extends Seeder
                 $staff->last_name       = 'Admin';
                 $staff->full_name       = 'School Admin';
                 $staff->date_of_birth   = '1980-12-26';
-                $staff->date_of_joining = '2019-05-26';
+                $staff->date_of_joining = '2023-05-26';
                 $staff->gender_id       = 1;
                 $staff->school_id       = $i;
                 $staff->email           = $email;
@@ -115,21 +115,21 @@ class sm_schoolsSeeder extends Seeder
 
                 DB::table('sm_testimonials')->insert([
                     [
-                        'name' => 'Tristique euhen',
-                        'designation' => 'CEO',
+                        'name' => 'Mohd Tariq',
+                        'designation' => 'Chairman',
                         'school_id' => $store->id,
-                        'institution_name' => 'Google',
+                        'institution_name' => 'MBR',
                         'image' => 'public/uploads/testimonial/testimonial_1.jpg',
-                        'description' => 'its vast! SHAMIIT has more additional feature that will expect in a complete solution.',
+                        'description' => 'EDUSHAMIIT ERP has truly transformed our school\'s operations. Its comprehensive features have made managing everything from student records to administrative tasks a breeze. It\'s an indispensable tool that has simplified our daily routines and enhanced overall efficiency. We\'re incredibly satisfied with the results!',
                         'created_at' => date('Y-m-d h:i:s')
                     ],
                     [
-                        'name' => 'Malala euhen',
-                        'designation' => 'Chairman',
+                        'name' => 'Sheetal',
+                        'designation' => 'Principal',
                         'school_id' => $store->id,
-                        'institution_name' => 'Linkdin',
+                        'institution_name' => 'JKS Public School',
                         'image' => 'public/uploads/testimonial/testimonial_2.jpg',
-                        'description' => 'its vast! SHAMIIT has more additional feature that will expect in a complete solution.',
+                        'description' => 'It\'s truly remarkable! SHAMIIT boasts an array of additional features that exceed what one would typically anticipate in a comprehensive solution.',
                         'created_at' => date('Y-m-d h:i:s')
                     ],
                 ]);
@@ -138,9 +138,9 @@ class sm_schoolsSeeder extends Seeder
                     [
                         'event_title' => 'Biggest Robotics Competition in Campus',    //      1
                         'event_location' => 'Main Campus',
-                        'event_des' => 'Amet enim curabitur urna. Faucibus tincidunt pellentesque varius blandit fermentum tristique vulputate sodales tempus est hendrerit est tincidunt ligula lorem tellus eu malesuada tortor, lacinia posuere. Conubia Egestas sed senectus.',
-                        'from_date' => '2019-06-12',
-                        'to_date' => '2019-06-21',
+                        'event_des' => 'Get ready for the ultimate clash of machines! Our campus hosts the biggest robotics competition, where students showcase their innovation and engineering prowess in an electrifying showdown of robots. Don\'t miss this thrilling tech spectacle!',
+                        'from_date' => '2023-06-12',
+                        'to_date' => '2023-06-21',
                         'school_id' => $store->id,
                         'uplad_image_file' => 'public/uploads/events/event1.jpg',
                     ],
@@ -148,8 +148,8 @@ class sm_schoolsSeeder extends Seeder
                         'event_title' => 'Great Science Fair in main campus',    //      1
                         'event_location' => 'Main Campus',
                         'event_des' => 'Magna odio in. Facilisi arcu nec augue lacus augue maecenas hendrerit euismod cras vulputate dignissim pellentesque sociis est. Ut congue Leo dignissim. Fermentum curabitur pede bibendum aptent, quam, ultrices Nam convallis sed condimentum. Adipiscing mollis lorem integer eget neque, vel.',
-                        'from_date' => '2019-06-12',
-                        'to_date' => '2019-06-21',
+                        'from_date' => '2023-06-12',
+                        'to_date' => '2023-06-21',
                         'school_id' => $store->id,
                         'uplad_image_file' => 'public/uploads/events/event2.jpg',
                     ],
@@ -157,8 +157,8 @@ class sm_schoolsSeeder extends Seeder
                         'event_title' => 'Seminar on Internet of Thing in Campus',    //      1
                         'event_location' => 'Main Campus',
                         'event_des' => 'Libero erat porta ridiculus semper mi eleifend. Nisl nulla. Tempus, rhoncus per. Varius. Pharetra nisi potenti ut ultrices sociosqu adipiscing at. Suscipit vulputate senectus. Nostra. Aliquam fringilla eleifend accumsan dui.',
-                        'from_date' => '2019-06-12',
-                        'to_date' => '2019-06-21',
+                        'from_date' => '2023-06-12',
+                        'to_date' => '2023-06-21',
                         'school_id' => $store->id,
                         'uplad_image_file' => 'public/uploads/events/event3.jpg',
                     ],
@@ -166,8 +166,8 @@ class sm_schoolsSeeder extends Seeder
                         'event_title' => 'Art Competition in Campus',    //      1
                         'event_location' => 'Main Campus',
                         'event_des' => 'Dui nunc faucibus Feugiat penatibus molestie taciti nibh nulla pellentesque convallis praesent. Fusce. Vivamus egestas Rutrum est eu dictum volutpat morbi et. Placerat justo elementum dictumst magna nisl ut mollis varius velit facilisi. Duis tellus ullamcorper aenean massa nibh mi.',
-                        'from_date' => '2019-06-12',
-                        'to_date' => '2019-06-21',
+                        'from_date' => '2023-06-12',
+                        'to_date' => '2023-06-21',
                         'school_id' => $store->id,
                         'uplad_image_file' => 'public/uploads/events/event4.jpg',
                     ],
@@ -194,8 +194,8 @@ class sm_schoolsSeeder extends Seeder
                     [
                         'notice_title' => 'Inter school football tournament',
                         'notice_message' => 'Sit eget Vivamus pede etiam purus. A arcu Consequat feugiat etiam egestas, quis amet nec dictumst sociosqu integer mattis euismod.',
-                        'notice_date' => '2019-06-11',
-                        'publish_on' => '2019-06-12',
+                        'notice_date' => '2023-06-11',
+                        'publish_on' => '2023-06-12',
                         'inform_to' => '1,2,3,5,6',
                         'is_published' => 1,
                         'school_id' => $store->id
@@ -203,8 +203,8 @@ class sm_schoolsSeeder extends Seeder
                     [
                         'notice_title' => 'Seminar On ICT',
                         'notice_message' => 'Tellus luctus. Mattis phasellus venenatis ante porttitor purus. Scelerisque justo aenean lectus, adipiscing. Hymenaeos nulla metus eu auctor pharetra, risus lacus amet posuere quisque et Vehicula posuere nibh diam sociis accumsan varius vehicula inceptos duis,',
-                        'notice_date' => '2019-06-10',
-                        'publish_on' => '2019-06-11',
+                        'notice_date' => '2023-06-10',
+                        'publish_on' => '2023-06-11',
                         'inform_to' => '1,2,3,5,6',
                         'is_published' => 1,
                         'school_id' => $store->id
@@ -212,8 +212,8 @@ class sm_schoolsSeeder extends Seeder
                     [
                         'notice_title' => 'Internet of Things Competition',
                         'notice_message' => 'Adipiscing sociosqu quis pede diam natoque aenean, sociosqu lacinia vel magna. Nostra ornare, velit ultrices venenatis. Tellus est velit laoreet lectus dui nibh lorem erat aptent a porttitor torquent urna varius class aenean sapien.',
-                        'notice_date' => '2019-06-10',
-                        'publish_on' => '2019-06-11',
+                        'notice_date' => '2023-06-10',
+                        'publish_on' => '2023-06-11',
                         'inform_to' => '1,2,3,5,6',
                         'is_published' => 1,
                         'school_id' => $store->id
@@ -221,8 +221,8 @@ class sm_schoolsSeeder extends Seeder
                     [
                         'notice_title' => 'Cricket Match Between Class Ten with Nine',
                         'notice_message' => 'Dignissim sodales praesent gravida eros facilisi nec. Lacinia habitasse accumsan suspendisse. Porta praesent eu natoque, nibh scelerisque per urna torquent nisl praesent. Cum Accumsan nibh platea donec tempus.',
-                        'notice_date' => '2019-06-10',
-                        'publish_on' => '2019-06-11',
+                        'notice_date' => '2023-06-10',
+                        'publish_on' => '2023-06-11',
                         'inform_to' => '1,2,3,5,6',
                         'is_published' => 1,
                         'school_id' => $store->id
@@ -427,7 +427,7 @@ class sm_schoolsSeeder extends Seeder
                             'metarnity_leave'  => '45',
 
                             'driving_license'  => '56776987453',
-                            'driving_license_ex_date' => '2019-02-23',
+                            'driving_license_ex_date' => '2023-02-23',
                             'school_id' => $i,
                             'created_at' => date('Y-m-d h:i:s')
                         ]

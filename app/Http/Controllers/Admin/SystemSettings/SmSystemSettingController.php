@@ -245,7 +245,7 @@ class SmSystemSettingController extends Controller
             $staff->mothers_name = 'NA';
 
             $staff->date_of_birth = '1980-12-26';
-            $staff->date_of_joining = '2019-05-26';
+            $staff->date_of_joining = '2023-05-26';
 
             $staff->gender_id = 1;
             $staff->email = Auth::user()->email;
@@ -264,7 +264,7 @@ class SmSystemSettingController extends Controller
             $staff->metarnity_leave = '45';
 
             $staff->driving_license = '';
-            $staff->driving_license_ex_date = '2019-02-23';
+            $staff->driving_license_ex_date = '2023-02-23';
             $staff->save();
 
             Toastr::success('Operation successful', 'Success');

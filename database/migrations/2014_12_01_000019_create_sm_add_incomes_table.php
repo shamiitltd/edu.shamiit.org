@@ -55,7 +55,7 @@ class CreateSmAddIncomesTable extends Migration
         // $store->name                =           'Donation for Boys football match';
         // $store->income_head_id     =           1;
         // $store->payment_method_id   =           1;
-        // $store->date                =           '2019-05-05';
+        // $store->date                =           '2023-05-05';
         // $store->amount              =           1200;
         // $store->save();
 
@@ -65,7 +65,7 @@ class CreateSmAddIncomesTable extends Migration
         // $store->name                =           'Product Sales';
         // $store->income_head_id     =           2;
         // $store->payment_method_id   =           1;
-        // $store->date                =           '2019-05-05';
+        // $store->date                =           '2023-05-05';
         // $store->amount              =           15000;
         // $store->save();
 

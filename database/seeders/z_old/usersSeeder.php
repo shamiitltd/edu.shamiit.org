@@ -40,7 +40,7 @@ class usersSeeder extends Seeder
         //     $staff->last_name       = 'Admin';
         //     $staff->full_name       = 'Super Admin';
         //     $staff->date_of_birth   = '1980-12-26';
-        //     $staff->date_of_joining = '2019-05-26';
+        //     $staff->date_of_joining = '2023-05-26';
         //     $staff->gender_id       = 1;
         //     $staff->email           = 'superadmin@edu.shamiit.org';
         //     $staff->staff_photo     = 'public/uploads/staff/1_infix_edu.jpg';

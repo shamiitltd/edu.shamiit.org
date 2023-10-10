@@ -320,7 +320,7 @@
 			<div class="row single-footer-widget">
 				<div class="col-lg-8 col-md-9">
 					<div class="copy_right_text">
-						<p>Copyright © 2018 All rights reserved <a href="#">Infix</a>. The Ultimate Education ERP</p>
+						<p>Copyright © 2023 All rights reserved <a href="#">EDUSHAMIIT</a>. The Ultimate Education ERP</p>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-3">

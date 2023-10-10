@@ -36,7 +36,7 @@
     "@type" : "Company",
     "name" : "Spondon IT"
   },
-  "datePublished" : "2019-05-28",
+  "datePublished" : "2023-05-28",
   "publisher" : {
     "@type" : "School Management ERP software",
     "name" : "Infix"
@@ -713,7 +713,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="copyright_text"> 
-                        <p> <img src="{{asset('public/landing/img/copyright.svg')}}" alt="#"> 2019-2020 EDUSHAMIIT - Ultimate Education ERP. All Rights
+                        <p> <img src="{{asset('public/landing/img/copyright.svg')}}" alt="#"> 2023-2020 EDUSHAMIIT - Ultimate Education ERP. All Rights
                             Reserved to <a href="#">Codetheme </a> .</p>
                     </div>
                 </div>
