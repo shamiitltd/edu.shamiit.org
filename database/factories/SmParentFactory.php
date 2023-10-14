@@ -36,7 +36,7 @@ class SmParentFactory extends Factory
                 'guardians_occupation' => 'Businessman',
                 'guardians_relation'   => 'Brother',
                 'relation'             => 'Son',
-                'guardians_address' => 'Dhaka-1219, Bangladesh',
+                'guardians_address' => 'Delhi-110085, Rohini',
                 'is_guardian'       => 1,
         ];
     }

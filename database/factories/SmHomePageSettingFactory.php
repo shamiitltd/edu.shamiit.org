@@ -25,7 +25,7 @@ class SmHomePageSettingFactory extends Factory
         return [
             'title' => 'THE ULTIMATE EDUCATION ERP',
             'long_title' => 'SHAMIIT',
-            'short_description' => 'Managing various administrative tasks in one place is now quite easy and time savior with this SHAMIIT and Give your valued time to your institute that will increase next generation productivity for our society.',
+            'short_description' => 'Effortless Administrative Management with EDUSHAMIIT: Streamline all your administrative tasks in one place, saving you valuable time. Invest in your institute to boost productivity for the next generation and benefit society.',
             'link_label' => 'Learn More About Us',
             'link_url' => 'https://edu.shamiit.org/about',
             'image' => 'public/backEnd/img/client/home-banner1.jpg',

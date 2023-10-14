@@ -147,7 +147,7 @@ class sm_schoolsSeeder extends Seeder
                     [
                         'event_title' => 'Great Science Fair in main campus',    //      1
                         'event_location' => 'Main Campus',
-                        'event_des' => 'Magna odio in. Facilisi arcu nec augue lacus augue maecenas hendrerit euismod cras vulputate dignissim pellentesque sociis est. Ut congue Leo dignissim. Fermentum curabitur pede bibendum aptent, quam, ultrices Nam convallis sed condimentum. Adipiscing mollis lorem integer eget neque, vel.',
+                        'event_des' => 'The Great Science Fair at the main campus is an exciting and educational event that showcases innovative and cutting-edge scientific projects and experiments created by students and researchers. It offers a platform for sharing and celebrating scientific achievements, sparking curiosity, and fostering a love for science in a fun and interactive environment.',
                         'from_date' => '2023-06-12',
                         'to_date' => '2023-06-21',
                         'school_id' => $store->id,
@@ -156,7 +156,7 @@ class sm_schoolsSeeder extends Seeder
                     [
                         'event_title' => 'Seminar on Internet of Thing in Campus',    //      1
                         'event_location' => 'Main Campus',
-                        'event_des' => 'Libero erat porta ridiculus semper mi eleifend. Nisl nulla. Tempus, rhoncus per. Varius. Pharetra nisi potenti ut ultrices sociosqu adipiscing at. Suscipit vulputate senectus. Nostra. Aliquam fringilla eleifend accumsan dui.',
+                        'event_des' => 'A campus seminar exploring the Internet of Things (IoT), delving into its applications, impact, and potential in the modern world. Learn about the interconnected world of smart devices, data, and innovation, all within the educational environment.',
                         'from_date' => '2023-06-12',
                         'to_date' => '2023-06-21',
                         'school_id' => $store->id,
@@ -165,7 +165,7 @@ class sm_schoolsSeeder extends Seeder
                     [
                         'event_title' => 'Art Competition in Campus',    //      1
                         'event_location' => 'Main Campus',
-                        'event_des' => 'Dui nunc faucibus Feugiat penatibus molestie taciti nibh nulla pellentesque convallis praesent. Fusce. Vivamus egestas Rutrum est eu dictum volutpat morbi et. Placerat justo elementum dictumst magna nisl ut mollis varius velit facilisi. Duis tellus ullamcorper aenean massa nibh mi.',
+                        'event_des' => 'An exciting campus event where students showcase their creative talents and compete in various art forms, including painting, sculpture, and photography. It fosters artistic expression, encourages talent development, and builds a vibrant, artistic community on campus.',
                         'from_date' => '2023-06-12',
                         'to_date' => '2023-06-21',
                         'school_id' => $store->id,
@@ -193,7 +193,7 @@ class sm_schoolsSeeder extends Seeder
                 DB::table('sm_notice_boards')->insert([
                     [
                         'notice_title' => 'Inter school football tournament',
-                        'notice_message' => 'Sit eget Vivamus pede etiam purus. A arcu Consequat feugiat etiam egestas, quis amet nec dictumst sociosqu integer mattis euismod.',
+                        'notice_message' => 'Exciting Inter-School Football Tournament at our Main Campus! Join us for a thrilling showcase of talent and teamwork as schools from across the region compete on the field. Don\'t miss the action!',
                         'notice_date' => '2023-06-11',
                         'publish_on' => '2023-06-12',
                         'inform_to' => '1,2,3,5,6',
@@ -202,7 +202,7 @@ class sm_schoolsSeeder extends Seeder
                     ],
                     [
                         'notice_title' => 'Seminar On ICT',
-                        'notice_message' => 'Tellus luctus. Mattis phasellus venenatis ante porttitor purus. Scelerisque justo aenean lectus, adipiscing. Hymenaeos nulla metus eu auctor pharetra, risus lacus amet posuere quisque et Vehicula posuere nibh diam sociis accumsan varius vehicula inceptos duis,',
+                        'notice_message' => 'Join our Seminar on ICT (Information and Communication Technology) to explore the latest tech trends and innovations. Discover how ICT is transforming the world, from AI to cybersecurity. Don\'t miss this opportunity to stay updated and informed. Date and venue details to follow. Stay tuned!',
                         'notice_date' => '2023-06-10',
                         'publish_on' => '2023-06-11',
                         'inform_to' => '1,2,3,5,6',
@@ -211,7 +211,7 @@ class sm_schoolsSeeder extends Seeder
                     ],
                     [
                         'notice_title' => 'Internet of Things Competition',
-                        'notice_message' => 'Adipiscing sociosqu quis pede diam natoque aenean, sociosqu lacinia vel magna. Nostra ornare, velit ultrices venenatis. Tellus est velit laoreet lectus dui nibh lorem erat aptent a porttitor torquent urna varius class aenean sapien.',
+                        'notice_message' => 'Join the IoT Competition! Showcase your innovation and creativity in the world of Internet of Things. Create smart solutions and compete for prizes. Registration now open. Don\'t miss this chance to shine.',
                         'notice_date' => '2023-06-10',
                         'publish_on' => '2023-06-11',
                         'inform_to' => '1,2,3,5,6',
@@ -220,7 +220,7 @@ class sm_schoolsSeeder extends Seeder
                     ],
                     [
                         'notice_title' => 'Cricket Match Between Class Ten with Nine',
-                        'notice_message' => 'Dignissim sodales praesent gravida eros facilisi nec. Lacinia habitasse accumsan suspendisse. Porta praesent eu natoque, nibh scelerisque per urna torquent nisl praesent. Cum Accumsan nibh platea donec tempus.',
+                        'notice_message' => 'Exciting Cricket Clash: Class 10 vs. Class 9! Witness the battle of the bats and balls as our talented students compete in a thrilling cricket match. Join us for a fun-filled showdown. Let\'s cheer for your favorite team!',
                         'notice_date' => '2023-06-10',
                         'publish_on' => '2023-06-11',
                         'inform_to' => '1,2,3,5,6',
@@ -276,8 +276,8 @@ class sm_schoolsSeeder extends Seeder
                     [
                         'school_id'=> $i,
                         'academic_id'=> $i,
-                        'subject_name'=> 'Bangla',
-                        'subject_code'=> 'BAN-01',
+                        'subject_name'=> 'Hindi in Everyday life',
+                        'subject_code'=> 'HIN-01',
                         'subject_type'=> 'T',
                         'active_status'=> 1,
                         'created_at' => date('Y-m-d h:i:s')
@@ -285,7 +285,7 @@ class sm_schoolsSeeder extends Seeder
                     [
                         'school_id'=> $i,
                         'academic_id'=> $i,
-                        'subject_name'=> 'English For Today',
+                        'subject_name'=> 'English',
                         'subject_code'=> 'ENG-01',
                         'subject_type'=> 'T',
                         'active_status'=> 1,
@@ -330,8 +330,8 @@ class sm_schoolsSeeder extends Seeder
                     [
                         'school_id'=> $i,
                         'academic_id'=> $i,
-                        'subject_name'=> 'Islam & Ethical Education',
-                        'subject_code'=> 'IEE-01',
+                        'subject_name'=> 'Geography & Universe',
+                        'subject_code'=> 'GU-01',
                         'subject_type'=> 'T',
                         'active_status'=> 1,
                         'created_at' => date('Y-m-d h:i:s')
@@ -512,7 +512,7 @@ class sm_schoolsSeeder extends Seeder
                                 $parent->relation             = 'Son';
                                 $parent->guardians_photo      = '';
             
-                                $parent->guardians_address = 'Dhaka-1219, Bangladesh';
+                                $parent->guardians_address = 'Delhi-110085, Rohini';
                                 $parent->is_guardian       = 1;
             
                                 $parent->created_at = date('Y-m-d h:i:s');
@@ -557,17 +557,17 @@ class sm_schoolsSeeder extends Seeder
             
                                         'gender_id'               => $gender_id,
                                         'email'                   => $studentEmail,
-                                        'mobile'                  => '+8801234567' . $j,
-                                        'bank_account_no'         => '+8801234567' . $j,
+                                        'mobile'                  => '+919548450539' . $j,
+                                        'bank_account_no'         => '+919548450539' . $j,
             
                                         'bank_name'               => 'DBBL',
                                         'student_photo'           => '',
             
-                                        'current_address'         => 'Bangladesh',
-                                        'previous_school_details' => 'Bangladesh',
-                                        'aditional_notes'         => 'Bangladesh',
+                                        'current_address'         => 'Bharat',
+                                        'previous_school_details' => 'Bharat',
+                                        'aditional_notes'         => 'Bharat',
             
-                                        'permanent_address'       => 'Bangladesh',
+                                        'permanent_address'       => 'Bharat',
                                         'school_id' => $i,
                                         'academic_id' => $i,
                                         'created_at' => date('Y-m-d h:i:s')
