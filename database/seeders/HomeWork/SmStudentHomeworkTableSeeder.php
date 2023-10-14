@@ -14,7 +14,7 @@ class SmStudentHomeworkTableSeeder extends Seeder
     public function run()
     {
         {
-            $faker = Faker::create('en');
+            $faker = Faker::create('en_US');
     
             $i = 1;
     
@@ -26,7 +26,7 @@ class SmStudentHomeworkTableSeeder extends Seeder
                 $store->subject_id = $subject->subject_id;
                 $store->homework_date = $faker->dateTime()->format('Y-m-d');
                 $store->submission_date = $faker->dateTime()->format('Y-m-d');;
-                $store->description = $faker->text(500);
+                $store->description = $faker->realText($maxNbChars = 500, $indexSize = 2);
                 $store->marks = 10;
                 $store->file = '';
                 $store->created_by = 1;

@@ -19,7 +19,7 @@ class sm_homeworksSeeder extends Seeder
     {
 //        SmHomework::query()->truncate();
         $students = SmStudent::where('class_id', 1)->get();
-        $faker = Faker::create('en');
+        $faker = Faker::create('en_US');
 
         foreach ($students as $student) {
             $class_id = $student->class_id;
@@ -35,7 +35,7 @@ class sm_homeworksSeeder extends Seeder
                 $s->evaluation_date = date('Y-m-d');
                 $s->evaluated_by = 1;
                 $s->marks = rand(10, 15);
-                $s->description = $faker->text(100);
+                $s->description = $faker->realText($maxNbChars = 100, $indexSize = 2);
                 $s->created_at = date('Y-m-d h:i:s');
                 $s->save();
 
