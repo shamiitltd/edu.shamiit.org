@@ -15,7 +15,7 @@ class sm_online_exam_questionsSeeder extends Seeder
      */
     public function run()
     {
-        // $faker = Faker\Factory::create('en_US');;
+        // $faker = Factory::create('en_US');
         // for($i=1; $i<=5; $i++){
         //     $store= new SmOnlineExamQuestion();
         //     $store->online_exam_id=$i;

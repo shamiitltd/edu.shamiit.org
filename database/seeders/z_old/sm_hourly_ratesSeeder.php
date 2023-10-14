@@ -15,7 +15,7 @@ class sm_hourly_ratesSeeder extends Seeder
      */
     public function run()
     {
-        $faker = Faker\Factory::create('en_US');;
+        $faker = Factory::create('en_US');
         for($i=1; $i<=5; $i++){
             $store= new SmHourlyRate();
             $store->grade="A+";

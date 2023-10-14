@@ -16,7 +16,7 @@ class sm_student_attendancesSeeder extends Seeder
      */
     public function run()
     {
-        $faker = Faker\Factory::create('en_US');;
+        $faker = Factory::create('en_US');
         SmStudentAttendance::query()->truncate();
         $studentList = SmStudent::where('class_id', 1)->get();
         foreach ($studentList as $student) {

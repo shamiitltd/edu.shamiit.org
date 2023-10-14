@@ -19,7 +19,7 @@ class sm_homeworksSeeder extends Seeder
     {
 //        SmHomework::query()->truncate();
         $students = SmStudent::where('class_id', 1)->get();
-        $faker = Faker\Factory::create('en_US');;
+        $faker = Factory::create('en_US');
 
         foreach ($students as $student) {
             $class_id = $student->class_id;

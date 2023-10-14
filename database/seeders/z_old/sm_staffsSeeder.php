@@ -20,7 +20,7 @@ class sm_staffsSeeder extends Seeder
      */
     public function run()
     {
-        $faker = Faker\Factory::create('en_US');;
+        $faker = Factory::create('en_US');
         $obj = new GlobalVariable();
         $Names = $obj->Names;
         $basic_salary = 30000;
