@@ -37,15 +37,15 @@ class CreateSmNewsTable extends Migration
             $table->integer('academic_id')->nullable()->default(1)->unsigned();
         });
 
-        $faker = Faker::create();
+        $faker = Faker::create('en_US');
         $i=1;
         $cid=[1,1,1,1,2,2,2,2,3,3,3,3];
         foreach (range(1,12) as $index) {
             DB::table('sm_news')->insert([
-                'news_title' => $faker->text(40),
+                'news_title' => $faker->realText($maxNbChars = 40, $indexSize = 2),
                 'view_count' => $faker->randomDigit,
                 'active_status' =>1,
-                'news_body' =>$faker->text(500),
+                'news_body' =>$faker->realText($maxNbChars = 500, $indexSize = 2),
                 'image'=>'public/uploads/news/news'.$i.'.jpg',
                 'publish_date' => '2023-06-02',
                 'category_id' => $cid[$i-1],

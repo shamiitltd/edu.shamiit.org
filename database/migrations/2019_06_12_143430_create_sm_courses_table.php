@@ -34,17 +34,17 @@ class CreateSmCoursesTable extends Migration
         });
 
 
-        $faker = Faker::create();
+        $faker = Faker::create('en_US');
 
         for ($i = 1; $i <= 5; $i++) {
             $new = new SmCourse();
-            $new->title = $faker->text(50);
+            $new->title = $faker->realText($maxNbChars = 50, $indexSize = 2);
             $new->image = 'public/uploads/course/academic' . $i++ . '.jpg';
-            $new->overview = $faker->text(2000);
-            $new->outline = $faker->text(2000);
-            $new->prerequisites = $faker->text(2000);
-            $new->resources = $faker->text(2000);
-            $new->stats = $faker->text(2000);
+            $new->overview = $faker->realText($maxNbChars = 2000, $indexSize = 2);
+            $new->outline = $faker->realText($maxNbChars = 2000, $indexSize = 2);
+            $new->prerequisites = $faker->realText($maxNbChars = 2000, $indexSize = 2);
+            $new->resources = $faker->realText($maxNbChars = 2000, $indexSize = 2);
+            $new->stats = $faker->realText($maxNbChars = 2000, $indexSize = 2);
             $new->active_status = 1;
             $new->created_at = date('Y-m-d h:i:s');
             $new->save();

@@ -15,13 +15,13 @@ class sm_contact_messagesSeeder extends Seeder
      */
     public function run()
     { 
-        // $faker = Faker::create();
+        // $faker = Faker::create('en_US');
         // for ($i=1; $i<10; $i++){
         //     $s = new SmContactMessage();
         //     $s->name = $faker->name;
         //     $s->email = $faker->email ;
         //     $s->subject = $faker->title;
-        //     $s->message = $faker->text(200);
+        //     $s->message = $faker->realText($maxNbChars = 200, $indexSize = 2);
         //     $s->save();
         // }
     }

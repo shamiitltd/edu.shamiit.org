@@ -62,7 +62,7 @@ class sm_schoolsSeeder extends Seeder
 
         if($allData['Saas'] == TRUE){
                 
-            $faker = Faker::create();
+            $faker = Faker::create('en_US');
             $prefix = "school";
             for($i=2; $i<=5; $i++){
                 $class_id = SmClass::where('school_id',$i)->where('academic_id',$i)->first('id')->id;
@@ -173,17 +173,17 @@ class sm_schoolsSeeder extends Seeder
                     ],
                 ]);
 
-                $faker = Faker::create();
+                $faker = Faker::create('en_US');
 
                 for ($t = 1; $t <= 5; $t++) {
                     DB::table('sm_courses')->insert([
-                        'title' => $faker->text(50),
+                        'title' => $faker->realText($maxNbChars = 50, $indexSize = 2),
                         'image' => 'public/uploads/course/academic' . $t++ . '.jpg',
-                        'overview' => $faker->text(2000),
-                        'outline' => $faker->text(2000),
-                        'prerequisites' => $faker->text(2000),
-                        'resources' => $faker->text(2000),
-                        'stats' => $faker->text(2000),
+                        'overview' => $faker->realText($maxNbChars = 2000, $indexSize = 2),
+                        'outline' => $faker->realText($maxNbChars = 2000, $indexSize = 2),
+                        'prerequisites' => $faker->realText($maxNbChars = 2000, $indexSize = 2),
+                        'resources' => $faker->realText($maxNbChars = 2000, $indexSize = 2),
+                        'stats' => $faker->realText($maxNbChars = 2000, $indexSize = 2),
                         'active_status' => 1,
                         'school_id' => $store->id,
                         'created_at' => date('Y-m-d h:i:s')
