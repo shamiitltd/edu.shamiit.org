@@ -37,7 +37,7 @@ class CreateSmNewsTable extends Migration
             $table->integer('academic_id')->nullable()->default(1)->unsigned();
         });
 
-        $faker = Faker::create('en_US');
+        $faker = Faker\Factory::create('en_US');;
         $i=1;
         $cid=[1,1,1,1,2,2,2,2,3,3,3,3];
         foreach (range(1,12) as $index) {
