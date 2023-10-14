@@ -37,8 +37,8 @@ class CreateSmDateFormatsTable extends Migration
 
             ['jS M, Y', '17th May, 2019'],
 
-            ['Y-m-d', '2019-05-17'],
-            ['Y-d-m', '2019-17-05'],
+            ['Y-m-d', '2023-05-17'],
+            ['Y-d-m', '2023-17-05'],
             ['d-m-Y', '17-05-2019'],
             ['m-d-Y', '05-17-2019'],
 

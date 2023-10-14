@@ -15,7 +15,7 @@ class sm_teacher_upload_contentsSeeder extends Seeder
      */
     public function run()
     {
-        $faker = Faker::create();
+        $faker = Faker::create('en_US');
 
         $i = 1;
 
@@ -23,12 +23,12 @@ class sm_teacher_upload_contentsSeeder extends Seeder
         foreach ($contents as $content) {
             $store = new SmTeacherUploadContent();    
 
-            $store->content_title = $faker->text(100);
+            $store->content_title = $faker->realText($maxNbChars = 100, $indexSize = 2);
             $store->content_type = $content;
             $store->available_for_admin=1;
             $store->available_for_all_classes=1;
             $store->upload_date=$faker->dateTime()->format('Y-m-d');
-            $store->description=$faker->text(500);
+            $store->description=$faker->realText($maxNbChars = 500, $indexSize = 2);
             $store->source_url='google.com';           
             $store->upload_file = 'public/uploads/upload_contents/sample.pdf';
             $store->created_by = 1;

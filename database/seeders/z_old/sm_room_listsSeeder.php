@@ -18,19 +18,19 @@ class sm_room_listsSeeder extends Seeder
     public function run()
     {
 
-        $faker = Faker::create();
+        $faker = Faker::create('en_US');
         $dormitories = SmDormitoryList::take(3)->get(); //7
         $rooms = SmRoomType::take(3)->get(); //6
 
         foreach ($dormitories as $dormitory) {
             foreach ($rooms as $room) {
                 $store = new SmRoomList();
-                $store->name = $faker->text(10);
+                $store->name = $faker->realText($maxNbChars = 10, $indexSize = 2);
                 $store->dormitory_id = $dormitory->id;
                 $store->room_type_id = $room->id;
                 $store->number_of_bed = rand(40,100);
                 $store->cost_per_bed = rand(5000,7000);
-                $store->description = $faker->text(200);
+                $store->description = $faker->realText($maxNbChars = 200, $indexSize = 2);
                 $store->created_at = date('Y-m-d h:i:s');
                 $store->save();
             }

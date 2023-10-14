@@ -20,7 +20,7 @@ class sm_staffsSeeder extends Seeder
      */
     public function run()
     {
-        $faker = Faker::create();
+        $faker = Faker::create('en_US');
         $obj = new GlobalVariable();
         $Names = $obj->Names;
         $basic_salary = 30000;
@@ -96,7 +96,7 @@ class sm_staffsSeeder extends Seeder
                         'metarnity_leave'  => '45',
 
                         'driving_license'  => '56776987453',
-                        'driving_license_ex_date' => '2019-02-23',
+                        'driving_license_ex_date' => '2023-02-23',
                         'created_at' => date('Y-m-d h:i:s')
                     ]
 

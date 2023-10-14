@@ -42,33 +42,33 @@ class CreateSmEventsTable extends Migration
             [
                 'event_title' => 'Biggest Robotics Competition in Campus',    //      1
                 'event_location' => 'Main Campus',
-                'event_des' => 'Amet enim curabitur urna. Faucibus tincidunt pellentesque varius blandit fermentum tristique vulputate sodales tempus est hendrerit est tincidunt ligula lorem tellus eu malesuada tortor, lacinia posuere. Conubia Egestas sed senectus.',
-                'from_date' => '2019-06-12',
-                'to_date' => '2019-06-21',
+                'event_des' => 'Get ready for the ultimate clash of machines! Our campus hosts the biggest robotics competition, where students showcase their innovation and engineering prowess in an electrifying showdown of robots. Don\'t miss this thrilling tech spectacle!',
+                'from_date' => '2023-06-12',
+                'to_date' => '2023-06-21',
                 'uplad_image_file' => 'public/uploads/events/event1.jpg',
             ],
             [
                 'event_title' => 'Great Science Fair in main campus',    //      1
                 'event_location' => 'Main Campus',
-                'event_des' => 'Magna odio in. Facilisi arcu nec augue lacus augue maecenas hendrerit euismod cras vulputate dignissim pellentesque sociis est. Ut congue Leo dignissim. Fermentum curabitur pede bibendum aptent, quam, ultrices Nam convallis sed condimentum. Adipiscing mollis lorem integer eget neque, vel.',
-                'from_date' => '2019-06-12',
-                'to_date' => '2019-06-21',
+                'event_des' => 'The Great Science Fair at the main campus is an exciting and educational event that showcases innovative and cutting-edge scientific projects and experiments created by students and researchers. It offers a platform for sharing and celebrating scientific achievements, sparking curiosity, and fostering a love for science in a fun and interactive environment.',
+                'from_date' => '2023-06-12',
+                'to_date' => '2023-06-21',
                 'uplad_image_file' => 'public/uploads/events/event2.jpg',
             ],
             [
                 'event_title' => 'Seminar on Internet of Thing in Campus',    //      1
                 'event_location' => 'Main Campus',
-                'event_des' => 'Libero erat porta ridiculus semper mi eleifend. Nisl nulla. Tempus, rhoncus per. Varius. Pharetra nisi potenti ut ultrices sociosqu adipiscing at. Suscipit vulputate senectus. Nostra. Aliquam fringilla eleifend accumsan dui.',
-                'from_date' => '2019-06-12',
-                'to_date' => '2019-06-21',
+                'event_des' => 'A campus seminar exploring the Internet of Things (IoT), delving into its applications, impact, and potential in the modern world. Learn about the interconnected world of smart devices, data, and innovation, all within the educational environment.',
+                'from_date' => '2023-06-12',
+                'to_date' => '2023-06-21',
                 'uplad_image_file' => 'public/uploads/events/event3.jpg',
             ],
             [
                 'event_title' => 'Art Competition in Campus',    //      1
                 'event_location' => 'Main Campus',
-                'event_des' => 'Dui nunc faucibus Feugiat penatibus molestie taciti nibh nulla pellentesque convallis praesent. Fusce. Vivamus egestas Rutrum est eu dictum volutpat morbi et. Placerat justo elementum dictumst magna nisl ut mollis varius velit facilisi. Duis tellus ullamcorper aenean massa nibh mi.',
-                'from_date' => '2019-06-12',
-                'to_date' => '2019-06-21',
+                'event_des' => 'An exciting campus event where students showcase their creative talents and compete in various art forms, including painting, sculpture, and photography. It fosters artistic expression, encourages talent development, and builds a vibrant, artistic community on campus.',
+                'from_date' => '2023-06-12',
+                'to_date' => '2023-06-21',
                 'uplad_image_file' => 'public/uploads/events/event4.jpg',
             ],
         ]);
