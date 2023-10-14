@@ -19,7 +19,7 @@ class sm_book_issuesSeeder extends Seeder
     {
 
         // SmBookIssue::query()->truncate();
-        $faker = Factory::create('en_US');
+        $faker = Faker::create('en');
         $studentList = SmStudent::where('class_id', 1)->get();
         foreach ($studentList as $student) {
             $store = new SmBookIssue();

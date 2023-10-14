@@ -62,7 +62,7 @@ class sm_schoolsSeeder extends Seeder
 
         if($allData['Saas'] == TRUE){
                 
-            $faker = Factory::create('en_US');
+            $faker = Faker::create('en');
             $prefix = "school";
             for($i=2; $i<=5; $i++){
                 $class_id = SmClass::where('school_id',$i)->where('academic_id',$i)->first('id')->id;
@@ -173,7 +173,7 @@ class sm_schoolsSeeder extends Seeder
                     ],
                 ]);
 
-                $faker = Factory::create('en_US');
+                $faker = Faker::create('en');
 
                 for ($t = 1; $t <= 5; $t++) {
                     DB::table('sm_courses')->insert([

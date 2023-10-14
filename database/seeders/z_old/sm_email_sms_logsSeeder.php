@@ -17,7 +17,7 @@ class sm_email_sms_logsSeeder extends Seeder
     {
 
         SmEmailSmsLog::query()->truncate();
-        $faker = Factory::create('en_US');
+        $faker = Faker::create('en');
         for ($i = 1; $i <= 10; $i++) {
             $s = new SmEmailSmsLog();
             $s->title = $faker->title;

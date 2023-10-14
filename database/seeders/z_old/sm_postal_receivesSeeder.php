@@ -16,7 +16,7 @@ class sm_postal_receivesSeeder extends Seeder
     public function run()
     {
         
-        $faker = Factory::create('en_US');
+        $faker = Faker::create('en');
         for ($i = 1; $i <= 5; $i++) {
             $store = new SmPostalReceive();
 

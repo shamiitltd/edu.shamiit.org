@@ -15,7 +15,7 @@ class sm_send_messagesSeeder extends Seeder
      */
     public function run()
     {
-        $faker = Factory::create('en_US');
+        $faker = Faker::create('en');
         for ($i = 1; $i <= 5; $i++) {
             $store = new SmSendMessage();
             $store->message_title = $faker->realText($maxNbChars = 30, $indexSize = 2);

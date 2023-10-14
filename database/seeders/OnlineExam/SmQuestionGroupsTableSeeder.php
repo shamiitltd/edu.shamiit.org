@@ -15,7 +15,7 @@ class SmQuestionGroupsTableSeeder extends Seeder
      */
     public function run($school_id, $academic_id, $count=5)
     {
-        $faker = Factory::create('en_US');
+        $faker = Faker::create('en');
         for($i=1; $i<=5; $i++){
             $store= new SmQuestionGroup();
             $store->title=$faker->word;

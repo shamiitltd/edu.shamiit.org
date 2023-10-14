@@ -16,7 +16,7 @@ class sm_leave_requestsSeeder extends Seeder
      */
     public function run()
     {
-       $faker = Factory::create('en_US');
+       $faker = Faker::create('en');
        $staffs = SmStaff::where('role_id', 4)->get();
        foreach ($staffs as $staff) {
 

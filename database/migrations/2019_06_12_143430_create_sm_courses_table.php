@@ -34,7 +34,7 @@ class CreateSmCoursesTable extends Migration
         });
 
 
-        $faker = Factory::create('en_US');
+        $faker = Faker::create('en');
 
         for ($i = 1; $i <= 5; $i++) {
             $new = new SmCourse();

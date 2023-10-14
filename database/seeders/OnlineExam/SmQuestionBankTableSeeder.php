@@ -18,7 +18,7 @@ class SmQuestionBankTableSeeder extends Seeder
     public function run($school_id, $academic_id, $count=5)
     {
         {
-            $faker = Factory::create('en_US');
+            $faker = Faker::create('en');
             $i = 1;
             $group_id = SmQuestionGroup::where('school_id', $school_id)->where('academic_id', $academic_id)->value('id');
             $question_details = SmAssignSubject::all();

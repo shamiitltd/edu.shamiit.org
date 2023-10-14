@@ -38,7 +38,7 @@ class sm_schoolsSeeder extends Seeder
      */
     public function run()
     {
-        $faker = Factory::create('en_US');
+        $faker = Faker::create('en');
 
         // if(moduleStatusCheck('Saas') == true){
         // for($i=2; $i<=5; $i++){

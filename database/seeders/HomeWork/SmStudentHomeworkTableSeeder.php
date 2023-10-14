@@ -14,7 +14,7 @@ class SmStudentHomeworkTableSeeder extends Seeder
     public function run()
     {
         {
-            $faker = Factory::create('en_US');
+            $faker = Faker::create('en');
     
             $i = 1;
     

@@ -16,7 +16,7 @@ class sm_student_documentsSeeder extends Seeder
      */
     public function run()
     {
-        $faker = Factory::create('en_US');
+        $faker = Faker::create('en');
       
         $studentList = SmStudent::where('class_id', 1)->get();
         foreach($studentList as $student){

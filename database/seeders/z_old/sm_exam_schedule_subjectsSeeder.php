@@ -15,7 +15,7 @@ class sm_exam_schedule_subjectsSeeder extends Seeder
     public function run()
     {
 //        SmExamScheduleSubject::query()->truncate();
-//        $faker = Factory::create('en_US');
+//        $faker = Faker::create('en');
 //        for($i=1; $i<=10; $i++){
 //            $store= new SmExamScheduleSubject();
 //            $store->exam_schedule_id=1;

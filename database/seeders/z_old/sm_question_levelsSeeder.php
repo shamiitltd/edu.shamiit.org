@@ -15,7 +15,7 @@ class sm_question_levelsSeeder extends Seeder
      */
     public function run()
     {
-        $faker = Factory::create('en_US');
+        $faker = Faker::create('en');
         for($i=1; $i<=5; $i++){
             $store= new SmQuestionLevel();
             $store->level=$faker->word;

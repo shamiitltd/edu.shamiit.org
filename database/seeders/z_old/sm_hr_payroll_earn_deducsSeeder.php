@@ -15,7 +15,7 @@ class sm_hr_payroll_earn_deducsSeeder extends Seeder
      */
     public function run()
     {
-//        $faker = Factory::create('en_US');
+//        $faker = Faker::create('en');
 //
 //        for($i=1; $i<=3; $i++) {
 //            $store = new SmHrPayrollEarnDeduc();

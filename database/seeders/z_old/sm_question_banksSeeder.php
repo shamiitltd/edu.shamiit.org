@@ -16,7 +16,7 @@ class sm_question_banksSeeder extends Seeder
      */
     public function run()
     {
-        $faker = Factory::create('en_US');
+        $faker = Faker::create('en');
         $i = 1;
         $question_details = SmAssignSubject::all();
         foreach ($question_details as $question_detail) {
