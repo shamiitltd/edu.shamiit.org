@@ -24,7 +24,7 @@ class SmAboutPageFactory extends Factory
     {
         return [
             'title' => 'About SHAMIIT',
-            'description' => 'Lisus consequat sapien metus dis urna, facilisi. Nonummy rutrum eu lacinia platea a, ipsum parturient, orci tristique. Nisi diam natoque.',
+            'description' => 'Discover exciting updates, latest events, and valuable resources. Stay connected and stay informed as we continue our journey of education and excellence.',
             'image' => 'public/uploads/about_page/about.jpg',
             'button_text' => 'Learn More About Us',
             'button_url' => 'about',

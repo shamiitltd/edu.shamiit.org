@@ -100,7 +100,7 @@ class sm_studentsSeeder extends Seeder
                     $parent->relation             = 'Son';
                     $parent->guardians_photo      = '';
 
-                    $parent->guardians_address = 'Dhaka-1219, Bangladesh';
+                    $parent->guardians_address = 'Delhi-110085, Rohini';
                     $parent->is_guardian       = 1;
 
                     $parent->created_at = date('Y-m-d h:i:s');
@@ -154,17 +154,17 @@ class sm_studentsSeeder extends Seeder
 
                             'gender_id'               => $gender_id,
                             'email'                   => $studentEmail,
-                            'mobile'                  => '+8801234567' . $i,
-                            'bank_account_no'         => '+8801234567' . $i,
+                            'mobile'                  => '+919548450539' . $i,
+                            'bank_account_no'         => '+919548450539' . $i,
 
                             'bank_name'               => 'DBBL',
                             'student_photo'           => '',
 
-                            'current_address'         => 'Bangladesh',
-                            'previous_school_details' => 'Bangladesh',
-                            'aditional_notes'         => 'Bangladesh',
+                            'current_address'         => 'Bharat',
+                            'previous_school_details' => 'Bharat',
+                            'aditional_notes'         => 'Bharat',
 
-                            'permanent_address'       => 'Bangladesh',
+                            'permanent_address'       => 'Bharat',
                             'created_at' => date('Y-m-d h:i:s')
                         ],
 

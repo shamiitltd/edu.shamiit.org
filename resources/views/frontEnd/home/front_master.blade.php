@@ -468,7 +468,7 @@
                     @if ($setting->copyright_text)
                         <p>{!! $setting->copyright_text !!}</p>
                     @else
-                        Copyright © 2019 All rights reserved | This application is made with by Codethemes
+                        Copyright © 2023 All rights reserved | This application is made with by Codethemes
                     @endif
                 </div>
             </div>

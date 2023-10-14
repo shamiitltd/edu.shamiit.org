@@ -28,19 +28,19 @@ class CreateSmTestimonialsTable extends Migration
         });
         DB::table('sm_testimonials')->insert([
             [
-                'name' => 'Tristique euhen',
-                'designation' => 'CEO',
-                'institution_name' => 'Google',
+                'name' => 'Mohd Tariq',
+                'designation' => 'Chairman',
+                'institution_name' => 'MBR',
                 'image' => 'public/uploads/testimonial/testimonial_1.jpg',
-                'description' => 'its vast! SHAMIIT has more additional feature that will expect in a complete solution.',
+                'description' => 'EDUSHAMIIT ERP has truly transformed our school\'s operations. Its comprehensive features have made managing everything from student records to administrative tasks a breeze. It\'s an indispensable tool that has simplified our daily routines and enhanced overall efficiency. We\'re incredibly satisfied with the results!',
                 'created_at' => date('Y-m-d h:i:s')
             ],
             [
-                'name' => 'Malala euhen',
-                'designation' => 'Chairman',
-                'institution_name' => 'Linkdin',
+                'name' => 'Sheetal',
+                'designation' => 'Principal',
+                'institution_name' => 'JKS Public School',
                 'image' => 'public/uploads/testimonial/testimonial_2.jpg',
-                'description' => 'its vast! SHAMIIT has more additional feature that will expect in a complete solution.',
+                'description' => 'It\'s truly remarkable! EDUSHAMIIT boasts an array of additional features that exceed what one would typically anticipate in a comprehensive solution.',
                 'created_at' => date('Y-m-d h:i:s')
             ],
         ]);

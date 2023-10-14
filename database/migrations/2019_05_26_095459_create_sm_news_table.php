@@ -47,7 +47,7 @@ class CreateSmNewsTable extends Migration
                 'active_status' =>1,
                 'news_body' =>$faker->text(500),
                 'image'=>'public/uploads/news/news'.$i.'.jpg',
-                'publish_date' => '2019-06-02',
+                'publish_date' => '2023-06-02',
                 'category_id' => $cid[$i-1],
                 'order'=>$i++,
                 'created_at' => date('Y-m-d h:i:s')

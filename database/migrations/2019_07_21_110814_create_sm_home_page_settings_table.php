@@ -29,7 +29,7 @@ class CreateSmHomePageSettingsTable extends Migration
         $s = new SmHomePageSetting();
         $s->title = 'THE ULTIMATE EDUCATION ERP';
         $s->long_title = 'SHAMIIT';
-        $s->short_description = 'Managing various administrative tasks in one place is now quite easy and time savior with this SHAMIIT and Give your valued time to your institute that will increase next generation productivity for our society.';
+        $s->short_description = 'Effortless Administrative Management with EDUSHAMIIT: Streamline all your administrative tasks in one place, saving you valuable time. Invest in your institute to boost productivity for the next generation and benefit society.';
         $s->link_label = 'Learn More About Us';
         $s->link_url = 'https://edu.shamiit.org/about';
         $s->image = 'public/backEnd/img/client/home-banner1.jpg';

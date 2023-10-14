@@ -84,7 +84,7 @@
             <div class="banner-inner">
                 <div class="banner-content">
                     <h5>The Ultimate Education ERP</h5>
-                    <h2>Infix</h2>
+                    <h2>EDUSHAMIIT</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <a class="primary-btn fix-gr-bg semi-large" href="#">Learn More About Us</a>
                 </div>
@@ -478,7 +478,7 @@
 			<div class="row single-footer-widget">
 				<div class="col-lg-8 col-md-9">
 					<div class="copy_right_text">
-						<p>Copyright © 2018 All rights reserved <a href="#">Infix</a>. The Ultimate Education ERP</p>
+						<p>Copyright © 2023 All rights reserved <a href="#">EDUSHAMIIT</a>. The Ultimate Education ERP</p>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-3">
