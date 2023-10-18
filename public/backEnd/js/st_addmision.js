@@ -43,7 +43,7 @@ $(function() {
         }
     };
 
-    $("#photo").on("change", function(event) {
+    $("#upload_content_file").on("change", function(event) {
         $("#LogoPic").modal();
         croppie = new Croppie(el, {
             viewport: {
