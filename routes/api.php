@@ -67,8 +67,8 @@ Route::group(['middleware' => ['XSS','auth:api','json.response']], function () {
 
     Route::post('visitor-update', ['as' => 'visitor_update', 'uses' => 'SmApiController@visitor_update']);
     Route::post('saas-visitor-update', ['as' => 'saas_visitor_update', 'uses' => 'SmApiController@saas_visitor_update']);
-    Route::get('visitor-delete/{id}', ['as' => 'visitor_delete', 'uses' => 'SmApiController@visitor_delete']);
-    Route::get('school/{school_id}/visitor-delete/{id}', ['as' => 'saas_visitor_delete', 'uses' => 'SmApiController@saas_visitor_delete']);
+    Route::post('visitor-delete/{id}', ['as' => 'visitor_delete', 'uses' => 'SmApiController@visitor_delete']);
+    Route::post('school/{school_id}/visitor-delete/{id}', ['as' => 'saas_visitor_delete', 'uses' => 'SmApiController@saas_visitor_delete']);
 
 
 
