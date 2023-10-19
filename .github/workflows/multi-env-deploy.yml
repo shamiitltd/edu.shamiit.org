@@ -293,7 +293,7 @@ jobs:
     name: SEED in TEST
     runs-on: ubuntu-latest
     environment: TEST
-    needs: ["SEED-READY", "MIGRATION-TEST", "DEVELOPMENT"]
+    needs: ["SEED-READY", "MIGRATION-TEST"]
     steps:
       - name: SEED the Database in TEST
         run: |
@@ -319,7 +319,7 @@ jobs:
     name: SEED in QA
     runs-on: ubuntu-latest
     environment: QA
-    needs: ["SEED-READY", "MIGRATION-QA", "QUALITYANALYSIS"]
+    needs: ["SEED-READY", "MIGRATION-QA"]
     steps:
       - name: SEED the Database in QA
         run: |
@@ -345,7 +345,7 @@ jobs:
     name: SEED in PROD
     runs-on: ubuntu-latest
     environment: PROD
-    needs: ["SEED-READY", "MIGRATION-PROD", "PRODUCTION"]
+    needs: ["SEED-READY", "MIGRATION-PROD"]
     steps:
       - name: SEED the Database in PROD
         run: |

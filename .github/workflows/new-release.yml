@@ -170,7 +170,7 @@ jobs:
     name: SEED in NEWSERVER
     runs-on: ubuntu-latest
     environment: NEWSERVER
-    needs: ["SEED-READY", "MIGRATION-NEWSERVER", "PRODUCTION"]
+    needs: ["SEED-READY", "MIGRATION-NEWSERVER"]
     steps:
       - name: SEED the Database in NEWSERVER
         run: |
