@@ -78,7 +78,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    {{ Form::open(['class' => 'form-horizontal', 'files' => true, 'route' => 'student.multi-class-student', 'method' => 'GET', 'enctype' => 'multipart/form-data', 'id' => 'infix_form']) }}
+                    {{ Form::open(['class' => 'form-horizontal', 'files' => true, 'route' => 'multi-class-student', 'method' => 'GET', 'enctype' => 'multipart/form-data', 'id' => 'infix_form']) }}
                     <div class="white-box">
                         <div class="row">
 

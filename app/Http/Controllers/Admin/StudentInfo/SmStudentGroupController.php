@@ -26,7 +26,7 @@ class SmStudentGroupController extends Controller
                 return ApiBaseMethod::sendResponse($student_groups, null);
             }
 
-            return view('backEnd.studentInformation.student_group', compact('student_groups'));
+            return view('backEnd.studentInformation.student-group', compact('student_groups'));
         } catch (\Exception $e) {
             Toastr::error('Operation Failed', 'Failed');
             return redirect()->back();
@@ -55,7 +55,7 @@ class SmStudentGroupController extends Controller
         try {
             $student_group = SmStudentGroup::find($id);
             $student_groups = SmStudentGroup::withCount('students')->where('school_id', Auth::user()->school_id)->get();
-            return view('backEnd.studentInformation.student_group', compact('student_groups', 'student_group'));
+            return view('backEnd.studentInformation.student-group', compact('student_groups', 'student-group'));
         } catch (\Exception $e) {
             Toastr::error('Operation Failed', 'Failed');
             return redirect()->back();

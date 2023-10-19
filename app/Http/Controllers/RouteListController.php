@@ -595,7 +595,7 @@ class RouteListController extends Controller
          71 => 
          array (
            'name' => 'Student Category',
-           'route' => 'student_category',
+           'route' => 'student-category',
            'parent_route' => 'student_info',
            'type' => 2,
          ),
@@ -603,34 +603,34 @@ class RouteListController extends Controller
          array (
            'name' => 'Add',
            'route' => 'student_category_store',
-           'parent_route' => 'student_category',
+           'parent_route' => 'student-category',
            'type' => 3,
          ),
          73 => 
          array (
            'name' => 'Edit',
            'route' => 'student_category_edit',
-           'parent_route' => 'student_category',
+           'parent_route' => 'student-category',
            'type' => 3,
          ),
          74 => 
          array (
            'name' => 'Delete',
            'route' => 'student_category_delete',
-           'parent_route' => 'student_category',
+           'parent_route' => 'student-category',
            'type' => 3,
          ),
          75 => 
          array (
            'name' => 'Download',
            'route' => '',
-           'parent_route' => 'student_category',
+           'parent_route' => 'student-category',
            'type' => 3,
          ),
          76 => 
          array (
            'name' => 'Student Group',
-           'route' => 'student_group',
+           'route' => 'student-group',
            'parent_route' => 'student_info',
            'type' => 2,
          ),
@@ -638,21 +638,21 @@ class RouteListController extends Controller
          array (
            'name' => 'Add',
            'route' => 'student_group_store',
-           'parent_route' => 'student_group',
+           'parent_route' => 'student-group',
            'type' => 3,
          ),
          79 => 
          array (
            'name' => 'Edit',
            'route' => 'student_group_edit',
-           'parent_route' => 'student_group',
+           'parent_route' => 'student-group',
            'type' => 3,
          ),
          80 => 
          array (
            'name' => 'Delete',
            'route' => 'student_group_delete',
-           'parent_route' => 'student_group',
+           'parent_route' => 'student-group',
            'type' => 3,
          ),
          81 => 
@@ -4957,7 +4957,7 @@ class RouteListController extends Controller
          15201 => 
          array (
            'name' => 'Multi Class Student',
-           'route' => 'student.multi-class-student',
+           'route' => 'multi-class-student',
            'parent_route' => 'student_info',
            'type' => 2,
          ),

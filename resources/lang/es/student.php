@@ -264,7 +264,7 @@ return [
 
 "december" => "Diciembre",
 
-"student_category" => "Categoría de estudiantes",
+"student-category" => "Categoría de estudiantes",
 
 "promote_academic_year" => "Promover Año Académico",
 
@@ -280,7 +280,7 @@ return [
 
 "student_category_list" => "Lista de categorías de estudiantes",
 
-"student_group" => "Grupo de Estudiantes",
+"student-group" => "Grupo de Estudiantes",
 
 "disabled_student" => "Estudiantes discapacitados",
 

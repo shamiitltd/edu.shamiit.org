@@ -181,10 +181,10 @@
                                 </div>
                             </a>
                             <ul class="list-unstyled" id="subMenuStudent">
-                                @if (userPermission('student_category') && menuStatus(71))
+                                @if (userPermission('student-category') && menuStatus(71))
                                     <li data-position="{{ menuPosition(71) }}">
-                                        <a href="{{ route('student_category') }}">
-                                            @lang('student.student_category')</a>
+                                        <a href="{{ route('student-category') }}">
+                                            @lang('student.student-category')</a>
                                     </li>
                                 @endif
                                 @if (userPermission('student-admission') && menuStatus(62))
@@ -197,9 +197,9 @@
                                         <a href="{{ route('student-list') }}"> @lang('student.student-list')</a>
                                     </li>
                                 @endif
-                                @if (userPermission('student.multi-class-student') && menuStatus(64))
+                                @if (userPermission('multi-class-student') && menuStatus(64))
                                     <li data-position="{{ menuPosition(64) }}">
-                                        <a href="{{ route('student.multi-class-student') }}"> @lang('student.multi_class_student')</a>
+                                        <a href="{{ route('multi-class-student') }}"> @lang('student.multi_class_student')</a>
                                     </li>
                                 @endif
                                 @if (userPermission('student.delete-student-record') && menuStatus(64))
@@ -233,7 +233,7 @@
                                 @endif
                                 @if (userPermission(76) && menuStatus(76))
                                     <li data-position="{{ menuPosition(76) }}">
-                                        <a href="{{ route('student_group') }}">@lang('student.student_group')</a>
+                                        <a href="{{ route('student-group') }}">@lang('student.student-group')</a>
                                     </li>
                                 @endif
                                 @if (userPermission(81) && menuStatus(81))

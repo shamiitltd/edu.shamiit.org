@@ -4351,7 +4351,7 @@ class SmApiController extends Controller
                 return ApiBaseMethod::sendResponse($student_types, null);
             }
 
-            return view('backEnd.studentInformation.student_category', compact('student_types'));
+            return view('backEnd.studentInformation.student-category', compact('student_types'));
         } catch (\Exception $e) {
             return ApiBaseMethod::sendError('Error.', $e->getMessage());
         }
@@ -4367,7 +4367,7 @@ class SmApiController extends Controller
                 return ApiBaseMethod::sendResponse($student_types, null);
             }
 
-            return view('backEnd.studentInformation.student_category', compact('student_types'));
+            return view('backEnd.studentInformation.student-category', compact('student_types'));
         } catch (\Exception $e) {
             return ApiBaseMethod::sendError('Error.', $e->getMessage());
         }
@@ -4460,7 +4460,7 @@ class SmApiController extends Controller
         try {
             $student_type = SmStudentCategory::find($id);
             $student_types = SmStudentCategory::get();
-            return view('backEnd.studentInformation.student_category', compact('student_types', 'student_type'));
+            return view('backEnd.studentInformation.student-category', compact('student_types', 'student_type'));
         } catch (\Exception $e) {
             return ApiBaseMethod::sendError('Error.', $e->getMessage());
         }
@@ -4471,7 +4471,7 @@ class SmApiController extends Controller
         try {
             $student_type = SmStudentCategory::where('school_id', $school_id)->find($id);
             $student_types = SmStudentCategory::where('school_id', $school_id)->get();
-            return view('backEnd.studentInformation.student_category', compact('student_types', 'student_type'));
+            return view('backEnd.studentInformation.student-category', compact('student_types', 'student_type'));
         } catch (\Exception $e) {
             return ApiBaseMethod::sendError('Error.', $e->getMessage());
         }
@@ -4635,7 +4635,7 @@ class SmApiController extends Controller
                 return ApiBaseMethod::sendResponse($student_groups, null);
             }
 
-            return view('backEnd.studentInformation.student_group', compact('student_groups'));
+            return view('backEnd.studentInformation.student-group', compact('student_groups'));
         } catch (\Exception $e) {
             return ApiBaseMethod::sendError('Error.', $e->getMessage());
         }
@@ -4650,7 +4650,7 @@ class SmApiController extends Controller
                 return ApiBaseMethod::sendResponse($student_groups, null);
             }
 
-            return view('backEnd.studentInformation.student_group', compact('student_groups'));
+            return view('backEnd.studentInformation.student-group', compact('student_groups'));
         } catch (\Exception $e) {
             return ApiBaseMethod::sendError('Error.', $e->getMessage());
         }
@@ -4746,11 +4746,11 @@ class SmApiController extends Controller
 
             if (ApiBaseMethod::checkUrl($request->fullUrl())) {
                 $data = [];
-                $data['student_group'] = $student_group->toArray();
+                $data['student-group'] = $student_group->toArray();
                 $data['student_groups'] = $student_groups->toArray();
                 return ApiBaseMethod::sendResponse($data, null);
             }
-            return view('backEnd.studentInformation.student_group', compact('student_groups', 'student_group'));
+            return view('backEnd.studentInformation.student-group', compact('student_groups', 'student-group'));
         } catch (\Exception $e) {
             return ApiBaseMethod::sendError('Error.', $e->getMessage());
         }
@@ -4764,11 +4764,11 @@ class SmApiController extends Controller
 
             if (ApiBaseMethod::checkUrl($request->fullUrl())) {
                 $data = [];
-                $data['student_group'] = $student_group->toArray();
+                $data['student-group'] = $student_group->toArray();
                 $data['student_groups'] = $student_groups->toArray();
                 return ApiBaseMethod::sendResponse($data, null);
             }
-            return view('backEnd.studentInformation.student_group', compact('student_groups', 'student_group'));
+            return view('backEnd.studentInformation.student-group', compact('student_groups', 'student-group'));
         } catch (\Exception $e) {
             return ApiBaseMethod::sendError('Error.', $e->getMessage());
         }

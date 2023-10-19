@@ -181,7 +181,7 @@
                                                         @endif >@lang('exam.exam_type') </option>
                                                     <option value="App\SmStudentCategory"
                                                         @if (isset($academic_year)) @if (in_array('App\SmStudentCategory', @$copy_with_academic_year)) selected @endif
-                                                        @endif >@lang('student.student_category')</option>
+                                                        @endif >@lang('student.student-category')</option>
                                                     <option value="App\SmFeesGroup"
                                                         @if (isset($academic_year)) @if (in_array('App\SmFeesGroup', @$copy_with_academic_year)) selected @endif
                                                         @endif >@lang('fees.fees_group')</option>

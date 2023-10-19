@@ -23,7 +23,7 @@ class CreateFeesInvoiceSettingsTable extends Migration
             $table->tinyInteger('student_section')->default(1)->comment('0=No, 1=Yes');
             $table->tinyInteger('student_class')->default(1)->comment('0=No, 1=Yes');
             $table->tinyInteger('student_roll')->default(1)->comment('0=No, 1=Yes');
-            $table->tinyInteger('student_group')->default(1)->comment('0=No, 1=Yes');
+            $table->tinyInteger('student-group')->default(1)->comment('0=No, 1=Yes');
             $table->tinyInteger('student_admission_no')->default(1)->comment('0=No, 1=Yes');
             
             $table->string('footer_1',255)->default('Parent/Student')->nullable();

@@ -1,17 +1,17 @@
 @extends('backEnd.master')
 @section('title')
-@lang('student.student_group')
+@lang('student.student-group')
 @endsection
 
 @section('mainContent')
 <section class="sms-breadcrumb mb-40 up_breadcrumb white-box">
     <div class="container-fluid">
         <div class="row justify-content-between">
-            <h1>@lang('student.student_group')</h1>
+            <h1>@lang('student.student-group')</h1>
             <div class="bc-pages">
                 <a href="{{url('admin-dashboard')}}">@lang('common.dashboard')</a>
                 <a href="#">@lang('student.student_information')</a>
-                <a href="#">@lang('student.student_group')</a>
+                <a href="#">@lang('student.student-group')</a>
             </div>
         </div>
     </div>
@@ -23,7 +23,7 @@
 
         <div class="row">
             <div class="offset-lg-10 col-lg-2 text-right col-md-12 mb-20">
-                <a href="{{route('student_group')}}" class="primary-btn small fix-gr-bg">
+                <a href="{{route('student-group')}}" class="primary-btn small fix-gr-bg">
                     <span class="ti-plus pr-2"></span>
                     @lang('common.add')
                 </a>

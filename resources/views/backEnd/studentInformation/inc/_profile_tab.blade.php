@@ -595,7 +595,7 @@
                 <div class="row">
                     <div class="col-lg-5 col-md-5">
                         <div class="">
-                            @lang('student.student_group')
+                            @lang('student.student-group')
                         </div>
                     </div>
 

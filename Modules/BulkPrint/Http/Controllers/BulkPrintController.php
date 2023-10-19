@@ -239,7 +239,7 @@ class BulkPrintController extends Controller
             $invoiceSetting->student_section=$request->boolean('student_section');
             $invoiceSetting->student_class=$request->boolean('student_class');
             $invoiceSetting->student_roll=$request->boolean('student_roll');
-            $invoiceSetting->student_group=$request->boolean('student_group');
+            $invoiceSetting->student-group=$request->boolean('student-group');
             $invoiceSetting->student_admission_no=$request->boolean('student_admission_no');
 
             $invoiceSetting->footer_1=$request->footer_1;
@@ -616,7 +616,7 @@ class BulkPrintController extends Controller
             $invoiceSetting->student_section=$request->student_section;
             $invoiceSetting->student_class=$request->student_class;   
             $invoiceSetting->student_roll=$request->student_roll;
-            $invoiceSetting->student_group=$request->student_group;
+            $invoiceSetting->student-group=$request->student-group;
             $invoiceSetting->student_admission_no=$request->student_admission_no;
             $invoiceSetting->footer_1=$request->footer_1;
             $invoiceSetting->footer_2=$request->footer_2;

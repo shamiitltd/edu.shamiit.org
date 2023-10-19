@@ -580,14 +580,14 @@ Route::group(['middleware' => ['XSS','subscriptionAccessUrl']], function () {
         Route::get('search-profit-by-date', ['as' => 'search_profit_by_date', 'uses' => 'Admin\Accounts\SmAccountsController@profit']);
 
         // Student Type Routes
-        Route::get('student-category', ['as' => 'student_category', 'uses' => 'Admin\StudentInfo\SmStudentCategoryController@index'])->middleware('userRolePermission:student_category');
+        Route::get('student-category', ['as' => 'student-category', 'uses' => 'Admin\StudentInfo\SmStudentCategoryController@index'])->middleware('userRolePermission:student-category');
         Route::post('student-category-store', ['as' => 'student_category_store', 'uses' => 'Admin\StudentInfo\SmStudentCategoryController@store'])->middleware('userRolePermission:student_category_store');
         Route::get('student-category-edit/{id}', ['as' => 'student_category_edit', 'uses' => 'Admin\StudentInfo\SmStudentCategoryController@edit'])->middleware('userRolePermission:student_category_edit');
         Route::post('student-category-update', ['as' => 'student_category_update', 'uses' => 'Admin\StudentInfo\SmStudentCategoryController@update'])->middleware('userRolePermission:student_category_edit');
         Route::get('student-category-delete/{id}', ['as' => 'student_category_delete', 'uses' => 'Admin\StudentInfo\SmStudentCategoryController@delete'])->middleware('userRolePermission:student_category_delete');
 
         // Student Group Routes
-        Route::get('student-group', ['as' => 'student_group', 'uses' => 'Admin\StudentInfo\SmStudentGroupController@index'])->middleware('userRolePermission:student_group');
+        Route::get('student-group', ['as' => 'student-group', 'uses' => 'Admin\StudentInfo\SmStudentGroupController@index'])->middleware('userRolePermission:student-group');
         Route::post('student-group-store', ['as' => 'student_group_store', 'uses' => 'Admin\StudentInfo\SmStudentGroupController@store'])->middleware('userRolePermission:student_group_store');
         Route::get('student-group-edit/{id}', ['as' => 'student_group_edit', 'uses' => 'Admin\StudentInfo\SmStudentGroupController@edit'])->middleware('userRolePermission:student_group_edit');
         Route::post('student-group-update', ['as' => 'student_group_update', 'uses' => 'Admin\StudentInfo\SmStudentGroupController@update'])->middleware('userRolePermission:student_group_edit');
@@ -2101,7 +2101,7 @@ Route::group(['middleware' => ['XSS','subscriptionAccessUrl']], function () {
     Route::get('sorting-student-list/{class_id}', ['as' => 'sorting_student_list', 'uses' => 'SmStudentAdmissionController@sortingStudent'])->middleware('userRolePermission:unassigned_student');
     Route::get('sorting-student-section-list/{class_id}/{section_id}', ['as' => 'sorting_student_list_section', 'uses' => 'SmStudentAdmissionController@sortingSectionStudent'])->middleware('userRolePermission:unassigned_student');
 
-    Route::get('multi-class-student', 'Admin\StudentInfo\StudentMultiRecordController@multiRecord')->name('student.multi-class-student')->middleware('userRolePermission:student.multi-class-student');
+    Route::get('multi-class-student', 'Admin\StudentInfo\StudentMultiRecordController@multiRecord')->name('multi-class-student')->middleware('userRolePermission:multi-class-student');
 
     Route::get('student-multi-record/{student_id}', 'Admin\StudentInfo\StudentMultiRecordController@studentMultiRecord')->name('student.student-multi-record');
 

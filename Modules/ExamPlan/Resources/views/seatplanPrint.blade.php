@@ -248,7 +248,7 @@
 
         @endif
         @if(isset($seat_plan->studentRecord->studentDetail->category))
-            <h5 class="student_group">{{@$seat_plan->studentRecord->studentDetail->category->category_name}}</h5>
+            <h5 class="student-group">{{@$seat_plan->studentRecord->studentDetail->category->category_name}}</h5>
 
         @endif
         </div>
