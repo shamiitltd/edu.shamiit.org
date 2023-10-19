@@ -17,7 +17,7 @@
                 <h1>@lang('student.student_import')</h1>
                 <div class="bc-pages">
                     <a href="{{ route('dashboard') }}">@lang('common.dashboard')</a>
-                    <a href="#">@lang('student.student_admission')</a>
+                    <a href="#">@lang('student.student-admission')</a>
                     <a href="#">@lang('student.student_import')</a>
                 </div>
             </div>

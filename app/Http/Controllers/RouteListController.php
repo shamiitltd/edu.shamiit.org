@@ -532,7 +532,7 @@ class RouteListController extends Controller
          62 => 
          array (
            'name' => 'Add Student',
-           'route' => 'student_admission',
+           'route' => 'student-admission',
            'parent_route' => 'student_info',
            'type' => 2,
          ),
@@ -540,7 +540,7 @@ class RouteListController extends Controller
          array (
            'name' => 'Import Student',
            'route' => 'import_student',
-           'parent_route' => 'student_admission',
+           'parent_route' => 'student-admission',
            'type' => 3,
          ),
          64 => 

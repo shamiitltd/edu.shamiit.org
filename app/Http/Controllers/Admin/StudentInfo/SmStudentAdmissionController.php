@@ -102,7 +102,7 @@ class SmStudentAdmissionController extends Controller
             if (moduleStatusCheck('University')) {
                 return view('university::admission.add_student_admission', $data);
             }
-            return view('backEnd.studentInformation.student_admission', $data);
+            return view('backEnd.studentInformation.student-admission', $data);
 
         } catch (\Exception $e) {
             Toastr::error('Operation Failed', 'Failed');
@@ -403,7 +403,7 @@ class SmStudentAdmissionController extends Controller
                 $compact['slug'] = 'student';
                 $compact['id'] = $student->id;
                 @send_mail($request->email_address, $request->first_name . ' ' . $request->last_name, "student_login_credentials", $compact);
-                @send_sms($request->phone_number, 'student_admission', $compact);
+                @send_sms($request->phone_number, 'student-admission', $compact);
             }
             if($parentInfo) {
                 if ($parent) {

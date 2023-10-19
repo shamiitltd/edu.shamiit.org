@@ -13,7 +13,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 text-md-right text-left col-md-6 mb-30-lg">
-                    <a href="{{route('student_admission')}}" class="primary-btn small fix-gr-bg">
+                    <a href="{{route('student-admission')}}" class="primary-btn small fix-gr-bg">
                         <span class="ti-plus pr-2"></span>
                         @lang('common.add_student')
                     </a>

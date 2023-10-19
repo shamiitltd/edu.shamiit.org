@@ -34,7 +34,7 @@ return [
     "students" => "শিক্ষার্থীরা",
     "parents" => "প্যারেন্টস",
     "sms_template" => "এসএমএস টেমপ্লেট",
-    "student_admission" => "ছাত্র অ্যাডমিশন",
+    "student-admission" => "ছাত্র অ্যাডমিশন",
     "student_attendance" => "ছাত্র-ছাত্রী",
     "staff_attendance" => "ছাত্র-ছাত্রী",
     "student_promote" => "ছাত্র প্রোমোট",

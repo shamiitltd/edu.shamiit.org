@@ -33,7 +33,7 @@ class CreateSmsTemplatesTable extends Migration
         $allTempletes = [
             // SMS Start
 
-            ['sms', 'student_admission', '', 'Dear [student_name], Your Admission Is Completed You Can Login To Your Account Using username:[user_name] Password:[password], Thank You [school_name]', '', '[student_name], [user_name], [password], [school_name]'],
+            ['sms', 'student-admission', '', 'Dear [student_name], Your Admission Is Completed You Can Login To Your Account Using username:[user_name] Password:[password], Thank You [school_name]', '', '[student_name], [user_name], [password], [school_name]'],
             ['sms', 'student_admission_for_parent', '', 'Dear Parent [parent_name], Your Child [student_name] Admission Is Completed You Can Login To Your Account Using username:[user_name] Password:[password], Thank You [school_name]', '', '[parent_name], [student_name], [user_name], [password], [school_name]'],
             ['sms', 'exam_schedule_for_student', '', 'Dear [student_name], your next exam: [exam_type] on [exam_date], [exam_time],Please Attend In Exam, Thank You [school_name]', '', '[student_name], [exam_type], [exam_date], [exam_time], [school_name]'],
             ['sms', 'exam_schedule_for_parent', '', 'Dear [parent_name], your children [student_name] next exam: [exam_type] on [exam_date], [exam_time], Thank You [school_name]', '', '[parent_name], [student_name], [exam_type], [exam_date], [exam_time], [school_name]'],

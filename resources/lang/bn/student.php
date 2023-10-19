@@ -145,7 +145,7 @@ return [
     "notice" => "নোটিশ",
     "students" => "শিক্ষার্থীরা",
     "parents" => "প্যারেন্টস",
-    "student_admission" => "ছাত্র অ্যাডমিশন",
+    "student-admission" => "ছাত্র অ্যাডমিশন",
     "student_attendance" => "ছাত্র-ছাত্রী",
     "student_promote" => "ছাত্র প্রোমোট",
     "student_registration" => "ছাত্র নিবন্ধন",

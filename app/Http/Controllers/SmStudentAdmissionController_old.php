@@ -158,7 +158,7 @@ class SmStudentAdmissionController extends Controller
             $groups = SmStudentGroup::where('school_id', Auth::user()->school_id)->get();
             $sessions = SmAcademicYear::where('active_status', '=', '1')->where('school_id', Auth::user()->school_id)->get();
 
-            return view('backEnd.studentInformation.student_admission', compact('classes', 'religions', 'blood_groups', 'genders', 'route_lists', 'vehicles', 'dormitory_lists', 'categories','groups', 'sessions', 'max_admission_id', 'max_roll_id', 'driver_lists'));
+            return view('backEnd.studentInformation.student-admission', compact('classes', 'religions', 'blood_groups', 'genders', 'route_lists', 'vehicles', 'dormitory_lists', 'categories','groups', 'sessions', 'max_admission_id', 'max_roll_id', 'driver_lists'));
         } catch (\Exception $e) {
             Toastr::error('Operation Failed', 'Failed');
             return redirect()->back();

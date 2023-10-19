@@ -542,7 +542,7 @@
                                     <div class="row">
                                         <div class="col-lg-6 col-md-6">
                                             <div class="name">
-                                                @lang('system_settings.student_admission')
+                                                @lang('system_settings.student-admission')
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6">

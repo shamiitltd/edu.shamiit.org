@@ -698,7 +698,7 @@ return [
 
 "parents" => "Padres",
 
-"student_admission" => "Admisión Estudiantil",
+"student-admission" => "Admisión Estudiantil",
 
 "student_attendance" => "Asistencia a los estudiantes",
 

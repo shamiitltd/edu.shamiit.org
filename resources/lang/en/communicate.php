@@ -68,7 +68,7 @@ return[
     'location'=>'Location',
     'download'=>'Download',
     'sms_template'=>'Sms Template',
-    'student_admission'=>'Student Admission',
+    'student-admission'=>'Student Admission',
     'student_attendance'=>'Student Attendance',
     'staff_attendance'=>'Staff Attendance',
     'student_promote'=>'Student Promote',

@@ -187,9 +187,9 @@
                                             @lang('student.student_category')</a>
                                     </li>
                                 @endif
-                                @if (userPermission('student_admission') && menuStatus(62))
+                                @if (userPermission('student-admission') && menuStatus(62))
                                     <li data-position="{{ menuPosition(62) }}">
-                                        <a href="{{ route('student_admission') }}">@lang('student.add_student')</a>
+                                        <a href="{{ route('student-admission') }}">@lang('student.add_student')</a>
                                     </li>
                                 @endif
                                 @if (userPermission('student_list') && menuStatus(64))

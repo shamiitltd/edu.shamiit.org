@@ -354,7 +354,7 @@
        'result_type'=>'Result Type',
        'gpa'=>'GPA',
        '100_%_mark'=>'100 %Mark',
-       'student_admission'=> "Student Admission",
+       'student-admission'=> "Student Admission",
        'without_guardian' => 'Without Guardian',
        'with_guardian' => 'With Guardian',
         'paystack' => 'PayStack',

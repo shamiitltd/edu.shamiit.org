@@ -486,7 +486,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-6 d-flex relation-button">
-                                    <p class="text-uppercase mb-0">@lang('system_settings.student_admission')</p>
+                                    <p class="text-uppercase mb-0">@lang('system_settings.student-admission')</p>
                                     <div class="d-flex radio-btn-flex ml-30">
                                         <div class="mr-20">
                                             <input type="radio" name="with_guardian" id="with_guardian" value="1" class="common-radio relationButton" {{@$editData->with_guardian == 1 ? 'checked': ''}}>

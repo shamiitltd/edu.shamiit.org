@@ -151,7 +151,7 @@ class SmStudentAdmissionController extends Controller
 
             $custom_fields = SmCustomField::where('form_name','student_registration')->get();
 
-            return view('backEnd.studentInformation.student_admission', compact('classes', 'religions', 'blood_groups', 'genders', 'route_lists', 'vehicles', 'dormitory_lists', 'categories','groups', 'sessions', 'max_admission_id', 'max_roll_id', 'driver_lists','custom_fields'));
+            return view('backEnd.studentInformation.student-admission', compact('classes', 'religions', 'blood_groups', 'genders', 'route_lists', 'vehicles', 'dormitory_lists', 'categories','groups', 'sessions', 'max_admission_id', 'max_roll_id', 'driver_lists','custom_fields'));
         } catch (\Exception $e) {
             Toastr::error('Operation Failed', 'Failed');
             return redirect()->back();
@@ -811,7 +811,7 @@ class SmStudentAdmissionController extends Controller
                             $compact['slug'] = 'student';
                             $compact['id'] = $student->id;
                             @send_mail($request->email_address, $request->first_name . ' ' . $request->last_name, "student_login_credentials", $compact);
-                            @send_sms($request->phone_number, 'student_admission', $compact);
+                            @send_sms($request->phone_number, 'student-admission', $compact);
                         }
 
                         if($request->parent_id != ""){

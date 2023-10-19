@@ -24,9 +24,9 @@
                     </div>
                 </div>
 
-                @if(userPermission('student_admission'))
+                @if(userPermission('student-admission'))
                     <div class="col-lg-4 text-md-right text-left col-md-6 mb-30-lg col-sm-6 text_sm_right">
-                        <a href="{{route('student_admission')}}" class="primary-btn small fix-gr-bg">
+                        <a href="{{route('student-admission')}}" class="primary-btn small fix-gr-bg">
                             <span class="ti-plus pr-2"></span>
                             @lang('student.add_student')
                         </a>
