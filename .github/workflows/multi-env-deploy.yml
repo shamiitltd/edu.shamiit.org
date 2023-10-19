@@ -268,6 +268,14 @@ jobs:
       - name: Migration Permission okay
         run: echo "Migrate ready"
 
+  SEED-READY:
+    name: SEED Ready
+    runs-on: ubuntu-latest
+    environment: SEED
+    steps:
+      - name: SEED Permission okay
+        run: echo "SEED ready"
+
   MIGRATION-TEST:
     name: Migration in TEST
     runs-on: ubuntu-latest
@@ -280,7 +288,19 @@ jobs:
             cd "${{ secrets.FTP_SERVER }}"
             php artisan migrate:fresh --force
           EOF
-
+          
+  SEED-TEST:
+    name: SEED in TEST
+    runs-on: ubuntu-latest
+    environment: TEST
+    needs: ["SEED-READY", "MIGRATION-TEST", "DEVELOPMENT"]
+    steps:
+      - name: SEED the Database in TEST
+        run: |
+          sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no "${{ secrets.SSH_USER }}" << 'EOF'
+            cd "${{ secrets.FTP_SERVER }}"
+            php artisan db:seed --force
+          EOF
 
   MIGRATION-QA:
     name: Migration in QA
@@ -293,6 +313,19 @@ jobs:
           sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no "${{ secrets.SSH_USER }}" << 'EOF'
             cd "${{ secrets.FTP_SERVER }}"
             php artisan migrate:fresh --force
+          EOF
+          
+  SEED-QA:
+    name: SEED in QA
+    runs-on: ubuntu-latest
+    environment: QA
+    needs: ["SEED-READY", "MIGRATION-QA", "QUALITYANALYSIS"]
+    steps:
+      - name: SEED the Database in QA
+        run: |
+          sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no "${{ secrets.SSH_USER }}" << 'EOF'
+            cd "${{ secrets.FTP_SERVER }}"
+            php artisan db:seed --force
           EOF
 
   MIGRATION-PROD:
@@ -307,5 +340,17 @@ jobs:
             cd "${{ secrets.FTP_SERVER }}"
             php artisan migrate:fresh --force
           EOF
-
+          
+  SEED-PROD:
+    name: SEED in PROD
+    runs-on: ubuntu-latest
+    environment: PROD
+    needs: ["SEED-READY", "MIGRATION-PROD", "PRODUCTION"]
+    steps:
+      - name: SEED the Database in PROD
+        run: |
+          sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no "${{ secrets.SSH_USER }}" << 'EOF'
+            cd "${{ secrets.FTP_SERVER }}"
+            php artisan db:seed --force
+          EOF
           
