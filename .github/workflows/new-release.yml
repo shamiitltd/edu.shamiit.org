@@ -145,6 +145,14 @@ jobs:
       - name: Migration Permission okay
         run: echo "Migrate ready"
 
+  SEED-READY:
+    name: SEED Ready
+    runs-on: ubuntu-latest
+    environment: SEED
+    steps:
+      - name: SEED Permission okay
+        run: echo "SEED ready"
+
   MIGRATION-NEWSERVER:
     name: Migration in NEWSERVER
     runs-on: ubuntu-latest
@@ -158,3 +166,15 @@ jobs:
             php artisan migrate:fresh --force
           EOF
           
+  SEED-NEWSERVER:
+    name: SEED in NEWSERVER
+    runs-on: ubuntu-latest
+    environment: NEWSERVER
+    needs: ["SEED-READY", "MIGRATION-NEWSERVER"]
+    steps:
+      - name: SEED the Database in NEWSERVER
+        run: |
+          sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no "${{ secrets.SSH_USER }}" << 'EOF'
+            cd "${{ secrets.FTP_SERVER }}"
+            php artisan db:seed --force
+          EOF
