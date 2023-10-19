@@ -3423,7 +3423,7 @@ class SmApiController extends Controller
                 ->get();
             if (ApiBaseMethod::checkUrl($request->fullUrl())) {
                 $data = [];
-                $data['student_list'] = $student_list->toArray();
+                $data['student-list'] = $student_list->toArray();
                 return ApiBaseMethod::sendResponse($data, null);
             }
             $academic_years = SmAcademicYear::latest()->get();
@@ -3444,7 +3444,7 @@ class SmApiController extends Controller
                 ->get();
             if (ApiBaseMethod::checkUrl($request->fullUrl())) {
                 $data = [];
-                $data['student_list'] = $student_list->toArray();
+                $data['student-list'] = $student_list->toArray();
                 return ApiBaseMethod::sendResponse($data, null);
             }
             $academic_years = SmAcademicYear::where('school_id',$school_id)->latest()->get();
@@ -3508,7 +3508,7 @@ class SmApiController extends Controller
                 ->get();
             if (ApiBaseMethod::checkUrl($request->fullUrl())) {
                 $data = [];
-                $data['student_list'] = $student_list->toArray();
+                $data['student-list'] = $student_list->toArray();
                 return ApiBaseMethod::sendResponse($data, null);
             }
             $academic_years = SmAcademicYear::latest()->get();
@@ -3530,7 +3530,7 @@ class SmApiController extends Controller
                 ->get();
             if (ApiBaseMethod::checkUrl($request->fullUrl())) {
                 $data = [];
-                $data['student_list'] = $student_list->toArray();
+                $data['student-list'] = $student_list->toArray();
                 return ApiBaseMethod::sendResponse($data, null);
             }
         } catch (\Exception $e) {

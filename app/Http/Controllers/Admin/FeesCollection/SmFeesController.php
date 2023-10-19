@@ -636,13 +636,13 @@ class SmFeesController extends Controller
 
     public function sendDuesFeesEmail(Request $request){
         try{
-            if(empty($request->student_list)) {
+            if(empty($request->student-list)) {
                 Toastr::warning('Student Not Found', 'Warning');
                 return redirect()->back();
             }
 
 
-            $students = SmStudent::with('parents')->whereIn('id', $request->student_list)->get();
+            $students = SmStudent::with('parents')->whereIn('id', $request->student-list)->get();
 
             $fees_info = SmFeesMaster::with('feesType', 'feesGroups')->find($request->fees_master);
 

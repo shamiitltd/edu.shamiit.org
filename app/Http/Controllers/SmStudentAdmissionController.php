@@ -2913,7 +2913,7 @@ class SmStudentAdmissionController extends Controller
     {
         try {
             $class = SmClass::find($class_id);
-            $pt = trans('student.class') . " ". @$class->class_name . " ". trans('student.student_list') ;
+            $pt = trans('student.class') . " ". @$class->class_name . " ". trans('student.student-list') ;
             return view('backEnd.studentInformation.sortingStudent', compact('class_id','pt'));
         } catch (\Exception $e) {
             Toastr::error('Operation Failed', 'Failed');
@@ -2926,7 +2926,7 @@ class SmStudentAdmissionController extends Controller
         try {
             $class = SmClass::find($class_id);
             $section = SmSection::find($section_id);
-            $pt = trans('student.class') . "-". @$class->class_name .'(' .$section->section_name .') ' . trans('student.student_list') ;
+            $pt = trans('student.class') . "-". @$class->class_name .'(' .$section->section_name .') ' . trans('student.student-list') ;
             return view('backEnd.studentInformation.sortingStudent', compact('section_id','class_id','pt'));
         } catch (\Exception $e) {
             Toastr::error('Operation Failed', 'Failed');

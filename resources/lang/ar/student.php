@@ -271,7 +271,7 @@ return [
     'student_group' => 'Student Group',
     'group' => 'Group',
     'disabled_student' => 'Disabled Students',
-    'student_list' => 'Student List',
+    'student-list' => 'Student List',
     'birth_certificate' => 'Birth Certificate',
     'student_edit' => 'Student Edit',
     'in' => 'In',

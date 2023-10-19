@@ -92,7 +92,7 @@ return [
     'view_note'=>'View Note',
     'class_name'=>'Class Name',
     'roll_number'=>'Roll Number',
-    'student_list'=>'Student List',
+    'student-list'=>'Student List',
     'delete_item'=>'Delete Item',
     'select_month'=>'Select Month',
     'blood_group'    => 'Blood Group',

@@ -10,7 +10,7 @@
             <h1>@lang('common.profile_update') </h1>
             <div class="bc-pages">
                 <a href="{{route('dashboard')}}">@lang('common.dashboard')</a>
-                <a href="{{route('student_list')}}">@lang('common.student_list')</a>
+                <a href="{{route('student-list')}}">@lang('common.student-list')</a>
                 <a href="#">@lang('common.profile_update') </a>
             </div>
         </div>

@@ -192,9 +192,9 @@
                                         <a href="{{ route('student-admission') }}">@lang('student.add_student')</a>
                                     </li>
                                 @endif
-                                @if (userPermission('student_list') && menuStatus(64))
+                                @if (userPermission('student-list') && menuStatus(64))
                                     <li data-position="{{ menuPosition(64) }}">
-                                        <a href="{{ route('student_list') }}"> @lang('student.student_list')</a>
+                                        <a href="{{ route('student-list') }}"> @lang('student.student-list')</a>
                                     </li>
                                 @endif
                                 @if (userPermission('student.multi-class-student') && menuStatus(64))

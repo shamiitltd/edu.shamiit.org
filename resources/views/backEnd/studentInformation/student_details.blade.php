@@ -1,6 +1,6 @@
 @extends('backEnd.master')
 @section('title')
-    @lang('student.student_list')
+    @lang('student.student-list')
 @endsection
 @section('mainContent')
     <section class="sms-breadcrumb mb-40 up_breadcrumb white-box">
@@ -10,7 +10,7 @@
                 <div class="bc-pages">
                     <a href="{{route('dashboard')}}">@lang('common.dashboard')</a>
                     <a href="#">@lang('student.student_information')</a>
-                    <a href="#">@lang('student.student_list')</a>
+                    <a href="#">@lang('student.student-list')</a>
                 </div>
             </div>
         </div>
@@ -113,7 +113,7 @@
                     <div class="row">
                         <div class="col-lg-4 no-gutters">
                             <div class="main-title">
-                                <h3 class="mb-0">@lang('student.student_list')</h3>
+                                <h3 class="mb-0">@lang('student.student-list')</h3>
                             </div>
                         </div>
                     </div>

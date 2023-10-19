@@ -44,7 +44,7 @@
                 <div class="row">
                     @if (userPermission('number-of-student'))
                         <div class="col-lg-3 col-md-6 col-sm-6">
-                            <a href="{{ route('student_list') }}" class="d-block">
+                            <a href="{{ route('student-list') }}" class="d-block">
                                 <div class="white-box single-summery">
                                     <div class="d-flex justify-content-between">
                                         <div>

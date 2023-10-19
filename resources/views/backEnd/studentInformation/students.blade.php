@@ -1,7 +1,7 @@
 
 @extends('backEnd.master')
 @section('title') 
-@lang('common.student_list')
+@lang('common.student-list')
 @endsection
 
 @section('mainContent')
@@ -12,7 +12,7 @@
             <div class="bc-pages">
                 <a href="{{route('dashboard')}}">@lang('common.dashboard')</a>
                 <a href="#">@lang('student.student_information')</a>
-                <a href="#">@lang('common.student_list')</a>
+                <a href="#">@lang('common.student-list')</a>
             </div>
         </div>
     </div>

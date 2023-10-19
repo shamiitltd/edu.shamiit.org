@@ -56,7 +56,7 @@
                 @if (moduleStatusCheck('University'))
                     <div class="bc-pages">
                         <a href="{{ url('dashboard') }}">@lang('common.dashboard')</a>
-                        <a href="{{ route('student_list') }}">@lang('student.student_list')</a>
+                        <a href="{{ route('student-list') }}">@lang('student.student-list')</a>
                         <a href="#">
                             @if (moduleStatusCheck('University'))
                                 @lang('university::un.assign_faculty_department')
@@ -68,7 +68,7 @@
 
                 <div class="bc-pages">
                     <a href="{{ url('dashboard') }}">@lang('common.dashboard')</a>
-                    <a href="{{ route('student_list') }}">@lang('student.student_list')</a>
+                    <a href="{{ route('student-list') }}">@lang('student.student-list')</a>
                     <a href="#">@lang('student.assign_class')</a>
                 </div>
             </div>

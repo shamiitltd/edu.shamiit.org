@@ -92,7 +92,7 @@ return [
 
 "class_name" => "Nombre de clase",
 
-"student_list" => "Lista de estudiantes",
+"student-list" => "Lista de estudiantes",
 
 "select_month" => "Seleccione Mes",
 

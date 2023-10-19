@@ -812,7 +812,7 @@ class SmFeesController extends Controller
             if(isset($request->send_email)){
 
                 $systemEmail = SmsTemplate::first();
-                foreach($request->student_list as $student){
+                foreach($request->student-list as $student){
                     $student_detail = SmStudent::where('id', $student)->first();
                     $fees_info['dues_fees'] = $request->dues_amount[$student];
                     $fees_info['fees_master'] = $request->fees_master;
@@ -842,7 +842,7 @@ class SmFeesController extends Controller
             }elseif(isset($request->send_sms)){
 
 
-                foreach($request->student_list as $student){
+                foreach($request->student-list as $student){
 
                     $student_detail = SmStudent::find($student);
                     $parent_detail = SmParent::find($student_detail->parent_id);

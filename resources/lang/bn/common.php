@@ -14,7 +14,7 @@ return [
     "installed_domain" => "ইনস্টল করা ডোমেইন",
     "view_note" => "নোট দেখাও",
     "class_name" => "ক্লাস নাম",
-    "student_list" => "ছাত্র তালিকা",
+    "student-list" => "ছাত্র তালিকা",
     "national_id_card" => "জাতীয় পরিচয় পত্র",
     "national_id_number" => "জাতীয় পরিচয় পত্র",
     "delete_custom_field" => "স্বনির্ধারিত ক্ষেত্র মুছে ফেলুন",

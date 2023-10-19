@@ -126,7 +126,7 @@ Route::group(['middleware' => ['XSS','auth:api','json.response']], function () {
 
     // -----------Start Student Information---------------
     // student list
-    Route::get('student-list', ['as' => 'student_list', 'uses' => 'SmApiController@studentDetails']);
+    Route::get('student-list', ['as' => 'student-list', 'uses' => 'SmApiController@studentDetails']);
     Route::get('school/{school_id}/student-list', ['as' => 'saas_student_list', 'uses' => 'SmApiController@saas_studentDetails']);
 
     // student search

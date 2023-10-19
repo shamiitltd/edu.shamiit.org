@@ -347,7 +347,7 @@
                                                     $dues_amount = $fees_due->feesGroupMaster->amount - $discount_amount - $amount;
                                                 @endphp
                                                 <input type="hidden" name="dues_amount[{{$fees_due->recordDetail->id}}]" value="{{$dues_amount}}">
-                                                <input type="hidden" name="student_list[]" value="{{$fees_due->recordDetail->student_id}}">
+                                                <input type="hidden" name="student-list[]" value="{{$fees_due->recordDetail->student_id}}">
                                                 <input type="hidden" name="fees_master" value="{{$fees_due->feesGroupMaster->id}}">
                                             </td>
                                             <td>

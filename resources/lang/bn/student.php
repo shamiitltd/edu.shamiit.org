@@ -128,7 +128,7 @@ return [
     "export_to_pdf" => "PDF এ রপ্তানি করো",
     "student_name" => "ছাত্র-নাম",
     "actions" => "অ্যাকশন",
-    "student_list" => "ছাত্র তালিকা",
+    "student-list" => "ছাত্র তালিকা",
     "national_id_number" => "জাতীয় আইডি কার্ড",
     "delete_custom_field" => "স্বনির্ধারিত ক্ষেত্র মুছে ফেলুন",
     "birth_certificate_number" => "বার্থ সার্টিফিকেট সংখ্যা",

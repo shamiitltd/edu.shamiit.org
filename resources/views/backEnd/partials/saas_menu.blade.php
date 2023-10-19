@@ -53,7 +53,7 @@
         <ul class="collapse list-unstyled" id="subMenuStudentRegistration">
            
             <li>
-                <a href="{{route('parentregistration/saas-student-list')}}"> @lang('common.student_list')</a>
+                <a href="{{route('parentregistration/saas-student-list')}}"> @lang('common.student-list')</a>
             </li>
             <li>
                 <a href="{{route('parentregistration/settings')}}"> @lang('system_settings.settings')</a>
@@ -175,7 +175,7 @@
     <a href="#subMenuInfixInvoice" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
         <span class="flaticon-accounting"></span> Reports </a>
     <ul class="collapse list-unstyled" id="subMenuInfixInvoice">
-        <li><a href="{{route('administrator/student-list')}}">@lang('common.student_list')</a></li>
+        <li><a href="{{route('administrator/student-list')}}">@lang('common.student-list')</a></li>
         <li><a href="{{route('administrator/income-expense')}}">@lang('accounts.date_to')/@lang('accounts.expense')</a></li>
         <li><a href="{{route('administrator/teacher-list')}}">@lang('hr.teacher_list')</a></li>
         <li><a href="{{route('administrator/class-list')}}">@lang('common.class_list')</a></li>

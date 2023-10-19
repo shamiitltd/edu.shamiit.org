@@ -127,7 +127,7 @@
                         <div class="row">
                             <div class="col-lg-2 no-gutters">
                                 <div class="main-title">
-                                    <h3 class="mb-0">@lang('student.student_list')</h3>
+                                    <h3 class="mb-0">@lang('student.student-list')</h3>
                                 </div>
                             </div>
                             <div class="col-lg-1">

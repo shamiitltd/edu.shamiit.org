@@ -885,7 +885,7 @@ class SmStudentAdmissionController extends Controller
                 ->where('sm_students.school_id', Auth::user()->school_id)->get();
             if (ApiBaseMethod::checkUrl($request->fullUrl())) {
                 $data = [];
-                $data['student_list'] = $student_list->toArray();
+                $data['student-list'] = $student_list->toArray();
                 return ApiBaseMethod::sendResponse($data, null);
             }
             $sessions = SmAcademicYear::where('active_status',1)->where('school_id', Auth::user()->school_id)->get();

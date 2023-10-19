@@ -546,7 +546,7 @@ class RouteListController extends Controller
          64 => 
          array (
            'name' => 'Student List',
-           'route' => 'student_list',
+           'route' => 'student-list',
            'parent_route' => 'student_info',
            'type' => 2,
          ),
@@ -554,21 +554,21 @@ class RouteListController extends Controller
          array (
            'name' => 'Add',
            'route' => 'student_store',
-           'parent_route' => 'student_list',
+           'parent_route' => 'student-list',
            'type' => 3,
          ),
          66 => 
          array (
            'name' => 'Edit',
            'route' => 'student_edit',
-           'parent_route' => 'student_list',
+           'parent_route' => 'student-list',
            'type' => 3,
          ),
          67 => 
          array (
            'name' => 'Delete',
            'route' => 'disabled_student',
-           'parent_route' => 'student_list',
+           'parent_route' => 'student-list',
            'type' => 3,
          ),
          68 => 

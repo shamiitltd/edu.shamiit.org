@@ -72,7 +72,7 @@
     <a href="#subMenuInfixInvoice" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
         <span class="flaticon-accounting"></span> Reports </a>
     <ul class="collapse list-unstyled" id="subMenuInfixInvoice">
-        <li><a href="{{route('administrator/student-list')}}">@lang('common.student_list')</a></li>
+        <li><a href="{{route('administrator/student-list')}}">@lang('common.student-list')</a></li>
         <li><a href="{{route('administrator/income-expense')}}">@lang('accounts.date_to')/@lang('accounts.expense')</a></li>
         <li><a href="{{route('administrator/teacher-list')}}">@lang('common.teacher_list')</a></li>
         <li><a href="{{route('administrator/class-list')}}">@lang('common.class_list')</a></li>

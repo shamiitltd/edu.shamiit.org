@@ -99,7 +99,7 @@
                 <div class="row">
                     <div class="col-lg-4 no-gutters">
                         <div class="main-title">
-                            <h3 class="mb-0">@lang('common.student_list') ( {{ isset($students) ? $students->count() : 0 }})</h3>
+                            <h3 class="mb-0">@lang('common.student-list') ( {{ isset($students) ? $students->count() : 0 }})</h3>
                         </div>
                     </div>
                 </div>

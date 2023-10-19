@@ -1218,11 +1218,11 @@ Route::group(['middleware' => ['XSS','subscriptionAccessUrl']], function () {
 
 
         //Datatables
-        Route::get('student-list-datatable', ['as' => 'student_list_datatable', 'uses' => 'DatatableQueryController@studentDetailsDatatable'])->middleware('userRolePermission:student_list');
+        Route::get('student-list-datatable', ['as' => 'student_list_datatable', 'uses' => 'DatatableQueryController@studentDetailsDatatable'])->middleware('userRolePermission:student-list');
        
         
         // student list
-        Route::get('student-list', ['as' => 'student_list', 'uses' => 'Admin\StudentInfo\SmStudentAdmissionController@studentDetails'])->middleware('userRolePermission:student_list');
+        Route::get('student-list', ['as' => 'student-list', 'uses' => 'Admin\StudentInfo\SmStudentAdmissionController@studentDetails'])->middleware('userRolePermission:student-list');
         Route::get('student-settings', ['as' => 'student_settings', 'uses' => 'Admin\StudentInfo\SmStudentAdmissionController@settings'])->middleware('userRolePermission:student_settings');
         Route::post('student/field/switch',['as' => 'student_switch', 'uses' => 'Admin\StudentInfo\SmStudentAdmissionController@statusUpdate']);
         Route::post('student/field/show',['as' => 'student_show', 'uses' => 'Admin\StudentInfo\SmStudentAdmissionController@studentFieldShow']);
