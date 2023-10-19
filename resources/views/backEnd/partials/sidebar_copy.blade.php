@@ -889,7 +889,7 @@
                                 @endif
                                 @if (userPermission(1101) && menuStatus(1101))
                                     <li data-position="{{ menuPosition(1101) }}">
-                                        <a href="{{ route('student-reg-custom-field') }}">
+                                        <a href="{{ route('student-registration-custom-field') }}">
                                             @lang('student.student_registration')
                                         </a>
                                     </li>

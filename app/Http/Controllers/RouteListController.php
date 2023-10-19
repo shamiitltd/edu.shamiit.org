@@ -4441,7 +4441,7 @@ class RouteListController extends Controller
          1101 => 
          array (
            'name' => 'Student Registration',
-           'route' => 'student-reg-custom-field',
+           'route' => 'student-registration-custom-field',
            'parent_route' => 'custom_field',
            'type' => 2,
          ),
@@ -4449,21 +4449,21 @@ class RouteListController extends Controller
          array (
            'name' => 'Add',
            'route' => 'store-student-registration-custom-field',
-           'parent_route' => 'student-reg-custom-field',
+           'parent_route' => 'student-registration-custom-field',
            'type' => 3,
          ),
          1103 => 
          array (
            'name' => 'Edit',
            'route' => 'edit-custom-field',
-           'parent_route' => 'student-reg-custom-field',
+           'parent_route' => 'student-registration-custom-field',
            'type' => 3,
          ),
          1104 => 
          array (
            'name' => 'Delete',
            'route' => 'delete-custom-field',
-           'parent_route' => 'student-reg-custom-field',
+           'parent_route' => 'student-registration-custom-field',
            'type' => 3,
          ),
          1105 => 
