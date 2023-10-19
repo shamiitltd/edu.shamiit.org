@@ -155,7 +155,7 @@ class ApiSmParentPanelController extends Controller
     }
     public function saas_childListApi(Request $request, $school_id, $id)
     {
-        $data['student_info']=[];
+        $data['student-info']=[];
         $parent = SmParent::where('user_id', $id)->where('school_id', $school_id)->first();
         $students = SmStudent::where('parent_id', $parent->id)->where('school_id', $school_id)->get();
         $student_info=[];

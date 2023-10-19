@@ -266,7 +266,7 @@
             @endif
         @endif
         </div>
-        <div class="student_info d-flex flex-column">
+        <div class="student-info d-flex flex-column">
 @if($setting->class_section)
             <span>{{@$seat_plan->studentRecord->class->class_name}}({{@$seat_plan->studentRecord->section->section_name}})</span>
 

@@ -367,29 +367,29 @@
                 font-size: 10px;
             }
 
-            .student_info li p{
+            .student-info li p{
                 font-size: 14px;
                 font-weight: 500;
                 color: #828bb2;
             }
 
-            .student_info li p.bold_text{
+            .student-info li p.bold_text{
                 font-weight: 600;
                 color: var(--base_color);
             }
 
-            ul.student_info li {
+            ul.student-info li {
                 display: flex;
             }
 
-            ul.student_info {
+            ul.student-info {
                 padding: 0;
             }
 
-            ul.student_info li p:first-child {
+            ul.student-info li p:first-child {
                 flex: 55px 0 0;
             }
-            ul.student_info.info2 li p:first-child {
+            ul.student-info.info2 li p:first-child {
                 flex: 100px 0 0;
             }
         </style>

@@ -40,7 +40,7 @@ class CreateSmStudentPromotionsTable extends Migration
             $table->foreign('student_id')->references('id')->on('sm_students')->onDelete('cascade');
 
             $table->integer('admission_number')->nullable();
-            $table->longText('student_info')->nullable();
+            $table->longText('student-info')->nullable();
             $table->longText('merit_student_info')->nullable();
 
             $table->integer('previous_roll_number')->nullable();

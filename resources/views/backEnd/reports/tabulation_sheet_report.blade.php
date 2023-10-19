@@ -149,29 +149,29 @@
                 font-size: 10px;
             }
 
-            .student_info li p{
+            .student-info li p{
                 font-size: 14px;
                 font-weight: 500;
                 color: #828bb2;
             }
 
-            .student_info li p.bold_text{
+            .student-info li p.bold_text{
                 font-weight: 600;
                 color: var(--base_color);
             }
 
-            ul.student_info li {
+            ul.student-info li {
                 display: flex;
             }
 
-            ul.student_info {
+            ul.student-info {
                 padding: 0;
             }
 
-            ul.student_info li p:first-child {
+            ul.student-info li p:first-child {
                 flex: 55px 0 0;
             }
-            ul.student_info.info2 li p:first-child {
+            ul.student-info.info2 li p:first-child {
                 flex: 100px 0 0;
             }
         </style>
@@ -375,7 +375,7 @@
                                             <br>
                                             <div class="row">
                                                 <div class="col-lg-3">
-                                                    <ul class="student_info">
+                                                    <ul class="student-info">
                                                         <li>
                                                             <p> @lang('common.name')</p>  
                                                             <p class="bold_text">: {{$tabulation_details['student_name']}}</p>
@@ -391,7 +391,7 @@
                                                     </ul>
                                                 </div>
                                                 <div class="col-lg-3">
-                                                    <ul class="student_info info2">
+                                                    <ul class="student-info info2">
                                                         <li>
                                                             <p>@lang('student.roll_no')</p>
                                                             <p class="bold_text">: {{$tabulation_details['student_roll']}}</p>

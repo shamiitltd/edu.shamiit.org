@@ -126,7 +126,7 @@
                                 <tbody>
                                     @foreach($students as $data)
                                         @php
-                                            $studentInfo=json_decode($data->student_info);
+                                            $studentInfo=json_decode($data->student-info);
                                         @endphp
                                     <tr>
                                         <td>{{$data->admission_number}}</td>

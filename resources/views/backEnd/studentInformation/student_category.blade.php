@@ -1,13 +1,13 @@
 @extends('backEnd.master')
 @section('title') 
-@lang('student.student_category')
+@lang('student.student-category')
 @endsection
 @section('mainContent')
 
 @php
     $breadCrumbs = 
     [
-        'h1'=> __('student.student_category'),
+        'h1'=> __('student.student-category'),
         'bcPages'=> [               
                 '<a href="#">'.__('student.student_information').'</a>',
                 ],
@@ -21,7 +21,7 @@
                        
         <div class="row">
             <div class="offset-lg-10 col-lg-2 text-right col-md-12 mb-20">
-                <a href="{{route('student_category')}}" class="primary-btn small fix-gr-bg">
+                <a href="{{route('student-category')}}" class="primary-btn small fix-gr-bg">
                     <span class="ti-plus pr-2"></span>
                     @lang('common.add')
                 </a>

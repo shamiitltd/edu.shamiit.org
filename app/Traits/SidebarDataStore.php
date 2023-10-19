@@ -80,7 +80,7 @@ trait SidebarDataStore
 
         $dashboardSections = ["dashboard", "menumanage.index"];
         $administration_sections = ["admin_section", "academics", "study_material", "lesson-plan", "bulk_print"];
-        $student_sections = ["student_info", "fees", "fees_collection", "transport", "dormitory", "library", "homework"];
+        $student_sections = ["student-info", "fees", "fees_collection", "transport", "dormitory", "library", "homework"];
         $exam_sections = ["examination", "online_exam", "examplan"];
         $hr_sections = ["role_permission", "human_resource", "leave"];
         $account_sections = ["accounts", "inventory", "wallet"];

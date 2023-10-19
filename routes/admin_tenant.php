@@ -580,7 +580,7 @@ Route::group(['middleware' => ['XSS','subscriptionAccessUrl']], function () {
         Route::get('search-profit-by-date', ['as' => 'search_profit_by_date', 'uses' => 'Admin\Accounts\SmAccountsController@profit']);
 
         // Student Type Routes
-        Route::get('student-category', ['as' => 'student_category', 'uses' => 'Admin\StudentInfo\SmStudentCategoryController@index'])->middleware('userRolePermission:student_category');
+        Route::get('student-category', ['as' => 'student-category', 'uses' => 'Admin\StudentInfo\SmStudentCategoryController@index'])->middleware('userRolePermission:student-category');
         Route::post('student-category-store', ['as' => 'student_category_store', 'uses' => 'Admin\StudentInfo\SmStudentCategoryController@store'])->middleware('userRolePermission:student_category_store');
         Route::get('student-category-edit/{id}', ['as' => 'student_category_edit', 'uses' => 'Admin\StudentInfo\SmStudentCategoryController@edit'])->middleware('userRolePermission:student_category_edit');
         Route::post('student-category-update', ['as' => 'student_category_update', 'uses' => 'Admin\StudentInfo\SmStudentCategoryController@update'])->middleware('userRolePermission:student_category_edit');
@@ -2322,7 +2322,7 @@ Route::group(['middleware' => ['XSS','subscriptionAccessUrl']], function () {
        Permission::where('sidebar_menu', 'sidebar_manager')->update(['sidebar_menu'=>null]);
        Permission::where('sidebar_menu', 'dashboard')->update(['sidebar_menu'=>null]);
        Permission::where('parent_route', 'admin_section')->update(['sidebar_menu'=>'admin_section']);
-       Permission::where('parent_route', 'student_info')->update(['sidebar_menu'=>'student_info']);
+       Permission::where('parent_route', 'student-info')->update(['sidebar_menu'=>'student-info']);
        Permission::where('parent_route', 'academics')->update(['sidebar_menu'=>'academics']);
        Permission::where('parent_route', 'study_material')->update(['sidebar_menu'=>'study_material']);
        Permission::where('parent_route', 'human_resource')->update(['sidebar_menu'=>'human_resource']);

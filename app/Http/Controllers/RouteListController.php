@@ -525,7 +525,7 @@ class RouteListController extends Controller
          61 => 
          array (
            'name' => 'Student Info',
-           'route' => 'student_info',
+           'route' => 'student-info',
            'parent_route' => NULL,
            'type' => 1,
          ),
@@ -533,7 +533,7 @@ class RouteListController extends Controller
          array (
            'name' => 'Add Student',
            'route' => 'student-admission',
-           'parent_route' => 'student_info',
+           'parent_route' => 'student-info',
            'type' => 2,
          ),
          63 => 
@@ -547,7 +547,7 @@ class RouteListController extends Controller
          array (
            'name' => 'Student List',
            'route' => 'student-list',
-           'parent_route' => 'student_info',
+           'parent_route' => 'student-info',
            'type' => 2,
          ),
          65 => 
@@ -575,7 +575,7 @@ class RouteListController extends Controller
          array (
            'name' => 'Student Attendance',
            'route' => 'student_attendance',
-           'parent_route' => 'student_info',
+           'parent_route' => 'student-info',
            'type' => 2,
          ),
          69 => 
@@ -589,49 +589,49 @@ class RouteListController extends Controller
          array (
            'name' => 'Student Attendance Report',
            'route' => 'student_attendance_report',
-           'parent_route' => 'student_info',
+           'parent_route' => 'student-info',
            'type' => 2,
          ),
          71 => 
          array (
            'name' => 'Student Category',
-           'route' => 'student_category',
-           'parent_route' => 'student_info',
+           'route' => 'student-category',
+           'parent_route' => 'student-info',
            'type' => 2,
          ),
          72 => 
          array (
            'name' => 'Add',
            'route' => 'student_category_store',
-           'parent_route' => 'student_category',
+           'parent_route' => 'student-category',
            'type' => 3,
          ),
          73 => 
          array (
            'name' => 'Edit',
            'route' => 'student_category_edit',
-           'parent_route' => 'student_category',
+           'parent_route' => 'student-category',
            'type' => 3,
          ),
          74 => 
          array (
            'name' => 'Delete',
            'route' => 'student_category_delete',
-           'parent_route' => 'student_category',
+           'parent_route' => 'student-category',
            'type' => 3,
          ),
          75 => 
          array (
            'name' => 'Download',
            'route' => '',
-           'parent_route' => 'student_category',
+           'parent_route' => 'student-category',
            'type' => 3,
          ),
          76 => 
          array (
            'name' => 'Student Group',
            'route' => 'student_group',
-           'parent_route' => 'student_info',
+           'parent_route' => 'student-info',
            'type' => 2,
          ),
          77 => 
@@ -659,7 +659,7 @@ class RouteListController extends Controller
          array (
            'name' => 'Student Promote',
            'route' => 'student_promote',
-           'parent_route' => 'student_info',
+           'parent_route' => 'student-info',
            'type' => 2,
          ),
          82 => 
@@ -673,7 +673,7 @@ class RouteListController extends Controller
          array (
            'name' => 'Disabled Students',
            'route' => 'disabled_student',
-           'parent_route' => 'student_info',
+           'parent_route' => 'student-info',
            'type' => 2,
          ),
          84 => 
@@ -3719,7 +3719,7 @@ class RouteListController extends Controller
          array (
            'name' => 'Subject Wise Attendance',
            'route' => 'subject-wise-attendance',
-           'parent_route' => 'student_info',
+           'parent_route' => 'student-info',
            'type' => 2,
          ),
          534 => 
@@ -3733,7 +3733,7 @@ class RouteListController extends Controller
          array (
            'name' => 'Subject Wise Attendance Report',
            'route' => 'subject-attendance-report',
-           'parent_route' => 'student_info',
+           'parent_route' => 'student-info',
            'type' => 2,
          ),
          536 => 
@@ -3970,7 +3970,7 @@ class RouteListController extends Controller
          array (
            'name' => 'Student Export',
            'route' => 'all-student-export',
-           'parent_route' => 'student_info',
+           'parent_route' => 'student-info',
            'type' => 2,
          ),
          664 => 
@@ -4400,14 +4400,14 @@ class RouteListController extends Controller
          array (
            'name' => 'Time Setup',
            'route' => 'notification_time_setup',
-           'parent_route' => 'student_info',
+           'parent_route' => 'student-info',
            'type' => 2,
          ),
          951 => 
          array (
            'name' => 'Student Settings',
            'route' => 'student_settings',
-           'parent_route' => 'student_info',
+           'parent_route' => 'student-info',
            'type' => 2,
          ),
          952 => 
@@ -4958,21 +4958,21 @@ class RouteListController extends Controller
          array (
            'name' => 'Multi Class Student',
            'route' => 'student.multi-class-student',
-           'parent_route' => 'student_info',
+           'parent_route' => 'student-info',
            'type' => 2,
          ),
          15205 => 
          array (
            'name' => 'Delete Student Record',
            'route' => 'student.delete-student-record',
-           'parent_route' => 'student_info',
+           'parent_route' => 'student-info',
            'type' => 2,
          ),
          15209 => 
          array (
            'name' => 'UnAssign Student',
            'route' => 'unassigned_student',
-           'parent_route' => 'student_info',
+           'parent_route' => 'student-info',
            'type' => 2,
          ),
        );

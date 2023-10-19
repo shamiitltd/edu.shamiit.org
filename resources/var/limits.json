@@ -3,7 +3,7 @@
     "lang": "admin.admin_section",
     "module_id": 11
   },
-  "student_info": {
+  "student-info": {
     "lang": "student.student_information",
     "module_id": 61
   },

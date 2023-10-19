@@ -117,10 +117,10 @@ table{
 }
 .italic_text{
 }
-.student_info{
+.student-info{
     
 }
-.student_info li{
+.student-info li{
     display: flex;
 }
 .info_details {
@@ -246,20 +246,20 @@ table.custom_table thead tr > th {
 	display: flex;
 	flex-basis: 100%;
 }
-.student_info {
+.student-info {
 	max-width: 280px;
 	width: 280px;
 }
-.student_info p {
+.student-info p {
 	font-size: 14px;
 	white-space: nowrap;
 }
-.student_info li p {
+.student-info li p {
     flex-basis: 100%;
     text-align: left;
 }
 
-.student_info li {
+.student-info li {
 	display: flex;
 	align-items: center;
 	padding: 5px 0;

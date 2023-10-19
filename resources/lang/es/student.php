@@ -1,6 +1,6 @@
 <?php
 return [
-"student_info" => "Información del estudiante",
+"student-info" => "Información del estudiante",
 
 "my_profile" => "Mi perfil",
 
@@ -264,7 +264,7 @@ return [
 
 "december" => "Diciembre",
 
-"student_category" => "Categoría de estudiantes",
+"student-category" => "Categoría de estudiantes",
 
 "promote_academic_year" => "Promover Año Académico",
 

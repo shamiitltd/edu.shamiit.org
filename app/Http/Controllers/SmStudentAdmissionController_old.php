@@ -2375,7 +2375,7 @@ class SmStudentAdmissionController extends Controller
                         $student_promote->current_section_id = $new_section;
 
                         $student_promote->admission_number = $student_details->admission_no;
-                        $student_promote->student_info = $student_details->toJson();
+                        $student_promote->student-info = $student_details->toJson();
                         $student_promote->merit_student_info = ($merit_list != null ? $merit_list->toJson() : $student_details->toJson());
 
                         $student_promote->previous_roll_number = $student_details->roll_no;
@@ -2499,7 +2499,7 @@ class SmStudentAdmissionController extends Controller
                         $student_promote->current_section_id = $new_section;
 
                         $student_promote->admission_number = $student_details->admission_no;
-                        $student_promote->student_info = $student_details->toJson();
+                        $student_promote->student-info = $student_details->toJson();
                         $student_promote->merit_student_info = ($merit_list != null ? $merit_list->toJson() : $student_details->toJson());
 
                         $student_promote->previous_roll_number = $student_details->roll_no;
