@@ -1586,7 +1586,7 @@
                         'icon' => null,
                         'svg' => null,
                         'route' => 'import_student',
-                        'parent_route' => 'student-admission',
+                        'parent_route' => 'student_admission',
                         'is_admin' => 1,
                          'is_teacher' => 0,
                         'is_student' => 0,
