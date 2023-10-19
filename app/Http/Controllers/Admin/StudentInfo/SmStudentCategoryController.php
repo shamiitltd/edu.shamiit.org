@@ -20,7 +20,7 @@ class SmStudentCategoryController extends Controller
     {
         try {
             $student_types = SmStudentCategory::get();
-            return view('backEnd.studentInformation.student-category', compact('student_types'));
+            return view('backEnd.studentInformation.student_category', compact('student_types'));
         } catch (\Exception $e) {
             Toastr::error('Operation Failed', 'Failed');
             return redirect()->back();
@@ -47,7 +47,7 @@ class SmStudentCategoryController extends Controller
         try {
             $student_type = SmStudentCategory::find($id);
             $student_types = SmStudentCategory::get();
-            return view('backEnd.studentInformation.student-category', compact('student_types', 'student_type'));
+            return view('backEnd.studentInformation.student_category', compact('student_types', 'student_type'));
         } catch (\Exception $e) {
             Toastr::error('Operation Failed', 'Failed');
             return redirect()->back();

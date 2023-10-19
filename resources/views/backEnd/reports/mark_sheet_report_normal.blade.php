@@ -302,15 +302,15 @@
     .text_left{
         text-align: left;
     }
-    .student-info li{
+    .student_info li{
         display: flex;
     }
-    .student-info li p{
+    .student_info li p{
         font-size: 12px;
         font-weight: 400;
         color: #828bb2;
     }
-    .student-info li p.bold_text{
+    .student_info li p.bold_text{
         font-weight: 600;
         color: var(--base_color);
     }
@@ -500,7 +500,7 @@
                                                             <div class="row">
                                                                <div class="col-lg-8">
                                                                 <div class="d-flex flex-wrap" style="grid-gap: 30px;">
-                                                                    <ul class="student-info">
+                                                                    <ul class="student_info">
                                                                         <li>
                                                                             <p>
                                                                                 @lang('common.class')
@@ -528,7 +528,7 @@
                                                                             </p>
                                                                         </li>
                                                                     </ul>
-                                                                    <ul class="student-info pull-right">
+                                                                    <ul class="student_info pull-right">
                                                                             <li>
                                                                                 <p>
                                                                                    @lang('student.roll_no')&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 

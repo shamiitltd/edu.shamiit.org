@@ -279,7 +279,7 @@
             @endif
         </div>
         <div class="admid_card_wrapper_body">
-            <div class="student-info">
+            <div class="student_info">
                 <div class="single_student_information d-flex align-items-center">
                     @if($setting->admission_no)
                         <div class="student_grid_box d-flex align-items-center flex-fill">

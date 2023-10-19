@@ -106,7 +106,7 @@
                 <h1>@lang('student.settings')</h1>
                 <div class="bc-pages">
                     <a href="{{ url('dashboard') }}">@lang('common.dashboard')</a>
-                    <a href="#">@lang('student.student-info')</a>
+                    <a href="#">@lang('student.student_info')</a>
                     <a href="#">@lang('common.settings')</a>
                 </div>
             </div>

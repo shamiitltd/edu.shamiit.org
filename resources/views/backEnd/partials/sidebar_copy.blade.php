@@ -170,7 +170,7 @@
                         @includeIf('lead::menu.lead_menu')
                     @endif
                     {{-- student_information --}}
-                    @if (userPermission('student-info') && menuStatus(61) && isMenuAllowToShow('student-info'))
+                    @if (userPermission('student_info') && menuStatus(61) && isMenuAllowToShow('student_info'))
                         <li data-position="{{ menuPosition(61) }}" class="sortable_li">
                             <a href="javascript:void(0)" class="has-arrow" aria-expanded="false">
                                 <div class="nav_icon_small">
@@ -181,10 +181,10 @@
                                 </div>
                             </a>
                             <ul class="list-unstyled" id="subMenuStudent">
-                                @if (userPermission('student-category') && menuStatus(71))
+                                @if (userPermission('student_category') && menuStatus(71))
                                     <li data-position="{{ menuPosition(71) }}">
-                                        <a href="{{ route('student-category') }}">
-                                            @lang('student.student-category')</a>
+                                        <a href="{{ route('student_category') }}">
+                                            @lang('student.student_category')</a>
                                     </li>
                                 @endif
                                 @if (userPermission('student-admission') && menuStatus(62))

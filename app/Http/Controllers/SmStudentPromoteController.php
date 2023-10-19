@@ -215,7 +215,7 @@ class SmStudentPromoteController extends Controller
                     $student_promote->current_section_id = gv($student_data, 'section');
 
                     $student_promote->admission_number = $current_student->admission_no;
-                    $student_promote->student-info = $current_student->toJson();
+                    $student_promote->student_info = $current_student->toJson();
                     $student_promote->merit_student_info = $current_student->toJson();
                     $student_promote->previous_roll_number = $pre_record->roll_no;
                     $student_promote->current_roll_number = $roll_number;

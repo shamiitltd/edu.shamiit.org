@@ -186,7 +186,7 @@ Route::group(['middleware' => ['XSS','auth:api','json.response']], function () {
     Route::get('school/{school_id}/student-attendance-report-search', 'api\ApiSmStudentAttendanceController@saas_studentAttendanceReport_search');
 
     // Student Category
-    Route::get('student-category', ['as' => 'student-category', 'uses' => 'SmApiController@student_type_index']);
+    Route::get('student-category', ['as' => 'student_category', 'uses' => 'SmApiController@student_type_index']);
     Route::get('school/{school_id}/student-category', ['as' => 'saas_student_category', 'uses' => 'SmApiController@saas_student_type_index']);
     Route::post('student-category-store', ['as' => 'student_category_store', 'uses' => 'SmApiController@student_type_store']);
     Route::post('saas-student-category-store', ['as' => 'saas_student_category_store', 'uses' => 'SmApiController@saas_student_type_store']);

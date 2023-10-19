@@ -105,7 +105,7 @@ class AddVersion703Migration extends Migration
         Permission::where('sidebar_menu', 'dashboard')->update(['sidebar_menu'=>null]);
 
         Permission::where('parent_route', 'admin_section')->update(['sidebar_menu'=>'admin_section']);
-        Permission::where('parent_route', 'student-info')->update(['sidebar_menu'=>'student-info']);
+        Permission::where('parent_route', 'student_info')->update(['sidebar_menu'=>'student_info']);
         Permission::where('parent_route', 'academics')->update(['sidebar_menu'=>'academics']);
         Permission::where('parent_route', 'study_material')->update(['sidebar_menu'=>'study_material']);
         Permission::where('parent_route', 'human_resource')->update(['sidebar_menu'=>'human_resource']);

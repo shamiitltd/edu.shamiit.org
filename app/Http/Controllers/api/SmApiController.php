@@ -4351,7 +4351,7 @@ class SmApiController extends Controller
                 return ApiBaseMethod::sendResponse($student_types, null);
             }
 
-            return view('backEnd.studentInformation.student-category', compact('student_types'));
+            return view('backEnd.studentInformation.student_category', compact('student_types'));
         } catch (\Exception $e) {
             return ApiBaseMethod::sendError('Error.', $e->getMessage());
         }
@@ -4367,7 +4367,7 @@ class SmApiController extends Controller
                 return ApiBaseMethod::sendResponse($student_types, null);
             }
 
-            return view('backEnd.studentInformation.student-category', compact('student_types'));
+            return view('backEnd.studentInformation.student_category', compact('student_types'));
         } catch (\Exception $e) {
             return ApiBaseMethod::sendError('Error.', $e->getMessage());
         }
@@ -4460,7 +4460,7 @@ class SmApiController extends Controller
         try {
             $student_type = SmStudentCategory::find($id);
             $student_types = SmStudentCategory::get();
-            return view('backEnd.studentInformation.student-category', compact('student_types', 'student_type'));
+            return view('backEnd.studentInformation.student_category', compact('student_types', 'student_type'));
         } catch (\Exception $e) {
             return ApiBaseMethod::sendError('Error.', $e->getMessage());
         }
@@ -4471,7 +4471,7 @@ class SmApiController extends Controller
         try {
             $student_type = SmStudentCategory::where('school_id', $school_id)->find($id);
             $student_types = SmStudentCategory::where('school_id', $school_id)->get();
-            return view('backEnd.studentInformation.student-category', compact('student_types', 'student_type'));
+            return view('backEnd.studentInformation.student_category', compact('student_types', 'student_type'));
         } catch (\Exception $e) {
             return ApiBaseMethod::sendError('Error.', $e->getMessage());
         }
@@ -5234,7 +5234,7 @@ class SmApiController extends Controller
                         $student_promote->current_section_id = $new_section;
 
                         $student_promote->admission_number = $student_details->admission_no;
-                        $student_promote->student-info = $student_details->toJson();
+                        $student_promote->student_info = $student_details->toJson();
                         $student_promote->merit_student_info = ($merit_list != null ? $merit_list->toJson() : $student_details->toJson());
 
                         $student_promote->previous_roll_number = $student_details->roll_no;

@@ -402,11 +402,11 @@
             .italic_text {
             }
 
-            .student-info {
+            .student_info {
 
             }
 
-            .student-info li {
+            .student_info li {
                 display: flex;
             }
 
@@ -681,7 +681,7 @@
                                                                     <div class="row">
                                                                         <div class="col-lg-8">
                                                                             <div class="d-flex flex-wrap" style="grid-gap: 30px;">
-                                                                                <ul class="student-info">
+                                                                                <ul class="student_info">
                                                                                     <li>
                                                                                         <p>
                                                                                             @lang('common.academic_year')

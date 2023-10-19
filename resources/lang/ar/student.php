@@ -1,6 +1,6 @@
 <?php
 return [
-    'student-info' => 'Student Info',
+    'student_info' => 'Student Info',
     'student' => 'Student',
     'profile_update' => 'Profile Update',
     'my_profile' => 'My Profile',
@@ -258,7 +258,7 @@ return [
     'select_year' => 'Select Year',
     'month' => 'Month',
     'year' => 'Year',
-    'student-category' => 'Student Category',
+    'student_category' => 'Student Category',
     'select_academic_year' => 'Select Academic Year',
     'promote_academic_year' => 'Promote Academic Year',
     'select_current_class' => 'Select Current Class',

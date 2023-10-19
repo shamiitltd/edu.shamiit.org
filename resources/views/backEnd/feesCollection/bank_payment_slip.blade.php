@@ -295,8 +295,8 @@ $(document).ready(function() {
                        
                    } ),
                    columns: [
-                       {data: 'student-info.admission_no', name: 'admission_no'},
-                       {data: 'student-info.full_name', name: 'student_name'},
+                       {data: 'student_info.admission_no', name: 'admission_no'},
+                       {data: 'student_info.full_name', name: 'student_name'},
                        @if(moduleStatusCheck('University'))
                        {data: 'installment_assign.installment.title', name: 'title'},
                        @elseif (directFees())

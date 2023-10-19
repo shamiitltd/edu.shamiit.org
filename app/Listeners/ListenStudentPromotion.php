@@ -32,7 +32,7 @@ class ListenStudentPromotion
      */
     public function handle(StudentPromotion $event)
     {
-        $student_info = json_decode($event->student_promotion->student-info);
+        $student_info = json_decode($event->student_promotion->student_info);
 
         $subjects = SmAssignSubject::where('section_id',$event->student_promotion->previous_section_id)->get();
 
