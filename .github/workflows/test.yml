@@ -9,7 +9,6 @@ on:
 
 jobs:
   CLEANING-READY:
-    name: Clean Ready
     runs-on: ubuntu-latest
     environment: CLEAN
     if: |
@@ -37,7 +36,6 @@ jobs:
 
   BUILD:
     name: Build code
-    needs: CLEANING-READY
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
