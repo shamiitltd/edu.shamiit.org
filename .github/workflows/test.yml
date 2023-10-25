@@ -2,9 +2,9 @@
 
 on:
   push:
-    branches: [ ]
-  pull_request:
     branches: [ "staff_search" ]
+  pull_request:
+    branches: [ ]
   workflow_dispatch: # Manually run this workflow
 
 jobs:
