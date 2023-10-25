@@ -16,7 +16,7 @@ return [
     'staff_list'=> 'Staff List',
     'add_staff'=> 'Add Staff',
     'select_year'=> 'Select Year',
-    'search_by_staff_id'=> 'Search By Staff Id',
+    'search_by_staff_id'=> 'Search By staff_no.',
     'staff'=> 'Staff',
     'staff_id'=>'Staff ID',
     'select_role'=> 'Select Role',
