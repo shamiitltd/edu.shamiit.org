@@ -403,7 +403,7 @@ return [
     "Chat Settings" => "Configuración de chat",
     "Bulk Print" => "Impresión a granel",
     "Student Id Card" => "Tarjeta de ID de estudiante",
-    "Staff Id Card" => "Tarjeta de ID de personal",
+    "Staff NO Card" => "Tarjeta de ID de personal",
     "PayrollBulk Print" => "Impresión a granel",
     "Fees Invoice Settings" => "Valores de factura de tarifas",
     "Fees invoice Bulk Print" => "Impresión masiva de facturas de tarifas",
