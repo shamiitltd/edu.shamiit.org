@@ -2,7 +2,7 @@
 
 on:
   push:
-    branches: [ "master", "develop","staff-search" ]
+    branches: [ "master", "develop" ]
   pull_request:
     branches: [ "master" , "develop" ]
   workflow_dispatch: # Manually run this workflow
@@ -95,7 +95,7 @@ jobs:
     name: Deploy in TEST
     runs-on: ubuntu-latest
     environment: TEST
-    needs: BUILD
+    needs: ["BUILD","CLEANING-READY"]
     steps:
       - name: Download ZIP Artifact
         uses: actions/download-artifact@v3
