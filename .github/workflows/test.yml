@@ -37,6 +37,7 @@ jobs:
 
   BUILD:
     name: Build code
+    needs: CLEANING-READY
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -95,7 +96,7 @@ jobs:
     name: Deploy in TEST
     runs-on: ubuntu-latest
     environment: TEST
-    needs: ["BUILD","CLEANING-READY"]
+    needs: BUILD
     steps:
       - name: Download ZIP Artifact
         uses: actions/download-artifact@v3
