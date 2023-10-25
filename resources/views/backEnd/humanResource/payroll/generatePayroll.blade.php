@@ -56,13 +56,13 @@
                                     </div>
                                     <div class="col-lg-2 col-md-6">
                                         <div class="name">
-                                            @lang('hr.staff_no')
+                                            @lang('hr.staff_id')
                                         </div>
                                     </div>
                                     <div class="col-lg-2 col-md-6">
                                         <div class="value text-left">
                                             @if (isset($staffDetails))
-                                                {{ $staffDetails->staff_no }}
+                                                {{ $staffDetails->staff_id }}
                                             @endif
                                         </div>
                                     </div>

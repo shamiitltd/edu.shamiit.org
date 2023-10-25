@@ -15,7 +15,7 @@ class CreateStaffImportBulkTemporariesTable extends Migration
     {
         Schema::create('staff_import_bulk_temporaries', function (Blueprint $table) {
             $table->id();
-            $table->integer('staff_no')->nullable();
+            $table->integer('staff_id')->nullable();
             $table->string('first_name', 100)->nullable();
             $table->string('last_name', 100)->nullable();
             $table->string('full_name', 200)->nullable();

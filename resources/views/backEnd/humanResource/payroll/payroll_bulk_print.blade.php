@@ -111,7 +111,7 @@
                 <table id="table_id" class="table" cellspacing="0" width="100%">
                     <thead>
                         <tr>
-                            <th>@lang('hr.staff_no')</th>
+                            <th>@lang('hr.staff_id')</th>
                             <th>@lang('common.name')</th>
                             <th>@lang('hr.role')</th>
                             <th>@lang('hr.department')</th>
@@ -124,7 +124,7 @@
                     <tbody>
                       @foreach($staffs as $value)
                       <tr>
-                        <td>{{$value->staff_no}}</td>
+                        <td>{{$value->staff_id}}</td>
                         <td>{{$value->first_name}}&nbsp;{{$value->last_name}}</td>
                         <td>{{$value->roles !=""?$value->roles->name:""}}</td>
                         <td>{{$value->departments !=""?$value->departments->name:""}}</td>

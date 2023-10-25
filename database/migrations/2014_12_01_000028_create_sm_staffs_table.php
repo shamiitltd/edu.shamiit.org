@@ -16,7 +16,7 @@ class CreateSmStaffsTable extends Migration
     {
         Schema::create('sm_staffs', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('staff_no')->nullable();
+            $table->integer('staff_id')->nullable();
             $table->string('first_name', 100)->nullable();
             $table->string('last_name', 100)->nullable();
             $table->string('full_name', 200)->nullable();
@@ -94,7 +94,7 @@ class CreateSmStaffsTable extends Migration
 
         DB::table('sm_staffs')->insert([
             [
-                'staff_no'       => '1',
+                'staff_id'       => '1',
                 'first_name'       => 'Super',
                 'last_name'        => 'Admin',
                 'full_name'        => 'Super Admin',

@@ -46,7 +46,7 @@ $setting_info = generalSetting();
                     </div>
                     <div class="col-lg-3 col-md-7">
                         <div class="name">
-                            @if(isset($payrollDetails)){{$payrollDetails->staffs->staff_no}} @endif
+                            @if(isset($payrollDetails)){{$payrollDetails->staffs->staff_id}} @endif
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-5">

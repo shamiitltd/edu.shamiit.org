@@ -91,7 +91,7 @@ class ImportController extends Controller
                         $basic_salary = $singleStaff->basic_salary ?? 0;
                         
                         $staff = new SmStaff();
-                        $staff->staff_no = $singleStaff->staff_no;
+                        $staff->staff_id = $singleStaff->staff_id;
                         $staff->role_id =$role_id == 1 ? 5 : $role_id;
                         $staff->department_id = $department_id;
                         $staff->designation_id = $designation_id;

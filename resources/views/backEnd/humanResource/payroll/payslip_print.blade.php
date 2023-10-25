@@ -348,7 +348,7 @@ $setting_info=generalSetting();
         </tr>
             <tr>
                 <th>@lang('hr.staff_id')</th>
-                <th> @if(isset($payrollDetails)){{$payrollDetails->staffs->staff_no}} @endif</th>
+                <th> @if(isset($payrollDetails)){{$payrollDetails->staffs->staff_id}} @endif</th>
                 <th>@lang('common.name')</th>
                 <th>@if(isset($payrollDetails)){{$payrollDetails->staffDetails->full_name}} @endif</th>
             </tr>

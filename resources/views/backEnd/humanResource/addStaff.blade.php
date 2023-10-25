@@ -94,17 +94,17 @@
                             <div class="row mb-30">
                                 <div class="col-lg-3">
                                     <div class="primary_input">
-                                        <label class="primary_input_label" for="">@lang('hr.staff_no')
-                                            {{ in_array('staff_no', $is_required) ? '*' : '' }} </label>
+                                        <label class="primary_input_label" for="">@lang('hr.staff_id')
+                                            {{ in_array('staff_id', $is_required) ? '*' : '' }} </label>
                                         <input
-                                            class="primary_input_field form-control{{ $errors->has('staff_no') ? ' is-invalid' : '' }}"
-                                            type="text" name="staff_no"
-                                            value="{{ $max_staff_no != '' ? $max_staff_no + 1 : 1 }}" readonly>
+                                            class="primary_input_field form-control{{ $errors->has('staff_id') ? ' is-invalid' : '' }}"
+                                            type="text" name="staff_id"
+                                            value="{{ $max_staff_id != '' ? $max_staff_id + 1 : 1 }}" readonly>
 
 
-                                        @if ($errors->has('staff_no'))
+                                        @if ($errors->has('staff_id'))
                                             <span class="text-danger">
-                                                {{ $errors->first('staff_no') }}
+                                                {{ $errors->first('staff_id') }}
                                             </span>
                                         @endif
                                     </div>

@@ -80,7 +80,7 @@ class sm_schoolsSeeder extends Seeder
         //     $staff                  = new SmStaff();
         //     $staff->user_id         = $user->id;
         //     $staff->role_id         = 1;
-        //     $staff->staff_no        = 1;
+        //     $staff->staff_id        = 1;
         //     $staff->designation_id  = 1;
         //     $staff->department_id   = 1;
         //     $staff->first_name      = 'School';
@@ -148,7 +148,7 @@ class sm_schoolsSeeder extends Seeder
             $staff                  = new SmStaff();
             $staff->user_id         = $user->id;
             $staff->role_id         = 1;
-            $staff->staff_no        = 1;
+            $staff->staff_id        = 1;
             $staff->designation_id  = 1;
             $staff->department_id   = 1;
             $staff->first_name      = 'School';
@@ -723,7 +723,7 @@ class sm_schoolsSeeder extends Seeder
                     [
                         'user_id'          => $staff_id_number,
                         'role_id'          => $role_id,
-                        'staff_no'         => count(\App\SmStaff::all()) + 1,
+                        'staff_id'         => count(\App\SmStaff::all()) + 1,
                         'designation_id'   => 1,
                         'department_id'    => 1,
                         'first_name'       => $First_Name,

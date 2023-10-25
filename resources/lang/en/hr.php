@@ -55,7 +55,7 @@ return [
     'department_name'=> 'Department Name',
     'designations'=> 'Designations',
     'staffs_payroll'=> 'Staffs Payroll',
-    'staff_no'=> 'Staff No',
+    'staff_id'=> 'Staff No',
     'date_of_joining'=> 'Date of Joining',
     'value'=> 'Value',
     'payroll_summary'=> 'Payroll Summary',

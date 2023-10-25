@@ -139,7 +139,7 @@
                                     @else
                                     <h3
                                         style="line-height:1.02; margin-top: 0; margin-bottom: 3px; font-size:10px; font-weight:500">
-                                        @lang('hr.staff_id') : {{ $staff_student->staff_no }}</h3>
+                                        @lang('hr.staff_id') : {{ $staff_student->staff_id }}</h3>
                                     @endif
                                 </div>
                                 @endif
@@ -340,7 +340,7 @@
                                     @else
                                     <h4
                                         style="line-height:1.02; margin-top: 0; margin-bottom: 3px; font-size:10px;">
-                                        @lang('hr.staff_id') : {{ $staff_student->staff_no }}</h4>
+                                        @lang('hr.staff_id') : {{ $staff_student->staff_id }}</h4>
                                     @endif
                                 </div>
                                 @endif

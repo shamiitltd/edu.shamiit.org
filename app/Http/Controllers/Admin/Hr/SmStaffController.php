@@ -123,9 +123,9 @@ class SmStaffController extends Controller
             }
         }
         try {
-            $max_staff_no = SmStaff::withOutGlobalScope(ActiveStatusSchoolScope::class)->where('is_saas', 0)
+            $max_staff_id = SmStaff::withOutGlobalScope(ActiveStatusSchoolScope::class)->where('is_saas', 0)
                 ->where('school_id', Auth::user()->school_id)
-                ->max('staff_no');
+                ->max('staff_id');
 
             $roles = InfixRole::where('is_saas', 0)->where('active_status', '=', 1)
                 ->where(function ($q) {
@@ -158,7 +158,7 @@ class SmStaffController extends Controller
 
             session()->forget('staff_photo');
 
-            return view('backEnd.humanResource.addStaff', compact('roles', 'departments', 'designations', 'marital_ststus', 'max_staff_no', 'genders', 'custom_fields', 'is_required'));
+            return view('backEnd.humanResource.addStaff', compact('roles', 'departments', 'designations', 'marital_ststus', 'max_staff_id', 'genders', 'custom_fields', 'is_required'));
         } catch (\Exception $e) {
             Toastr::error('Operation Failed', 'Failed');
             return redirect()->back();
@@ -239,7 +239,7 @@ class SmStaffController extends Controller
                 $basic_salary = !empty($request->basic_salary) ? $request->basic_salary : 0;
 
                 $staff = new SmStaff();
-                $staff->staff_no = $request->staff_no;
+                $staff->staff_id = $request->staff_id;
                 $staff->role_id = $request->role_id;
                 $staff->department_id = $request->department_id;
                 $staff->designation_id = $request->designation_id;
@@ -354,7 +354,7 @@ class SmStaffController extends Controller
                 ->pluck('field_name')->toArray();
             }
       
-            $max_staff_no = SmStaff::withOutGlobalScopes()->where('is_saas', 0)->where('school_id', Auth::user()->school_id)->max('staff_no');
+            $max_staff_id = SmStaff::withOutGlobalScopes()->where('is_saas', 0)->where('school_id', Auth::user()->school_id)->max('staff_id');
 
             $roles = InfixRole::where('active_status', '=', 1)
                 ->where(function ($q) {
@@ -384,7 +384,7 @@ class SmStaffController extends Controller
             $student = $editData;
             // Custom Field End
             $is_required = SmStaffRegistrationField::where('school_id', auth()->user()->school_id)->where('is_required', 1)->pluck('field_name')->toArray();
-            return view('backEnd.humanResource.editStaff', compact('editData', 'roles', 'departments', 'designations', 'marital_ststus', 'max_staff_no', 'genders', 'custom_fields', 'custom_filed_values', 'student', 'is_required', 'has_permission'));
+            return view('backEnd.humanResource.editStaff', compact('editData', 'roles', 'departments', 'designations', 'marital_ststus', 'max_staff_id', 'genders', 'custom_fields', 'custom_filed_values', 'student', 'is_required', 'has_permission'));
         } catch (\Exception $e) {
             Toastr::error('Operation Failed', 'Failed');
             return redirect()->back();
@@ -532,8 +532,8 @@ class SmStaffController extends Controller
             if ($request->filled('basic_salary')) {
                 $basic_salary = !empty($request->basic_salary) ? $request->basic_salary : 0;
             }
-            if ($request->filled('staff_no')) {
-                $staff->staff_no = $request->staff_no;
+            if ($request->filled('staff_id')) {
+                $staff->staff_id = $request->staff_id;
             }
             if ($request->filled('role_id')) {
                 $staff->role_id = $request->role_id;
@@ -773,7 +773,7 @@ class SmStaffController extends Controller
         try {
             $data = [];
             $data['role_id'] = $request->role_id;
-            $data['staff_no'] = $request->staff_no;
+            $data['staff_id'] = $request->staff_id;
             $data['staff_name'] = $request->staff_name;
             $staff = SmStaff::withOutGlobalScope(ActiveStatusSchoolScope::class);
             $staff->where('is_saas', 0)->where('active_status', 1);
@@ -783,8 +783,8 @@ class SmStaffController extends Controller
                 });
 
             }
-            if ($request->staff_no != "") {
-                $staff->where('staff_no', $request->staff_no);
+            if ($request->staff_id != "") {
+                $staff->where('staff_id', $request->staff_id);
             }
 
             if ($request->staff_name != "") {

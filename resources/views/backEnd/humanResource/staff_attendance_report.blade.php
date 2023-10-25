@@ -246,7 +246,7 @@
                                 <thead>
                                     <tr>
                                         <th width="6%">@lang('hr.staff_name')</th>
-                                        <th width="6%">@lang('hr.staff_no')</th>
+                                        <th width="6%">@lang('hr.staff_id')</th>
                                         <th width="6%">P</th>
                                         <th width="6%">L</th>
                                         <th width="6%">A</th>
@@ -284,7 +284,7 @@
                                             @foreach($values as $value)
                                             @php $student++; @endphp
                                             @if($student == 1)
-                                            {{$value->staffInfo->staff_no}}
+                                            {{$value->staffInfo->staff_id}}
                                             @endif
                                             @endforeach
                                         </td>

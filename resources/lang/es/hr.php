@@ -78,7 +78,7 @@ return [
 
 "staffs_payroll" => "Nómina del personal",
 
-"staff_no" => "Personal No",
+"staff_id" => "Personal No",
 
 "date_of_joining" => "Fecha de adhesión",
 

@@ -222,14 +222,14 @@ $days = $days_between + 1;
                                     @if ($leaveDetails->role_id == 2)
                                      @lang('leave.user_no')
                                     @else
-                                     @lang('hr.staff_no')
+                                     @lang('hr.staff_id')
                                      @endif
                                 </div>
                                 <div class="value">
                                         @if ($leaveDetails->role_id == 2)
                                          {{$leaveDetails->student != ""? $leaveDetails->student->id:''}}
                                        @else
-                                        {{$leaveDetails->staffs != ""? $leaveDetails->staffs->staff_no:''}}
+                                        {{$leaveDetails->staffs != ""? $leaveDetails->staffs->staff_id:''}}
                                         @endif
                                 </div>
                             </div>

@@ -235,7 +235,7 @@ class SmSystemSettingController extends Controller
 
             $staff->user_id = Auth::user()->id;
             $staff->role_id = 1;
-            $staff->staff_no = 1;
+            $staff->staff_id = 1;
             $staff->designation_id = 1;
             $staff->department_id = 1;
             $staff->first_name = 'Super';

@@ -185,7 +185,7 @@ class SmStaffAttendanceController extends Controller
                 $q->where('school_id', Auth::user()->school_id)->orWhere('type', 'System');
             })->get();
 
-            $staffs = SmStaff::where('role_id', $request->role)->where('school_id', Auth::user()->school_id)->get(['id', 'staff_no']);
+            $staffs = SmStaff::where('role_id', $request->role)->where('school_id', Auth::user()->school_id)->get(['id', 'staff_id']);
 
             $attendances = [];
             foreach ($staffs as $staff) {

@@ -25,7 +25,7 @@ class StaffsTableSeeder  extends Seeder
                 'school_id' => $school_id,
                 'role_id' =>rand(4,9),
             ])->each(function($s){
-                $s->staff_no = $s->id;
+                $s->staff_id = $s->id;
                 $s->save();
             });
         });
@@ -42,7 +42,7 @@ class StaffsTableSeeder  extends Seeder
                 'school_id' => $school_id,
                 'role_id' =>4,
             ])->each(function($s){
-                $s->staff_no = $s->id;
+                $s->staff_id = $s->id;
                 $s->save();
             });
         });

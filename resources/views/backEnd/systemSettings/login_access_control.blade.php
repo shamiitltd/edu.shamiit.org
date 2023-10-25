@@ -313,7 +313,7 @@
                             cellspacing="0" width="100%">
                             <thead>
                                 <tr>
-                                    <th>@lang('hr.staff_no')</th>
+                                    <th>@lang('hr.staff_id')</th>
                                     <th>@lang('common.name')</th>
                                     <th>@lang('common.role')</th>
                                     <th>@lang('common.email')</th>
@@ -327,7 +327,7 @@
                                 <tr id="{{@$value->user_id}}">
                                     <input type="hidden" id="id" value="{{@$value->user_id}}">
                                     <input type="hidden" id="role" value="{{@$role}}">
-                                    <td class="pl-3">{{@$value->staff_no}}</td>
+                                    <td class="pl-3">{{@$value->staff_id}}</td>
                                     <td>{{@$value->first_name}}&nbsp;{{@$value->last_name}}</td>
                                     <td>{{!empty(@$value->roles->name)?@$value->roles->name:''}}</td>
                                     <td>{{@$value->email}}</td>

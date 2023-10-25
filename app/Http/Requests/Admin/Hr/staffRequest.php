@@ -54,9 +54,9 @@ class staffRequest extends FormRequest
 
         return        
             [
-                'staff_no' => [Rule::requiredIf(function () use ($field) {
-                    return in_array('staff_no', $field);
-                }), 'integer', Rule::unique('sm_staffs', 'staff_no')->where('school_id', $school_id)->ignore($id) ],
+                'staff_id' => [Rule::requiredIf(function () use ($field) {
+                    return in_array('staff_id', $field);
+                }), 'integer', Rule::unique('sm_staffs', 'staff_id')->where('school_id', $school_id)->ignore($id) ],
                 'role_id' => [Rule::requiredIf(function () use ($field) {
                     return in_array('role_id', $field);
                 })],
