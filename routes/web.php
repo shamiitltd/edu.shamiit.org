@@ -21,6 +21,7 @@ if (moduleStatusCheck('Saas')) {
         require('tenant.php');
     });
 
+
     Route::group(['middleware' => ['subdomain'], 'domain' => '{subdomain}'], function ($routes) {
         require('tenant.php');
     });
