@@ -68,7 +68,7 @@ class sm_staffsSeeder extends Seeder
                     [
                         'user_id'          => $staff_id_number,
                         'role_id'          => $role_id,
-                        'staff_no'         => SmStaff::count() + 1,
+                        'staff_id'         => SmStaff::count() + 1,
                         'designation_id'   => 1,
                         'department_id'    => 1,
                         'first_name'       => $First_Name,

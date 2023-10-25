@@ -9487,8 +9487,8 @@ class SmApiController extends Controller
                 });
 
             }
-            if ($request->staff_no != "") {
-                $staff->where('staff_no', $request->staff_no);
+            if ($request->staff_id != "") {
+                $staff->where('staff_id', $request->staff_id);
             }
 
             if ($request->staff_name != "") {
@@ -9520,8 +9520,8 @@ class SmApiController extends Controller
                 });
 
             }
-            if ($request->staff_no != "") {
-                $staff->where('staff_no', $request->staff_no);
+            if ($request->staff_id != "") {
+                $staff->where('staff_id', $request->staff_id);
             }
 
             if ($request->staff_name != "") {

@@ -482,8 +482,8 @@ class DatatableQueryController extends Controller
                         });
         
                     }
-                    if ($request->staff_no != "") {
-                        $staffs->where('staff_no', $request->staff_no);
+                    if ($request->staff_id != "") {
+                        $staffs->where('staff_id', $request->staff_id);
                     }
         
                     if ($request->staff_name != "") {

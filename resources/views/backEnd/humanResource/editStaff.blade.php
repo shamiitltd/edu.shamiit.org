@@ -66,19 +66,19 @@
 
                                 <input type="hidden" name="staff_id" value="{{ @$editData->id }}" id="_id">
                                 <div class="row mb-30 mt-20">
-                                    @if (in_array('staff_no', $has_permission))
+                                    @if (in_array('staff_id', $has_permission))
                                         <div class="col-lg-3">
                                             <div class="primary_input">
                                                 <label class="primary_input_label" for="">@lang('hr.staff_number')
-                                                    {{ in_array('staff_no', $is_required) ? '*' : '' }}</label>
+                                                    {{ in_array('staff_id', $is_required) ? '*' : '' }}</label>
                                                 <input
-                                                    class="primary_input_field form-control{{ $errors->has('staff_no') ? ' is-invalid' : '' }}"
-                                                    type="text" name="staff_no" readonly value="@if (isset($editData)){{ $editData->staff_no }} @endif">
+                                                    class="primary_input_field form-control{{ $errors->has('staff_id') ? ' is-invalid' : '' }}"
+                                                    type="text" name="staff_id" readonly value="@if (isset($editData)){{ $editData->staff_id }} @endif">
                                                 
                                             
-                                                @if ($errors->has('staff_no'))
+                                                @if ($errors->has('staff_id'))
                                                     <span class="text-danger" >
-                                                        {{ $errors->first('staff_no') }}
+                                                        {{ $errors->first('staff_id') }}
                                                     </span>
                                                 @endif
                                             </div>

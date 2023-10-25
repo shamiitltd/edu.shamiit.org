@@ -18,7 +18,7 @@ return [
     "leave_type_list" => "ধরন তালিকা",
     "designations" => "পদবী",
     "staffs_payroll" => "স্টাফদের বেতন",
-    "staff_no" => "স্টাফ না",
+    "staff_id" => "স্টাফ না",
     "deduction" => "ডিডাকশন",
     "edit_staff" => "স্টাফ সম্পাদনা",
     "staff_number" => "স্টাফ সংখ্যা",

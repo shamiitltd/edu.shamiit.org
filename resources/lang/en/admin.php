@@ -187,7 +187,7 @@ return [
     'contract' => 'Contract',
     'crop' => 'Crop',
     'crop_image_and_upload' => 'Crop Image And Upload',
-    'staff_ID' => 'Staff ID',
+    'staff_ID' => 'Staff NO',
     'for_the_period_of' => 'for the period of',
     'evaluated_by' => 'Evaluated By',
     'summary' => 'Summary',

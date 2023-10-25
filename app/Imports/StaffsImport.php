@@ -25,7 +25,7 @@ class StaffsImport implements ToModel, WithStartRow, WithHeadingRow
         }
        
         return new StaffImportBulkTemporary([
-          "staff_no" => @$row['staff_no'],
+          "staff_id" => @$row['staff_id'],
           "role" => @$row['role'],
           "department" => @$row['department'],
           "designation" => @$row['designation'],

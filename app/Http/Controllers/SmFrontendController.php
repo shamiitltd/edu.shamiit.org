@@ -383,7 +383,7 @@ class SmFrontendController extends Controller
             $st->first_name = $request->fullname;
             $st->full_name = $request->fullname;
             $st->last_name = '';
-            $st->staff_no = 10;
+            $st->staff_id = 10;
             $st->email = $request->email;
             $st->active_status = 0;
             $st->save();

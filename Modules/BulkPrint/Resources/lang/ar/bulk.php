@@ -12,7 +12,7 @@ return [
     'is_showing'=>'Is Showing',
     'format_standard_three_character' => 'Standard Format 3 Character',
     'prefix'=>'Prefix',
-    'staff_id_card'=>'Staff ID Card',
+    'staff_id_card'=>'Staff NO Card',
     'generate_id_card'=>'Generate id Card',
     'grid_gap'=>'Grip Gap',
     'generate'=>'Generate',

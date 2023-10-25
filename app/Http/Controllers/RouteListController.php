@@ -4370,7 +4370,7 @@ class RouteListController extends Controller
          ),
         //  923 => 
         //  array (
-        //    'name' => 'Staff Id Card',
+        //    'name' => 'Staff NO Card',
         //    'route' => 'staff-id-card-bulk-print',
         //    'parent_route' => 'bulk_print',
         //    'type' => 2,

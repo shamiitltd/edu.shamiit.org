@@ -143,7 +143,7 @@
                                     <thead>
 
                                         <tr>
-                                            <th>@lang('hr.staff_no')</th>
+                                            <th>@lang('hr.staff_id')</th>
                                             <th>@lang('hr.staff_name')</th>
                                             <th>@lang('hr.role')</th>
                                             <th>@lang('hr.attendance')</th>
@@ -154,7 +154,7 @@
 
                                         @foreach ($staffs as $staff)
                                             <tr>
-                                                <td>{{ $staff->staff_no }}<input type="hidden" name="id[]"
+                                                <td>{{ $staff->staff_id }}<input type="hidden" name="id[]"
                                                         value="{{ $staff->id }}"></td>
                                                 <td>{{ $staff->first_name . ' ' . $staff->last_name }}</td>
                                                 <td>{{ $staff->roles != '' ? $staff->roles->name : '' }}</td>

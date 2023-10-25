@@ -41,7 +41,7 @@ class CreateSmStaffRegistrationFieldsTable extends Migration
         });
 
             $request_fields=[
-              'staff_no',
+              'staff_id',
               'role' ,             
               'department', 
               'designation', 
@@ -94,7 +94,7 @@ class CreateSmStaffRegistrationFieldsTable extends Migration
                     }
                 }
             
-                $required_fields =  ['staff_no','role', 'first_name', 'last_name', 'department', 'designation', 'email','current_address','basic_salary'];         
+                $required_fields =  ['staff_id','role', 'first_name', 'last_name', 'department', 'designation', 'email','current_address','basic_salary'];         
                 $staff_edit =  
                 [
                 'first_name',

@@ -21,7 +21,7 @@
                         <input readonly
                             class="read-only-input primary_input_field form-control{{ $errors->has('amount') ? ' is-invalid' : '' }}"
                             type="text" name="amount"
-                            value="{{ $payrollDetails->staffs->full_name }} ({{ $payrollDetails->staffs->staff_no }})">
+                            value="{{ $payrollDetails->staffs->full_name }} ({{ $payrollDetails->staffs->staff_id }})">
                         <input type="hidden" name="payroll_generate_id" value="{{ $payrollDetails->id }}">
                         <input type="hidden" name="role_id" value="{{ $role_id }}">
                         <input type="hidden" name="payroll_month" value="{{ $payrollDetails->payroll_month }}">
