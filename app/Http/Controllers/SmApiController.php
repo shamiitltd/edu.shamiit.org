@@ -8872,7 +8872,7 @@ class SmApiController extends Controller
             }
 
             if ($request->staff_name != "") {
-                $staff->where('full_name', 'like', '%' . $request->staff_name . '%');
+                $staff->where('full_name',  $request->staff_name );
             }
             $staffs = $staff->get();
             $roles = InfixRole::where('active_status', '=', '1')->where('id', '!=', 2)->where('id', '!=', 3)->get();
