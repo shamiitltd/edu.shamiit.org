@@ -9483,7 +9483,7 @@ class SmApiController extends Controller
             $staff->where('active_status', 1);
             if ($request->role_id != "") {
                $staff->where(function($q) use ($request) {
-                    $q->where('role_id', $request->role_id)->orWhere('previous_role_id', $request->role_id);
+                    $q->where('role_id', $request->role_id)
                 });
 
             }
@@ -9516,7 +9516,7 @@ class SmApiController extends Controller
             $staff->where('active_status', 1);
             if ($request->role_id != "") {
                 $staff->where(function($q) use ($request) {
-                    $q->where('role_id', $request->role_id)->orWhere('previous_role_id', $request->role_id);
+                    $q->where('role_id', $request->role_id)
                 });
 
             }
