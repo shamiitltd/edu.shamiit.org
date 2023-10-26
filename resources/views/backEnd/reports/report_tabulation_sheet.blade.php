@@ -20,7 +20,7 @@ Tabulation Report
             <div class="row">
                 <div class="col-lg-8 col-md-6">
                     <div class="main-title">
-                        <h3 class="mb-30">Select Criteria </h3>
+                        <h3 class="mb-30">select section </h3>
                     </div>
                 </div>
             </div>
