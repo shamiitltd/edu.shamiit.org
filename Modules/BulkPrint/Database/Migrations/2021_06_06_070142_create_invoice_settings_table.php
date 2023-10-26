@@ -82,7 +82,7 @@ class CreateInvoiceSettingsTable extends Migration
                 [0,'is_showing','Is Showing','Is Showing','দেখাচছ','Is Showing'],
                 [0, 'format_standard_three_character', 'Standard Format 3 Character', 'Standard Format 3 Character', 'স্ট্যান্ডার্ড ফরমেট ৩ ক্যারেক্টার', 'Standard Format 3 Character'],
                 [0,'prefix','Prefix','Prefix','প্রারম্ভে স্থাপন করা','Prefix'],
-                [0, 'staff_id_card', 'Staff ID Card', 'Credencial de personaro', 'কর্মী আইডি কার্ড', 'Carde didentité personnelle']
+                [0, 'staff_id_card', 'staff No Card', 'Credencial de personaro', 'কর্মী আইডি কার্ড', 'Carde didentité personnelle']
 
             ];
             foreach ($d as $row) {

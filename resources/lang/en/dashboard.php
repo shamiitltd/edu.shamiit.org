@@ -81,7 +81,7 @@ return[
     'fees_invoice_settings'=> 'Fees invoice Settings',
     'fees_invoice_bulk_print'=> 'Fees invoice Bulk Print',
     'payroll_bulk_print'=> 'Payroll Bulk Print',
-    'staff_id_card'=> 'Staff ID Card',
+    'staff_id_card'=> 'staff No Card',
     'total_students'=>'Total Students',
     'total_teachers'=>'Total Teachers',
     'total_parents'=>'Total Parents',

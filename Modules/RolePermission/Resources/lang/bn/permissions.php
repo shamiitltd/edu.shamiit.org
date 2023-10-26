@@ -407,7 +407,7 @@ return [
     "Chat Settings" => "ক্যাট সেটিংস",
     "Bulk Print" => "বুল্ক মুদ্রণ",
     "Student Id Card" => "ছাত্র আইডি কার্ড",
-    "Staff Id Card" => "স্টাফ আইডি কার্ড",
+    "staff No Card" => "স্টাফ আইডি কার্ড",
     "PayrollBulk Print" => "PayrollBulk মুদ্রণ",
     "Fees Invoice Settings" => "Fees ইনভয়েস সেটিংস",
     "Fees invoice Bulk Print" => "Fees invoice Bulk Print",

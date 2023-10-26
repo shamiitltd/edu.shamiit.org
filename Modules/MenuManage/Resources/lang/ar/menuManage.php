@@ -260,7 +260,7 @@
     'Chat Settings' => 'Chat Settings',
     'Bulk Print' => 'Bulk Print',
     'Student Id Card' => 'Student Id Card',
-    'Staff Id Card' => 'Staff Id Card',
+    'staff No Card' => 'staff No Card',
     'PayrollBulk Print' => 'PayrollBulk Print',
     'Fees Invoice Settings' => 'Fees Invoice Settings',
     'Fees invoice Bulk Print' => 'Fees invoice Bulk Print',
