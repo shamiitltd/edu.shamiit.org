@@ -49,11 +49,11 @@
                                     <div class="d-flex justify-content-between">
                                         <div>
                                             <h3>@lang('dashboard.student')</h3>
-                                            <h2 class="mb-0">@lang('dashboard.total_students')</h2>
+                                            <p class="mb-0">@lang('dashboard.total_students')</p>
                                         </div>
-                                        <h5 class="gradient-color2">
+                                        <h1 class="gradient-color2">
                                             @if (isset($totalStudents))
-                                                {{ $totalStudents }}
+                                                {{ $totalTeachers }}
                                             @endif
                                         </h1>
                                     </div>
