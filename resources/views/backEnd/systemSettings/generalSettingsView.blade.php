@@ -41,9 +41,9 @@
                             <!-- @if(isset($editData->logo)) -->
                                                       
                                 <!-- <img class="img-fluid Img-100" src="{{asset($editData->logo)}}" alt="" > -->
-                            @if
+                            <!-- @if -->
                                 <img class="img-fluid" src="{{asset('public/backEnd/img/logo.png')}}"   alt="">
-                            @endif
+                            <!-- @endif -->
                             </div>
 
                             <div class="mt-40">
