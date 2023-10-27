@@ -53,7 +53,7 @@
                                         </div>
                                         <h1 class="gradient-color2">
                                             @if (isset($totalStudents))
-                                                {{ $totalTeachers }}
+                                                {{ $totalStudents }}
                                             @endif
                                         </h1>
                                     </div>
