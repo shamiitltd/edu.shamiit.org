@@ -38,11 +38,11 @@
                             <input type="hidden" name="url" id="url" value="{{URL::to('/')}}">
                             <div class="text-center">
                                 
-                            @if(isset($editData->logo))
+                            <!-- @if(isset($editData->logo)) -->
                                                       
-                                <img class="img-fluid Img-100" src="{{asset($editData->logo)}}" alt="" >
-                            @else
-                                <img class="img-fluid" src="{{asset('public/backEnd/img/logo.png')}}"   alt="logo1.png">
+                                <!-- <img class="img-fluid Img-100" src="{{asset($editData->logo)}}" alt="" > -->
+                            @if
+                                <img class="img-fluid" src="{{asset('public/backEnd/img/logo.png')}}"   alt="">
                             @endif
                             </div>
 
