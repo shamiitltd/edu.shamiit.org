@@ -9,7 +9,7 @@
             <h1>@lang('system_settings.general_settings')</h1>
             <div class="bc-pages">
                 <a href="{{route('dashboard')}}">@lang('common.dashboard')</a>
-                <a href="#">@lang('system_settings.system_settings')</a>
+                <a href="{{route('dashboard')}}">@lang('common.dashboard')</a>
                 <a href="#">@lang('system_settings.general_settings')</a>
             </div>
         </div>
@@ -38,12 +38,12 @@
                             <input type="hidden" name="url" id="url" value="{{URL::to('/')}}">
                             <div class="text-center">
                                 
-                            <!-- @if(isset($editData->logo)) -->
+                            @if(isset($editData->logo))
                                                       
-                                <!-- <img class="img-fluid Img-100" src="{{asset($editData->logo)}}" alt="" > -->
-                            <!-- @if -->
+                                <img class="img-fluid Img-100" src="{{asset($editData->logo)}}" alt="" >
+                            @else
                                 <img class="img-fluid" src="{{asset('public/backEnd/img/logo.png')}}"   alt="">
-                            <!-- @endif -->
+                            @endif
                             </div>
 
                             <div class="mt-40">
@@ -58,7 +58,7 @@
                                     <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Disabled For Demo "> <button class="primary-btn small fix-gr-bg  demo_view" style="pointer-events: none;" type="button" >@lang('system_settings.change_logo')</button></span>
                                 @else
                                     @if(userPermission('update-school-logo'))
-                                    <button class="primary-btn fix-gr-bg small  "    >
+                                    <button class="primary-btn fix-gr-bg small">
                                         <span class="ti-check"></span>
                                         @lang('common.save') 
                                     </button>
