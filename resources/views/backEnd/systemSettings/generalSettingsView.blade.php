@@ -9,7 +9,7 @@
             <h1>@lang('system_settings.general_settings')</h1>
             <div class="bc-pages">
                 <a href="{{route('dashboard')}}">@lang('common.dashboard')</a>
-                <a href="{{route('dashboard')}}">@lang('common.dashboard')</a>
+                <a href="#">@lang('system_settings.system_settings')</a>
                 <a href="#">@lang('system_settings.general_settings')</a>
             </div>
         </div>
