@@ -239,7 +239,7 @@
                                                 <input id="Option_{{$row3->id}}" name="module_id[]" value="{{$row3->id}}"  class="infix_csk common-radio    module_id_{{$module_info->id}} module_option_{{$module_info->id}}_{{$row2->id}} module_link_option"  type="checkbox" {{in_array($row3->id ,$already_assigned)? 'checked':''}}>
 
                                                 <label for="Option_{{$row3->id}}">{{__('rolepermission::permissions.'.$row3->name)}}</label>
-                                                <br>
+                                                <br><br>
                                             </div>
                                         </li>
 
