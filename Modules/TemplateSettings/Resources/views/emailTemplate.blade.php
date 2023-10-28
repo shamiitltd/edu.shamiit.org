@@ -24,7 +24,7 @@ display: none !important;
 <h1>@lang('communicate.email_template')</h1>
 <div class="bc-pages">
 <a href="{{url('dashboard')}}">@lang('common.dashboard')</a>
-<a href="#">@lang('communicate.communicate')</a>
+<a href="{{url('dashboard')}}">@lang('common.dashboard')</a>
 <a href="#">@lang('communicate.email_template')</a>
 </div>
 </div>
