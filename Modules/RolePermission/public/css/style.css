@@ -8358,8 +8358,8 @@ input::placeholder, textarea::placeholder {
 
 
 .erp_role_permission_area .single_permission .permission_body .submodule label {
-    top: 12px;
-    bottom:10px;
+   top: 0px;
+    bottom:0px;
 }
 
 .erp_role_permission_area .single_permission .permission_header label {
