@@ -543,8 +543,8 @@
                                                        disabled>
                                                 <button class="" type="button">
                                                     <label class="primary-btn small fix-gr-bg"
-                                                        for="upload_content_file">{{ __('common.browse') }}</label>
-                                                    <input type="file" class="d-none" name="photo" id="upload_content_file">
+                                                        for="students_photo">{{ __('common.browse') }}</label>
+                                                    <input type="file" class="d-none" name="photo" id="students_photo">
                                                 </button>
                                             </div>
                                         </div>
