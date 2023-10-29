@@ -812,7 +812,7 @@
 
     // image or file browse
 
-    var fileInput = document.getElementById( "upload_content_file" );
+    var fileInput = document.getElementById( "students_photo" );
     if (fileInput) {
         fileInput.addEventListener("change", showFileName);
 

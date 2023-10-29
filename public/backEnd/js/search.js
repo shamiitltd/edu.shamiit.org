@@ -19,7 +19,7 @@ function showResult(str) {
                  document.getElementById("livesearch").innerHTML="";
                  data.forEach(value => {
                      var str = value.name;
-                    $("#livesearch").append(`<a href="${url+'/'+value.route}">${str}</a>`);
+                    $("#livesearch").append(`<a href="${value.route}">${str}</a>`);
                  }); 
                 }
                 else{
