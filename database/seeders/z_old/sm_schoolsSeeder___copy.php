@@ -38,7 +38,7 @@ class sm_schoolsSeeder extends Seeder
      */
     public function run()
     {
-        $faker = Faker::create();
+        $faker = Faker::create('en_US');
 
         // if(moduleStatusCheck('Saas') == true){
         // for($i=2; $i<=5; $i++){
@@ -87,7 +87,7 @@ class sm_schoolsSeeder extends Seeder
         //     $staff->last_name       = 'Admin';
         //     $staff->full_name       = 'School Admin';
         //     $staff->date_of_birth   = '1980-12-26';
-        //     $staff->date_of_joining = '2019-05-26';
+        //     $staff->date_of_joining = '2023-05-26';
         //     $staff->gender_id       = 1;
         //     $staff->school_id       = $i;
         //     $staff->email           = $email;
@@ -155,7 +155,7 @@ class sm_schoolsSeeder extends Seeder
             $staff->last_name       = 'Admin';
             $staff->full_name       = 'School Admin';
             $staff->date_of_birth   = '1980-12-26';
-            $staff->date_of_joining = '2019-05-26';
+            $staff->date_of_joining = '2023-05-26';
             $staff->gender_id       = 1;
             $staff->school_id       = $i;
             $staff->email           = $email;
@@ -751,7 +751,7 @@ class sm_schoolsSeeder extends Seeder
                         'metarnity_leave'  => '45',
 
                         'driving_license'  => '56776987453',
-                        'driving_license_ex_date' => '2019-02-23',
+                        'driving_license_ex_date' => '2023-02-23',
                         'created_at' => date('Y-m-d h:i:s')
                     ]
 
@@ -773,7 +773,7 @@ class sm_schoolsSeeder extends Seeder
                 $store->name = 'Utility Bills';
                 $store->expense_head_id = 4;
                 $store->payment_method_id = 1;
-                $store->date = '2019-0' . $j . '-05';
+                $store->date = '2023-0' . $j . '-05';
                 $store->amount = 1200 + rand() % 10000;
                 $store->description = 'Sample Data ' . $j;
                 $store->save();

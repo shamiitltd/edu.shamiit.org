@@ -17,11 +17,11 @@ class sm_email_sms_logsSeeder extends Seeder
     {
 
         SmEmailSmsLog::query()->truncate();
-        $faker = Faker::create();
+        $faker = Faker::create('en_US');
         for ($i = 1; $i <= 10; $i++) {
             $s = new SmEmailSmsLog();
             $s->title = $faker->title;
-            $s->description = $faker->text(200);
+            $s->description = $faker->realText($maxNbChars = 200, $indexSize = 2);
             $s->send_date = $faker->date($format = 'Y-m-d', $max = 'now');
             $s->send_through = 'E';
             $s->send_to = 'G';

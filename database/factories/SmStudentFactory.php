@@ -46,15 +46,15 @@ class SmStudentFactory extends Factory
                 'gender_id'               =>1,
                 'role_id'                 =>2,
                 'email'                   =>  'student_'. uniqid() .'@edu.shamiit.org',
-                'mobile'                  => '+8801234567' . $i,
-                'bank_account_no'         => '+8801234567' . $i,
+                'mobile'                  => '+919548450539' . $i,
+                'bank_account_no'         => '+919548450539' . $i,
 
                 'bank_name'               => 'DBBL',               
-                'current_address'         => 'Bangladesh',
-                'previous_school_details' => 'Bangladesh',
-                'aditional_notes'         => 'Bangladesh',
+                'current_address'         => 'Bharat',
+                'previous_school_details' => 'Bharat',
+                'aditional_notes'         => 'Bharat',
 
-                'permanent_address'       => 'Bangladesh',
+                'permanent_address'       => 'Bharat',
                 'created_at' => date('Y-m-d h:i:s')
         ];
     }

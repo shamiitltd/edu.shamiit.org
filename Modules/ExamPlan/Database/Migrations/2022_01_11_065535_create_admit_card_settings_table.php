@@ -133,10 +133,10 @@ class CreateAdmitCardSettingsTable extends Migration
                     $permission->save();
             }
             $infix_module_student_parent_infos = [
-                [2500, 50, 0, '1', 'ExamPlan','','ExamPlan','flaticon-test',1, 1, 1, 1, '2019-07-25 02:21:21', '2019-07-25 04:24:22'],
-                [2501, 50, 2500, '2', 'Admit Card','admit/card','Admit Card','chat_box','', 1, 1, 1, 1, '2019-07-25 02:21:21', '2019-07-25 04:24:22'],
-                [2502, 50, 0, '1', 'ExamPlan','','ExamPlan','flaticon-test',1, 1, 1, 1, '2019-07-25 02:21:21', '2019-07-25 04:24:22'],
-                [2503, 50, 2502, '2','Admit Card','admit/card','Admit Card','chat_box','', 1, 1, 1, 1, '2019-07-25 02:21:21', '2019-07-25 04:24:22']
+                [2500, 50, 0, '1', 'ExamPlan','','ExamPlan','flaticon-test',1, 1, 1, 1, '2023-07-25 02:21:21', '2023-07-25 04:24:22'],
+                [2501, 50, 2500, '2', 'Admit Card','admit/card','Admit Card','chat_box','', 1, 1, 1, 1, '2023-07-25 02:21:21', '2023-07-25 04:24:22'],
+                [2502, 50, 0, '1', 'ExamPlan','','ExamPlan','flaticon-test',1, 1, 1, 1, '2023-07-25 02:21:21', '2023-07-25 04:24:22'],
+                [2503, 50, 2502, '2','Admit Card','admit/card','Admit Card','chat_box','', 1, 1, 1, 1, '2023-07-25 02:21:21', '2023-07-25 04:24:22']
             ];
             foreach ($infix_module_student_parent_infos as $key=>$value) {                   
                 $check_exit=InfixModuleStudentParentInfo::find($value[0]);
