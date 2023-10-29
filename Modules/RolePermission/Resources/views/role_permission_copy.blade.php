@@ -225,6 +225,7 @@
 
                                             <label for="Sub_Module_{{$row2->id}}">{{__('rolepermission::permissions.'.$row2->name)}}</label>
                                             <br>
+                                            <br>
                                         </div>
 
                                         <ul class="option">
