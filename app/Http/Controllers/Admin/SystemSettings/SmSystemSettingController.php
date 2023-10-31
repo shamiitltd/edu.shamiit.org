@@ -103,7 +103,7 @@ class SmSystemSettingController extends Controller
             $compact['user_name'] = $receiver_name;
 
             @send_mail($reciver_email, $receiver_name, "test_mail", $compact);
-            Toastr::success('Test Mail Send Successfully Your Email', 'Success');
+            Toastr::success('Test_Mail Send Successfully Your Email', 'Success');
             return redirect()->back();
         } catch (\Exception $e) {
             Toastr::error($e->getMessage(), 'Failed');
