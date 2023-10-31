@@ -92,7 +92,7 @@ class CreateSmsTemplatesTable extends Migration
             // SMS End
 
             // Email Start
-            ['email', 'test_mail', 'Test Mail',
+            ['email', 'Test Mail', 'Test Mail',
             '<table bgcolor="#FFFFFF" cellpadding="0" cellspacing="0" class="nl-container" style="table-layout:fixed;vertical-align:top;min-width:320px;border-spacing:0;border-collapse:collapse;background-color:#FFFFFF;width:100%;" width="100%">
                 <tbody>
                     <tr style="vertical-align:top;" valign="top">
@@ -132,7 +132,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <h1 style="line-height:120%;text-align:center;margin-bottom:0px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
-                                                        <span style="font-size:36px;">Test Mail</span>
+                                                        <span style="font-size:200px;">Test Mail</span>
                                                     </font>
                                                 </h1>
                                                 <div style="line-height:1.8;padding:20px 15px;">

@@ -241,7 +241,7 @@ return [
     'half_day' => 'Half Day',
     'add_note_here' => 'Add Note Here',
     'error' => 'Error',
-    'select_criteria' => 'Select Criteria',
+    'select_criteria' => 'select section',
     'select_subject' => 'Select Subject',
     'attendance_date' => 'Attendance Date',
     'student_attendance_report' => 'Student Attendance Report',

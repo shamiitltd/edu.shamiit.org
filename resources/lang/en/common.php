@@ -111,7 +111,7 @@ return [
     'class_section' => 'Class (Section)',
     'language' =>'Language',
     'select_language' =>'Select Language',
-    'select_criteria' => 'Select Criteria',
+    'select_criteria' => 'select section',
     'select_class'    => 'Select Class',
     'select_section'  => 'Select Section',
     'select_subject'  => 'Select Subject',

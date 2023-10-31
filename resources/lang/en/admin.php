@@ -10,7 +10,7 @@ return [
     'add_complaint' => 'Add Complaint',
     'edit_complaint' => 'Edit Complaint',
     'manage_admin' => 'Manage Admin',
-    'select_criteria' => 'Select Criteria',
+    'select_criteria' => 'select section',
     'date_from' => 'Date From',
     'date_to' => 'Date To',
     'select_source' => 'Select Source',
