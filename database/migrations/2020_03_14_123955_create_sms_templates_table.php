@@ -139,7 +139,7 @@ class CreateSmsTemplatesTable extends Migration
                                                     <div class="txtTinyMce-wrapper" style="line-height:1.8;">
                                                         <h1>Hi [user_name] ,</h1>
                                                         <p style="margin:10px 0px 30px;line-height:1.929;font-size:16px;color:rgb(113,128,150);">
-                                                            It is test email . If your email configuration is okay then you will be got this email .Thank You [school_name]
+                                                            It is test email . It is test email. If your email configuration is okay then you will be got this email .Thank You [school_name]
                                                         </p>
                                                     </div>
                                                 </div>
