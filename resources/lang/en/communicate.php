@@ -105,7 +105,7 @@ return[
     'holiday'=>'Holiday',
     'body'=>'Body',
     'enable'=>'Enable',
-    'test_mail'=>'Test_Mail',
+    'Test Mail'=>'Test Mail',
     'password_reset'=>'Password Reset',
     'student_login_credentials'=>'Student Login Credentials', 
     'communication_sent_email'=>'Communication Sent Email', 

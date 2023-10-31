@@ -170,7 +170,7 @@ return [
 
 "holiday" => "Vacaciones",
 
-"test_mail" => "Correo de prueba",
+"Test Mail" => "Correo de prueba",
 
 "password_reset" => "Restablecimiento de contraseña",
 

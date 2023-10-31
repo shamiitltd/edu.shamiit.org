@@ -35,7 +35,7 @@
             <div class="col-lg-4 col-md-4 text-right">
                 {{ Form::open(['class' => 'form-horizontal', 'files' => true, 'method' => 'POST', 'url' => 'send-test-mail', 'id' => 'email_settings1', 'enctype' => 'multipart/form-data']) }}
                     @csrf
-                    <button class="primary-btn small fix-gr-bg" type="submit"> <i class="ti-email"></i> {{__('Send Test_Mail')}} </button>
+                    <button class="primary-btn small fix-gr-bg" type="submit"> <i class="ti-email"></i> {{__('Send Test Mail')}} </button>
                 {{ Form::close() }}
             </div>
         </div>
