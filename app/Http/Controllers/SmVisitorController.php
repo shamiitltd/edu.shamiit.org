@@ -248,7 +248,7 @@ class SmVisitorController extends Controller
                     unlink($path);
                 }
             }
-            $result = $visitor->delete($id);
+            $result = $visitor->delete();
             $result = SmVisitor::find($id);
 
             if (ApiBaseMethod::checkUrl($request->fullUrl())) {
