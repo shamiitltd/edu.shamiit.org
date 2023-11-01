@@ -118,7 +118,7 @@ class CreateSmsTemplatesTable extends Migration
                                         <div class="col num12" style="min-width:320px;max-width:600px;vertical-align:top;width:600px;">
                                             <div class="col_cont" style="width:100%;">
                                                 <div align="center" class="img-container center autowidth" style="padding-right:20px;padding-left:20px;">
-                                                    <img border="0" class="center autowidth" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGF00Oi-zJNU_EvYGueBVz_sqXmFjk8pxNtg&amp;usqp=CAU" style="text-decoration:none;height:auto;border:0;max-width:100%;" width="100" alt="images?q=tbn:ANd9GcRGF00Oi-zJNU_EvYGueBVz_sqXmFjk8pxNtg&amp;usqp=CAU">
+                                                    <img border="0" class="center autowidth" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGF00Oi-zJNU_EvYGueBVz_sqXmFjk8pxNtg&amp;usqp=CAU" style="text-decoration:none;height:auto;border:0;max-width:100%;" width="500" alt="images?q=tbn:ANd9GcRGF00Oi-zJNU_EvYGueBVz_sqXmFjk8pxNtg&amp;usqp=CAU">
                                                 </div>
                                             </div>
                                         </div>
