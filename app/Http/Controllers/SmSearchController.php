@@ -30,7 +30,7 @@ class SmSearchController extends Controller
              ->whereIn('permission_id', $permissionIds)->get()->map(function($value) {
                return [
                  'name'=>$value->permissionInfo->name,
-                 'route'=>$value->permissionInfo->route ? $value->permissionInfo->route : null,
+                 'route'=>$value->permissionInfo->route ? validRouteUrl($value->permissionInfo->route) : null,
                ];
              });
           }
