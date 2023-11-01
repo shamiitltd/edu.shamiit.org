@@ -104,7 +104,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <div align="center" class="img-container center fixedwidth" style="padding-right:30px;padding-left:30px;">
                                                     <a href="#">
-                                                        <img border="0" class="center fixedwidth" src="../../public/backEnd/img/logo.png" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
+                                                        <img border="0" class="center fixedwidth img-container" src="../../public/backEnd/img/logo.png" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="80" alt="logo.png">
                                                     </a>
                                                 </div>
                                             </div>
@@ -118,7 +118,7 @@ class CreateSmsTemplatesTable extends Migration
                                         <div class="col num12" style="min-width:320px;max-width:600px;vertical-align:top;width:600px;">
                                             <div class="col_cont" style="width:100%;">
                                                 <div align="center" class="img-container center autowidth" style="padding-right:20px;padding-left:20px;">
-                                                    <img border="0" class="center autowidth" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGF00Oi-zJNU_EvYGueBVz_sqXmFjk8pxNtg&amp;usqp=CAU" style="text-decoration:none;height:auto;border:0;max-width:541px;" width="541" alt="images?q=tbn:ANd9GcRGF00Oi-zJNU_EvYGueBVz_sqXmFjk8pxNtg&amp;usqp=CAU">
+                                                    <img border="0" class="center img-container" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGF00Oi-zJNU_EvYGueBVz_sqXmFjk8pxNtg&amp;usqp=CAU" style="text-decoration:none;height:auto;border:0;max-width:50%;"  alt="images?q=tbn:ANd9GcRGF00Oi-zJNU_EvYGueBVz_sqXmFjk8pxNtg&amp;usqp=CAU">
                                                 </div>
                                             </div>
                                         </div>
