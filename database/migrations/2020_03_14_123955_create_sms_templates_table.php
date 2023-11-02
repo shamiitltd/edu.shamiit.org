@@ -644,7 +644,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <div align="center" class="img-container center fixedwidth" style="padding-right:30px;padding-left:30px;">
                                                     <a href="#">
-                                                        <img border="0" class="center fixedwidth" src="" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
+                                                        <img border="0" class="center fixedwidth" src="../../public/backEnd/img/logo.png" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
                                                     </a>
                                                 </div>
                                             </div>
@@ -816,7 +816,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <div align="center" class="img-container center fixedwidth" style="padding-right:30px;padding-left:30px;">
                                                     <a href="#">
-                                                        <img border="0" class="center fixedwidth" src="" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
+                                                        <img border="0" class="center fixedwidth" src="../../public/backEnd/img/logo.png" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
                                                     </a>
                                                 </div>
                                             </div>
@@ -902,7 +902,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <div align="center" class="img-container center fixedwidth" style="padding-right:30px;padding-left:30px;">
                                                     <a href="#">
-                                                        <img border="0" class="center fixedwidth" src="" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
+                                                        <img border="0" class="center fixedwidth" src="../../public/backEnd/img/logo.png" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
                                                     </a>
                                                 </div>
                                             </div>
@@ -988,7 +988,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <div align="center" class="img-container center fixedwidth" style="padding-right:30px;padding-left:30px;">
                                                     <a href="#">
-                                                        <img border="0" class="center fixedwidth" src="" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
+                                                        <img border="0" class="center fixedwidth" src="../../public/backEnd/img/logo.png" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
                                                     </a>
                                                 </div>
                                             </div>
@@ -1074,7 +1074,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <div align="center" class="img-container center fixedwidth" style="padding-right:30px;padding-left:30px;">
                                                     <a href="#">
-                                                        <img border="0" class="center fixedwidth" src="" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
+                                                        <img border="0" class="center fixedwidth" src="../../public/backEnd/img/logo.png" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
                                                     </a>
                                                 </div>
                                             </div>
@@ -1160,7 +1160,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <div align="center" class="img-container center fixedwidth" style="padding-right:30px;padding-left:30px;">
                                                     <a href="#">
-                                                        <img border="0" class="center fixedwidth" src="" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
+                                                        <img border="0" class="center fixedwidth" src="../../public/backEnd/img/logo.png" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
                                                     </a>
                                                 </div>
                                             </div>
