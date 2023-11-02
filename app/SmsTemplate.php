@@ -117,7 +117,7 @@ class SmsTemplate extends Model
         //Password Reset End
 
         // FrontEnd Contact Start
-        $body = str_replace('[contact_name]', @$data['contact_name'], $body);
+        $body = str_replace('[contact_name]', @$data['contacrt_name'], $body);
         $body = str_replace('[contact_email]', @$data['contact_email'], $body);
         $body = str_replace('[contact_subject]', @$data['subject'], $body);
         $body = str_replace('[contact_message]', @$data['contact_message'], $body);
