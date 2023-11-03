@@ -80,7 +80,7 @@ class TemplateSettingsController extends Controller
     {
         try {
             $smsTemplates = SmsTemplate::where('type','sms')
-                ->where('school_id', Auth::user()->school_id)
+                ->where('school_id', auth()->user()->school_id)
                 ->get();
 
             return view('templatesettings::smsTemplate', compact('smsTemplates'));
