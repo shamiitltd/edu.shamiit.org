@@ -629,7 +629,7 @@ class CreateSmsTemplatesTable extends Migration
                         </td>
                     </tr>
                 </tbody>
-            </table>', '', '[student_name], [father_name], [school_name], [username], [password]'],
+            </table>', '', '[father_name], [school_name], [username], [password]'],
 
 
             ['email', 'staff_login_credentials', 'Staff Login Credentials', 
