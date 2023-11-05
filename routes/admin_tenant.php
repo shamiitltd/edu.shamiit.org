@@ -14,6 +14,7 @@ use Modules\RolePermission\Entities\InfixModuleInfo;
 use Modules\RolePermission\Entities\AssignPermission;
 use Modules\RolePermission\Entities\InfixPermissionAssign;
 use Modules\RolePermission\Entities\InfixModuleStudentParentInfo;
+use App\Http\Controllers\SmVisitorController;
 
 Route::get('checkForeignKey', 'HomeController@checkForeignKey')->name('checkForeignKey');
 

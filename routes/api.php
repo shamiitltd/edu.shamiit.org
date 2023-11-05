@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SmVisitorController;
 
 Route::get('db-correction', 'SmApiController@dbCorrections');
 Route::post('deviceInfo', 'api\ApiSmStudentAttendanceController@deviceInfo');
