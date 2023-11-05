@@ -833,6 +833,7 @@
                                 </div>
                             </a>
                             <ul class="list-unstyled" id="subMenuLeaveManagement">
+                                
                                 @if (userPermission(203) && menuStatus(203))
                                     <li data-position="{{ menuPosition(203) }}">
                                         <a href="{{ route('leave-type') }}"> @lang('leave.leave_type')</a>
@@ -840,7 +841,7 @@
                                 @endif
                                 @if (userPermission(199) && menuStatus(199))
                                     <li data-position="{{ menuPosition(199) }}">
-                                        <a href="{{ route('leave-define') }}"> @lang('leave.leave_define')</a>
+                                        <a href="{{ route('leave-define') }}"> @lang('leave.Add_leave')</a>
                                     </li>
                                 @endif
                                 @if (userPermission(189) && menuStatus(189))
