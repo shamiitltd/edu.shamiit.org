@@ -4,7 +4,7 @@ return[
     'leave_list'=>'Leave List',
     'leave_name'=> 'Leave Name',
     'type_name'=> 'Type Name',
-    'leave_define'=> 'Add Leave',
+    'leave_define'=> 'Leave Define',
     'add_days'=> 'Add Days',
     'my_remaining_leaves'=> 'My Remaining Leaves',
     'remaining_days'=> 'Remaining Days',
