@@ -500,7 +500,7 @@ class CreateSmsTemplatesTable extends Migration
                                                 </h1>
                                                 <div style="line-height:1.8;padding:20px 15px;">
                                                     <div class="txtTinyMce-wrapper" style="line-height:1.8;">
-                                                        <h1></h1>
+                                                        <h1>Communication Sent Email</h1>
                                                         <p style="margin:10px 0px 30px;line-height:1.929;font-size:16px;color:rgb(113,128,150);">
                                                             Title : [title]
                                                             </br>
