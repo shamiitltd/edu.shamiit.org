@@ -92,7 +92,7 @@ class TemplateSettingsController extends Controller
 
     public function smsTemplateUpdate(Request $request){
         $request->validate([
-            'subject' => 'required',
+           
             'body' => 'required'
         ]);
         try {
