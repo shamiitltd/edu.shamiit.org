@@ -1287,7 +1287,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <h1 style="line-height:120%;text-align:center;margin-bottom:0px;margin-top:20px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
-                                                        <span style="font-size:36px;">Fee Extra Amount Add</span>
+                                                        <span style="font-size:36px;">Fee Extra Amoun Add</span>
                                                     </font>
                                                 </h1>
                                                 <div style="line-height:1.8;padding:20px 15px;">
