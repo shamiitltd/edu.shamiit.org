@@ -943,7 +943,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <h1 style="line-height:120%;text-align:center;margin-bottom:0px;margin-top:20px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
-                                                        <span style="font-size:36px;">Reject Bank Payment</span>
+                                                        <span style="font-size:36px;">Parent Reject Bank Payment</span>
                                                     </font>
                                                 </h1>
                                                 <div style="line-height:1.8;padding:20px 15px;">
@@ -1029,7 +1029,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <h1 style="line-height:120%;text-align:center;margin-bottom:0px;margin-top:20px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
-                                                        <span style="font-size:36px;">Reject Bank Payment</span>
+                                                        <span style="font-size:36px;">Student Reject Bank Payment</span>
                                                     </font>
                                                 </h1>
                                                 <div style="line-height:1.8;padding:20px 15px;">
@@ -1247,7 +1247,7 @@ class CreateSmsTemplatesTable extends Migration
                 </tbody>
             </table>','Wallet', '[name], [add_balance], [method], [create_date], [school_name], [reject_reason], [current_balance]'],
 
-            ['email', 'fees_extra_amount_add', 'Fee Extra Amoun Add', 
+            ['email', 'fees_extra_amount_add', 'Fee Extra Amount Add', 
             '<table bgcolor="#FFFFFF" cellpadding="0" cellspacing="0" class="nl-container" style="table-layout:fixed;vertical-align:top;min-width:320px;border-spacing:0;border-collapse:collapse;background-color:#FFFFFF;width:100%;" width="100%">
                 <tbody>
                     <tr style="vertical-align:top;" valign="top">
@@ -1287,7 +1287,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <h1 style="line-height:120%;text-align:center;margin-bottom:0px;margin-top:20px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
-                                                        <span style="font-size:36px;">Fee Extra Amoun Add</span>
+                                                        <span style="font-size:36px;">Fee Extra Amount Add</span>
                                                     </font>
                                                 </h1>
                                                 <div style="line-height:1.8;padding:20px 15px;">
@@ -2960,7 +2960,7 @@ class CreateSmsTemplatesTable extends Migration
                                                                             <div class="col_cont" style="width:100%;">
                                                                                 <h1 style="line-height:120%;text-align:center;margin-bottom:0px;">
                                                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
-                                                                                        <span style="font-size:36px;">Dues Payment</span>
+                                                                                        <span style="font-size:36px;">Dues Fees Payment</span>
                                                                                     </font>
                                                                                 </h1>
                                                                                 <div style="line-height:1.8;padding:20px 15px;">
