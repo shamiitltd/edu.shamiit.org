@@ -1294,7 +1294,7 @@ class CreateSmsTemplatesTable extends Migration
                                                     <div class="txtTinyMce-wrapper" style="line-height:1.8;">
                                                         <h1>Hi [name],</h1>
                                                         <p style="margin:10px 0px 30px;line-height:1.929;font-size:16px;color:rgb(113,128,150);">
-                                                            Your Xtra Fees Amount Add [school_name] , In Your Wallet Amount:  [add_balance] . Which Is Fees Add Payment Via [method] on [create_date] Your previous Balance Was [previous_balance] <br> .Your Current Balance Is Now [current_balance] <br> Thank You, [school_name]
+                                                            Your Extra Fees Amount Add [school_name] , In Your Wallet Amount:  [add_balance] . Which Is Fees Add Payment Via [method] on [create_date] Your previous Balance Was [previous_balance] <br> .Your Current Balance Is Now [current_balance] <br> Thank You, [school_name]
                                                         </p>
                                                     </div>
                                                 </div>
