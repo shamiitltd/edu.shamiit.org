@@ -68,7 +68,7 @@
                                     <div class="d-flex justify-content-between">
                                         <div>
                                             <h3>@lang('common.teachers')</h3>
-                                            <p class="mb-0">@lang('dashboard.total_teachers')</p>
+                                            <p class="mb-0">@lang('dashboard.total_students')</p>
                                         </div>
                                         <h1 class="gradient-color2">
                                             @if (isset($totalTeachers))
