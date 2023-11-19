@@ -282,13 +282,13 @@ class SmVisitorController extends Controller
                
                 $result = $visitor->delete();
     
-                // if (ApiBaseMethod::checkUrl($request->fullUrl())) {
-                //     if ($result) {
-                //         return ApiBaseMethod::sendResponse(null, 'Visitor has been deleted successfully.');
-                //     } else {
-                //         return ApiBaseMethod::sendError('Something went wrong, please try again.');
-                //     }
-                // } else {
+                if (ApiBaseMethod::checkUrl($request->fullUrl())) {
+                    if ($result) {
+                        return ApiBaseMethod::sendResponse(null, 'Visitor has been deleted successfully.');
+                    } else {
+                        return ApiBaseMethod::sendError('Something went wrong, please try again.');
+                    }
+                } else {
                     if ($result) {
                         Toastr::success('Operation successful', 'Success');
                         return redirect('visitor');
@@ -296,7 +296,7 @@ class SmVisitorController extends Controller
                         Toastr::error('Operation Failed', 'Failed');
                         return redirect()->back();
                     }
-                // }
+                }
     
 
 
