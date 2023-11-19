@@ -236,67 +236,67 @@ class SmVisitorController extends Controller
     public function delete(Request $request, $id)
     {
 
-        // try{
-        //      if (checkAdmin()) {
-        //         $visitor = SmVisitor::find($id);
-        //     }else{
-        //         $visitor = SmVisitor::where('id',$id)->where('school_id',Auth::user()->school_id)->first();
-        //     }
-        //     if ($visitor->file != "") {
-        //         $path = url('/') . '/public/uploads/visitor/' . $visitor->file;
-        //         if (file_exists($path)) {
-        //             unlink($path);
-        //         }
-        //     }
-           
-        //     $result = $visitor->delete();
-
-        //     if (ApiBaseMethod::checkUrl($request->fullUrl())) {
-        //         if ($result) {
-        //             return ApiBaseMethod::sendResponse(null, 'Visitor has been deleted successfully.');
-        //         } else {
-        //             return ApiBaseMethod::sendError('Something went wrong, please try again.');
-        //         }
-        //     } else {
-        //         if ($result) {
-        //             Toastr::success('Operation successful', 'Success');
-        //             return redirect('visitor');
-        //         } else {
-        //             Toastr::error('Operation Failed', 'Failed');
-        //             return redirect()->back();
-        //         }
-        //     }
-
         try{
-                 if (checkAdmin()) {
-                    $visitor = SmVisitor::find($id);
-                }else{
-                    $visitor = SmVisitor::where('id',$id)->where('school_id',Auth::user()->school_id)->first();
+             if (checkAdmin()) {
+                $visitor = SmVisitor::find($id);
+            }else{
+                $visitor = SmVisitor::where('id',$id)->where('school_id',Auth::user()->school_id)->first();
+            }
+            if ($visitor->file != "") {
+                $path = url('/') . '/public/uploads/visitor/' . $visitor->file;
+                if (file_exists($path)) {
+                    unlink($path);
                 }
-                if ($visitor->file != "") {
-                    $path = url('/') . '/public/uploads/visitor/' . $visitor->file;
-                    if (file_exists($path)) {
-                        unlink($path);
-                    }
-                }
-               
-                $result = $visitor->delete();
-    
-                if (ApiBaseMethod::checkUrl($request->fullUrl())) {
-                    if ($result) {
-                        return ApiBaseMethod::sendResponse(null, 'Visitor has been deleted successfully.');
-                    } else {
-                        return ApiBaseMethod::sendError('Something went wrong, please try again.');
-                    }
+            }
+           
+            $result = $visitor->delete();
+
+            if (ApiBaseMethod::checkUrl($request->fullUrl())) {
+                if ($result) {
+                    return ApiBaseMethod::sendResponse(null, 'Visitor has been deleted successfully.');
                 } else {
-                    if ($result) {
-                        Toastr::success('Operation successful', 'Success');
-                        return redirect('visitor');
-                    } else {
-                        Toastr::error('Operation Failed', 'Failed');
-                        return redirect()->back();
-                    }
+                    return ApiBaseMethod::sendError('Something went wrong, please try again.');
                 }
+            } else {
+                if ($result) {
+                    Toastr::success('Operation successful', 'Success');
+                    return redirect('visitor');
+                } else {
+                    Toastr::error('Operation Failed', 'Failed');
+                    return redirect()->back();
+                }
+            }
+
+        // try{
+        //          if (checkAdmin()) {
+        //             $visitor = SmVisitor::find($id);
+        //         }else{
+        //             $visitor = SmVisitor::where('id',$id)->where('school_id',Auth::user()->school_id)->first();
+        //         }
+        //         if ($visitor->file != "") {
+        //             $path = url('/') . '/public/uploads/visitor/' . $visitor->file;
+        //             if (file_exists($path)) {
+        //                 unlink($path);
+        //             }
+        //         }
+               
+        //         $result = $visitor->delete();
+    
+        //         if (ApiBaseMethod::checkUrl($request->fullUrl())) {
+        //             if ($result) {
+        //                 return ApiBaseMethod::sendResponse(null, 'Visitor has been deleted successfully.');
+        //             } else {
+        //                 return ApiBaseMethod::sendError('Something went wrong, please try again.');
+        //             }
+        //         } else {
+        //             if ($result) {
+        //                 Toastr::success('Operation successful', 'Success');
+        //                 return redirect('visitor');
+        //             } else {
+        //                 Toastr::error('Operation Failed', 'Failed');
+        //                 return redirect()->back();
+        //             }
+        //         }
     
 
 
