@@ -340,6 +340,9 @@
                                                             <a class="dropdown-item" data-toggle="modal"
                                                                 data-target="#deleteVisitorModal{{ @$visitor->id }}"
                                                                 href="#">@lang('common.delete')</a>
+
+                                                   
+
                                                             <!-- @if (@$visitor->file != '')
                                                                 @if (userPermission('visitor_delete'))
                                                                     @if (@file_exists($visitor->file))
