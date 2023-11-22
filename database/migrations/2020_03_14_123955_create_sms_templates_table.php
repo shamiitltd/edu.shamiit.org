@@ -930,7 +930,7 @@ Copyright &copy; 2023 All rights reserved | Powered by SHAMIIT
 <div class="col_cont" style="width:100%;">
 <h1 style="line-height:120%;text-align:center;margin-bottom:0px;">
 <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
-<span style="font-size:36px;">Reject Bank Payment</span>
+<span style="font-size:36px;">Reject Bank1 Payment</span>
 </font>
 </h1>
 <div style="line-height:1.8;padding:20px 15px;">
