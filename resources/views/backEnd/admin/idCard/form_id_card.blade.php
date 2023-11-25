@@ -122,7 +122,7 @@
                 <label class="primary_input_label" for="">@lang('admin.role')<span class="text-danger">
                         *</span></label><br>
                 @foreach ($roles as $role)
-                    @if ($role->id != 2 && $role->id != 3)
+                    @if ($role->id != 2 && $role->id != 3 && $role->id !=4)
                         <div class="">
                             <label for="role_{{ @$role->id }}">{{ @$role->name }}</label>
                             <input type="checkbox" id="role_{{ @$role->id }}" class="common-checkbox"
