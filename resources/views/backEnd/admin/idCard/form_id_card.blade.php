@@ -30,8 +30,8 @@
             <div class="col-lg-12">
                 <div class="primary_input">
                     <select class="primary_select  form-control{{ $errors->has('page_layout_style') ? ' is-invalid' : '' }}" name="page_layout_style" id="pageLayoutStyle">
-                        <option value="vertical" {{isset($id_card)? ($id_card->page_layout_style == "horizontal"? 'selected':''):''}}>@lang('admin.vertical')</option>
-                        <option value="horizontal" {{isset($id_card)? ($id_card->page_layout_style == "vertical"? 'selected':''):''}}>@lang('admin.horizontal')</option>
+                        <option value="horizontal" {{isset($id_card)? ($id_card->page_layout_style == "horizontal"? 'selected':''):''}}>@lang('admin.vertical')</option>
+                        <option value="vertical" {{isset($id_card)? ($id_card->page_layout_style == "vertical"? 'selected':''):''}}>@lang('admin.horizontal')</option>
                     </select>
 
                     @if ($errors->has('page_layout_style'))
