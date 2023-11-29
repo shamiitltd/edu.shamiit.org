@@ -42,7 +42,7 @@
                                                       
                                 <img class="img-fluid Img-100" src="{{asset($editData->logo)}}" alt="" >
                             @else
-                                <img class="img-fluid" src="{{asset('public/backEnd/img/logo.png')}}"   alt="">
+                                <img class="img-fluid" src="{{asset('public/uploads/settings/logo.png')}}" alt="">
                             @endif
                             </div>
 
@@ -58,7 +58,7 @@
                                     <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Disabled For Demo "> <button class="primary-btn small fix-gr-bg  demo_view" style="pointer-events: none;" type="button" >@lang('system_settings.change_logo')</button></span>
                                 @else
                                     @if(userPermission('update-school-logo'))
-                                    <button class="primary-btn fix-gr-bg small">
+                                    <button class="primary-btn fix-gr-bg small  "    >
                                         <span class="ti-check"></span>
                                         @lang('common.save') 
                                     </button>
