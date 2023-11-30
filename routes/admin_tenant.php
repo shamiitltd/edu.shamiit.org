@@ -330,11 +330,7 @@ Route::group(['middleware' => ['XSS','subscriptionAccessUrl']], function () {
         Route::get('visitor-edit/{id}', ['as' => 'visitor_edit', 'uses' => 'Admin\AdminSection\SmVisitorController@edit'])->middleware('userRolePermission:visitor_edit');
         Route::post('visitor-update', ['as' => 'visitor_update', 'uses' => 'Admin\AdminSection\SmVisitorController@update'])->middleware('userRolePermission:visitor_edit');
         Route::get('visitor-delete{id}', ['as' => 'visitor_delete', 'uses' => 'Admin\AdminSection\SmVisitorController@delete'])->middleware('userRolePermission:visitor_delete');
-<<<<<<< Updated upstream
 
-=======
-        
->>>>>>> Stashed changes
         Route::get('download-visitor-document/{file_name}', ['as' => 'visitor_download', 'uses' => 'Admin\AdminSection\SmVisitorController@download_files'])->middleware('userRolePermission:visitor_download');
 
         Route::get('visitor-datatable', ['as' => 'visitor_datatable', 'uses' => 'Admin\AdminSection\SmVisitorController@visitorDatatable'])->middleware('userRolePermission:visitor_datatable');
