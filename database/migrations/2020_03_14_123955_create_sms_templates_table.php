@@ -1240,7 +1240,7 @@ class CreateSmsTemplatesTable extends Migration
                 </tbody>
             </table>','Wallet', '[name], [add_balance], [method], [create_date], [school_name], [reject_reason], [current_balance]'],
 
-            ['email', 'fees_extra_amount_add', 'Fee Extra Amoun Add', 
+            ['email', 'fees_extra_amount_add', 'Fee Extra Amount Add', 
             '<table bgcolor="#FFFFFF" cellpadding="0" cellspacing="0" class="nl-container" style="table-layout:fixed;vertical-align:top;min-width:320px;border-spacing:0;border-collapse:collapse;background-color:#FFFFFF;width:100%;" width="100%">
                 <tbody>
                     <tr style="vertical-align:top;" valign="top">
