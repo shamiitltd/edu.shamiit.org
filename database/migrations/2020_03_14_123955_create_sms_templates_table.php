@@ -635,7 +635,7 @@ class CreateSmsTemplatesTable extends Migration
                         </td>
                     </tr>
                 </tbody>
-            </table>', '', '[student_name], [father_name], [school_name], [username], [password]'],
+            </table>', '', '[father_name], [school_name], [username], [password]'],
 
 
             ['email', 'staff_login_credentials', 'Staff Login Credentials', 
@@ -1974,7 +1974,7 @@ class CreateSmsTemplatesTable extends Migration
                                     <div style="border-collapse:collapse;width:100%;background-color:#ffffff;">
                                         <div class="col num12" style="min-width:320px;max-width:600px;vertical-align:top;width:600px;">
                                             <div class="col_cont" style="width:100%;">
-                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;">
+                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;  margin-top:20px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
                                                         <span style="font-size:36px;">Approve Payment</span>
                                                     </font>
@@ -2060,9 +2060,9 @@ class CreateSmsTemplatesTable extends Migration
                                     <div style="border-collapse:collapse;width:100%;background-color:#ffffff;">
                                         <div class="col num12" style="min-width:320px;max-width:600px;vertical-align:top;width:600px;">
                                             <div class="col_cont" style="width:100%;">
-                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;">
+                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;  margin-top:20px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
-                                                        <span style="font-size:36px;">Reject Payment</span>
+                                                        <span style="font-size:36px;">Student Reject Payment</span>
                                                     </font>
                                                 </h1>
                                                 <div style="line-height:1.8;padding:20px 15px;">
@@ -2146,9 +2146,9 @@ class CreateSmsTemplatesTable extends Migration
                                     <div style="border-collapse:collapse;width:100%;background-color:#ffffff;">
                                         <div class="col num12" style="min-width:320px;max-width:600px;vertical-align:top;width:600px;">
                                             <div class="col_cont" style="width:100%;">
-                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;">
+                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;  margin-top:20px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
-                                                        <span style="font-size:36px;">Reject Payment</span>
+                                                        <span style="font-size:36px;">Parent Reject Payment</span>
                                                     </font>
                                                 </h1>
                                                 <div style="line-height:1.8;padding:20px 15px;">
@@ -2232,7 +2232,7 @@ class CreateSmsTemplatesTable extends Migration
                                     <div style="border-collapse:collapse;width:100%;background-color:#ffffff;">
                                         <div class="col num12" style="min-width:320px;max-width:600px;vertical-align:top;width:600px;">
                                             <div class="col_cont" style="width:100%;">
-                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;">
+                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px; margin-top:20px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
                                                         <span style="font-size:36px;">Lms Course Purchase</span>
                                                     </font>
@@ -2318,7 +2318,7 @@ class CreateSmsTemplatesTable extends Migration
                                     <div style="border-collapse:collapse;width:100%;background-color:#ffffff;">
                                         <div class="col num12" style="min-width:320px;max-width:600px;vertical-align:top;width:600px;">
                                             <div class="col_cont" style="width:100%;">
-                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;">
+                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px; margin-top:20px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
                                                         <span style="font-size:36px;">Lms Course Purchase</span>
                                                     </font>
@@ -2404,7 +2404,7 @@ class CreateSmsTemplatesTable extends Migration
                                     <div style="border-collapse:collapse;width:100%;background-color:#ffffff;">
                                         <div class="col num12" style="min-width:320px;max-width:600px;vertical-align:top;width:600px;">
                                             <div class="col_cont" style="width:100%;">
-                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;">
+                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px; margin-top:20px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
                                                         <span style="font-size:36px;">Approve Payment</span>
                                                     </font>
@@ -2490,7 +2490,7 @@ class CreateSmsTemplatesTable extends Migration
                                     <div style="border-collapse:collapse;width:100%;background-color:#ffffff;">
                                         <div class="col num12" style="min-width:320px;max-width:600px;vertical-align:top;width:600px;">
                                             <div class="col_cont" style="width:100%;">
-                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;">
+                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px; margin-top:20px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
                                                         <span style="font-size:36px;">Approve Payment</span>
                                                     </font>
@@ -2576,7 +2576,7 @@ class CreateSmsTemplatesTable extends Migration
                                     <div style="border-collapse:collapse;width:100%;background-color:#ffffff;">
                                         <div class="col num12" style="min-width:320px;max-width:600px;vertical-align:top;width:600px;">
                                             <div class="col_cont" style="width:100%;">
-                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;">
+                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;  margin-top:20px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
                                                         <span style="font-size:36px;">Reject Payment</span>
                                                     </font>
