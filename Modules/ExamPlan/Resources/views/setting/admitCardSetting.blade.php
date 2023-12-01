@@ -109,7 +109,7 @@
                                         <div
                                                 class="col-lg-6 d-flex relation-button justify-content-between mb-3 justify-content-between">
                                             <p class="text-uppercase mb-0">@lang('examplan::exp.student_photo')</p>
-                                            <div class="d-flex radio-btn-flex ml-30 mt-1">
+                                            <div class="d-flex radio-btn-flex ml-30 mt-1 pr-2">
                                                 <div class="mr-20">
                                                     <input type="radio" name="student_photo" id="student_photo_on"
                                                            value="1" class="common-radio relationButton"
@@ -127,7 +127,7 @@
 
                                         <div class="col-lg-6 d-flex relation-button justify-content-between mb-3">
                                             <p class="text-uppercase mb-0"> @lang('examplan::exp.student_name')</p>
-                                            <div class="d-flex radio-btn-flex ml-30 mt-1">
+                                            <div class="d-flex radio-btn-flex ml-30 mt-1 pr-2">
                                                 <div class="mr-20">
                                                     <input type="radio" name="student_name" id="student_name_on"
                                                            value="1" class="common-radio relationButton"
@@ -145,7 +145,7 @@
 
                                         <div class="col-lg-6 d-flex relation-button justify-content-between mb-3">
                                             <p class="text-uppercase mb-0"> @lang('examplan::exp.gaurdian_name')</p>
-                                            <div class="d-flex radio-btn-flex ml-30 mt-1">
+                                            <div class="d-flex radio-btn-flex ml-30 mt-1 pr-2">
                                                 <div class="mr-20">
                                                     <input type="radio" name="gaurdian_name" id="gaurdian_name_on"
                                                            value="1" class="common-radio relationButton"
@@ -163,7 +163,7 @@
 
                                         <div class="col-lg-6 d-flex relation-button justify-content-between mb-3">
                                             <p class="text-uppercase mb-0"> @lang('examplan::exp.admission_no')</p>
-                                            <div class="d-flex radio-btn-flex ml-30 mt-1">
+                                            <div class="d-flex radio-btn-flex ml-30 mt-1 pr-2">
                                                 <div class="mr-20">
                                                     <input type="radio" name="admission_no" id="admission_no_on"
                                                            value="1" class="common-radio relationButton"
@@ -180,7 +180,7 @@
                                         </div>
                                         <div class="col-lg-6 d-flex relation-button justify-content-between mb-3">
                                             <p class="text-uppercase mb-0"> @lang('examplan::exp.class_&_section')</p>
-                                            <div class="d-flex radio-btn-flex ml-30 mt-1">
+                                            <div class="d-flex radio-btn-flex ml-30 mt-1 pr-2">
                                                 <div class="mr-20">
                                                     <input type="radio" name="class_section" id="class_section_on"
                                                            value="1" class="common-radio relationButton"
@@ -197,7 +197,7 @@
                                         </div>
                                         <div class="col-lg-6 d-flex relation-button justify-content-between mb-3">
                                             <p class="text-uppercase mb-0"> @lang('examplan::exp.exam_name')</p>
-                                            <div class="d-flex radio-btn-flex ml-30 mt-1">
+                                            <div class="d-flex radio-btn-flex ml-30 mt-1 pr-2">
                                                 <div class="mr-20">
                                                     <input type="radio" name="exam_name" id="exam_name_on"
                                                            value="1" class="common-radio relationButton"
@@ -214,7 +214,7 @@
                                         </div>
                                         <div class="col-lg-6 d-flex relation-button justify-content-between mb-3">
                                             <p class="text-uppercase mb-0"> @lang('examplan::exp.academic_year')</p>
-                                            <div class="d-flex radio-btn-flex ml-30 mt-1">
+                                            <div class="d-flex radio-btn-flex ml-30 mt-1 pr-2">
                                                 <div class="mr-20">
                                                     <input type="radio" name="academic_year" id="academic_year_on"
                                                            value="1" class="common-radio relationButton"
@@ -231,7 +231,7 @@
                                         </div>
                                         <div class="col-lg-6 d-flex relation-button justify-content-between mb-3">
                                             <p class="text-uppercase mb-0"> @lang('examplan::exp.school_address')</p>
-                                            <div class="d-flex radio-btn-flex ml-30 mt-1">
+                                            <div class="d-flex radio-btn-flex ml-30 mt-1 pr-2">
                                                 <div class="mr-20">
                                                     <input type="radio" name="school_address" id="school_address_on"
                                                            value="1" class="common-radio relationButton"
@@ -250,7 +250,7 @@
 
                                         <div class="col-lg-6 d-flex relation-button justify-content-between mb-3">
                                             <p class="text-uppercase mb-0"> @lang('examplan::exp.student_can_download')</p>
-                                            <div class="d-flex radio-btn-flex ml-30 mt-1">
+                                            <div class="d-flex radio-btn-flex ml-30 mt-1 pr-2">
                                                 <div class="mr-20">
                                                     <input type="radio" name="student_download"
                                                            id="student_download_on" value="1"
@@ -268,7 +268,7 @@
                                         </div>
                                         <div class="col-lg-6 d-flex relation-button justify-content-between mb-3">
                                             <p class="text-uppercase mb-0"> @lang('examplan::exp.parent_can_download')</p>
-                                            <div class="d-flex radio-btn-flex ml-30 mt-1">
+                                            <div class="d-flex radio-btn-flex ml-30 mt-1 pr-2">
                                                 <div class="mr-20">
                                                     <input type="radio" name="parent_download" id="parent_download_on"
                                                            value="1" class="common-radio relationButton"
@@ -286,7 +286,7 @@
 
                                         <div class="col-lg-6 d-flex relation-button justify-content-between mb-3">
                                             <p class="text-uppercase mb-0"> @lang('examplan::exp.student_notification')</p>
-                                            <div class="d-flex radio-btn-flex ml-30 mt-1">
+                                            <div class="d-flex radio-btn-flex ml-30 mt-1 pr-2">
                                                 <div class="mr-20">
                                                     <input type="radio" name="student_notification"
                                                            id="student_notification_on" value="1"
@@ -305,7 +305,7 @@
                                         </div>
                                         <div class="col-lg-6 d-flex relation-button justify-content-between mb-3">
                                             <p class="text-uppercase mb-0"> @lang('examplan::exp.parent_notification')</p>
-                                            <div class="d-flex radio-btn-flex ml-30 mt-1">
+                                            <div class="d-flex radio-btn-flex ml-30 mt-1 pr-2">
                                                 <div class="mr-20">
                                                     <input type="radio" name="parent_notification"
                                                            id="parent_notification_on" value="1"
@@ -326,7 +326,7 @@
                                         <div class="col-lg-6 d-flex relation-button justify-content-between mb-3 teacher_signature"
                                              id="teacher_signature">
                                             <p class="text-uppercase mb-0"> @lang('examplan::exp.class_teacher_signature')</p>
-                                            <div class="d-flex radio-btn-flex ml-30 mt-1">
+                                            <div class="d-flex radio-btn-flex ml-30 mt-1 pr-2">
                                                 <div class="mr-20">
                                                     <input type="radio" name="class_teacher_signature"
                                                            id="class_teacher_signature_on" value="1"
@@ -347,7 +347,7 @@
                                         <div class="col-lg-6 d-flex relation-button justify-content-between mb-3 principal_signature"
                                              id="principal_signature">
                                             <p class="text-uppercase mb-0"> @lang('examplan::exp.principal_signature')</p>
-                                            <div class="d-flex radio-btn-flex ml-30 mt-1">
+                                            <div class="d-flex radio-btn-flex ml-30 mt-1 pr-2">
                                                 <div class="mr-20">
                                                     <input type="radio" name="principal_signature"
                                                            id="principal_signature_on" value="1"
@@ -473,7 +473,7 @@
                                         <div
                                                 class="col-lg-6 d-flex relation-button justify-content-between mb-3 justify-content-between">
                                             <p class="text-uppercase mb-0">@lang('examplan::exp.student_photo')</p>
-                                            <div class="d-flex radio-btn-flex ml-30 mt-1">
+                                            <div class="d-flex radio-btn-flex ml-30 mt-1 pr-2">
                                                 <div class="mr-20">
                                                     <input type="radio" name="student_photo" id="student_photo_on2"
                                                            value="1" class="common-radio relationButton"
@@ -491,7 +491,7 @@
 
                                         <div class="col-lg-6 d-flex relation-button justify-content-between mb-3">
                                             <p class="text-uppercase mb-0"> @lang('examplan::exp.student_name')</p>
-                                            <div class="d-flex radio-btn-flex ml-30 mt-1">
+                                            <div class="d-flex radio-btn-flex ml-30 mt-1 pr-2">
                                                 <div class="mr-20">
                                                     <input type="radio" name="student_name" id="student_name_on2"
                                                            value="1" class="common-radio relationButton"
@@ -509,7 +509,7 @@
 
                                         <div class="col-lg-6 d-flex relation-button justify-content-between mb-3">
                                             <p class="text-uppercase mb-0"> @lang('student.father_names')</p>
-                                            <div class="d-flex radio-btn-flex ml-30 mt-1">
+                                            <div class="d-flex radio-btn-flex ml-30 mt-1 pr-2">
                                                 <div class="mr-20">
                                                     <input type="radio" name="gaurdian_name" id="gaurdian_name_on2"
                                                            value="1" class="common-radio relationButton"
@@ -527,7 +527,7 @@
 
                                         <div class="col-lg-6 d-flex relation-button justify-content-between mb-3">
                                             <p class="text-uppercase mb-0"> @lang('examplan::exp.admission_no')</p>
-                                            <div class="d-flex radio-btn-flex ml-30 mt-1">
+                                            <div class="d-flex radio-btn-flex ml-30 mt-1 pr-2">
                                                 <div class="mr-20">
                                                     <input type="radio" name="admission_no" id="admission_no_on2"
                                                            value="1" class="common-radio relationButton"
@@ -544,7 +544,7 @@
                                         </div>
                                         <div class="col-lg-6 d-flex relation-button justify-content-between mb-3">
                                             <p class="text-uppercase mb-0"> @lang('examplan::exp.class_&_section')</p>
-                                            <div class="d-flex radio-btn-flex ml-30 mt-1">
+                                            <div class="d-flex radio-btn-flex ml-30 mt-1 pr-2">
                                                 <div class="mr-20">
                                                     <input type="radio" name="class_section" id="class_section_on2"
                                                            value="1" class="common-radio relationButton"
@@ -561,7 +561,7 @@
                                         </div>
                                         <div class="col-lg-6 d-flex relation-button justify-content-between mb-3">
                                             <p class="text-uppercase mb-0"> @lang('examplan::exp.exam_name')</p>
-                                            <div class="d-flex radio-btn-flex ml-30 mt-1">
+                                            <div class="d-flex radio-btn-flex ml-30 mt-1 pr-2">
                                                 <div class="mr-20">
                                                     <input type="radio" name="exam_name" id="exam_name_on2"
                                                            value="1" class="common-radio relationButton"
@@ -578,7 +578,7 @@
                                         </div>
                                         <div class="col-lg-6 d-flex relation-button justify-content-between mb-3">
                                             <p class="text-uppercase mb-0"> @lang('examplan::exp.academic_year')</p>
-                                            <div class="d-flex radio-btn-flex ml-30 mt-1">
+                                            <div class="d-flex radio-btn-flex ml-30 mt-1 pr-2">
                                                 <div class="mr-20">
                                                     <input type="radio" name="academic_year" id="academic_year_on2"
                                                            value="1" class="common-radio relationButton"
@@ -595,7 +595,7 @@
                                         </div>
                                         <div class="col-lg-6 d-flex relation-button justify-content-between mb-3">
                                             <p class="text-uppercase mb-0"> @lang('examplan::exp.school_address')</p>
-                                            <div class="d-flex radio-btn-flex ml-30 mt-1">
+                                            <div class="d-flex radio-btn-flex ml-30 mt-1 pr-2">
                                                 <div class="mr-20">
                                                     <input type="radio" name="school_address" id="school_address_on2"
                                                            value="1" class="common-radio relationButton"
@@ -614,7 +614,7 @@
 
                                         <div class="col-lg-6 d-flex relation-button justify-content-between mb-3">
                                             <p class="text-uppercase mb-0"> @lang('examplan::exp.student_can_download')</p>
-                                            <div class="d-flex radio-btn-flex ml-30 mt-1">
+                                            <div class="d-flex radio-btn-flex ml-30 mt-1 pr-2">
                                                 <div class="mr-20">
                                                     <input type="radio" name="student_download"
                                                            id="student_download_on2" value="1"
@@ -632,7 +632,7 @@
                                         </div>
                                         <div class="col-lg-6 d-flex relation-button justify-content-between mb-3">
                                             <p class="text-uppercase mb-0"> @lang('examplan::exp.parent_can_download')</p>
-                                            <div class="d-flex radio-btn-flex ml-30 mt-1">
+                                            <div class="d-flex radio-btn-flex ml-30 mt-1 pr-2">
                                                 <div class="mr-20">
                                                     <input type="radio" name="parent_download" id="parent_download_on2"
                                                            value="1" class="common-radio relationButton"
@@ -650,7 +650,7 @@
 
                                         <div class="col-lg-6 d-flex relation-button justify-content-between mb-3">
                                             <p class="text-uppercase mb-0"> @lang('examplan::exp.student_notification')</p>
-                                            <div class="d-flex radio-btn-flex ml-30 mt-1">
+                                            <div class="d-flex radio-btn-flex ml-30 mt-1 pr-2">
                                                 <div class="mr-20">
                                                     <input type="radio" name="student_notification"
                                                            id="student_notification_on2" value="1"
@@ -669,7 +669,7 @@
                                         </div>
                                         <div class="col-lg-6 d-flex relation-button justify-content-between mb-3">
                                             <p class="text-uppercase mb-0"> @lang('examplan::exp.parent_notification')</p>
-                                            <div class="d-flex radio-btn-flex ml-30 mt-1">
+                                            <div class="d-flex radio-btn-flex ml-30 mt-1 pr-2">
                                                 <div class="mr-20">
                                                     <input type="radio" name="parent_notification"
                                                            id="parent_notification_on2" value="1"
@@ -690,7 +690,7 @@
                                         <div class="col-lg-6 d-flex relation-button justify-content-between mb-3 principal_signature"
                                              id="principal_signature">
                                             <p class="text-uppercase mb-0"> @lang('examplan::exp.exam_controller_sign')</p>
-                                            <div class="d-flex radio-btn-flex ml-30 mt-1">
+                                            <div class="d-flex radio-btn-flex ml-30 mt-1 pr-2">
                                                 <div class="mr-20">
                                                     <input type="radio" name="principal_signature"
                                                            id="principal_signature_on2" value="1"
