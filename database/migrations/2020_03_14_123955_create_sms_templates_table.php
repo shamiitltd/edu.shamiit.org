@@ -104,7 +104,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <div align="center" class="img-container center fixedwidth" style="padding-right:30px;padding-left:30px;">
                                                     <a href="#">
-                                                        <img border="0" class="center fixedwidth" src="../../public/backEnd/img/logo.png" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
+                                                        <img border="0" class="center fixedwidth" src="" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
                                                     </a>
                                                 </div>
                                             </div>
@@ -130,7 +130,7 @@ class CreateSmsTemplatesTable extends Migration
                                     <div style="border-collapse:collapse;width:100%;background-color:#ffffff;">
                                         <div class="col num12" style="min-width:320px;max-width:600px;vertical-align:top;width:600px;">
                                             <div class="col_cont" style="width:100%;">
-                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px; margin-top:20px;">
+                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
                                                         <span style="font-size:36px;">Test Mail</span>
                                                     </font>
@@ -191,7 +191,7 @@ class CreateSmsTemplatesTable extends Migration
                                                 <div class="col_cont" style="width:100%;">
                                                     <div align="center" class="img-container center fixedwidth" style="padding-right:30px;padding-left:30px;">
                                                         <a href="#">
-                                                            <img border="0" class="center fixedwidth" src="../../public/backEnd/img/logo.png" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
+                                                            <img border="0" class="center fixedwidth" src="" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -217,7 +217,7 @@ class CreateSmsTemplatesTable extends Migration
                                         <div style="border-collapse:collapse;width:100%;background-color:#ffffff;">
                                             <div class="col num12" style="min-width:320px;max-width:600px;vertical-align:top;width:600px;">
                                                 <div class="col_cont" style="width:100%;">
-                                                    <h1 style="line-height:120%;text-align:center;margin-bottom:0px; margin-top:20px;">
+                                                    <h1 style="line-height:120%;text-align:center;margin-bottom:0px;">
                                                         <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
                                                             <span style="font-size:36px;">Password Reset</span>
                                                         </font>
@@ -293,7 +293,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <div align="center" class="img-container center fixedwidth" style="padding-right:30px;padding-left:30px;">
                                                     <a href="#">
-                                                        <img border="0" class="center fixedwidth" src="../../public/backEnd/img/logo.png" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
+                                                        <img border="0" class="center fixedwidth" src="" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
                                                     </a>
                                                 </div>
                                             </div>
@@ -319,7 +319,7 @@ class CreateSmsTemplatesTable extends Migration
                                     <div style="border-collapse:collapse;width:100%;background-color:#ffffff;">
                                         <div class="col num12" style="min-width:320px;max-width:600px;vertical-align:top;width:600px;">
                                             <div class="col_cont" style="width:100%;">
-                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px; margin-top:20px">
+                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
                                                         <span style="font-size:36px;">Student Login Credentials</span>
                                                     </font>
@@ -379,7 +379,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <div align="center" class="img-container center fixedwidth" style="padding-right:30px;padding-left:30px;">
                                                     <a href="#">
-                                                        <img border="0" class="center fixedwidth" src="../../public/backEnd/img/logo.png" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
+                                                        <img border="0" class="center fixedwidth" src="" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
                                                     </a>
                                                 </div>
                                             </div>
@@ -392,7 +392,6 @@ class CreateSmsTemplatesTable extends Migration
                                     <div style="border-collapse:collapse;width:100%;background-color:transparent;">
                                         <div class="col num12" style="min-width:320px;max-width:600px;vertical-align:top;width:600px;">
                                             <div class="col_cont" style="width:100%;">
-                                            
                                                 <div align="center" class="img-container center autowidth" style="padding-right:20px;padding-left:20px;">
                                                     <img border="0" class="center autowidth" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGF00Oi-zJNU_EvYGueBVz_sqXmFjk8pxNtg&amp;usqp=CAU" style="text-decoration:none;height:auto;border:0;max-width:541px;" width="541" alt="images?q=tbn:ANd9GcRGF00Oi-zJNU_EvYGueBVz_sqXmFjk8pxNtg&amp;usqp=CAU">
                                                 </div>
@@ -406,11 +405,6 @@ class CreateSmsTemplatesTable extends Migration
                                     <div style="border-collapse:collapse;width:100%;background-color:#ffffff;">
                                         <div class="col num12" style="min-width:320px;max-width:600px;vertical-align:top;width:600px;">
                                             <div class="col_cont" style="width:100%;">
-                                            <h1 style="line-height:120%;text-align:center;margin-bottom:0px; margin-top:20px;">
-                                                    <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
-                                                        <span style="font-size:36px;">Frontend Contract</span>
-                                                    </font>
-                                                </h1>
                                                 <div style="line-height:1.8;padding:20px 15px;">
                                                     <div class="txtTinyMce-wrapper" style="line-height:1.8;">
                                                         <p style="margin:10px 0px 30px;line-height:1.929;font-size:16px;color:rgb(113,128,150);">
@@ -473,7 +467,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <div align="center" class="img-container center fixedwidth" style="padding-right:30px;padding-left:30px;">
                                                     <a href="#">
-                                                        <img border="0" class="center fixedwidth" src="../../public/backEnd/img/logo.png" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
+                                                        <img border="0" class="center fixedwidth" src="" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
                                                     </a>
                                                 </div>
                                             </div>
@@ -499,7 +493,7 @@ class CreateSmsTemplatesTable extends Migration
                                     <div style="border-collapse:collapse;width:100%;background-color:#ffffff;">
                                         <div class="col num12" style="min-width:320px;max-width:600px;vertical-align:top;width:600px;">
                                             <div class="col_cont" style="width:100%;">
-                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px; margin-top:20px;">
+                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
                                                         <span style="font-size:36px;"></span>
                                                     </font>
@@ -563,7 +557,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <div align="center" class="img-container center fixedwidth" style="padding-right:30px;padding-left:30px;">
                                                     <a href="#">
-                                                        <img border="0" class="center fixedwidth" src="../../public/backEnd/img/logo.png" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
+                                                        <img border="0" class="center fixedwidth" src="" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
                                                     </a>
                                                 </div>
                                             </div>
@@ -589,7 +583,7 @@ class CreateSmsTemplatesTable extends Migration
                                     <div style="border-collapse:collapse;width:100%;background-color:#ffffff;">
                                         <div class="col num12" style="min-width:320px;max-width:600px;vertical-align:top;width:600px;">
                                             <div class="col_cont" style="width:100%;">
-                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px; margin-top:20px;">
+                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
                                                         <span style="font-size:36px;">Parent Login Credentials</span>
                                                     </font>
@@ -635,7 +629,7 @@ class CreateSmsTemplatesTable extends Migration
                         </td>
                     </tr>
                 </tbody>
-            </table>', '', '[father_name], [school_name], [username], [password]'],
+            </table>', '', '[student_name], [father_name], [school_name], [username], [password]'],
 
 
             ['email', 'staff_login_credentials', 'Staff Login Credentials', 
@@ -650,7 +644,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <div align="center" class="img-container center fixedwidth" style="padding-right:30px;padding-left:30px;">
                                                     <a href="#">
-                                                        <img border="0" class="center fixedwidth" src="../../public/backEnd/img/logo.png" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
+                                                        <img border="0" class="center fixedwidth" src="" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
                                                     </a>
                                                 </div>
                                             </div>
@@ -676,7 +670,7 @@ class CreateSmsTemplatesTable extends Migration
                                     <div style="border-collapse:collapse;width:100%;background-color:#ffffff;">
                                         <div class="col num12" style="min-width:320px;max-width:600px;vertical-align:top;width:600px;">
                                             <div class="col_cont" style="width:100%;">
-                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px; margin-top:20px;">
+                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
                                                         <span style="font-size:36px;">Staff Login Credentials</span>
                                                     </font>
@@ -736,7 +730,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <div align="center" class="img-container center fixedwidth" style="padding-right:30px;padding-left:30px;">
                                                     <a href="#">
-                                                        <img border="0" class="center fixedwidth" src="../../public/backEnd/img/logo.png" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
+                                                        <img border="0" class="center fixedwidth" src="" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
                                                     </a>
                                                 </div>
                                             </div>
@@ -762,9 +756,9 @@ class CreateSmsTemplatesTable extends Migration
                                     <div style="border-collapse:collapse;width:100%;background-color:#ffffff;">
                                         <div class="col num12" style="min-width:320px;max-width:600px;vertical-align:top;width:600px;">
                                             <div class="col_cont" style="width:100%;">
-                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px; margin-top:20px;">
+                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
-                                                        <span style="font-size:36px;">Due Payment</span>
+                                                        <span style="font-size:36px;">Dues Payment</span>
                                                     </font>
                                                 </h1>
                                                 <div style="line-height:1.8;padding:20px 15px;">
@@ -822,7 +816,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <div align="center" class="img-container center fixedwidth" style="padding-right:30px;padding-left:30px;">
                                                     <a href="#">
-                                                        <img border="0" class="center fixedwidth" src="../../public/backEnd/img/logo.png" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
+                                                        <img border="0" class="center fixedwidth" src="" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
                                                     </a>
                                                 </div>
                                             </div>
@@ -848,9 +842,9 @@ class CreateSmsTemplatesTable extends Migration
                                     <div style="border-collapse:collapse;width:100%;background-color:#ffffff;">
                                         <div class="col num12" style="min-width:320px;max-width:600px;vertical-align:top;width:600px;">
                                             <div class="col_cont" style="width:100%;">
-                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px; margin-top:20px;">
+                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
-                                                        <span style="font-size:36px;">Due Payment</span>
+                                                        <span style="font-size:36px;">Dues Payment</span>
                                                     </font>
                                                 </h1>
                                                 <div style="line-height:1.8;padding:20px 15px;">
@@ -908,7 +902,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <div align="center" class="img-container center fixedwidth" style="padding-right:30px;padding-left:30px;">
                                                     <a href="#">
-                                                        <img border="0" class="center fixedwidth" src="../../public/backEnd/img/logo.png" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
+                                                        <img border="0" class="center fixedwidth" src="" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
                                                     </a>
                                                 </div>
                                             </div>
@@ -934,9 +928,9 @@ class CreateSmsTemplatesTable extends Migration
                                     <div style="border-collapse:collapse;width:100%;background-color:#ffffff;">
                                         <div class="col num12" style="min-width:320px;max-width:600px;vertical-align:top;width:600px;">
                                             <div class="col_cont" style="width:100%;">
-                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px; margin-top:20px">
+                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
-                                                        <span style="font-size:36px;">Parent Reject Bank Payment</span>
+                                                        <span style="font-size:36px;">Reject Bank Payment</span>
                                                     </font>
                                                 </h1>
                                                 <div style="line-height:1.8;padding:20px 15px;">
@@ -994,7 +988,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <div align="center" class="img-container center fixedwidth" style="padding-right:30px;padding-left:30px;">
                                                     <a href="#">
-                                                        <img border="0" class="center fixedwidth" src="../../public/backEnd/img/logo.png" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
+                                                        <img border="0" class="center fixedwidth" src="" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
                                                     </a>
                                                 </div>
                                             </div>
@@ -1020,9 +1014,9 @@ class CreateSmsTemplatesTable extends Migration
                                     <div style="border-collapse:collapse;width:100%;background-color:#ffffff;">
                                         <div class="col num12" style="min-width:320px;max-width:600px;vertical-align:top;width:600px;">
                                             <div class="col_cont" style="width:100%;">
-                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px; margin-top:20px;">
+                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
-                                                        <span style="font-size:36px;">Student Reject Bank Payment</span>
+                                                        <span style="font-size:36px;">Reject Bank Payment</span>
                                                     </font>
                                                 </h1>
                                                 <div style="line-height:1.8;padding:20px 15px;">
@@ -1080,7 +1074,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <div align="center" class="img-container center fixedwidth" style="padding-right:30px;padding-left:30px;">
                                                     <a href="#">
-                                                        <img border="0" class="center fixedwidth" src="../../public/backEnd/img/logo.png" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
+                                                        <img border="0" class="center fixedwidth" src="" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
                                                     </a>
                                                 </div>
                                             </div>
@@ -1106,7 +1100,7 @@ class CreateSmsTemplatesTable extends Migration
                                     <div style="border-collapse:collapse;width:100%;background-color:#ffffff;">
                                         <div class="col num12" style="min-width:320px;max-width:600px;vertical-align:top;width:600px;">
                                             <div class="col_cont" style="width:100%;">
-                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px; margin-top:20px;">
+                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
                                                         <span style="font-size:36px;">Approve Wallet Payment</span>
                                                     </font>
@@ -1166,7 +1160,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <div align="center" class="img-container center fixedwidth" style="padding-right:30px;padding-left:30px;">
                                                     <a href="#">
-                                                        <img border="0" class="center fixedwidth" src="../../public/backEnd/img/logo.png" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
+                                                        <img border="0" class="center fixedwidth" src="" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
                                                     </a>
                                                 </div>
                                             </div>
@@ -1192,7 +1186,7 @@ class CreateSmsTemplatesTable extends Migration
                                     <div style="border-collapse:collapse;width:100%;background-color:#ffffff;">
                                         <div class="col num12" style="min-width:320px;max-width:600px;vertical-align:top;width:600px;">
                                             <div class="col_cont" style="width:100%;">
-                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px; margin-top:20px;">
+                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
                                                         <span style="font-size:36px;">Reject Wallet Payment</span>
                                                     </font>
@@ -1252,7 +1246,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <div align="center" class="img-container center fixedwidth" style="padding-right:30px;padding-left:30px;">
                                                     <a href="#">
-                                                        <img border="0" class="center fixedwidth" src="../../public/backEnd/img/logo.png" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
+                                                        <img border="0" class="center fixedwidth" src="" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
                                                     </a>
                                                 </div>
                                             </div>
@@ -1278,7 +1272,7 @@ class CreateSmsTemplatesTable extends Migration
                                     <div style="border-collapse:collapse;width:100%;background-color:#ffffff;">
                                         <div class="col num12" style="min-width:320px;max-width:600px;vertical-align:top;width:600px;">
                                             <div class="col_cont" style="width:100%;">
-                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;  margin-top:20px;">
+                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
                                                         <span style="font-size:36px;">Fee Extra Amoun Add</span>
                                                     </font>
@@ -1338,7 +1332,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <div align="center" class="img-container center fixedwidth" style="padding-right:30px;padding-left:30px;">
                                                     <a href="#">
-                                                        <img border="0" class="center fixedwidth" src="../../public/backEnd/img/logo.png" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
+                                                        <img border="0" class="center fixedwidth" src="" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
                                                     </a>
                                                 </div>
                                             </div>
@@ -1364,7 +1358,7 @@ class CreateSmsTemplatesTable extends Migration
                                     <div style="border-collapse:collapse;width:100%;background-color:#ffffff;">
                                         <div class="col num12" style="min-width:320px;max-width:600px;vertical-align:top;width:600px;">
                                             <div class="col_cont" style="width:100%;">
-                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px; margin-top:20px;">
+                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
                                                         <span style="font-size:36px;">Wallet Refund</span>
                                                     </font>
@@ -1424,7 +1418,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <div align="center" class="img-container center fixedwidth" style="padding-right:30px;padding-left:30px;">
                                                     <a href="#">
-                                                        <img border="0" class="center fixedwidth" src="../../public/backEnd/img/logo.png" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
+                                                        <img border="0" class="center fixedwidth" src="" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
                                                     </a>
                                                 </div>
                                             </div>
@@ -1450,7 +1444,7 @@ class CreateSmsTemplatesTable extends Migration
                                     <div style="border-collapse:collapse;width:100%;background-color:#ffffff;">
                                         <div class="col num12" style="min-width:320px;max-width:600px;vertical-align:top;width:600px;">
                                             <div class="col_cont" style="width:100%;">
-                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px; margin-top:20px;">
+                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
                                                         <span style="font-size:36px;">Student Registration</span>
                                                     </font>
@@ -1510,7 +1504,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <div align="center" class="img-container center fixedwidth" style="padding-right:30px;padding-left:30px;">
                                                     <a href="#">
-                                                        <img border="0" class="center fixedwidth" src="../../public/backEnd/img/logo.png" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
+                                                        <img border="0" class="center fixedwidth" src="" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
                                                     </a>
                                                 </div>
                                             </div>
@@ -1536,7 +1530,7 @@ class CreateSmsTemplatesTable extends Migration
                                     <div style="border-collapse:collapse;width:100%;background-color:#ffffff;">
                                         <div class="col num12" style="min-width:320px;max-width:600px;vertical-align:top;width:600px;">
                                             <div class="col_cont" style="width:100%;">
-                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px; margin-top:20px;">
+                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
                                                         <span style="font-size:36px;">Student Registration</span>
                                                     </font>
@@ -1598,7 +1592,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <div align="center" class="img-container center fixedwidth" style="padding-right:30px;padding-left:30px;">
                                                     <a href="#">
-                                                        <img border="0" class="center fixedwidth" src="../../public/backEnd/img/logo.png" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
+                                                        <img border="0" class="center fixedwidth" src="" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
                                                     </a>
                                                 </div>
                                             </div>
@@ -1624,7 +1618,7 @@ class CreateSmsTemplatesTable extends Migration
                                     <div style="border-collapse:collapse;width:100%;background-color:#ffffff;">
                                         <div class="col num12" style="min-width:320px;max-width:600px;vertical-align:top;width:600px;">
                                             <div class="col_cont" style="width:100%;">
-                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px; margin-top:20px;">
+                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
                                                         <span style="font-size:36px;">Test Mail</span>
                                                     </font>
@@ -1690,7 +1684,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <div align="center" class="img-container center fixedwidth" style="padding-right:30px;padding-left:30px;">
                                                     <a href="#">
-                                                        <img border="0" class="center fixedwidth" src="../../public/backEnd/img/logo.png" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
+                                                        <img border="0" class="center fixedwidth" src="" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
                                                     </a>
                                                 </div>
                                             </div>
@@ -1716,7 +1710,7 @@ class CreateSmsTemplatesTable extends Migration
                                     <div style="border-collapse:collapse;width:100%;background-color:#ffffff;">
                                         <div class="col num12" style="min-width:320px;max-width:600px;vertical-align:top;width:600px;">
                                             <div class="col_cont" style="width:100%;">
-                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;  margin-top:20px;">
+                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
                                                         <span style="font-size:36px;">Lms Course Purchase</span>
                                                     </font>
@@ -1776,7 +1770,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <div align="center" class="img-container center fixedwidth" style="padding-right:30px;padding-left:30px;">
                                                     <a href="#">
-                                                        <img border="0" class="center fixedwidth" src="../../public/backEnd/img/logo.png" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
+                                                        <img border="0" class="center fixedwidth" src="" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
                                                     </a>
                                                 </div>
                                             </div>
@@ -1802,7 +1796,7 @@ class CreateSmsTemplatesTable extends Migration
                                     <div style="border-collapse:collapse;width:100%;background-color:#ffffff;">
                                         <div class="col num12" style="min-width:320px;max-width:600px;vertical-align:top;width:600px;">
                                             <div class="col_cont" style="width:100%;">
-                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px; margin-top:20px;">
+                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
                                                         <span style="font-size:36px;">Lms Course Purchase</span>
                                                     </font>
@@ -1862,7 +1856,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <div align="center" class="img-container center fixedwidth" style="padding-right:30px;padding-left:30px;">
                                                     <a href="#">
-                                                        <img border="0" class="center fixedwidth" src="../../public/backEnd/img/logo.png" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
+                                                        <img border="0" class="center fixedwidth" src="" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
                                                     </a>
                                                 </div>
                                             </div>
@@ -1948,7 +1942,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <div align="center" class="img-container center fixedwidth" style="padding-right:30px;padding-left:30px;">
                                                     <a href="#">
-                                                        <img border="0" class="center fixedwidth" src="../../public/backEnd/img/logo.png" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
+                                                        <img border="0" class="center fixedwidth" src="" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
                                                     </a>
                                                 </div>
                                             </div>
@@ -1974,7 +1968,7 @@ class CreateSmsTemplatesTable extends Migration
                                     <div style="border-collapse:collapse;width:100%;background-color:#ffffff;">
                                         <div class="col num12" style="min-width:320px;max-width:600px;vertical-align:top;width:600px;">
                                             <div class="col_cont" style="width:100%;">
-                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;  margin-top:20px;">
+                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
                                                         <span style="font-size:36px;">Approve Payment</span>
                                                     </font>
@@ -2034,7 +2028,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <div align="center" class="img-container center fixedwidth" style="padding-right:30px;padding-left:30px;">
                                                     <a href="#">
-                                                        <img border="0" class="center fixedwidth" src="../../public/backEnd/img/logo.png" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
+                                                        <img border="0" class="center fixedwidth" src="" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
                                                     </a>
                                                 </div>
                                             </div>
@@ -2060,9 +2054,9 @@ class CreateSmsTemplatesTable extends Migration
                                     <div style="border-collapse:collapse;width:100%;background-color:#ffffff;">
                                         <div class="col num12" style="min-width:320px;max-width:600px;vertical-align:top;width:600px;">
                                             <div class="col_cont" style="width:100%;">
-                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;  margin-top:20px;">
+                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
-                                                        <span style="font-size:36px;">Student Reject Payment</span>
+                                                        <span style="font-size:36px;">Reject Payment</span>
                                                     </font>
                                                 </h1>
                                                 <div style="line-height:1.8;padding:20px 15px;">
@@ -2120,7 +2114,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <div align="center" class="img-container center fixedwidth" style="padding-right:30px;padding-left:30px;">
                                                     <a href="#">
-                                                        <img border="0" class="center fixedwidth" src="../../public/backEnd/img/logo.png" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
+                                                        <img border="0" class="center fixedwidth" src="" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
                                                     </a>
                                                 </div>
                                             </div>
@@ -2146,9 +2140,9 @@ class CreateSmsTemplatesTable extends Migration
                                     <div style="border-collapse:collapse;width:100%;background-color:#ffffff;">
                                         <div class="col num12" style="min-width:320px;max-width:600px;vertical-align:top;width:600px;">
                                             <div class="col_cont" style="width:100%;">
-                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;  margin-top:20px;">
+                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
-                                                        <span style="font-size:36px;">Parent Reject Payment</span>
+                                                        <span style="font-size:36px;">Reject Payment</span>
                                                     </font>
                                                 </h1>
                                                 <div style="line-height:1.8;padding:20px 15px;">
@@ -2206,7 +2200,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <div align="center" class="img-container center fixedwidth" style="padding-right:30px;padding-left:30px;">
                                                     <a href="#">
-                                                        <img border="0" class="center fixedwidth" src="../../public/backEnd/img/logo.png" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
+                                                        <img border="0" class="center fixedwidth" src="" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
                                                     </a>
                                                 </div>
                                             </div>
@@ -2232,7 +2226,7 @@ class CreateSmsTemplatesTable extends Migration
                                     <div style="border-collapse:collapse;width:100%;background-color:#ffffff;">
                                         <div class="col num12" style="min-width:320px;max-width:600px;vertical-align:top;width:600px;">
                                             <div class="col_cont" style="width:100%;">
-                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px; margin-top:20px;">
+                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
                                                         <span style="font-size:36px;">Lms Course Purchase</span>
                                                     </font>
@@ -2292,7 +2286,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <div align="center" class="img-container center fixedwidth" style="padding-right:30px;padding-left:30px;">
                                                     <a href="#">
-                                                        <img border="0" class="center fixedwidth" src="../../public/backEnd/img/logo.png" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
+                                                        <img border="0" class="center fixedwidth" src="" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
                                                     </a>
                                                 </div>
                                             </div>
@@ -2318,7 +2312,7 @@ class CreateSmsTemplatesTable extends Migration
                                     <div style="border-collapse:collapse;width:100%;background-color:#ffffff;">
                                         <div class="col num12" style="min-width:320px;max-width:600px;vertical-align:top;width:600px;">
                                             <div class="col_cont" style="width:100%;">
-                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px; margin-top:20px;">
+                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
                                                         <span style="font-size:36px;">Lms Course Purchase</span>
                                                     </font>
@@ -2378,7 +2372,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <div align="center" class="img-container center fixedwidth" style="padding-right:30px;padding-left:30px;">
                                                     <a href="#">
-                                                        <img border="0" class="center fixedwidth" src="../../public/backEnd/img/logo.png" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
+                                                        <img border="0" class="center fixedwidth" src="" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
                                                     </a>
                                                 </div>
                                             </div>
@@ -2404,7 +2398,7 @@ class CreateSmsTemplatesTable extends Migration
                                     <div style="border-collapse:collapse;width:100%;background-color:#ffffff;">
                                         <div class="col num12" style="min-width:320px;max-width:600px;vertical-align:top;width:600px;">
                                             <div class="col_cont" style="width:100%;">
-                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px; margin-top:20px;">
+                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
                                                         <span style="font-size:36px;">Approve Payment</span>
                                                     </font>
@@ -2464,7 +2458,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <div align="center" class="img-container center fixedwidth" style="padding-right:30px;padding-left:30px;">
                                                     <a href="#">
-                                                        <img border="0" class="center fixedwidth" src="../../public/backEnd/img/logo.png" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
+                                                        <img border="0" class="center fixedwidth" src="" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
                                                     </a>
                                                 </div>
                                             </div>
@@ -2490,7 +2484,7 @@ class CreateSmsTemplatesTable extends Migration
                                     <div style="border-collapse:collapse;width:100%;background-color:#ffffff;">
                                         <div class="col num12" style="min-width:320px;max-width:600px;vertical-align:top;width:600px;">
                                             <div class="col_cont" style="width:100%;">
-                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px; margin-top:20px;">
+                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
                                                         <span style="font-size:36px;">Approve Payment</span>
                                                     </font>
@@ -2550,7 +2544,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <div align="center" class="img-container center fixedwidth" style="padding-right:30px;padding-left:30px;">
                                                     <a href="#">
-                                                        <img border="0" class="center fixedwidth" src="../../public/backEnd/img/logo.png" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
+                                                        <img border="0" class="center fixedwidth" src="" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
                                                     </a>
                                                 </div>
                                             </div>
@@ -2576,7 +2570,7 @@ class CreateSmsTemplatesTable extends Migration
                                     <div style="border-collapse:collapse;width:100%;background-color:#ffffff;">
                                         <div class="col num12" style="min-width:320px;max-width:600px;vertical-align:top;width:600px;">
                                             <div class="col_cont" style="width:100%;">
-                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;  margin-top:20px;">
+                                                <h1 style="line-height:120%;text-align:center;margin-bottom:0px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
                                                         <span style="font-size:36px;">Reject Payment</span>
                                                     </font>
@@ -2722,7 +2716,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <div align="center" class="img-container center fixedwidth" style="padding-right:30px;padding-left:30px;">
                                                     <a href="#">
-                                                        <img border="0" class="center fixedwidth" src="../../public/backEnd/img/logo.png" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
+                                                        <img border="0" class="center fixedwidth" src="" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
                                                     </a>
                                                 </div>
                                             </div>
