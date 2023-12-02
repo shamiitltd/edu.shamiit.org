@@ -191,7 +191,7 @@ class CreateSmsTemplatesTable extends Migration
                                                 <div class="col_cont" style="width:100%;">
                                                     <div align="center" class="img-container center fixedwidth" style="padding-right:30px;padding-left:30px;">
                                                         <a href="#">
-                                                            <img border="0" class="center fixedwidth" src="{{url("/img/logo.png")}}" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
+                                                            <img border="0" class="center fixedwidth" src="../../public/backEnd/img/logo.png" style="padding-top:30px;padding-bottom:30px;text-decoration:none;height:auto;border:0;max-width:150px;" width="150" alt="logo.png">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -501,7 +501,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <h1 style="line-height:120%;text-align:center;margin-bottom:0px; margin-top:20px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
-                                                        <span style="font-size:36px;"></span>
+                                                        <span style="font-size:36px;">Communication sent email</span>
                                                     </font>
                                                 </h1>
                                                 <div style="line-height:1.8;padding:20px 15px;">
@@ -1240,7 +1240,7 @@ class CreateSmsTemplatesTable extends Migration
                 </tbody>
             </table>','Wallet', '[name], [add_balance], [method], [create_date], [school_name], [reject_reason], [current_balance]'],
 
-            ['email', 'fees_extra_amount_add', 'Fee Extra Amoun Add', 
+            ['email', 'fees_extra_amount_add', 'Fee Extra Amount Add', 
             '<table bgcolor="#FFFFFF" cellpadding="0" cellspacing="0" class="nl-container" style="table-layout:fixed;vertical-align:top;min-width:320px;border-spacing:0;border-collapse:collapse;background-color:#FFFFFF;width:100%;" width="100%">
                 <tbody>
                     <tr style="vertical-align:top;" valign="top">
@@ -1287,7 +1287,7 @@ class CreateSmsTemplatesTable extends Migration
                                                     <div class="txtTinyMce-wrapper" style="line-height:1.8;">
                                                         <h1>Hi [name],</h1>
                                                         <p style="margin:10px 0px 30px;line-height:1.929;font-size:16px;color:rgb(113,128,150);">
-                                                            Your Xtra Fees Amount Add [school_name] , In Your Wallet Amount:  [add_balance] . Which Is Fees Add Payment Via [method] on [create_date] Your previous Balance Was [previous_balance] <br> .Your Current Balance Is Now [current_balance] <br> Thank You, [school_name]
+                                                            Your Extra Fees Amount Add [school_name] , In Your Wallet Amount:  [add_balance] . Which Is Fees Add Payment Via [method] on [create_date] Your previous Balance Was [previous_balance] <br> .Your Current Balance Is Now [current_balance] <br> Thank You, [school_name]
                                                         </p>
                                                     </div>
                                                 </div>
