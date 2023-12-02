@@ -501,7 +501,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <h1 style="line-height:120%;text-align:center;margin-bottom:0px; margin-top:20px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
-                                                        <span style="font-size:36px;">Communication Sent Email</span>
+                                                        <span style="font-size:36px;">Communication sent email</span>
                                                     </font>
                                                 </h1>
                                                 <div style="line-height:1.8;padding:20px 15px;">
@@ -724,7 +724,7 @@ class CreateSmsTemplatesTable extends Migration
                 </tbody>
             </table>', '', '[name], [school_name], [username], [password]'],
 
-            ['email', 'due_fees_payment', 'Dues Fees Payment',
+            ['email', 'due_fees_payment', 'Duee Fees Payment',
             '<table bgcolor="#FFFFFF" cellpadding="0" cellspacing="0" class="nl-container" style="table-layout:fixed;vertical-align:top;min-width:320px;border-spacing:0;border-collapse:collapse;background-color:#FFFFFF;width:100%;" width="100%">
                 <tbody>
                     <tr style="vertical-align:top;" valign="top">
@@ -764,7 +764,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <h1 style="line-height:120%;text-align:center;margin-bottom:0px; margin-top:20px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
-                                                        <span style="font-size:36px;">Due Fees Payment</span>
+                                                        <span style="font-size:36px;">Due Payment</span>
                                                     </font>
                                                 </h1>
                                                 <div style="line-height:1.8;padding:20px 15px;">
@@ -850,7 +850,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <h1 style="line-height:120%;text-align:center;margin-bottom:0px; margin-top:20px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
-                                                        <span style="font-size:36px;">Dues Payment</span>
+                                                        <span style="font-size:36px;">Due Payment</span>
                                                     </font>
                                                 </h1>
                                                 <div style="line-height:1.8;padding:20px 15px;">
@@ -1280,7 +1280,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <h1 style="line-height:120%;text-align:center;margin-bottom:0px;  margin-top:20px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
-                                                        <span style="font-size:36px;">Fee Extra Amount Add</span>
+                                                        <span style="font-size:36px;">Fee Extra Amoun Add</span>
                                                     </font>
                                                 </h1>
                                                 <div style="line-height:1.8;padding:20px 15px;">
