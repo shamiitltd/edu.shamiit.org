@@ -596,4 +596,119 @@ class LoginController extends Controller
         Auth::logout();
         return redirect()->route('login');
     }
+    
+    public function loginViaUid(Request $request) {
+        $email = $request->input('email');
+        $uid = $request->input('uid');
+
+        $school = app('school');
+        $request->merge(['school_id' => $school->id]);
+        $logged_in = false;
+
+        // Authenticate the user using email and UID
+        $user = User::where('email', $email)->where('uid', $uid)->first();
+        if($user){
+            $this->guard()->login($user);
+            $logged_in = Auth::check();
+        } else{
+            $logged_in = $this->attemptLogin($request);
+        }
+        if ($logged_in) {
+            if (!$school->active_status) {
+                $this->guard()->logout();
+                Toastr::error('Your Institution is not Approved, Please contact with administrator.', 'Failed');
+                return redirect()->route('login');
+            }
+
+            if (!Auth::user()->access_status) {
+                $this->guard()->logout();
+                Toastr::error('You are not allowed, Please contact with administrator.', 'Failed');
+                return redirect()->route('login');
+            }
+
+            // System date format save in session
+            $date_format_id = generalSetting()->date_format_id;
+            $system_date_format = 'jS M, Y';
+            if($date_format_id){
+                $system_date_format = SmDateFormat::where('id', $date_format_id)->first(['format'])->format;
+            }
+
+            session()->put('system_date_format', $system_date_format);
+
+            // System academic session id in session
+
+            $all_modules = [];
+            $modules = InfixModuleManager::select('name')->get();
+            foreach ($modules as $module) {
+                $all_modules[] = $module->name;
+            }
+
+            session()->put('all_module', $all_modules);
+
+            //Session put text decoration
+            $ttl_rtl = generalSetting()->ttl_rtl;
+            session()->put('text_direction', $ttl_rtl);
+
+            $active_style = SmStyle::where('school_id', Auth::user()->school_id)->where('is_active', 1)->first();
+            session()->put('active_style', $active_style);
+
+            $all_styles = SmStyle::where('school_id', Auth::user()->school_id)->get();
+            session()->put('all_styles', $all_styles);
+
+            //Session put activeLanguage
+            $systemLanguage = SmLanguage::where('school_id', Auth::user()->school_id)->get();
+            session()->put('systemLanguage', $systemLanguage);
+            //session put academic years
+            $academic_years = Auth::check() ? SmAcademicYear::where('active_status', 1)->where('school_id', Auth::user()->school_id)->get() : '';
+            session()->put('academic_years', $academic_years);
+            //session put sessions and selected language
+
+
+            if (Auth::user()->role_id == 2) {
+                $profile = SmStudent::where('user_id', Auth::id())->withOutGlobalScopes([StatusAcademicSchoolScope::class])->first();
+
+                session()->put('profile', @$profile->student_photo);
+                $session_id = $profile ? $profile->academic_id : generalSetting()->session_id;
+            } else {
+                $profile = SmStaff::where('user_id', Auth::id())->first();
+                if ($profile) {
+                    session()->put('profile', $profile->staff_photo);
+                }
+                $session_id = $profile && $profile->academic_id ? $profile->academic_id : generalSetting()->session_id;
+            }
+
+
+            if(!$session_id){
+                $session = SmAcademicYear::where('school_id', Auth::user()->school_id)->where('active_status', 1)->first();
+            } else{
+                $session = SmAcademicYear::where('school_id', Auth::user()->school_id)->where('id',  $session_id)->first();
+            }
+
+
+            session()->put('sessionId', $session->id);
+            session()->put('session', $session);
+            session()->put('school_config', generalSetting());
+
+            $dashboard_background = DB::table('sm_background_settings')->where([['is_default', 1], ['title', 'Dashboard Background']])->first();
+            session()->put('dashboard_background', $dashboard_background);
+
+            $email_template = SmsTemplate::where('school_id',Auth::user()->school_id)->first();
+            session()->put('email_template', $email_template);
+
+            session(['role_id' => Auth::user()->role_id]);
+            $agent = new Agent();
+            $user_log = new SmUserLog();
+            $user_log->user_id = Auth::user()->id;
+            $user_log->role_id = Auth::user()->role_id;
+            $user_log->school_id = Auth::user()->school_id;
+            $user_log->ip_address = $request->ip();
+            $user_log->academic_id = getAcademicid() ?? 1;
+            $user_log->user_agent = $agent->browser() . ', ' . $agent->platform();
+            $user_log->save();
+
+            userStatusChange(auth()->user()->id, 1);
+
+            return $this->sendLoginResponse($request);
+
+        }
 }
