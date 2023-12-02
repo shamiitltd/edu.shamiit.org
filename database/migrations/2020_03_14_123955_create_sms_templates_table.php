@@ -501,7 +501,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <h1 style="line-height:120%;text-align:center;margin-bottom:0px; margin-top:20px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
-                                                        <span style="font-size:36px;">Communication sent email</span>
+                                                        <span style="font-size:36px;">Communication Sent Email</span>
                                                     </font>
                                                 </h1>
                                                 <div style="line-height:1.8;padding:20px 15px;">
@@ -764,7 +764,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <h1 style="line-height:120%;text-align:center;margin-bottom:0px; margin-top:20px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
-                                                        <span style="font-size:36px;">Due Payment</span>
+                                                        <span style="font-size:36px;">Dues Fees Payment</span>
                                                     </font>
                                                 </h1>
                                                 <div style="line-height:1.8;padding:20px 15px;">
@@ -1280,14 +1280,14 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <h1 style="line-height:120%;text-align:center;margin-bottom:0px;  margin-top:20px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
-                                                        <span style="font-size:36px;">Fee Extra Amoun Add</span>
+                                                        <span style="font-size:36px;">Fee Extra Amount Add</span>
                                                     </font>
                                                 </h1>
                                                 <div style="line-height:1.8;padding:20px 15px;">
                                                     <div class="txtTinyMce-wrapper" style="line-height:1.8;">
                                                         <h1>Hi [name],</h1>
                                                         <p style="margin:10px 0px 30px;line-height:1.929;font-size:16px;color:rgb(113,128,150);">
-                                                            Your Extra Fees Amount Add [school_name] , In Your Wallet Amount:  [add_balance] . Which Is Fees Add Payment Via [method] on [create_date] Your previous Balance Was [previous_balance] <br> .Your Current Balance Is Now [current_balance] <br> Thank You, [school_name]
+                                                            Your Xtra Fees Amount Add [school_name] , In Your Wallet Amount:  [add_balance] . Which Is Fees Add Payment Via [method] on [create_date] Your previous Balance Was [previous_balance] <br> .Your Current Balance Is Now [current_balance] <br> Thank You, [school_name]
                                                         </p>
                                                     </div>
                                                 </div>
