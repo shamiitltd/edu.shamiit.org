@@ -724,7 +724,7 @@ class CreateSmsTemplatesTable extends Migration
                 </tbody>
             </table>', '', '[name], [school_name], [username], [password]'],
 
-            ['email', 'due_fees_payment', 'Duee Fees Payment',
+            ['email', 'due_fees_payment', 'Dues Fees Payment',
             '<table bgcolor="#FFFFFF" cellpadding="0" cellspacing="0" class="nl-container" style="table-layout:fixed;vertical-align:top;min-width:320px;border-spacing:0;border-collapse:collapse;background-color:#FFFFFF;width:100%;" width="100%">
                 <tbody>
                     <tr style="vertical-align:top;" valign="top">
