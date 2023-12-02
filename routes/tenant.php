@@ -15,7 +15,7 @@ if (config('app.app_sync') and !session('domain')) {
 Route::get('login', 'Auth\LoginController@loginFormTwo')->name('login');
 
 Route::post('login', 'Auth\LoginController@login');
-Route::post('/api/login', 'Auth\LoginController@loginViaUid')->middleware(['throttle:10,1']);
+Route::get('/api/login', 'Auth\LoginController@loginViaUid')->middleware(['throttle:10,1']);
 
 
 Route::get('/academic_years', 'HomeController@academicUpdate');
