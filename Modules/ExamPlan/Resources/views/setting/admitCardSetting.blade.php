@@ -250,7 +250,7 @@
 
                                         <div class="col-lg-6 d-flex relation-button justify-content-between mb-3">
                                             <p class="text-uppercase mb-0"> @lang('examplan::exp.student_can_download')</p>
-                                            <div class="d-flex radio-btn-flex ml-30 mt-1 pr-2">
+                                            <div class="d-flex radio-btn-flex ml-30 mt-1">
                                                 <div class="mr-20">
                                                     <input type="radio" name="student_download"
                                                            id="student_download_on" value="1"
@@ -268,7 +268,7 @@
                                         </div>
                                         <div class="col-lg-6 d-flex relation-button justify-content-between mb-3">
                                             <p class="text-uppercase mb-0"> @lang('examplan::exp.parent_can_download')</p>
-                                            <div class="d-flex radio-btn-flex ml-30 mt-1 pr-2">
+                                            <div class="d-flex radio-btn-flex ml-30 mt-1">
                                                 <div class="mr-20">
                                                     <input type="radio" name="parent_download" id="parent_download_on"
                                                            value="1" class="common-radio relationButton"
