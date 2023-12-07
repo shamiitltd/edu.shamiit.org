@@ -95,7 +95,7 @@ class AdmitCardSettingController extends Controller
         }
     }
 
-    public function settingUpdatetwo(Request $request)
+     public function settingUpdatetwo(Request $request)
     {
         $validator = Validator::make($request->all(), [
             'principal_signature_photo_2' => 'sometimes|nullable|mimes:jpg,png,jpeg|max:40000',
@@ -115,34 +115,38 @@ class AdmitCardSettingController extends Controller
                 $oldSetting = AdmitCardSetting::where('school_id', Auth::user()->school_id)->latest()->first();
                 $setting = $oldSetting->replicate();
             }
-            if ($request->tab_layout == 2) {
+            // if ($request->tab_layout == 2) {
                 $principle_signature = fileUpdate($setting->principal_signature_photo, $request->principal_signature_photo_2, 'public/uploads/examplan/');
-            } else {
-                $principle_signature = fileUpdate($setting->principal_signature_photo, $request->principal_signature_photo, 'public/uploads/examplan/');
-            }
-            $teacher_signature = fileUpdate($setting->teacher_signature_photo, $request->teacher_signature_photo, 'public/uploads/examplan/');
+            // } else {
+            //     $principle_signature = fileUpdate($setting->principal_signature_photo, $request->principal_signature_photo, 'public/uploads/examplan/');
+            // }
+            // $teacher_signature = fileUpdate($setting->teacher_signature_photo, $request->teacher_signature_photo, 'public/uploads/examplan/');
 
-            $setting->student_photo = $request->student_photo;
-            $setting->student_name = $request->student_name;
-            $setting->admission_no = $request->admission_no;
-            $setting->class_section = $request->class_section;
-            $setting->exam_name = $request->exam_name;
-            if($request->tab_layout == 2){
+            $setting->student_photo = $request->student_photo2;
+            $setting->student_name = $request->student_name2;
+            $setting->gaurdian_name = $request->gaurdian_name2;
+
+            $setting->admission_no = $request->admission_no2;
+            $setting->class_section = $request->class_section2;
+            $setting->exam_name = $request->exam_name2;
+            //if($request->tab_layout == 2){
                 $setting->admit_sub_title = $request->admit_sub_title;
                 $setting->description = $request->description;
-            }
-            $setting->academic_year = $request->academic_year;
+            //}
+            $setting->academic_year = $request->academic_year2;
+            $setting->school_address = $request->school_address2;
+            $setting->student_download = $request->student_download2;
+            $setting->parent_download = $request->parent_download2;
+            $setting->student_notification = $request->student_notification2;
+            $setting->parent_notification = $request->parent_notification2;
+
             $setting->principal_signature = $request->principal_signature;
-            $setting->gaurdian_name = $request->gaurdian_name;
-            $setting->school_address = $request->school_address;
-            $setting->student_download = $request->student_download;
-            $setting->parent_download = $request->parent_download;
-            $setting->student_notification = $request->student_notification;
-            $setting->parent_notification = $request->parent_notification;
-            $setting->class_teacher_signature = $request->class_teacher_signature;
-            $setting->principal_signature_photo = $principle_signature;
-            $setting->teacher_signature_photo = $teacher_signature;
-            $setting->save();
+
+            // $setting->class_teacher_signature = $request->class_teacher_signature;
+            $setting->principal_signature_photo = $principle_signature_photo;
+            // $setting->teacher_signature_photo = $teacher_signature;
+            dd($setting);
+           // $setting->save();
             Toastr::success('Update Successfully', 'success');
             return redirect()->back();
         } catch (\Exception $e) {

@@ -688,7 +688,7 @@
                                         </div>
 
                                         <div class="col-lg-6 d-flex relation-button justify-content-between mb-3 principal_signature"
-                                             id="principal_signature">
+                                             id="principal_signature_l2">
                                             <p class="text-uppercase mb-0"> @lang('examplan::exp.exam_controller_sign')</p>
                                             <div class="d-flex radio-btn-flex ml-30 mt-1">
                                                 <div class="mr-20">
