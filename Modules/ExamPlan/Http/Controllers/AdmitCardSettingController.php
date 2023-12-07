@@ -146,7 +146,7 @@ class AdmitCardSettingController extends Controller
             $setting->principal_signature_photo = $principle_signature_photo;
             // $setting->teacher_signature_photo = $teacher_signature;
             dump($setting);
-           // $setting->save();
+            $setting->save();
             Toastr::success('Update Successfully', 'success');
             return redirect()->back();
         } catch (\Exception $e) {
