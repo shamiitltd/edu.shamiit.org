@@ -194,10 +194,10 @@
                                        
                                         <div class="primary_input">                                           
                                             <div class="primary_file_uploader">
-                                                <input
+                                                <!--<input
                                                         class="primary_input_field form-control {{ $errors->has('file') ? ' is-invalid' : '' }}"
                                                         type="file" id="placeholderPhoto" placeholder=""
-                                                        readonly>
+                                                        readonly>-->
                                                 <button class="" type="button">
                                                     <label class="primary-btn small fix-gr-bg" for="upload_content_file"><span
                                                             class="ripple rippleEffect"
