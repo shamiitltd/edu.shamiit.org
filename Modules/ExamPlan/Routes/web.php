@@ -6,7 +6,7 @@ Route::group(['middleware' => ['subdomain']], function () {
         Route::get('admitcard', 'AdmitCardSettingController@admitcard')->name('admitcard.index')->middleware('userRolePermission:examplan.admitcard.index');
         Route::post('admitcard', 'AdmitCardSettingController@admitcardSearch')->name('admitcard.search');
         Route::post('admitcard/generate', 'AdmitCardSettingController@admitcardGenerate')->name('admitcard.generate');
-        //Route::post('admitcard/settingUpdate', 'AdmitCardSettingController@settingUpdate')->name('admitcard.settingUpdate');
+        Route::post('admitcard/settingUpdate', 'AdmitCardSettingController@settingUpdate')->name('admitcard.settingUpdate');
         Route::post('admitcard/settingUpdatetwo', 'AdmitCardSettingController@settingUpdate')->name('admitcard.settingUpdatetwo');
         Route::post('image/upload', 'AdmitCardSettingController@imageUpload')->name('image.upload');
 
