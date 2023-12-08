@@ -149,7 +149,7 @@ class AdmitCardSettingController extends Controller
             Toastr::success('Update Successfully', 'success');
             return redirect()->back();
         } catch (\Exception $e) {
-            Toastr::error('Operation Failed' + $e, 'Error');
+            Toastr::error('Operation Failed', 'Error');
             return redirect()->back();
         }
     }
