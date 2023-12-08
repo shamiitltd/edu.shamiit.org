@@ -198,13 +198,13 @@
                                                         class="primary_input_field form-control {{ $errors->has('file') ? ' is-invalid' : '' }}"
                                                         type="text" id="placeholderPhoto" placeholder=""
                                                         readonly>
-                                                <!--<button class="" type="button">-->
+                                                <button class="" type="button">
                                                     <label class="primary-btn small fix-gr-bg" for="upload_content_file"><span
                                                             class="ripple rippleEffect"
-                                                            style="width: 56.8125px; height: 56.8125px; top: -16.4062px; left: 10.4219px;"></span>@lang('common.browse')</label>
+                                                            style=""></span>@lang('common.browse')</label>
                                                     <input type="file" class="d-none" name="file"
                                                         id="upload_content_file">
-                                               <!-- </button>-->
+                                               </button>
                                             </div>
                                           
                                             @if ($errors->has('file'))
