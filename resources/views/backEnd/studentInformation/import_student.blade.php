@@ -194,16 +194,16 @@
                                        
                                         <div class="primary_input">                                           
                                             <div class="primary_file_uploader">
-                                                <input
+                                                <!--<input
                                                         class="primary_input_field form-control {{ $errors->has('file') ? ' is-invalid' : '' }}"
                                                         type="text" id="placeholderPhoto" placeholder=""
-                                                        readonly>
+                                                        readonly>-->
                                                 <button class="" type="button">
                                                     <label class="primary-btn small fix-gr-bg" for="upload_content_file"><span
                                                             class="ripple rippleEffect"
-                                                            style=""></span>@lang('common.browse')</label>
-                                                    <input type="file" class="d-none" name="file"
-                                                        id="upload_content_file">
+                                                            style="width: 56.8125px; height: 56.8125px; top: -16.4062px; left: 10.4219px;"></span>@lang('common.browse')</label>
+                                                    <input type="file"  name="file"
+                                                        id="upload_content_file" class="primary_input_field form-control {{ $errors->has('file') ? ' is-invalid' : '' }} d-none">
                                                </button>
                                             </div>
                                           
