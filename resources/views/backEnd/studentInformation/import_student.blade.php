@@ -109,7 +109,7 @@
                                                 <div class="primary_input">
                                                     <input
                                                         class="primary_input_field form-control {{ $errors->has('file') ? ' is-invalid' : '' }}"
-                                                        type="text" id="placeholderPhoto" placeholder="Excel file"
+                                                        type="text" id="placeholderPhoto" placeholder=""
                                                         readonly>
 
                                                     @if ($errors->has('file'))
