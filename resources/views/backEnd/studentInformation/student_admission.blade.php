@@ -1672,7 +1672,7 @@
                                     <div class="primary_input">
                                         <div class="primary_file_uploader">
                                             <input class="primary_input_field" type="text" id="placeholderFileOneName"
-                                                placeholder="01  @if (is_required('document_file') == true) * @endif"
+                                                placeholder="01  @if (is_required('document_file_1') == true) * @endif"
                                                 readonly="">
                                             <button class="" type="button">
                                                 <label class="primary-btn small fix-gr-bg"
