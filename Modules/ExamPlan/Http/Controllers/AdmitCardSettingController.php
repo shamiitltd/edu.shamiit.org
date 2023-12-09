@@ -130,8 +130,8 @@ class AdmitCardSettingController extends Controller
             $setting->class_section = $request->class_section2;
             $setting->exam_name = $request->exam_name2;
             //if($request->tab_layout == 2){
-                $setting->admit_sub_title = $request->admit_sub_title;
-                $setting->description = $request->description;
+                $setting->admit_sub_title = $request->admit_sub_title2;
+                $setting->description = $request->description2;
             //}
             $setting->academic_year = $request->academic_year2;
             $setting->school_address = $request->school_address2;
@@ -140,7 +140,7 @@ class AdmitCardSettingController extends Controller
             $setting->student_notification = $request->student_notification2;
             $setting->parent_notification = $request->parent_notification2;
 
-            $setting->principal_signature = $request->principal_signature;
+            $setting->principal_signature = $request->principal_signature2;
 
             // $setting->class_teacher_signature = $request->class_teacher_signature;
             $setting->principal_signature_photo = $principle_signature;
