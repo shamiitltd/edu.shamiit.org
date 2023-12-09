@@ -7,9 +7,11 @@ Route::group(['middleware' => ['subdomain']], function () {
         Route::post('admitcard', 'AdmitCardSettingController@admitcardSearch')->name('admitcard.search');
         Route::post('admitcard/generate', 'AdmitCardSettingController@admitcardGenerate')->name('admitcard.generate');
         Route::post('admitcard/settingUpdate', 'AdmitCardSettingController@settingUpdate')->name('admitcard.settingUpdate');
-        Route::post('admitcard/settingUpdatetwo', 'AdmitCardSettingController@settingUpdate')->name('admitcard.settingUpdatetwo');
-        Route::post('image/upload', 'AdmitCardSettingController@imageUpload')->name('image.upload');
-
+       // Route::post('admitcard/settingUpdatetwo', 'AdmitCardSettingController@settingUpdate')->name('admitcard.settingUpdatetwo');
+       Route::post('/examplan/admitcard/settingUpdatetwo','settingUpdatetwo')->name('examplan.admitcard.settingUpdatetwo');
+       
+       Route::post('image/upload', 'AdmitCardSettingController@imageUpload')->name('image.upload');
+       
 
         Route::get('changeAdmitCardLayout', 'AdmitCardSettingController@changeAdmitCardLayout')->name('changeAdmitCardLayout');
 
