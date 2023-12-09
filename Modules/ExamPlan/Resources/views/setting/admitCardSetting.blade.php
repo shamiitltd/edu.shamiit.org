@@ -714,7 +714,6 @@
                                                 <input class="primary_input_field form-control" type="text"
                                                        name="admit_sub_title2" value="{{ @$setting->admit_sub_title }}">
                                             </div>
-
                                         </div>
                                         <div class="col-lg-6 relation-button justify-content-between mb-3">
                                             <div class="row no-gutters input-right-icon">
