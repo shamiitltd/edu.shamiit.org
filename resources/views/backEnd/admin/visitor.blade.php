@@ -239,7 +239,7 @@
                                                     for="">{{ trans('common.file') }}</label>
                                                 <div class="primary_file_uploader">
                                                     <input class="primary_input_field form-control{{ $errors->has('upload_event_image') ? ' is-invalid' : '' }}" type="text" id="placeholderEventFile"
-                                                        placeholder="{{ isset($visitor) ? ($visitor->file != '' ? getFilePath3($visitor->file) : trans('common.file')) : trans('common.file') }}"
+                                                        placeholder=""
                                                         readonly="">
                                                     <button class="" type="button">
                                                         <label class="primary-btn small fix-gr-bg" for="upload_event_image"><span
