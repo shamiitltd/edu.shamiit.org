@@ -195,14 +195,14 @@
                                         <div class="primary_input">                                           
                                             <div class="primary_file_uploader">
                                                 <input
-                                                        class="primary_input_field form-control {{ $errors->has('file') ? ' is-invalid' : '' }}"
-                                                        type="text" id="placeholderPhoto" placeholder="file"
+                                                        class="primary_input_field form-control {{ $errors->has('upload_content_file') ? ' is-invalid' : '' }}"
+                                                        type="text" id="placeholderPhoto" placeholder="file @if (is_required('upload_content_file') == true) * @endif"
                                                         readonly="">
                                                 <button class="" type="button">
-                                                    <label class="primary-btn small fix-gr-bg" for="file"><span
+                                                    <label class="primary-btn small fix-gr-bg" for="upload_content_file"><span
                                                             class="ripple rippleEffect"
                                                             style="width: 56.8125px; height: 56.8125px; top: -16.4062px; left: 10.4219px;"></span>@lang('common.browse')</label>
-                                                    <input type="file" class="d-none" name="file"
+                                                    <input type="file" class="d-none" name="upload_content_file"
                                                         id="upload_content_file">
                                                 </button>
                                             </div>
