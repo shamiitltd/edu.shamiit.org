@@ -196,7 +196,7 @@
                                             <div class="primary_file_uploader">
                                                 <input
                                                         class="primary_input_field form-control {{ $errors->has('file') ? ' is-invalid' : '' }}"
-                                                        type="text" id="placeholderPhoto" placeholder=" {{ $path->file != '' ? getFilePath3($path->file) : trans('common.file')}} "
+                                                        type="text" id="placeholderPhoto" placeholder=" {{ isset($path) ? ($path->file != '' ? getFilePath4($path->file) : trans('common.file')) : trans('common.file') }} "
                                                         readonly>
                                                 <button class="" type="button">
                                                     <label class="primary-btn small fix-gr-bg" for="upload_content_file"><span
