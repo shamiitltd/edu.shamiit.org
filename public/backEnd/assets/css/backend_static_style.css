@@ -14934,4 +14934,11 @@ textarea,
     text-transform: none!important;
 }
 
+/* custom css */
+
+.admit_temp
+{
+    padding-right: 0.5rem !important;
+}
+
 
