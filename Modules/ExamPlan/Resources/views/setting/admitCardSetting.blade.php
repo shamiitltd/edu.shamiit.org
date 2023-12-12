@@ -279,7 +279,7 @@
                                                     <input type="radio" name="parent_download" id="parent_download"
                                                            value="0" class="common-radio relationButton"
                                                            @if ($setting->parent_download == 0) checked @endif>
-                                                    <label for="parent_download" style="margin-right:13px">@lang('examplan::exp.no')</label>
+                                                    <label for="parent_download" style="margin-right:13.1px">@lang('examplan::exp.no')</label>
                                                 </div>
                                             </div>
                                         </div>
