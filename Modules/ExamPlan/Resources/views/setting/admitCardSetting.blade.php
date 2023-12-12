@@ -292,14 +292,14 @@
                                                            id="student_notification_on" value="1"
                                                            class="common-radio relationButton"
                                                            @if ($setting->student_notification) checked @endif>
-                                                    <label for="student_notification_on">@lang('examplan::exp.yes')</label>
+                                                    <label for="student_notification_on" style="margin-right:13px">@lang('examplan::exp.yes')</label>
                                                 </div>
                                                 <div class="mr-20">
                                                     <input type="radio" name="student_notification"
                                                            id="student_notification" value="0"
                                                            class="common-radio relationButton"
                                                            @if ($setting->student_notification == 0) checked @endif>
-                                                    <label for="student_notification">@lang('examplan::exp.no')</label>
+                                                    <label for="student_notification" style="margin-right:13px">@lang('examplan::exp.no')</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -311,14 +311,14 @@
                                                            id="parent_notification_on" value="1"
                                                            class="common-radio relationButton"
                                                            @if ($setting->parent_notification) checked @endif>
-                                                    <label for="parent_notification_on">@lang('examplan::exp.yes')</label>
+                                                    <label for="parent_notification_on" style="margin-right:13px">@lang('examplan::exp.yes')</label>
                                                 </div>
                                                 <div class="mr-20">
                                                     <input type="radio" name="parent_notification"
                                                            id="parent_notification" value="0"
                                                            class="common-radio relationButton"
                                                            @if ($setting->parent_notification == 0) checked @endif>
-                                                    <label for="parent_notification">@lang('examplan::exp.no')</label>
+                                                    <label for="parent_notification" style="margin-right:13px">@lang('examplan::exp.no')</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -620,13 +620,13 @@
                                                            id="student_download_on2" value="1"
                                                            class="common-radio relationButton"
                                                            @if ($setting->student_download) checked @endif>
-                                                    <label for="student_download_on2">@lang('examplan::exp.yes')</label>
+                                                    <label for="student_download_on2" style="margin-right:13px">@lang('examplan::exp.yes')</label>
                                                 </div>
                                                 <div class="mr-20">
                                                     <input type="radio" name="student_download" id="student_download2"
                                                            value="0" class="common-radio relationButton"
                                                            @if ($setting->student_download == 0) checked @endif>
-                                                    <label for="student_download2">@lang('examplan::exp.no')</label>
+                                                    <label for="student_download2" style="margin-right:13px">@lang('examplan::exp.no')</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -637,13 +637,13 @@
                                                     <input type="radio" name="parent_download" id="parent_download_on2"
                                                            value="1" class="common-radio relationButton"
                                                            @if ($setting->parent_download) checked @endif>
-                                                    <label for="parent_download_on2">@lang('examplan::exp.yes')</label>
+                                                    <label for="parent_download_on2" style="margin-right:13px">@lang('examplan::exp.yes')</label>
                                                 </div>
                                                 <div class="mr-20">
                                                     <input type="radio" name="parent_download" id="parent_download2"
                                                            value="0" class="common-radio relationButton"
                                                            @if ($setting->parent_download == 0) checked @endif>
-                                                    <label for="parent_download2">@lang('examplan::exp.no')</label>
+                                                    <label for="parent_download2" style="margin-right:13px">@lang('examplan::exp.no')</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -656,14 +656,14 @@
                                                            id="student_notification_on2" value="1"
                                                            class="common-radio relationButton"
                                                            @if ($setting->student_notification) checked @endif>
-                                                    <label for="student_notification_on2">@lang('examplan::exp.yes')</label>
+                                                    <label for="student_notification_on2" style="margin-right:13px">@lang('examplan::exp.yes')</label>
                                                 </div>
                                                 <div class="mr-20">
                                                     <input type="radio" name="student_notification"
                                                            id="student_notification2" value="0"
                                                            class="common-radio relationButton"
                                                            @if ($setting->student_notification == 0) checked @endif>
-                                                    <label for="student_notification2">@lang('examplan::exp.no')</label>
+                                                    <label for="student_notification2" style="margin-right:13px">@lang('examplan::exp.no')</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -675,14 +675,14 @@
                                                            id="parent_notification_on2" value="1"
                                                            class="common-radio relationButton"
                                                            @if ($setting->parent_notification) checked @endif>
-                                                    <label for="parent_notification_on2">@lang('examplan::exp.yes')</label>
+                                                    <label for="parent_notification_on2"style="margin-right:13px">@lang('examplan::exp.yes')</label>
                                                 </div>
                                                 <div class="mr-20">
                                                     <input type="radio" name="parent_notification"
                                                            id="parent_notification2" value="0"
                                                            class="common-radio relationButton"
                                                            @if ($setting->parent_notification == 0) checked @endif>
-                                                    <label for="parent_notification2">@lang('examplan::exp.no')</label>
+                                                    <label for="parent_notification2"style="margin-right:13px">@lang('examplan::exp.no')</label>
                                                 </div>
                                             </div>
                                         </div>
