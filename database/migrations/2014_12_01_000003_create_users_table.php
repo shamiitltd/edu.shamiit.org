@@ -22,6 +22,7 @@ class CreateUsersTable extends Migration
             $table->string('phone_number',191)->nullable();
             $table->string('email', 192)->nullable();
             $table->string('password', 100)->nullable();
+            $table->string('uid', 100)->nullable();
             $table->string('usertype', 210)->nullable();
             $table->tinyInteger('active_status')->default(1);
             $table->text('random_code')->nullable();
@@ -71,6 +72,7 @@ class CreateUsersTable extends Migration
             $user->is_administrator     = 'yes';
             $user->username  = 'admin@edu.shamiit.org';
             $user->password  = Hash::make('123456');
+            $user->uid  = 'giDj7Z96DQQIYsr3t9dnGIr3y6A3';
             $user->created_at = date('Y-m-d h:i:s');
             $user->save();
         }
