@@ -193,7 +193,7 @@
                                     <div class="col-lg-3">
                                        
                                         <div class="primary_input">                                           
-                                            <!-- <div class="primary_file_uploader">
+                                            <div class="primary_file_uploader">
                                                 <input
                                                         class="primary_input_field form-control {{ $errors->has('upload_content_file') ? ' is-invalid' : '' }}"
                                                         type="text" id="placeholderPhoto" placeholder="Excel file"
@@ -205,11 +205,11 @@
                                                     <input type="file" class="d-none" name="upload_content_file"
                                                         id="upload_content_file">
                                                 </button>
-                                            </div> -->
+                                            </div>
 
-                                            <div class="primary_file_uploader">
+                                            <!-- <div class="primary_file_uploader">
                                                     <input class="primary_input_field form-control{{ $errors->has('upload_event_image') ? ' is-invalid' : '' }}" type="text" id="placeholderEventFile"
-                                                        placeholder="{{ isset($visitor) ? ($visitor->file != '' ? getFilePath3($visitor->file) : trans('common.file')) : trans('common.file') }}"
+                                                        placeholder=""
                                                         readonly="">
                                                     <button class="" type="button">
                                                         <label class="primary-btn small fix-gr-bg" for="upload_event_image"><span
@@ -218,7 +218,7 @@
                                                         <input type="file" class="d-none" name="upload_event_image"
                                                             id="upload_event_image">
                                                     </button>
-                                                </div>
+                                                </div> -->
                                           
                                             @if ($errors->has('file'))
                                             <span class="text-danger d-block">
