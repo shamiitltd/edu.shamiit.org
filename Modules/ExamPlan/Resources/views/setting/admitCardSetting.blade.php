@@ -273,13 +273,13 @@
                                                     <input type="radio" name="parent_download" id="parent_download_on"
                                                            value="1" class="common-radio relationButton"
                                                            @if ($setting->parent_download) checked @endif>
-                                                    <label for="parent_download_on">@lang('examplan::exp.yes')</label>
+                                                    <label for="parent_download_on" style="margin-right:13px">@lang('examplan::exp.yes')</label>
                                                 </div>
                                                 <div class="mr-20">
                                                     <input type="radio" name="parent_download" id="parent_download"
                                                            value="0" class="common-radio relationButton"
                                                            @if ($setting->parent_download == 0) checked @endif>
-                                                    <label for="parent_download">@lang('examplan::exp.no')</label>
+                                                    <label for="parent_download" style="margin-right:13px">@lang('examplan::exp.no')</label>
                                                 </div>
                                             </div>
                                         </div>
