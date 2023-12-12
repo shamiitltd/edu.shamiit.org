@@ -455,7 +455,7 @@ class CreateSmsTemplatesTable extends Migration
                 </tbody>
             </table>', '', '[contact_name], [contact_email], [contact_subject], [contact_message], [school_name]'],
 
-            ['email', 'communication_sent_email', 'Sent Email',
+            ['email', 'Communication_Sent_Email', 'Sent Email',
             '<table bgcolor="#FFFFFF" cellpadding="0" cellspacing="0" class="nl-container" style="table-layout:fixed;vertical-align:top;min-width:320px;border-spacing:0;border-collapse:collapse;background-color:#FFFFFF;width:100%;" width="100%">
                 <tbody>
                     <tr style="vertical-align:top;" valign="top">
@@ -758,7 +758,7 @@ class CreateSmsTemplatesTable extends Migration
                                             <div class="col_cont" style="width:100%;">
                                                 <h1 style="line-height:120%;text-align:center;margin-bottom:0px;">
                                                     <font color="#555555" face="Arial, Helvetica Neue, Helvetica, sans-serif">
-                                                        <span style="font-size:36px;">Dues Payment</span>
+                                                        <span style="font-size:36px;">Due Payment</span>
                                                     </font>
                                                 </h1>
                                                 <div style="line-height:1.8;padding:20px 15px;">
