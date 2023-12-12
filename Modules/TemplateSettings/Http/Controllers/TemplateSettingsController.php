@@ -91,10 +91,7 @@ class TemplateSettingsController extends Controller
     }
 
     public function smsTemplateUpdate(Request $request){
-        $request->validate([
-           
-            'body' => 'required'
-        ]);
+        
         try {
             $updateData = SmsTemplate::find($request->id);
             $updateData->type = 'sms';
