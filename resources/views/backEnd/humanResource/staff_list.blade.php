@@ -120,6 +120,7 @@
                                     <option data-display="@lang('hr.role')" value=""> @lang('common.select') </option>
                                     @foreach ($roles as $key => $value)
                                         <option value="{{ $value->id }}"
+                                            dump($data)
                                             @if (isset($data['role_id']) && $value->id == $data['role_id']) selected @endif>{{ $value->name }}</option>
                                     @endforeach
                                 </select>
