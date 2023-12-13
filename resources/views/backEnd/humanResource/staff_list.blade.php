@@ -125,7 +125,7 @@
                                     @endforeach
                                 </select>
                             </div>
-                            {{ print_r($data) }} 
+                            {{ print_r($data['role_id]) }} 
 
                             <div class="col-lg-4 mt-30-md">
                                 <div class="primary_input">
