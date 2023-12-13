@@ -106,7 +106,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="white-box">
-                        {{ Form::open(['class' => 'form-horizontal', 'files' => true, 'route' => 'getStaffList', 'method' => 'POST', 'enctype' => 'multipart/form-data']) }}
+                        {{ Form::open(['class' => 'form-horizontal', 'files' => true, 'route' => 'search-staff', 'method' => 'POST', 'enctype' => 'multipart/form-data']) }}
                         <div class="row">
                             <input type="hidden" name="role_id" id="role_id" value="{{ @$data['role_id'] }}">
                             <input type="hidden" name="staff_no" id="staff_no" value="{{ @$data['staff_no'] }}">
