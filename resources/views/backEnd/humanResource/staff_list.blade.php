@@ -124,8 +124,9 @@
                                             @if (isset($data['role_id']) && $value->id == $data['role_id']) selected @endif>{{ $value->name }}</option>
                                     @endforeach
                                 </select>
+                            {{ print_r($data['role_id']) }} 
+
                             </div>
-                            {{ print_r($data['role_id]) }} 
 
                             <div class="col-lg-4 mt-30-md">
                                 <div class="primary_input">
