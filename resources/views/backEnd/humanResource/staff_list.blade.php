@@ -106,7 +106,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="white-box">
-                        {{ Form::open(['class' => 'form-horizontal', 'files' => true, 'route' => 'search-staff', 'method' => 'POST', 'enctype' => 'multipart/form-data']) }}
+                        {{ Form::open(['class' => 'form-horizontal', 'files' => true, 'route' => 'searchStaff', 'method' => 'POST', 'enctype' => 'multipart/form-data']) }}
                         <div class="row">
                             <input type="hidden" name="role_id" id="role_id" value="{{ @$data['role_id'] }}">
                             <input type="hidden" name="staff_no" id="staff_no" value="{{ @$data['staff_no'] }}">
@@ -119,8 +119,7 @@
                                 <select class="primary_select  form-control" name="role_id" id="role_id">
                                     <option data-display="@lang('hr.role')" value=""> @lang('common.select') </option>
                                     @foreach ($roles as $key => $value)
-                                    <!-- {{  $value->name }}  -->
-
+                                    
                                         <option value="{{ $value->id }}"
                                             
                                             @if (isset($data['role_id']) && $value->id == $data['role_id']) selected @endif>{{ $value->name }}</option>
