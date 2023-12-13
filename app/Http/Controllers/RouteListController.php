@@ -4368,13 +4368,13 @@ class RouteListController extends Controller
            'parent_route' => 'bulk_print',
            'type' => 2,
          ),
-        //  923 => 
-        //  array (
-        //    'name' => 'Staff Id Card',
-        //    'route' => 'staff-id-card-bulk-print',
-        //    'parent_route' => 'bulk_print',
-        //    'type' => 2,
-        //  ),
+         923 => 
+         array (
+           'name' => 'Staff Id Card',
+           'route' => 'staff-id-card-bulk-print',
+           'parent_route' => 'bulk_print',
+           'type' => 2,
+         ),
          924 => 
          array (
            'name' => 'Payroll Bulk Print',
