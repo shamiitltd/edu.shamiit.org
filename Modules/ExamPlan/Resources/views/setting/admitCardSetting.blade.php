@@ -250,75 +250,75 @@
 
                                         <div class="col-lg-6 d-flex relation-button justify-content-between mb-3">
                                             <p class="text-uppercase mb-0"> @lang('examplan::exp.student_can_download')</p>
-                                            <div class="d-flex radio-btn-flex ml-30 mt-1 admin_temp" >
+                                            <div class="d-flex radio-btn-flex ml-30 mt-1">
                                                 <div class="mr-20">
                                                     <input type="radio" name="student_download"
                                                            id="student_download_on" value="1"
                                                            class="common-radio relationButton"
                                                            @if ($setting->student_download) checked @endif>
-                                                    <label for="student_download_on">@lang('examplan::exp.yes')</label>
+                                                    <label for="student_download_on" style="margin-right:13px">@lang('examplan::exp.yes')</label>
                                                 </div>
                                                 <div class="mr-20">
                                                     <input type="radio" name="student_download" id="student_download"
                                                            value="0" class="common-radio relationButton"
                                                            @if ($setting->student_download == 0) checked @endif>
-                                                    <label for="student_download">@lang('examplan::exp.no')</label>
+                                                    <label for="student_download" style="margin-right:10px">@lang('examplan::exp.no')</label>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-6 d-flex relation-button justify-content-between mb-3">
                                             <p class="text-uppercase mb-0"> @lang('examplan::exp.parent_can_download')</p>
-                                            <div class="d-flex radio-btn-flex ml-30 mt-1 admin_temp">
+                                            <div class="d-flex radio-btn-flex ml-30 mt-1">
                                                 <div class="mr-20">
                                                     <input type="radio" name="parent_download" id="parent_download_on"
                                                            value="1" class="common-radio relationButton"
                                                            @if ($setting->parent_download) checked @endif>
-                                                    <label for="parent_download_on">@lang('examplan::exp.yes')</label>
+                                                    <label for="parent_download_on" style="margin-right:13px">@lang('examplan::exp.yes')</label>
                                                 </div>
                                                 <div class="mr-20">
                                                     <input type="radio" name="parent_download" id="parent_download"
                                                            value="0" class="common-radio relationButton"
                                                            @if ($setting->parent_download == 0) checked @endif>
-                                                    <label for="parent_download">@lang('examplan::exp.no')</label>
+                                                    <label for="parent_download" style="margin-right:13px">@lang('examplan::exp.no')</label>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="col-lg-6 d-flex relation-button justify-content-between mb-3">
                                             <p class="text-uppercase mb-0"> @lang('examplan::exp.student_notification')</p>
-                                            <div class="d-flex radio-btn-flex ml-30 mt-1 admin_temp">
+                                            <div class="d-flex radio-btn-flex ml-30 mt-1">
                                                 <div class="mr-20">
                                                     <input type="radio" name="student_notification"
                                                            id="student_notification_on" value="1"
                                                            class="common-radio relationButton"
                                                            @if ($setting->student_notification) checked @endif>
-                                                    <label for="student_notification_on">@lang('examplan::exp.yes')</label>
+                                                    <label for="student_notification_on" style="margin-right:13px">@lang('examplan::exp.yes')</label>
                                                 </div>
                                                 <div class="mr-20">
                                                     <input type="radio" name="student_notification"
                                                            id="student_notification" value="0"
                                                            class="common-radio relationButton"
                                                            @if ($setting->student_notification == 0) checked @endif>
-                                                    <label for="student_notification">@lang('examplan::exp.no')</label>
+                                                    <label for="student_notification" style="margin-right:13px">@lang('examplan::exp.no')</label>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-6 d-flex relation-button justify-content-between mb-3">
                                             <p class="text-uppercase mb-0"> @lang('examplan::exp.parent_notification')</p>
-                                            <div class="d-flex radio-btn-flex ml-30 mt-1 admin_temp">
+                                            <div class="d-flex radio-btn-flex ml-30 mt-1">
                                                 <div class="mr-20">
                                                     <input type="radio" name="parent_notification"
                                                            id="parent_notification_on" value="1"
                                                            class="common-radio relationButton"
                                                            @if ($setting->parent_notification) checked @endif>
-                                                    <label for="parent_notification_on">@lang('examplan::exp.yes')</label>
+                                                    <label for="parent_notification_on" style="margin-right:13px">@lang('examplan::exp.yes')</label>
                                                 </div>
                                                 <div class="mr-20">
                                                     <input type="radio" name="parent_notification"
                                                            id="parent_notification" value="0"
                                                            class="common-radio relationButton"
                                                            @if ($setting->parent_notification == 0) checked @endif>
-                                                    <label for="parent_notification">@lang('examplan::exp.no')</label>
+                                                    <label for="parent_notification" style="margin-right:13px">@lang('examplan::exp.no')</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -470,19 +470,18 @@
                                     <input type="hidden" name="tab_layout" value="2">
                                     @csrf
                                     <div class="row">
-                                        <div class="col-lg-6 d-flex relation-button justify-content-between mb-3 justify-content-between">
+                                        <div
+                                                class="col-lg-6 d-flex relation-button justify-content-between mb-3 justify-content-between">
                                             <p class="text-uppercase mb-0">@lang('examplan::exp.student_photo')</p>
                                             <div class="d-flex radio-btn-flex ml-30 mt-1">
                                                 <div class="mr-20">
-                                                <input type="radio" name="student_photo" id="student_photo_on2"
+                                                    <input type="radio" name="student_photo" id="student_photo_on2"
                                                            value="1" class="common-radio relationButton"
                                                            @if ($setting->student_photo) checked @endif>
                                                     <label for="student_photo_on2">@lang('examplan::exp.show')</label>
                                                 </div>
-                                                
-                                                
                                                 <div class="mr-20">
-                                                <input type="radio" name="student_photo" id="student_photo2"
+                                                    <input type="radio" name="student_photo" id="student_photo2"
                                                            value="0" class="common-radio relationButton"
                                                            @if ($setting->student_photo == 0) checked @endif>
                                                     <label for="student_photo2">@lang('examplan::exp.hide')</label>
@@ -494,13 +493,13 @@
                                             <p class="text-uppercase mb-0"> @lang('examplan::exp.student_name')</p>
                                             <div class="d-flex radio-btn-flex ml-30 mt-1">
                                                 <div class="mr-20">
-                                                <input type="radio" name="student_name" id="student_name_on2"
+                                                    <input type="radio" name="student_name" id="student_name_on2"
                                                            value="1" class="common-radio relationButton"
                                                            @if ($setting->student_name) checked @endif>
                                                     <label for="student_name_on2">@lang('examplan::exp.show')</label>
                                                 </div>
                                                 <div class="mr-20">
-                                                <input type="radio" name="student_name" id="student_name2"
+                                                    <input type="radio" name="student_name" id="student_name2"
                                                            value="0" class="common-radio relationButton"
                                                            @if ($setting->student_name == 0) checked @endif>
                                                     <label for="student_name2">@lang('examplan::exp.hide')</label>
@@ -512,16 +511,16 @@
                                             <p class="text-uppercase mb-0"> @lang('student.father_names')</p>
                                             <div class="d-flex radio-btn-flex ml-30 mt-1">
                                                 <div class="mr-20">
-                                                <input type="radio" name="gaurdian_name" id="gaurdian_name_on2"
+                                                    <input type="radio" name="gaurdian_name" id="gaurdian_name_on2"
                                                            value="1" class="common-radio relationButton"
                                                            @if ($setting->gaurdian_name) checked @endif>
                                                     <label for="gaurdian_name_on2">@lang('examplan::exp.show')</label>
                                                 </div>
                                                 <div class="mr-20">
-                                                <input type="radio" name="gaurdian_name" id="gaurdian_name2"
+                                                    <input type="radio" name="gaurdian_name" id="gaurdian_name2"
                                                            value="0" class="common-radio relationButton"
                                                            @if ($setting->gaurdian_name == 0) checked @endif>
-                                                    <label for="gaurdian_name2">@lang('examplan::exp.hide')</label> 
+                                                    <label for="gaurdian_name2">@lang('examplan::exp.hide')</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -530,13 +529,13 @@
                                             <p class="text-uppercase mb-0"> @lang('examplan::exp.admission_no')</p>
                                             <div class="d-flex radio-btn-flex ml-30 mt-1">
                                                 <div class="mr-20">
-                                                <input type="radio" name="admission_no" id="admission_no_on2"
+                                                    <input type="radio" name="admission_no" id="admission_no_on2"
                                                            value="1" class="common-radio relationButton"
                                                            @if ($setting->admission_no) checked @endif>
                                                     <label for="admission_no_on2">@lang('examplan::exp.show')</label>
                                                 </div>
                                                 <div class="mr-20">
-                                                <input type="radio" name="admission_no" id="admission_no2"
+                                                    <input type="radio" name="admission_no" id="admission_no2"
                                                            value="0" class="common-radio relationButton"
                                                            @if ($setting->admission_no == 0) checked @endif>
                                                     <label for="admission_no2">@lang('examplan::exp.hide')</label>
@@ -547,13 +546,13 @@
                                             <p class="text-uppercase mb-0"> @lang('examplan::exp.class_&_section')</p>
                                             <div class="d-flex radio-btn-flex ml-30 mt-1">
                                                 <div class="mr-20">
-                                                <input type="radio" name="class_section" id="class_section_on2"
+                                                    <input type="radio" name="class_section" id="class_section_on2"
                                                            value="1" class="common-radio relationButton"
                                                            @if ($setting->class_section) checked @endif>
                                                     <label for="class_section_on2">@lang('examplan::exp.show')</label>
                                                 </div>
                                                 <div class="mr-20">
-                                                <input type="radio" name="class_section" id="class_section2"
+                                                    <input type="radio" name="class_section" id="class_section2"
                                                            value="0" class="common-radio relationButton"
                                                            @if ($setting->class_section == 0) checked @endif>
                                                     <label for="class_section2">@lang('examplan::exp.hide')</label>
@@ -564,13 +563,13 @@
                                             <p class="text-uppercase mb-0"> @lang('examplan::exp.exam_name')</p>
                                             <div class="d-flex radio-btn-flex ml-30 mt-1">
                                                 <div class="mr-20">
-                                                <input type="radio" name="exam_name" id="exam_name_on2"
+                                                    <input type="radio" name="exam_name" id="exam_name_on2"
                                                            value="1" class="common-radio relationButton"
                                                            @if ($setting->exam_name) checked @endif>
                                                     <label for="exam_name_on2">@lang('examplan::exp.show')</label>
                                                 </div>
                                                 <div class="mr-20">
-                                                <input type="radio" name="exam_name" id="exam_name2"
+                                                    <input type="radio" name="exam_name" id="exam_name2"
                                                            value="0" class="common-radio relationButton"
                                                            @if ($setting->exam_name == 0) checked @endif>
                                                     <label for="exam_name2">@lang('examplan::exp.hide')</label>
@@ -581,13 +580,13 @@
                                             <p class="text-uppercase mb-0"> @lang('examplan::exp.academic_year')</p>
                                             <div class="d-flex radio-btn-flex ml-30 mt-1">
                                                 <div class="mr-20">
-                                                <input type="radio" name="academic_year" id="academic_year_on2"
+                                                    <input type="radio" name="academic_year" id="academic_year_on2"
                                                            value="1" class="common-radio relationButton"
                                                            @if ($setting->academic_year) checked @endif>
                                                     <label for="academic_year_on2">@lang('examplan::exp.show')</label>
                                                 </div>
                                                 <div class="mr-20">
-                                                <input type="radio" name="academic_year" id="academic_year2"
+                                                    <input type="radio" name="academic_year" id="academic_year2"
                                                            value="0" class="common-radio relationButton"
                                                            @if ($setting->academic_year == 0) checked @endif>
                                                     <label for="academic_year2">@lang('examplan::exp.hide')</label>
@@ -598,13 +597,13 @@
                                             <p class="text-uppercase mb-0"> @lang('examplan::exp.school_address')</p>
                                             <div class="d-flex radio-btn-flex ml-30 mt-1">
                                                 <div class="mr-20">
-                                                <input type="radio" name="school_address" id="school_address_on2"
+                                                    <input type="radio" name="school_address" id="school_address_on2"
                                                            value="1" class="common-radio relationButton"
                                                            @if ($setting->school_address) checked @endif>
                                                     <label for="school_address_on2">@lang('examplan::exp.show')</label>
                                                 </div>
                                                 <div class="mr-20">
-                                                <input type="radio" name="school_address" id="school_address2"
+                                                    <input type="radio" name="school_address" id="school_address2"
                                                            value="0" class="common-radio relationButton"
                                                            @if ($setting->school_address == 0) checked @endif>
                                                     <label for="school_address2">@lang('examplan::exp.hide')</label>
@@ -615,92 +614,92 @@
 
                                         <div class="col-lg-6 d-flex relation-button justify-content-between mb-3">
                                             <p class="text-uppercase mb-0"> @lang('examplan::exp.student_can_download')</p>
-                                            <div class="d-flex radio-btn-flex ml-30 mt-1 admin_temp">
+                                            <div class="d-flex radio-btn-flex ml-30 mt-1">
                                                 <div class="mr-20">
-                                                <input type="radio" name="student_download"
+                                                    <input type="radio" name="student_download"
                                                            id="student_download_on2" value="1"
                                                            class="common-radio relationButton"
                                                            @if ($setting->student_download) checked @endif>
-                                                    <label for="student_download_on2">@lang('examplan::exp.yes')</label>
+                                                    <label for="student_download_on2" style="margin-right:13px">@lang('examplan::exp.yes')</label>
                                                 </div>
                                                 <div class="mr-20">
-                                                <input type="radio" name="student_download" id="student_download2"
+                                                    <input type="radio" name="student_download" id="student_download2"
                                                            value="0" class="common-radio relationButton"
                                                            @if ($setting->student_download == 0) checked @endif>
-                                                    <label for="student_download2">@lang('examplan::exp.no')</label>
+                                                    <label for="student_download2" style="margin-right:13px">@lang('examplan::exp.no')</label>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-6 d-flex relation-button justify-content-between mb-3">
                                             <p class="text-uppercase mb-0"> @lang('examplan::exp.parent_can_download')</p>
-                                            <div class="d-flex radio-btn-flex ml-30 mt-1 admin_temp">
+                                            <div class="d-flex radio-btn-flex ml-30 mt-1">
                                                 <div class="mr-20">
-                                                <input type="radio" name="parent_download" id="parent_download_on2"
+                                                    <input type="radio" name="parent_download" id="parent_download_on2"
                                                            value="1" class="common-radio relationButton"
                                                            @if ($setting->parent_download) checked @endif>
-                                                    <label for="parent_download_on2">@lang('examplan::exp.yes')</label>
+                                                    <label for="parent_download_on2" style="margin-right:13px">@lang('examplan::exp.yes')</label>
                                                 </div>
                                                 <div class="mr-20">
-                                                <input type="radio" name="parent_download" id="parent_download2"
+                                                    <input type="radio" name="parent_download" id="parent_download2"
                                                            value="0" class="common-radio relationButton"
                                                            @if ($setting->parent_download == 0) checked @endif>
-                                                    <label for="parent_download2">@lang('examplan::exp.no')</label>
+                                                    <label for="parent_download2" style="margin-right:13px">@lang('examplan::exp.no')</label>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="col-lg-6 d-flex relation-button justify-content-between mb-3">
                                             <p class="text-uppercase mb-0"> @lang('examplan::exp.student_notification')</p>
-                                            <div class="d-flex radio-btn-flex ml-30 mt-1 admin_temp">
+                                            <div class="d-flex radio-btn-flex ml-30 mt-1">
                                                 <div class="mr-20">
-                                                <input type="radio" name="student_notification"
+                                                    <input type="radio" name="student_notification"
                                                            id="student_notification_on2" value="1"
                                                            class="common-radio relationButton"
                                                            @if ($setting->student_notification) checked @endif>
-                                                    <label for="student_notification_on2">@lang('examplan::exp.yes')</label>
+                                                    <label for="student_notification_on2" style="margin-right:13px">@lang('examplan::exp.yes')</label>
                                                 </div>
                                                 <div class="mr-20">
-                                                <input type="radio" name="student_notification"
+                                                    <input type="radio" name="student_notification"
                                                            id="student_notification2" value="0"
                                                            class="common-radio relationButton"
                                                            @if ($setting->student_notification == 0) checked @endif>
-                                                    <label for="student_notification2">@lang('examplan::exp.no')</label>
+                                                    <label for="student_notification2" style="margin-right:13px">@lang('examplan::exp.no')</label>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-6 d-flex relation-button justify-content-between mb-3">
                                             <p class="text-uppercase mb-0"> @lang('examplan::exp.parent_notification')</p>
-                                            <div class="d-flex radio-btn-flex ml-30 mt-1 admin_temp">
+                                            <div class="d-flex radio-btn-flex ml-30 mt-1">
                                                 <div class="mr-20">
-                                                <input type="radio" name="parent_notification"
+                                                    <input type="radio" name="parent_notification"
                                                            id="parent_notification_on2" value="1"
                                                            class="common-radio relationButton"
                                                            @if ($setting->parent_notification) checked @endif>
-                                                    <label for="parent_notification_on2">@lang('examplan::exp.yes')</label>
+                                                    <label for="parent_notification_on2"style="margin-right:13px">@lang('examplan::exp.yes')</label>
                                                 </div>
                                                 <div class="mr-20">
-                                                <input type="radio" name="parent_notification"
+                                                    <input type="radio" name="parent_notification"
                                                            id="parent_notification2" value="0"
                                                            class="common-radio relationButton"
                                                            @if ($setting->parent_notification == 0) checked @endif>
-                                                    <label for="parent_notification2">@lang('examplan::exp.no')</label>
+                                                    <label for="parent_notification2"style="margin-right:13px">@lang('examplan::exp.no')</label>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="col-lg-6 d-flex relation-button justify-content-between mb-3 principal_signature"
-                                             id="principal_signature_l2">
+                                             id="principal_signature">
                                             <p class="text-uppercase mb-0"> @lang('examplan::exp.exam_controller_sign')</p>
                                             <div class="d-flex radio-btn-flex ml-30 mt-1">
                                                 <div class="mr-20">
-                                                <input type="radio" name="principal_signature"
+                                                    <input type="radio" name="principal_signature"
                                                            id="principal_signature_on2" value="1"
                                                            class="common-radio relationButton"
                                                            @if ($setting->principal_signature == 1) checked @endif>
                                                     <label for="principal_signature_on2">@lang('examplan::exp.show')</label>
                                                 </div>
                                                 <div class="mr-20">
-                                                <input type="radio" name="principal_signature"
+                                                    <input type="radio" name="principal_signature"
                                                            id="principal_signature_off2" value="0"
                                                            class="common-radio relationButton"
                                                            @if ($setting->principal_signature == 0) checked @endif>
@@ -713,8 +712,9 @@
                                                 <label class="primary_input_label"
                                                        for="">@lang('examplan::exp.admit_sub_title')</label>
                                                 <input class="primary_input_field form-control" type="text"
-                                                       name="admit_sub_title2" value="{{ @$setting->admit_sub_title }}">
+                                                       name="admit_sub_title" value="{{ @$setting->admit_sub_title }}">
                                             </div>
+
                                         </div>
                                         <div class="col-lg-6 relation-button justify-content-between mb-3">
                                             <div class="row no-gutters input-right-icon">
@@ -765,7 +765,7 @@
                                                         </label>
                                                         <textarea
                                                                 class="primary_input_field summer_note form-control{{ $errors->has('description') ? ' is-invalid' : '' }}"
-                                                                cols="2" rows="2" name="description2">{{ @$setting->description }}
+                                                                cols="2" rows="2" name="description">{{ @$setting->description }}
                                                         </textarea>
                                                         @if ($errors->has('description'))
                                                             <span class="text-danger"
