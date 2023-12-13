@@ -1,17 +1,17 @@
 @extends('backEnd.master')
 @section('title') 
-@lang('exam.final_mark_sheet')
+@lang('exam.Exam_Attendence')
 @endsection
 
 @section('mainContent')
     <section class="sms-breadcrumb mb-40 up_breadcrumb white-box">
         <div class="container-fluid">
             <div class="row justify-content-between">
-                <h1>@lang('exam.final_mark_sheet')</h1>
+                <h1>@lang('exam.Exam_Attendence')</h1>
                 <div class="bc-pages">
                     <a href="{{route('dashboard')}}">@lang('common.dashboard')</a>
                     <a href="#">@lang('exam.examination')</a>
-                    <a href="#">@lang('exam.final_mark_sheet')</a>
+                    <a href="#">@lang('exam.Exam_Attendence')</a>
                 </div>
             </div>
         </div>
