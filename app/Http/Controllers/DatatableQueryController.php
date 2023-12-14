@@ -556,8 +556,11 @@ class DatatableQueryController extends Controller
             if (Auth::user()->role_id == 1) {
                 $staffs = SmStaff::query();
                 
-                $staffs = SmStaff::withOutGlobalScope(ActiveStatusSchoolScope::class);
-                $staffs->where('is_saas', 0)->where('active_status', 1);
+                $staffs->withOutGlobalScope(ActiveStatusSchoolScope::class)->where('school_id', Auth::user()->school_id)
+                    ->where('is_saas', 0)
+                    ->with(array('roles' => function ($query) {
+                        $query->select('id', 'name');
+                    })) ;
                     if ($request->role_id != "") {
                         $staffs->where(function($q) use ($request) {
                             $q->where('role_id', $request->role_id)->orWhere('previous_role_id', $request->role_id);
@@ -576,20 +579,15 @@ class DatatableQueryController extends Controller
                         $staffs->where('role_id', '!=', 1);
                     }
                     $staffs =  $staffs->get();
-                 } // else {
-            //     $staffs = SmStaff::where('is_saas', 0)->where('school_id', Auth::user()->school_id)
-            //         ->where('role_id', '!=', 1)
-            //         ->where('role_id', '!=', 5)
-            //         ->with(array('roles' => function ($query) {
-            //             $query->select('id', 'name');
-            //         }))
-            //         ->with(array('departments' => function ($query) {
-            //             $query->select('id', 'name');
-            //         }))
-            //         ->with(array('designations' => function ($query) {
-            //             $query->select('id', 'title');
-            //         }))
-            //         ->get();
+            } 
+            else {
+                $staffs = SmStaff::where('is_saas', 0)->where('school_id', Auth::user()->school_id)
+                    ->where('role_id', '!=', 1)
+                    ->where('role_id', '!=', 5)
+                    ->with(array('roles' => function ($query) {
+                        $query->select('id', 'name');
+                    }))
+                    ->get();
             }
 
             return Datatables::of($staffs)
