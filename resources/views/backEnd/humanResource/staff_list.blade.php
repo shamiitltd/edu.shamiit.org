@@ -339,4 +339,28 @@
         modal.modal('show');
     }
 </script>
+
+<script>
+        $(document).ready(function () {
+            $('#table_id').DataTable({
+                processing: true,
+                serverSide: true,
+                ajax: "{{ route('searchStaff') }}",
+                columns: [
+                    {data: 'DT_RowIndex', name: 'id'},
+                           {data: 'full_name', name: 'full_name'},
+                           {data: 'roles.name', name: 'roles.name'},
+                           {data: 'departments.name', name: 'departments.name'},
+                           {data: 'designations.title', name: 'designations.title'},
+                           {data: 'mobile', name: 'mobile'},
+                           {data: 'email', name: 'email'},
+                           {data: 'switch', name: 'switch'},
+                           {data: 'action', name: 'action', orderable: false, searchable: true},
+                    // Add other column definitions here
+                    
+                ],
+            });
+        });
+    </script>
+
 @endpush
