@@ -550,6 +550,88 @@ class DatatableQueryController extends Controller
         }
     }
 
+    public function SeachStaff(Request $request)
+    {  
+        try {
+            if (Auth::user()->role_id == 1) {
+                $staffs = SmStaff::query();
+                
+                $staff = SmStaff::withOutGlobalScope(ActiveStatusSchoolScope::class);
+                $staff->where('is_saas', 0)->where('active_status', 1);
+                    if ($request->role_id != "") {
+                        $staffs->where(function($q) use ($request) {
+                            $q->where('role_id', $request->role_id)->orWhere('previous_role_id', $request->role_id);
+                        });
+        
+                    }
+                    if ($request->staff_no != "") {
+                        $staffs->where('staff_no', $request->staff_no);
+                    }
+        
+                    if ($request->staff_name != "") {
+                        $staffs->where('full_name', 'like', '%' . $request->staff_name . '%');
+                    }
+        
+                    if (Auth::user()->role_id != 1) {
+                        $staffs->where('role_id', '!=', 1);
+                    }
+                    $staffs =  $staffs->get();
+                 } // else {
+            //     $staffs = SmStaff::where('is_saas', 0)->where('school_id', Auth::user()->school_id)
+            //         ->where('role_id', '!=', 1)
+            //         ->where('role_id', '!=', 5)
+            //         ->with(array('roles' => function ($query) {
+            //             $query->select('id', 'name');
+            //         }))
+            //         ->with(array('departments' => function ($query) {
+            //             $query->select('id', 'name');
+            //         }))
+            //         ->with(array('designations' => function ($query) {
+            //             $query->select('id', 'title');
+            //         }))
+            //         ->get();
+            }
+
+            return Datatables::of($staffs)
+                ->addIndexColumn()
+                ->addColumn('switch', function ($row) {
+                    if (Auth::user()->id != $row->user_id || Auth::user()->role_id != 1) {
+                        $btn = '<label class="switch_toggle">
+                            <input type="checkbox" id="' . $row->id . '" value="' . $row->id . '" class="switch-input-staff hr_'.$row->id.'" ' . ($row->active_status == 0 ? '' : 'checked') . '>
+                            <span class="slider round"></span>
+                          </label>';
+                    } else {
+                        $btn = '';
+                    }
+
+                    return $btn;
+                })
+                ->addColumn('action', function ($row) {
+                    $btn = '<div class="dropdown CRM_dropdown">
+                                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">' . app('translator')->get('common.select') . '</button>
+
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                            <a class="dropdown-item" target="_blank" href="' . route('viewStaff', [$row->id]) . '">' . app('translator')->get('common.view') . '</a>' .
+                        (userPermission('editStaff') === true ? '<a class="dropdown-item" href="' . route('editStaff', [$row->id]) . '">' . app('translator')->get('common.edit') . '</a>' : '') .
+
+                        (userPermission('deleteStaff') === true ? ($row->user_id == Auth::id() ? '' :
+                            '<a onclick="deleteStaff(' . $row->id . ');" class="dropdown-item" href="#" data-toggle="modal" data-target="#deleteStudentModal" data-id="' . $row->id . '"  >' . app('translator')->get('common.delete') . '</a>') : '') .
+
+                        '</div>
+                                </div>';
+
+                    return $btn;
+                })
+                ->rawColumns(['action', 'switch'])
+                ->make(true);
+
+           
+        } catch (\Throwable $th) {
+            Toastr::error('Operation Failed', 'Failed');
+            return redirect()->back();
+        }
+    }
+
 
     public function incomeList(Request $request)
     {
