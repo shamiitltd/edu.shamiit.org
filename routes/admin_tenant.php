@@ -1367,7 +1367,7 @@ Route::group(['middleware' => ['XSS','subscriptionAccessUrl']], function () {
 
 
         // staff directory
-        Route::get('staff-directory', ['as' => 'staff_directory', 'uses' => 'DatatableQueryController@StaffSearch'])->middleware('userRolePermission:staff_directory');
+        Route::get('staff-directory', ['as' => 'staff_directory', 'uses' => 'Admin\Hr\SmStaffController@staffList'])->middleware('userRolePermission:staff_directory');
         Route::get('staff-directory-ajax', ['as' => 'staff_directory_ajax', 'uses' => 'DatatableQueryController@getStaffList'])->middleware('userRolePermission:staff_directory');
 
 
