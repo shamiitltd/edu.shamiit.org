@@ -61,7 +61,7 @@
         <div class="row">
             <div class="col-lg-12 no-gutters">
                 <div class="main-title d-flex ">
-                    <h3 class="mb-30 flex-fill">@lang('reports.Progress_Card_Report_100_Percent')</h3>
+                    <h3 class="mb-30 flex-fill">@lang('reports.progress_card_report_100_percent')</h3>
                     <div class="print_button pull-right">
                         {{ Form::open(['class' => 'form-horizontal', 'files' => true, 'route' => 'progress-card/print', 'method' => 'POST', 'enctype' => 'multipart/form-data', 'id' => 'search_student', 'target' => '_blank']) }}
 
