@@ -345,7 +345,7 @@
             $('#table_id').DataTable({
                 processing: true,
                 serverSide: true,
-                ajax: "{{ route('searchStaff') }}",
+                ajax: "{{ route('staff_directory') }}",
                 columns: [
                     {data: 'DT_RowIndex', name: 'id'},
                            {data: 'full_name', name: 'full_name'},
