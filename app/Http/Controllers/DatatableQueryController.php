@@ -579,7 +579,7 @@ class DatatableQueryController extends Controller
                         $staffs->where('role_id', '!=', 1);
                     }
                     $staffs =  $staffs->get();
-                    {{ print_r($staffs); }}
+                    {{ console.log($staffs); }}
             } 
             else {
                 $staffs = SmStaff::where('is_saas', 0)->where('school_id', Auth::user()->school_id)
