@@ -556,8 +556,8 @@ class DatatableQueryController extends Controller
             if (Auth::user()->role_id == 1) {
                 $staffs = SmStaff::query();
                 
-                $staff = SmStaff::withOutGlobalScope(ActiveStatusSchoolScope::class);
-                $staff->where('is_saas', 0)->where('active_status', 1);
+                $staffs = SmStaff::withOutGlobalScope(ActiveStatusSchoolScope::class);
+                $staffs->where('is_saas', 0)->where('active_status', 1);
                     if ($request->role_id != "") {
                         $staffs->where(function($q) use ($request) {
                             $q->where('role_id', $request->role_id)->orWhere('previous_role_id', $request->role_id);
