@@ -796,7 +796,7 @@ class SmStaffController extends Controller
             if (Auth::user()->role_id != 1) {
                 $staff->where('role_id', '!=', 1);
             }
-
+            {{ print_r($staff); }}
             $all_staffs = $staff->where('school_id', Auth::user()->school_id)->get();
            
             if (Auth::user()->role_id != 1) {
