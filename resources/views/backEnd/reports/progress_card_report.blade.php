@@ -3,7 +3,7 @@
     @if (@$custom_mark_report == 'custom_mark_report')
         @lang('reports.progress_card_report_100_percent')
     @else
-        @lang('reports.progress_card_report')
+        @lang('reports.progress_card_report_100_percent')
     @endif
 @endsection
 @section('mainContent')
@@ -131,7 +131,7 @@
                     @if (@$custom_mark_report == 'custom_mark_report')
                         @lang('reports.progress_card_report_100_percent')
                     @else
-                        @lang('reports.progress_card_report')
+                        @lang('reports.progress_card_report_100_percent')
                     @endif
                 </a>
             </div>
@@ -151,7 +151,7 @@
             <div class="col-lg-12">
            
                 <div class="white-box">
-                    {{ Form::open(['class' => 'form-horizontal', 'files' => true, 'route' => 'progress_card_report', 'method' => 'POST', 'enctype' => 'multipart/form-data', 'id' => 'search_student']) }}
+                    {{ Form::open(['class' => 'form-horizontal', 'files' => true, 'route' => 'progress_card_report_100_percent', 'method' => 'POST', 'enctype' => 'multipart/form-data', 'id' => 'search_student']) }}
                     <div class="row">
                         <input type="hidden" name="url" id="url" value="{{URL::to('/')}}">
                         <input type="hidden" name="custom_mark_report" value="{{@$custom_mark_report}}">
@@ -261,7 +261,7 @@
 
 @if(isset($is_result_available))
     @if(moduleStatusCheck('University'))
-        @includeIf('university::exam.progress_card_report')
+        @includeIf('university::exam.progress_card_report_100_percent')
     @else
         @include('backEnd.reports._progress_card_report_content');
     @endif
