@@ -4970,8 +4970,8 @@ class RouteListController extends Controller
          ),
          15209 => 
          array (
-           'name' => 'UnAssign Student',
-           'route' => 'unassigned_student',
+           'name' => 'Unassign Student',
+           'route' => 'Unassigned_student',
            'parent_route' => 'student_info',
            'type' => 2,
          ),
