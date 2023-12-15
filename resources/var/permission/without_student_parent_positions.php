@@ -1785,7 +1785,7 @@
             'unassigned_student' => array(
                 'module' => null,
                 'sidebar_menu' => 'student_info',
-                'name' => 'UnAssign Student',
+                'name' => 'Unassign Student',
                 'lang_name' => 'student.unassigned_student',
                 'icon' => null,
                 'svg' => null,
