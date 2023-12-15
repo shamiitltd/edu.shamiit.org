@@ -512,7 +512,7 @@ return [
     'father_names' => 'Father\'s Name',
     'mother_names' => 'Mother\'s Name',
     'unassigned_student_list' => 'Unassigned Student List',
-    'unassigned_student' => 'Unassigned Student',
+    'Unassigned_student' => 'Unassigned Student',
     'certificate_type' => 'Certificate Type',
     'record'=>'Record',
     'class_assign'=>'Class Assign',
