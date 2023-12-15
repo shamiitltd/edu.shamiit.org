@@ -318,7 +318,7 @@
                                                            id="parent_notification" value="0"
                                                            class="common-radio relationButton"
                                                            @if ($setting->parent_notification == 0) checked @endif>
-                                                    <label for="parent_notification" style="margin-right:13px">@lang('examplan::exp.no')</label>
+                                                    <label for="parent_notification" style="margin-right:13.0px">@lang('examplan::exp.no')</label>
                                                 </div>
                                             </div>
                                         </div>
