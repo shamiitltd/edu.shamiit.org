@@ -104,15 +104,15 @@
             </div>
 
             <div class="row">
-            <pre>
-    @dd($data)
-</pre>
+            
                 <div class="col-lg-12">
                     <div class="white-box">
                         
                         {{ Form::open(['class' => 'form-horizontal', 'files' => true, 'route' => 'searchStaff', 'method' => 'POST', 'enctype' => 'multipart/form-data']) }}
                         <div class="row">
-                       
+                        <pre>
+        {{ print_r($data, true) }}
+    </pre>
                             <input type="hidden" name="role_id" id="role_id" value="{{ @$data['role_id'] }}">
                             <input type="hidden" name="staff_no" id="staff_no" value="{{ @$data['staff_no'] }}">
                             <input type="hidden" name="staff_name" id="staff_name" value="{{ @$data['staff_name'] }}">
@@ -121,6 +121,7 @@
                                     {{ __('common.role') }}
                                     <span class="text-danger"> </span>
                                 </label>
+                                
                                 <select class="primary_select  form-control" name="role_id" id="role_id">
                                     <option data-display="@lang('hr.role')" value=""> @lang('common.select') </option>
                                     @foreach ($roles as $key => $value)
