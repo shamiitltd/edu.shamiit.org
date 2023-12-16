@@ -235,27 +235,27 @@
     var data = @json($data);
     var allStaffs = @json($all_staffs);
     var roles = @json($roles);
+          console.log(data);              
+    // $(document).ready(function () {
+    //     $('form').submit(function (event) {
+    //         event.preventDefault();
 
-    $(document).ready(function () {
-        $('form').submit(function (event) {
-            event.preventDefault();
+    //         $.ajax({
+    //             url: $(this).attr('action'),
+    //             type: 'GET',
+    //             data: $(this).serialize(),
+    //             success: function (data) {
+    //                 console.log('Received data:', data);
 
-            $.ajax({
-                url: $(this).attr('action'),
-                type: 'GET',
-                data: $(this).serialize(),
-                success: function (data) {
-                    console.log('Received data:', data);
-
-                    // Assuming data is a JSON representation of the updated table rows
-                    $('tbody').html(data);
-                },
-                error: function (error) {
-                    console.log(error);
-                }
-            });
-        });
-    });
+    //                 // Assuming data is a JSON representation of the updated table rows
+    //                 $('tbody').html(data);
+    //             },
+    //             error: function (error) {
+    //                 console.log(error);
+    //             }
+    //         });
+    //     });
+    // });
 </script>
 
    
