@@ -68,6 +68,7 @@ class SmStaffController extends Controller
                 })
                 ->orderBy('name', 'asc')
                 ->get();
+                {{print_r($roles); die();}}
 
             return view('backEnd.humanResource.staff_list', compact('roles'));
 
