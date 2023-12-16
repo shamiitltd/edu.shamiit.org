@@ -809,7 +809,8 @@ class SmStaffController extends Controller
             }
 
             {{dd($staff); }}
-            {{dd($roles); die(); }}
+            {{dd($roles); }}
+            {{die();}}
 
             return view('backEnd.humanResource.staff_list', compact('all_staffs', 'roles','data'));
         } catch (\Exception $e) {
