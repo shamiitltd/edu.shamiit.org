@@ -235,7 +235,7 @@
     var data = @json($data);
     var allStaffs = @json($all_staffs);
     var roles = @json($roles);
-          console.log(data);              
+    console.log(JSON.parse(data));
     // $(document).ready(function () {
     //     $('form').submit(function (event) {
     //         event.preventDefault();
