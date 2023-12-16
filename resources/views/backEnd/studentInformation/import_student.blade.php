@@ -214,7 +214,7 @@
     <button class="" type="button">
         <label class="primary-btn small fix-gr-bg" for="upload_content_file">
             <span class="ripple rippleEffect"
-                style="width: 56.8125px; height: 56.8125px; top: -16.4062px; left: 10.4219px;">
+                style="width: 56.81251px; height: 56.8125px; top: -16.4062px; left: 10.4219px;">
             </span>
             @lang('common.browse')
         </label>
