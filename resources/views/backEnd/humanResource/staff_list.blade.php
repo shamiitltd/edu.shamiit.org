@@ -109,7 +109,7 @@
                         
                         {{ Form::open(['class' => 'form-horizontal', 'files' => true, 'route' => 'searchStaff', 'method' => 'POST', 'enctype' => 'multipart/form-data']) }}
                         <div class="row">
-                            {{print_r($data);}}
+                       
                             <input type="hidden" name="role_id" id="role_id" value="{{ @$data['role_id'] }}">
                             <input type="hidden" name="staff_no" id="staff_no" value="{{ @$data['staff_no'] }}">
                             <input type="hidden" name="staff_name" id="staff_name" value="{{ @$data['staff_name'] }}">
@@ -126,7 +126,8 @@
                                     @endforeach
                                 </select>
                             </div>
-{{print_r($roles);}}
+                           
+
                             <div class="col-lg-4 mt-30-md">
                                 <div class="primary_input">
                                     <label class="primary_input_label" for="">
@@ -149,6 +150,12 @@
 
                                 </div>
                             </div>
+                            @foreach ($data as $value)
+                                {{$value}}
+                            @endforeach
+                            @foreach ($roles as $value)
+                                {{$value}}
+                            @endforeach
                             <div class="col-lg-12 mt-20 text-right">
                                 <button type="submit" class="primary-btn small fix-gr-bg">
                                     <span class="ti-search pr-2"></span>
