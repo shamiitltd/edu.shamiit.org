@@ -808,7 +808,9 @@ class SmStaffController extends Controller
                 })->get();
             }
 
-            {{dd($all_staffs);    die();}}
+            {{dd($staff); }}
+            {{dd($roles); die(); }}
+
             return view('backEnd.humanResource.staff_list', compact('all_staffs', 'roles','data'));
         } catch (\Exception $e) {
             Toastr::error('Operation Failed', 'Failed');
