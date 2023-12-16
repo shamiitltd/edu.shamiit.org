@@ -232,7 +232,7 @@
 @push('script')  
 
 <script>
-    // var data = @json($data);
+// var data = @json($data);
     // var allStaffs = @json($all_staffs);
     // var roles = @json($roles);
     // console.log(JSON.parse(data));
