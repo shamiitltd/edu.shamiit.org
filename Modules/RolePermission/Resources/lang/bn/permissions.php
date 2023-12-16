@@ -271,7 +271,7 @@ return [
     "Class" => "ক্লাস",
     "Section" => "সেকশন",
     "Class Room" => "ক্লাস রুম",
-    "Class Time Setup" => "ক্লাস টাইম সেটআপ",
+    "Class SMS Sending Time" => "ক্লাস টাইম সেটআপ",
     "Homework" => "হোমওয়ার্ক",
     "Add Homework" => "হোমওয়ার্ক যোগ করো",
     "Homework List" => "হোমওয়ার্ক তালিকা",
