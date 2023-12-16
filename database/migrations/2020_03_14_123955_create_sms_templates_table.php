@@ -388,7 +388,7 @@ class CreateSmsTemplatesTable extends Migration
                                 </div>
                             </div>
                             <div style="background-color:#415094;">
-                                <div class="block-grid" style="min-width:320px;max-width:600px;margin:0 auto;background-color:#ffffff;padding-top:25px;border-top-right-radius:30px;border-top-left-radius:30px;">
+                                <div class="block-grid" style="min-width:320px;max-width:600.0px;margin:0 auto;background-color:#ffffff;padding-top:25px;border-top-right-radius:30px;border-top-left-radius:30px;">
                                     <div style="border-collapse:collapse;width:100%;background-color:transparent;">
                                         <div class="col num12" style="min-width:320px;max-width:600px;vertical-align:top;width:600px;">
                                             <div class="col_cont" style="width:100%;">
