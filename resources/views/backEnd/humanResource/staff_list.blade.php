@@ -104,6 +104,9 @@
             </div>
 
             <div class="row">
+            <pre>
+    @dd($data)
+</pre>
                 <div class="col-lg-12">
                     <div class="white-box">
                         
@@ -150,9 +153,7 @@
 
                                 </div>
                             </div>
-                            <pre>
-    @dd($data)
-</pre>
+                            
                             <div class="col-lg-12 mt-20 text-right">
                                 <button type="submit" class="primary-btn small fix-gr-bg">
                                     <span class="ti-search pr-2"></span>
