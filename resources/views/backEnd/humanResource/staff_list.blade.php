@@ -343,16 +343,17 @@
 // Initialize DataTable
 var staffTable = $('.data-table').DataTable({
     data: staffData,
-    {data: 'DT_RowIndex', name: 'id'},
-                           {data: 'full_name', name: 'full_name'},
-                           {data: 'roles.name', name: 'roles.name'},
-                           {data: 'departments.name', name: 'departments.name'},
-                           {data: 'designations.title', name: 'designations.title'},
-                           {data: 'mobile', name: 'mobile'},
-                           {data: 'email', name: 'email'},
-                           {data: 'switch', name: 'switch'},
-                           {data: 'action', name: 'action', orderable: false, searchable: true},
-                        ],
+    columns: [
+        { data: 'staff_no' },
+        { data: 'full_name' },
+        { data: 'roles.name' },
+        { data: 'departments.name' },
+        { data: 'designations.title' },
+        { data: 'mobile' },
+        { data: 'email' },
+        { data: 'status' },
+        { data: 'action' }
+    ]
 });
     }
 
