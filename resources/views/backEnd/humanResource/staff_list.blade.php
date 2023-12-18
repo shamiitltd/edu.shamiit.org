@@ -165,7 +165,6 @@
                     </div>
                 </div>
             </div>
-            {{ $all_staffs.full_name;}}
                 <div class="row mt-40 full_wide_table">
                     <div class="col-lg-12">
                         <div class="row">
