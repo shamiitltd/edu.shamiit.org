@@ -343,4 +343,52 @@
         modal.modal('show');
     }
 </script>
+
+<script>
+        // JavaScript code to dynamically populate the table
+        var staffData = [];
+
+        // Use Blade @foreach to loop through the PHP array and create a JavaScript array
+        @foreach ($all_staffs as $staff)
+            staffData.push({
+                staff_no: '{{ $staff->staff_no }}',
+                name: '{{ $staff->name }}',
+                role: '{{ $staff->role }}',
+                department: '{{ $staff->department }}',
+                designation: '{{ $staff->designation }}',
+                mobile: '{{ $staff->mobile }}',
+                email: '{{ $staff->email }}',
+                status: '{{ $staff->status }}',
+                action: '{{ $staff->action }}'
+            });
+        @endforeach
+
+        var tableBody = document.getElementById('table_id').getElementsByTagName('tbody')[0];
+
+        staffData.forEach(function(staff) {
+            var newRow = tableBody.insertRow(tableBody.rows.length);
+
+            // Create cells and populate them
+            var cell1 = newRow.insertCell(0);
+            var cell2 = newRow.insertCell(1);
+            var cell3 = newRow.insertCell(2);
+            var cell4 = newRow.insertCell(3);
+            var cell5 = newRow.insertCell(4);
+            var cell6 = newRow.insertCell(5);
+            var cell7 = newRow.insertCell(6);
+            var cell8 = newRow.insertCell(7);
+            var cell9 = newRow.insertCell(8);
+
+            cell1.innerHTML = staff.staff_no;
+            cell2.innerHTML = staff.name;
+            cell3.innerHTML = staff.role;
+            cell4.innerHTML = staff.department;
+            cell5.innerHTML = staff.designation;
+            cell6.innerHTML = staff.mobile;
+            cell7.innerHTML = staff.email;
+            cell8.innerHTML = staff.status;
+            cell9.innerHTML = staff.action;
+        });
+    </script>
+
 @endpush
