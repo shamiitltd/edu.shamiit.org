@@ -89,13 +89,13 @@
                                 @lang('admin.student')</option> 
                                 <option value="3" {{ in_array(3, $applicableUsers) ? 'selected' : '' }} >
                                 @lang('admin.guardian')</option>
-                            <option value="1">
+                            <option value="0">
                                 
                                 @lang('admin.staff')</option>
                         @else
                             <option value="2">@lang('admin.student')</option>
                             <option value="3">@lang('admin.guardian')</option>
-                            <option value="1">@lang('admin.staff')</option>
+                            <option value="0">@lang('admin.staff')</option>
                         @endif
                     </select>
                     <div class="text-danger" id="applicableUserError"></div>
