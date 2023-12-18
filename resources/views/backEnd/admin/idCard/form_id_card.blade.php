@@ -9,7 +9,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="primary_input">
-                    <label class="primary_input_label" for="">@lang('admin._card_title') <span class="text-danger">
+                    <label class="primary_input_label" for="">@lang('admin.id_card_title') <span class="text-danger">
                             *</span></label>
                     <input class="primary_input_field form-control{{ $errors->has('title') ? ' is-invalid' : '' }}"
                         type="text" name="title" autocomplete="off"
