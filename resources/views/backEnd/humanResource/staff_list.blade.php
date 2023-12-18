@@ -337,6 +337,28 @@
             } );
 </script>
 <script>
+$(document).ready(function () {
+        // Fetch the data from Blade
+        var staffData = @json($all_staffs);
+
+        // Initialize DataTable
+        var staffTable = $('.data-table').DataTable({
+            data: staffData,
+            columns: [
+                { data: 'staff_no' },
+                { data: 'name' },
+                { data: 'role' },
+                { data: 'department' },
+                { data: 'designation' },
+                { data: 'mobile' },
+                { data: 'email' },
+                { data: 'status' },
+                { data: 'action' }
+            ]
+        });
+    });
+</script>
+<script>
     function deleteStaff(id){
         var modal = $('#deleteStaffModal');
         modal.find('input[name=id]').val(id)

@@ -851,7 +851,7 @@ class SmStaffController extends Controller
             }
         
             $all_staffs = $staffQuery->where('school_id', Auth::user()->school_id)->get();
-            {{dd($all_staffs); die();}}
+           
     // Dynamic role filtering based on user's role
     $excludeRoleIds = [1, 2, 3, 5];
     $roleQuery = InfixRole::where('is_saas', 0)
