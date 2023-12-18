@@ -344,10 +344,10 @@
     }
 </script>
 
-<script>
+<!-- <script> -->
         // JavaScript code to dynamically populate the table
-        var staffData = [];
-        console.log($all_staffs);
+        // var staffData = [];
+        // console.log($all_staffs);
         // Use Blade @foreach to loop through the PHP array and create a JavaScript array
         // @foreach ($all_staffs as $staff)
         //     staffData.push({
@@ -389,6 +389,6 @@
         //     cell8.innerHTML = staff.status;
         //     cell9.innerHTML = staff.action;
         // });
-    </script>
+    <!-- </script> -->
 
 @endpush
