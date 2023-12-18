@@ -155,7 +155,7 @@
                             </div>
                             
                             <div class="col-lg-12 mt-20 text-right">
-                                <button type="submit" class="primary-btn small fix-gr-bg">
+                                <button type="submit" class="primary-btn small fix-gr-bg btnsearch">
                                     <span class="ti-search pr-2"></span>
                                     @lang('common.search')
                                 </button>
@@ -337,25 +337,35 @@
             } );
 </script>
 <script>
-$(document).ready(function () {
-        // Fetch the data from Blade
+    function initializeDataTable() {
         var staffData = @json($all_staffs);
 
-        // Initialize DataTable
-        var staffTable = $('.data-table').DataTable({
-            data: staffData,
-            columns: [
-                { data: 'staff_no' },
-                { data: 'name' },
-                { data: 'role' },
-                { data: 'department' },
-                { data: 'designation' },
-                { data: 'mobile' },
-                { data: 'email' },
-                { data: 'status' },
-                { data: 'action' }
-            ]
+// Initialize DataTable
+var staffTable = $('.data-table').DataTable({
+    data: staffData,
+    {data: 'DT_RowIndex', name: 'id'},
+                           {data: 'full_name', name: 'full_name'},
+                           {data: 'roles.name', name: 'roles.name'},
+                           {data: 'departments.name', name: 'departments.name'},
+                           {data: 'designations.title', name: 'designations.title'},
+                           {data: 'mobile', name: 'mobile'},
+                           {data: 'email', name: 'email'},
+                           {data: 'switch', name: 'switch'},
+                           {data: 'action', name: 'action', orderable: false, searchable: true},
+                        ],
+});
+    }
+
+$(document).ready(function () {
+        // Fetch the data from Blade
+        initializeDataTable();
+        $('.btnsearch').click(function () {
+            // Perform your search logic here
+
+            // After search, reinitialize DataTable
+            initializeDataTable();
         });
+       
     });
 </script>
 <script>
