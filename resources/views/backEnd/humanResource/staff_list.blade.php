@@ -165,6 +165,7 @@
                     </div>
                 </div>
             </div>
+            {{ $all_staffs.full_name;}}
                 <div class="row mt-40 full_wide_table">
                     <div class="col-lg-12">
                         <div class="row">
@@ -336,7 +337,7 @@
                 });
             } );
 </script>
-<script>
+<!-- <script>
     function initializeDataTable() {
         var staffData = @json($all_staffs);
 
@@ -368,7 +369,7 @@ $(document).ready(function () {
         });
        
     });
-</script>
+</script> -->
 <script>
     function deleteStaff(id){
         var modal = $('#deleteStaffModal');
