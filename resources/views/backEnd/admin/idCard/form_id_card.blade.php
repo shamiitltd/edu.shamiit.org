@@ -85,17 +85,16 @@
                             @php
                                 $applicableUsers = json_decode($id_card->role_id);
                             @endphp
-                            <option value="2" {{ in_array(2, $applicableUsers) ? 'selected' : '' }} >
-                                @lang('admin.student')</option> 
-                                <option value="3" {{ in_array(3, $applicableUsers) ? 'selected' : '' }} >
+                            <option value="2" {{ in_array(2, $applicableUsers) ? 'selected' : '' }} selected>
+                                @lang('admin.student')</option>
+                            <option value="3" {{ in_array(3, $applicableUsers) ? 'selected' : '' }}>
                                 @lang('admin.guardian')</option>
-                                <option value="0"
-                                @if (!in_array(3, $applicableUsers) && !in_array(2, $applicableUsers)) {{'selected' }}> @lang('admin.staff')</option>
+                            <option value="0"
+                                @if (!in_array(3, $applicableUsers) && !in_array(2, $applicableUsers)) {{ 'selected' }} @endif>@lang('admin.staff')</option>
                         @else
                             <option value="2">@lang('admin.student')</option>
                             <option value="3">@lang('admin.guardian')</option>
                             <option value="0">@lang('admin.staff')</option>
-                            
                         @endif
                     </select>
                     <div class="text-danger" id="applicableUserError"></div>
@@ -407,7 +406,7 @@
             </div>
             <button class="primary-btn icon-only fix-gr-bg id_card_button" type="button" id="deleteSignImg">
                 <span class="ti-trash"></span>
-          000000000000000000  </button>
+            </button>
         </div>
 
         <div class="row mt-25 admissionNo">
