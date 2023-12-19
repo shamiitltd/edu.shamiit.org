@@ -155,7 +155,7 @@
                             </div>
                             
                             <div class="col-lg-12 mt-20 text-right">
-                                <button type="button" class="primary-btn small fix-gr-bg btnsearch" id="searchButton">
+                                <button type="button" class="primary-btn small fix-gr-bg btnsearch" id="searchButton" data-all-staffs="@json($all_staffs)">
                                     <span class="ti-search pr-2"></span>
                                     @lang('common.search')
                                 </button>
@@ -348,29 +348,16 @@
 <!-- Add this script to your blade file -->
 <script>
     $(document).ready(function () {
-    $("#searchButton").click(function () {
-        // Assuming you have an HTML element with id 'messageContainer'
-        // var messageContainer = document.getElementById('messageContainer');
+        $('#searchButton').click(function () {
+            // Retrieve the data attribute value
+            var allStaffsData = $(this).data('all-staffs');
 
-        // // Clear existing content in the container
-        // messageContainer.innerHTML = '';
+            // Now 'allStaffsData' contains your staffs data in JavaScript object form
+            console.log(allStaffsData);
 
-        // // Assuming 'staffs' is an array passed from the backend
-        // var staffs = @json($all_staffs);
-
-        // // Create a <p> element for each staff member and append to the container
-        // staffs.forEach(function (staff) {
-        //     var messageElement = document.createElement('p');
-        //     messageElement.textContent = JSON.stringify(staff);
-        //     messageContainer.appendChild(messageElement);
-        // });
-
-        var staffData = @json($all_staffs);
-
-console.log(staffData);
-
+            // You can use this data as needed in your JavaScript logic
+        });
     });
-});
 
 </script>
 
