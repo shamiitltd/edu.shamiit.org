@@ -349,15 +349,12 @@
 <script>
     var messageContainer = document.getElementById('messageContainer');
     var all_staffs = @json($all_staffs);
-    var staff=[];
-    foreach(all_staffs as staffs){
-staff=staffs.full_name;
-    }
+    
     $(document).ready(function () { 
             $("#searchButton").click(function () { 
                 var messageElement = document.createElement('p');
             // Set the text content of the paragraph
-            messageElement.textContent = staff;
+            messageElement.textContent = all_staffs.full_name;
 
             // Append the paragraph element to the message container
             messageContainer.appendChild(messageElement);
