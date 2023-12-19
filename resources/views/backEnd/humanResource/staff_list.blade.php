@@ -350,20 +350,25 @@
     $(document).ready(function () {
     $("#searchButton").click(function () {
         // Assuming you have an HTML element with id 'messageContainer'
-        var messageContainer = document.getElementById('messageContainer');
+        // var messageContainer = document.getElementById('messageContainer');
 
-        // Clear existing content in the container
-        messageContainer.innerHTML = '';
+        // // Clear existing content in the container
+        // messageContainer.innerHTML = '';
 
-        // Assuming 'staffs' is an array passed from the backend
-        var staffs = @json($all_staffs);
+        // // Assuming 'staffs' is an array passed from the backend
+        // var staffs = @json($all_staffs);
 
-        // Create a <p> element for each staff member and append to the container
+        // // Create a <p> element for each staff member and append to the container
+        // staffs.forEach(function (staff) {
+        //     var messageElement = document.createElement('p');
+        //     messageElement.textContent = JSON.stringify(staff);
+        //     messageContainer.appendChild(messageElement);
+        // });
+
         staffs.forEach(function (staff) {
-            var messageElement = document.createElement('p');
-            messageElement.textContent = JSON.stringify(staff);
-            messageContainer.appendChild(messageElement);
+            console.log(JSON.stringify(staff));
         });
+
     });
 });
 
