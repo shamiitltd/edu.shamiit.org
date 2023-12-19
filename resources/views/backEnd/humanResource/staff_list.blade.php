@@ -108,7 +108,7 @@
                 <div class="col-lg-12">
                     <div class="white-box">
                         
-                        {{ Form::open(['class' => 'form-horizontal', 'files' => true, 'route' => 'searchStaff', 'method' => 'POST', 'enctype' => 'multipart/form-data']) }}
+                        {{ Form::open(['class' => 'form-horizontal', 'files' => true,  'method' => 'POST', 'enctype' => 'multipart/form-data']) }}
                         <div class="row">
                      
                             <input type="hidden" name="role_id" id="role_id" value="{{ @$data['role_id'] }}">
@@ -347,7 +347,12 @@
 
 <!-- Add this script to your blade file -->
 <script>
-    window.alert($all_staff);
+     $(document).ready(function () {
+       
+        $('#searchButton').click(function () {
+            window.alert($all_staff);
+        });
+    });
 </script>
 
 @endpush
