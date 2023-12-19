@@ -365,9 +365,9 @@
         //     messageContainer.appendChild(messageElement);
         // });
 
-        staffs.forEach(function (staff) {
-            console.log(JSON.stringify(staff));
-        });
+        var staffData = @json($all_staffs);
+
+console.log(staffData);
 
     });
 });
