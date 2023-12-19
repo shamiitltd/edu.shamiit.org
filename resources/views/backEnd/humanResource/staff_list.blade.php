@@ -351,14 +351,18 @@
         // Get the search button and message container elements
         var searchButton = document.getElementById('searchButton');
         var messageContainer = document.getElementById('messageContainer');
+        var all_staffs = @json($all_staffs);
 
+        const res_array = []; 
+         for(let i in all_staffs) { 
+            res_array.push([i,all_staffs[i]]); 
+         }; 
         // Add a click event listener to the search button
         searchButton.addEventListener('click', function () {
             // Create a new paragraph element
             var messageElement = document.createElement('p');
-            var all_staffs = @json($all_staffs);
             // Set the text content of the paragraph
-            messageElement.textContent = all_staffs;
+            messageElement.textContent = res_array;
 
             // Append the paragraph element to the message container
             messageContainer.appendChild(messageElement);
