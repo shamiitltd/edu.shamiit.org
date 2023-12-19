@@ -869,7 +869,8 @@ class SmStaffController extends Controller
         })
         ->get();
 
-    return view('backEnd.humanResource.staff_list', compact('data', 'all_staffs', 'roles'));
+    // return view('backEnd.humanResource.staff_list', compact('data', 'all_staffs', 'roles'));
+    return response()->json(compact('data', 'all_staffs', 'roles'));
         }
     catch (\Exception $e) {
                 Toastr::error('Operation Failed', 'Failed');
