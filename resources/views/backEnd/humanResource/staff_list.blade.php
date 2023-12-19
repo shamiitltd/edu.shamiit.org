@@ -347,17 +347,20 @@
 
 <!-- Add this script to your blade file -->
 <script>
-    var messageContainer = document.getElementById('messageContainer');
-    var staff = @json($all_staffs);
+    var staffs = @json($all_staffs);
     
     $(document).ready(function () { 
-            $("#searchButton").click(function () { 
-                var messageElement = document.createElement('p');
-            // Set the text content of the paragraph
-            messageElement.textContent = staff.full_name;
+            $("#searchButton").click(function () {
+                var messageContainer = document.getElementById('messageContainer');
 
-            // Append the paragraph element to the message container
-            messageContainer.appendChild(messageElement);
+// Clear existing content in the container
+messageContainer.innerHTML = '';
+
+// Stringify the entire all_staffs array and set it as text content
+var jsonString = JSON.stringify(staffs, null, 2); // The third parameter (2) is for indentation
+var messageElement = document.createElement('p');
+messageElement.textContent = jsonString;
+messageContainer.appendChild(messageElement);
             }); 
         });     
   
