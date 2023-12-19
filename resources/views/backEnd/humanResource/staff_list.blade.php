@@ -375,26 +375,19 @@
     $(document).ready(function () {
         // Initialize DataTable on page load
         initializeDataTable(@json($all_staffs));
-
+        var messageContainer = document.getElementById('messageContainer');
         // Event listener for search button click
         $('.btnsearch').click(function () {
             // Perform your Ajax request to fetch updated data
-            $.ajax({
-                url: 'staff_directory',  // Replace with your actual search endpoint
-                type: 'GET',
-                data: {
-                    // Add any parameters needed for the search
-                },
-                success: function (data) {
-                    // Update the DataTable with the new data
-                    initializeDataTable(data);
-                },
-                error: function (error) {
-                    console.log(error);
-                }
-            });
-        });
+            var messageElement = document.createElement('p');
+
+// Set the text content of the paragraph
+messageElement.textContent = @json($all_staffs);;
+
+// Append the paragraph element to the message container
+messageContainer.appendChild(messageElement);
     });
+});
 </script>
 
 @endpush
