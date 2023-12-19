@@ -347,23 +347,26 @@
 
 <!-- Add this script to your blade file -->
 <script>
-    var staff1 = @json($all_staffs);
-    
-    $(document).ready(function () { 
-            $("#searchButton").click(function () {
-                var messageContainer = document.getElementById('messageContainer');
+    $(document).ready(function () {
+    $("#searchButton").click(function () {
+        // Assuming you have an HTML element with id 'messageContainer'
+        var messageContainer = document.getElementById('messageContainer');
 
-// Clear existing content in the container
-messageContainer.innerHTML = '';
+        // Clear existing content in the container
+        messageContainer.innerHTML = '';
 
-// Stringify the entire all_staffs array and set it as text content
-var jsonString = JSON.stringify(staff1, null, 2); // The third parameter (2) is for indentation
-var messageElement = document.createElement('p');
-messageElement.textContent = jsonString;
-messageContainer.appendChild(messageElement);
-            }); 
-        });     
-  
+        // Assuming 'staffs' is an array passed from the backend
+        var staffs = @json($all_staffs);
+
+        // Create a <p> element for each staff member and append to the container
+        staffs.forEach(function (staff) {
+            var messageElement = document.createElement('p');
+            messageElement.textContent = JSON.stringify(staff);
+            messageContainer.appendChild(messageElement);
+        });
+    });
+});
+
 </script>
 
 @endpush
