@@ -347,7 +347,7 @@
 
 <!-- Add this script to your blade file -->
 <script>
-    var staffs = @json($all_staffs);
+    var staff1 = @json($all_staffs);
     
     $(document).ready(function () { 
             $("#searchButton").click(function () {
@@ -357,7 +357,7 @@
 messageContainer.innerHTML = '';
 
 // Stringify the entire all_staffs array and set it as text content
-var jsonString = JSON.stringify(staffs, null, 2); // The third parameter (2) is for indentation
+var jsonString = JSON.stringify(staff1, null, 2); // The third parameter (2) is for indentation
 var messageElement = document.createElement('p');
 messageElement.textContent = jsonString;
 messageContainer.appendChild(messageElement);
