@@ -104,11 +104,11 @@
             </div>
 
             <div class="row">
-            <div id="messageContainer"></div>
+            
                 <div class="col-lg-12">
                     <div class="white-box">
                         
-                        {{ Form::open(['class' => 'form-horizontal', 'files' => true,  'method' => 'POST', 'enctype' => 'multipart/form-data']) }}
+                        {{ Form::open(['class' => 'form-horizontal', 'files' => true, 'route' => 'searchStaff', 'method' => 'POST', 'enctype' => 'multipart/form-data']) }}
                         <div class="row">
                      
                             <input type="hidden" name="role_id" id="role_id" value="{{ @$data['role_id'] }}">
@@ -155,7 +155,7 @@
                             </div>
                             
                             <div class="col-lg-12 mt-20 text-right">
-                                <button type="button" class="primary-btn small fix-gr-bg btnsearch" id="searchButton">
+                                <button type="button" class="primary-btn small fix-gr-bg btnsearch">
                                     <span class="ti-search pr-2"></span>
                                     @lang('common.search')
                                 </button>
@@ -347,25 +347,54 @@
 
 <!-- Add this script to your blade file -->
 <script>
-      // Document ready function
-      document.addEventListener('DOMContentLoaded', function () {
-        // Get the search button and message container elements
-        var searchButton = document.getElementById('searchButton');
-        var messageContainer = document.getElementById('messageContainer');
+    // Function to initialize DataTable
+    function initializeDataTable(staffData) {
+        // Check if DataTable is already initialized, destroy it, and reinitialize
+        if ($.fn.DataTable.isDataTable('.data-table')) {
+            $('.data-table').DataTable().destroy();
+        }
 
-        // Add a click event listener to the search button
-        searchButton.addEventListener('click', function () {
-            // Create a new paragraph element
-            var messageElement = document.createElement('p');
+        // Reinitialize DataTable
+        var staffTable = $('.data-table').DataTable({
+            data: staffData,
+            columns: [
+                {data: 'DT_RowIndex', name: 'id'},
+                           {data: 'full_name', name: 'full_name'},
+                           {data: 'roles.name', name: 'roles.name'},
+                           {data: 'departments.name', name: 'departments.name'},
+                           {data: 'designations.title', name: 'designations.title'},
+                           {data: 'mobile', name: 'mobile'},
+                           {data: 'email', name: 'email'},
+                           {data: 'switch', name: 'switch'},
+                           {data: 'action', name: 'action', orderable: false, searchable: true},
+                        ],
+        });
+    }
 
-            // Set the text content of the paragraph
-            messageElement.textContent = 'Hello, Search Button Clicked!';
+    // Document ready function
+    $(document).ready(function () {
+        // Initialize DataTable on page load
+        initializeDataTable(@json($all_staffs));
 
-            // Append the paragraph element to the message container
-            messageContainer.appendChild(messageElement);
+        // Event listener for search button click
+        $('btnsearch').click(function () {
+            // Perform your Ajax request to fetch updated data
+            $.ajax({
+                url: 'staff_directory',  // Replace with your actual search endpoint
+                type: 'GET',
+                data: {
+                    // Add any parameters needed for the search
+                },
+                success: function (data) {
+                    // Update the DataTable with the new data
+                    initializeDataTable(data);
+                },
+                error: function (error) {
+                    console.log(error);
+                }
+            });
         });
     });
-
 </script>
 
 @endpush
