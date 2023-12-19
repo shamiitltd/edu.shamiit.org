@@ -359,7 +359,7 @@
             var messageElement = document.createElement('p');
 
 // Set the text content of the paragraph
-messageElement.textContent = @json($all_staffs);;
+messageElement.textContent = @json($all_staffs);
 
 // Append the paragraph element to the message container
 messageContainer.appendChild(messageElement);
