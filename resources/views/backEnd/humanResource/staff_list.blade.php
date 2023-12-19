@@ -336,39 +336,7 @@
                 });
             } );
 </script>
-<!-- <script>
-    function initializeDataTable() {
-        var staffData = @json($all_staffs);
 
-// Initialize DataTable
-var staffTable = $('.data-table').DataTable({
-    data: staffData,
-    columns: [
-        { data: 'staff_no' },
-        { data: 'full_name' },
-        { data: 'roles.name' },
-        { data: 'departments.name' },
-        { data: 'designations.title' },
-        { data: 'mobile' },
-        { data: 'email' },
-        { data: 'status' },
-        { data: 'action' }
-    ]
-});
-    }
-
-$(document).ready(function () {
-        // Fetch the data from Blade
-        initializeDataTable();
-        $('.btnsearch').click(function () {
-            // Perform your search logic here
-
-            // After search, reinitialize DataTable
-            initializeDataTable();
-        });
-       
-    });
-</script> -->
 <script>
     function deleteStaff(id){
         var modal = $('#deleteStaffModal');
