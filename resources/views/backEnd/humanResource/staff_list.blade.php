@@ -377,7 +377,7 @@
         initializeDataTable(@json($all_staffs));
 
         // Event listener for search button click
-        $('btnsearch').click(function () {
+        $('.btnsearch').click(function () {
             // Perform your Ajax request to fetch updated data
             $.ajax({
                 url: 'staff_directory',  // Replace with your actual search endpoint
