@@ -349,7 +349,7 @@
 <script>
      $(document).ready(function () {
        
-        $('#searchButton').click(function () {
+        $('.btnsearch').click(function () {
             window.alert($all_staff);
         });
     });
