@@ -350,7 +350,7 @@
      $(document).ready(function () {
        
         $('.btnsearch').click(function () {
-            window.alert($all_staff);
+            window.alert($all_staffs);
         });
     });
 </script>
