@@ -347,54 +347,7 @@
 
 <!-- Add this script to your blade file -->
 <script>
-    // Function to initialize DataTable
-    function initializeDataTable(staffData) {
-        // Check if DataTable is already initialized, destroy it, and reinitialize
-        if ($.fn.DataTable.isDataTable('.data-table')) {
-            $('.data-table').DataTable().destroy();
-        }
-
-        // Reinitialize DataTable
-        var staffTable = $('.data-table').DataTable({
-            data: staffData,
-            columns: [
-                { data: 'staff_no' },
-                           {data: 'full_name', name: 'full_name'},
-                           {data: 'roles.name', name: 'roles.name'},
-                           {data: 'departments.name', name: 'departments.name'},
-                           {data: 'designations.title', name: 'designations.title'},
-                           {data: 'mobile', name: 'mobile'},
-                           {data: 'email', name: 'email'},
-                           {data: 'switch', name: 'switch'},
-                           {data: 'action', name: 'action', orderable: false, searchable: true},
-            ]
-        });
-    }
-
-    // Document ready function
-    $(document).ready(function () {
-        // Initialize DataTable on page load
-        initializeDataTable(@json($all_staffs));
-
-        // Event listener for search button click
-        $('.btnsearch').click(function () {
-            // Perform your Ajax request to fetch updated data
-            $.ajax({
-                url: 'staff_directory',  // Replace with your actual search endpoint
-                type: 'GET',
-                data: {
-                    // Add any parameters needed for the search
-                },
-                success: function (data) {
-                    // Update the DataTable with the new data
-                    initializeDataTable(data);
-                },
-                error: function (error) {
-                    console.log(error);
-                }
-            });
-        });
-    });
+    console.log($all_staff);
 </script>
 
 @endpush
