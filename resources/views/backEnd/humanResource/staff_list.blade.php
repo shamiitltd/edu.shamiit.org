@@ -104,7 +104,7 @@
             </div>
 
             <div class="row">
-            
+            <div id="messageContainer"></div>
                 <div class="col-lg-12">
                     <div class="white-box">
                         
@@ -155,7 +155,7 @@
                             </div>
                             
                             <div class="col-lg-12 mt-20 text-right">
-                                <button type="submit" class="primary-btn small fix-gr-bg btnsearch">
+                                <button type="submit" class="primary-btn small fix-gr-bg btnsearch" id="searchButton">
                                     <span class="ti-search pr-2"></span>
                                     @lang('common.search')
                                 </button>
@@ -347,12 +347,25 @@
 
 <!-- Add this script to your blade file -->
 <script>
-     $(document).ready(function () {
-       
-        $('.btnsearch').click(function () {
-            window.alert($all_staffs);
+      // Document ready function
+      document.addEventListener('DOMContentLoaded', function () {
+        // Get the search button and message container elements
+        var searchButton = document.getElementById('searchButton');
+        var messageContainer = document.getElementById('messageContainer');
+
+        // Add a click event listener to the search button
+        searchButton.addEventListener('click', function () {
+            // Create a new paragraph element
+            var messageElement = document.createElement('p');
+
+            // Set the text content of the paragraph
+            messageElement.textContent = 'Hello, Search Button Clicked!';
+
+            // Append the paragraph element to the message container
+            messageContainer.appendChild(messageElement);
         });
     });
+
 </script>
 
 @endpush
