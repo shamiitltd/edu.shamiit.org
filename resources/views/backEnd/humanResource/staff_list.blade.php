@@ -104,7 +104,7 @@
             </div>
 
             <div class="row">
-            
+            <div id="messageContainer"></div>
                 <div class="col-lg-12">
                     <div class="white-box">
                         
@@ -347,34 +347,11 @@
 
 <!-- Add this script to your blade file -->
 <script>
-    // Function to initialize DataTable
-    function initializeDataTable(staffData) {
-        // Check if DataTable is already initialized, destroy it, and reinitialize
-        if ($.fn.DataTable.isDataTable('.data-table')) {
-            $('.data-table').DataTable().destroy();
-        }
-
-        // Reinitialize DataTable
-        var staffTable = $('.data-table').DataTable({
-            data: staffData,
-            columns: [
-                {data: 'DT_RowIndex', name: 'id'},
-                           {data: 'full_name', name: 'full_name'},
-                           {data: 'roles.name', name: 'roles.name'},
-                           {data: 'departments.name', name: 'departments.name'},
-                           {data: 'designations.title', name: 'designations.title'},
-                           {data: 'mobile', name: 'mobile'},
-                           {data: 'email', name: 'email'},
-                           {data: 'switch', name: 'switch'},
-                           {data: 'action', name: 'action', orderable: false, searchable: true},
-                        ],
-        });
-    }
-
+    
     // Document ready function
     $(document).ready(function () {
         // Initialize DataTable on page load
-        initializeDataTable(@json($all_staffs));
+        
         var messageContainer = document.getElementById('messageContainer');
         // Event listener for search button click
         $('.btnsearch').click(function () {
