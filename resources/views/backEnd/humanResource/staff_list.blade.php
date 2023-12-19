@@ -347,7 +347,7 @@
 
 <!-- Add this script to your blade file -->
 <script>
-    console.log($all_staff);
+    window.alert($all_staff);
 </script>
 
 @endpush
