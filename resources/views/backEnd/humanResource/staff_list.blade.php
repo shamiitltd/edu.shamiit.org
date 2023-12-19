@@ -155,7 +155,7 @@
                             </div>
                             
                             <div class="col-lg-12 mt-20 text-right">
-                                <button type="button" class="primary-btn small fix-gr-bg btnsearch">
+                                <button type="button" class="primary-btn small fix-gr-bg btnsearch" id="searchButton">
                                     <span class="ti-search pr-2"></span>
                                     @lang('common.search')
                                 </button>
@@ -347,24 +347,23 @@
 
 <!-- Add this script to your blade file -->
 <script>
-    
-    // Document ready function
-    $(document).ready(function () {
-        // Initialize DataTable on page load
-        
+  document.addEventListener('DOMContentLoaded', function () {
+        // Get the search button and message container elements
+        var searchButton = document.getElementById('searchButton');
         var messageContainer = document.getElementById('messageContainer');
-        // Event listener for search button click
-        $('.btnsearch').click(function () {
-            // Perform your Ajax request to fetch updated data
+
+        // Add a click event listener to the search button
+        searchButton.addEventListener('click', function () {
+            // Create a new paragraph element
             var messageElement = document.createElement('p');
+            var all_staffs = @json($all_staffs);
+            // Set the text content of the paragraph
+            messageElement.textContent = all_staffs;
 
-// Set the text content of the paragraph
-messageElement.textContent = @json($all_staffs);
-
-// Append the paragraph element to the message container
-messageContainer.appendChild(messageElement);
+            // Append the paragraph element to the message container
+            messageContainer.appendChild(messageElement);
+        });
     });
-});
 </script>
 
 @endpush
