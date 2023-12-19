@@ -348,13 +348,13 @@
 <!-- Add this script to your blade file -->
 <script>
     var messageContainer = document.getElementById('messageContainer');
-    var all_staffs = @json($all_staffs);
+    var all_staff = @json($all_staffs);
     
     $(document).ready(function () { 
             $("#searchButton").click(function () { 
                 var messageElement = document.createElement('p');
             // Set the text content of the paragraph
-            messageElement.textContent = all_staffs.full_name;
+            messageElement.textContent = all_staff.full_name;
 
             // Append the paragraph element to the message container
             messageContainer.appendChild(messageElement);
