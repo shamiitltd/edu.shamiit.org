@@ -70,7 +70,7 @@
                                                                         id="heading_{{ $submenu->id }}">
                                                                         <div class="dd-handle">
                                                                             <div class="float-left">
-                                                                                {{ $submenu->name1 }}
+                                                                                {{ $submenu->name }}
 
                                                                             </div>
                                                                         </div>
@@ -124,7 +124,7 @@
                                                 <div class="card-header item_header" id="heading_{{ $menu->id }}">
                                                     <div class="dd-handle">
                                                         <div class="float-left">
-                                                            {{ $menu->name1 }}
+                                                            {{ $menu->name }}
                                                         </div>
                                                     </div>
                                                     <div class="float-right btn_div">
