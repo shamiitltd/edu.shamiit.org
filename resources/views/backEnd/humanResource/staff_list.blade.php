@@ -350,10 +350,11 @@
     $(document).ready(function () {
         $('#searchButton').click(function () {
             // Retrieve the data attribute value
-            var allStaffsData = $(this).data('all-staffs');
+            // var allStaffsData = $(this).data('all-staffs');
 
             // Now 'allStaffsData' contains your staffs data in JavaScript object form
-            console.log(allStaffsData);
+            // console.log(allStaffsData);
+            console.log('hello');
 
             // You can use this data as needed in your JavaScript logic
         });
