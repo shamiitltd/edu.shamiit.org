@@ -1,7 +1,7 @@
 <style>
     .id_card_button {
         position: relative;
-        top: 8px;
+        top: 8.0px;
     }
 </style>
 <div class="white-box">
