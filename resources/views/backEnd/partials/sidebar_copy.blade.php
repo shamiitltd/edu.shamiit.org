@@ -248,7 +248,7 @@
                                 @endif
                                 @if (userPermission(83) && menuStatus(83))
                                     <li data-position="{{ menuPosition(83) }}">
-                                        <a href="{{ route('unassigned_student') }}">@lang('student.unassigned_student')</a>
+                                        <a href="{{ route('unassigned_student') }}">@lang('student.unassignedd_student')</a>
                                     </li>
                                 @endif
 
