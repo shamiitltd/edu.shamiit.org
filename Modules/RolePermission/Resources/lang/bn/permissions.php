@@ -411,7 +411,7 @@ return [
     "PayrollBulk Print" => "PayrollBulk মুদ্রণ",
     "Fees Invoice Settings" => "Fees ইনভয়েস সেটিংস",
     "Fees invoice Bulk Print" => "Fees invoice Bulk Print",
-    "Time Setup" => "সময় সেটআপ",
+    "SMS Sending Time" => "সময় সেটআপ",
     "Custom Field" => "স্বনির্ধারিত ক্ষেত্র",
     "Student Registration" => "ছাত্র নিবন্ধন",
     "Staff Registration" => "স্টাফ রেজিস্ট্রেশন",
