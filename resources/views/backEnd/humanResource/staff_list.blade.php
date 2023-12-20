@@ -230,7 +230,7 @@
                      processing: true,
                      serverSide: true,
                      "ajax": $.fn.dataTable.pipeline( {
-                           url: "{{route('staff_directory_ajax')}}",
+                           url: "{{route('staff_directory')}}",
                            data: { 
                             },
                            pages: "{{generalSetting()->ss_page_load}}" // number of pages to cache
