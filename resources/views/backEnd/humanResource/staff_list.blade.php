@@ -155,7 +155,7 @@
                             </div>
                             
                             <div class="col-lg-12 mt-20 text-right">
-                                <button type="button" class="primary-btn small fix-gr-bg btnsearch" id="searchButton" data-all-staffs="@json($all_staffs)">
+                                <button type="button" class="primary-btn small fix-gr-bg btnsearch" id="searchButton">
                                     <span class="ti-search pr-2"></span>
                                     @lang('common.search')
                                 </button>
