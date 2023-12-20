@@ -32,7 +32,7 @@
                                                 <div class="card-header item_header" id="heading_{{ $menu->id }}">
                                                     <div class="dd-handle">
                                                         <div class="float-left">
-                                                            {{ $menu1->name }}
+                                                            {{ $menu->name }}
                                                         </div>
                                                     </div>
                                                     <div class="float-right btn_div">
@@ -70,7 +70,7 @@
                                                                         id="heading_{{ $submenu->id }}">
                                                                         <div class="dd-handle">
                                                                             <div class="float-left">
-                                                                                {{ $submenu->name }}
+                                                                                {{ $submenu->name1 }}
 
                                                                             </div>
                                                                         </div>
@@ -124,7 +124,7 @@
                                                 <div class="card-header item_header" id="heading_{{ $menu->id }}">
                                                     <div class="dd-handle">
                                                         <div class="float-left">
-                                                            {{ $menu->name }}
+                                                            {{ $menu->name1 }}
                                                         </div>
                                                     </div>
                                                     <div class="float-right btn_div">
