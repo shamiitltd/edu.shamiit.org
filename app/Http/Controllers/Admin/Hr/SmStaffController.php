@@ -768,116 +768,116 @@ class SmStaffController extends Controller
         }
     }
 
-    // public function searchStaff(Request $request)
-    // {
-    //   //   uest->all());
-    //     try {
-            // $data = [];
-            // $data['role_id'] = $request->role_id;
-            // $data['staff_no'] = $request->staff_no;
-            // $data['staff_name'] = $request->staff_name;
-            // $staff = SmStaff::withOutGlobalScope(ActiveStatusSchoolScope::class);
-            // $staff->where('is_saas', 0)->where('active_status', 1);
-            // if ($request->role_id != "") {
-            //     $staff->where(function($q) use ($request) {
-            //         $q->where('role_id', $request->role_id)->orWhere('previous_role_id', $request->role_id);
-            //     });
+    public function searchStaff(Request $request)
+    {
+      //   uest->all());
+        try {
+            $data = [];
+            $data['role_id'] = $request->role_id;
+            $data['staff_no'] = $request->staff_no;
+            $data['staff_name'] = $request->staff_name;
+            $staff = SmStaff::withOutGlobalScope(ActiveStatusSchoolScope::class);
+            $staff->where('is_saas', 0)->where('active_status', 1);
+            if ($request->role_id != "") {
+                $staff->where(function($q) use ($request) {
+                    $q->where('role_id', $request->role_id)->orWhere('previous_role_id', $request->role_id);
+                });
 
-            // }
-            // if ($request->staff_no != "") {
-            //     $staff->where('staff_no', $request->staff_no);
-            // }
+            }
+            if ($request->staff_no != "") {
+                $staff->where('staff_no', $request->staff_no);
+            }
 
-            // if ($request->staff_name != "") {
-            //     $staff->where('full_name', 'like', '%' . $request->staff_name . '%');
-            // }
+            if ($request->staff_name != "") {
+                $staff->where('full_name', 'like', '%' . $request->staff_name . '%');
+            }
 
-            // if (Auth::user()->role_id != 1) {
-            //     $staff->where('role_id', '!=', 1);
-            // }
+            if (Auth::user()->role_id != 1) {
+                $staff->where('role_id', '!=', 1);
+            }
 
-            // $all_staffs = $staff->where('school_id', Auth::user()->school_id)->get();
+            $all_staffs = $staff->where('school_id', Auth::user()->school_id)->get();
 
-            // if (Auth::user()->role_id != 1) {
-            //     $roles = InfixRole::where('is_saas', 0)->where('active_status', '=', '1')->where('id', '!=', 1)->where('id', '!=', 2)->where('id', '!=', 3)->where('id', '!=', 5)->where(function ($q) {
-            //         $q->where('school_id', Auth::user()->school_id)->orWhere('type', 'System');
-            //     })->get();
-            // } else {
-            //     $roles = InfixRole::where('is_saas', 0)->where('active_status', '=', '1')->where('id', '!=', 2)->where('id', '!=', 3)->where(function ($q) {
-            //         $q->where('school_id', Auth::user()->school_id)->orWhere('type', 'System');
-            //     })->get();
-            // }
+            if (Auth::user()->role_id != 1) {
+                $roles = InfixRole::where('is_saas', 0)->where('active_status', '=', '1')->where('id', '!=', 1)->where('id', '!=', 2)->where('id', '!=', 3)->where('id', '!=', 5)->where(function ($q) {
+                    $q->where('school_id', Auth::user()->school_id)->orWhere('type', 'System');
+                })->get();
+            } else {
+                $roles = InfixRole::where('is_saas', 0)->where('active_status', '=', '1')->where('id', '!=', 2)->where('id', '!=', 3)->where(function ($q) {
+                    $q->where('school_id', Auth::user()->school_id)->orWhere('type', 'System');
+                })->get();
+            }
 
             
 
-            // return view('backEnd.humanResource.staff_list', compact('all_staffs', 'roles','data'));
-    //     } catch (\Exception $e) {
-    //         Toastr::error('Operation Failed', 'Failed');
-    //         return redirect()->back();
-    //     }
+            return view('backEnd.humanResource.staff_list', compact('all_staffs', 'roles','data'));
+        } catch (\Exception $e) {
+            Toastr::error('Operation Failed', 'Failed');
+            return redirect()->back();
+        }
+    }
+
+    // public function searchStaff(Request $request)
+    // {
+    //     try{
+
+    //         $data = [
+    //             'role_id' => $request->role_id,
+    //             'staff_no' => $request->staff_no,
+    //             'staff_name' => $request->staff_name,
+    //         ];
+        
+    //         $staffQuery = SmStaff::withOutGlobalScope(ActiveStatusSchoolScope::class)
+    //             ->where('is_saas', 0)
+    //             ->where('active_status', 1);
+        
+    //         if ($request->filled('role_id')) {
+    //             $staffQuery->where(function ($q) use ($request) {
+    //                 $q->where('role_id', $request->role_id)
+    //                     ->orWhere('previous_role_id', $request->role_id);
+    //             });
+    //         }
+        
+    //         if ($request->filled('staff_no')) {
+    //             $staffQuery->where('staff_no', $request->staff_no);
+    //         }
+        
+    //         if ($request->filled('staff_name')) {
+    //             $staffQuery->where('full_name', 'like', '%' . $request->staff_name . '%');
+    //         }
+        
+    //         if (Auth::user()->role_id != 1) {
+    //             $staffQuery->where('role_id', '!=', 1);
+    //         }
+        
+    //         $all_staffs = $staffQuery->where('school_id', Auth::user()->school_id)->get();
+           
+    // // Dynamic role filtering based on user's role
+    // $excludeRoleIds = [1, 2, 3, 5];
+    // $roleQuery = InfixRole::where('is_saas', 0)
+    //     ->where('active_status', 1)
+    //     ->whereNotIn('id', $excludeRoleIds);
+
+    // if (Auth::user()->role_id != 1) {
+    //     $roleQuery->where('id', '!=', 2)->where('id', '!=', 3);
     // }
 
-    public function searchStaff(Request $request)
-    {
-        try{
+    // $roles = $roleQuery
+    //     ->where(function ($q) {
+    //         $q->where('school_id', Auth::user()->school_id)
+    //             ->orWhere('type', 'System');
+    //     })
+    //     ->get();
 
-            $data = [
-                'role_id' => $request->role_id,
-                'staff_no' => $request->staff_no,
-                'staff_name' => $request->staff_name,
-            ];
+    // // return view('backEnd.humanResource.staff_list', compact('data', 'all_staffs', 'roles'));
+    // return response()->json(compact('data', 'all_staffs', 'roles'));
+    //     }
+    // catch (\Exception $e) {
+    //             Toastr::error('Operation Failed', 'Failed');
+    //             return redirect()->back();
+    //         }
         
-            $staffQuery = SmStaff::withOutGlobalScope(ActiveStatusSchoolScope::class)
-                ->where('is_saas', 0)
-                ->where('active_status', 1);
-        
-            if ($request->filled('role_id')) {
-                $staffQuery->where(function ($q) use ($request) {
-                    $q->where('role_id', $request->role_id)
-                        ->orWhere('previous_role_id', $request->role_id);
-                });
-            }
-        
-            if ($request->filled('staff_no')) {
-                $staffQuery->where('staff_no', $request->staff_no);
-            }
-        
-            if ($request->filled('staff_name')) {
-                $staffQuery->where('full_name', 'like', '%' . $request->staff_name . '%');
-            }
-        
-            if (Auth::user()->role_id != 1) {
-                $staffQuery->where('role_id', '!=', 1);
-            }
-        
-            $all_staffs = $staffQuery->where('school_id', Auth::user()->school_id)->get();
-           
-    // Dynamic role filtering based on user's role
-    $excludeRoleIds = [1, 2, 3, 5];
-    $roleQuery = InfixRole::where('is_saas', 0)
-        ->where('active_status', 1)
-        ->whereNotIn('id', $excludeRoleIds);
-
-    if (Auth::user()->role_id != 1) {
-        $roleQuery->where('id', '!=', 2)->where('id', '!=', 3);
-    }
-
-    $roles = $roleQuery
-        ->where(function ($q) {
-            $q->where('school_id', Auth::user()->school_id)
-                ->orWhere('type', 'System');
-        })
-        ->get();
-
-    // return view('backEnd.humanResource.staff_list', compact('data', 'all_staffs', 'roles'));
-    return response()->json(compact('data', 'all_staffs', 'roles'));
-        }
-    catch (\Exception $e) {
-                Toastr::error('Operation Failed', 'Failed');
-                return redirect()->back();
-            }
-        
-    }
+    // }
 
 
     public function uploadStaffDocuments($staff_id)

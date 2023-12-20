@@ -104,7 +104,6 @@
             </div>
 
             <div class="row">
-            <div id="messageContainer"></div>
                 <div class="col-lg-12">
                     <div class="white-box">
                         
@@ -155,7 +154,7 @@
                             </div>
                             
                             <div class="col-lg-12 mt-20 text-right">
-                                <button type="button" class="primary-btn small fix-gr-bg btnsearch" id="searchButton">
+                                <button type="button" class="primary-btn small fix-gr-bg btnsearch" id="searchButton" data-all-staffs="@json($all_staffs)">
                                     <span class="ti-search pr-2"></span>
                                     @lang('common.search')
                                 </button>
@@ -345,21 +344,6 @@
     }
 </script>
 
-<!-- Add this script to your blade file -->
-<script>
-    $(document).ready(function () {
-        $('#searchButton').click(function () {
-            // Retrieve the data attribute value
-            // var allStaffsData = $(this).data('all-staffs');
 
-            // Now 'allStaffsData' contains your staffs data in JavaScript object form
-            // console.log(allStaffsData);
-            console.log('helloaa');
-
-            // You can use this data as needed in your JavaScript logic
-        });
-    });
-
-</script>
 
 @endpush
