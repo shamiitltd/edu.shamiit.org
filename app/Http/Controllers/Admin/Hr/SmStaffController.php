@@ -767,7 +767,6 @@ class SmStaffController extends Controller
             return redirect()->back();
         }
     }
-
     public function searchStaff(Request $request)
     {
       //   uest->all());
@@ -809,7 +808,6 @@ class SmStaffController extends Controller
             }
 
             
-
             return view('backEnd.humanResource.staff_list', compact('all_staffs', 'roles','data'));
         } catch (\Exception $e) {
             Toastr::error('Operation Failed', 'Failed');

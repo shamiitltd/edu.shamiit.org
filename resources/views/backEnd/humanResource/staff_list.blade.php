@@ -106,20 +106,16 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="white-box">
-                        
                         {{ Form::open(['class' => 'form-horizontal', 'files' => true, 'route' => 'searchStaff', 'method' => 'POST', 'enctype' => 'multipart/form-data']) }}
                         <div class="row">
-                     
                             <input type="hidden" name="role_id" id="role_id" value="{{ @$data['role_id'] }}">
                             <input type="hidden" name="staff_no" id="staff_no" value="{{ @$data['staff_no'] }}">
                             <input type="hidden" name="staff_name" id="staff_name" value="{{ @$data['staff_name'] }}">
-                     
                             <div class="col-lg-4">
                                 <label class="primary_input_label" for="">
                                     {{ __('common.role') }}
                                     <span class="text-danger"> </span>
                                 </label>
-                                
                                 <select class="primary_select  form-control" name="role_id" id="role_id">
                                     <option data-display="@lang('hr.role')" value=""> @lang('common.select') </option>
                                     @foreach ($roles as $key => $value)
@@ -128,7 +124,6 @@
                                     @endforeach
                                 </select>
                             </div>
-                           
 
                             <div class="col-lg-4 mt-30-md">
                                 <div class="primary_input">
@@ -152,9 +147,8 @@
 
                                 </div>
                             </div>
-                            
                             <div class="col-lg-12 mt-20 text-right">
-                                <button type="button" class="primary-btn small fix-gr-bg btnsearch" id="searchButton" data-all-staffs="@json($all_staffs)">
+                                <button type="submit" class="primary-btn small fix-gr-bg">
                                     <span class="ti-search pr-2"></span>
                                     @lang('common.search')
                                 </button>
@@ -335,7 +329,6 @@
                 });
             } );
 </script>
-
 <script>
     function deleteStaff(id){
         var modal = $('#deleteStaffModal');
@@ -343,7 +336,4 @@
         modal.modal('show');
     }
 </script>
-
-
-
 @endpush
