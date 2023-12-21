@@ -24,6 +24,7 @@ $css = 'background:' . $login_background->color;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="icon" href="{{ asset(generalSetting()->favicon) }}" type="image/png" />
     <title>@lang('auth.login')</title>
     <meta name="_token" content="{!! csrf_token() !!}" />
@@ -96,15 +97,10 @@ $css = 'background:' . $login_background->color;
         }
         .eye-icon {
       position: absolute;
-      right: 10px;
+      right: 40px;
       top: 50%;
       transform: translateY(-50%);
       cursor: pointer;
-    }
-
-    .eye-icon img {
-      width: 20px;
-      height: 20px;
     }
 
         @media (max-width: 575.98px) {
@@ -189,9 +185,7 @@ $css = 'background:' . $login_background->color;
                                     <input class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
                                         type="password" name='password' id="password"
                                         placeholder="@lang('auth.enter_password')" />
-                                        <div class="eye-icon" onclick="togglePasswordVisibility()">
-                                         <img src="eye-closed.png" alt="eye icon" id="eye-icon">
-                                        </div>
+                                        <i class="eye-icon fas fa-eye-slash" onclick="togglePasswordVisibility()"></i>
                                 </div>
                                 @if ($errors->has('password'))
                                 <span class="text-danger text-left mb-15" role="alert">
@@ -278,18 +272,23 @@ $css = 'background:' . $login_background->color;
 
 
     <script>
+   <script>
     function togglePasswordVisibility() {
       var passwordInput = document.getElementById('password');
-      var eyeIcon = document.getElementById('eye-icon');
+      var eyeIcon = document.querySelector('.eye-icon');
 
       if (passwordInput.type === 'password') {
         passwordInput.type = 'text';
-        eyeIcon.src = 'eye-open.png';
+        eyeIcon.classList.remove('fa-eye-slash');
+        eyeIcon.classList.add('fa-eye');
       } else {
         passwordInput.type = 'password';
-        eyeIcon.src = 'eye-closed.png';
+        eyeIcon.classList.remove('fa-eye');
+        eyeIcon.classList.add('fa-eye-slash');
       }
     }
+  </script>
+
   </script>
 </body>
 
