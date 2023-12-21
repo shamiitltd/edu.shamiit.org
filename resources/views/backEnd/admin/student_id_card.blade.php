@@ -14,6 +14,7 @@
         padding: 10px;
         background: #c738d8;
 
+    
     }
     .user_id_card_header h4{
         font-size:18px;
