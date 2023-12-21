@@ -350,8 +350,9 @@ $(document).ready(function () {
             type: 'GET',
             data: $(this).serialize(),
             success: function (data) {
-                console.log('AJAX success. Response:', data);
                 // Update the table with the new data
+                console.log('AJAX success. Response:', data);
+
                 $('tbody').html(data);
             },
             error: function (error) {
