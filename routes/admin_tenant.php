@@ -1367,12 +1367,19 @@ Route::group(['middleware' => ['XSS','subscriptionAccessUrl']], function () {
 
 
         // staff directory
-        Route::get('staff-directory', ['as' => 'staff_directory', 'uses' => 'Admin\Hr\SmStaffController@staffList'])->middleware('userRolePermission:staff_directory');
-        Route::get('staff-directory-ajax', ['as' => 'staff_directory_ajax', 'uses' => 'DatatableQueryController@getStaffList'])->middleware('userRolePermission:staff_directory');
+        // Route::get('staff-directory', ['as' => 'staff_directory', 'uses' => 'Admin\Hr\SmStaffController@staffList'])->middleware('userRolePermission:staff_directory');
+        // Route::get('staff-directory-ajax', ['as' => 'staff_directory_ajax', 'uses' => 'DatatableQueryController@getStaffList'])->middleware('userRolePermission:staff_directory');
 
 
-        Route::post('search-staff', ['as' => 'searchStaff', 'uses' => 'Admin\Hr\SmStaffController@searchStaff']);
-        Route::post('search-staff-ajax', ['as' => 'AjaxSearchStaff', 'uses' => 'DatatableQueryController@getStaffList']);
+        // Route::post('search-staff', ['as' => 'searchStaff', 'uses' => 'Admin\Hr\SmStaffController@searchStaff']);
+        // Route::post('search-staff-ajax', ['as' => 'AjaxSearchStaff', 'uses' => 'DatatableQueryController@getStaffList']);
+
+        // staff directory
+Route::get('staff-directory', ['as' => 'staff_directory', 'uses' => 'Admin\Hr\SmStaffController@staffList'])->middleware('userRolePermission:staff_directory');
+Route::post('search-staff', ['as' => 'searchStaff', 'uses' => 'Admin\Hr\SmStaffController@searchStaff']);
+Route::get('staff-directory-ajax', ['as' => 'staff_directory_ajax', 'uses' => 'DatatableQueryController@getStaffList'])->middleware('userRolePermission:staff_directory');
+Route::post('search-staff-ajax', ['as' => 'AjaxSearchStaff', 'uses' => 'DatatableQueryController@getStaffList']);
+
 
         Route::get('add-staff', ['as' => 'addStaff', 'uses' => 'Admin\Hr\SmStaffController@addStaff'])->middleware('userRolePermission:addStaff');
         Route::post('staff-store', ['as' => 'staffStore', 'uses' => 'Admin\Hr\SmStaffController@staffStore']);
