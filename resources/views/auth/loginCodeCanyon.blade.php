@@ -94,6 +94,18 @@ $css = 'background:' . $login_background->color;
             height: 31px;
             line-height: 31px;
         }
+        .eye-icon {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+
+    .eye-icon img {
+      width: 20px;
+      height: 20px;
+    }
 
         @media (max-width: 575.98px) {
             .grid__button__layout {
@@ -177,10 +189,9 @@ $css = 'background:' . $login_background->color;
                                     <input class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
                                         type="password" name='password' id="password"
                                         placeholder="@lang('auth.enter_password')" />
-                                        <span class="" onclick="password_show_hide();">
-                                        <i class="fas fa-eye" id="show_eye"></i>
-                  <i class="fas fa-eye-slash d-none" id="hide_eye"></i>
-                </span>
+                                        <div class="eye-icon" onclick="togglePasswordVisibility()">
+                                         <img src="eye-closed.png" alt="eye icon" id="eye-icon">
+                                        </div>
                                 </div>
                                 @if ($errors->has('password'))
                                 <span class="text-danger text-left mb-15" role="alert">
@@ -265,23 +276,21 @@ $css = 'background:' . $login_background->color;
 
     {!! Toastr::message() !!}
 
-<script>
-    function password_show_hide() {
-  var x = document.getElementById("password");
-  var show_eye = document.getElementById("show_eye");
-  var hide_eye = document.getElementById("hide_eye");
-  hide_eye.classList.remove("d-none");
-  if (x.type === "password") {
-    x.type = "text";
-    show_eye.style.display = "none";
-    hide_eye.style.display = "block";
-  } else {
-    x.type = "password";
-    show_eye.style.display = "block";
-    hide_eye.style.display = "none";
-  }
-}
-    </script>
+
+    <script>
+    function togglePasswordVisibility() {
+      var passwordInput = document.getElementById('password');
+      var eyeIcon = document.getElementById('eye-icon');
+
+      if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        eyeIcon.src = 'eye-open.png';
+      } else {
+        passwordInput.type = 'password';
+        eyeIcon.src = 'eye-closed.png';
+      }
+    }
+  </script>
 </body>
 
 </html>
