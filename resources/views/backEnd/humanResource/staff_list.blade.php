@@ -148,10 +148,10 @@
                                 </div>
                             </div>
                             <div class="col-lg-12 mt-20 text-right">
-                            <button type="button" id="searchButton" class="primary-btn small fix-gr-bg">
-    <span class="ti-search pr-2"></span>
-    @lang('common.search')
-</button>
+                                <button type="submit" class="primary-btn small fix-gr-bg">
+                                    <span class="ti-search pr-2"></span>
+                                    @lang('common.search')
+                                </button>
                             </div>
                         </div>
                         {{ Form::close() }}
@@ -224,44 +224,45 @@
 @include('backEnd.partials.server_side_datatable')
 @push('script')  
 
-<!-- <script>
+<script>
    $(document).ready(function() {
-    var staffTable = $('.data-table').DataTable({
-        processing: true,
-        serverSide: true,
+       $('.data-table').DataTable({
+                     processing: true,
+                     serverSide: true,
+                     "ajax": $.fn.dataTable.pipeline( {
+                        url: "{{ route('search-staff-ajax') }}",
+                           data: { 
+                            role_id = $('#role_id').val(),
+                staff_no = $('#staff_no').val(),
+                staff_name = $('#staff_name').val(),
+               
 
-        ajax: {
-            url: "{{ route('search-staff-ajax') }}",
-            type: 'POST',
-            data: function (d) {
-                d._token = "{{ csrf_token() }}";
-                d.role_id = $('#role_id').val();
-                d.staff_no = $('#staff_no').val();
-                d.staff_name = $('#staff_name').val();
-            }
-        },
-        columns: [
-            { data: 'DT_RowIndex', name: 'id' },
-            { data: 'full_name', name: 'full_name' },
-            { data: 'roles.name', name: 'roles.name' },
-            { data: 'departments.name', name: 'departments.name' },
-            { data: 'designations.title', name: 'designations.title' },
-            { data: 'mobile', name: 'mobile' },
-            { data: 'email', name: 'email' },
-            { data: 'switch', name: 'switch' },
-            { data: 'action', name: 'action', orderable: false, searchable: true },
-        ],
-        bLengthChange: false,
-        bDestroy: true,
-        language: {
-            search: "<i class='ti-search'></i>",
-            searchPlaceholder: window.jsLang('quick_search'),
-            paginate: {
-                next: "<i class='ti-arrow-right'></i>",
-                previous: "<i class='ti-arrow-left'></i>",
-            },
-        },
-        dom: "Bfrtip", 
+                            },
+                           pages: "{{generalSetting()->ss_page_load}}" // number of pages to cache
+                           
+                       } ),
+                       columns: [
+                           {data: 'DT_RowIndex', name: 'id'},
+                           {data: 'full_name', name: 'full_name'},
+                           {data: 'roles.name', name: 'roles.name'},
+                           {data: 'departments.name', name: 'departments.name'},
+                           {data: 'designations.title', name: 'designations.title'},
+                           {data: 'mobile', name: 'mobile'},
+                           {data: 'email', name: 'email'},
+                           {data: 'switch', name: 'switch'},
+                           {data: 'action', name: 'action', orderable: false, searchable: true},
+                        ],
+                        bLengthChange: false,
+                        bDestroy: true,
+                        language: {
+                            search: "<i class='ti-search'></i>",
+                            searchPlaceholder: window.jsLang('quick_search'),
+                            paginate: {
+                                next: "<i class='ti-arrow-right'></i>",
+                                previous: "<i class='ti-arrow-left'></i>",
+                            },
+                        },
+                        dom: "Bfrtip",
                         buttons: [{
                             extend: "copyHtml5",
                             text: '<i class="fa fa-files-o"></i>',
@@ -331,37 +332,7 @@
                     }, ],
                     responsive: true,
                 });
-                $('#searchButton').on('click', function () {
-        // Reload DataTable with new search values
-        staffTable.ajax.reload();
-    });
             } );
-</script> -->
-
-<script>
-$(document).ready(function () {
-    $('form').submit(function (event) {
-        event.preventDefault();
-
-        console.log('Before AJAX call');
-
-        $.ajax({
-            url: $(this).attr('action'),
-            type: 'GET',
-            data: $(this).serialize(),
-            success: function (data) {
-                // Update the table with the new data
-                console.log('AJAX success. Response:', data);
-
-                $('tbody').html(data);
-            },
-            error: function (error) {
-                console.log('AJAX error:', error);
-            }
-        });
-    });
-});
-
 </script>
 <script>
     function deleteStaff(id){
