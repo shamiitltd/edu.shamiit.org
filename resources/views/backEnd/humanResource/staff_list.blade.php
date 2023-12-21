@@ -224,11 +224,12 @@
 @include('backEnd.partials.server_side_datatable')
 @push('script')  
 
-<script>
+<!-- <script>
    $(document).ready(function() {
     var staffTable = $('.data-table').DataTable({
         processing: true,
         serverSide: true,
+
         ajax: {
             url: "{{ route('search-staff-ajax') }}",
             type: 'POST',
@@ -335,6 +336,31 @@
         staffTable.ajax.reload();
     });
             } );
+</script> -->
+
+<script>
+$(document).ready(function () {
+    $('form').submit(function (event) {
+        event.preventDefault();
+
+        console.log('Before AJAX call');
+
+        $.ajax({
+            url: $(this).attr('action'),
+            type: 'GET',
+            data: $(this).serialize(),
+            success: function (data) {
+                console.log('AJAX success. Response:', data);
+                // Update the table with the new data
+                $('tbody').html(data);
+            },
+            error: function (error) {
+                console.log('AJAX error:', error);
+            }
+        });
+    });
+});
+
 </script>
 <script>
     function deleteStaff(id){
