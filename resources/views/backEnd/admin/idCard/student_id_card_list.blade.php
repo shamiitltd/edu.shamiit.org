@@ -569,3 +569,4 @@
 </section>
 @endsection
 @include('backEnd.partials.data_table_js')
+ 
