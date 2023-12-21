@@ -177,6 +177,7 @@ $css = 'background:' . $login_background->color;
                                     <input class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
                                         type="password" name='password' id="password"
                                         placeholder="@lang('auth.enter_password')" />
+                                        <i class="bi bi-eye-slash" id="togglePassword"></i>
                                 </div>
                                 @if ($errors->has('password'))
                                 <span class="text-danger text-left mb-15" role="alert">
