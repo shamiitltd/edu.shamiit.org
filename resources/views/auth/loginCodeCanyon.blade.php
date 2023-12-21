@@ -177,7 +177,7 @@ $css = 'background:' . $login_background->color;
                                     <input class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
                                         type="password" name='password' id="password"
                                         placeholder="@lang('auth.enter_password')" />
-                                        <span class="input-group-text" onclick="password_show_hide();">
+                                        <span class="" onclick="password_show_hide();">
                                         <i class="fas fa-eye" id="show_eye"></i>
                   <i class="fas fa-eye-slash d-none" id="hide_eye"></i>
                 </span>
