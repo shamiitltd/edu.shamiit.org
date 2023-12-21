@@ -96,11 +96,12 @@ $css = 'background:' . $login_background->color;
             line-height: 31px;
         }
         .eye-icon {
-      position: absolute;
+            position: absolute;
       right: 40px;
-      top: 50%;
+      top:50%;
       transform: translateY(-50%);
       cursor: pointer;
+      color: #555;
     }
 
         @media (max-width: 575.98px) {
