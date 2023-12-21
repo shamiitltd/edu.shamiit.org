@@ -98,7 +98,7 @@ $css = 'background:' . $login_background->color;
         .eye-icon {
             position: absolute;
       right: -300px;
-      top:-20px
+      top:-20px;
       transform: translateY(-50%);
       cursor: pointer;
       color: #555;
