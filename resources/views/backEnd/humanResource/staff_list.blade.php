@@ -148,10 +148,10 @@
                                 </div>
                             </div>
                             <div class="col-lg-12 mt-20 text-right">
-                                <button type="submit" class="primary-btn small fix-gr-bg">
-                                    <span class="ti-search pr-2"></span>
-                                    @lang('common.search')
-                                </button>
+                            <button type="button" id="searchButton" class="primary-btn small fix-gr-bg">
+    <span class="ti-search pr-2"></span>
+    @lang('common.search')
+</button>
                             </div>
                         </div>
                         {{ Form::close() }}
@@ -226,38 +226,41 @@
 
 <script>
    $(document).ready(function() {
-       $('.data-table').DataTable({
-                     processing: true,
-                     serverSide: true,
-                     "ajax": $.fn.dataTable.pipeline( {
-                           url: "{{route('staff_directory')}}",
-                           data: { 
-                            },
-                           pages: "{{generalSetting()->ss_page_load}}" // number of pages to cache
-                           
-                       } ),
-                       columns: [
-                           {data: 'DT_RowIndex', name: 'id'},
-                           {data: 'full_name', name: 'full_name'},
-                           {data: 'roles.name', name: 'roles.name'},
-                           {data: 'departments.name', name: 'departments.name'},
-                           {data: 'designations.title', name: 'designations.title'},
-                           {data: 'mobile', name: 'mobile'},
-                           {data: 'email', name: 'email'},
-                           {data: 'switch', name: 'switch'},
-                           {data: 'action', name: 'action', orderable: false, searchable: true},
-                        ],
-                        bLengthChange: false,
-                        bDestroy: true,
-                        language: {
-                            search: "<i class='ti-search'></i>",
-                            searchPlaceholder: window.jsLang('quick_search'),
-                            paginate: {
-                                next: "<i class='ti-arrow-right'></i>",
-                                previous: "<i class='ti-arrow-left'></i>",
-                            },
-                        },
-                        dom: "Bfrtip",
+    var staffTable = $('.data-table').DataTable({
+        processing: true,
+        serverSide: true,
+        ajax: {
+            url: "{{ route('search-staff-ajax') }}",
+            type: 'POST',
+            data: function (d) {
+                d._token = "{{ csrf_token() }}";
+                d.role_id = $('#role_id').val();
+                d.staff_no = $('#staff_no').val();
+                d.staff_name = $('#staff_name').val();
+            }
+        },
+        columns: [
+            { data: 'DT_RowIndex', name: 'id' },
+            { data: 'full_name', name: 'full_name' },
+            { data: 'roles.name', name: 'roles.name' },
+            { data: 'departments.name', name: 'departments.name' },
+            { data: 'designations.title', name: 'designations.title' },
+            { data: 'mobile', name: 'mobile' },
+            { data: 'email', name: 'email' },
+            { data: 'switch', name: 'switch' },
+            { data: 'action', name: 'action', orderable: false, searchable: true },
+        ],
+        bLengthChange: false,
+        bDestroy: true,
+        language: {
+            search: "<i class='ti-search'></i>",
+            searchPlaceholder: window.jsLang('quick_search'),
+            paginate: {
+                next: "<i class='ti-arrow-right'></i>",
+                previous: "<i class='ti-arrow-left'></i>",
+            },
+        },
+        dom: "Bfrtip", 
                         buttons: [{
                             extend: "copyHtml5",
                             text: '<i class="fa fa-files-o"></i>',
@@ -327,6 +330,10 @@
                     }, ],
                     responsive: true,
                 });
+                $('#searchButton').on('click', function () {
+        // Reload DataTable with new search values
+        staffTable.ajax.reload();
+    });
             } );
 </script>
 <script>
