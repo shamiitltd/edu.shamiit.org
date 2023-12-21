@@ -272,8 +272,6 @@ $css = 'background:' . $login_background->color;
 
     {!! Toastr::message() !!}
 
-
-    <script>
    <script>
     function togglePasswordVisibility() {
       var passwordInput = document.getElementById('password');
