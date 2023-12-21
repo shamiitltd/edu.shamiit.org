@@ -27,17 +27,17 @@ $css = 'background:' . $login_background->color;
     <link rel="icon" href="{{ asset(generalSetting()->favicon) }}" type="image/png" />
     <title>@lang('auth.login')</title>
     <meta name="_token" content="{!! csrf_token() !!}" />
-    <link rel="stylesheet" href="{{ asset('public/backEnd/') }}/vendors/css/bootstrap.css" />
-    <link rel="stylesheet" href="{{ asset('public/backEnd/') }}/vendors/css/themify-icons.css" />
+    <link rel="stylesheet" href="{{ asset('public/backEnd/vendors/css/bootstrap.css') }} "/>
+    <link rel="stylesheet" href="{{ asset('public/backEnd/vendors/css/themify-icons.css') }}" />
 
     <link rel="stylesheet" href="{{ url('/') }}/public/backEnd/vendors/css/nice-select.css" />
     <link rel="stylesheet" href="{{ url('/') }}/public/backEnd/vendors/js/select2/select2.css" />
 
-    <link rel="stylesheet" href="{{ asset('public/backEnd/') }}/vendors/css/toastr.min.css" />
-    <link rel="stylesheet" href="{{ asset('public/frontend/') }}/css/{{ activeStyle()->path_main_style }}" />
+    <link rel="stylesheet" href="{{ asset('public/backEnd/vendors/css/toastr.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('public/frontend/css/{{ activeStyle()->path_main_style }}" />
     <x-root-css />
     @if (isset($ttl_rtl) && $ttl_rtl==1)
-    <link rel="stylesheet" href="{{ url('public/backEnd/') }}/assets/vendors/vendors_static_style.css" />
+    <link rel="stylesheet" href="{{ url('public/backEnd/assets/vendors/vendors_static_style.css') }}" />
     <link rel="stylesheet" href="{{ asset('public/backEnd/assets/css/rtl/style.css') }}" />
         @endif
 </head>
@@ -257,6 +257,21 @@ $css = 'background:' . $login_background->color;
             $("#email-address").keyup(function () {
                 $("#username-hidden").val($(this).val());
             });
+        });
+    </script>
+       <script>
+        const togglePassword = document
+            .querySelector('#togglePassword');
+        const password = document.querySelector('#password');
+        togglePassword.addEventListener('click', () => {
+            // Toggle the type attribute using
+            // getAttribure() method
+            const type = password
+                .getAttribute('type') === 'password' ?
+                'text' : 'password';
+            password.setAttribute('type', type);
+            // Toggle the eye and bi-eye icon
+            this.classList.toggle('bi-eye');
         });
     </script>
 
