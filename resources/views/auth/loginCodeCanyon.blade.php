@@ -288,8 +288,6 @@ $css = 'background:' . $login_background->color;
       }
     }
   </script>
-
-  </script>
 </body>
 
 </html>
