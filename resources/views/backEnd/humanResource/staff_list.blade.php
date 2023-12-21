@@ -230,7 +230,7 @@
                      processing: true,
                      serverSide: true,
                      "ajax": $.fn.dataTable.pipeline( {
-                        url: "{{ route('search-staff-ajax') }}",
+                        url: "{{ route('AjaxSearchStaff') }}",
                            data: { 
                             role_id = $('#role_id').val(),
                 staff_no = $('#staff_no').val(),
