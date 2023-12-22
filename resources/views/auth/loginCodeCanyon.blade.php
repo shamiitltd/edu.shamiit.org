@@ -200,9 +200,10 @@ $css = 'background:' . $login_background->color;
             eyeIcon.classList.remove('ti-eye-slash');
             
         }
-
-        // Ensure the input is focused after changing the type
-        passwordInput.focus();
+        if (event.target === eyeIcon) {
+            passwordInput.blur();
+            passwordInput.focus();
+        }
     }
 </script>
 
