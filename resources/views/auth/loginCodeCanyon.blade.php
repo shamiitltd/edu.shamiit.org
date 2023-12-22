@@ -180,15 +180,16 @@ $css = 'background:' . $login_background->color;
                                 @endif
 
                                 <div class="form-group input-group mb-4">
-                                    <span class="input-group-addon">
-                                        <i class="ti-key"></i>
-                                    </span>
-                                    <input class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
-                                        type="password" name='password' id="password"
-                                        placeholder="@lang('auth.enter_password')" />
-                                        <span class="cursor-pointer mt-0">
-                                        <i class="eye-icon fas fa-eye-slash" onclick="togglePasswordVisibility()"></i></span>
-                                </div>
+    <span class="input-group-addon">
+        <i class="ti-key"></i>
+    </span>
+    <input class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
+           type="password" name='password' id="password"
+           placeholder="@lang('auth.enter_password')" />
+    <span class="input-group-addon">
+        <i class="ti-eye" id="eye-icon"></i>
+    </span>
+</div>
                                 @if ($errors->has('password'))
                                 <span class="text-danger text-left mb-15" role="alert">
                                     {{ $errors->first('password') }}
@@ -272,22 +273,20 @@ $css = 'background:' . $login_background->color;
 
     {!! Toastr::message() !!}
 
-   <script>
-    function togglePasswordVisibility() {
-      var passwordInput = document.getElementById('password');
-      var eyeIcon = document.querySelector('.eye-icon');
+    <script>
+    const eyeIcon = document.getElementById('eye-icon');
+    const passwordInput = document.getElementById('password');
 
-      if (passwordInput.type === 'password') {
-        passwordInput.type = 'text';
-        eyeIcon.classList.remove('fa-eye-slash');
-        eyeIcon.classList.add('fa-eye');
-      } else {
-        passwordInput.type = 'password';
-        eyeIcon.classList.remove('fa-eye');
-        eyeIcon.classList.add('fa-eye-slash');
-      }
-    }
-  </script>
+    eyeIcon.addEventListener('click', function() {
+        if (passwordInput.type === 'password') {
+            passwordInput.type = 'text';
+            eyeIcon.classList.add('ti-eye-slash');
+        } else {
+            passwordInput.type = 'password';
+            eyeIcon.classList.remove('ti-eye-slash');
+        }
+    });
+</script>
 </body>
 
 </html>
