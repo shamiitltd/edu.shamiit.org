@@ -180,7 +180,7 @@ $css = 'background:' . $login_background->color;
            type="password" name='password' id="password"
            placeholder="@lang('auth.enter_password')" />
     <span class="input-group-addon" style="cursor: pointer; position: absolute; right: 30px; top: 0%; transform: translateY(-50%);" onclick="togglePassword()">
-        <i class="ti-eye" id="eye-icon" style="z-index: 1;"></i>
+        <i class="ti-eye" id="eye-icon" style="z-index: 4;"></i>
     </span>
 </div>
 <style>
@@ -202,7 +202,7 @@ $css = 'background:' . $login_background->color;
         }
 
         // Ensure the input is focused after changing the type
-        passwordInput.focus();
+        passwordInput.blur();
     }
 </script>
 
