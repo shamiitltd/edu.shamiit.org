@@ -104,7 +104,7 @@
             </div>
 
             <div class="row">
-                <div>{{ $all_staffs->full_name}}</div>
+                <div>  @$all_staffs['full_name']</div>
 
                 <div class="col-lg-12">
                     <div class="white-box">
