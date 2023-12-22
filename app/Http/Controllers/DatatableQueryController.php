@@ -168,6 +168,7 @@ class DatatableQueryController extends Controller
                 }));
 
                 $data = [];
+                dd($all_students);
             return Datatables::of($all_students)
                 ->addIndexColumn()
                 ->addColumn('dob', function ($row) {
