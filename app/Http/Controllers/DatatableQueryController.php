@@ -278,7 +278,7 @@ class DatatableQueryController extends Controller
                 $query->select('id', 'category_name');
             }))
             ->get();
-
+            dd($students);
         return Datatables::of($students)
             ->addIndexColumn()
             ->addColumn('dob', function ($row) {
@@ -509,7 +509,7 @@ class DatatableQueryController extends Controller
                     }))
                     ->get();
             }
-
+            dd($staffs);
             return Datatables::of($staffs)
                 ->addIndexColumn()
                 ->addColumn('switch', function ($row) {
