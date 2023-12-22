@@ -509,7 +509,7 @@ class DatatableQueryController extends Controller
                     }))
                     ->get();
             }
-            dd($staffs);
+           
             return Datatables::of($staffs)
                 ->addIndexColumn()
                 ->addColumn('switch', function ($row) {
@@ -542,6 +542,7 @@ class DatatableQueryController extends Controller
                 })
                 ->rawColumns(['action', 'switch'])
                 ->make(true);
+                dd($staffs);
 
            
         } catch (\Throwable $th) {
