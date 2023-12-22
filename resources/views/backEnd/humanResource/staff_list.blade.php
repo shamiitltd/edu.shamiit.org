@@ -104,6 +104,8 @@
             </div>
 
             <div class="row">
+                <div>{{ $all_staffs->full_name}}</div>
+
                 <div class="col-lg-12">
                     <div class="white-box">
                         {{ Form::open(['class' => 'form-horizontal', 'files' => true, 'route' => 'searchStaff', 'method' => 'POST', 'enctype' => 'multipart/form-data']) }}
