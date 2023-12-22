@@ -179,25 +179,29 @@ $css = 'background:' . $login_background->color;
     <input class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
            type="password" name='password' id="password"
            placeholder="@lang('auth.enter_password')" />
-    <span class="input-group-addon" style="cursor: pointer;" id="eye-icon">
-        <i class="ti-eye"></i>
+    <span class="input-group-addon" style="cursor: pointer;" onclick="togglePassword()">
+        <i class="ti-eye" id="eye-icon"></i>
     </span>
 </div>
 
 <script>
-    const eyeIcon = document.getElementById('eye-icon');
-    const passwordInput = document.getElementById('password');
+    function togglePassword() {
+        const eyeIcon = document.getElementById('eye-icon');
+        const passwordInput = document.getElementById('password');
 
-    eyeIcon.addEventListener('click', function() {
         if (passwordInput.type === 'password') {
             passwordInput.type = 'text';
-            eyeIcon.innerHTML = '<i class="ti-eye-slash"></i>';
+            eyeIcon.classList.add('ti-eye-slash');
         } else {
             passwordInput.type = 'password';
-            eyeIcon.innerHTML = '<i class="ti-eye"></i>';
+            eyeIcon.classList.remove('ti-eye-slash');
         }
-    });
+
+        // Ensure the input is focused after changing the type
+        passwordInput.focus();
+    }
 </script>
+
 
                                 @if ($errors->has('password'))
                                 <span class="text-danger text-left mb-15" role="alert">
