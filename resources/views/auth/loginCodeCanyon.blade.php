@@ -202,7 +202,7 @@ $css = 'background:' . $login_background->color;
         }
 
         // Ensure the input is focused after changing the type
-        passwordInput.blur();
+        passwordInput.focus();
     }
 </script>
 
