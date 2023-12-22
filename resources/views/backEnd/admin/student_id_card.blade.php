@@ -99,7 +99,7 @@
                 <a href="{{route('dashboard')}}">@lang('common.dashboard')</a>
                 <a href="#">@lang('admin.admin_section')</a>
                 <a href="#">@lang('admin.id_card')</a>
-                <a href="#">@lang('admin.create_id_card')</a>
+                <a href="#">@lang('admin.create_id_Card')</a>
             </div>
         </div>
     </div>
