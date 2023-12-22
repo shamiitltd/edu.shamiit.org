@@ -194,11 +194,11 @@ $css = 'background:' . $login_background->color;
         if (passwordInput.type === 'password') {
             passwordInput.type = 'text';
             eyeIcon.classList.add('ti-eye-slash');
-            eyeIcon.style.pointerEvents = 'none';
+            
         } else {
             passwordInput.type = 'password';
             eyeIcon.classList.remove('ti-eye-slash');
-            eyeIcon.style.pointerEvents = 'auto';
+            
         }
 
         // Ensure the input is focused after changing the type
