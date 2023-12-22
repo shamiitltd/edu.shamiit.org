@@ -179,8 +179,8 @@ $css = 'background:' . $login_background->color;
     <input class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
            type="password" name='password' id="password"
            placeholder="@lang('auth.enter_password')" />
-    <span class="input-group-addon" style="cursor: pointer; position: absolute; right: 10px; top: 50%; transform: translateY(-50%);" onclick="togglePassword()">
-        <i class="ti-eye" id="eye-icon"></i>
+    <span class="input-group-addon" style="cursor: pointer; position: absolute; right: 30px; top: 0%; transform: translateY(-50%);" onclick="togglePassword()">
+        <i class="ti-eye" id="eye-icon" style="z-index: 1;"></i>
     </span>
 </div>
 <style>
@@ -194,9 +194,11 @@ $css = 'background:' . $login_background->color;
         if (passwordInput.type === 'password') {
             passwordInput.type = 'text';
             eyeIcon.classList.add('ti-eye-slash');
+            eyeIcon.style.pointerEvents = 'none';
         } else {
             passwordInput.type = 'password';
             eyeIcon.classList.remove('ti-eye-slash');
+            eyeIcon.style.pointerEvents = 'auto';
         }
 
         // Ensure the input is focused after changing the type
