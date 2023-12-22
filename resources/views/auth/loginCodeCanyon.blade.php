@@ -179,8 +179,8 @@ $css = 'background:' . $login_background->color;
     <input class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
            type="password" name='password' id="password"
            placeholder="@lang('auth.enter_password')" />
-    <span class="input-group-addon" style="cursor: pointer; position: absolute; right: 30px; top: 0%; transform: translateY(-50%);" onclick="togglePassword()">
-        <i class="ti-eye" id="eye-icon" style="z-index: 4;"></i>
+    <span class="input-group-addon" style="cursor: pointer;  position: relative;" onclick="togglePassword()">
+        <i class="ti-eye" id="eye-icon" style="position: absolute; right: 30px; top: 20px; transform: translateY(-50%); z-index:4;"></i>
     </span>
 </div>
 <style>
