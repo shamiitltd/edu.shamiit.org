@@ -314,7 +314,6 @@ class DatatableQueryController extends Controller
                     }
                     return  $class .'('.$sections.'), ';
                 }
-                dd($students);
                 return $class_sec;
             })
             ->addColumn('action', function ($row) {
@@ -543,7 +542,6 @@ class DatatableQueryController extends Controller
                 })
                 ->rawColumns(['action', 'switch'])
                 ->make(true);
-                dd('hello'.$staffs);
 
            
         } catch (\Throwable $th) {

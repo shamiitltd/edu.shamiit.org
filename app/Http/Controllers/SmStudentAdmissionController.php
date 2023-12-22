@@ -1028,7 +1028,7 @@ class SmStudentAdmissionController extends Controller
             $sessions = SmAcademicYear::where('active_status',1)
                 ->where('school_id', Auth::user()->school_id)
                 ->get();
-
+            dd(students);
             return view('backEnd.studentInformation.student_details', compact('classes', 'sessions','students'));
         } catch (\Exception $e) {
             Toastr::error('Operation Failed', 'Failed');
