@@ -187,7 +187,7 @@ $css = 'background:' . $login_background->color;
            type="password" name='password' id="password"
            placeholder="@lang('auth.enter_password')" />
     <span class="input-group-addon">
-        <i class="ti-eye" id="eye-icon"></i>
+        <i class="ti-eye" style="position: absolute; right:-300px" id="eye-icon"></i>
     </span>
 </div>
                                 @if ($errors->has('password'))
