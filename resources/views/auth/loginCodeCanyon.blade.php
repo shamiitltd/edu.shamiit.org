@@ -179,11 +179,13 @@ $css = 'background:' . $login_background->color;
     <input class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
            type="password" name='password' id="password"
            placeholder="@lang('auth.enter_password')" />
-    <span class="input-group-addon" style="cursor: pointer; left:-40px" onclick="togglePassword()">
+    <span class="input-group-addon" style="cursor: pointer; position: absolute; right: 10px; top: 50%; transform: translateY(-50%);" onclick="togglePassword()">
         <i class="ti-eye" id="eye-icon"></i>
     </span>
 </div>
+<style>
 
+    </style>
 <script>
     function togglePassword() {
         const eyeIcon = document.getElementById('eye-icon');
