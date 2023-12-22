@@ -95,11 +95,7 @@ $css = 'background:' . $login_background->color;
             height: 31px;
             line-height: 31px;
         }
-        
-    #eye-icon {
-        position: relative;
-        left: -30px; /* Adjust this value based on your preference */
-    }
+ 
 
         @media (max-width: 575.98px) {
             .grid__button__layout {
