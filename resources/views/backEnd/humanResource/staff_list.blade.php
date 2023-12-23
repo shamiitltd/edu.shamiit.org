@@ -199,7 +199,7 @@
             <td>{{ @$staff->active_status == 1 ? 'Active' : 'Inactive' }}</td>
             <td>
                 {{-- Add buttons or links for actions, e.g., edit or delete --}}
-                <button onclick="deleteStaff({{ $staff->id }})">Delete</button>
+                <button onclick="deleteStaff({{ @$staff->id }})">Delete</button>
             </td>
         </tr>
     @endforeach
