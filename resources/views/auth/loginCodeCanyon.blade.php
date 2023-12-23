@@ -24,7 +24,7 @@ $css = 'background:' . $login_background->color;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-xr9zFJdLDLBAs/gAynUz2hI4h6R2v9U4op+iaLXUs+vGvz3DYyI3kNYJ4bkXD5K9hz8lcSZ5Byt7iONMCOxjXQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="{{ asset(generalSetting()->favicon) }}" type="image/png" />
     <title>@lang('auth.login')</title>
     <meta name="_token" content="{!! csrf_token() !!}" />
@@ -201,7 +201,6 @@ $css = 'background:' . $login_background->color;
             
         }
         if (event.target === eyeIcon) {
-            passwordInput.blur();
             passwordInput.focus();
         }
     }
