@@ -186,7 +186,27 @@
                                 </thead>
                         
                                 <tbody>
-                               
+                                @forelse ($all_staffs as $key => $staff)
+    <tr>
+        <td>{{ $staff->staff_no }}</td>
+        <td>{{ $staff->full_name }}</td>
+        <td>{{ $staff->role->name }}</td>
+        <td>{{ $staff->department->name }}</td>
+        <td>{{ $staff->designation->title }}</td>
+        <td>{{ $staff->mobile }}</td>
+        <td>{{ $staff->email }}</td>
+        <td>{{ $staff->active_status == 1 ? 'Active' : 'Inactive' }}</td>
+        <td>
+            {{-- Add buttons or links for actions, e.g., edit or delete --}}
+            <button onclick="deleteStaff({{ $staff->id }})">Delete</button>
+        </td>
+    </tr>
+@empty
+    <tr>
+        <td colspan="9">No staff found</td>
+    </tr>
+@endforelse
+
                                 </tbody>
                             </table>
                         </x-table>
