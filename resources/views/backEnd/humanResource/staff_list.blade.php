@@ -190,7 +190,7 @@
     @foreach (@$all_staffs as $staff)
         <tr>
             <td>{{ $staff->staff_no }}</td>
-            <td>{{ $staff->role->name }}</td>
+            <td>{{ $staff->full_name }}</td>
             <td>{{ $staff->department->name }}</td>
             <td>{{ $staff->designation->title }}</td>
             <td>{{ $staff->mobile }}</td>
