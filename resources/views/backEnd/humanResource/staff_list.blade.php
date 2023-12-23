@@ -186,25 +186,23 @@
                                 </thead>
                         
                                 <tbody>
-                                @if (!is_null($all_staffs) && is_array($all_staffs))
- 
-    
-                                @foreach (@$all_staff as $staff)
-    <tr>
-        <td>{{ $staff->staff_no }}</td>
-        <td>{{ $staff->full_name }}</td>
-        <td>{{ $staff->role->name }}</td>
-        <td>{{ $staff->department->name }}</td>
-        <td>{{ $staff->designation->title }}</td>
-        <td>{{ $staff->mobile }}</td>
-        <td>{{ $staff->email }}</td>
-        <td>{{ $staff->active_status == 1 ? 'Active' : 'Inactive' }}</td>
-        <td>
-            {{-- Add buttons or links for actions, e.g., edit or delete --}}
-            <button onclick="deleteStaff({{ $staff->id }})">Delete</button>
-        </td>
-    </tr>
-@endforeach
+                                @if (is_array($all_staffs) || is_object($all_staffs))
+    @foreach ($all_staffs as $staff)
+        <tr>
+            <td>{{ $staff->staff_no }}</td>
+            <td>{{ $staff->full_name }}</td>
+            <td>{{ $staff->role->name }}</td>
+            <td>{{ $staff->department->name }}</td>
+            <td>{{ $staff->designation->title }}</td>
+            <td>{{ $staff->mobile }}</td>
+            <td>{{ $staff->email }}</td>
+            <td>{{ $staff->active_status == 1 ? 'Active' : 'Inactive' }}</td>
+            <td>
+                {{-- Add buttons or links for actions, e.g., edit or delete --}}
+                <button onclick="deleteStaff({{ $staff->id }})">Delete</button>
+            </td>
+        </tr>
+    @endforeach
 @endif
 
                                 </tbody>

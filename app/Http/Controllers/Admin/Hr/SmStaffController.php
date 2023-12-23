@@ -796,7 +796,7 @@ class SmStaffController extends Controller
                 $staff->where('role_id', '!=', 1);
             }
 
-            $all_staff = $staff->where('school_id', Auth::user()->school_id)->get();
+            $all_staffs = $staff->where('school_id', Auth::user()->school_id)->get();
            
             if (Auth::user()->role_id != 1) {
                 $roles = InfixRole::where('is_saas', 0)->where('active_status', '=', '1')->where('id', '!=', 1)->where('id', '!=', 2)->where('id', '!=', 3)->where('id', '!=', 5)->where(function ($q) {
@@ -807,7 +807,7 @@ class SmStaffController extends Controller
                     $q->where('school_id', Auth::user()->school_id)->orWhere('type', 'System');
                 })->get();
             }
-            return view('backEnd.humanResource.staff_list', compact( 'roles','data','all_staff'));
+            return view('backEnd.humanResource.staff_list', compact( 'roles','data','all_staffs'));
         } catch (\Exception $e) {
             Toastr::error('Operation Failed', 'Failed');
             return redirect()->back();
