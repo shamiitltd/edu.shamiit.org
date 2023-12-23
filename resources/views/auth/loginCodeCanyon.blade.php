@@ -189,7 +189,7 @@ $css = 'background:' . $login_background->color;
             eyeIcon.innerHTML = '<i class="ti-eye-slash"></i>';
         } else {
             passwordInput.type = 'password';
-            eyeIcon.innerHTML = '<i class="ti-eye"></i>';
+            eyeIcon.innerHTML = '<i class="ti-eye-slash"></i>';
         }
     });
 </script>
