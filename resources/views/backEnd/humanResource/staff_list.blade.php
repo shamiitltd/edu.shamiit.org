@@ -187,18 +187,18 @@
                         
                                 <tbody>
                                 @if (is_array(@$all_staffs) || is_object(@$all_staffs))
-    @foreach (optional(@$all_staffs) as @$staff)
+    @foreach (@$all_staffs as $staff)
         <tr>
-            <td>{{ @$staff->staff_no }}</td>
-            <td>{{ @$staff->role->name }}</td>
-            <td>{{ @$staff->department->name }}</td>
-            <td>{{ @$staff->designation->title }}</td>
-            <td>{{ @$staff->mobile }}</td>
-            <td>{{ @$staff->email }}</td>
-            <td>{{ @$staff->active_status == 1 ? 'Active' : 'Inactive' }}</td>
+            <td>{{ $staff->staff_no }}</td>
+            <td>{{ $staff->role->name }}</td>
+            <td>{{ $staff->department->name }}</td>
+            <td>{{ $staff->designation->title }}</td>
+            <td>{{ $staff->mobile }}</td>
+            <td>{{ $staff->email }}</td>
+            <td>{{ $staff->active_status == 1 ? 'Active' : 'Inactive' }}</td>
             <td>
                 {{-- Add buttons or links for actions, e.g., edit or delete --}}
-                <button onclick="deleteStaff({{ @$staff->id }})">Delete</button>
+                <button onclick="deleteStaff({{ $staff->id }})">Delete</button>
             </td>
         </tr>
     @endforeach
