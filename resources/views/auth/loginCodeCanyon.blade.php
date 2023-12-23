@@ -95,7 +95,6 @@ $css = 'background:' . $login_background->color;
             height: 31px;
             line-height: 31px;
         }
-       
         @media (max-width: 575.98px) {
             .grid__button__layout {
                 grid-template-columns: repeat(2, 1fr);
@@ -179,7 +178,7 @@ $css = 'background:' . $login_background->color;
            type="password" name='password' id="password"
            placeholder="@lang('auth.enter_password')" />
     <span class="input-group-addon" style="cursor: pointer;  position: relative;" onclick="togglePassword()">
-        <i class="ti-eye-slash" id="eye-icon" style="position: absolute; margin-left:-30px; top: 20px; transform: translateY(-50%); z-index:4;"></i>
+        <i class="ti-eye-slash" id="eye-icon" style="position: absolute; margin-left:-30.0px; top: 20px; transform: translateY(-50%); z-index:4;"></i>
     </span>
 </div>
 <script>
