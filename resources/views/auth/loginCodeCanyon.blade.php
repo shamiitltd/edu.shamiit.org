@@ -24,7 +24,6 @@ $css = 'background:' . $login_background->color;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-xr9zFJdLDLBAs/gAynUz2hI4h6R2v9U4op+iaLXUs+vGvz3DYyI3kNYJ4bkXD5K9hz8lcSZ5Byt7iONMCOxjXQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="{{ asset(generalSetting()->favicon) }}" type="image/png" />
     <title>@lang('auth.login')</title>
     <meta name="_token" content="{!! csrf_token() !!}" />
@@ -178,7 +177,7 @@ $css = 'background:' . $login_background->color;
            type="password" name='password' id="password"
            placeholder="@lang('auth.enter_password')" />
     <span class="input-group-addon" style="cursor: pointer;  position: relative;" onclick="togglePassword()">
-        <i class="ti-eye-slash" id="eye-icon" style="position: absolute; margin-left:-30.0px; top: 20px; transform: translateY(-50%); z-index:4;"></i>
+        <i class="bi bi-eye" id="eye-icon" style="position: absolute; margin-left:-30.0px; top: 20px; transform: translateY(-50%); z-index:4;"></i>
     </span>
 </div>
 <script>
@@ -188,11 +187,11 @@ $css = 'background:' . $login_background->color;
 
         if (passwordInput.type === 'password') {
             passwordInput.type = 'text';
-            eyeIcon.classList.add('ti-eye-slash');
+            eyeIcon.classList.add('bi bi-eye-slash');
             
         } else {
             passwordInput.type = 'password';
-            eyeIcon.classList.remove('ti-eye-slash');
+            eyeIcon.classList.remove('bi bi-eye-slash');
             
         }
         if (event.target === eyeIcon) {
