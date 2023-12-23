@@ -187,7 +187,7 @@
                         
                                 <tbody>
         
-                                @foreach ($all_staff as $staff)
+                                @foreach (@$all_staff as $staff)
     <tr>
         <td>{{ $staff->staff_no }}</td>
         <td>{{ $staff->full_name }}</td>

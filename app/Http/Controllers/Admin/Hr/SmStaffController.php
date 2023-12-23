@@ -807,8 +807,6 @@ class SmStaffController extends Controller
                     $q->where('school_id', Auth::user()->school_id)->orWhere('type', 'System');
                 })->get();
             }
-
-          
             return view('backEnd.humanResource.staff_list', compact( 'roles','data','all_staff'));
         } catch (\Exception $e) {
             Toastr::error('Operation Failed', 'Failed');
