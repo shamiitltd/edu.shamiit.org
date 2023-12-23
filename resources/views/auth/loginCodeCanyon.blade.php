@@ -171,21 +171,6 @@ $css = 'background:' . $login_background->color;
                                 </span>
                                 @endif
 
-                                <div class="form-group input-group mb-4">
-    <span class="input-group-addon">
-        <i class="ti-key"></i>
-    </span>
-    <input class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
-           type="password" name='password' id="password"
-           placeholder="@lang('auth.enter_password')" />
-    <span class="input-group-addon" style="cursor: pointer;  position: relative;" onclick="togglePassword()">
-        <i class="ti-eye" id="eye-icon" style="position: absolute; margin-left:-30px; top: 20px; transform: translateY(-50%); z-index:4;"></i>
-    </span>
-</div>
-<style>
-
-    </style>
-
 <div class="form-group input-group mb-4">
     <span class="input-group-addon">
         <i class="ti-key"></i>
@@ -194,15 +179,9 @@ $css = 'background:' . $login_background->color;
            type="password" name='password' id="password"
            placeholder="@lang('auth.enter_password')" />
     <span class="input-group-addon" style="cursor: pointer;  position: relative;" onclick="togglePassword()">
-        <i class="ti-eye" id="eye-icon" style="position: absolute; margin-left:-30.0px; top: 20px; transform: translateY(-50%); z-index:4;"></i>
+        <i class="ti-eye-slash" id="eye-icon" style="position: absolute; margin-left:-30.0px; top: 20px; transform: translateY(-50%); z-index:4;"></i>
     </span>
 </div>
-<style>
-.ti-eye-slash{
-    
-    display:none;
-}
-    </style>
 <script>
     function togglePassword() {
         const eyeIcon = document.getElementById('eye-icon');
