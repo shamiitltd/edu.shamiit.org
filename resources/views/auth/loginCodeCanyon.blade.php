@@ -95,7 +95,14 @@ $css = 'background:' . $login_background->color;
             height: 31px;
             line-height: 31px;
         }
- 
+        .ti-eye-slash
+        {
+            position: absolute;
+            margin-left:-30px;
+            top: 20px;
+            transform: translateY(-50%);
+            z-index:4;
+        }
 
         @media (max-width: 575.98px) {
             .grid__button__layout {
@@ -193,11 +200,11 @@ $css = 'background:' . $login_background->color;
 
         if (passwordInput.type === 'password') {
             passwordInput.type = 'text';
-            eyeIcon.classList.add('fa-solid fa-eye-slash');
+            eyeIcon.classList.add('ti-eye-slash');
             
         } else {
             passwordInput.type = 'password';
-            eyeIcon.classList.remove('fa-solid fa-eye-slash');
+            eyeIcon.classList.remove('ti-eye-slash');
             
         }
         if (event.target === eyeIcon) {
