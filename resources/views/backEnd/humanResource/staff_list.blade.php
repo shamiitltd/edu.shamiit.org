@@ -186,30 +186,7 @@
                                 </thead>
                         
                                 <tbody>
-                                @foreach($all_staffs as $staff)
-    <tr>
-        <td>{{ $staff->staff_no }}</td>
-        <td>{{ $staff->full_name }}</td>
-        <td>{{ $staff->role->name }}</td>
-        <td>{{ $staff->department->name }}</td>
-        <td>{{ $staff->designation->title }}</td>
-        <td>{{ $staff->mobile }}</td>
-        <td>{{ $staff->email }}</td>
-        <td>
-            <!-- Your status field, you need to adjust this based on your data -->
-            @if($staff->active_status == 1)
-                <span class="badge badge-success">@lang('common.active')</span>
-            @else
-                <span class="badge badge-danger">@lang('common.inactive')</span>
-            @endif
-        </td>
-        <td>
-            <!-- Your action buttons, you need to adjust this based on your needs -->
-            <button onclick="deleteStaff({{ $staff->id }})">Delete</button>
-            <!-- Add other actions/buttons as needed -->
-        </td>
-    </tr>
-@endforeach
+                               
                                 </tbody>
                             </table>
                         </x-table>
