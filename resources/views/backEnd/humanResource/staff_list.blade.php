@@ -186,7 +186,8 @@
                                 </thead>
                         
                                 <tbody>
-                                @forelse ($all_staffs as $key => $staff)
+        
+                                @foreach ($all_staff as $key => $staff)
     <tr>
         <td>{{ $staff->staff_no }}</td>
         <td>{{ $staff->full_name }}</td>
@@ -205,7 +206,7 @@
     <tr>
         <td colspan="9">No staff found</td>
     </tr>
-@endforelse
+@endforeach
 
                                 </tbody>
                             </table>
