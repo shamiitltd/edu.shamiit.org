@@ -194,7 +194,7 @@ $css = 'background:' . $login_background->color;
            type="password" name='password' id="password"
            placeholder="@lang('auth.enter_password')" />
     <span class="input-group-addon" style="cursor: pointer;  position: relative;" onclick="togglePassword()">
-        <i class="ti-eye" id="eye-icon" style="position: absolute; margin-left:-30px; top: 20px; transform: translateY(-50%); z-index:4;"></i>
+        <i class="ti-eye" id="eye-icon" style="position: absolute; margin-left:-30.0px; top: 20px; transform: translateY(-50%); z-index:4;"></i>
     </span>
 </div>
 <style>
