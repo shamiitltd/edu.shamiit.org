@@ -177,7 +177,7 @@
         </div>
     </div>
 
-    <!-- @php
+    @php
         if(isset($academic_year) || isset($class_id)){
             $ajax_url=url('student-list-datatable?academic_year='.
             $academic_year.'&class='.
@@ -187,7 +187,7 @@
         }else{
             $ajax_url = url('student-list-datatable');
         }
-    @endphp -->
+    @endphp
 @endsection
 
 @include('backEnd.partials.data_table_js')
