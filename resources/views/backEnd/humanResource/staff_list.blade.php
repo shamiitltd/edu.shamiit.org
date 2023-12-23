@@ -187,7 +187,7 @@
                         
                                 <tbody>
         
-                                @foreach ($all_staff as $key => $staff)
+                                @foreach ($all_staff as $staff)
     <tr>
         <td>{{ $staff->staff_no }}</td>
         <td>{{ $staff->full_name }}</td>
@@ -201,10 +201,6 @@
             {{-- Add buttons or links for actions, e.g., edit or delete --}}
             <button onclick="deleteStaff({{ $staff->id }})">Delete</button>
         </td>
-    </tr>
-@empty
-    <tr>
-        <td colspan="9">No staff found</td>
     </tr>
 @endforeach
 
