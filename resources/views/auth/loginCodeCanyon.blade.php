@@ -193,11 +193,11 @@ $css = 'background:' . $login_background->color;
 
         if (passwordInput.type === 'password') {
             passwordInput.type = 'text';
-            eyeIcon.classList.add('ti-eye-slash');
+            eyeIcon.classList.add('fa-solid fa-eye-slash');
             
         } else {
             passwordInput.type = 'password';
-            eyeIcon.classList.remove('ti-eye-slash');
+            eyeIcon.classList.remove('fa-solid fa-eye-slash');
             
         }
         if (event.target === eyeIcon) {
