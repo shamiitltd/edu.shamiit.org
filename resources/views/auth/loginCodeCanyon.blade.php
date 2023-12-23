@@ -181,23 +181,17 @@ $css = 'background:' . $login_background->color;
     </span>
 </div>
 <script>
-    function togglePassword() {
-        const eyeIcon = document.getElementById('eye-icon');
-        const passwordInput = document.getElementById('password');
-
+    const eyeIcon = document.getElementById('eye-icon');
+    const passwordInput = document.getElementById('password');
+    eyeIcon.addEventListener('click', function() {
         if (passwordInput.type === 'password') {
             passwordInput.type = 'text';
-            eyeIcon.classList.add('bi bi-eye-slash');
-            
+            eyeIcon.innerHTML = '<i class="ti-eye-slash"></i>';
         } else {
             passwordInput.type = 'password';
-            eyeIcon.classList.remove('bi bi-eye-slash');
-            
+            eyeIcon.innerHTML = '<i class="ti-eye"></i>';
         }
-        if (event.target === eyeIcon) {
-            passwordInput.focus();
-        }
-    }
+    });
 </script>
 
 
