@@ -186,7 +186,7 @@
                                 </thead>
                         
                                 <tbody>
-                                @if (is_array(@$all_staffs) || is_object(@$all_staffs))
+                                <!-- @if (is_array(@$all_staffs) || is_object(@$all_staffs))
     @foreach (@$all_staffs as $staff)
         <tr>
             <td>{{ $staff->staff_no }}</td>
@@ -204,7 +204,7 @@
             </td>
         </tr>
     @endforeach
-@endif
+@endif -->
 
 
                                 </tbody>
