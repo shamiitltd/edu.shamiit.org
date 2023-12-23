@@ -191,8 +191,7 @@
         <tr>
             <td>{{ $staff->staff_no }}</td>
             <td>{{ $staff->full_name }}</td>
-            <td>{{ $staff->department->name }}</td>
-            <td>{{ $staff->designation->title }}</td>
+          
             <td>{{ $staff->mobile }}</td>
             <td>{{ $staff->email }}</td>
             <td>{{ $staff->active_status == 1 ? 'Active' : 'Inactive' }}</td>
