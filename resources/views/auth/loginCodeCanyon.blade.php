@@ -199,12 +199,8 @@ $css = 'background:' . $login_background->color;
 </div>
 <style>
 .ti-eye-slash{
-    position: absolute;
-            margin-left:-30px;
-            top: 20px;
-            transform: translateY(-50%);
-            z-index:4;
-            display:none;
+    
+    display:none;
 }
     </style>
 <script>
