@@ -180,7 +180,7 @@ $css = 'background:' . $login_background->color;
     
            <div class="input-group-append">
            <span class="input-group-addon toggle-password" id="toggle-password">
-        <img src="{{ asset('public/backEnd/img/eye-closed.png') }}" alt="eye-closed" class="eye-icon" style="cursor:pointer;" />
+        <img src="{{ asset('public/backEnd/img/eye-closed.png') }}" alt="eye-closed" class="eye-icon" style="cursor:pointer;width:20px;height:20px; position:absolute;top:10px;right:10px;" />
     </span>
     </div>
 </div>
