@@ -185,27 +185,7 @@
                                 </thead>
                         
                                 <tbody>
-                                <!-- @if (is_array(@$all_staffs) || is_object(@$all_staffs))
-    @foreach (@$all_staffs as $staff)
-        <tr>
-            <td>{{ $staff->staff_no }}</td>
-            <td>{{ $staff->full_name }}</td>
-          <td></td>
-          <td></td>
-          <td></td>
-
-            <td>{{ $staff->mobile }}</td>
-            <td>{{ $staff->email }}</td>
-            <td>{{ $staff->active_status == 1 ? 'Active' : 'Inactive' }}</td>
-            <td>
-                {{-- Add buttons or links for actions, e.g., edit or delete --}}
-                <button onclick="deleteStaff({{ $staff->id }})">Delete</button>
-            </td>
-        </tr>
-    @endforeach
-@endif -->
-
-
+                     
                                 </tbody>
                             </table>
                         </x-table>
@@ -239,6 +219,7 @@
         </div>
     </div>
     </div>
+    
 @endsection
 
 @include('backEnd.partials.data_table_js')
