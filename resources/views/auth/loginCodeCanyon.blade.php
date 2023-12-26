@@ -176,20 +176,23 @@ $css = 'background:' . $login_background->color;
     <input class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
            type="password" name='password' id="password"
            placeholder="@lang('auth.enter_password')" />
-    <span class="input-group-addon" style="cursor: pointer; position: absolute; top: 20px; transform: translateY(-50%); z-index:4;" onclick="togglePassword()">
-        <i class="ti-eye" id="eye-icon"></i>
+    <span class="input-group-addon" style="cursor: pointer; position: relative;">
+        <i class="ti-eye" id="eye-icon" style="position:absolute; top: 20px;margin-left:-30px; transform: translateY(-50%); z-index:4;"></i>
     </span>
 </div>
 <script>
     const eyeIcon = document.getElementById('eye-icon');
     const passwordInput = document.getElementById('password');
+
     eyeIcon.addEventListener('click', function() {
         if (passwordInput.type === 'password') {
             passwordInput.type = 'text';
-            eyeIcon.innerHTML = '<i class="ti-eye"></i>';
+            eyeIcon.classList.remove('ti-eye');
+            eyeIcon.classList.add('ti-eye-slash');
         } else {
             passwordInput.type = 'password';
-            eyeIcon.innerHTML = '<i class="ti-eye-slash"></i>';
+            eyeIcon.classList.remove('ti-eye-slash');
+            eyeIcon.classList.add('ti-eye');
         }
     });
 </script>
