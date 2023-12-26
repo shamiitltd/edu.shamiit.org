@@ -91,7 +91,7 @@ $css = 'background:' . $login_background->color;
             font-size: 11px;
             margin: 0 !important;
             padding: 0;
-            height: 31px;
+            height: 31.0px;
             line-height: 31px;
         }
         @media (max-width: 575.98px) {
