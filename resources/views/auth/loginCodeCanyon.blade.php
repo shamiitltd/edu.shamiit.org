@@ -180,18 +180,19 @@ $css = 'background:' . $login_background->color;
     
            <div class="input-group-append">
         <span class="input-group-text toggle-password" style="cursor:pointer; position:relative">
-            <i class=" ti-eye"></i>
+            <i class=" ti-eye-slash"></i>
         </span>
     </div>
 </div>
 
 @push('scripts')
-    <script>
+<script>
         $(document).ready(function () {
             $(".toggle-password").click(function () {
-                $(this).toggleClass("ti-eye ti-eye-slash");
                 var input = $("#password");
-                input.attr('type') === 'password' ? input.attr('type', 'text') : input.attr('type', 'password');
+                var type = input.attr('type') === 'password' ? 'text' : 'password';
+                input.attr('type', type);
+                $(this).find('i').toggleClass("ti-eye ti-eye-slash");
             });
         });
     </script>
