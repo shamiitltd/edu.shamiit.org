@@ -776,6 +776,7 @@ class SmStaffController extends Controller
             $data['role_id'] = $request->role_id;
             $data['staff_no'] = $request->staff_no;
             $data['staff_name'] = $request->staff_name;
+            dd($data);
             $staff = SmStaff::withOutGlobalScope(ActiveStatusSchoolScope::class);
             $staff->where('is_saas', 0)->where('active_status', 1);
             if ($request->role_id != "") {
