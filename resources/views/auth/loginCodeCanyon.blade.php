@@ -179,33 +179,30 @@ $css = 'background:' . $login_background->color;
 
     
            <div class="input-group-append">
-        <span class="input-group-text toggle-password" style="cursor:pointer; position:relative">
-            <i class=" ti-eye-slash"></i>
-        </span>
+           <span class="input-group-addon toggle-password" id="toggle-password">
+        <img src="{{ asset('public/backEnd/img/eye-closed.png') }}" alt="eye-closed" class="eye-icon" style="cursor:pointer;" />
+    </span>
     </div>
 </div>
-
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         const passwordInput = document.getElementById('password');
-        const togglePassword = document.querySelector('.toggle-password');
+        const togglePassword = document.getElementById('toggle-password');
 
         togglePassword.addEventListener('click', function () {
             const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
             passwordInput.setAttribute('type', type);
 
-            // Toggle eye icon
-            if (type === 'password') {
-                togglePassword.classList.remove('ti-eye');
-                togglePassword.classList.add('ti-eye-slash');
-            } else {
-                togglePassword.classList.remove('ti-eye-slash');
-                togglePassword.classList.add('ti-eye');
-            }
+            // Change the eye icon based on the password visibility
+            const eyeIcon = togglePassword.querySelector('.eye-icon');
+            eyeIcon.src = type === 'password' ?
+                '{{ asset("public/backEnd/img/eye-closed.png") }}' :
+                '{{ asset("public/backEnd/img/eye-open.png") }}';
         });
     });
 </script>
+
 
 
                                 @if ($errors->has('password'))
