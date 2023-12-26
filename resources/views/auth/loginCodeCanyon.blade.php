@@ -186,7 +186,7 @@ $css = 'background:' . $login_background->color;
     eyeIcon.addEventListener('click', function() {
         if (passwordInput.type === 'password') {
             passwordInput.type = 'text';
-            eyeIcon.innerHTML = '<i class="ti-eye-slash"></i>';
+            eyeIcon.innerHTML = '<i class="ti-eye"></i>';
         } else {
             passwordInput.type = 'password';
             eyeIcon.innerHTML = '<i class="ti-eye-slash"></i>';
