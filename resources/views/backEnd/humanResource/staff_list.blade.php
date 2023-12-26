@@ -254,6 +254,9 @@
                      "ajax": $.fn.dataTable.pipeline( {
                            url: "{{route('staff_directory_ajax')}}",
                            data: { 
+                            role_id: $("#role_id").val(),
+                            staff_no:$("#staff_no").val(),
+                            staff_name: $("#staff_name").val(),
                             },
                            pages: "{{generalSetting()->ss_page_load}}" // number of pages to cache
                            
