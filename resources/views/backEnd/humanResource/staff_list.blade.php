@@ -112,12 +112,12 @@
                         <div class="row">
 
                         <div>
-                        {{ @$role_id }} 
-                        {{ @$staff_no }}
-                        {{ @$staff_name }}
-                        {{@$data['role_id']}}
-                        {{@$data['staff_no']}}
-                        {{@$data['sfatt_name']}}
+                        1: {{ @$role_id }} 
+                        2: {{ @$staff_no }}
+                        3: {{ @$staff_name }}
+                        4: {{@$data['role_id']}}
+                        5: {{@$data['staff_no']}}
+                        6:{{@$data['sfatt_name']}}
 
                         </div>
                         <input type="hidden" name="role_id" id="role_id" value="{{ @$role_id }}">
