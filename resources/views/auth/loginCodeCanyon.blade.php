@@ -185,19 +185,27 @@ $css = 'background:' . $login_background->color;
     </div>
 </div>
 
-@push('scripts')
-<script>
-        $(document).ready(function () {
-            $(".toggle-password").click(function () {
-                var input = $("#password");
-                var type = input.attr('type') === 'password' ? 'text' : 'password';
-                input.attr('type', type);
-                $(this).find('i').toggleClass("ti-eye ti-eye-slash");
-            });
-        });
-    </script>
-@endpush
 
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const passwordInput = document.getElementById('password');
+        const togglePassword = document.querySelector('.toggle-password');
+
+        togglePassword.addEventListener('click', function () {
+            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
+
+            // Toggle eye icon
+            if (type === 'password') {
+                togglePassword.classList.remove('ti-eye');
+                togglePassword.classList.add('ti-eye-slash');
+            } else {
+                togglePassword.classList.remove('ti-eye-slash');
+                togglePassword.classList.add('ti-eye');
+            }
+        });
+    });
+</script>
 
 
                                 @if ($errors->has('password'))
