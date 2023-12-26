@@ -303,6 +303,7 @@ class SmAccountsController extends Controller
                         ->where('active_status', 1)
                         ->where('school_id', Auth::user()->school_id)
                         ->get();
+                        dd($add_expenses);
                     return view('backEnd.accounts.transaction', compact('payment_methods', 'add_expenses'));
                 }
             }
