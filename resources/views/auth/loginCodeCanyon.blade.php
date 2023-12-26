@@ -179,8 +179,8 @@ $css = 'background:' . $login_background->color;
 
     
            <div class="input-group-append">
-        <span class="input-group-text">
-            <i class="toggle-password ti-eye"></i>
+        <span class="input-group-text toggle-password" style="cursor:pointer; position:relative">
+            <i class=" ti-eye"></i>
         </span>
     </div>
 </div>
