@@ -115,9 +115,9 @@
                         {{ @$role_id }} 
                         {{ @$staff_no }}
                         {{ @$staff_name }}
-                        {{$data['role_id']}}
-                        {{$data['staff_no']}}
-                        {{$data['sfatt_name']}}
+                        {{@$data['role_id']}}
+                        {{@$data['staff_no']}}
+                        {{@$data['sfatt_name']}}
 
                         </div>
                         <input type="hidden" name="role_id" id="role_id" value="{{ @$role_id }}">
