@@ -110,19 +110,9 @@
                     <div class="white-box">
                         {{ Form::open(['class' => 'form-horizontal', 'files' => true, 'route' => 'searchStaff', 'method' => 'POST', 'enctype' => 'multipart/form-data']) }}
                         <div class="row">
-
-                        <div>
-                        1: {{ @$role_id }} 
-                        2: {{ @$staff_no }}
-                        3: {{ @$staff_name }}
-                        4: {{@$data['role_id']}}
-                        5: {{@$data['staff_no']}}
-                        6:{{@$data['sfatt_name']}}
-
-                        </div>
-                        <input type="hidden" name="role_id" id="role_id" value="{{ @$role_id }}">
-    <input type="hidden" name="staff_no" id="staff_no" value="{{ @$staff_no }}">
-    <input type="hidden" name="staff_name" id="staff_name" value="{{ @$staff_name }}"> <div class="col-lg-4">
+                        <input type="hidden" name="role_id" id="role_id" value="{{@$data['role_id']}}">
+    <input type="hidden" name="staff_no" id="staff_no" value="{{@$data['staff_no']}}">
+    <input type="hidden" name="staff_name" id="staff_name" value="{{@$data['staff_name']}}"> <div class="col-lg-4">
                                 <label class="primary_input_label" for="">
                                     {{ __('common.role') }}
                                     <span class="text-danger"> </span>
