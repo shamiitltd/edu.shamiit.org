@@ -284,6 +284,7 @@
                             exportOptions: {
                                 columns: ':visible:not(.not-export-col)'
                             },
+                        },
                             orientation: "landscape",
                             pageSize: "A4",
                             margin: [0, 0, 0, 12],
@@ -296,7 +297,7 @@
                                     alignment: "center",
                                     image: "data:image/png;base64," + $("#logo_img").val(),
                                 });
-                            },
+                            
                         },
                         {
                             extend: "print",
