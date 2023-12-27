@@ -411,7 +411,7 @@
     'Reset to  with Section'=>'Reset to  with Section',
     'Multi Class Student'=>'Multi Class Student',
     'Delete Student Record'=>'Delete Student Record',
-    'UnAssign Student'=>'UnAssign Student',
+    'UnAssign Student'=>'Unassigned Student',
     'Purchase History'=>'Purchase History',
     'My Quiz'=>'My Quiz',
     'Quiz Report'=>'Quiz Report',
