@@ -108,9 +108,9 @@
                     <div class="white-box">
                         {{ Form::open(['class' => 'form-horizontal', 'files' => true, 'route' => 'searchStaff', 'method' => 'POST', 'enctype' => 'multipart/form-data']) }}
                         <div class="row">
-                            <input type="hidden" name="role_id" id="role_id" value="{{ @$data['role_id'] }}">
-                            <input type="hidden" name="staff_no" id="staff_no" value="{{ @$data['staff_no'] }}">
-                            <input type="hidden" name="staff_name" id="staff_name" value="{{ @$data['staff_name'] }}">
+                        <input type="hidden" name="role_id" id="role_id" value="{{@$data['role_id']}}">
+                        <input type="hidden" name="staff_no" id="staff_no" value="{{@$data['staff_no']}}">
+    <input type="hidden" name="staff_name" id="staff_name" value="{{@$data['staff_name']}}"> <div class="col-lg-4">
                             <div class="col-lg-4">
                                 <label class="primary_input_label" for="">
                                     {{ __('common.role') }}
@@ -232,6 +232,9 @@
                      "ajax": $.fn.dataTable.pipeline( {
                            url: "{{route('staff_directory_ajax')}}",
                            data: { 
+                            role_id: $("#role_id").val(),
+                            staff_no:$("#staff_no").val(),
+                            staff_name: $("#staff_name").val(),
                             },
                            pages: "{{generalSetting()->ss_page_load}}" // number of pages to cache
                            

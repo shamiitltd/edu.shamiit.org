@@ -92,7 +92,7 @@
                                 <div class="row no-gutters input-right-icon">
                                     <div class="col">
                                         <div class="primary_input">
-                                            <input class="primary_input_field form-control {{ $errors->has('file') ? ' is-invalid' : '' }}" type="text" id="placeholderPhoto" placeholder="Excel file (xlsx, csv) *"
+                                            <input class="primary_input_field form-control {{ $errors->has('file') ? ' is-invalid' : '' }}" type="text" id="placeholderEventFile" placeholder="Excel file (xlsx, csv) *"
                                                 readonly>
                                             
                                             @if ($errors->has('file'))
@@ -105,7 +105,9 @@
                                     <div class="col-auto">
                                         <button class="primary-btn-small-input" type="button">
                                             <label class="primary-btn small fix-gr-bg" for="upload_content_file">@lang('common.browse')</label>
-                                            <input type="file" class="d-none" name="file" id="upload_content_file">
+                                            <input type="file" class="d-none" name="file" id="upload_content_file" onchange="
+                                            var fileName = this.files[0].name;
+                                            document.getElementById('placeholderEventFile').value = fileName;">
                                         </button>
                                     </div>
                                 </div>
