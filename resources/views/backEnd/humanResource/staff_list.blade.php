@@ -104,6 +104,8 @@
             </div>
 
             <div class="row">
+               
+
                 <div class="col-lg-12">
                     <div class="white-box">
                         {{ Form::open(['class' => 'form-horizontal', 'files' => true, 'route' => 'searchStaff', 'method' => 'POST', 'enctype' => 'multipart/form-data']) }}
@@ -111,7 +113,6 @@
                         <input type="hidden" name="role_id" id="role_id" value="{{@$data['role_id']}}">
                         <input type="hidden" name="staff_no" id="staff_no" value="{{@$data['staff_no']}}">
     <input type="hidden" name="staff_name" id="staff_name" value="{{@$data['staff_name']}}"> <div class="col-lg-4">
-                            <div class="col-lg-4">
                                 <label class="primary_input_label" for="">
                                     {{ __('common.role') }}
                                     <span class="text-danger"> </span>
@@ -182,9 +183,29 @@
                                         <th>@lang('common.action')</th>
                                     </tr>
                                 </thead>
-    
+                        
                                 <tbody>
-                            
+                                <!-- @if (is_array(@$all_staffs) || is_object(@$all_staffs))
+    @foreach (@$all_staffs as $staff)
+        <tr>
+            <td>{{ $staff->staff_no }}</td>
+            <td>{{ $staff->full_name }}</td>
+          <td></td>
+          <td></td>
+          <td></td>
+
+            <td>{{ $staff->mobile }}</td>
+            <td>{{ $staff->email }}</td>
+            <td>{{ $staff->active_status == 1 ? 'Active' : 'Inactive' }}</td>
+            <td>
+                {{-- Add buttons or links for actions, e.g., edit or delete --}}
+                <button onclick="deleteStaff({{ $staff->id }})">Delete</button>
+            </td>
+        </tr>
+    @endforeach
+@endif -->
+
+
                                 </tbody>
                             </table>
                         </x-table>
