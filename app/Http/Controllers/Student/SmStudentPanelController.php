@@ -1927,11 +1927,13 @@ class SmStudentPanelController extends Controller
                 Toastr::success('Operation successful', 'Success');
                 return redirect()->back();
             } else {
-                Toastr::error('Operation Failed', 'Failed');
+                Toastr::error('Operation Failed Unble to update ', 'Failed');
                 return redirect()->back();
             }
         } catch (\Exception $e) {
-            Toastr::error('Operation Failed', 'Failed');
+
+            dd($e->getMessage());
+           Toastr::error('Operation Failed', 'Failed');
             return redirect()->back();
         }
     }
