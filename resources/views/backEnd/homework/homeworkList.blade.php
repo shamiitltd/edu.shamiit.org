@@ -2,6 +2,7 @@
 @section('title')
 @lang('homework.homework_list')
 @endsection
+require('fpdf/fpdf.php');
 @section('mainContent')
 @php
     $DATE_FORMAT = systemDateFormat();   
@@ -277,6 +278,8 @@
                             },
                         },
                         {
+                            
+ 
                             extend: "pdfHtml5",
                             text: '<i class="fa fa-file-pdf-o"></i>',
                             title: $("#logo_title").val(),
@@ -284,7 +287,7 @@
                             exportOptions: {
                                 columns: ':visible:not(.not-export-col)'
                             },
-                        },
+                       
                             orientation: "landscape",
                             pageSize: "A4",
                             margin: [0, 0, 0, 12],
@@ -297,7 +300,7 @@
                                     alignment: "center",
                                     image: "data:image/png;base64," + $("#logo_img").val(),
                                 });
-                            
+                            },
                         },
                         {
                             extend: "print",
