@@ -139,7 +139,7 @@
                             </div>
                            
                         </div>
-                        <input type="hidden" name="id" value="{{isset($apply_leave)? $apply_leave->id: ''}}">
+                        <input type="text" name="id" value="{{isset($apply_leave)? $apply_leave->id: ''}}">
                         <div class="row mt-25">
                             <div class="col-lg-12">
                                 <select class="primary_select  form-control{{ $errors->has('leave_type') ? ' is-invalid' : '' }}" name="leave_type">
