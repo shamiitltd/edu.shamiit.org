@@ -1927,7 +1927,7 @@ class SmStudentPanelController extends Controller
                 Toastr::success('Operation successful', 'Success');
                 return redirect()->back();
             } else {
-                Toastr::error('Operation Failed Unble to update ', 'Failed');
+                Toastr::error('Operation Failed Unable to update ', 'Failed');
                 return redirect()->back();
             }
         } catch (\Exception $e) {
