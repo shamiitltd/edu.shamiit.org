@@ -4044,13 +4044,13 @@ class RouteListController extends Controller
            'type' => 3,
          ),
 
-         700 => 
-         array (
-           'name' => 'Report',
-           'route' => 'accounts-report',
-           'parent_route' => 'accounts',
-           'type' => 2,
-         ),
+        //  700 => 
+        //  array (
+        //    'name' => 'Report',
+        //    'route' => 'accounts-report',
+        //    'parent_route' => 'accounts',
+        //    'type' => 2,
+        //  ),
          701 => 
          array (
            'name' => 'Fine Report',

@@ -72,7 +72,7 @@
                                                                         <li class="dd-item" data-id="{{ $submenu->id }}"
                                                                         
                                                                             >
-                                                                            <div class="card accordion_card carddd"
+                                                                            <div class="card accordion_card"
                                                                                 id="accordion_{{ $submenu->id }}">
                                                                                 <div class="card-header item_header"
                                                                                     id="heading_{{ $submenu->id }}">
