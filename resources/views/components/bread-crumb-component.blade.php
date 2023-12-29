@@ -9,7 +9,7 @@
                         {!! $page !!}
                     @endforeach
                 @endisset
-                <a href="#">{{ isset($h1) ? $h1 : ''}}</a>
+                <a href="#">{{ isset($h1) ? $h1 : ""}}</a>
             </div>
         </div>
     </div>
