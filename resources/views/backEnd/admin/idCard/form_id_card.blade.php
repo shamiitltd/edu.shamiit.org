@@ -80,10 +80,10 @@
                         class="primary_select  form-control{{ $errors->has('applicable_user') ? ' is-invalid' : '' }}"
                         name="applicable_user[]" id="applicableUser">
                         <option data-display="@lang('admin.applicable_user') *" value="">@lang('common.select')*</option>
-                        @if (isset($id_card))
+                        <!-- @if (isset($id_card))
                             @php
                                 $applicableUsers = json_decode($id_card->role_id);
-                            @endphp
+                            @endphp -->
                             <option value="2" {{ in_array(2, $applicableUsers) ? 'selected' : '' }} selected>
                                 @lang('admin.student')</option>
                             <option value="3" {{ in_array(3, $applicableUsers) ? 'selected' : '' }}>
