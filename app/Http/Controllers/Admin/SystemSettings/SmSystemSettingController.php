@@ -414,40 +414,40 @@ class SmSystemSettingController extends Controller
 
 
         try {
-                $uni = $request->id;
-                SmLanguage::where('active_status', 1)->where('school_id', Auth::user()->school_id)->update(['active_status' => 0]);
+                // $uni = $request->id;
+                // SmLanguage::where('active_status', 1)->where('school_id', Auth::user()->school_id)->update(['active_status' => 0]);
 
-                $updateLang = SmLanguage::where('language_universal', $uni)->where('school_id', Auth::user()->school_id)->first();
+                // $updateLang = SmLanguage::where('language_universal', $uni)->where('school_id', Auth::user()->school_id)->first();
 
-                $updateLang->active_status = 1;
-                $updateLang->update();
-                $langs = SmLanguage::where('school_id', Auth::user()->school_id)->get();
-                session()->put('systemLanguage',$langs);
-               if($uni != 'en'){
-                session()->put('lang', strtolower($uni));
-               }
-               App::setLocale($uni);
+            //     $updateLang->active_status = 1;
+            //     $updateLang->update();
+            //     $langs = SmLanguage::where('school_id', Auth::user()->school_id)->get();
+            //     session()->put('systemLanguage',$langs);
+            //    if($uni != 'en'){
+            //     session()->put('lang', strtolower($uni));
+            //    }
+            //    App::setLocale($uni);
 
 
-               $values['APP_LOCALE'] = $updateLang->language_universal;
-                $envFile = app()->environmentFilePath();
-                $str = file_get_contents($envFile);
-                if (count($values) > 0) {
-                    foreach ($values as $envKey => $envValue) {
-                        $str .= "\n";
-                        $keyPosition = strpos($str, "{$envKey}=");
-                        $endOfLinePosition = strpos($str, "\n", $keyPosition);
-                        $oldLine = substr($str, $keyPosition, $endOfLinePosition - $keyPosition);
-                        if (!$keyPosition || !$endOfLinePosition || !$oldLine) {
-                            $str .= "{$envKey}={$envValue}\n";
-                        } else {
-                            $str = str_replace($oldLine, "{$envKey}={$envValue}", $str);
-                        }
-                    }
-                }
-                $str = substr($str, 0, -1);
-                $res = file_put_contents($envFile, $str);
-               return response()->json([$uni]);
+            //    $values['APP_LOCALE'] = $updateLang->language_universal;
+            //     $envFile = app()->environmentFilePath();
+            //     $str = file_get_contents($envFile);
+            //     if (count($values) > 0) {
+            //         foreach ($values as $envKey => $envValue) {
+            //             $str .= "\n";
+            //             $keyPosition = strpos($str, "{$envKey}=");
+            //             $endOfLinePosition = strpos($str, "\n", $keyPosition);
+            //             $oldLine = substr($str, $keyPosition, $endOfLinePosition - $keyPosition);
+            //             if (!$keyPosition || !$endOfLinePosition || !$oldLine) {
+            //                 $str .= "{$envKey}={$envValue}\n";
+            //             } else {
+            //                 $str = str_replace($oldLine, "{$envKey}={$envValue}", $str);
+            //             }
+            //         }
+            //     }
+            //     $str = substr($str, 0, -1);
+            //     $res = file_put_contents($envFile, $str);
+            //    return response()->json([$uni]);
 
             $uni = $request->id;
             SmLanguage::where('active_status', 1)->where('school_id', Auth::user()->school_id)->update(['active_status' => 0]);
