@@ -140,7 +140,7 @@
                            
                         </div>
                         <input type="hidden" name="id" value="{{isset($apply_leave)? $apply_leave->id: ''}}">
-                        <h1>{{ $apply_leaves }}</h1>
+                        <h1>{{ $apply_leave}}</h1>
                         <div class="row mt-25">
                             <div class="col-lg-12">
                                 <select class="primary_select  form-control{{ $errors->has('leave_type') ? ' is-invalid' : '' }}" name="leave_type">
