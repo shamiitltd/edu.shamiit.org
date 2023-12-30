@@ -4044,13 +4044,13 @@ class RouteListController extends Controller
            'type' => 3,
          ),
 
-        //  700 => 
-        //  array (
-        //    'name' => 'Report',
-        //    'route' => 'accounts-report',
-        //    'parent_route' => 'accounts',
-        //    'type' => 2,
-        //  ),
+         700 => 
+         array (
+           'name' => 'Report',
+           'route' => 'accounts-report',
+           'parent_route' => 'accounts',
+           'type' => 2,
+         ),
          701 => 
          array (
            'name' => 'Fine Report',
@@ -4970,7 +4970,7 @@ class RouteListController extends Controller
          ),
          15209 => 
          array (
-           'name' => 'Unassign Student',
+           'name' => 'UnAssign Student',
            'route' => 'unassigned_student',
            'parent_route' => 'student_info',
            'type' => 2,
@@ -4978,4 +4978,3 @@ class RouteListController extends Controller
        );
     }
 }
-
