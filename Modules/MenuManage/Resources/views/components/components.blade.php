@@ -11,7 +11,7 @@
             @if (isset($sidebar_menus))
             
                 @foreach ($sidebar_menus as $sidebar_menu)
-                 {{$sidebar_menu}}
+                 {{$sidebar_menu->name}}
                         <!-- <div class="closed_section" data-id="{{ $sidebar_menu->id }}"
                             data-parent_section="{{ $sidebar_menu->permission_id }}">
                             <div id="accordion" class="dd">
