@@ -68,13 +68,37 @@
                                                                 <ol class="dd-list">
                                                                     
                                                                     @foreach ($menu->subModule as $submenu)
+                                                                        @if(sidebarPermission($submenu->permissionInfo)==true)
+                                                                        <li class="dd-item" data-id="{{ $submenu->id }}"
                                                                         
-                                                                        {{ $submenu->permissionInfo->name }}
+                                                                            >
+                                                                            <div class="card accordion_card"
+                                                                                id="accordion_{{ $submenu->id }}">
+                                                                                <div class="card-header item_header"
+                                                                                    id="heading_{{ $submenu->id }}">
+                                                                                    <div class="dd-handle">
+                                                                                        <div class="float-left">
+                                                                                            {{ $submenu->permissionInfo->name }}
+                                                                                            
+                                                                                        </div>
+                                                                                    </div>
+                                                                                <div class="float-right btn_div">
+                                                                                    <div class="edit_icon">
+                                                                                        
+
+                                                                                        <i class="ti-close remove_menu"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                        @endif
+                                                                        
                                                                     @endforeach
                                                                 </ol>
                                                             </li>  
                                                             @endif 
-                                                                                                             -->
+                                                                                                        
                                                         @endforeach
                                                     </ol>
                                                 </div>
