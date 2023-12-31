@@ -39,7 +39,7 @@
                                                     data-section="{{ $sidebar_menu->permission_id }}">
                                                     <ol class="dd-list">
                                                         @foreach ($sidebar_menu->subModule as $menu)
-                                                            @if(sidebarPermission($menu->permissionInfo)==true)
+                                                            <!-- @if(sidebarPermission($menu->permissionInfo)==true)
                                                             <li class="dd-item" data-id="{{ $menu->id }}" 
                                                                 data-section_id="{{ $menu->parent }}"
                                                                 data-parent_route="{{$menu->parent}}"
@@ -96,7 +96,8 @@
                                                                     @endforeach
                                                                 </ol>
                                                             </li>  
-                                                            @endif                                                     
+                                                            @endif  -->
+                                                                 {{$menu->permissionInfo->name}}                                            -->
                                                         @endforeach
                                                     </ol>
                                                 </div>

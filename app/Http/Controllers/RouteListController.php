@@ -4043,7 +4043,6 @@ class RouteListController extends Controller
            'parent_route' => 'course-category',
            'type' => 3,
          ),
-
          700 => 
          array (
            'name' => 'Report',
