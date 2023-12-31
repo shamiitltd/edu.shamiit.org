@@ -39,7 +39,7 @@
                                                     data-section="{{ $sidebar_menu->permission_id }}">
                                                     <ol class="dd-list">
                                                         @foreach ($sidebar_menu->subModule as $menu)
-                                                            <!-- @if(sidebarPermission($menu->permissionInfo)==true)
+                                                            @if(sidebarPermission($menu->permissionInfo)==true)
                                                             <li class="dd-item" data-id="{{ $menu->id }}" 
                                                                 data-section_id="{{ $menu->parent }}"
                                                                 data-parent_route="{{$menu->parent}}"
@@ -68,7 +68,7 @@
                                                                 <ol class="dd-list">
                                                                     
                                                                     @foreach ($menu->subModule as $submenu)
-                                                                        @if(sidebarPermission($submenu->permissionInfo)==true)
+                                                                        <!-- @if(sidebarPermission($submenu->permissionInfo)==true)
                                                                         <li class="dd-item" data-id="{{ $submenu->id }}"
                                                                         
                                                                             >
@@ -92,12 +92,12 @@
                                                                                 </div>
                                                                             </div>
                                                                         </li>
-                                                                        @endif
+                                                                        @endif -->{{ $submenu->permissionInfo->name }}
                                                                     @endforeach
                                                                 </ol>
                                                             </li>  
-                                                            @endif  -->
-                                                                 {{$menu->permissionInfo->name}}                                            -->
+                                                            @endif 
+                                                                                                             -->
                                                         @endforeach
                                                     </ol>
                                                 </div>
