@@ -30,7 +30,7 @@
                                     </div>
                                 </div>
                             </div>
-                            @if ($sidebar_menu->subModule->count())
+                            <!-- @if ($sidebar_menu->subModule->count())
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="row">
@@ -105,8 +105,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            @else
+                                </div> -->
+                            <!-- @else -->
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="row">
@@ -118,7 +118,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            @endif
+                            <!-- @endif -->
                         </div>
                    
                 @endforeach
