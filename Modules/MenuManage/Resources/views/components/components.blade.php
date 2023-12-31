@@ -11,8 +11,8 @@
             @if (isset($sidebar_menus))
             
                 @foreach ($sidebar_menus as $sidebar_menu)
-                 
-                        <div class="closed_section" data-id="{{ $sidebar_menu->id }}"
+                 {{$sidebar_menu}}
+                        <!-- <div class="closed_section" data-id="{{ $sidebar_menu->id }}"
                             data-parent_section="{{ $sidebar_menu->permission_id }}">
                             <div id="accordion" class="dd">
                                 <div class="section_nav">
@@ -30,7 +30,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- @if ($sidebar_menu->subModule->count())
+                            @if ($sidebar_menu->subModule->count())
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="row">
@@ -93,20 +93,18 @@
                                                                             </div>
                                                                         </li>
                                                                         @endif
-                                                                        
                                                                     @endforeach
                                                                 </ol>
                                                             </li>  
-                                                            @endif 
-                                                                                                        
+                                                            @endif                                                     
                                                         @endforeach
                                                     </ol>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div> -->
-                            <!-- @else -->
+                                </div>
+                            @else
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="row">
@@ -118,8 +116,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            <!-- @endif -->
-                        </div>
+                            @endif
+                        </div> -->
                    
                 @endforeach
             @endif
