@@ -8,10 +8,8 @@
 
     <div class="row">
         <div class="col-xl-12 menu_item_div" id="itemDiv">
-            @if (isset($sidebar_menus))
-            
-                @foreach ($sidebar_menus as $sidebar_menu)
-                 
+            @if (isset($sidebar_menus))            
+                @foreach ($sidebar_menus as $sidebar_menu)                 
                         <div class="closed_section" data-id="{{ $sidebar_menu->id }}"
                             data-parent_section="{{ $sidebar_menu->permission_id }}">
                             <div id="accordion" class="dd">
@@ -117,8 +115,7 @@
                                     </div>
                                 </div>
                             @endif
-                        </div>
-                   
+                        </div>                   
                 @endforeach
             @endif
         </div>
