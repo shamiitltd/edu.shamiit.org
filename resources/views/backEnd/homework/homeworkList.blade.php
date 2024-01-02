@@ -2,7 +2,6 @@
 @section('title')
 @lang('homework.homework_list')
 @endsection
-require('fpdf/fpdf.php');
 @section('mainContent')
 @php
     $DATE_FORMAT = systemDateFormat();   
@@ -278,56 +277,27 @@ require('fpdf/fpdf.php');
                             },
                         },
                         {
-                            
- 
-                        //     extend: "pdfHtml5",
-                        //     text: '<i class="fa fa-file-pdf-o"></i>',
-                        //     title: $("#logo_title").val(),
-                        //     titleAttr: window.jsLang('export_to_pdf'),
-                        //     exportOptions: {
-                        //         columns: ':visible:not(.not-export-col)'
-                        //     },
-                       
-                        //     orientation: "landscape",
-                        //     pageSize: "A4",
-                        //     margin: [0, 0, 0, 12],
-                        //     alignment: "center",
-                        //     header: true,
-                        //     customize: function(doc) {
-                        //         doc.content[1].margin = [100, 0, 100, 0]; //left, top, right, bottom
-                        //         doc.content.splice(1, 0, {
-                        //             margin: [0, 0, 0, 12],
-                        //             alignment: "center",
-                        //             image: "data:image/png;base64," + $("#logo_img").val(),
-                        //         });
-                        //     },
-                        // },
-                        
-    extend: "pdfHtml5",
-    text: '<i class="fa fa-file-pdf-o"></i>',
-    title: $("#logo_title").val(),
-    titleAttr: window.jsLang('export_to_pdf'),
-    exportOptions: {
-        columns: ':visible:not(.not-export-col)'
-    },
-    orientation: "landscape",
-    pageSize: "A4",
-    margin: [0, 0, 0, 12],
-    alignment: "center",
-    header: true, // Set to false if you don't want the header row in the PDF
-    customize: function (doc) {
-        // Check if the image source is valid
-        var logoImageSource = $("#logo_img").val();
-        if (logoImageSource) {
-            doc.content[1].margin = [100, 0, 100, 0]; // left, top, right, bottom
-            doc.content.splice(1, 0, {
-                margin: [0, 0, 0, 12],
-                alignment: "center",
-                image: "data:image/png;base64," + logoImageSource,
-            });
-        }
-    },
-},
+                            extend: "pdfHtml5",
+                            text: '<i class="fa fa-file-pdf-o"></i>',
+                            title: $("#logo_title").val(),
+                            titleAttr: window.jsLang('export_to_pdf'),
+                            exportOptions: {
+                                columns: ':visible:not(.not-export-col)'
+                            },
+                            orientation: "landscape",
+                            pageSize: "A4",
+                            margin: [0, 0, 0, 12],
+                            alignment: "center",
+                            header: true,
+                            customize: function(doc) {
+                                doc.content[1].margin = [100, 0, 100, 0]; //left, top, right, bottom
+                                doc.content.splice(1, 0, {
+                                    margin: [0, 0, 0, 12],
+                                    alignment: "center",
+                                    image: "data:image/png;base64," + $("#logo_img").val(),
+                                });
+                            },
+                        },
                         {
                             extend: "print",
                             text: '<i class="fa fa-print"></i>',
