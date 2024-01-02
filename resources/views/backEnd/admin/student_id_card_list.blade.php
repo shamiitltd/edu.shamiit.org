@@ -8,7 +8,7 @@
             <div class="row justify-content-between">
                 <h1>@lang('admin.id_card')</h1>
                 <div class="bc-pages">
-                    <a href="{{ route('dashboard') }}">@lang('common.dashboard')</a>
+                    <a href="#">@lang('common.dashboard')</a>
                     <a href="#">@lang('admin.admin_section')</a>
                     <a href="#">@lang('admin.id_card')</a>
                 </div>
