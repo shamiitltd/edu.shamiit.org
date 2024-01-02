@@ -67,7 +67,6 @@
                                                                     
                                                                     @foreach ($menu->subModule as $submenu)
                                                                         @if(sidebarPermission($submenu->permissionInfo)==true)
-                                                                        @if($submenu->permissionInfo->name != 'Report')
                                                                         <li class="dd-item" data-id="{{ $submenu->id }}"
                                                                         
                                                                             >
@@ -91,8 +90,6 @@
                                                                                 </div>
                                                                             </div>
                                                                         </li>
-                                                                        @endif
-
                                                                         @endif
                                                                     @endforeach
                                                                 </ol>
