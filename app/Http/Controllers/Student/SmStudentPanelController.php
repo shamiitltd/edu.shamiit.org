@@ -1921,7 +1921,7 @@ class SmStudentPanelController extends Controller
             $apply_leave->approve_status = 'P';
             $apply_leave->reason = $request->reason;
             $apply_leave->file = $fileName;
-            $apply_leave->note="ab";
+            $apply_leave->note='ab';
             $apply_leave->academic_id = getAcademicId();
             $apply_leave->school_id = Auth::user()->school_id;
             $result = $apply_leave->save();
@@ -1933,12 +1933,12 @@ class SmStudentPanelController extends Controller
                 Toastr::error('Operation Failed Unable to update ', 'Failed');
                 return redirect()->back();
             }
-        } catch (\Exception $e) {
+        }/* catch (\Exception $e) {
 
             dd($e->getMessage());
            Toastr::error('Operation Failed', 'Failed');
             return redirect()->back();
-        }
+        }*/
     }
 
     public function pendingLeave(Request $request)
