@@ -1915,7 +1915,7 @@ class SmStudentPanelController extends Controller
             $apply_leave->role_id = $role_id;
             $apply_leave->apply_date = date('Y-m-d', strtotime($request->apply_date));
             $apply_leave->leave_define_id = $request->leave_type;
-            $apply_leave->type_id = 1;
+            $apply_leave->type_id = $request->leave_type;
             $apply_leave->leave_from = date('Y-m-d', strtotime($request->leave_from));
             $apply_leave->leave_to = date('Y-m-d', strtotime($request->leave_to));
             $apply_leave->approve_status = 'P';
