@@ -146,7 +146,7 @@
                                 <select class="primary_select  form-control{{ $errors->has('leave_type') ? ' is-invalid' : '' }}" name="leave_type">
                                     <option data-display="@lang('leave.leave_type') *" value="">@lang('leave.leave_type') *</option>
                                     @foreach($leave_types as $leave_type)
-                                         <option value="{{$leave_type->leaveType->id}}" {{isset($apply_leave)? ($apply_leave->leave_define_id == $leave_type->id? 'selected':''):''}}>{{$leave_type->leaveType->type}}</option>
+                                         <option value="{{$leave_type->id}}" {{isset($apply_leave)? ($apply_leave->leave_define_id == $leave_type->id? 'selected':''):''}}>{{$leave_type->leaveType->type}}</option>
                                          
                                     @endforeach
                                 </select>
@@ -291,9 +291,11 @@
                             @foreach($apply_leaves as $apply_leave)
                             <tr>
                                 <td>
-                                    @if($apply_leave->leaveDefine != "" && $apply_leave->leaveDefine->leaveType !="")
-                                        {{ $apply_leave->type_id }}
-                                    @endif
+                                @if($apply_leave->leaveDefine !="" && $apply_leave->leaveDefine->leaveType !="")
+                                    {{$apply_leave->leaveDefine->leaveType->type}}
+                                    @else
+                                    Debug: {{$apply_leave->leaveDefine}} - {{$apply_leave->leaveDefine->leaveType}}
+                                     @endif
                                 </td>
                                 <td  data-sort="{{strtotime($apply_leave->leave_from)}}" >
                                  {{$apply_leave->leave_from != ""? dateConvert($apply_leave->leave_from):''}}
