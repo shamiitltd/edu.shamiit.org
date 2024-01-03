@@ -1903,9 +1903,9 @@ class SmStudentPanelController extends Controller
             $user = Auth()->user();
             if ($user) {
                 $login_id = $user->id;
-                dd($login_id);
                 $role_id = $user->role_id;
-            } else {
+            } 
+            else {
                 $login_id = $request->login_id;
                 $role_id = $request->role_id;
             }
@@ -1924,7 +1924,7 @@ class SmStudentPanelController extends Controller
             $apply_leave->academic_id = getAcademicId();
             $apply_leave->school_id = Auth::user()->school_id;
             $result = $apply_leave->save();
-
+            dd($result);
             if ($result) {
                 Toastr::success('Operation successful', 'Success');
                 return redirect()->back();
