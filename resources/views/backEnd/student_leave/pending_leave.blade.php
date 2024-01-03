@@ -52,9 +52,9 @@
                             <tr>
                                 <td>{{isset($apply_leave->student)? $apply_leave->student->full_name:''}}</td>
                                 <td>
-                                    @if($apply_leave->leaveDefine !="" && $apply_leave->leaveDefine->leaveType !="")
+                                    <!-- @if($apply_leave->leaveDefine !="" && $apply_leave->leaveDefine->leaveType !="") -->
                                     {{$apply_leave->leaveDefine->leaveType->type}}
-                                    @endif
+                                    <!-- @endif -->
                                 </td>
                                 <td  data-sort="{{strtotime($apply_leave->leave_from)}}" >
                                     {{$apply_leave->leave_from != ""? dateConvert($apply_leave->leave_from):''}}
