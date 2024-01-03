@@ -292,7 +292,7 @@
                             <tr>
                                 <td>
                                     @if($apply_leave->leaveDefine != "" && $apply_leave->leaveDefine->leaveType !="")
-                                        {{$apply_leave->type_id->leaveType->type}}
+                                        {{$apply_leave->leaveDefine->leaveType->type}}
                                     @endif
                                 </td>
                                 <td  data-sort="{{strtotime($apply_leave->leave_from)}}" >
