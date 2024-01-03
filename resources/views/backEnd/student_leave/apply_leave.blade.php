@@ -146,7 +146,8 @@
                                 <select class="primary_select  form-control{{ $errors->has('leave_type') ? ' is-invalid' : '' }}" name="leave_type">
                                     <option data-display="@lang('leave.leave_type') *" value="">@lang('leave.leave_type') *</option>
                                     @foreach($leave_types as $leave_type)
-                                        <option value="{{$leave_type->id}}" {{isset($apply_leave)? ($apply_leave->leave_define_id == $leave_type->id? 'selected':''):''}}>{{$leave_type->leaveType->type}}</option>
+                                    {{$leave_type}}
+                                        <!-- <option value="{{$leave_type->id}}" {{isset($apply_leave)? ($apply_leave->leave_define_id == $leave_type->id? 'selected':''):''}}>{{$leave_type->leaveType->type}}</option> -->
                                     @endforeach
                                 </select>
                                 @if ($errors->has('leave_type'))
