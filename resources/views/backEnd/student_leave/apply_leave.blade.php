@@ -326,11 +326,11 @@
                                         </button>
                                         <div class="dropdown-menu dropdown-menu-right">
     
-                                            @if(userPermission(93))
+                                            <!-- @if(userPermission(93)) -->
     
                                             <a data-modal-size="modal-lg" title="View Leave Details" class="dropdown-item modalLink" href="{{route('view-leave-details-apply', $apply_leave->id)}}">@lang('common.view')</a>
     
-                                            @endif
+                                            <!-- @endif -->
                                             @if($apply_leave->approve_status == 'P')
                                             @if(userPermission(42))
                                             <a class="dropdown-item" href="{{route('student-leave-edit', [$apply_leave->id
