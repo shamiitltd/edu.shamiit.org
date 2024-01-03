@@ -1908,6 +1908,7 @@ class SmStudentPanelController extends Controller
                 $login_id = $request->login_id;
                 $role_id = $request->role_id;
             }
+            
             $apply_leave = new SmLeaveRequest();
             $apply_leave->staff_id = $login_id;
             $apply_leave->role_id = $role_id;
