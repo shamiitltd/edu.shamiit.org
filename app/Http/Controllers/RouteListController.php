@@ -412,7 +412,7 @@ class RouteListController extends Controller
          ),
          45 => 
          array (
-           'name' => 'Student ID Card',
+           'name' => 'ID Card',
            'route' => 'student-id-card',
            'parent_route' => 'admin_section',
            'type' => 2,
@@ -1420,7 +1420,7 @@ class RouteListController extends Controller
          ),
          196 => 
          array (
-           'name' => 'Pending Leave',
+           'name' => 'Pending Leave Request',
            'route' => 'pending-leave',
            'parent_route' => 'leave',
            'type' => 2,
@@ -2911,7 +2911,7 @@ class RouteListController extends Controller
          ),
          412 => 
          array (
-           'name' => 'Payment Method Settings',
+           'name' => 'Payment Settings',
            'route' => 'payment-method-settings',
            'parent_route' => 'system_settings',
            'type' => 2,
@@ -2995,7 +2995,7 @@ class RouteListController extends Controller
          ),
          424 => 
          array (
-           'name' => 'Optional Subject Setup',
+           'name' => 'Optional Subject',
            'route' => 'class_optional',
            'parent_route' => 'system_settings',
            'type' => 2,
@@ -3255,7 +3255,7 @@ class RouteListController extends Controller
          ),
          463 => 
          array (
-           'name' => 'Header Option',
+           'name' => 'Dashboard',
            'route' => 'button-disable-enable',
            'parent_route' => 'system_settings',
            'type' => 2,
@@ -3493,7 +3493,7 @@ class RouteListController extends Controller
          ),
          500 => 
          array (
-           'name' => 'News Category',
+           'name' => 'News',
            'route' => 'news-category',
            'parent_route' => 'front_settings',
            'type' => 2,
@@ -3661,7 +3661,7 @@ class RouteListController extends Controller
          ),
          525 => 
          array (
-           'name' => 'Course Details Heading',
+           'name' => 'Course Heading',
            'route' => 'course-heading-update',
            'parent_route' => 'front_settings',
            'type' => 2,
@@ -3731,7 +3731,7 @@ class RouteListController extends Controller
          ),
          535 => 
          array (
-           'name' => 'Subject Wise Attendance Report',
+           'name' => 'Subject Attendance Report',
            'route' => 'subject-attendance-report',
            'parent_route' => 'student_info',
            'type' => 2,
@@ -4397,7 +4397,7 @@ class RouteListController extends Controller
          ),
          950 => 
          array (
-           'name' => 'Time Setup',
+           'name' => 'SMS Sending Time',
            'route' => 'notification_time_setup',
            'parent_route' => 'student_info',
            'type' => 2,
@@ -4502,7 +4502,7 @@ class RouteListController extends Controller
          ),
          1110 => 
          array (
-           'name' => 'Pending Diposite',
+           'name' => 'Pending Deposit',
            'route' => 'wallet.pending-diposit',
            'parent_route' => 'wallet',
            'type' => 2,
@@ -4530,7 +4530,7 @@ class RouteListController extends Controller
          ),
          1114 => 
          array (
-           'name' => 'Approve Diposite',
+           'name' => 'Approve Deposit',
            'route' => 'wallet.approve-diposit',
            'parent_route' => 'wallet',
            'type' => 2,
@@ -4544,7 +4544,7 @@ class RouteListController extends Controller
          ),
          1116 => 
          array (
-           'name' => 'Reject Diposite',
+           'name' => 'Reject Deposit',
            'route' => 'wallet.reject-diposit',
            'parent_route' => 'wallet',
            'type' => 2,
@@ -4565,7 +4565,7 @@ class RouteListController extends Controller
          ),
          1119 => 
          array (
-           'name' => 'Wallet Refund Request',
+           'name' => 'Refund Request',
            'route' => 'wallet.wallet-refund-request',
            'parent_route' => 'wallet',
            'type' => 2,
@@ -4884,7 +4884,7 @@ class RouteListController extends Controller
          ),
          3214 => 
          array (
-           'name' => 'MarkSheet Report',
+           'name' => 'Marksheet Report',
            'route' => 'custom-marksheet-report',
            'parent_route' => 'examination',
            'type' => 2,
@@ -4898,7 +4898,7 @@ class RouteListController extends Controller
          ),
          3216 => 
          array (
-           'name' => 'Subject Mark Sheet',
+           'name' => 'Exam Schedule',
            'route' => 'exam_schedule',
            'parent_route' => 'examination',
            'type' => 2,
@@ -4912,7 +4912,7 @@ class RouteListController extends Controller
          ),
          3218 => 
          array (
-           'name' => 'Final Mark Sheet',
+           'name' => 'Exam Attendance',
            'route' => 'exam_attendance',
            'parent_route' => 'examination',
            'type' => 2,
@@ -4926,7 +4926,7 @@ class RouteListController extends Controller
          ),
          3220 => 
          array (
-           'name' => 'Student Final Mark Sheet',
+           'name' => 'Marks Register',
            'route' => 'marks_register',
            'parent_route' => 'examination',
            'type' => 2,
@@ -4947,7 +4947,7 @@ class RouteListController extends Controller
          ),
          5000 => 
          array (
-           'name' => 'Position Setup',
+           'name' => 'Position',
            'route' => 'exam-report-position',
            'parent_route' => '',
            'type' => 2,
@@ -4969,7 +4969,7 @@ class RouteListController extends Controller
          ),
          15209 => 
          array (
-           'name' => 'UnAssign Student',
+           'name' => 'Unassigned Student',
            'route' => 'unassigned_student',
            'parent_route' => 'student_info',
            'type' => 2,
