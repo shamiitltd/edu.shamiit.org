@@ -320,38 +320,34 @@
                                 @endif
                                 </td>
                                 <td>
-                                    <div class="dropdown CRM_dropdown">
-                                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
-                                            @lang('common.select')
-                                        </button>
-                                        <div class="dropdown-menu dropdown-menu-right">
-    
-                                            <!-- @if(userPermission(93)) -->
-    
-                                            <a data-modal-size="modal-lg" title="View Leave Details" class="dropdown-item modalLink" href="{{route('view-leave-details-apply', $apply_leave->id)}}">@lang('common.view')</a>
-    
-                                            <!-- @endif -->
-                                            @if($apply_leave->approve_status == 'P')
-                                            @if(userPermission(42))
-                                            <a class="dropdown-item" href="{{route('student-leave-edit', [$apply_leave->id
-                                                ])}}">@lang('common.edit')</a> 
-    
-                                            @endif
-                                            @if(userPermission(94))
-    
-                                             <a class="dropdown-item" data-toggle="modal" data-target="#deleteApplyLeaveModal{{$apply_leave->id}}"
-                                                href="#">@lang('common.delete')</a>
-                                            @endif
-                                            @endif
-                                            @if($apply_leave->file != "")
-                                                <a class="dropdown-item" href="{{url(@$apply_leave->file)}}" download>
-                                                    @lang('leave.download') 
-                                                    <span class="pl ti-download"></span>
-                                                </a>
-                                            @endif
-                                        </div>
-                                    </div>
-                                </td>
+    <div class="dropdown CRM_dropdown">
+        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+            @lang('common.select')
+        </button>
+        <div class="dropdown-menu dropdown-menu-right">
+
+            @if(userPermission(93)) 
+                <a data-modal-size="modal-lg" title="View Leave Details" class="dropdown-item modalLink" href="{{route('view-leave-details-apply', $apply_leave->id)}}">@lang('common.view')</a>
+            @endif 
+
+            @if(userPermission(42) && $apply_leave->approve_status == 'P')
+                <a class="dropdown-item" href="{{route('student-leave-edit', [$apply_leave->id])}}">@lang('common.edit')</a> 
+            @endif
+
+            @if(userPermission(94) && $apply_leave->approve_status == 'P')
+                <a class="dropdown-item" data-toggle="modal" data-target="#deleteApplyLeaveModal{{$apply_leave->id}}" href="#">@lang('common.delete')</a>
+            @endif
+
+            @if($apply_leave->file != "")
+                <a class="dropdown-item" href="{{url(@$apply_leave->file)}}" download>
+                    @lang('leave.download') 
+                    <span class="pl ti-download"></span>
+                </a>
+            @endif
+        </div>
+    </div>
+</td>
+
                             </tr>
                             <div class="modal fade admin-query" id="deleteApplyLeaveModal{{$apply_leave->id}}" >
                                 <div class="modal-dialog modal-dialog-centered">
