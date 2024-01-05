@@ -15,6 +15,7 @@
                         type="text" name="title" autocomplete="off"
                         value="{{ isset($id_card) ? $id_card->title : old('title') }}" id="title">
 
+
                     @if ($errors->has('title'))
                         <span class="text-danger">
                             {{ $errors->first('title') }}

@@ -118,10 +118,10 @@
                                 </label>
                                 <select class="primary_select  form-control" name="role_id" id="role_id">
                                     <option data-display="@lang('hr.role')" value=""> @lang('common.select') </option>
-                                    <!-- @foreach ($roles as $key => $value)
+                                    @foreach ($roles as $key => $value)
                                         <option value="{{ $value->id }}"
                                             @if (isset($data['role_id']) && $value->id == $data['role_id']) selected @endif>{{ $value->name }}</option>
-                                    @endforeach -->
+                                    @endforeach
                                 </select>
                             </div>
 

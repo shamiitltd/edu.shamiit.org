@@ -11,7 +11,7 @@
             <div class="horizontal_card_body" style="line-height:1.02; display:block; padding-top:{{!empty($id_card->t_space) ? $id_card->t_space : 2.5}}mm ; padding-bottom: {{!empty($id_card->b_space) ? $id_card->b_space : 2.5}}mm ; padding-right: {{!empty($id_card->r_space) ? $id_card->r_space : 3}}mm ; padding-left: {{!empty($id_card->l_space) ? $id_card->l_space : 3}}mm ; flex-direction: column;">
                 <div class="thumb hSize photo hImg hRoundImg" style=" 
                 @if (@$id_card->user_photo_style=='round')
-                    {{'border-radius : 50%;'}}"
+                    {{"border-radius : 50%;"}}
                 @endif
                 background-image: url({{ @$id_card->background_img != "" ? asset(@$id_card->profile_image) : asset('public/backEnd/id_card/img/thumb.png') }});background-size: cover; background-position: center center; background-repeat: no-repeat; line-height:1.02; width: {{!empty($id_card->user_photo_width) ? $id_card->user_photo_width : 21.166666667}}mm; flex: 80px 0 0; height: {{!empty($id_card->user_photo_height) ? $id_card->user_photo_height : 21.166666667}}mm; margin: auto; padding: 3px; align-content: center; justify-content: center; display: flex; border: 3px solid #fff;"></div>
                 <div class="card_text" style="line-height:1.02; display: flex; align-items: center; justify-content: space-between; width: 100%; flex-direction: column;">

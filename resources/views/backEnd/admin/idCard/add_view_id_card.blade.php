@@ -14,7 +14,7 @@
                     <div class="card_text_left hId">
                         <div id="hName">
                             <h4 style="line-height:1.02; margin-top: 0; margin-bottom: 0px; font-size:11px; font-weight:600 ; text-transform: uppercase; color: #2656a6;" class="role_name_text">
-                                Student Name start</h4>
+                                Student Name</h4>
                         </div>
                         <div id="hAdmissionNumber">
                             <h3 class="hStaffId" style="line-height:1.02; margin-top: 0; margin-bottom: 3px; font-size:10px; font-weight:500">Admission No : 001</h3>

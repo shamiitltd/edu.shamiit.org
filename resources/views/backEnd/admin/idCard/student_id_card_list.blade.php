@@ -21,7 +21,6 @@
                         <a href="{{route('create-id-card')}}" class="primary-btn small fix-gr-bg">
                             <span class="ti-plus pr-2"></span>
                                 @lang('admin.create_id_card')
-
                         </a>
                     @endif
                 </div>
