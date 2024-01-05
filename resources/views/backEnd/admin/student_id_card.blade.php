@@ -133,7 +133,7 @@
                             </h3>
                         </div>
                         {{-- @if(isset($id_card))
-                        {{ Form::open(['class' => 'form-horizontal', 'files' => true, 'route' => array('student-id-card-update',@$id_card->id), 'method' => 'PUT', 'enctype' => 'multipart/form-data']) }}
+                        {{ Form::open(['class' => 'form-horizontal', 'files' => true, 'route' => array('student-id-card-update',@$id_card->id), 'method' => 'get', 'enctype' => 'multipart/form-data']) }}
                         @else --}}
                         @if(userPermission(46))
                         {{ Form::open(['class' => 'form-horizontal', 'files' => true, 'route' => 'store-id-card',
