@@ -4,7 +4,8 @@
 @endsection
 @section('mainContent')
 @php
-    $DATE_FORMAT = systemDateFormat();   
+    $DATE_FORMAT = systemDateFormat();  
+   
 @endphp
 <section class="sms-breadcrumb mb-40 white-box">
     <div class="container-fluid">
@@ -204,6 +205,7 @@
 @endsection
 @include('backEnd.partials.data_table_js')
 @include('backEnd.partials.server_side_datatable')
+@include('path.to.Export-to-PDF')
 @push('script')  
 
 <script>
