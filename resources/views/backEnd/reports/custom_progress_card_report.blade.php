@@ -1,7 +1,7 @@
 
 @extends('backEnd.master')
 @section('title')
-@lang('exam.custom_progress_card_report')
+@lang('exam.custom_progress_card_report_100_percent')
 @endsection
 @section('mainContent')
 <link rel="stylesheet" href="{{ asset('/') }}public/backEnd/css/custom_result/style.css">

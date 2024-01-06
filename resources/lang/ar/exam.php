@@ -108,7 +108,7 @@ return[
     'single_select'=> 'Single Select',
     'multiple_select'=> 'Multiple Select',
     'question_image'=> 'Question Image',
-    'time_setup'=> 'Time Setup',
+    'time_setup'=> 'SMS Sending Time',
     'student_absent_notification_sms'=> 'Student Absent Notification',
     'Ending'=> 'Ending',
     'ending'=> 'Ending',

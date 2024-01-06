@@ -1945,7 +1945,7 @@ class RouteListController extends Controller
          ),
          273 => 
          array (
-           'name' => 'Class Time Setup',
+           'name' => 'Class SMS Sending Time',
            'route' => 'class-time',
            'parent_route' => 'academics',
            'type' => 2,
@@ -4398,7 +4398,7 @@ class RouteListController extends Controller
          ),
          950 => 
          array (
-           'name' => 'Time Setup',
+           'name' => 'SMS Sending Time',
            'route' => 'notification_time_setup',
            'parent_route' => 'student_info',
            'type' => 2,

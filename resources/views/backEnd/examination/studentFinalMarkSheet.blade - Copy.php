@@ -1,6 +1,6 @@
 @extends('backEnd.master')
 @section('title')
-@lang('exam.student_final_mark_sheet')
+@lang('exam.Marks_Register')
 @endsection
 @section('mainContent')
     <style type="text/css">
@@ -114,11 +114,11 @@
 <section class="sms-breadcrumb mb-40 white-box">
     <div class="container-fluid">
         <div class="row justify-content-between">
-            <h1>@lang('exam.student_final_mark_sheet')</h1>
+            <h1>@lang('exam.Marks_Register')</h1>
             <div class="bc-pages">
                 <a href="{{route('dashboard')}}">@lang('common.dashboard')</a>
                 <a href="#">@lang('exam.exam')</a>
-                <a href="#">@lang('exam.student_final_mark_sheet')</a>
+                <a href="#">@lang('exam.Marks_Register')</a>
             </div>
         </div>
     </section>
@@ -257,7 +257,7 @@
                 <div class="row">
                     <div class="col-lg-12 no-gutters">
                         <div class="main-title d-flex ">
-                            <h3 class="mb-30 flex-fill">@lang('exam.student_final_mark_sheet')</h3>
+                            <h3 class="mb-30 flex-fill">@lang('exam.Marks_Register')</h3>
                             <div class="print_button pull-right">
                                 {{ Form::open(['class' => 'form-horizontal', 'files' => true, 'route' => 'progress-card/print', 'method' => 'POST', 'enctype' => 'multipart/form-data', 'id' => 'search_student', 'target' => '_blank']) }}
 
@@ -304,7 +304,7 @@
                                                 <div class="row">
                                                     <div class="col-lg-7 text-black"> 
                                                         <h3 style="border-bottm:1px solid #ddd; padding: 15px; text-align:center"> 
-                                                            @lang('exam.student_final_mark_sheet')
+                                                            @lang('exam.Marks_Register')
                                                         </h3>
                                                         <h3>
                                                             {{$studentDetails->studentDetail->full_name}}

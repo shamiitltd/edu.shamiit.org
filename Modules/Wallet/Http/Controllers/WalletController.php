@@ -98,9 +98,9 @@ class WalletController extends Controller
 
     }
 
-    public function walletPendingDiposit()
+    public function walletPendingDeposit()
     {
-        $walletAmounts = $this->walletAmounts('diposit', 'pending');
+        $walletAmounts = $this->walletAmounts('deposit', 'pending');
         return view('wallet::walletPending', compact('walletAmounts'));
     }
 
@@ -131,7 +131,7 @@ class WalletController extends Controller
             $this->sendNotification($user->id, $user->role_id, "Wallet Approve");
 
             Toastr::success('Approve Successful', 'Success');
-            return redirect()->route('wallet.pending-diposit');
+            return redirect()->route('wallet.pending-deposit');
         } catch (\Exception $e) {
             Toastr::error('Operation Failed', 'Failed');
             return redirect()->back();
@@ -167,15 +167,15 @@ class WalletController extends Controller
         }
     }
 
-    public function walletApproveDiposit()
+    public function walletApproveDeposit()
     {
-        $walletAmounts = $this->walletAmounts('diposit', 'approve');
+        $walletAmounts = $this->walletAmounts('deposit', 'approve');
         return view('wallet::walletApprove', compact('walletAmounts'));
     }
 
-    public function walletRejectDiposit()
+    public function walletRejectDeposit()
     {
-        $walletAmounts = $this->walletAmounts('diposit', 'reject');
+        $walletAmounts = $this->walletAmounts('deposit', 'reject');
         return view('wallet::walletReject', compact('walletAmounts'));
     }
 

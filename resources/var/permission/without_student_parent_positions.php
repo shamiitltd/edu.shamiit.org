@@ -2325,7 +2325,7 @@
             'notification_time_setup' => array(
                 'module' => null,
                 'sidebar_menu' => 'student_info',
-                'name' => 'Time Setup',
+                'name' => 'SMS Sending Time',
                 'lang_name' => 'student.sms_sending_time',
                 'icon' => null,
                 'svg' => null,

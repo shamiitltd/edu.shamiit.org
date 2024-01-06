@@ -2097,7 +2097,7 @@ Route::group(['middleware' => ['XSS','subscriptionAccessUrl']], function () {
 
 
     // Unassigned Student
-    Route::get('unassigned-student', ['as' => 'unassigned_student', 'uses' => 'SmStudentAdmissionController@unassignedStudent'])->middleware('userRolePermission:unassigned_student');
+    Route::get('Unassigned-student', ['as' => 'Unassigned_student', 'uses' => 'SmStudentAdmissionController@unassignedStudent'])->middleware('userRolePermission:unassigned_student');
     Route::get('sorting-student-list/{class_id}', ['as' => 'sorting_student_list', 'uses' => 'SmStudentAdmissionController@sortingStudent'])->middleware('userRolePermission:unassigned_student');
     Route::get('sorting-student-section-list/{class_id}/{section_id}', ['as' => 'sorting_student_list_section', 'uses' => 'SmStudentAdmissionController@sortingSectionStudent'])->middleware('userRolePermission:unassigned_student');
 
