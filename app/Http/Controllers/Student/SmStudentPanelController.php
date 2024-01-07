@@ -1941,6 +1941,23 @@ class SmStudentPanelController extends Controller
         }
     }
 
+public function showLeaveDetails($apply_leave_id) {
+    // Retrieve the $apply_leave object and other necessary data
+    //$apply_leave = // ... retrieve $apply_leave from the database
+
+    // Get the currently authenticated user
+    $user = Auth::user();
+
+    // Assuming all users are allowed to view, edit, delete, and download
+    $userPermissions = [
+        'view' => true,
+        'edit' => true,
+        'delete' => true,
+        'download' => $apply_leave->file != "",
+    ];
+
+    return view('backEnd.student_leave.apply_leave', compact('apply_leave', 'userPermissions'));
+}
     public function pendingLeave(Request $request)
     {
         try {
