@@ -139,7 +139,7 @@
                             </div>
                            
                         </div>
-                        <input type="hidden" name="id" value="{{isset($apply_leave)? $apply_leave->id:$apply_leave->id }}">
+                        <input type="" name="id" value="{{isset($apply_leave)? $apply_leave->id:'' }}">
                         
                         <div class="row mt-25">
                             <div class="col-lg-12">
