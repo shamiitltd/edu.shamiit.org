@@ -321,28 +321,28 @@
                                 </td>
                                 <td>
     <div class="dropdown CRM_dropdown">
-    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+    <button type="button" class="btn dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         @lang('common.select')
     </button>
-    <div class="dropdown-menu dropdown-menu-right">
-        @if($userPermissions['view'])
+    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+      
             <a data-modal-size="modal-lg" title="View Leave Details" class="dropdown-item modalLink" href="{{ route('view-leave-details-apply', $apply_leave->id) }}">@lang('common.view')</a>
-        @endif 
+        
 
-        @if($userPermissions['edit'])
+       
             <a class="dropdown-item" href="{{ route('student-leave-edit', [$apply_leave->id]) }}">@lang('common.edit')</a>
-        @endif
+        
 
-        @if($userPermissions['delete'])
+       
             <a class="dropdown-item" data-toggle="modal" data-target="#deleteApplyLeaveModal{{ $apply_leave->id }}" href="#">@lang('common.delete')</a>
-        @endif
+       
 
-        @if($userPermissions['download'])
+            @if($apply_leave->file != "")
             <a class="dropdown-item" href="{{ url(@$apply_leave->file) }}" download>
                 @lang('leave.download') 
                 <span class="pl ti-download"></span>
             </a>
-        @endif
+      @endif
     </div>
 </div>
 
