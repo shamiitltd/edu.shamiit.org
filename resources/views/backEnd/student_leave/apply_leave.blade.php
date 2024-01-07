@@ -139,7 +139,7 @@
                             </div>
                            
                         </div>
-                        <input type="hidden" name="id" value="{{isset($apply_leave)? $apply_leave->id: ''}}">
+                        <input type="hidden" name="id" value="{{isset($apply_leave)? $apply_leave->id:$apply_leave->id }}">
                         
                         <div class="row mt-25">
                             <div class="col-lg-12">
@@ -328,14 +328,14 @@
       
             <a data-modal-size="modal-lg" title="View Leave Details" class="dropdown-item modalLink" href="{{ route('view-leave-details-apply', $apply_leave->id) }}">@lang('common.view')</a>
         
-
+            @if( $apply_leave->approve_status == 'P')
        
             <a class="dropdown-item" href="{{ route('student-leave-edit', [$apply_leave->id]) }}">@lang('common.edit')</a>
         
-
-       
+           @endif
+           @if($apply_leave->approve_status == 'P')
             <a class="dropdown-item" data-toggle="modal" data-target="#deleteApplyLeaveModal{{ $apply_leave->id }}" href="#">@lang('common.delete')</a>
-       
+       @endif
 
             @if($apply_leave->file != "")
             <a class="dropdown-item" href="{{ url(@$apply_leave->file) }}" download>
