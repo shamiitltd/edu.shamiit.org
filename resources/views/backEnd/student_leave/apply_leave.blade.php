@@ -339,7 +339,7 @@
 
             @if($apply_leave->file != "")
             <a class="dropdown-item" href="{{ url(@$apply_leave->file) }}" download>
-                @lang('leave.download') 
+                @lang('common.download') 
                 <span class="pl ti-download"></span>
             </a>
       @endif
