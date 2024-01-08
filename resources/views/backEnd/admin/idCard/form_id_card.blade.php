@@ -118,6 +118,7 @@
                 {{ 'd-none' }}
             @endif
             ">
+            
             <div class="col-lg-12">
                 <label class="primary_input_label" for="">@lang('admin.role')<span class="text-danger">
                         *</span></label><br>
@@ -761,4 +762,3 @@
         </div>
     </div>
 </div>
-
