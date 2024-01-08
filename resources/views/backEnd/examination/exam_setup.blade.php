@@ -245,7 +245,7 @@
                     <thead>
                       <tr>
                           <th>@lang('exam.exam_title')</th>
-                          <th>@lang('exam.exam_mark')</th>
+                          <th>@lang('exam.exam_marks')</th>
                           <th>@lang('common.action')</th>
                       </tr>
                   </thead>
