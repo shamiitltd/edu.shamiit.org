@@ -239,7 +239,7 @@
                 </div>
             </div>
             <div class="row">
-              <div class="col-lg-12">
+              <div class="col-lg-24">
                <div class="white-box">
                    <table class="table" id="productTable">
                     <thead>
