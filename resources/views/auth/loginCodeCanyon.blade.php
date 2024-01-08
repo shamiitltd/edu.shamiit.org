@@ -91,10 +91,9 @@ $css = 'background:' . $login_background->color;
             font-size: 11px;
             margin: 0 !important;
             padding: 0;
-            height: 31px;
+            height: 31.0px;
             line-height: 31px;
         }
-
         @media (max-width: 575.98px) {
             .grid__button__layout {
                 grid-template-columns: repeat(2, 1fr);
@@ -170,14 +169,42 @@ $css = 'background:' . $login_background->color;
                                 </span>
                                 @endif
 
-                                <div class="form-group input-group mb-4">
-                                    <span class="input-group-addon">
-                                        <i class="ti-key"></i>
-                                    </span>
-                                    <input class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
-                                        type="password" name='password' id="password"
-                                        placeholder="@lang('auth.enter_password')" />
-                                </div>
+<div class="form-group input-group mb-4">
+    <span class="input-group-addon">
+        <i class="ti-key"></i>
+    </span>
+    <input class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
+           type="password" name='password' id="password"
+           placeholder="@lang('auth.enter_password')" />
+
+    
+           <div class="input-group-append">
+           <span class="input-group-addon toggle-password" id="toggle-password">
+        <img src="{{ asset('public/backEnd/img/eye-closed.png') }}" alt="eye-closed" class="eye-icon" style="cursor:pointer;width:20px;height:20px; position:absolute;top:10px;right:10px;" />
+    </span>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const passwordInput = document.getElementById('password');
+        const togglePassword = document.getElementById('toggle-password');
+
+        togglePassword.addEventListener('click', function () {
+            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
+
+            // Change the eye icon based on the password visibility
+            const eyeIcon = togglePassword.querySelector('.eye-icon');
+            eyeIcon.src = type === 'password' ?
+                '{{ asset("public/backEnd/img/eye-closed.png") }}' :
+                '{{ asset("public/backEnd/img/eye-open.png") }}';
+        });
+    });
+</script>
+
+
+
                                 @if ($errors->has('password'))
                                 <span class="text-danger text-left mb-15" role="alert">
                                     {{ $errors->first('password') }}
@@ -260,8 +287,6 @@ $css = 'background:' . $login_background->color;
     </script>
 
     {!! Toastr::message() !!}
-
-
 </body>
 
 </html>

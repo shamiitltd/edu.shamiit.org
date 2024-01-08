@@ -1904,34 +1904,39 @@ class SmStudentPanelController extends Controller
             if ($user) {
                 $login_id = $user->id;
                 $role_id = $user->role_id;
-            } else {
+            } 
+            else {
                 $login_id = $request->login_id;
                 $role_id = $request->role_id;
             }
+
             $apply_leave = new SmLeaveRequest();
             $apply_leave->staff_id = $login_id;
             $apply_leave->role_id = $role_id;
             $apply_leave->apply_date = date('Y-m-d', strtotime($request->apply_date));
             $apply_leave->leave_define_id = $request->leave_type;
-            $apply_leave->type_id = $request->leave_type;
+            $apply_leave->type_id = 1;
             $apply_leave->leave_from = date('Y-m-d', strtotime($request->leave_from));
             $apply_leave->leave_to = date('Y-m-d', strtotime($request->leave_to));
             $apply_leave->approve_status = 'P';
             $apply_leave->reason = $request->reason;
             $apply_leave->file = $fileName;
+            $apply_leave->note='ab';
             $apply_leave->academic_id = getAcademicId();
             $apply_leave->school_id = Auth::user()->school_id;
             $result = $apply_leave->save();
-
+            //dd($result);
             if ($result) {
                 Toastr::success('Operation successful', 'Success');
                 return redirect()->back();
             } else {
-                Toastr::error('Operation Failed', 'Failed');
+                Toastr::error('Operation Failed Unable to update ', 'Failed');
                 return redirect()->back();
             }
         } catch (\Exception $e) {
-            Toastr::error('Operation Failed', 'Failed');
+
+           // dd($e->getMessage());
+           Toastr::error('Operation Failed', 'Failed');
             return redirect()->back();
         }
     }

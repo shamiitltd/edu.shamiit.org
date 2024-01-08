@@ -378,6 +378,12 @@ body - var(--body_color)
   }
 }
 @media (max-width: 991.98px) {
+  .small_logo_crm {
+  display: none;
+  }
+}
+
+@media (max-width: 991.98px) {
   .header_iner {
     border-bottom: 1px solid var(--border_color);
     box-shadow: 0 8px 24px #f8f5fb;
