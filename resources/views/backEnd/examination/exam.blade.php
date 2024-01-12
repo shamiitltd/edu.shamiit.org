@@ -149,7 +149,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-lg-30">
                         <div class="white-box mt-10">
                             <div class="row">
                                 <div class="col-lg-30">
