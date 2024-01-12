@@ -152,7 +152,7 @@
                     <div class="col-lg-12">
                         <div class="white-box mt-10">
                             <div class="row">
-                                <div class="col-lg-10">
+                                <div class="col-lg-30">
                                     <div class="main-title">
                                         <h5>@lang('exam.add_mark_distributions') </h5>
                                     </div>
