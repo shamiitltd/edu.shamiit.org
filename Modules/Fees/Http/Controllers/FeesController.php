@@ -1149,17 +1149,12 @@ class FeesController extends Controller
 
     public function feesInvoiceDatatable()
     {
-        // $studentInvoices = FmFeesInvoice::where('type', 'fees')
-        //     ->where('school_id', Auth::user()->school_id)
-        //     ->where('academic_id', getAcademicId())
-        //     ->orderBy('id', 'DESC')
-        //     ->get();
-            
-            $invoiceInfo = FmFeesInvoice::find($id);
-            $studentInvoices = FmFeesInvoiceChield::where('fees_invoice_id', $invoiceInfo->id)
-                ->where('school_id', Auth::user()->school_id)
-                ->where('academic_id', getAcademicId())
-                ->get();
+        $studentInvoices = FmFeesInvoice::where('type', 'fees')
+            ->where('school_id', Auth::user()->school_id)
+            ->where('academic_id', getAcademicId())
+            ->orderBy('id', 'DESC')
+            ->get();
+            dd($studentInvoices);
         if (isset($studentInvoices)){
             return Datatables::of($studentInvoices)
                     ->addIndexColumn()
