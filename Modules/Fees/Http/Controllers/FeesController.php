@@ -290,7 +290,7 @@ class FeesController extends Controller
     {
        
 
-        $invoiceDetails = FmFeesInvoiceChield::where('type', 'fees')
+        $invoiceDetails = FmFeesInvoiceChield::where('fees_type', 1)
                 ->where('school_id', Auth::user()->school_id)
                 ->where('academic_id', getAcademicId())
                 ->get();
