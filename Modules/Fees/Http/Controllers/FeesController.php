@@ -288,11 +288,6 @@ class FeesController extends Controller
 
     public function feesInvoiceList()
     {
-        $studentInvoices = FmFeesInvoice::where('type', 'fees')
-        ->where('school_id', Auth::user()->school_id)
-        ->where('academic_id', getAcademicId())
-        ->orderBy('id', 'DESC');
-        dd($studentInvoices);
         return view('fees::feesInvoice.feesInvoiceList');
     }
 
@@ -1157,7 +1152,8 @@ class FeesController extends Controller
         $studentInvoices = FmFeesInvoice::where('type', 'fees')
             ->where('school_id', Auth::user()->school_id)
             ->where('academic_id', getAcademicId())
-            ->orderBy('id', 'DESC');
+            ->orderBy('id', 'DESC')
+            ->get();
         if (isset($studentInvoices)){
             return Datatables::of($studentInvoices)
                     ->addIndexColumn()
