@@ -177,7 +177,7 @@
                                     </thead>
                                     <tbody>
 
-                                        <tr id="row1" class="mt-40">
+                                        <tr id="row1" class="mt-60">
                                             <td class="border-top-0">
                                                 {{-- <label class="primary_input_label" for="">@lang('exam.title')</label> --}}
                                                 <input type="hidden" name="url" id="url" value="{{ URL::to('/') }}">
