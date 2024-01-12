@@ -288,13 +288,6 @@ class FeesController extends Controller
 
     public function feesInvoiceList()
     {
-       
-
-        $invoiceDetails = FmFeesInvoiceChield::where('fees_type', 1)
-                ->where('school_id', Auth::user()->school_id)
-                ->where('academic_id', getAcademicId())
-                ->get();
-                dd($invoiceDetails);
         return view('fees::feesInvoice.feesInvoiceList');
     }
 
@@ -1225,6 +1218,10 @@ class FeesController extends Controller
                     })
                     ->rawColumns(['student_name', 'status', 'action', 'date'])
                     ->make(true);
+                    return response()->json(['data' => $studentInvoices]);
+        }
+        else {
+            return response()->json(['data' => []]); // Return an empty array if no records found
         }
     }
 }
