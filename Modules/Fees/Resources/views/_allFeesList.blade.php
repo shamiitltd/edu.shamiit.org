@@ -41,7 +41,7 @@
             @if ((isset($role) && $role == 'admin') || $role == 'lms')
                 <div class="col-lg-12">
                     <x-table>
-                        <table id="table_id" class="table data-table" cellspacing="0" width="100%">
+                        <table id="table_id" class="table data-table cc1" cellspacing="0" width="100%">
                             <thead>
                                 <tr>
                                     <th>@lang('common.sl')</th>
@@ -81,7 +81,7 @@
                                 class="tab-pane fade  @if ($key == 0) active show @endif"
                                 id="tab{{ $key }}">
                                 <x-table>
-                                    <table id="table_id" class="table" cellspacing="0" width="100%">
+                                    <table id="table_id" class="table cc2" cellspacing="0" width="100%">
                                         <thead>
                                             <tr>
                                                 <th>@lang('common.sl')</th>

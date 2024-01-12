@@ -1218,10 +1218,6 @@ class FeesController extends Controller
                     })
                     ->rawColumns(['student_name', 'status', 'action', 'date'])
                     ->make(true);
-                    return response()->json(['data' => $studentInvoices]);
-        }
-        else {
-            return response()->json(['data' => []]); // Return an empty array if no records found
         }
     }
 }
