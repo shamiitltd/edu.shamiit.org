@@ -1219,5 +1219,8 @@ class FeesController extends Controller
                     ->rawColumns(['student_name', 'status', 'action', 'date'])
                     ->make(true);
         }
+        else{
+            dd("hello");
+        }
     }
 }
