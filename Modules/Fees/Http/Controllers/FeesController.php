@@ -1154,7 +1154,7 @@ class FeesController extends Controller
             ->where('academic_id', getAcademicId())
             ->orderBy('id', 'DESC')
             ->get();
-            dd($studentInvoices);
+           
         if (isset($studentInvoices)){
             return Datatables::of($studentInvoices)
                     ->addIndexColumn()

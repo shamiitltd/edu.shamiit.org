@@ -230,7 +230,7 @@
             serverSide: true,
             "ajax": $.fn.dataTable.pipeline({
                 url: "{{ url('fees/fees-invoice-datatable') }}",
-                data: { academic_id: $('#academic_id').val()},
+                data: {},
                 pages: "{{ generalSetting()->ss_page_load }}" // number of pages to cache
             }),
             columns: [{
