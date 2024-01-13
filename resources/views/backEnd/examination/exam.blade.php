@@ -163,7 +163,7 @@
                                         <span class="ti-plus pr-2"></span></button>
                                 </div>
                             </div>
-                            <div class="col-lg-12">
+                            <div class="col-lg-24">
                                 <table class="table" id="productTable">
                                     <thead>
                                         <tr>
