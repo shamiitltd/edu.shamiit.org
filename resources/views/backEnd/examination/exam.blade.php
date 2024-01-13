@@ -122,7 +122,7 @@
                                     </div>
                                 </div>
                                 @if (@generalSetting()->result_type == 'mark')
-                                <div class="row mt-15">
+                                <div class="row mt-5">
                                     <div class="col-lg-12">
                                         <div class="primary_input">
                                             <label class="primary_input_label" for="">@lang('exam.pass_mark')
@@ -226,9 +226,9 @@
                     </div>
                 </div>
 
-                <div class="row mt-15" id="exam_shedule">
+                <div class="row mt-5" id="exam_shedule">
                     <div class="col-lg-12">
-                        <div class="white-box mt-10">
+                        <div class="white-box mt-5">
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="main-title">
@@ -237,7 +237,7 @@
                                 </div>
                             </div>
 
-                            <div class="row mt-15">
+                            <div class="row mt-5">
 
                                 <div class="col-lg-12">
                                     <label class="primary_input_label" for="">
