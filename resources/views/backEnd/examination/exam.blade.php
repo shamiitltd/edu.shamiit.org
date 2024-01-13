@@ -122,7 +122,7 @@
                                     </div>
                                 </div>
                                 @if (@generalSetting()->result_type == 'mark')
-                                <div class="row mt-5">
+                                <div class="row mt-15">
                                     <div class="col-lg-12">
                                         <div class="primary_input">
                                             <label class="primary_input_label" for="">@lang('exam.pass_mark')
