@@ -12,7 +12,7 @@
     .input-right-icon {
         z-index: inherit !important;
     }
-    #row1 {
+    #productTable {
         padding: 1px;         
 }
 </style>
