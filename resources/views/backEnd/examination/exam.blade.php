@@ -12,9 +12,8 @@
     .input-right-icon {
         z-index: inherit !important;
     }
-    #exam_title {
-        margin-left: 5px;
-        
+    #row1 {
+        padding: 1px;         
 }
 </style>
 <section class="sms-breadcrumb mb-40 white-box">
