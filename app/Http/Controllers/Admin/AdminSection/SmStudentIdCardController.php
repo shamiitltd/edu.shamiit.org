@@ -251,6 +251,9 @@ class SmStudentIdCardController extends Controller
         $pdf = PDF::loadView('backEnd.admin.student_id_card_print_2', ['id_card' => $id_card, 's_students' => $s_students]);
         return $pdf->stream($id_card->title . '.pdf');
 
+        $tempPath = storage_path('app/temp/' . $id_card->title . '.pdf');
+$pdf->save($tempPath);
+
         return view('backEnd.admin.idCard.student_id_card_print_bulk', ['id_card' => $id_card, 's_students' => $s_students,'role_id'=>$role_id,'gridGap'=>$gridGap]);
 
        
