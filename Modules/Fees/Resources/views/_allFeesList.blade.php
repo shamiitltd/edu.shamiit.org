@@ -229,7 +229,7 @@
             processing: true,
             serverSide: true,
             "ajax": $.fn.dataTable.pipeline({
-                url: "{{ url('fees/fees-invoice-datatable') }}",
+                url: "{{ route('fees/fees-invoice-datatable') }}",
                 data: {},
                 pages: "{{ generalSetting()->ss_page_load }}" // number of pages to cache
             }),
