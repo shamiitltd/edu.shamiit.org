@@ -1229,10 +1229,12 @@ class FeesController extends Controller
 
     public function feesInvoiceDatatable()
 {
+    dd("hello");
     $studentInvoices = FmFeesInvoiceChield::where('school_id', Auth::user()->school_id)
         ->where('academic_id', getAcademicId())
         ->orderBy('id', 'DESC')
         ->get();
+        dd($studentInvoices);
 
     if ($studentInvoices->isEmpty()) {
         return response()->json(['data' => []]);
