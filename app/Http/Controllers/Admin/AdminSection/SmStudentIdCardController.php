@@ -248,11 +248,12 @@ class SmStudentIdCardController extends Controller
 
         $role_id = $request->role;
         $gridGap = $request->grid_gap;
+        $pdf = PDF::loadView('backEnd.admin.student_id_card_print_2', ['id_card' => $id_card, 's_students' => $s_students]);
+        return $pdf->stream($id_card->title . '.pdf');
 
         return view('backEnd.admin.idCard.student_id_card_print_bulk', ['id_card' => $id_card, 's_students' => $s_students,'role_id'=>$role_id,'gridGap'=>$gridGap]);
 
-        $pdf = PDF::loadView('backEnd.admin.student_id_card_print_2', ['id_card' => $id_card, 's_students' => $s_students]);
-        return $pdf->stream($id_card->title . '.pdf');
+       
     }
 
     public function ajaxIdCard(Request $request){
