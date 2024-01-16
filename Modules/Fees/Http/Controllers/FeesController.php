@@ -288,6 +288,7 @@ class FeesController extends Controller
 
     public function feesInvoiceList()
     {
+        dd('hello');
         return view('fees::feesInvoice.feesInvoiceList');
     }
 
