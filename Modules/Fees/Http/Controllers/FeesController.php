@@ -1155,12 +1155,9 @@ class FeesController extends Controller
         //     ->orderBy('id', 'DESC')
         //     ->get();
 
-            $invoiceInfo = FmFeesInvoice::find($id);
-
-            $invoiceDetails = FmFeesInvoiceChield::where('fees_invoice_id', $invoiceInfo->id)
-                ->where('school_id', Auth::user()->school_id)
-                ->where('academic_id', getAcademicId())
-                ->get();
+        $invoiceDetails = FmFeesInvoiceChield::where('school_id', Auth::user()->school_id)
+        ->where('academic_id', getAcademicId())
+        ->get();
                 dd($invoiceDetails);
            
         if (isset($studentInvoices)){
