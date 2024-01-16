@@ -87,7 +87,7 @@
                                                 <th>@lang('common.sl')</th>
                                                 <th>@lang('common.student')</th>
                                                 <th>@lang('student.class_section')</th>
-                                                <th>@lang('accounts.amount')</th>
+                                                studentInvoices                     <th>@lang('accounts.amount')</th>
                                                 <th>@lang('fees::feesModule.waiver')</th>
                                                 <th>@lang('fees.fine')</th>
                                                 <th>@lang('fees.paid')</th>
@@ -226,65 +226,36 @@
     }
     $(document).ready(function() {
         $('.data-table').DataTable({
-            processing: true,
-            serverSide: true,
-            "ajax": $.fn.dataTable.pipeline({
-                url: "{{ route('fees.fees-invoice-datatable') }}",
-                data: {},
-                pages: "{{ generalSetting()->ss_page_load }}" // number of pages to cache
-            }),
-            columns: [{
-                    data: 'DT_RowIndex',
-                    name: 'id'
-                },
-                {
-                    data: 'student_name',
-                    name: 'student_name'
-                },
-                {
-                    data: 'amount',
-                    name: 'amount'
-                },
-                {
-                    data: 'weaver',
-                    name: 'weaver'
-                },
-                {
-                    data: 'fine',
-                    name: 'fine'
-                },
-                {
-                    data: 'paid_amount',
-                    name: 'paid_amount'
-                },
-                {
-                    data: 'balance',
-                    name: 'balance'
-                },
-                {
-                    data: 'status',
-                    name: 'status'
-                },
-                {
-                    data: 'paid_amount',
-                    name: 'paid_amount'
-                },
-                {
-                    data: 'action',
-                    name: 'action'
-                },
-            ],
-            bLengthChange: false,
-            bDestroy: true,
-            language: {
-                search: "<i class='ti-search'></i>",
-                searchPlaceholder: window.jsLang('quick_search'),
-                paginate: {
-                    next: "<i class='ti-arrow-right'></i>",
-                    previous: "<i class='ti-arrow-left'></i>",
-                },
-            },
-            dom: "Bfrtip",
+    processing: true,
+    serverSide: true,
+    ajax: $.fn.dataTable.pipeline({
+        url: "{{ route('fees.fees-invoice-datatable') }}",
+        data: {},
+        pages: "{{ generalSetting()->ss_page_load }}"
+    }),
+    columns: [
+        { data: 'DT_RowIndex', name: 'id' },
+        { data: 'student_name', name: 'student_name' },
+        { data: 'amount', name: 'amount' },
+        { data: 'weaver', name: 'weaver' },
+        { data: 'fine', name: 'fine' },
+        { data: 'paid_amount', name: 'paid_amount' },
+        { data: 'balance', name: 'balance' },
+        { data: 'status', name: 'status' },
+        { data: 'paid_amount', name: 'paid_amount' },
+        { data: 'action', name: 'action' },
+    ],
+    bLengthChange: false,
+    bDestroy: true,
+    language: {
+        search: "<i class='ti-search'></i>",
+        searchPlaceholder: window.jsLang('quick_search'),
+        paginate: {
+            next: "<i class='ti-arrow-right'></i>",
+            previous: "<i class='ti-arrow-left'></i>",
+        },
+    },
+    dom: "Bfrtip",
             buttons: [{
                     extend: "copyHtml5",
                     text: '<i class="fa fa-files-o"></i>',
@@ -352,10 +323,10 @@
                     postfixButtons: ["colvisRestore"],
                 },
             ],
-            columnDefs: [{
-                visible: false,
-            }, ],
-            responsive: true,
-        });
+            columnDefs: [
+        { visible: false },
+    ],
+    responsive: true,
+});
     });
 </script>
