@@ -1169,18 +1169,25 @@ class FeesController extends Controller
                     })
                     ->addColumn('amount', function($row){
                         $amount = $row->Tamount;
+                        dd($amount);
                         return $amount;
                     })
                     ->addColumn('weaver', function($row){
                         $weaver = $row->Tweaver;
+                        dd($weaver);
+
                         return $weaver;
                     })
                     ->addColumn('fine', function($row){
                         $fine = $row->Tfine;
+                        dd($fine);
+                        
                         return $fine;
                     })
                     ->addColumn('paid_amount', function($row){
                         $paid_amount = $row->Tpaidamount;
+                        dd($paid_amount);
+
                         return $paid_amount;
                     })
                     ->addColumn('balance', function($row){
@@ -1189,6 +1196,8 @@ class FeesController extends Controller
                         $fine = $row->Tfine;
                         $paid_amount = $row->Tpaidamount;
                         $balance = $amount + $fine - ($paid_amount + $weaver);
+                        dd($balance);
+
                         return $balance;
                     })
                     ->addColumn('status', function($row){
