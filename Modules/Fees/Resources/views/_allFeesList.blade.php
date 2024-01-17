@@ -206,11 +206,11 @@
 
 <script>
     $(document).ready(function() {
-        $('.data-table').DataTable({
+    $('.data-table').DataTable({
     processing: true,
     serverSide: true,
     ajax: $.fn.dataTable.pipeline({
-        url: "{{ route('fees.fees_invoice_datatable') }}",
+        url: "{{ route('fees.fees-invoice-datatable') }}",
         data: {},
         pages: "{{ generalSetting()->ss_page_load }}"
     }),
