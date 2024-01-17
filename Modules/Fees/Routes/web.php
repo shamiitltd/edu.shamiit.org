@@ -35,7 +35,7 @@ Route::group(['middleware' => ['subdomain']], function () {
 
         Route::get('add-fees-payment/{id}', [FeesController::class, 'addFeesPayment'])->name('fees.add-fees-payment')->middleware('userRolePermission:fees.add-fees-payment');
         Route::get('delete-single-fees-transcation/{id}', [FeesController::class, 'deleteSingleFeesTranscation'])->name('fees.delete-single-fees-transcation');
-        Route::get('fees-invoice-datatable', [FeesController::class, 'feesInvoiceDatatable'])->name('fees_invoice_datatable')->middleware('userRolePermission:fees.fees-invoice-datatable');
+        Route::get('fees-invoice-datatable', [FeesController::class, 'feesInvoiceDatatable'])->name('fees.fees-invoice-datatable')->middleware('userRolePermission:fees.fees-invoice-datatable');
 
         //Bank Payment
         Route::get('bank-payment', [FeesController::class, 'bankPayment'])->name('fees.bank-payment')->middleware('userRolePermission:fees.bank-payment');

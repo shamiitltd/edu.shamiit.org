@@ -225,6 +225,7 @@
         });
     }
     $(document).ready(function() {
+        console.log('Before DataTable initialization');
         $('.data-table').DataTable({
     processing: true,
     serverSide: true,
@@ -327,6 +328,6 @@
         { visible: false },
     ],
     responsive: true,
-});
+});console.log('After DataTable initialization');
     });
 </script>
