@@ -1154,7 +1154,8 @@ class FeesController extends Controller
         //     ->where('academic_id', getAcademicId())
         //     ->orderBy('id', 'DESC')
         //     ->get();
-
+        $invoiceDetails = FmFeesInvoiceChield::all();
+        dd($invoiceDetails);
 
             $studentInvoices = FmFeesInvoiceChield::where('school_id', Auth::user()->school_id)
                 ->where('academic_id', getAcademicId())
@@ -1229,9 +1230,6 @@ class FeesController extends Controller
                     ->rawColumns(['student_name', 'status', 'action', 'date'])
                     ->make(true);
         }
-        else{
-            $msg= "Helloojii";
-            dd($msg);
-        }
+       
     }
 }
