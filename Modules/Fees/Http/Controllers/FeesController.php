@@ -1147,8 +1147,10 @@ class FeesController extends Controller
 
     }
 
-    public function feesInvoiceDatatable(Request $request)
+    public function feesInvoiceDatatable()
     {  
+        $msg="hellojj";
+        dd($msg);
         // $studentInvoices = FmFeesInvoice::where('type', 'fees')
         //     ->where('school_id', Auth::user()->school_id)
         //     ->where('academic_id', getAcademicId())
