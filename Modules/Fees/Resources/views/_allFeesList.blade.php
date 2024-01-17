@@ -225,6 +225,7 @@
         });
     }
     $(document).ready(function() {
+        console.log('Document is ready!');
         $('.data-table').DataTable({
     processing: true,
     serverSide: true,
