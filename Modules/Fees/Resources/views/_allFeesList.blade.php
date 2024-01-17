@@ -202,30 +202,10 @@
 
 @include('backEnd.partials.data_table_js')
 @include('backEnd.partials.server_side_datatable')
-<script>
-    function feesInvoiceDelete(id) {
-        var modal = $('#deleteFeesPayment');
-        modal.find('input[name=feesInvoiceId]').val(id)
-        modal.modal('show');
-    }
+@push('script') 
 
-    function viewPaymentDetailModal(id) {
-        $('#viewFeesPayment').modal('show');
-        let invoiceId = id;
-        console.log(invoiceId);
-        $.ajax({
-            url: "{{ route('fees.fees-view-payment') }}",
-            method: "POST",
-            data: {
-                invoiceId: invoiceId
-            },
-            success: function(response) {
-                $('#viewFeesPayment .modal-content').html(response);
-            },
-        });
-    }
+<script>
     $(document).ready(function() {
-        console.log('Before DataTable initialization');
         $('.data-table').DataTable({
     processing: true,
     serverSide: true,
@@ -328,6 +308,33 @@
         { visible: false },
     ],
     responsive: true,
-});console.log('After DataTable initialization');
+});
     });
 </script>
+<script>
+    function feesInvoiceDelete(id) {
+        var modal = $('#deleteFeesPayment');
+        modal.find('input[name=feesInvoiceId]').val(id)
+        modal.modal('show');
+    }
+</script>
+<script>
+
+    function viewPaymentDetailModal(id) {
+        $('#viewFeesPayment').modal('show');
+        let invoiceId = id;
+        console.log(invoiceId);
+        $.ajax({
+            url: "{{ route('fees.fees-view-payment') }}",
+            method: "POST",
+            data: {
+                invoiceId: invoiceId
+            },
+            success: function(response) {
+                $('#viewFeesPayment .modal-content').html(response);
+            },
+        });
+    }
+    </script>
+
+@endpush
