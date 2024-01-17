@@ -230,7 +230,7 @@
     processing: true,
     serverSide: true,
     ajax: $.fn.dataTable.pipeline({
-        url: "{{ route('fees_invoice_datatable') }}",
+        url: "{{ route('fees.fees-invoice-datatable') }}",
         data: {},
         pages: "{{ generalSetting()->ss_page_load }}"
     }),
