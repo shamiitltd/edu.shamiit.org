@@ -225,12 +225,11 @@
         });
     }
     $(document).ready(function() {
-        console.log('Document is ready!');
         $('.data-table').DataTable({
     processing: true,
     serverSide: true,
     ajax: $.fn.dataTable.pipeline({
-        url: "{{ route('fees.fees-invoice-datatable') }}",
+        url: "{{ route('fees_invoice_datatable') }}",
         data: {},
         pages: "{{ generalSetting()->ss_page_load }}"
     }),
