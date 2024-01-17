@@ -1146,11 +1146,7 @@ class FeesController extends Controller
         return view('fees::feesInvoice.feesInvoiceSingleView', compact('generalSetting', 'invoiceInfo', 'transcationDetails'));
 
     }
-    public function feesInvoiceDatatable1()
-    {
-        $msg="hello";
-        dd($msg);
-    }
+   
     public function feesInvoiceDatatable()
     {  
         

@@ -1970,6 +1970,12 @@ class DatatableQueryController extends Controller
                 ->make(true);
             }
         }
+
+        public function feesInvoiceDatatable1()
+        {
+            $msg="hello";
+            dd($msg);
+        }
     }
 
         
