@@ -210,7 +210,7 @@
     processing: true,
     serverSide: true,
     ajax: $.fn.dataTable.pipeline({
-        url: "{{ route('fees.fees-invoice-datatable') }}",
+        url: "{{ route('fees.fees_invoice_datatable') }}",
         data: {},
         pages: "{{ generalSetting()->ss_page_load }}"
     }),
@@ -224,9 +224,8 @@
         { data: 'balance', name: 'balance' },
         { data: 'status', name: 'status' },
         { data: 'paid_amount', name: 'paid_amount' },
-        { data: 'action', name: 'action' , orderable: false, searchable: true},
-    ],  
-                     
+        { data: 'action', name: 'action' },
+    ],
     bLengthChange: false,
     bDestroy: true,
     language: {
