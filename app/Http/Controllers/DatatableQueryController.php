@@ -494,7 +494,6 @@ class DatatableQueryController extends Controller
                         $staffs->where('role_id', '!=', 1);
                     }
                     $staffs =  $staffs->get();
-                    
             } else {
                 $staffs = SmStaff::where('is_saas', 0)->where('school_id', Auth::user()->school_id)
                     ->where('role_id', '!=', 1)
@@ -1969,12 +1968,6 @@ class DatatableQueryController extends Controller
                 ->rawColumns(['class_section'])
                 ->make(true);
             }
-        }
-
-        public function feesInvoiceDatatable1()
-        {
-            $msg="hello";
-            dd($msg);
         }
     }
 
