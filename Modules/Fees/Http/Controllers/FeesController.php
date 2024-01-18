@@ -293,7 +293,7 @@ class FeesController extends Controller
         ->where('academic_id', getAcademicId())
         ->orderBy('id', 'DESC')
         ->get();
-        //dd($invoiceDetails);
+        
         return view('fees::feesInvoice.feesInvoiceList');
     }
 
