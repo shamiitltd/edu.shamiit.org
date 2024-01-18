@@ -1253,26 +1253,26 @@ class FeesController extends Controller
                         $btn = '<a href="' . route('fees.fees-invoice-view', ['id' => $row->id, 'state' => 'view']) . 'target="_blank">' .@$row->studentInfo->full_name . '</a>';
                         return $btn;
                     })
-                    ->addColumn('amount', function($row){
-                        $amount = $row->Tamount;
+                    // ->addColumn('amount', function($row){
+                    //     $amount = $row->Tamount;
                         
-                        return $amount;
-                    })
-                    ->addColumn('weaver', function($row){
-                        $weaver = $row->Tweaver;
+                    //     return $amount;
+                    // })
+                    // ->addColumn('weaver', function($row){
+                    //     $weaver = $row->Tweaver;
                         
-                        return $weaver;
-                    })
-                    ->addColumn('fine', function($row){
-                        $fine = $row->Tfine;
+                    //     return $weaver;
+                    // })
+                    // ->addColumn('fine', function($row){
+                    //     $fine = $row->Tfine;
                         
-                        return $fine;
-                    })
-                    ->addColumn('paid_amount', function($row){
-                        $paid_amount = $row->Tpaidamount;
+                    //     return $fine;
+                    // })
+                    // ->addColumn('paid_amount', function($row){
+                    //     $paid_amount = $row->Tpaidamount;
 
-                        return $paid_amount;
-                    })
+                    //     return $paid_amount;
+                    // })
                     ->addColumn('balance', function($row){
                         $amount = $row->Tamount;
                         $weaver = $row->Tweaver;
