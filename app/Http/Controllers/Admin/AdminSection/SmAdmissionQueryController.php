@@ -59,7 +59,7 @@ class SmAdmissionQueryController extends Controller
             } else {
                 $admission_query->class = $request->class;
                 $admission_query->academic_id = getAcademicId();
-                dd($admission_query);
+                //dd($admission_query);
             }
             $admission_query->no_of_child = $request->no_of_child;
             $admission_query->created_by = Auth::user()->id;
@@ -69,7 +69,7 @@ class SmAdmissionQueryController extends Controller
             Toastr::success('Operation successful', 'Success');
             return redirect()->back();
         } catch (\Exception $e) {
-            //dd($e->getMessage());
+            dd($e->getMessage());
             Toastr::error('Operation Failed', 'Failed');
             return redirect()->back();
         }
