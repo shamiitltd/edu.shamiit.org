@@ -1149,22 +1149,14 @@ class FeesController extends Controller
 
     public function feesInvoiceDatatable()
     {
-        try{
-            $invoiceInfo = FmFeesInvoice::all();
-            $invoiceDetails = FmFeesInvoiceChield::where('fees_invoice_id', $invoiceInfo->id)
-                ->where('school_id', Auth::user()->school_id)
-                ->where('academic_id', getAcademicId())
-                ->get();
-            // $studentInvoices = FmFeesInvoice::all();
-            // dd($studentInvoices);
-        // $studentInvoices = FmFeesInvoice::where('type', 'fees')
-        //     ->where('school_id', Auth::user()->school_id)
-        //     ->where('academic_id', getAcademicId())
-        //     ->orderBy('id', 'DESC')
-        //     ->get();
+        $studentInvoices = FmFeesInvoice::where('type', 'fees')
+            ->where('school_id', Auth::user()->school_id)
+            ->where('academic_id', getAcademicId())
+            ->orderBy('id', 'DESC')
+            ->get();
            
-        // if (isset($studentInvoices)){
-            return Datatables::of($invoiceDetails)
+        if (isset($studentInvoices)){
+            return Datatables::of($studentInvoices)
                     ->addIndexColumn()
                     ->addColumn('student_name', function($row){
                         $btn = '<a href="' . route('fees.fees-invoice-view', ['id' => $row->id, 'state' => 'view']) . 'target="_blank">' .@$row->studentInfo->full_name . '</a>';
@@ -1225,13 +1217,8 @@ class FeesController extends Controller
                         $view = view('fees::__allFeesListAction', compact('row', 'balance', 'paid_amount', 'role'));
                         return (string)$view;
                     })
-                    ->rawColumns(['student_name', 'status', 'action'])
+                    ->rawColumns(['student_name', 'status', 'action', 'date'])
                     ->make(true);
-        // }
-            }
-            catch (\Throwable $th) {
-                Toastr::error('Operation Failed', 'Failed');
-                return redirect()->back();
-            }
-            }
+        }
+    }
 }
