@@ -278,7 +278,7 @@
                                                 <input
                                                     class="primary_input_field read-only-input form-control"
                                                     type="text"
-                                                    name="phone" id="phone">
+                                                    name="phone1" id="phone1">
 
 
                                                 <span class="text-danger" id="phoneError">
@@ -483,7 +483,7 @@
 @include('backEnd.partials.data_table_js')
 @section('script')
 <script>
-    document.getElementById('phone').addEventListener('input', function () {
+    document.getElementById('phone1').addEventListener('input', function () {
         validatePhoneNumber(this.value);
     });
 
@@ -501,7 +501,11 @@
         }
     }
 
-      
+        @if (count($errors) > 0)
+            @foreach ($errors->all() as $error)
+                toastr.error("{{ $error }}");
+            @endforeach
+        @endif
 
     </script>
 @endsection
