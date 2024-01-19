@@ -41,7 +41,7 @@ class SmAdmissionQueryController extends Controller
     public function store(SmAdmissionQueryRequest $request)
     {
         try {
-            dd($request->all());
+            
             $admission_query = new SmAdmissionQuery();
             $admission_query->name = $request->name;
             $admission_query->phone = $request->phone;
@@ -68,6 +68,7 @@ class SmAdmissionQueryController extends Controller
             Toastr::success('Operation successful', 'Success');
             return redirect()->back();
         } catch (\Exception $e) {
+            dd($e->getMessage());
             Toastr::error('Operation Failed', 'Failed');
             return redirect()->back();
         }
