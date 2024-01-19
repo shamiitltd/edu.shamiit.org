@@ -1225,7 +1225,7 @@ class FeesController extends Controller
                         $view = view('fees::__allFeesListAction', compact('row', 'balance', 'paid_amount', 'role'));
                         return (string)$view;
                     })
-                    ->rawColumns(['student_name', 'status', 'action', 'date'])
+                    ->rawColumns(['student_name', 'status', 'action'])
                     ->make(true);
         // }
             }
