@@ -271,7 +271,7 @@
                                                 </span>
                                             </div>
                                         </div>
-                                        <!-- <div class="col-lg-4">
+                                         <div class="col-lg-4">
                                             <div class="primary_input">
                                                 <label class="primary_input_label"
                                                     for="">@lang('admin.phone')</label>
@@ -284,7 +284,7 @@
                                                 <span class="text-danger" id="phoneError">
                                                 </span>
                                             </div>
-                                        </div> -->
+                                        </div>
                                         <div class="col-lg-4">
                                             <div class="primary_input">
                                                 <label class="primary_input_label"
