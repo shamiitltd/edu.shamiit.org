@@ -310,10 +310,7 @@
         { visible: false },
        
     ],
-    type: "POST",
-    success: function (data) {
-        console.log('Data received from server:', data);
-    },
+    change
     responsive: true,
 });
     });
