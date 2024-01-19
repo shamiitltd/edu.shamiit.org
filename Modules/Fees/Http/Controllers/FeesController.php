@@ -1151,6 +1151,7 @@ class FeesController extends Controller
     {
         try{
             $studentInvoices = FmFeesInvoice::all();
+            dd($studentInvoices);
         // $studentInvoices = FmFeesInvoice::where('type', 'fees')
         //     ->where('school_id', Auth::user()->school_id)
         //     ->where('academic_id', getAcademicId())
