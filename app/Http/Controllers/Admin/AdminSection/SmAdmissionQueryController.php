@@ -59,12 +59,13 @@ class SmAdmissionQueryController extends Controller
             } else {
                 $admission_query->class = $request->class;
                 $admission_query->academic_id = getAcademicId();
+                dd($admission_query);
             }
             $admission_query->no_of_child = $request->no_of_child;
             $admission_query->created_by = Auth::user()->id;
             $admission_query->school_id = Auth::user()->school_id;
             $admission_query->save();
-            dd($admission_query);
+            
             Toastr::success('Operation successful', 'Success');
             return redirect()->back();
         } catch (\Exception $e) {
