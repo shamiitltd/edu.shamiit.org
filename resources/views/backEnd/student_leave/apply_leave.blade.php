@@ -6,7 +6,7 @@
 <style>
     .ti-calendar:before {
         position: absolute !important;
-        top: 28px !important;
+        top: 28.0px !important;
     }
     .input-right-icon button.primary-btn-small-input {
         top: 8px  !important;
@@ -362,7 +362,7 @@
                                             <div class="text-center">
                                                 <h4>@lang('common.are_you_sure_to_delete')</h4>
                                             </div>
-                                            
+
     
                                             <div class="mt-40 d-flex justify-content-between">
                                                 <button type="button" class="primary-btn tr-bg" data-dismiss="modal">@lang('common.cancel')</button>
