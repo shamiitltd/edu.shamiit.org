@@ -1150,8 +1150,13 @@ class FeesController extends Controller
     public function feesInvoiceDatatable()
     {
         try{
-            $studentInvoices = FmFeesInvoice::all();
-            dd($studentInvoices);
+            $invoiceInfo = FmFeesInvoice::all();
+            $invoiceDetails = FmFeesInvoiceChield::where('fees_invoice_id', $invoiceInfo->id)
+                ->where('school_id', Auth::user()->school_id)
+                ->where('academic_id', getAcademicId())
+                ->get();
+            // $studentInvoices = FmFeesInvoice::all();
+            // dd($studentInvoices);
         // $studentInvoices = FmFeesInvoice::where('type', 'fees')
         //     ->where('school_id', Auth::user()->school_id)
         //     ->where('academic_id', getAcademicId())
@@ -1159,7 +1164,7 @@ class FeesController extends Controller
         //     ->get();
            
         // if (isset($studentInvoices)){
-            return Datatables::of($studentInvoices)
+            return Datatables::of($invoiceDetails)
                     ->addIndexColumn()
                     ->addColumn('student_name', function($row){
                         $btn = '<a href="' . route('fees.fees-invoice-view', ['id' => $row->id, 'state' => 'view']) . 'target="_blank">' .@$row->studentInfo->full_name . '</a>';
