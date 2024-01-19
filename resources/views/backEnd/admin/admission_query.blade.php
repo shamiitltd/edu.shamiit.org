@@ -275,7 +275,7 @@
                                             <div class="primary_input">
                                                 <label class="primary_input_label"
                                                     for="">@lang('admin.phone')</label>
-                                                <input oninput="phoneCheck(this)"
+                                                <input 
                                                     class="primary_input_field read-only-input form-control"
                                                     type="text"
                                                     name="phone" id="phone">

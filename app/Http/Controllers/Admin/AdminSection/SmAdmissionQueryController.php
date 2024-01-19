@@ -64,7 +64,7 @@ class SmAdmissionQueryController extends Controller
             $admission_query->created_by = Auth::user()->id;
             $admission_query->school_id = Auth::user()->school_id;
             $admission_query->save();
-           //dd($admission_query);
+           dd($admission_query);
             Toastr::success('Operation successful', 'Success');
             return redirect()->back();
         } catch (\Exception $e) {
