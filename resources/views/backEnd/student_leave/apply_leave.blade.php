@@ -335,7 +335,7 @@
            @endif
            @if($apply_leave->approve_status == 'P')
             <a class="dropdown-item" data-toggle="modal" data-target="#deleteApplyLeaveModal{{ $apply_leave->id }}" href="#">@lang('common.delete')</a>
-       @endif
+           @endif
 
             @if($apply_leave->file != "")
             <a class="dropdown-item" href="{{ url(@$apply_leave->file) }}" download>
@@ -362,6 +362,7 @@
                                             <div class="text-center">
                                                 <h4>@lang('common.are_you_sure_to_delete')</h4>
                                             </div>
+                                            
     
                                             <div class="mt-40 d-flex justify-content-between">
                                                 <button type="button" class="primary-btn tr-bg" data-dismiss="modal">@lang('common.cancel')</button>
