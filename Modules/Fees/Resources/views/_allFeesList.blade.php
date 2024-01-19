@@ -310,7 +310,7 @@
         { visible: false },
        
     ],
-    change
+    
     responsive: true,
 });
     });
