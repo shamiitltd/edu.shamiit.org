@@ -308,11 +308,12 @@
             ],
             columnDefs: [
         { visible: false },
-        type: "POST",
+       
+    ],
+    type: "POST",
     success: function (data) {
         console.log('Data received from server:', data);
     },
-    ],
     responsive: true,
 });
     });
