@@ -69,7 +69,6 @@ class SmAdmissionQueryController extends Controller
             Toastr::success('Operation successful', 'Success');
             return redirect()->back();
         } catch (\Exception $e) {
-            dd($e->getMessage());
             Toastr::error('Operation Failed', 'Failed');
             return redirect()->back();
         }
@@ -104,7 +103,7 @@ class SmAdmissionQueryController extends Controller
                  $admission_query = SmAdmissionQuery::where('created_by',auth()->user()->id)->where('id',$request->id)->first();
             }
             $admission_query->name = $request->name;
-            $admission_query->phone = $request->phone;
+            $admission_query->phone = $request->phone1;
             $admission_query->email = $request->email;
             $admission_query->address = $request->address;
             $admission_query->description = $request->description;
