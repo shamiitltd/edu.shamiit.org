@@ -68,6 +68,7 @@ class SmAdmissionQueryController extends Controller
             return redirect()->back();
         } catch (\Exception $e) {
             dd($e->getMessage());
+            
             Toastr::error('Operation Failed', 'Failed');
             return redirect()->back();
         }
