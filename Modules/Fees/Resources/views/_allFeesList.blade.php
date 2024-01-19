@@ -211,7 +211,9 @@
     serverSide: true,
     ajax: $.fn.dataTable.pipeline({
         url: "{{ route('fees.fees-invoice-datatable') }}",
-        data: {},
+      data: function (d) {
+        d.academic_id = $('#academic_id').val();
+    },
         pages: "{{ generalSetting()->ss_page_load }}"
     }),
     columns: [
@@ -306,6 +308,10 @@
             ],
             columnDefs: [
         { visible: false },
+        type: "POST",
+    success: function (data) {
+        console.log('Data received from server:', data);
+    },
     ],
     responsive: true,
 });
