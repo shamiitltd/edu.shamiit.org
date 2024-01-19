@@ -1150,12 +1150,14 @@ class FeesController extends Controller
     public function feesInvoiceDatatable()
     {
         try{
-        $studentInvoices = FmFeesInvoice::where('school_id', Auth::user()->school_id)
-            ->where('academic_id', getAcademicId())
-            ->orderBy('id', 'DESC')
-            ->get();
+            $studentInvoices = FmFeesInvoice::all();
+        // $studentInvoices = FmFeesInvoice::where('type', 'fees')
+        //     ->where('school_id', Auth::user()->school_id)
+        //     ->where('academic_id', getAcademicId())
+        //     ->orderBy('id', 'DESC')
+        //     ->get();
            
-        if (isset($studentInvoices)){
+        // if (isset($studentInvoices)){
             return Datatables::of($studentInvoices)
                     ->addIndexColumn()
                     ->addColumn('student_name', function($row){
@@ -1219,7 +1221,7 @@ class FeesController extends Controller
                     })
                     ->rawColumns(['student_name', 'status', 'action', 'date'])
                     ->make(true);
-        }
+        // }
             }
             catch (\Throwable $th) {
                 Toastr::error('Operation Failed', 'Failed');
