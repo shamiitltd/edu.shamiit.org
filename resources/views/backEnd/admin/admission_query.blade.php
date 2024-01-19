@@ -275,7 +275,7 @@
                                             <div class="primary_input">
                                                 <label class="primary_input_label"
                                                     for="">@lang('admin.phone')</label>
-                                                <input 
+                                                <input
                                                     class="primary_input_field read-only-input form-control"
                                                     type="text"
                                                     name="phone" id="phone">
@@ -293,6 +293,7 @@
                                                     class="primary_input_field read-only-input form-control"
                                                     type="email"
                                                     name="email">
+                                                    
                                             </div>
                                         </div>
                                     </div>
