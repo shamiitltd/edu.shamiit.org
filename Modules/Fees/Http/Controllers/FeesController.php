@@ -344,7 +344,6 @@ class FeesController extends Controller
                                 $btn = '<button class="primary-btn small bg-danger text-white border-0">' . __('fees.unpaid') . '</button>';
                             }
                         }
-                        dd($btn);
                         return $btn;
                     })
                     ->addColumn('paid_amount', function($row){
