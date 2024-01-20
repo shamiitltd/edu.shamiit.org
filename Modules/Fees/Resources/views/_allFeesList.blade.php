@@ -76,6 +76,7 @@
                     </ul>
 
                     <div class="tab-content mt-10">
+                        {{$records}}
                         @foreach ($records as $key => $record)
                             <div role="tabpanel"
                                 class="tab-pane fade  @if ($key == 0) active show @endif"
