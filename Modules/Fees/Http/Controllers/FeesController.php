@@ -297,7 +297,7 @@ class FeesController extends Controller
                     ->addIndexColumn()
                     ->addColumn('student_name', function($row){
                         $btn = '<a href="' . route('fees.fees-invoice-view', ['id' => $row->id, 'state' => 'view']) . 'target="_blank">' .@$row->studentInfo->full_name . '</a>';
-                        dd($btn);
+                       
                         return $btn;
                     })
                     ->addColumn('amount', function($row){
