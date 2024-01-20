@@ -288,6 +288,7 @@ class FeesController extends Controller
 
     public function feesInvoiceList()
     {
+        
         return view('fees::feesInvoice.feesInvoiceList');
     }
 
@@ -1155,7 +1156,7 @@ class FeesController extends Controller
             ->orderBy('id', 'DESC')
             ->get();
            
-        // if (isset($studentInvoices)){
+        if (isset($studentInvoices)){
             return Datatables::of($studentInvoices)
                     ->addIndexColumn()
                     ->addColumn('student_name', function($row){
@@ -1214,22 +1215,11 @@ class FeesController extends Controller
                         $fine = $row->Tfine;
                         $paid_amount = $row->Tpaidamount;
                         $balance = $amount + $fine - ($paid_amount + $weaver);
-                        // $view = view('fees::__allFeesListAction', compact('row', 'balance', 'paid_amount', 'role'));
-                        // return (string)$view;
-                        if($balance == 0){
-                            $btn = '<button class="primary-btn small bg-success text-white border-0">' . __('fees.paid') . '</button>';
-                        }else{
-                            if($paid_amount > 0){
-                                $btn = '<button class="primary-btn small bg-warning text-white border-0">' . __('fees.partial') . '</button>';
-                            }else{
-                                $btn = '<button class="primary-btn small bg-danger text-white border-0">' . __('fees.unpaid') . '</button>';
-                            }
-                        }
-                        dd($btn);
-                        return $btn;
+                        $view = view('fees::_allFeesListAction', compact('row', 'balance', 'paid_amount', 'role'));
+                        return (string)$view;
                     })
-                    ->rawColumns(['student_name', 'status', 'date','action '])
+                    ->rawColumns(['student_name', 'status', 'action', 'date'])
                     ->make(true);
-        //}
+        }
     }
 }
