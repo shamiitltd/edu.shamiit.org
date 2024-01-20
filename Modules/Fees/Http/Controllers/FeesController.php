@@ -302,7 +302,7 @@ class FeesController extends Controller
                     })
                     ->addColumn('amount', function($row){
                         $amount = $row->Tamount;
-                        dd($amount);
+                       
                         return $amount;
                     })
                     ->addColumn('weaver', function($row){
