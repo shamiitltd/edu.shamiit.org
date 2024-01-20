@@ -326,7 +326,7 @@ class FeesController extends Controller
                         $fine = $row->Tfine;
                         $paid_amount = $row->Tpaidamount;
                         $balance = $amount + $fine - ($paid_amount + $weaver);
-                        dd($balance);
+                     
                         return $balance;
                     })
                     ->addColumn('status', function($row){
