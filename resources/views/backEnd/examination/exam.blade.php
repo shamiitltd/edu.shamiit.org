@@ -175,7 +175,7 @@
                                             @if (@generalSetting()->result_type == 'mark')
                                             <th>@lang('exam.pass_mark')</th>
                                             @endif
-                                            <th>@lang('common.action')</th>
+                                           
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -216,6 +216,7 @@
                                         <tr>
                                             <td class="border-top-0" style="position: relative; top: 12px">
                                                 @lang('exam.total')</td>
+                                                <th>@lang('common.action')</th>
                                             <td class="border-top-0" id="totalMark">
                                                 <input type="text" class="primary_input_field form-control"
                                                     name="totalMark" readonly="true">
