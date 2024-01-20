@@ -1155,7 +1155,7 @@ class FeesController extends Controller
             ->orderBy('id', 'DESC')
             ->get();
            
-        if (isset($studentInvoices)){
+        // if (isset($studentInvoices)){
             return Datatables::of($studentInvoices)
                     ->addIndexColumn()
                     ->addColumn('student_name', function($row){
@@ -1207,18 +1207,28 @@ class FeesController extends Controller
                         $date = dateConvert($row->create_date);
                         return $date;
                     })
-                    // ->addColumn('action', function($row){
-                    //     $role = 'admin';
-                    //     $amount = $row->Tamount;
-                    //     $weaver = $row->Tweaver;
-                    //     $fine = $row->Tfine;
-                    //     $paid_amount = $row->Tpaidamount;
-                    //     $balance = $amount + $fine - ($paid_amount + $weaver);
-                    //     $view = view('fees::__allFeesListAction', compact('row', 'balance', 'paid_amount', 'role'));
-                    //     return (string)$view;
-                    // })
-                    ->rawColumns(['student_name', 'status', 'date'])
+                    ->addColumn('action', function($row){
+                        $role = 'admin';
+                        $amount = $row->Tamount;
+                        $weaver = $row->Tweaver;
+                        $fine = $row->Tfine;
+                        $paid_amount = $row->Tpaidamount;
+                        $balance = $amount + $fine - ($paid_amount + $weaver);
+                        // $view = view('fees::__allFeesListAction', compact('row', 'balance', 'paid_amount', 'role'));
+                        // return (string)$view;
+                        if($balance == 0){
+                            $btn = '<button class="primary-btn small bg-success text-white border-0">' . __('fees.paid') . '</button>';
+                        }else{
+                            if($paid_amount > 0){
+                                $btn = '<button class="primary-btn small bg-warning text-white border-0">' . __('fees.partial') . '</button>';
+                            }else{
+                                $btn = '<button class="primary-btn small bg-danger text-white border-0">' . __('fees.unpaid') . '</button>';
+                            }
+                        }
+                        return $btn;
+                    })
+                    ->rawColumns(['student_name', 'status', 'date','action'])
                     ->make(true);
-        }
+        //}
     }
 }
