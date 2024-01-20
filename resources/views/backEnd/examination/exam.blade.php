@@ -45,7 +45,7 @@
 
         <div class="row">
 
-            <div class="col-lg-3">
+            <div class="col-lg-4">
                 @if (isset($exam))
                 {{ Form::open(['class' => 'form-horizontal', 'route' => ['exam-update', $exam->id], 'method' => 'PUT']) }}
                 @else
@@ -400,7 +400,7 @@
             </div>
 
 
-            <div class="col-lg-9">
+            <div class="col-lg-8">
                 <div class="row">
                     <div class="col-lg-4 no-gutters">
                         <div class="main-title">
