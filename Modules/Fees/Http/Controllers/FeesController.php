@@ -288,82 +288,6 @@ class FeesController extends Controller
 
     public function feesInvoiceList()
     {
-        $studentInvoices = FmFeesInvoice::where('type', 'fees')
-            ->where('school_id', Auth::user()->school_id)
-            ->where('academic_id', getAcademicId())
-            ->orderBy('id', 'DESC')
-            ->get();
-            return Datatables::of($studentInvoices)
-                    ->addIndexColumn()
-                    ->addColumn('student_name', function($row){
-                        $btn = '<a href="' . route('fees.fees-invoice-view', ['id' => $row->id, 'state' => 'view']) . 'target="_blank">' .@$row->studentInfo->full_name . '</a>';
-                       
-                        return $btn;
-                    })
-                    ->addColumn('amount', function($row){
-                        $amount = $row->Tamount;
-                       
-                        return $amount;
-                    })
-                    ->addColumn('weaver', function($row){
-                        $weaver = $row->Tweaver;
-                       
-                        return $weaver;
-                    })
-                    ->addColumn('fine', function($row){
-                        $fine = $row->Tfine;
-                       
-                        return $fine;
-                    })
-                    ->addColumn('paid_amount', function($row){
-                        $paid_amount = $row->Tpaidamount;
-                       
-                        return $paid_amount;
-                    })
-                    ->addColumn('balance', function($row){
-                        $amount = $row->Tamount;
-                        $weaver = $row->Tweaver;
-                        $fine = $row->Tfine;
-                        $paid_amount = $row->Tpaidamount;
-                        $balance = $amount + $fine - ($paid_amount + $weaver);
-                     
-                        return $balance;
-                    })
-                    ->addColumn('status', function($row){
-                        $amount = $row->Tamount;
-                        $weaver = $row->Tweaver;
-                        $fine = $row->Tfine;
-                        $paid_amount = $row->Tpaidamount;
-                        $balance = $amount + $fine - ($paid_amount + $weaver);
-                        if($balance == 0){
-                            $btn = '<button class="primary-btn small bg-success text-white border-0">' . __('fees.paid') . '</button>';
-                        }else{
-                            if($paid_amount > 0){
-                                $btn = '<button class="primary-btn small bg-warning text-white border-0">' . __('fees.partial') . '</button>';
-                            }else{
-                                $btn = '<button class="primary-btn small bg-danger text-white border-0">' . __('fees.unpaid') . '</button>';
-                            }
-                        }
-                        return $btn;
-                    })
-                    ->addColumn('paid_amount', function($row){
-                        $btn = dateConvert($row->create_date);
-                        dd($btn);
-                        return $btn;
-                    })
-                    ->addColumn('action', function($row){
-                        $role = 'admin';
-                        $amount = $row->Tamount;
-                        $weaver = $row->Tweaver;
-                        $fine = $row->Tfine;
-                        $paid_amount = $row->Tpaidamount;
-                        $balance = $amount + $fine - ($paid_amount + $weaver);
-                        $view = view('fees::__allFeesListAction', compact('row', 'balance', 'paid_amount', 'role'));
-                        return (string)$view;
-                    })
-                    ->rawColumns(['student_name', 'status', 'action', 'date'])
-                    ->make(true);
-
         return view('fees::feesInvoice.feesInvoiceList');
     }
 
@@ -1280,8 +1204,8 @@ class FeesController extends Controller
                         return $btn;
                     })
                     ->addColumn('paid_amount', function($row){
-                        $btn = dateConvert($row->create_date);
-                        return $btn;
+                        $date = dateConvert($row->create_date);
+                        return $date;
                     })
                     ->addColumn('action', function($row){
                         $role = 'admin';
