@@ -317,7 +317,7 @@ class FeesController extends Controller
                     })
                     ->addColumn('paid_amount', function($row){
                         $paid_amount = $row->Tpaidamount;
-                        dd($paid_amount);
+                       
                         return $paid_amount;
                     })
                     ->addColumn('balance', function($row){
