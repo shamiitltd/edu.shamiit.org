@@ -37,7 +37,7 @@
             @endif
         @endif
         <div class="row">
-<!-- 
+
            @if ((isset($role) && $role == 'admin') || $role == 'lms')
                 <div class="col-lg-12">
                     <x-table>
@@ -60,8 +60,8 @@
                             </tbody>
                         </table>
                     </x-table>
-                </div> -->
-            <!-- @else -->
+                </div>
+            @else
                 <div class="col-lg-12 student-details up_admin_visitor">
                     <ul class="nav nav-tabs tabs_scroll_nav ml-0" role="tablist">
                         @foreach ($records as $key => $record)
@@ -95,7 +95,7 @@
                                                 <th>@lang('accounts.balance')</th>
                                                 <th>@lang('common.status')</th>
                                                 <th>@lang('common.date')</th>
-                                                <!-- <th>@lang('common.action')</th> -->
+                                                <th>@lang('common.action')</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -158,7 +158,7 @@
                         @endforeach
                     </div>
                 </div>
-            <!-- @endif -->
+            @endif
         </div>
     </div>
 </section>

@@ -1203,21 +1203,21 @@ class FeesController extends Controller
                         }
                         return $btn;
                     })
-                    ->addColumn('paid_amount', function($row){
+                    ->addColumn('date', function($row){
                         $date = dateConvert($row->create_date);
                         return $date;
                     })
-                    // ->addColumn('action', function($row){
-                    //     $role = 'admin';
-                    //     $amount = $row->Tamount;
-                    //     $weaver = $row->Tweaver;
-                    //     $fine = $row->Tfine;
-                    //     $paid_amount = $row->Tpaidamount;
-                    //     $balance = $amount + $fine - ($paid_amount + $weaver);
-                    //     $view = view('fees::__allFeesListAction', compact('row', 'balance', 'paid_amount', 'role'));
-                    //     return (string)$view;
-                    // })
-                    ->rawColumns(['student_name', 'status', 'date'])
+                    ->addColumn('action', function($row){
+                        $role = 'admin';
+                        $amount = $row->Tamount;
+                        $weaver = $row->Tweaver;
+                        $fine = $row->Tfine;
+                        $paid_amount = $row->Tpaidamount;
+                        $balance = $amount + $fine - ($paid_amount + $weaver);
+                        $view = view('fees::__allFeesListAction', compact('row', 'balance', 'paid_amount', 'role'));
+                        return (string)$view;
+                    })
+                    ->rawColumns(['student_name', 'status', 'action', 'date'])
                     ->make(true);
         }
     }
