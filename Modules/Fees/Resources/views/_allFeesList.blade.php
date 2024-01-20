@@ -53,7 +53,7 @@
                                     <th>@lang('accounts.balance')</th>
                                     <th>@lang('common.status')</th>
                                     <th>@lang('common.date')</th>
-                                    <th>@lang('common.action')</th>
+                                    <!-- <th>@lang('common.action')</th> -->
                                 </tr>
                             </thead>
                             <tbody>
@@ -95,7 +95,7 @@
                                                 <th>@lang('accounts.balance')</th>
                                                 <th>@lang('common.status')</th>
                                                 <th>@lang('common.date')</th>
-                                                <th>@lang('common.action')</th>
+                                                <!-- <th>@lang('common.action')</th> -->
                                             </tr>
                                         </thead>
                                         <tbody>
