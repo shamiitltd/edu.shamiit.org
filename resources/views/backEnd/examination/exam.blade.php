@@ -208,20 +208,23 @@
                                                 </button>
                                             </td>
                                         </tr>
-
-
-
                                     </tbody>
                                     <tfoot>
                                         <tr>
                                             <td class="border-top-0" style="position: relative; top: 12px">
                                                 @lang('exam.total')</td>
-                                                <th>@lang('common.action')</th>
+                                                
                                             <td class="border-top-0" id="totalMark">
                                                 <input type="text" class="primary_input_field form-control"
                                                     name="totalMark" readonly="true">
                                             </td>
-                                            <td class="border-top-0"></td>
+                                            <td class="border-0">
+                                                <button style="position: relative; top: 6px;"
+                                                    class="primary-btn icon-only fix-gr-bg" type="button">
+                                                    <span class="ti-trash"></span>
+                                                </button>
+                                            </td>
+                                            
                                         </tr>
                                     </tfoot>
                                 </table>
