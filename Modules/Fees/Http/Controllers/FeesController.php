@@ -312,7 +312,7 @@ class FeesController extends Controller
                     })
                     ->addColumn('fine', function($row){
                         $fine = $row->Tfine;
-                        dd($fine);
+                       
                         return $fine;
                     })
                     ->addColumn('paid_amount', function($row){
