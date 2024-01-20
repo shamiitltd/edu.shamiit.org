@@ -37,8 +37,8 @@
             @endif
         @endif
         <div class="row">
-
-           <!-- @if ((isset($role) && $role == 'admin') || $role == 'lms') -->
+<!-- 
+           @if ((isset($role) && $role == 'admin') || $role == 'lms')
                 <div class="col-lg-12">
                     <x-table>
                         <table id="table_id" class="table data-table" cellspacing="0" width="100%">
@@ -53,16 +53,16 @@
                                     <th>@lang('accounts.balance')</th>
                                     <th>@lang('common.status')</th>
                                     <th>@lang('common.date')</th>
-                                    <!-- <th>@lang('common.action')</th> -->
+                                    <th>@lang('common.action')</th>
                                 </tr>
                             </thead>
                             <tbody>
                             </tbody>
                         </table>
                     </x-table>
-                </div>
+                </div> -->
             <!-- @else -->
-                <!-- <div class="col-lg-12 student-details up_admin_visitor">
+                <div class="col-lg-12 student-details up_admin_visitor">
                     <ul class="nav nav-tabs tabs_scroll_nav ml-0" role="tablist">
                         @foreach ($records as $key => $record)
                             <li class="nav-item mb-0">
@@ -95,8 +95,8 @@
                                                 <th>@lang('accounts.balance')</th>
                                                 <th>@lang('common.status')</th>
                                                 <th>@lang('common.date')</th>
-                                                <th>@lang('common.action')</th>
-                                            <!-- </tr>
+                                                <!-- <th>@lang('common.action')</th> -->
+                                            </tr>
                                         </thead>
                                         <tbody>
                                             @foreach ($record->feesInvoice as $key => $studentInvoice)
@@ -158,7 +158,7 @@
                         @endforeach
                     </div>
                 </div>
-            @endif -->
+            <!-- @endif -->
         </div>
     </div>
 </section>
