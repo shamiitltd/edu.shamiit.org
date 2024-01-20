@@ -1225,9 +1225,10 @@ class FeesController extends Controller
                                 $btn = '<button class="primary-btn small bg-danger text-white border-0">' . __('fees.unpaid') . '</button>';
                             }
                         }
+                        dd($btn);
                         return $btn;
                     })
-                    ->rawColumns(['student_name', 'status', 'date','action'])
+                    ->rawColumns(['student_name', 'status', 'date','action '])
                     ->make(true);
         //}
     }
