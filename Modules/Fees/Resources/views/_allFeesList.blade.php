@@ -36,8 +36,8 @@
                 </div>
             @endif
         @endif
+        
         <div class="row">
-
            @if ((isset($role) && $role == 'admin') || $role == 'lms')
                 <div class="col-lg-12">
                     <x-table>
