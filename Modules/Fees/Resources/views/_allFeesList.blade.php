@@ -38,7 +38,7 @@
         @endif
         <div class="row">
 
-            @if ((isset($role) && $role == 'admin') || $role == 'lms')
+           @if ((isset($role) && $role == 'admin') || $role == 'lms')
                 <div class="col-lg-12">
                     <x-table>
                         <table id="table_id" class="table data-table" cellspacing="0" width="100%">
@@ -76,6 +76,7 @@
                     </ul>
 
                     <div class="tab-content mt-10">
+                        {{$records}}
                         @foreach ($records as $key => $record)
                             <div role="tabpanel"
                                 class="tab-pane fade  @if ($key == 0) active show @endif"
@@ -202,89 +203,43 @@
 
 @include('backEnd.partials.data_table_js')
 @include('backEnd.partials.server_side_datatable')
-<script>
-    function feesInvoiceDelete(id) {
-        var modal = $('#deleteFeesPayment');
-        modal.find('input[name=feesInvoiceId]').val(id)
-        modal.modal('show');
-    }
+@push('script') 
 
-    function viewPaymentDetailModal(id) {
-        $('#viewFeesPayment').modal('show');
-        let invoiceId = id;
-        console.log(invoiceId);
-        $.ajax({
-            url: "{{ route('fees.fees-view-payment') }}",
-            method: "POST",
-            data: {
-                invoiceId: invoiceId
-            },
-            success: function(response) {
-                $('#viewFeesPayment .modal-content').html(response);
-            },
-        });
-    }
+<script>
     $(document).ready(function() {
-        $('.data-table').DataTable({
-            processing: true,
-            serverSide: true,
-            "ajax": $.fn.dataTable.pipeline({
-                url: "{{ url('fees/fees-invoice-datatable') }}",
-                data: {},
-                pages: "{{ generalSetting()->ss_page_load }}" // number of pages to cache
-            }),
-            columns: [{
-                    data: 'DT_RowIndex',
-                    name: 'id'
-                },
-                {
-                    data: 'student_name',
-                    name: 'student_name'
-                },
-                {
-                    data: 'amount',
-                    name: 'amount'
-                },
-                {
-                    data: 'weaver',
-                    name: 'weaver'
-                },
-                {
-                    data: 'fine',
-                    name: 'fine'
-                },
-                {
-                    data: 'paid_amount',
-                    name: 'paid_amount'
-                },
-                {
-                    data: 'balance',
-                    name: 'balance'
-                },
-                {
-                    data: 'status',
-                    name: 'status'
-                },
-                {
-                    data: 'paid_amount',
-                    name: 'paid_amount'
-                },
-                {
-                    data: 'action',
-                    name: 'action'
-                },
-            ],
-            bLengthChange: false,
-            bDestroy: true,
-            language: {
-                search: "<i class='ti-search'></i>",
-                searchPlaceholder: window.jsLang('quick_search'),
-                paginate: {
-                    next: "<i class='ti-arrow-right'></i>",
-                    previous: "<i class='ti-arrow-left'></i>",
-                },
-            },
-            dom: "Bfrtip",
+    $('.data-table').DataTable({
+    processing: true,
+    serverSide: true,
+    ajax: $.fn.dataTable.pipeline({
+        url: "{{ route('fees.fees-invoice-datatable') }}",
+      data: function (d) {
+        d.academic_id = $('#academic_id').val();
+    },
+        pages: "{{ generalSetting()->ss_page_load }}"
+    }),
+    columns: [
+        { data: 'DT_RowIndex', name: 'id' },
+        { data: 'student_name', name: 'student_name' },
+        { data: 'amount', name: 'amount' },
+        { data: 'weaver', name: 'weaver' },
+        { data: 'fine', name: 'fine' },
+        { data: 'paid_amount', name: 'paid_amount' },
+        { data: 'balance', name: 'balance' },
+        { data: 'status', name: 'status' },
+        { data: 'paid_amount', name: 'paid_amount' },
+        { data: 'action', name: 'action', orderable: false, searchable: true },
+    ],
+    bLengthChange: false,
+    bDestroy: true,
+    language: {
+        search: "<i class='ti-search'></i>",
+        searchPlaceholder: window.jsLang('quick_search'),
+        paginate: {
+            next: "<i class='ti-arrow-right'></i>",
+            previous: "<i class='ti-arrow-left'></i>",
+        },
+    },
+    dom: "Bfrtip",
             buttons: [{
                     extend: "copyHtml5",
                     text: '<i class="fa fa-files-o"></i>',
@@ -352,10 +307,39 @@
                     postfixButtons: ["colvisRestore"],
                 },
             ],
-            columnDefs: [{
-                visible: false,
-            }, ],
-            responsive: true,
-        });
+            columnDefs: [
+        { visible: false },
+       
+    ],
+    
+    responsive: true,
+});
     });
 </script>
+<script>
+    function feesInvoiceDelete(id) {
+        var modal = $('#deleteFeesPayment');
+        modal.find('input[name=feesInvoiceId]').val(id)
+        modal.modal('show');
+    }
+</script>
+<script>
+
+    function viewPaymentDetailModal(id) {
+        $('#viewFeesPayment').modal('show');
+        let invoiceId = id;
+        console.log(invoiceId);
+        $.ajax({
+            url: "{{ route('fees.fees-view-payment') }}",
+            method: "POST",
+            data: {
+                invoiceId: invoiceId
+            },
+            success: function(response) {
+                $('#viewFeesPayment .modal-content').html(response);
+            },
+        });
+    }
+    </script>
+
+@endpush

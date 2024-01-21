@@ -288,6 +288,7 @@ class FeesController extends Controller
 
     public function feesInvoiceList()
     {
+        
         return view('fees::feesInvoice.feesInvoiceList');
     }
 
@@ -1152,7 +1153,9 @@ class FeesController extends Controller
         $studentInvoices = FmFeesInvoice::where('type', 'fees')
             ->where('school_id', Auth::user()->school_id)
             ->where('academic_id', getAcademicId())
-            ->orderBy('id', 'DESC');
+            ->orderBy('id', 'DESC')
+            ->get();
+           
         if (isset($studentInvoices)){
             return Datatables::of($studentInvoices)
                     ->addIndexColumn()
@@ -1201,9 +1204,9 @@ class FeesController extends Controller
                         }
                         return $btn;
                     })
-                    ->addColumn('paid_amount', function($row){
-                        $btn = dateConvert($row->create_date);
-                        return $btn;
+                    ->addColumn('date', function($row){
+                        $date = dateConvert($row->create_date);
+                        return $date;
                     })
                     ->addColumn('action', function($row){
                         $role = 'admin';
@@ -1212,7 +1215,7 @@ class FeesController extends Controller
                         $fine = $row->Tfine;
                         $paid_amount = $row->Tpaidamount;
                         $balance = $amount + $fine - ($paid_amount + $weaver);
-                        $view = view('fees::__allFeesListAction', compact('row', 'balance', 'paid_amount', 'role'));
+                        $view = view('fees::_allFeesListAction', compact('row', 'balance', 'paid_amount', 'role'));
                         return (string)$view;
                     })
                     ->rawColumns(['student_name', 'status', 'action', 'date'])
