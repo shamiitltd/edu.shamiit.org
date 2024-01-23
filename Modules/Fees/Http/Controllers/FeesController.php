@@ -1222,12 +1222,11 @@ class FeesController extends Controller
                         $btn = '<div class="dropdown CRM_dropdown">
                             <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">' . app('translator')->get('common.select') . '</button>
     
-                            <div class="dropdown-menu dropdown-menu-right">
-                                
-                           . '(userPermission('feesInvoice.feesInvoiceEdit') === true ? '<a class="dropdown-item" href="' . route('fees.fees-invoice-edit', [$row->id]) . '">' . app('translator')->get('common.edit') . '</a>' : '') .
+                            <div class="dropdown-menu dropdown-menu-right">                            
+                          
     
                            
-                           '<a onclick="feesInvoiceDelete(' . $row->id . ');"  class="dropdown-item" href="#" data-toggle="modal" data-target="#deleteApplyLeaveModal" data-id="' . $row->id . '"  >' . app('translator')->get('common.delete') . '</a>
+                           <a onclick="feesInvoiceDelete(' . $row->id . ');"  class="dropdown-item" href="#" data-toggle="modal" data-target="#deleteApplyLeaveModal" data-id="' . $row->id . '"  >' . app('translator')->get('common.delete') . '</a>
     
                             </div>
                                     </div>';
