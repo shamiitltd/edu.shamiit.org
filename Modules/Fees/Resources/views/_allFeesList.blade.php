@@ -324,7 +324,6 @@
     }
 </script>
 <script>
-
     function viewPaymentDetailModal(id) {
         $('#viewFeesPayment').modal('show');
         let invoiceId = id;
