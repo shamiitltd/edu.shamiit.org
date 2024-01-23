@@ -215,18 +215,14 @@
                                                 @lang('exam.total')  <td class="border-top-0" id="totalMark">
                                                 <input type="text" class="primary_input_field form-control"
                                                     name="totalMark" readonly="true">
-                                            </td> 
-                                                
-                                            </td></td>
-                                                
-                                           
-                                            <td class="border-0">
+                                             </td>     
+                                            </td>
+                                              <td class="border-0">
                                                 <button style="position: relative; top: 6px;"
                                                     class="primary-btn icon-only fix-gr-bg" type="button">
                                                     <span class="ti-trash"></span>
-                                                    </button>
-                                           
-                                            
+                                                    </button> 
+                                         </td>  
                                         </tr>
                                     </tfoot>
                                 </table>
