@@ -1227,9 +1227,9 @@ class FeesController extends Controller
                            . '(userPermission('feesInvoice.feesInvoiceEdit') === true ? '<a class="dropdown-item" href="' . route('fees.fees-invoice-edit', [$row->id]) . '">' . app('translator')->get('common.edit') . '</a>' : '') .
     
                            
-                           '<a onclick="feesInvoiceDelete(' . $row->id . ');"  class="dropdown-item" href="#" data-toggle="modal" data-target="#deleteApplyLeaveModal" data-id="' . $row->id . '"  >' . app('translator')->get('common.delete') . '</a>' .
+                           '<a onclick="feesInvoiceDelete(' . $row->id . ');"  class="dropdown-item" href="#" data-toggle="modal" data-target="#deleteApplyLeaveModal" data-id="' . $row->id . '"  >' . app('translator')->get('common.delete') . '</a>
     
-                            '</div>
+                            </div>
                                     </div>';
     
                         return $btn;
