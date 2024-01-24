@@ -226,7 +226,7 @@
         { data: 'paid_amount', name: 'paid_amount' },
         { data: 'balance', name: 'balance' },
         { data: 'status', name: 'status' },
-        { data: 'paid_amount', name: 'paid_amount' },
+        { data: 'date', name: 'date' },
         { data: 'action', name: 'action', orderable: false, searchable: true },
     ],
     bLengthChange: false,
