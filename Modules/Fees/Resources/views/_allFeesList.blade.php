@@ -163,6 +163,8 @@
     </div>
 </section>
 
+
+
 {{-- Delete Modal Start --}}
 <div class="modal fade admin-query"
     id="deleteFeesPayment">
