@@ -32,7 +32,7 @@ jobs:
       - name: Cleaning ${{ matrix.environment }} ftp server
         run: |
           sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no "${{ secrets.SSH_USER }}" << 'EOF'
-            cd "${{ secrets.FTP_SERVER }}"
+            cd "htdocs/${{ secrets.FTP_SERVER }}"
             [ "$(basename "$(pwd)")" = "${{ secrets.FTP_SERVER }}" ] && rm -rf ./*
           EOF
 
@@ -173,14 +173,14 @@ jobs:
       - name: SSH into the server and unzip release.zip
         run: |
           sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no "${{ secrets.SSH_USER }}" << 'EOF'
-            cd "${{ secrets.FTP_SERVER }}"
+            cd "htdocs/${{ secrets.FTP_SERVER }}"
             yes | unzip release.zip -d release
           EOF
 
       - name: Copy .env.example and .env, .htaccess from release directory only for php
         run: |
           sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no "${{ secrets.SSH_USER }}" << 'EOF'
-            cd "${{ secrets.FTP_SERVER }}"
+            cd "htdocs/${{ secrets.FTP_SERVER }}"
             cp release/.env.example .env.example
             cp release/.env .env
             cp release/.htaccess .htaccess
@@ -197,7 +197,7 @@ jobs:
       - name: Remove the 'release' directory and .zip
         run: |
           sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no "${{ secrets.SSH_USER }}" << 'EOF'
-            cd "${{ secrets.FTP_SERVER }}"
+            cd "htdocs/${{ secrets.FTP_SERVER }}"
             rm -rf release
             rm -rf .git
             rm release.zip
@@ -229,14 +229,14 @@ jobs:
       - name: SSH into the server and unzip release.zip
         run: |
           sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no "${{ secrets.SSH_USER }}" << 'EOF'
-            cd "${{ secrets.FTP_SERVER }}"
+            cd "htdocs/${{ secrets.FTP_SERVER }}"
             yes | unzip release.zip -d release
           EOF
 
       - name: Copy .env.example and .env, .htaccess from release directory only for php
         run: |
           sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no "${{ secrets.SSH_USER }}" << 'EOF'
-            cd "${{ secrets.FTP_SERVER }}"
+            cd "htdocs/${{ secrets.FTP_SERVER }}"
             cp release/.env.example .env.example
             cp release/.env .env
             cp release/.htaccess .htaccess
@@ -253,7 +253,7 @@ jobs:
       - name: Remove the 'release' directory and .zip
         run: |
           sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no "${{ secrets.SSH_USER }}" << 'EOF'
-            cd "${{ secrets.FTP_SERVER }}"
+            cd "htdocs/${{ secrets.FTP_SERVER }}"
             rm -rf release
             rm -rf .git
             rm release.zip
@@ -311,7 +311,7 @@ jobs:
       - name: Migrating the Database in QA
         run: |
           sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no "${{ secrets.SSH_USER }}" << 'EOF'
-            cd "${{ secrets.FTP_SERVER }}"
+            cd "htdocs/${{ secrets.FTP_SERVER }}"
             php artisan migrate:fresh --force
           EOF
           
@@ -324,7 +324,7 @@ jobs:
       - name: SEED the Database in QA
         run: |
           sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no "${{ secrets.SSH_USER }}" << 'EOF'
-            cd "${{ secrets.FTP_SERVER }}"
+            cd "htdocs/${{ secrets.FTP_SERVER }}"
             php artisan db:seed --force
           EOF
 
@@ -337,7 +337,7 @@ jobs:
       - name: Migrating the Database in PROD
         run: |
           sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no "${{ secrets.SSH_USER }}" << 'EOF'
-            cd "${{ secrets.FTP_SERVER }}"
+            cd "htdocs/${{ secrets.FTP_SERVER }}"
             php artisan migrate:fresh --force
           EOF
           
@@ -350,7 +350,7 @@ jobs:
       - name: SEED the Database in PROD
         run: |
           sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no "${{ secrets.SSH_USER }}" << 'EOF'
-            cd "${{ secrets.FTP_SERVER }}"
+            cd "htdocs/${{ secrets.FTP_SERVER }}"
             php artisan db:seed --force
           EOF
           
