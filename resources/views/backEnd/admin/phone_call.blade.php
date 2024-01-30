@@ -284,6 +284,7 @@
                                                     <td>{{ trans('admin.' . ($phone_call_log->call_type == 'I' ? 'incoming' : 'outgoing')) }}
                                                     </td>
                                                     <td>
+                                                        
                                                         {{-- <div class="dropdown">
                                                             <button type="button" class="btn dropdown-toggle"
                                                                 data-toggle="dropdown">
