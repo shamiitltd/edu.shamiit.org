@@ -221,7 +221,7 @@ class SmStudentIdCardController extends Controller
         try {
             $id_cards = SmStudentIdCard::get();
             $roles = Role::get();
-            return view('backEnd.admin.idCard.generate_id_card', compact('id_cards','roles'));
+            return view('backEnd.admin.idCard.generate_id_card', compact('id_cards','roles'))->get();
         } catch (\Exception $e) {
             Toastr::error('Operation Failed', 'Failed');
             return redirect()->back();
