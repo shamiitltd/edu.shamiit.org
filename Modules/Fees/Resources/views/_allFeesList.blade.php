@@ -74,7 +74,6 @@
                             </li>
                         @endforeach
                     </ul>
-
                     <div class="tab-content mt-10">
                         {{$records}}
                         @foreach ($records as $key => $record)
