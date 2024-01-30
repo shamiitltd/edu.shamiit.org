@@ -29,8 +29,8 @@ class SmStudentIdCardController extends Controller
     public function index()
     {
         try {
-            $id_cards = SmStudentIdCard::where('active_status', 1)->where('school_id', Auth::user()->school_id)->
-            dd($id_cards);
+            $id_cards = SmStudentIdCard::where('active_status', 1)->where('school_id', Auth::user()->school_id)->get();
+    
             return view('backEnd.admin.idCard.student_id_card_list',compact('id_cards'));
         } catch (\Exception $e) {
             Toastr::error('Operation Failed', 'Failed');
