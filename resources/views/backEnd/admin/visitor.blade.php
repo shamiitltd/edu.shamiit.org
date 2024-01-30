@@ -379,6 +379,7 @@
                                                                 <a href="{{ route('visitor_delete', [@$visitor->id]) }}"
                                                                     class="primary-btn fix-gr-bg">@lang('common.delete')</a>
 
+                                                                    
                                                             </div>
                                                         </div>
 
