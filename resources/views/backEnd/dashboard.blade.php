@@ -48,6 +48,7 @@
                                 <div class="white-box single-summery">
                                     <div class="d-flex justify-content-between">
                                         <div>
+                                            <p>hello</p>
                                             <h3>@lang('dashboard.student')</h3>
                                             <p class="mb-0">@lang('dashboard.total_students')</p>
                                         </div>
