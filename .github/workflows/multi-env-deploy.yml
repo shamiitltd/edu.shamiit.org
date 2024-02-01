@@ -54,10 +54,6 @@ jobs:
       - name: Copy .env
         run: php -r "file_exists('.env') || copy('.env.example', '.env');"
 
-      - name: Install Dependencies
-        run: |
-            composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
-            composer update
 
       - name: Prepare .env file
         run: |
@@ -72,7 +68,11 @@ jobs:
 
       - name: Directory Permissions
         run: chmod -R 777 storage bootstrap/cache
-
+        
+      - name: Install Dependencies
+        run: |
+            composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
+            
       - name: Generate storage link
         run: php artisan storage:link
           
