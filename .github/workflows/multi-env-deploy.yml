@@ -1,4 +1,4 @@
-﻿name: Multi-ENV Clean, Build, Deploy, Migrate
+﻿﻿name: Multi-ENV Clean, Build, Deploy, Migrate
 
 on:
   push:
@@ -10,7 +10,7 @@ on:
 jobs:
   CLEANING-READY:
     name: Clean Ready
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     environment: CLEAN
     if: |
       github.ref == 'refs/heads/master'
@@ -19,7 +19,7 @@ jobs:
         run: echo "Cleaning ready"
   CLEANING:
     name: Clean ${{ matrix.environment }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     environment: ${{ matrix.environment }}
     needs: CLEANING-READY
     strategy:
@@ -39,7 +39,7 @@ jobs:
 
   BUILD:
     name: Build code
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -54,6 +54,8 @@ jobs:
       - name: Copy .env
         run: php -r "file_exists('.env') || copy('.env.example', '.env');"
 
+      - name: Install Dependencies
+        run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
 
       - name: Prepare .env file
         run: |
@@ -65,23 +67,15 @@ jobs:
         run: |
           cp -r -f public/uploads/repofiles/* "${{ secrets.REPO_PATH }}/"
           rm -rf public/uploads/repofiles
+          
+      - name: Generate key
+        run: php artisan key:generate
+
+      - name: Generate storage link
+        run: php artisan storage:link
 
       - name: Directory Permissions
         run: chmod -R 777 storage bootstrap/cache
-        
-      - name: Install Dependencies
-        run: |
-            composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
-            
-      - name: Generate storage link
-        run: php artisan storage:link
-          
-      - name: Generate key
-        run: |
-            php artisan config:clear
-            php artisan cache:clear
-            php artisan key:generate
-
 
       - name: Execute tests (Unit and Feature tests) via PHPUnit
         run: vendor/bin/phpunit
@@ -101,7 +95,7 @@ jobs:
 
   DEVELOPMENT:
     name: Deploy in TEST
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     environment: TEST
     needs: BUILD
     steps:
@@ -155,7 +149,7 @@ jobs:
 
   QUALITYANALYSIS:
     name: Deploy in QA
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     environment: QA
     needs: DEVELOPMENT
     steps:
@@ -211,7 +205,7 @@ jobs:
 
   PRODUCTION:
     name: Deploy in PROD
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     environment: PROD    
     needs: QUALITYANALYSIS
     steps:
@@ -267,7 +261,7 @@ jobs:
             
   MIGRATION-READY:
     name: Migration Ready
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     environment: MIGRATE
     #needs: ["DEVELOPMENT", "QUALITYANALYSIS", "PRODUCTION"]
     steps:
@@ -276,7 +270,7 @@ jobs:
 
   SEED-READY:
     name: SEED Ready
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     environment: SEED
     steps:
       - name: SEED Permission okay
@@ -284,7 +278,7 @@ jobs:
 
   MIGRATION-TEST:
     name: Migration in TEST
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     environment: TEST
     needs: ["MIGRATION-READY", "DEVELOPMENT"]
     steps:
@@ -297,7 +291,7 @@ jobs:
           
   SEED-TEST:
     name: SEED in TEST
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     environment: TEST
     needs: ["SEED-READY", "MIGRATION-TEST"]
     steps:
@@ -310,7 +304,7 @@ jobs:
 
   MIGRATION-QA:
     name: Migration in QA
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     environment: QA
     needs: ["MIGRATION-READY", "QUALITYANALYSIS"]
     steps:
@@ -323,7 +317,7 @@ jobs:
           
   SEED-QA:
     name: SEED in QA
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     environment: QA
     needs: ["SEED-READY", "MIGRATION-QA"]
     steps:
@@ -336,7 +330,7 @@ jobs:
 
   MIGRATION-PROD:
     name: Migration in PROD
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     environment: PROD
     needs: ["MIGRATION-READY", "PRODUCTION"]
     steps:
@@ -349,7 +343,7 @@ jobs:
           
   SEED-PROD:
     name: SEED in PROD
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     environment: PROD
     needs: ["SEED-READY", "MIGRATION-PROD"]
     steps:
