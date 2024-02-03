@@ -14,6 +14,7 @@
         padding: 10px;
         background: #c738d8;
 
+    
     }
     .user_id_card_header h4{
         font-size:18px;
@@ -98,7 +99,7 @@
                 <a href="{{route('dashboard')}}">@lang('common.dashboard')</a>
                 <a href="#">@lang('admin.admin_section')</a>
                 <a href="#">@lang('admin.id_card')</a>
-                <a href="#">@lang('admin.create_id_card')</a>
+                <a href="#">@lang('admin.create_id_Card')</a>
             </div>
         </div>
     </div>
@@ -218,12 +219,12 @@
                                         </div>
                                     </div>
                                 </div>
-
+<!-- check -->
                                 <div class="row mt-25 staffInfo d-none">
                                     <div class="col-lg-12">
                                         <label class="primary_input_label" for="">@lang('admin.role')<span class="text-danger"> *</span></label><br> 
                                         @foreach($roles as $role)
-                                            @if($role->id != 2 && $role->id != 3)
+                                            <!-- @if($role->id != 2 && $role->id != 3) -->
                                                 <div class="">
                                                     <input type="checkbox" id="role_{{@$role->id}}" class="common-checkbox" value="{{@$role->id}}" name="role[]">
                                                     <label for="role_{{@$role->id}}">{{@$role->name}}</label>
