@@ -122,7 +122,8 @@
             <div class="col-lg-12">
                 <label class="primary_input_label" for="">@lang('admin.role')<span class="text-danger">
                         *</span></label><br>
-                @foreach ($roles as $role)
+               
+                        @foreach ($roles as $role)
                         <div class="">
                             <label for="role_{{ @$role->id }}">{{ @$role->name }}</label>
                             <input type="checkbox" id="role_{{ @$role->id }}" class="common-checkbox"
