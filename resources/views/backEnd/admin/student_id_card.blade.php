@@ -219,7 +219,7 @@
                                         </div>
                                     </div>
                                 </div>
-
+<!-- check -->
                                 <div class="row mt-25 staffInfo d-none">
                                     <div class="col-lg-12">
                                         <label class="primary_input_label" for="">@lang('admin.role')<span class="text-danger"> *</span></label><br> 
