@@ -68,8 +68,9 @@
                                 </div>
                             </div>
                             <div class="col-lg-3">
+
                                 <div class="primary_input mb-15">
-                                    
+
                                     <label class="primary_input_label" for="">@lang('admin.date_to') <span
                                             class="text-danger"> *</span></label>
                                     <div class="primary_datepicker_input">
@@ -483,30 +484,5 @@
 @include('backEnd.partials.date_picker_css_js')
 @include('backEnd.partials.data_table_js')
 @section('script')
-<script>
-    document.getElementById('phone1').addEventListener('input', function () {
-        validatePhoneNumber(this.value);
-    });
 
-    function validatePhoneNumber(phoneNumber) {
-        // Remove non-numeric characters from the input
-        var numericPhoneNumber = phoneNumber.replace(/\D/g, '');
-
-        // Check if the numeric phone number is a valid 10-digit number
-        if (/^\d{10}$/.test(numericPhoneNumber)) {
-            // Valid phone number
-            document.getElementById('phoneError').innerText = '';
-        } else {
-            // Invalid phone number
-            document.getElementById('phoneError').innerText = 'Please enter a valid 10-digit phone number';
-        }
-    }
-
-        @if (count($errors) > 0)
-            @foreach ($errors->all() as $error)
-                toastr.error("{{ $error }}");
-            @endforeach
-        @endif
-
-    </script>
 @endsection
