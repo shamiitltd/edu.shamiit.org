@@ -39,7 +39,7 @@ jobs:
 
   BUILD:
     name: Build code
-    runs-on: ubuntu-20.04
+    runs-on: windows-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
