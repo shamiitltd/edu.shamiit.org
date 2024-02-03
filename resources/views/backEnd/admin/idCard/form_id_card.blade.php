@@ -108,8 +108,8 @@
             </div>
         </div>
 
-        <div
-            class="row mt-25 staffInfo 
+        
+           <div class="row mt-25 staffInfo 
             @if (isset($id_card)) @if (!in_array(3, $applicableUsers) && !in_array(2, $applicableUsers))
                     {{ 'd-block' }}
                 @else
