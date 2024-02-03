@@ -104,6 +104,7 @@ class SmAdmissionQueryController extends Controller
             }
             $admission_query->name = $request->name;
             $admission_query->phone = $request->phone1;
+            
             $admission_query->email = $request->email;
             $admission_query->address = $request->address;
             $admission_query->description = $request->description;

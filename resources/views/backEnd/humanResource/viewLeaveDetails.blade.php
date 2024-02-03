@@ -119,7 +119,7 @@ $days = $days_between + 1;
             @if(!isset($apply))
             {{ Form::open(['class' => 'form-horizontal', 'files' => true, 'route' => 'update-approve-leave',
                         'method' => 'POST', 'enctype' => 'multipart/form-data']) }}
-                        <input type="" name="id" value="{{$leaveDetails->id}}">
+                        <input type="hidden" name="id" value="{{$leaveDetails->id}}">
             <div class="single-meta mt-40">
                 <div class="row">
                     <div class="col-lg-2 col-md-5">
