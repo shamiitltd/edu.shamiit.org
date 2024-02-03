@@ -41,9 +41,10 @@ class SmAdmissionQueryController extends Controller
     public function store(SmAdmissionQueryRequest $request)
     {
         try {
+            
             $admission_query = new SmAdmissionQuery();
             $admission_query->name = $request->name;
-            $admission_query->phone = $request->phone;
+            $admission_query->phone = $request->phone1;
             $admission_query->email = $request->email;
             $admission_query->address = $request->address;
             $admission_query->description = $request->description;
@@ -58,12 +59,13 @@ class SmAdmissionQueryController extends Controller
             } else {
                 $admission_query->class = $request->class;
                 $admission_query->academic_id = getAcademicId();
+                //dd($admission_query);
             }
             $admission_query->no_of_child = $request->no_of_child;
             $admission_query->created_by = Auth::user()->id;
             $admission_query->school_id = Auth::user()->school_id;
             $admission_query->save();
-           
+            
             Toastr::success('Operation successful', 'Success');
             return redirect()->back();
         } catch (\Exception $e) {
@@ -101,7 +103,7 @@ class SmAdmissionQueryController extends Controller
                  $admission_query = SmAdmissionQuery::where('created_by',auth()->user()->id)->where('id',$request->id)->first();
             }
             $admission_query->name = $request->name;
-            $admission_query->phone = $request->phone;
+            $admission_query->phone = $request->phone1;
             $admission_query->email = $request->email;
             $admission_query->address = $request->address;
             $admission_query->description = $request->description;

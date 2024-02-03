@@ -289,10 +289,10 @@
                                                             <button type="button" class="btn dropdown-toggle"
                                                                 data-toggle="dropdown">
                                                                 @lang('common.select')
+                                                                
                                                             </button>
                                                             <div class="dropdown-menu dropdown-menu-right"> --}}
                                                         <x-drop-down>
-
                                                             @if (userPermission('phone-call_edit'))
                                                                 <a class="dropdown-item"
                                                                     href="{{ route('phone-call_edit', @$phone_call_log->id) }}">@lang('common.edit')</a>

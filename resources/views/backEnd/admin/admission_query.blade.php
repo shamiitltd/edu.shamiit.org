@@ -271,14 +271,14 @@
                                                 </span>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4">
+                                         <div class="col-lg-4">
                                             <div class="primary_input">
                                                 <label class="primary_input_label"
                                                     for="">@lang('admin.phone')</label>
-                                                <input oninput="phoneCheck(this)"
+                                                <input
                                                     class="primary_input_field read-only-input form-control"
                                                     type="text"
-                                                    name="phone" id="phone">
+                                                    name="phone1" id="phone1">
 
 
                                                 <span class="text-danger" id="phoneError">
@@ -292,8 +292,7 @@
                                                 <input oninput="emailCheck(this)"
                                                     class="primary_input_field read-only-input form-control"
                                                     type="email"
-                                                    name="email">
-                                            </div>
+                                                    name="email"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -483,11 +482,30 @@
 @include('backEnd.partials.date_picker_css_js')
 @include('backEnd.partials.data_table_js')
 @section('script')
-    <script>
+<script>
+    document.getElementById('phone1').addEventListener('input', function () {
+        validatePhoneNumber(this.value);
+    });
+
+    function validatePhoneNumber(phoneNumber) {
+        // Remove non-numeric characters from the input
+        var numericPhoneNumber = phoneNumber.replace(/\D/g, '');
+
+        // Check if the numeric phone number is a valid 10-digit number
+        if (/^\d{10}$/.test(numericPhoneNumber)) {
+            // Valid phone number
+            document.getElementById('phoneError').innerText = '';
+        } else {
+            // Invalid phone number
+            document.getElementById('phoneError').innerText = 'Please enter a valid 10-digit phone number';
+        }
+    }
+
         @if (count($errors) > 0)
             @foreach ($errors->all() as $error)
                 toastr.error("{{ $error }}");
             @endforeach
         @endif
+
     </script>
 @endsection
