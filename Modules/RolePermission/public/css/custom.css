@@ -9,6 +9,7 @@
 .erp_role_permission_area .single_permission .permission_body > ul > li ul {
     display: grid;
     margin-left: 25px;
+    margin-top: 25px;
     grid-template-columns: repeat(3, 1fr);
     /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
 }
