@@ -239,13 +239,13 @@
                 </div>
             </div>
             <div class="row">
-              <div class="col-lg-12">
+              <div class="col-lg-24">
                <div class="white-box">
                    <table class="table" id="productTable">
                     <thead>
                       <tr>
                           <th>@lang('exam.exam_title')</th>
-                          <th>@lang('exam.exam_mark')</th>
+                          <th>@lang('exam.exam_marks')</th>
                           <th>@lang('common.action')</th>
                       </tr>
                   </thead>
