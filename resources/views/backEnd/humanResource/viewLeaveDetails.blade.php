@@ -188,7 +188,7 @@ $days = $days_between + 1;
         </div>
         </div>
         @if(!isset($apply))
-        <div class="col-md-5    ">
+        <div class="col-md-5">
                 <!-- Start Student Meta Information -->
                 <div class="student-meta-box">
                         @if ($leaveDetails->role_id == 2)

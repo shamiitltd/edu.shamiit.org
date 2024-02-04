@@ -36,8 +36,8 @@
                                 <label class="primary_input_label" for="">@lang('common.phone')</label>
                                 <input oninput="phoneCheck(this)"
                                     class="primary_input_field read-only-input form-control" type="text"
-                                    name="phone"
-                                    id="phone" value="{{ @$admission_query->phone }}">
+                                    name="phone1"
+                                    id="phone1" value="{{ @$admission_query->phone }}">
 
                                 </span>
 
