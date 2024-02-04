@@ -102,6 +102,7 @@ Route::group(['middleware' => ['XSS', 'subdomain']], function () {
         Route::get('student-teacher', ['as' => 'student_teacher', 'uses' => 'Student\SmStudentPanelController@studentTeacher'])->middleware('userRolePermission:student_teacher');
     });
 
+    
 
     // Student leave
     Route::group(['middleware' => ['auth'], 'namespace' => 'Student'], function () {
