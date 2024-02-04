@@ -1940,6 +1940,7 @@ class SmStudentPanelController extends Controller
             return redirect()->back();
         }
     }
+    
 
     public function pendingLeave(Request $request)
     {
