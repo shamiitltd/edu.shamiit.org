@@ -355,7 +355,7 @@
 </td>
 
 
-                                    <div class="dropdown CRM_dropdown">
+                                    <!-- <div class="dropdown CRM_dropdown">
                                         <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
                                             @lang('common.select')
                                         </button>
@@ -386,7 +386,7 @@
                                             @endif
                                         </div>
                                     </div>
-                                </td>
+                                </td> -->
 
                             </tr>
                             <div class="modal fade admin-query" id="deleteApplyLeaveModal{{$apply_leave->id}}" >
