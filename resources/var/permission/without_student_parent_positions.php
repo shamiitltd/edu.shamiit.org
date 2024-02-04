@@ -1786,7 +1786,7 @@
                 'module' => null,
                 'sidebar_menu' => 'student_info',
                 'name' => 'UnAssign Student',
-                'lang_name' => 'student.unassigned_student',
+                'lang_name' => 'unassigned_student',
                 'icon' => null,
                 'svg' => null,
                 'route' => 'unassigned_student',

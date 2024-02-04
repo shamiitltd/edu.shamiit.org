@@ -1,6 +1,6 @@
 
-    <div id="horizontal" class="{{($id_card->page_layout_style == "horizontal")? 'd-block':'d-none'}}" style="margin: 0; padding: 0; font-family: 'Poppins', sans-serif; font-weight: 500;  font-size: 12px; line-height:1.02 ; color: #000">
-        <div class="horizontal__card" style="line-height:1.02; background-image: url({{ @$id_card->background_img != "" ? asset(@$id_card->background_img) : asset('public/backEnd/id_card/img/vertical_bg.png') }}); width: {{!empty($id_card->pl_width) ? $id_card->pl_width : 57.15}}mm; height: {{!empty($id_card->pl_height) ? $id_card->pl_height : 88.89999999999999}}mm; margin: auto; background-size: 100% 100%; background-position: center center; position: relative; background-color: #fff;">
+    <div id="horizontal" class="{{($id_card->page_layout_style == 'horizontal')? 'd-block':'d-none'}}" style="margin: 0; padding: 0; font-family: 'Poppins', sans-serif; font-weight: 500;  font-size: 12px; line-height:1.02 ; color: #000">
+        <div class="horizontal__card" style="line-height:1.02; background-image: url({{ @$id_card->background_img != '' ? asset(@$id_card->background_img) : asset('public/backEnd/id_card/img/vertical_bg.png') }}); width: {{!empty($id_card->pl_width) ? $id_card->pl_width : 57.15}}mm; height: {{!empty($id_card->pl_height) ? $id_card->pl_height : 88.89999999999999}}mm; margin: auto; background-size: 100% 100%; background-position: center center; position: relative; background-color: #fff;">
             <div class="horizontal_card_header" style="line-height:1.02; display: flex; align-items:center; justify-content:space-between; padding:8px 12px">
                 <div class="logo__img logoImage hLogo" style="line-height:1.02; width: 80px; background-image: url({{$id_card->logo !=''? asset($id_card->logo) : asset(generalSetting()->logo )}});height: 30px; background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>
                 <div class="qr__img" style="line-height:1.02; width: 30px;">
@@ -86,13 +86,13 @@
                 </div>
             </div>
             <div class="horizontal_card_footer" style="line-height:1.02; text-align: right;">
-                <div class="singnature_img signPhoto hSign" style="background-image:url({{ @$id_card->signature != "" ? asset(@$id_card->signature) : asset('public/backEnd/id_card/img/Signature.png') }});line-height:1.02; width: 50px; flex: 50px 0 0; margin-left: auto; position: absolute; right: 10px; bottom: 7px;height: 25px; background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>
+                <div class="singnature_img signPhoto hSign" style="background-image:url({{ @$id_card->signature != '' ? asset(@$id_card->signature) : asset('public/backEnd/id_card/img/Signature.png') }});line-height:1.02; width: 50px; flex: 50px 0 0; margin-left: auto; position: absolute; right: 10px; bottom: 7px;height: 25px; background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>
             </div>
         </div>
     </div>
 
-    <div id="vertical" class="{{($id_card->page_layout_style == "vertical")? 'd-block':'d-none'}}" style="margin: 0; padding: 0; font-family: 'Poppins', sans-serif;  font-size: 12px; line-height:1.02 ;">
-        <div class="vertical__card" style="line-height:1.02; background-image: url({{ @$id_card->background_img != "" ? asset(@$id_card->background_img) : asset('public/backEnd/id_card/img/horizontal_bg.png') }}); width: {{!empty($id_card->pl_width) ? $id_card->pl_width : 86}}mm; height: {{!empty($id_card->pl_height) ? $id_card->pl_height : 54}}mm; margin: auto; background-size: 100% 100%; background-position: center center; position: relative;">
+    <div id="vertical" class="{{($id_card->page_layout_style == 'vertical')? 'd-block':'d-none'}}" style="margin: 0; padding: 0; font-family: 'Poppins', sans-serif;  font-size: 12px; line-height:1.02 ;">
+        <div class="vertical__card" style="line-height:1.02; background-image: url({{ @$id_card->background_img != '' ? asset(@$id_card->background_img) : asset('public/backEnd/id_card/img/horizontal_bg.png') }}); width: {{!empty($id_card->pl_width) ? $id_card->pl_width : 86}}mm; height: {{!empty($id_card->pl_height) ? $id_card->pl_height : 54}}mm; margin: auto; background-size: 100% 100%; background-position: center center; position: relative;">
             <div class="horizontal_card_header" style="line-height:1.02; display: flex; align-items:center; justify-content:space-between; padding: 12px">
                 <div class="logo__img logoImage vLogo" style="line-height:1.02; width: 80px; background-image: url({{$id_card->logo !=''? asset($id_card->logo) : asset(generalSetting()->logo)}});background-size: cover; height: 30px;background-position: center center; background-repeat: no-repeat;"></div>
                 <div class="qr__img" style="line-height:1.02; width: 48px; position: absolute; right: 4px; top: 4px;">
@@ -102,9 +102,9 @@
             <div class="vertical_card_body" style="line-height:1.02; display:flex; padding-top: {{!empty($id_card->t_space) ? $id_card->t_space : 2.5}}mm; padding-bottom: {{!empty($id_card->b_space) ? $id_card->b_space : 2.5}}mm; padding-right: {{!empty($id_card->r_space) ? $id_card->r_space : 3}}mm ; padding-left: {{!empty($id_card->l_space) ? $id_card->l_space : 3}}mm; align-items: center;">
                 <div class="thumb vSize vSizeX photo vImg vRoundImg" style="
                 @if (@$id_card->user_photo_style=='round')
-                    {{"border-radius : 50%;"}}
+                    {{'border-radius : 50%';''}}"
                 @endif
-                background-image: url({{ @$id_card->background_img != "" ? asset(@$id_card->profile_image) : asset('public/backEnd/id_card/img/thumb.png') }}); line-height:1.02; width: {{!empty($id_card->user_photo_width) ? $id_card->user_photo_width : 13.229166667}}mm; height: {{!empty($id_card->user_photo_height) ? $id_card->user_photo_height : 13.229166667}}mm; flex-basis: {{!empty($id_card->user_photo_width) ? $id_card->user_photo_width : 13.229166667}}mm; flex-grow: 0; flex-shrink: 0; margin-right: 20px; background-size: cover; background-position: center center;"></div>
+                background-image: url({{ @$id_card->background_img != '' ? asset(@$id_card->profile_image) : asset('public/backEnd/id_card/img/thumb.png') }}); line-height:1.02; width: {{!empty($id_card->user_photo_width) ? $id_card->user_photo_width : 13.229166667}}mm; height: {{!empty($id_card->user_photo_height) ? $id_card->user_photo_height : 13.229166667}}mm; flex-basis: {{!empty($id_card->user_photo_width) ? $id_card->user_photo_width : 13.229166667}}mm; flex-grow: 0; flex-shrink: 0; margin-right: 20px; background-size: cover; background-position: center center;"></div>
                 <div class="card_text" style="line-height:1.02; display: flex; align-items: center; justify-content: space-between; width: 100%; flex-direction: column;">
                     <div class="card_text_head " style="line-height:1.02; display: flex; align-items: center; justify-content: space-between; width: 100%; margin-bottom:5px"> 
                         <div class="card_text_left vId">
@@ -176,7 +176,7 @@
                 </div>
             </div>
             <div class="horizontal_card_footer" style="line-height:1.02; text-align: right;">
-                <div class="singnature_img signPhoto vSign" style="background-image: url({{ @$id_card->signature != "" ? asset(@$id_card->signature) : asset('public/backEnd/id_card/img/Signature.png') }}); line-height:1.02; width: 50px; flex: 50px 0 0; margin-left: auto; position: absolute; right: 10px; bottom: 7px; height: 25px; background-size: cover; background-repeat: no-repeat; background-position: center center;">
+                <div class="singnature_img signPhoto vSign" style="background-image: url({{ @$id_card->signature != '' ? asset(@$id_card->signature) : asset('public/backEnd/id_card/img/Signature.png') }}); line-height:1.02; width: 50px; flex: 50px 0 0; margin-left: auto; position: absolute; right: 10px; bottom: 7px; height: 25px; background-size: cover; background-repeat: no-repeat; background-position: center center;">
                 </div>
             </div>
         </div>

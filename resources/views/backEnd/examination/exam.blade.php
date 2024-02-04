@@ -12,6 +12,9 @@
     .input-right-icon {
         z-index: inherit !important;
     }
+    #addrow1 {
+        padding: 1px;         
+}
 </style>
 <section class="sms-breadcrumb mb-40 white-box">
     <div class="container-fluid">
@@ -42,7 +45,7 @@
 
         <div class="row">
 
-            <div class="col-lg-3">
+            <div class="col-lg-4">
                 @if (isset($exam))
                 {{ Form::open(['class' => 'form-horizontal', 'route' => ['exam-update', $exam->id], 'method' => 'PUT']) }}
                 @else
@@ -149,10 +152,10 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-lg-30">
                         <div class="white-box mt-10">
                             <div class="row">
-                                <div class="col-lg-10">
+                                <div class="col-lg-32">
                                     <div class="main-title">
                                         <h5>@lang('exam.add_mark_distributions') </h5>
                                     </div>
@@ -163,7 +166,7 @@
                                         <span class="ti-plus pr-2"></span></button>
                                 </div>
                             </div>
-                            <div class="col-lg-12">
+                            <div class="col-lg-24">
                                 <table class="table" id="productTable">
                                     <thead>
                                         <tr>
@@ -172,12 +175,12 @@
                                             @if (@generalSetting()->result_type == 'mark')
                                             <th>@lang('exam.pass_mark')</th>
                                             @endif
-                                            <th>@lang('common.action')</th>
+                                           
                                         </tr>
                                     </thead>
                                     <tbody>
 
-                                        <tr id="row1" class="mt-40">
+                                        <tr id="addrow1" class="col-lg-12">
                                             <td class="border-top-0">
                                                 {{-- <label class="primary_input_label" for="">@lang('exam.title')</label> --}}
                                                 <input type="hidden" name="url" id="url" value="{{ URL::to('/') }}">
@@ -198,26 +201,28 @@
                                                         value="{{ isset($editData) ? $editData->exam_mark : 0 }}">
                                                 </div>
                                             </td>
-                                            <td class="border-0">
+                                            <!-- <td class="border-0">
                                                 <button style="position: relative; top: 6px;"
                                                     class="primary-btn icon-only fix-gr-bg" type="button">
                                                     <span class="ti-trash"></span>
                                                 </button>
-                                            </td>
+                                            </td> -->
                                         </tr>
-
-
-
                                     </tbody>
                                     <tfoot>
                                         <tr>
                                             <td class="border-top-0" style="position: relative; top: 12px">
-                                                @lang('exam.total')</td>
-                                            <td class="border-top-0" id="totalMark">
+                                                @lang('exam.total')  <td class="border-top-0" id="totalMark">
                                                 <input type="text" class="primary_input_field form-control"
                                                     name="totalMark" readonly="true">
+                                             </td>     
                                             </td>
-                                            <td class="border-top-0"></td>
+                                              <td class="border-0">
+                                                <button style="position: relative; top: 6px;"
+                                                    class="primary-btn icon-only fix-gr-bg" type="button">
+                                                    <span class="ti-trash"></span>
+                                                    </button> 
+                                         </td>  
                                         </tr>
                                     </tfoot>
                                 </table>
@@ -226,9 +231,9 @@
                     </div>
                 </div>
 
-                <div class="row mt-15" id="exam_shedule">
+                <div class="row mt-5" id="exam_shedule">
                     <div class="col-lg-12">
-                        <div class="white-box mt-10">
+                        <div class="white-box mt-5">
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="main-title">
@@ -237,7 +242,7 @@
                                 </div>
                             </div>
 
-                            <div class="row mt-15">
+                            <div class="row mt-5">
 
                                 <div class="col-lg-12">
                                     <label class="primary_input_label" for="">
@@ -397,7 +402,7 @@
             </div>
 
 
-            <div class="col-lg-9">
+            <div class="col-lg-8">
                 <div class="row">
                     <div class="col-lg-4 no-gutters">
                         <div class="main-title">

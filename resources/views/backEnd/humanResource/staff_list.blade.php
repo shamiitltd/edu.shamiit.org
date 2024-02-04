@@ -127,7 +127,7 @@
                             </div>
 
                             <div class="col-lg-4 mt-30-md">
-                                <div class="primary_input">
+                                 <div class="primary_input">
                                     <label class="primary_input_label" for="">
                                         {{ __('hr.search_by_staff_id') }}
                                         <span class="text-danger"> </span>
@@ -185,7 +185,10 @@
                                 </thead>
                         
                                 <tbody>
+
                      
+
+
                                 </tbody>
                             </table>
                         </x-table>
