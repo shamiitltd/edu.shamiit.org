@@ -336,7 +336,6 @@
             @if( $apply_leave->approve_status == 'P')
        
             <a class="dropdown-item" href="{{ route('student-leave-edit', [$apply_leave->id]) }}">@lang('common.edit')</a>
-        
            @endif
            @if($apply_leave->approve_status == 'P')
             <a class="dropdown-item" data-toggle="modal" data-target="#deleteApplyLeaveModal{{ $apply_leave->id }}" href="#">@lang('common.delete')</a>
@@ -350,6 +349,7 @@
       @endif
     </div>
 </div>
+
 
     </div>
 </td>
