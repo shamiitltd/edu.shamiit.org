@@ -140,12 +140,14 @@
                            
                         </div>
                         <input type="hidden" name="id" value="{{isset($apply_leave)? $apply_leave->id: ''}}">
+                        
                         <div class="row mt-25">
                             <div class="col-lg-12">
                                 <select class="primary_select  form-control{{ $errors->has('leave_type') ? ' is-invalid' : '' }}" name="leave_type">
                                     <option data-display="@lang('leave.leave_type') *" value="">@lang('leave.leave_type') *</option>
                                     @foreach($leave_types as $leave_type)
-                                        <option value="{{$leave_type->id}}" {{isset($apply_leave)? ($apply_leave->leave_define_id == $leave_type->id? 'selected':''):''}}>{{$leave_type->leaveType->type}}</option>
+                                         <option value="{{$leave_type->id}}" {{isset($apply_leave)? ($apply_leave->leave_define_id == $leave_type->id? 'selected':''):''}}>{{$leave_type->leaveType->type}}</option>
+                                         
                                     @endforeach
                                 </select>
                                 @if ($errors->has('leave_type'))
@@ -289,9 +291,11 @@
                             @foreach($apply_leaves as $apply_leave)
                             <tr>
                                 <td>
-                                    @if($apply_leave->leaveDefine != "" && $apply_leave->leaveDefine->leaveType !="")
-                                        {{$apply_leave->leaveDefine->leaveType->type}}
-                                    @endif
+                                @if($apply_leave->leaveDefine !="" && $apply_leave->leaveDefine->leaveType !="")
+                                    {{$apply_leave->leaveDefine->leaveType->type}}
+                                    @else
+                                    Debug: {{$apply_leave->leaveDefine}} - {{$apply_leave->leaveDefine->leaveType}}
+                                     @endif
                                 </td>
                                 <td  data-sort="{{strtotime($apply_leave->leave_from)}}" >
                                  {{$apply_leave->leave_from != ""? dateConvert($apply_leave->leave_from):''}}
@@ -322,11 +326,11 @@
                                         </button>
                                         <div class="dropdown-menu dropdown-menu-right">
     
-                                            @if(userPermission(93))
+                                            @if(userPermission(93)) 
     
                                             <a data-modal-size="modal-lg" title="View Leave Details" class="dropdown-item modalLink" href="{{route('view-leave-details-apply', $apply_leave->id)}}">@lang('common.view')</a>
     
-                                            @endif
+                                             @endif 
                                             @if($apply_leave->approve_status == 'P')
                                             @if(userPermission(42))
                                             <a class="dropdown-item" href="{{route('student-leave-edit', [$apply_leave->id

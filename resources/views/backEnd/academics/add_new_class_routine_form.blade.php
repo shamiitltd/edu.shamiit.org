@@ -23,7 +23,7 @@
                             <div class="col">
                                 <div class="primary_input">
                                     <input class="primary_input_field form-control{{ @$errors->has('start_time') ? ' is-invalid' : '' }}" type="time" name="start_time" id="start_time">
-                                    <label style="top: -13px;">@lang('lang.start_time') <span class="text-danger"> *</span></label>
+                                    <label style="top: -13px;">@lang('lang.start_times') <span class="text-danger"> *</span></label>
                                     
                                     @if ($errors->has('start_time'))
                                         <span class="text-danger" >
