@@ -2,9 +2,9 @@
 
 on:
   push:
-    branches: [ "master", "develop_merge" ]
+    branches: [ "master", "develop" ]
   pull_request:
-    branches: [ "master" , "develop_merge" ]
+    branches: [ "master" , "develop" ]
   workflow_dispatch: # Manually run this workflow
 
 jobs:
