@@ -6,7 +6,7 @@
 <style>
     .ti-calendar:before {
         position: absolute !important;
-        top: 28px !important;
+        top: 28.0px !important;
     }
     .input-right-icon button.primary-btn-small-input {
         top: 8px  !important;
@@ -139,7 +139,11 @@
                             </div>
                            
                         </div>
+
+                        
+
                         <input type="hidden" name="id" value="{{isset($apply_leave)? $apply_leave->id: ''}}">
+
                         
                         <div class="row mt-25">
                             <div class="col-lg-12">
@@ -320,7 +324,38 @@
                                 @endif
                                 </td>
                                 <td>
-                                    <div class="dropdown CRM_dropdown">
+
+    <div class="dropdown CRM_dropdown">
+    <button type="button" class="btn dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        @lang('common.select')
+    </button>
+    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+      
+            <a data-modal-size="modal-lg" title="View Leave Details" class="dropdown-item modalLink" href="{{ route('view-leave-details-apply', $apply_leave->id) }}">@lang('common.view')</a>
+        
+            @if( $apply_leave->approve_status == 'P')
+       
+            <a class="dropdown-item" href="{{ route('student-leave-edit', [$apply_leave->id]) }}">@lang('common.edit')</a>
+        
+           @endif
+           @if($apply_leave->approve_status == 'P')
+            <a class="dropdown-item" data-toggle="modal" data-target="#deleteApplyLeaveModal{{ $apply_leave->id }}" href="#">@lang('common.delete')</a>
+           @endif
+
+            @if($apply_leave->file != "")
+            <a class="dropdown-item" href="{{ url(@$apply_leave->file) }}" download>
+                @lang('common.download') 
+                <span class="pl ti-download"></span>
+            </a>
+      @endif
+    </div>
+</div>
+
+    </div>
+</td>
+
+
+                                    <!-- <div class="dropdown CRM_dropdown">
                                         <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
                                             @lang('common.select')
                                         </button>
@@ -351,7 +386,8 @@
                                             @endif
                                         </div>
                                     </div>
-                                </td>
+                                </td> -->
+
                             </tr>
                             <div class="modal fade admin-query" id="deleteApplyLeaveModal{{$apply_leave->id}}" >
                                 <div class="modal-dialog modal-dialog-centered">
@@ -365,6 +401,7 @@
                                             <div class="text-center">
                                                 <h4>@lang('common.are_you_sure_to_delete')</h4>
                                             </div>
+
     
                                             <div class="mt-40 d-flex justify-content-between">
                                                 <button type="button" class="primary-btn tr-bg" data-dismiss="modal">@lang('common.cancel')</button>
