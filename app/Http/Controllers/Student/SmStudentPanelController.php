@@ -1937,7 +1937,6 @@ class SmStudentPanelController extends Controller
 
 
             dd($e->getMessage());
-=======
 
            Toastr::error('Operation Failed', 'Failed');
             return redirect()->back();
