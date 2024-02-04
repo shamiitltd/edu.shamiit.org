@@ -49,10 +49,10 @@ jobs:
 
       - name: Prepare .env file
         run: |
-          sed -i "s/REPO_PATH=.*/REPO_PATH=${{ secrets.REPO_PATH }}/" .env
           sed -i "s/DB_DATABASE=.*/DB_DATABASE=${{ secrets.DB_DATABASE }}/" .env
           sed -i "s/DB_USERNAME=.*/DB_USERNAME=${{ secrets.DB_USERNAME }}/" .env
           sed -i "s/DB_PASSWORD=.*/DB_PASSWORD=${{ secrets.DB_PASSWORD }}/" .env
+          sed -i "s/REPO_PATH=.*/REPO_PATH=${{ secrets.REPO_PATH }}/" .env
           
       - name: Zip Repository
         run: |
