@@ -23,7 +23,7 @@
         <div class="row">
             <div class="col-lg-8 col-md-6">
                 <div class="main-title">
-                    <h3 class="mb-34">@lang('common.select_criteria') </h3>
+                    <h3 class="mb-33">@lang('common.select_criteria') </h3>
                 </div>
             </div>
             <div class="col-lg-4 text-md-right text-left col-md-6 mb-30-lg">
