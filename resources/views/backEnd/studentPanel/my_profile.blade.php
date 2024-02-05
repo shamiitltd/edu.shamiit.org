@@ -1737,7 +1737,7 @@
                     <!-- End Timeline Tab -->
 
                     <!-- Start Attendance Tab -->
-                    @include('backEnd.studentPanel.inc._student_attendance_tab')
+                    <!-- @include('backEnd.studentPanel.inc._student_attendance_tab') -->
                     <!-- End Attendance Tab -->
 
                     <!-- Start Attendance Tab -->
