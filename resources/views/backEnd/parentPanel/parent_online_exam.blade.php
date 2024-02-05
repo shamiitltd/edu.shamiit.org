@@ -41,7 +41,7 @@
         <div class="row">
             <div class="col-lg-12 student-details up_admin_visitor">
                 <ul class="nav nav-tabs tabs_scroll_nav" role="tablist">
-                    {{$records}}
+                    
                     @foreach($records as $key => $record) 
                         <li class="nav-item mb-0">
                             <a class="nav-link mb-0 @if($key== 0) active @endif " href="#tab{{$key}}" role="tab" data-toggle="tab">{{$record->class->class_name}} ({{$record->section->section_name}}) </a>
