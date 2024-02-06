@@ -208,6 +208,7 @@
 
 @push('script')  
 
+<a class="btn btn-primary" href="{{ URL::to('/DataTable/pdf') }}">Export to PDF</a>
 <script>
    $(document).ready(function() {
        $('.data-table').DataTable({
