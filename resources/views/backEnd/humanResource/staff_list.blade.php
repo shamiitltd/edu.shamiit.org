@@ -185,6 +185,10 @@
                                 </thead>
                         
                                 <tbody>
+
+                     
+
+
                                 </tbody>
                             </table>
                         </x-table>
@@ -218,6 +222,7 @@
         </div>
     </div>
     </div>
+    
 @endsection
 
 @include('backEnd.partials.data_table_js')
