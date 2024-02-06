@@ -20,7 +20,7 @@
     }
 </style>
 @endpush
-@php
+<!-- @php
     $user =$student;
 @endphp
 <section class="sms-breadcrumb mb-40 white-box">
@@ -33,7 +33,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 
 @endsection
