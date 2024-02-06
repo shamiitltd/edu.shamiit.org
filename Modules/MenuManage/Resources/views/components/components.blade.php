@@ -8,10 +8,8 @@
 
     <div class="row">
         <div class="col-xl-12 menu_item_div" id="itemDiv">
-            @if (isset($sidebar_menus))
-            
-                @foreach ($sidebar_menus as $sidebar_menu)
-                 
+            @if (isset($sidebar_menus))            
+                @foreach ($sidebar_menus as $sidebar_menu)                 
                         <div class="closed_section" data-id="{{ $sidebar_menu->id }}"
                             data-parent_section="{{ $sidebar_menu->permission_id }}">
                             <div id="accordion" class="dd">
@@ -69,6 +67,7 @@
                                                                     
                                                                     @foreach ($menu->subModule as $submenu)
                                                                         @if(sidebarPermission($submenu->permissionInfo)==true)
+                                                                        @if($submenu->permissionInfo->name != 'Report')
                                                                         <li class="dd-item" data-id="{{ $submenu->id }}"
                                                                         
                                                                             >
@@ -93,6 +92,8 @@
                                                                             </div>
                                                                         </li>
                                                                         @endif
+                                                                        @endif
+
                                                                     @endforeach
                                                                 </ol>
                                                             </li>  
@@ -117,8 +118,7 @@
                                     </div>
                                 </div>
                             @endif
-                        </div>
-                   
+                        </div>                   
                 @endforeach
             @endif
         </div>

@@ -329,7 +329,7 @@ Route::group(['middleware' => ['XSS','subscriptionAccessUrl']], function () {
         Route::post('visitor-store', ['as' => 'visitor_store', 'uses' => 'Admin\AdminSection\SmVisitorController@store'])->middleware('userRolePermission:visitor_store');
         Route::get('visitor-edit/{id}', ['as' => 'visitor_edit', 'uses' => 'Admin\AdminSection\SmVisitorController@edit'])->middleware('userRolePermission:visitor_edit');
         Route::post('visitor-update', ['as' => 'visitor_update', 'uses' => 'Admin\AdminSection\SmVisitorController@update'])->middleware('userRolePermission:visitor_edit');
-        Route::post('visitor-delete', ['as' => 'visitor_delete', 'uses' => 'Admin\AdminSection\SmVisitorController@delete'])->middleware('userRolePermission:visitor_delete');
+        Route::get('visitor-delete/{id}', ['as' => 'visitor_delete', 'uses' => 'Admin\AdminSection\SmVisitorController@delete'])->middleware('userRolePermission:visitor_delete');
         Route::get('download-visitor-document/{file_name}', ['as' => 'visitor_download', 'uses' => 'Admin\AdminSection\SmVisitorController@download_files'])->middleware('userRolePermission:visitor_download');
 
         Route::get('visitor-datatable', ['as' => 'visitor_datatable', 'uses' => 'Admin\AdminSection\SmVisitorController@visitorDatatable'])->middleware('userRolePermission:visitor_datatable');

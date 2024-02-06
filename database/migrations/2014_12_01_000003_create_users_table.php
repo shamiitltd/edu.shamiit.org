@@ -72,7 +72,7 @@ class CreateUsersTable extends Migration
             $user->is_administrator     = 'yes';
             $user->username  = 'admin@edu.shamiit.org';
             $user->password  = Hash::make('123456');
-            $user->uid  = 'giDj7Z96DQQIYsr3t9dnGIr3y6A3';
+            $user->uid  = 'Xq8hVjWFRAdnCufLA9yh5ao9ELF2';
             $user->created_at = date('Y-m-d h:i:s');
             $user->save();
         }
