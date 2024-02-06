@@ -41,7 +41,7 @@
         <div class="row">
             <div class="col-lg-12 student-details up_admin_visitor">
                 <ul class="nav nav-tabs tabs_scroll_nav" role="tablist">
-                    {{$records}}
+                   
                     @foreach($records as $key => $record) 
                         <li class="nav-item mb-0">
                             <a class="nav-link mb-0 @if($key== 0) active @endif " href="#tab{{$key}}" role="tab" data-toggle="tab">{{$record->class->class_name}} ({{$record->section->section_name}}) </a>
@@ -151,30 +151,6 @@
     </div>
 </section>
 
-<div class="modal fade admin-query" id="deleteOnlineExam" >
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title">@lang('common.delete_item')</h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
 
-            <div class="modal-body">
-                <div class="text-center">
-                    <h4>@lang('common.are_you_sure_to_delete')</h4>
-                </div>
-
-                <div class="mt-40 d-flex justify-content-between">
-                    <button type="button" class="primary-btn tr-bg" data-dismiss="modal">@lang('common.cancel')</button>
-                     {{ Form::open(['route' => 'online-exam-delete', 'method' => 'POST', 'enctype' => 'multipart/form-data']) }}
-                     <input type="hidden" name="id" id="online_exam_id">
-                    <button class="primary-btn fix-gr-bg" type="submit">@lang('common.delete')</button>
-                     {{ Form::close() }}
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
 @endsection
 @include('backEnd.partials.data_table_js')
