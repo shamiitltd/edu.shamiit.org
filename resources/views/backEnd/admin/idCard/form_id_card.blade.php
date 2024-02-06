@@ -131,7 +131,7 @@
                                 {{ isset($id_card) ? (in_array($role->id, $applicableUsers) ? 'checked' : '') : '' }}>
 
                         </div>
-                    @endif
+                    
                 @endforeach
                 @if ($errors->has('section'))
                     <span class="text-danger">
