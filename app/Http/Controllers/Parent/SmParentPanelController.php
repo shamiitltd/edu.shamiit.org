@@ -674,6 +674,10 @@ class SmParentPanelController extends Controller
             return redirect()->back();
         }
     }
+    public function onlineExamination1($id)
+    {
+       dd($id);
+    }
 
     public function onlineExamination($id)
     {
@@ -703,7 +707,7 @@ class SmParentPanelController extends Controller
                     ->where('school_id', Auth::user()->school_id)->pluck('online_exam_id')->toArray();
             }
            
-            return view('backEnd.parentPanel.parent_dashboard', compact('online_exams', 'marks_assigned', 'student','records'));
+            return view('backEnd.parentPanel.parent_online_exam', compact('online_exams', 'marks_assigned', 'student','records'));
         } catch (\Exception $e) {
             Toastr::error('Operation Failed', 'Failed');
             return redirect()->back();
