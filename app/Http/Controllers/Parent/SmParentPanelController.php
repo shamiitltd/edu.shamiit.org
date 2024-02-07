@@ -673,11 +673,7 @@ class SmParentPanelController extends Controller
             Toastr::error('Operation Failed', 'Failed');
             return redirect()->back();
         }
-    }
-    public function onlineExamination1($id)
-    {
-       dd($id);
-    }
+    }   
 
     public function onlineExamination($id)
     {
