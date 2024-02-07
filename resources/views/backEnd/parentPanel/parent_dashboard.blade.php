@@ -15,8 +15,8 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="main-title">
-                    <h3 class="mb-20">@lang('parent')</h3>
-                    
+                    <h3 class="mb-20">@lang('parent.name')</h3>
+
                         <h3 class="mb-20">@lang('parent.my_children')</h3>
                     </div>
                 </div>
