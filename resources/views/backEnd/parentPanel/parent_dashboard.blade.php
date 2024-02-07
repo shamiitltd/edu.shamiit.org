@@ -1,7 +1,7 @@
 @extends('backEnd.master')
-@section('title')
+section('title')
     @lang('parent.parent_dashboard')
-@endsections
+@endsection
 
 @push('css')
     <link rel="stylesheet" href="{{ asset('public/backEnd/assets/vendors/css/fullcalendar.min.css') }}" />
@@ -16,9 +16,7 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="main-title">
-                    <h3 class="mb-20">{{ Auth::user()->full_name }}</h3>
-
-                        <h3 class="mb-20">@lang('parent.my_children')</h3>
+                        cmt<h3 class="mb-20">@lang('parent.my_children')</h3>
                     </div>
                 </div>
             </div>
