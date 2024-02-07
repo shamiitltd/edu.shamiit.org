@@ -1013,7 +1013,7 @@
     'type' => 1,
     'old_id' => 86,
   ),
-  'online_exam' => 
+  'parent-dashboard-online-exam' => 
   array (
     'module' => NULL,
     'sidebar_menu' => NULL,
