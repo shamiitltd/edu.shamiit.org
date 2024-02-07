@@ -1,5 +1,5 @@
 @extends('backEnd.master')
-section('title')
+@section('title')
     @lang('parent.parent_dashboard')
 @endsection
 
