@@ -1,8 +1,9 @@
 @extends('backEnd.master')
 @section('title')
-{{ @Auth::user()->roles->name }} @lang('common.dashboard')
-    @lang('parent.parent_dashboard')
+
+    @lang('parent.parent_id')
 @endsections
+
 @push('css')
     <link rel="stylesheet" href="{{ asset('public/backEnd/assets/vendors/css/fullcalendar.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('public/backEnd/assets/vendors/calender_js/core/main.css') }}" />
