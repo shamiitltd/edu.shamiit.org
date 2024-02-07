@@ -1,5 +1,6 @@
 @extends('backEnd.master')
 @section('title')
+{{ @Auth::user()->roles->name }} @lang('common.dashboard')
     @lang('parent.parent_dashboard')
 @endsection
 @push('css')
