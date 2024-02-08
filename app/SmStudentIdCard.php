@@ -22,9 +22,11 @@ class SmStudentIdCard extends Model
             $arr=[];
             $names=[];
             $value=json_decode($id_card->role_id,true);
+            if ($value) {
             foreach($value as $values){
                 $arr[] = $values;
             }
+        }
             $roleNames = Role::whereIn('id',$arr)->get(['id','name']);
         return $roleNames;
     }

@@ -104,8 +104,10 @@
                         </div>
                     </div>
                     <div class="col-lg-1">
-                        <a href="javascript:;" id="genearte-id-card-print-button" class="primary-btn small fix-gr-bg" >
+                        {{-- javascript:; --}}
+                        <a href="" onclick="printDiv('abc')" id="genearte-id-card-print-button" class="primary-btn small fix-gr-bg" >
                             @lang('admin.generate')
+                            
                         </a>
                     </div>
                 </div>
@@ -162,6 +164,24 @@
 </section>
 @endif
 @section('script')
+<script>
+    function printDiv(divName) {
+
+// document.getElementById("button").remove();
+
+ var printContents = document.getElementById(divName).innerHTML;
+ var originalContents = document.body.innerHTML;
+
+ document.body.innerHTML = printContents;
+
+ window.print();
+
+ document.body.innerHTML = originalContents;
+}
+        </script>
+</script>
+
+
 <script>
 $(document).ready(function() {
     $("#role_id").on("change", function() {
