@@ -3,7 +3,7 @@
 
 <script>
     <div class="d-flex justify-content-end mb-4">
-            <a class="btn btn-primary" href="{{ URL::to('/employee/pdf') }}">Export to PDF</a>
+            <a class="btn btn-primary" href="{{ URL::to('/homework list/Export to PDF') }}">Export to PDF</a>
         </div
     // Add any JavaScript logic for PDF export button if needed
     $(document).ready(function() {
