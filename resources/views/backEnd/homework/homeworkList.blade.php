@@ -4,7 +4,8 @@
 @endsection
 @section('mainContent')
 @php
-    $DATE_FORMAT = systemDateFormat();   
+    $DATE_FORMAT = systemDateFormat();  
+    @include('path.to.Export-to-PDF')
 @endphp
 <section class="sms-breadcrumb mb-40 white-box">
     <div class="container-fluid">
@@ -23,7 +24,7 @@
         <div class="row">
             <div class="col-lg-8 col-md-6">
                 <div class="main-title">
-                    <h3 class="mb-30">@lang('common.select_criteria') </h3>
+                    <h3 class="mb-33">@lang('common.select_criteria') </h3>
                 </div>
             </div>
             <div class="col-lg-4 text-md-right text-left col-md-6 mb-30-lg">
@@ -204,8 +205,10 @@
 @endsection
 @include('backEnd.partials.data_table_js')
 @include('backEnd.partials.server_side_datatable')
+
 @push('script')  
 
+<a class="btn btn-primary" href="{{ URL::to('/DataTable/pdf') }}">Export to PDF</a>
 <script>
    $(document).ready(function() {
        $('.data-table').DataTable({

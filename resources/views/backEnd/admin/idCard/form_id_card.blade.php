@@ -108,8 +108,8 @@
             </div>
         </div>
 
-        <div
-            class="row mt-25 staffInfo 
+        
+           <div class="row mt-25 staffInfo 
             @if (isset($id_card)) @if (!in_array(3, $applicableUsers) && !in_array(2, $applicableUsers))
                     {{ 'd-block' }}
                 @else
@@ -118,11 +118,12 @@
                 {{ 'd-none' }}
             @endif
             ">
+            
             <div class="col-lg-12">
                 <label class="primary_input_label" for="">@lang('admin.role')<span class="text-danger">
                         *</span></label><br>
-                @foreach ($roles as $role)
-                    @if ($role->id != 2 && $role->id != 3)
+               
+                        @foreach ($roles as $role)
                         <div class="">
                             <label for="role_{{ @$role->id }}">{{ @$role->name }}</label>
                             <input type="checkbox" id="role_{{ @$role->id }}" class="common-checkbox"
@@ -761,4 +762,3 @@
         </div>
     </div>
 </div>
-
