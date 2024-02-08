@@ -107,6 +107,7 @@
                         {{-- javascript:; --}}
                         <a href="" onclick="printDiv('abc')" id="genearte-id-card-print-button" class="primary-btn small fix-gr-bg" >
                             @lang('admin.generate')
+                            
                         </a>
                     </div>
                 </div>
