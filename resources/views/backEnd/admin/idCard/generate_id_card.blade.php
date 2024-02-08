@@ -104,7 +104,8 @@
                         </div>
                     </div>
                     <div class="col-lg-1">
-                        <a href="javascript:;" id="genearte-id-card-print-button" class="primary-btn small fix-gr-bg" >
+                        {{-- javascript:; --}}
+                        <a href="" id="genearte-id-card-print-button" class="primary-btn small fix-gr-bg" >
                             @lang('admin.generate')
                         </a>
                     </div>
