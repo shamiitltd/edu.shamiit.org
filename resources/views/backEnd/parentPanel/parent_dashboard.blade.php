@@ -1,7 +1,7 @@
 @extends('backEnd.master')
 @section('title')
      @lang('parent.parent_dashboard')
-@endsections
+@endsection
 
 @push('css')
     <link rel="stylesheet" href="{{ asset('public/backEnd/assets/vendors/css/fullcalendar.min.css') }}" />
@@ -111,7 +111,7 @@
                             </a>
                         </div>
                     @endif
-                    @if (userPermission('parent-dashboard-exam'))
+                    @if (userPermission('online_exam'))
                         <div class="col-lg-3 col-md-6">
                             <a href="{{ route('parent_online_examination', $children->id) }}" class="d-block">
                                 <div class="white-box single-summery">
