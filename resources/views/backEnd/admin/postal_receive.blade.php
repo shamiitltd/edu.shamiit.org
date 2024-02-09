@@ -19,7 +19,6 @@
         </div>
     </section>
 
-    
     <section class="admin-visitor-area up_admin_visitor">
         <div class="container-fluid p-0">
             @if (isset($postal_receive))
