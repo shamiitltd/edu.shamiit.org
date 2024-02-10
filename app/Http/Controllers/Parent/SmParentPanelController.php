@@ -673,16 +673,46 @@ class SmParentPanelController extends Controller
             Toastr::error('Operation Failed', 'Failed');
             return redirect()->back();
         }
-    }   
-    public function onlineExamination1($id)
+    }
+ public function onlineExamination1($id)
     {
         dd($id);
     }
+    public function onlineExamination($id)
+    {
+        try {
+            // $student = Auth::user()->student;
+            $student = SmStudent::findOrfail($id);
+            $records = studentRecords(null, $student->id)->get();
 
-   
+            $time_zone_setup = SmGeneralSettings::join('sm_time_zones', 'sm_time_zones.id', '=', 'sm_general_settings.time_zone_id')
+                ->where('school_id', Auth::user()->school_id)->first();
+            date_default_timezone_set($time_zone_setup->time_zone);
+            // $now = date('H:i:s');
+
+            // ->where('start_time', '<', $now)
+            if (moduleStatusCheck('OnlineExam') == true) {
+                $online_exams = InfixOnlineExam::where('active_status', 1)->where('status', 1)->where('class_id', $student->class_id)->where('section_id', $student->section_id)
+                    ->where('academic_id', getAcademicId())->where('school_id', Auth::user()->school_id)->get();
+
+                $marks_assigned = InfixStudentTakeOnlineExam::whereIn('online_exam_id', $online_exams->pluck('id')->toArray())->where('student_id', $student->id)->where('status', 2)
+                    ->where('school_id', Auth::user()->school_id)->pluck('online_exam_id')->toArray();
+            } else {
+                $online_exams = SmOnlineExam::where('active_status', 1)->where('status', 1)->where('class_id', $student->class_id)->where('section_id', $student->section_id)
+                    ->where('academic_id', getAcademicId())->where('school_id', Auth::user()->school_id)->get();
+
+                $marks_assigned = SmStudentTakeOnlineExam::whereIn('online_exam_id', $online_exams->pluck('id')->toArray())->where('student_id', $student->id)->where('status', 2)
+                    ->where('school_id', Auth::user()->school_id)->pluck('online_exam_id')->toArray();
+            }
+            
+            return view('backEnd.parentPanel.parent_online_exam', compact('online_exams', 'marks_assigned', 'student','records'));
+        } catch (\Exception $e) {
+            Toastr::error('Operation Failed', 'Failed');
+            return redirect()->back();
+        }
+    }
     public function onlineExaminationResult($id)
     {
-
         try {
             if (moduleStatusCheck('OnlineExam') == true) {
                 $result_views = InfixStudentTakeOnlineExam::
