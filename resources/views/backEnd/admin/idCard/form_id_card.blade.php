@@ -141,7 +141,7 @@
             
 
         <div class="row mt-25">
-            <div class="col-lg-6">
+            <div class="col-lg-7">
                 <div class="primary_input">
                     <label class="primary_input_label" for="">@lang('admin.page_layout_width') <span
                             id="pWidth">(@lang('admin.default') 57 mm)</span></label>
