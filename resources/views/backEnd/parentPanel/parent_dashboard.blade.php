@@ -130,15 +130,15 @@
                         </div> -->
                         <div class="col-lg-3 col-md-6">
                             <a href="{{ route('parent_exam_schedule', $children->id) }}" class="d-block">
-                                <div class="white-box single-summery">
+                            <div class="white-box single-summery">
                                     <div class="d-flex justify-content-between">
                                         <div>
-                                            <h3>@lang('parent.exam')</h3>
-                                            <p class="mb-0">@lang('parent.total_exam')</p>
+                                            <h3>@lang('parent.online_exam')</h3>
+                                            <p class="mb-0">@lang('parent.total_online_exam')</p>
                                         </div>
                                         <h1 class="gradient-color2">
 
-                                                {{ $totalExams }}
+                                                {{ $totalOnlineExams }}
                                         </h1>
                                     </div>
                                 </div>
