@@ -85,13 +85,6 @@
                             @php
                                 $applicableUsers = json_decode($id_card->role_id);
                             @endphp
-                            <option value="2" {{ in_array(2, $applicableUsers) ? 'selected' : '' }}
-                                @lang('admin.student')</option>
-                            <option value="3" {{ in_array(3, $applicableUsers) ? 'selected' : '' }}
-                                @lang('admin.guardian')</option>
-                                <option value="0"
-                                @if (!in_array(3, $applicableUsers) && !in_array(2, $applicableUsers)) {{ 'selected' }} @endif>@lang('admin.staff')</option> 
-                                @else 
                             <option value="2">@lang('admin.student')</option>
                             <option value="3">@lang('admin.guardian')</option>
                             <option value="0">@lang('admin.staff')</option>
