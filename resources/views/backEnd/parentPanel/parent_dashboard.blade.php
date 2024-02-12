@@ -111,7 +111,7 @@
                             </a>
                         </div>
                     @endif
-                    @if (userPermission('om_parent_online_examination'))
+                    @if (userPermission('exam'))
                         <div class="col-lg-3 col-md-6">
                             <a href="{{ route('parent_online_examination', $children->id) }}" class="d-block">
                                 <div class="white-box single-summery">
