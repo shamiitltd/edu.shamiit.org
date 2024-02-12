@@ -77,7 +77,7 @@
         <div class="row mt-25">
             <div class="col-lg-12">
                 <div class="primary_input">
-                    <select
+                    <select>
                         class="primary_select  form-control{{ $errors->has('applicable_user') ? ' is-invalid' : '' }}"
                         name="applicable_user[]" id="applicableUser">
                         <option data-display="@lang('admin.applicable_user') *" value="">@lang('common.select')*</option>
@@ -85,16 +85,16 @@
                             @php
                                 $applicableUsers = json_decode($id_card->role_id);
                             @endphp
-                            <option value="2" {{ in_array(2, $applicableUsers) ? 'selected' : '' }} selected>
+                            <option value="2" {{ in_array(2, $applicableUsers) ? 'selected' : '' }}
                                 @lang('admin.student')</option>
-                            <option value="3" {{ in_array(3, $applicableUsers) ? 'selected' : '' }}>
+                            <option value="3" {{ in_array(3, $applicableUsers) ? 'selected' : '' }}
                                 @lang('admin.guardian')</option>
-                            <option value="10"
-                                @if (!in_array(3, $applicableUsers) && !in_array(2, $applicableUsers)) {{ 'selected' }} @endif>@lang('admin.staff')</option>
-                        @else
+                                <option value="0"
+                                @if (!in_array(3, $applicableUsers) && !in_array(2, $applicableUsers)) {{ 'selected' }} @endif>@lang('admin.staff')</option> 
+                                @else 
                             <option value="2">@lang('admin.student')</option>
                             <option value="3">@lang('admin.guardian')</option>
-                            <option value="10">@lang('admin.staff')</option>
+                            <option value="0">@lang('admin.staff')</option>
                         @endif 
                     </select>
                     <div class="text-danger" id="applicableUserError"></div>
@@ -141,7 +141,7 @@
             
 
         <div class="row mt-25">
-            <div class="col-lg-7">
+            <div class="col-lg-6">
                 <div class="primary_input">
                     <label class="primary_input_label" for="">@lang('admin.page_layout_width') <span
                             id="pWidth">(@lang('admin.default') 57 mm)</span></label>
