@@ -675,21 +675,6 @@ class SmParentPanelController extends Controller
         }
     }
 
-    public function examinationSchedule($id)
-    {
-        try {
-            // return $id;
-            $user = Auth::user();
-            $parent = SmParent::where('user_id', $user->id)->first();
-            $student_detail = SmStudent::where('id', $id)->first();
-            $student_id = $student_detail->id;
-            $records = studentRecords(null, $student_detail->id)->get();
-            return view('backEnd.parentPanel.parent_exam_schedule', compact('student_id','records'));
-        } catch (\Exception $e) {
-            Toastr::error('Operation Failed', 'Failed');
-            return redirect()->back();
-        }
-    }
     public function onlineExamination($id)
     {
         // try {
