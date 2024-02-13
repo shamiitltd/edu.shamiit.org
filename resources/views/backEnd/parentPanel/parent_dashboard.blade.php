@@ -93,7 +93,7 @@
                             </a>
                         </div>
                     @endif
-                    @if (userPermission('parent-dashboard-exam'))
+                    @if (userPermission('parent_exam_schedule'))
                         <div class="col-lg-3 col-md-6">
                             <a href="{{ route('parent_exam_schedule', $children->id) }}" class="d-block">
                                 <div class="white-box single-summery">
@@ -111,7 +111,7 @@
                             </a>
                         </div>
                     @endif
-                    @if (userPermission('parent_examination'))
+                    @if (userPermission('parent-dashboard-exam'))
                         <div class="col-lg-3 col-md-6">
                             <a href="{{ route('parent_online_examination', $children->id) }}" class="d-block">
                                 <div class="white-box single-summery">
