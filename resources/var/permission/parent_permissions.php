@@ -82,7 +82,7 @@
       array (
         'module' => NULL,
         'sidebar_menu' => NULL,
-        'name' => 'Online Exam',
+        'name' => 'Exam',
         'lang_name' => NULL,
         'icon' => NULL,
         'svg' => NULL,
