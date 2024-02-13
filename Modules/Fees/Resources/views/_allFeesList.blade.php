@@ -36,8 +36,8 @@
                 </div>
             @endif
         @endif
+        
         <div class="row">
-
            @if ((isset($role) && $role == 'admin') || $role == 'lms')
                 <div class="col-lg-12">
                     <x-table>
@@ -74,7 +74,6 @@
                             </li>
                         @endforeach
                     </ul>
-
                     <div class="tab-content mt-10">
                         {{$records}}
                         @foreach ($records as $key => $record)
@@ -163,6 +162,8 @@
     </div>
 </section>
 
+
+
 {{-- Delete Modal Start --}}
 <div class="modal fade admin-query"
     id="deleteFeesPayment">
@@ -226,7 +227,7 @@
         { data: 'paid_amount', name: 'paid_amount' },
         { data: 'balance', name: 'balance' },
         { data: 'status', name: 'status' },
-        { data: 'paid_amount', name: 'paid_amount' },
+        { data: 'date', name: 'date' },
         { data: 'action', name: 'action', orderable: false, searchable: true },
     ],
     bLengthChange: false,
@@ -324,7 +325,6 @@
     }
 </script>
 <script>
-
     function viewPaymentDetailModal(id) {
         $('#viewFeesPayment').modal('show');
         let invoiceId = id;
