@@ -77,7 +77,7 @@
         <div class="row mt-25">
             <div class="col-lg-12">
                 <div class="primary_input">
-                <select
+                    <select
                         class="primary_select  form-control{{ $errors->has('applicable_user') ? ' is-invalid' : '' }}"
                         name="applicable_user[]" id="applicableUser">
                         <option data-display="@lang('admin.applicable_user') *" value="">@lang('common.select')*</option>
@@ -97,7 +97,6 @@
                             <option value="0">@lang('admin.staff')</option>
                         @endif
                     </select>
-                 
                     <div class="text-danger" id="applicableUserError"></div>
 
                     @if ($errors->has('applicable_user'))
@@ -109,8 +108,8 @@
             </div>
         </div>
 
-        
-           <div class="row mt-25 staffInfo 
+        <div
+            class="row mt-25 staffInfo 
             @if (isset($id_card)) @if (!in_array(3, $applicableUsers) && !in_array(2, $applicableUsers))
                     {{ 'd-block' }}
                 @else
@@ -122,13 +121,14 @@
             <div class="col-lg-12">
                 <label class="primary_input_label" for="">@lang('admin.role')<span class="text-danger">
                         *</span></label><br>
-                     @foreach ($roles as $role)
-                     @if ($role->id != 2 && $role->id != 3)
+                @foreach ($roles as $role)
+                    @if ($role->id != 2 && $role->id != 3)
                         <div class="">
                             <label for="role_{{ @$role->id }}">{{ @$role->name }}</label>
                             <input type="checkbox" id="role_{{ @$role->id }}" class="common-checkbox"
                                 value="{{ @$role->id }}" name="role[]"
                                 {{ isset($id_card) ? (in_array($role->id, $applicableUsers) ? 'checked' : '') : '' }}>
+
                         </div>
                     @endif
                 @endforeach
@@ -139,7 +139,6 @@
                 @endif
             </div>
         </div>
-            
 
         <div class="row mt-25">
             <div class="col-lg-6">
