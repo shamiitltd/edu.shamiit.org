@@ -128,7 +128,7 @@
                                 </div>
                             </a>
                         </div>
-                    <!-- @endif -->
+                    @endif
                     @if (userPermission('parent-dashboard-teacher'))
                         <div class="col-lg-3 col-md-6">
                             <a href="{{ route('parent_teacher_list', $children->id) }}" class="d-block">
