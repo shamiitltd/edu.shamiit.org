@@ -111,6 +111,57 @@
                             </a>
                         </div>
                     @endif
+                    @if (userPermission('exam'))
+                        <div class="col-lg-3 col-md-6">
+                            <a href="{{ route('parent_online_examination', $children->id) }}" class="d-block">
+                            <div class="white-box single-summery">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                        <h3>@lang('parent.online_exam')</h3>
+                                        <p class="mb-0">@lang('parent.total_online_exam')</p>
+                                        </div>
+                                        <h1 class="gradient-color2">
+                                                {{ $totalOnlineExams }}
+                                        </h1>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    @endif
+                    @if (userPermission('om_parent_online_examination'))
+                        <div class="col-lg-3 col-md-6">
+                            <a href="{{ route('parent_online_examination', $children->id) }}" class="d-block">
+                            <div class="white-box single-summery">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                        <h3>@lang('parent.online_exam')</h3>
+                                        <p class="mb-0">@lang('parent.total_online_exam')</p>
+                                        </div>
+                                        <h1 class="gradient-color2">
+                                                {{ $totalOnlineExams }}
+                                        </h1>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    @endif
+                    @if (userPermission('parent_online_examination'))
+                        <div class="col-lg-3 col-md-6">
+                            <a href="{{ route('parent_online_examination', $children->id) }}" class="d-block">
+                            <div class="white-box single-summery">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                        <h3>@lang('parent.online_exam')</h3>
+                                        <p class="mb-0">@lang('parent.total_online_exam')</p>
+                                        </div>
+                                        <h1 class="gradient-color2">
+                                                {{ $totalOnlineExams }}
+                                        </h1>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    @endif
                     @if (userPermission('parent_examination'))
                         <div class="col-lg-3 col-md-6">
                             <a href="{{ route('parent_online_examination', $children->id) }}" class="d-block">
@@ -128,6 +179,41 @@
                             </a>
                         </div>
                     @endif
+                    @if (userPermission('parent-dashboard-exam'))
+                        <div class="col-lg-3 col-md-6">
+                            <a href="{{ route('parent_online_examination', $children->id) }}" class="d-block">
+                            <div class="white-box single-summery">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                        <h3>@lang('parent.online_exam')</h3>
+                                        <p class="mb-0">@lang('parent.total_online_exam')</p>
+                                        </div>
+                                        <h1 class="gradient-color2">
+                                                {{ $totalOnlineExams }}
+                                        </h1>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    @endif
+                    @if (userPermission('online_exam'))
+                        <div class="col-lg-3 col-md-6">
+                            <a href="{{ route('parent_online_examination', $children->id) }}" class="d-block">
+                            <div class="white-box single-summery">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                        <h3>@lang('parent.online_exam')</h3>
+                                        <p class="mb-0">@lang('parent.total_online_exam')</p>
+                                        </div>
+                                        <h1 class="gradient-color2">
+                                                {{ $totalOnlineExams }}
+                                        </h1>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    @endif
+                    
                     @if (userPermission('parent-dashboard-teacher'))
                         <div class="col-lg-3 col-md-6">
                             <a href="{{ route('parent_teacher_list', $children->id) }}" class="d-block">
