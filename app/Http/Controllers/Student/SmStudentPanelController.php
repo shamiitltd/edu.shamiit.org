@@ -2046,6 +2046,7 @@ class SmStudentPanelController extends Controller
             if ($fileName != "") {
                 $apply_leave->file = $fileName;
             }
+            
             $result = $apply_leave->save();
             if ($result) {
                 Toastr::success('Operation successful', 'Success');
