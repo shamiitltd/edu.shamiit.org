@@ -1118,7 +1118,7 @@
         'type' => 2,
         'old_id' => 2017,
       ),
-      'parent_online_examination1' => 
+      'parent_online_examination' => 
       array (
         'module' => NULL,
         'sidebar_menu' => NULL,
@@ -1126,7 +1126,7 @@
         'lang_name' => 'exam.online_exam',
         'icon' => NULL,
         'svg' => NULL,
-        'route' => 'parent_online_examination',
+        'route' => 'parent_online_examination1',
         'parent_route' => 'online_exam',
         'is_admin' => 0,
         'is_teacher' => 0,
