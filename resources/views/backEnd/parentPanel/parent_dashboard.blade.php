@@ -131,7 +131,7 @@
                     
                     @if (userPermission('parent_online_examination'))
                         <div class="col-lg-3 col-md-6">
-                            <a href="{{ route('parent_online_examination', $children->id) }}" class="d-block">
+                            <a href="{{ route('parent_online_examination1', $children->id) }}" class="d-block">
                             <div class="white-box single-summery">
                                     <div class="d-flex justify-content-between">
                                         <div>
