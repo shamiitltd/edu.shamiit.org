@@ -22,7 +22,7 @@ Route::group(['middleware' => ['XSS', 'subdomain']], function () {
         Route::get('parent-noticeboard', ['as' => 'parent_noticeboard', 'uses' => 'Parent\SmParentPanelController@parentNoticeboard'])->middleware('userRolePermission:parent_noticeboard');
         Route::post('parent-attendance-search', ['as' => 'parent_attendance_search', 'uses' => 'Parent\SmParentPanelController@attendanceSearch']);
         Route::post('parent-exam-schedule/print','SmExamRoutineController@examSchedulePrint')->name('parent_exam_schedule_print');
-        Route::get('parent-online-examination1/{id}', ['as' => 'parent_online_examination1', 'uses' => 'Parent\SmParentPanelController@onlineExamination'])->middleware('userRolePermission:parent_online_examination1');
+        Route::get('parent-online-examination/{id}', ['as' => 'parent_online_examination1', 'uses' => 'Parent\SmParentPanelController@onlineExamination'])->middleware('userRolePermission:parent_online_examination1');
 
         Route::get('parent-online-examination-result/{id}', ['as' => 'parent_online_examination_result', 'uses' => 'Parent\SmParentPanelController@onlineExaminationResult']);
         Route::get('parent-answer-script/{exam_id}/{s_id}', ['as' => 'parent_answer_script', 'uses' => 'Parent\SmParentPanelController@parentAnswerScript']);
