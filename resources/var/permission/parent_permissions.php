@@ -1118,7 +1118,7 @@
         'type' => 2,
         'old_id' => 2017,
       ),
-      'parent_online_examination' => 
+      'parent_online_examination1' => 
       array (
         'module' => NULL,
         'sidebar_menu' => NULL,
