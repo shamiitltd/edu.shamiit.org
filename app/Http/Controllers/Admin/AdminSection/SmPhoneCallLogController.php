@@ -96,12 +96,26 @@ class SmPhoneCallLogController extends Controller
     {
         try{
             $phone_call_log = SmPhoneCallLog::find($id);
+            if (!$phone_call_log) {
+                throw new ModelNotFoundException("Phone call log with ID $id not found");
+            }
             $result = $phone_call_log->delete();
              
             Toastr::success('Operation successful', 'Success');
             return redirect('phone-call');
-        }catch (\Exception $e) {
+        }
+        catch (ModelNotFoundException $e) {
+            Toastr::error('Phone call log not found', 'Failed');
+            return redirect()->back();
+        } catch (QueryException $e) {
+            Toastr::error('Database error occurred', 'Failed');
+            Log::error($e->getMessage());
+            return redirect()->back();
+        }
+
+        catch (\Exception $e) {
            Toastr::error('Operation Failed', 'Failed');
+           Log::error($e->getMessage());
            return redirect()->back();
         }
     }
