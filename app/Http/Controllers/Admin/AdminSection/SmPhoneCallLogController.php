@@ -92,7 +92,7 @@ class SmPhoneCallLogController extends Controller
         }
     }
 
-    public function destroy(Request $request, $id)
+    public function destroy(SmPhoneCallRequest $request, $id)
     {
         try{
             $phone_call_log = SmPhoneCallLog::find($id);
