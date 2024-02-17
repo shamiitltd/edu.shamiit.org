@@ -288,9 +288,12 @@
                                                             <button type="button" class="btn dropdown-toggle"
                                                                 data-toggle="dropdown">
                                                                 @lang('common.select')
+                                                                
                                                             </button>
                                                             <div class="dropdown-menu dropdown-menu-right"> --}}
                                                         <x-drop-down>
+                                                            
+                                                            
                                                             @if (userPermission('phone-call_edit'))
                                                                 <a class="dropdown-item"
                                                                     href="{{ route('phone-call_edit', @$phone_call_log->id) }}">@lang('common.edit')</a>
@@ -321,7 +324,7 @@
                                                                 <div class="mt-40 d-flex justify-content-between">
                                                                     <button type="button" class="primary-btn tr-bg"
                                                                         data-dismiss="modal">@lang('common.cancel')</button>
-                                                                    {{ Form::open(['route' => ['phone-call_delete', @$phone_call_log->id], 'method' => 'DELETE', 'enctype' => 'multipart/form-data']) }}
+                                                                    {{ Form::open(['route' => ['phone-call_delete', @$phone_call_log->id], 'method' => 'POST', 'enctype' => 'multipart/form-data']) }}
                                                                     <button class="primary-btn fix-gr-bg"
                                                                         type="submit">@lang('common.delete')</button>
                                                                     {{ Form::close() }}

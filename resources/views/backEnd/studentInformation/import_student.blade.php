@@ -193,19 +193,39 @@
                                     <div class="col-lg-3">
                                        
                                         <div class="primary_input">                                           
-                                            <div class="primary_file_uploader">
+                                            <!-- <div class="primary_file_uploader">
                                                 <input
-                                                        class="primary_input_field form-control {{ $errors->has('file') ? ' is-invalid' : '' }}"
+                                                        class="primary_input_field form-control {{ $errors->has('upload_content_file') ? ' is-invalid' : '' }}"
                                                         type="text" id="placeholderPhoto" placeholder="Excel file"
-                                                        readonly>
+                                                        readonly="">
                                                 <button class="" type="button">
                                                     <label class="primary-btn small fix-gr-bg" for="upload_content_file"><span
                                                             class="ripple rippleEffect"
                                                             style="width: 56.8125px; height: 56.8125px; top: -16.4062px; left: 10.4219px;"></span>@lang('common.browse')</label>
-                                                    <input type="file" class="d-none" name="file"
+                                                    <input type="file" class="d-none" name="upload_content_file"
                                                         id="upload_content_file">
                                                 </button>
-                                            </div>
+                                            </div> -->
+
+                                            <div class="primary_file_uploader">
+    <input class="primary_input_field form-control{{ $errors->has('upload_content_file') ? ' is-invalid' : '' }}" 
+        type="text" id="placeholderEventFile" placeholder="excel file" readonly="">
+    
+    <button class="" type="button">
+        <label class="primary-btn small fix-gr-bg" for="upload_content_file">
+            <span class="ripple rippleEffect"
+                style="width: 56.81251px; height: 56.8125px; top: -16.4062px; left: 10.4219px;">
+            </span>
+            @lang('common.browse')
+        </label>
+        <input type="file" class="d-none" name="upload_content_file" id="upload_content_file" 
+            onchange="
+                var fileName = this.files[0].name;
+                document.getElementById('placeholderEventFile').value = fileName;
+            ">
+    </button>
+</div>
+
                                           
                                             @if ($errors->has('file'))
                                             <span class="text-danger d-block">

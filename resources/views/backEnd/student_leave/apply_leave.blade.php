@@ -6,7 +6,7 @@
 <style>
     .ti-calendar:before {
         position: absolute !important;
-        top: 28px !important;
+        top: 28.0px !important;
     }
     .input-right-icon button.primary-btn-small-input {
         top: 8px  !important;
@@ -139,13 +139,19 @@
                             </div>
                            
                         </div>
+
+                        
+
                         <input type="hidden" name="id" value="{{isset($apply_leave)? $apply_leave->id: ''}}">
+
+                        
                         <div class="row mt-25">
                             <div class="col-lg-12">
                                 <select class="primary_select  form-control{{ $errors->has('leave_type') ? ' is-invalid' : '' }}" name="leave_type">
                                     <option data-display="@lang('leave.leave_type') *" value="">@lang('leave.leave_type') *</option>
                                     @foreach($leave_types as $leave_type)
-                                        <option value="{{$leave_type->id}}" {{isset($apply_leave)? ($apply_leave->leave_define_id == $leave_type->id? 'selected':''):''}}>{{$leave_type->leaveType->type}}</option>
+                                         <option value="{{$leave_type->id}}" {{isset($apply_leave)? ($apply_leave->leave_define_id == $leave_type->id? 'selected':''):''}}>{{$leave_type->leaveType->type}}</option>
+                                         
                                     @endforeach
                                 </select>
                                 @if ($errors->has('leave_type'))
@@ -289,9 +295,11 @@
                             @foreach($apply_leaves as $apply_leave)
                             <tr>
                                 <td>
-                                    @if($apply_leave->leaveDefine != "" && $apply_leave->leaveDefine->leaveType !="")
-                                        {{$apply_leave->leaveDefine->leaveType->type}}
-                                    @endif
+                                @if($apply_leave->leaveDefine !="" && $apply_leave->leaveDefine->leaveType !="")
+                                    {{$apply_leave->leaveDefine->leaveType->type}}
+                                    @else
+                                    Debug: {{$apply_leave->leaveDefine}} - {{$apply_leave->leaveDefine->leaveType}}
+                                     @endif
                                 </td>
                                 <td  data-sort="{{strtotime($apply_leave->leave_from)}}" >
                                  {{$apply_leave->leave_from != ""? dateConvert($apply_leave->leave_from):''}}
@@ -316,17 +324,48 @@
                                 @endif
                                 </td>
                                 <td>
-                                    <div class="dropdown CRM_dropdown">
+
+    <div class="dropdown CRM_dropdown">
+    <button type="button" class="btn dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        @lang('common.select')
+    </button>
+    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+      
+            <a data-modal-size="modal-lg" title="View Leave Details" class="dropdown-item modalLink" href="{{ route('view-leave-details-apply', $apply_leave->id) }}">@lang('common.view')</a>
+        
+            @if( $apply_leave->approve_status == 'P')
+       
+            <a class="dropdown-item" href="{{ route('student-leave-edit', [$apply_leave->id]) }}">@lang('common.edit')</a>
+           @endif
+           @if($apply_leave->approve_status == 'P')
+            <a class="dropdown-item" data-toggle="modal" data-target="#deleteApplyLeaveModal{{ $apply_leave->id }}" href="#">@lang('common.delete')</a>
+           @endif
+
+            @if($apply_leave->file != "")
+            <a class="dropdown-item" href="{{ url(@$apply_leave->file) }}" download>
+                @lang('common.download') 
+                <span class="pl ti-download"></span>
+            </a>
+      @endif
+    </div>
+</div>
+
+
+    </div>
+</td>
+
+
+                                    <!-- <div class="dropdown CRM_dropdown">
                                         <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
                                             @lang('common.select')
                                         </button>
                                         <div class="dropdown-menu dropdown-menu-right">
     
-                                            @if(userPermission(93))
+                                            @if(userPermission(93)) 
     
                                             <a data-modal-size="modal-lg" title="View Leave Details" class="dropdown-item modalLink" href="{{route('view-leave-details-apply', $apply_leave->id)}}">@lang('common.view')</a>
     
-                                            @endif
+                                             @endif 
                                             @if($apply_leave->approve_status == 'P')
                                             @if(userPermission(42))
                                             <a class="dropdown-item" href="{{route('student-leave-edit', [$apply_leave->id
@@ -347,7 +386,8 @@
                                             @endif
                                         </div>
                                     </div>
-                                </td>
+                                </td> -->
+
                             </tr>
                             <div class="modal fade admin-query" id="deleteApplyLeaveModal{{$apply_leave->id}}" >
                                 <div class="modal-dialog modal-dialog-centered">
@@ -361,6 +401,7 @@
                                             <div class="text-center">
                                                 <h4>@lang('common.are_you_sure_to_delete')</h4>
                                             </div>
+
     
                                             <div class="mt-40 d-flex justify-content-between">
                                                 <button type="button" class="primary-btn tr-bg" data-dismiss="modal">@lang('common.cancel')</button>
