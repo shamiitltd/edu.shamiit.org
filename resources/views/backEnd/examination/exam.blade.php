@@ -201,12 +201,12 @@
                                                         value="{{ isset($editData) ? $editData->exam_mark : 0 }}">
                                                 </div>
                                             </td>
-                                            <!-- <td class="border-0">
+                                            <td class="border-0">
                                                 <button style="position: relative; top: 6px;"
                                                     class="primary-btn icon-only fix-gr-bg" type="button">
                                                     <span class="ti-trash"></span>
                                                 </button>
-                                            </td> -->
+                                            </td>
                                         </tr>
                                     </tbody>
                                     <tfoot>
