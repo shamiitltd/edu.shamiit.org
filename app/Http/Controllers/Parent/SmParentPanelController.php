@@ -677,7 +677,6 @@ class SmParentPanelController extends Controller
 
     public function onlineExamination($id)
     {
-
         try {
             // $student = Auth::user()->student;
             $student = SmStudent::findOrfail($id);
@@ -702,16 +701,16 @@ class SmParentPanelController extends Controller
                 $marks_assigned = SmStudentTakeOnlineExam::whereIn('online_exam_id', $online_exams->pluck('id')->toArray())->where('student_id', $student->id)->where('status', 2)
                     ->where('school_id', Auth::user()->school_id)->pluck('online_exam_id')->toArray();
             }
-
+            
             return view('backEnd.parentPanel.parent_online_exam', compact('online_exams', 'marks_assigned', 'student','records'));
         } catch (\Exception $e) {
             Toastr::error('Operation Failed', 'Failed');
             return redirect()->back();
         }
+        
     }
     public function onlineExaminationResult($id)
     {
-
         try {
             if (moduleStatusCheck('OnlineExam') == true) {
                 $result_views = InfixStudentTakeOnlineExam::

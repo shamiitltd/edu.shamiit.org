@@ -288,6 +288,7 @@ class FeesController extends Controller
 
     public function feesInvoiceList()
     {
+        
         return view('fees::feesInvoice.feesInvoiceList');
     }
 
@@ -1152,7 +1153,9 @@ class FeesController extends Controller
         $studentInvoices = FmFeesInvoice::where('type', 'fees')
             ->where('school_id', Auth::user()->school_id)
             ->where('academic_id', getAcademicId())
-            ->orderBy('id', 'DESC');
+            ->orderBy('id', 'DESC')
+            ->get();
+           
         if (isset($studentInvoices)){
             return Datatables::of($studentInvoices)
                     ->addIndexColumn()
@@ -1201,19 +1204,33 @@ class FeesController extends Controller
                         }
                         return $btn;
                     })
-                    ->addColumn('paid_amount', function($row){
-                        $btn = dateConvert($row->create_date);
-                        return $btn;
+                    ->addColumn('date', function($row){
+                        $date = dateConvert($row->create_date);
+                        return $date;
                     })
-                    ->addColumn('action', function($row){
-                        $role = 'admin';
-                        $amount = $row->Tamount;
-                        $weaver = $row->Tweaver;
-                        $fine = $row->Tfine;
-                        $paid_amount = $row->Tpaidamount;
-                        $balance = $amount + $fine - ($paid_amount + $weaver);
-                        $view = view('fees::__allFeesListAction', compact('row', 'balance', 'paid_amount', 'role'));
-                        return (string)$view;
+                    // ->addColumn('action', function($row){
+                    //     $role = 'admin';
+                    //     $amount = $row->Tamount;
+                    //     $weaver = $row->Tweaver;
+                    //     $fine = $row->Tfine;
+                    //     $paid_amount = $row->Tpaidamount;
+                    //     $balance = $amount + $fine - ($paid_amount + $weaver);
+                    //     $view = view('fees::_allFeesListAction', compact('row', 'balance', 'paid_amount', 'role'));
+                    //     return (string)$view;
+                    // })
+                    ->addColumn('action', function ($row) {
+                        $btn = '<div class="dropdown CRM_dropdown">
+                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">' . app('translator')->get('common.select') . '</button>
+    
+                            <div class="dropdown-menu dropdown-menu-right">    
+                                <a class="dropdown-item" href="' . route('fees.fees-invoice-edit', [$row->id]) . '">' . app('translator')->get('common.edit') . '</a>' .'
+                           
+                                <a onclick="feesInvoiceDelete(' . $row->id . ');"  class="dropdown-item" href="#" data-toggle="modal" data-target="#deleteApplyLeaveModal" data-id="' . $row->id . '"  >' . app('translator')->get('common.delete') . '</a>'.
+    
+                           '</div>
+                     </div>';
+    
+                        return $btn;
                     })
                     ->rawColumns(['student_name', 'status', 'action', 'date'])
                     ->make(true);

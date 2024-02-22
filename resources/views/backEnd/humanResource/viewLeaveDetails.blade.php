@@ -120,7 +120,8 @@ $days = $days_between + 1;
             {{ Form::open(['class' => 'form-horizontal', 'files' => true, 'route' => 'update-approve-leave',
                         'method' => 'POST', 'enctype' => 'multipart/form-data']) }}
                         <input type="hidden" name="id" value="{{$leaveDetails->id}}">
-            <div class="single-meta mt-40">
+           
+                        <div class="single-meta mt-40">
                 <div class="row">
                     <div class="col-lg-2 col-md-5">
                         <div class="value text-left">
@@ -188,7 +189,7 @@ $days = $days_between + 1;
         </div>
         </div>
         @if(!isset($apply))
-        <div class="col-md-5    ">
+        <div class="col-md-5">
                 <!-- Start Student Meta Information -->
                 <div class="student-meta-box">
                         @if ($leaveDetails->role_id == 2)
