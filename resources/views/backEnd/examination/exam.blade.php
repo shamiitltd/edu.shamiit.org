@@ -217,11 +217,11 @@
                                                     name="totalMark" readonly="true">
                                              </td>     
                                             
-                                              <td class="border-0">
+                                              <!-- <td class="border-0">
                                                 <button style="position: relative; top: 6px;"
                                                     class="primary-btn icon-only fix-gr-bg" type="button">
                                                     <span class="ti-trash"></span>
-                                                    </button> 
+                                                    </button>  -->
                                          </td>  
                                         </tr>
                                     </tfoot>
