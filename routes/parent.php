@@ -16,6 +16,7 @@ Route::group(['middleware' => ['XSS', 'subdomain']], function () {
         Route::get('parent-homework/{id}', ['as' => 'parent_homework', 'uses' => 'Parent\SmParentPanelController@homework'])->middleware('userRolePermission:parent_homework');
         Route::get('parent-homework-view/{class_id}/{section_id}/{homework}', ['as' => 'parent_homework_view', 'uses' => 'Parent\SmParentPanelController@homeworkView'])->middleware('userRolePermission:parent_homework_view');
         
+ 
         Route::get('university/parent-homework-view/{sem_label_id}/{homework}', ['as' => 'un_student_homework_view', 'uses' => 'Parent\SmParentPanelController@unStudentHomeworkView']);
 
         Route::get('parent-noticeboard', ['as' => 'parent_noticeboard', 'uses' => 'Parent\SmParentPanelController@parentNoticeboard'])->middleware('userRolePermission:parent_noticeboard');
