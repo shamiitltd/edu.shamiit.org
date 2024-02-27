@@ -1126,7 +1126,7 @@
         'lang_name' => 'exam.online_exam',
         'icon' => NULL,
         'svg' => NULL,
-        'route' => 'parent_online_examination1',
+        'route' => 'parent_online_examination',
         'parent_route' => 'online_exam',
         'is_admin' => 0,
         'is_teacher' => 0,

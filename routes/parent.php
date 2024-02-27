@@ -38,7 +38,7 @@ Route::group(['middleware' => ['XSS', 'subdomain']], function () {
         Route::delete('parent-leave-delete/{id}', 'Parent\SmParentPanelController@DeleteLeave')->name('parent-leave-delete')->middleware('userRolePermission:parent-leave-delete');
 
         Route::get('parent-examination/{id}', ['as' => 'parent_examination', 'uses' => 'Parent\SmParentPanelController@examination'])->middleware('userRolePermission:parent_examination');
-        Route::get('parent-examination-schedule/{id}', ['as' => 'parent_exam_schedule', 'uses' => 'Parent\SmParentPanelController@examinationSchedule'])->middleware('userRolePermission:parent_exam_schedule');
+        Route::get('parent-examination-schedule/{id}', ['as' => 'parent_exam_schedule', 'uses' => 'Parent\SmParentPanelController@onlineExamination'])->middleware('userRolePermission:parent_exam_schedule');
         Route::post('parent-examination-schedule', ['as' => 'parent_exam_schedule_search', 'uses' => 'Parent\SmParentPanelController@examinationScheduleSearch']);
 
                 //abunayem

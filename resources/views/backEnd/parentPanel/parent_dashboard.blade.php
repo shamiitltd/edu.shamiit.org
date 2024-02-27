@@ -103,8 +103,7 @@
                                             <p class="mb-0">@lang('parent.total_exam')</p>
                                         </div>
                                         <h1 class="gradient-color2">
-
-                                                {{ $totalExams }}
+                                            {{ $totalExams }}
                                         </h1>
                                     </div>
                                 </div>
