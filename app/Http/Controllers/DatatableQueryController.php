@@ -1730,6 +1730,7 @@ class DatatableQueryController extends Controller
                     } else {
                         $homeworkLists = $all_homeworks->get();
                     }
+                    
 
                     return Datatables::of($homeworkLists)
                     ->addIndexColumn()

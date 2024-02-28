@@ -4178,13 +4178,13 @@ table.dataTable.dtr-inline.collapsed
     background-color: #415094;
     border-radius: 50%;
 }
-
-@media (max-width: 767.98px) {
+/* //search for mobile */
+/* @media (max-width: 767.98px) { */
     /* line 109, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_header.scss */
-    .header_iner .serach_field-area {
+    /* .header_iner .serach_field-area {
         display: none;
     }
-}
+} */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     /* line 109, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_header.scss */
@@ -4194,12 +4194,12 @@ table.dataTable.dtr-inline.collapsed
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+/* @media only screen and (min-width: 768px) and (max-width: 991px) { */
     /* line 109, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_header.scss */
-    .header_iner .serach_field-area {
+    /* .header_iner .serach_field-area {
         display: none;
     }
-}
+} */
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
     /* line 109, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_header.scss */

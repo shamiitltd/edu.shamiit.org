@@ -1,7 +1,8 @@
 @extends('backEnd.master')
 @section('title')
-    @lang('parent.parent_dashboard')
+ @lang('parent.parent_dashboard')
 @endsection
+
 @push('css')
     <link rel="stylesheet" href="{{ asset('public/backEnd/assets/vendors/css/fullcalendar.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('public/backEnd/assets/vendors/calender_js/core/main.css') }}" />
@@ -15,7 +16,7 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="main-title">
-                        <h3 class="mb-20">@lang('parent.my_children')</h3>
+                         <h3 class="mb-20">{{ @Auth::user()->full_name }}  || @lang('parent.my_children')</h3>
                     </div>
                 </div>
             </div>
@@ -94,16 +95,15 @@
                     @endif
                     @if (userPermission('parent-dashboard-exam'))
                         <div class="col-lg-3 col-md-6">
-                            <a href="{{ route('parent_exam_schedule', $children->id) }}" class="d-block">
-                                <div class="white-box single-summery">
+                            <a href="{{ route('parent_online_examination', $children->id) }}" class="d-block">
+                            <div class="white-box single-summery">
                                     <div class="d-flex justify-content-between">
                                         <div>
                                             <h3>@lang('parent.exam')</h3>
                                             <p class="mb-0">@lang('parent.total_exam')</p>
                                         </div>
                                         <h1 class="gradient-color2">
-
-                                                {{ $totalExams }}
+                                            {{ $totalExams }}
                                         </h1>
                                     </div>
                                 </div>
@@ -112,22 +112,39 @@
                     @endif
                     @if (userPermission('parent-dashboard-exam'))
                         <div class="col-lg-3 col-md-6">
-                            <a href="{{ route('parent_online_examination', $children->id) }}" class="d-block">
-                                <div class="white-box single-summery">
+                            <a href="{{ route('parent_exam_schedule', $children->id) }}" class="d-block">
+                            <div class="white-box single-summery">
                                     <div class="d-flex justify-content-between">
                                         <div>
-                                            <h3>@lang('parent.online_exam')</h3>
-                                            <p class="mb-0">@lang('parent.total_online_exam')</p>
+                                        <h3>@lang('parent.online_exam')</h3>
+                                        <p class="mb-0">@lang('parent.total_online_exam')</p>
                                         </div>
                                         <h1 class="gradient-color2">
-
+                                                {{ $totalOnlineExams }}
+                                        </h1>
+                                    </div>
+                                </div>                                
+                            </a>
+                        </div>
+                    @endif
+                                       
+                    <!-- @if(userPermission('parent_online_examination'))
+                        <div class="col-lg-3 col-md-6">
+                            <a href="{{ route('parent_online_examination', $children->id) }}" class="d-block">
+                            <div class="white-box single-summery">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                        <h3>@lang('parent.online_exam')</h3>
+                                        <p class="mb-0">@lang('parent.total_online_exam')</p>
+                                        </div>
+                                        <h1 class="gradient-color2">
                                                 {{ $totalOnlineExams }}
                                         </h1>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                    @endif
+                    @endif -->
                     @if (userPermission('parent-dashboard-teacher'))
                         <div class="col-lg-3 col-md-6">
                             <a href="{{ route('parent_teacher_list', $children->id) }}" class="d-block">

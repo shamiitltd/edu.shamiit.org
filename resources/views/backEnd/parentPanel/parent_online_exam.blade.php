@@ -23,6 +23,7 @@
 @php
     $user =$student;
 @endphp
+
 <section class="sms-breadcrumb mb-40 white-box">
     <div class="container-fluid">
         <div class="row justify-content-between">
@@ -64,6 +65,7 @@
                                         </tr>
                                         </thead>
                                         <tbody>
+                                         
                                         @foreach($record->OnlineExam  as $online_exam)
                                             @php
                                                 @$submitted_answer = $student->studentOnlineExam->where('online_exam_id',$online_exam->id)->first();
