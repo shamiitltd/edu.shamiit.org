@@ -22,7 +22,6 @@ Route::group(['middleware' => ['XSS', 'subdomain']], function () {
         Route::get('parent-noticeboard', ['as' => 'parent_noticeboard', 'uses' => 'Parent\SmParentPanelController@parentNoticeboard'])->middleware('userRolePermission:parent_noticeboard');
         Route::post('parent-attendance-search', ['as' => 'parent_attendance_search', 'uses' => 'Parent\SmParentPanelController@attendanceSearch']);
         Route::post('parent-exam-schedule/print','SmExamRoutineController@examSchedulePrint')->name('parent_exam_schedule_print');
-        <!-- Route::get('parent-online-examination/{id}', ['as' => 'parent_online_examination', 'uses' => 'Parent\SmParentPanelController@examinationSchedule'])->middleware('userRolePermission:parent_online_examination'); -->
         Route::get('parent-online-examination/{id}', ['as' => 'parent_online_examination', 'uses' => 'Parent\SmParentPanelController@onlineExamination'])->middleware('userRolePermission:parent_online_examination');
 
         Route::get('parent-online-examination-result/{id}', ['as' => 'parent_online_examination_result', 'uses' => 'Parent\SmParentPanelController@onlineExaminationResult']);
@@ -39,7 +38,7 @@ Route::group(['middleware' => ['XSS', 'subdomain']], function () {
         Route::delete('parent-leave-delete/{id}', 'Parent\SmParentPanelController@DeleteLeave')->name('parent-leave-delete')->middleware('userRolePermission:parent-leave-delete');
 
         Route::get('parent-examination/{id}', ['as' => 'parent_examination', 'uses' => 'Parent\SmParentPanelController@examination'])->middleware('userRolePermission:parent_examination');
-        <!-- Route::get('parent-examination-schedule/{id}', ['as' => 'parent_exam_schedule', 'uses' => 'Parent\SmParentPanelController@onlineExamination'])->middleware('userRolePermission:parent_exam_schedule'); -->
+        Route::get('parent-examination-schedule/{id}', ['as' => 'parent_exam_schedule', 'uses' => 'Parent\SmParentPanelController@onlineExamination'])->middleware('userRolePermission:parent_exam_schedule');
         Route::post('parent-examination-schedule', ['as' => 'parent_exam_schedule_search', 'uses' => 'Parent\SmParentPanelController@examinationScheduleSearch']);
 
                 //abunayem
