@@ -112,7 +112,7 @@
                     @endif
                     @if (userPermission('parent-dashboard-exam'))
                         <div class="col-lg-3 col-md-6">
-                            <a href="{{ route('parent_exam_online', $children->id) }}" class="d-block">
+                            <a href="{{ route('parent_exam_schedule', $children->id) }}" class="d-block">
                             <div class="white-box single-summery">
                                     <div class="d-flex justify-content-between">
                                         <div>
