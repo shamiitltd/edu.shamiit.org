@@ -227,9 +227,9 @@
                         <a href="{{ route('parent_examination', [$children->id]) }}">{{ $children->full_name }}</a>
                     </li>
                 @endif
-                @if (userPermission('parent_exam_schedule') && menuStatus(78))
+                @if (userPermission('parent_exam_online') && menuStatus(78))
                     <li data-position="{{ menuPosition(78) }}">
-                        <a href="{{ route('parent_exam_schedule', [$children->id]) }}">@lang('exam.exam_schedule')</a>
+                        <a href="{{ route('parent_exam_online', [$children->id]) }}">@lang('exam.exam_schedule')</a>
                     </li>
                 @endif
             @endforeach
