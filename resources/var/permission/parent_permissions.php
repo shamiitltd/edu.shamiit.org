@@ -583,7 +583,7 @@
     'old_id' => 76,
     'child' => 
     array (
-      'parent_exam_online' => 
+      'parent_exam_schedule' => 
       array (
         'module' => NULL,
         'sidebar_menu' => NULL,
@@ -591,7 +591,7 @@
         'lang_name' => 'exam.exam_schedule',
         'icon' => NULL,
         'svg' => NULL,
-        'route' => 'parent_exam_online',
+        'route' => 'parent_exam_schedule',
         'parent_route' => 'exam',
         'is_admin' => 0,
         'is_teacher' => 0,
